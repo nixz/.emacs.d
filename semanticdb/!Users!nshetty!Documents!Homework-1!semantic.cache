@@ -1,0 +1,122 @@
+;; Object Homework-1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Homework-1/"
+  :tables (list 
+   (semanticdb-table "MatrixMultiply.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [397 416])
+            ("stdio.h" include (:system-flag t) nil [417 435])
+            ("time.h" include (:system-flag t) nil [436 453])
+            ("rdtsc.h" include nil nil [454 472])
+            ("timer.h" include nil nil [473 491])
+            ("STANDARD" variable (:constant-flag t) nil [501 509])
+            ("OPTIMIZED" variable (:constant-flag t) nil [521 530])
+            ("AllocateMatrix" function
+               (:prototype-flag t
+                :pointer 2
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [556 565]))                  
+                :type "int")
+                nil [534 566])
+            ("InitializeRandomMatrices" function
+               (:prototype-flag t
+                :type "void")
+                nil [567 601])
+            ("MultiplyMatricesStandard" function
+               (:prototype-flag t
+                :type "void")
+                nil [602 636])
+            ("MultiplyMatricesOptimized" function
+               (:prototype-flag t
+                :type "void")
+                nil [637 672])
+            ("PrintUsage" function
+               (:prototype-flag t
+                :type "void")
+                nil [673 693])
+            ("ParseArguments" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [716 725])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [726 739]))                  
+                :type "int")
+                nil [694 740])
+            ("n" variable (:type "int") nil [742 754])
+            ("algorithmType" variable (:type "int") nil [773 803])
+            ("a" variable
+               (:pointer 2
+                :type "int")
+                nil [805 813])
+            ("B" variable
+               (:pointer 2
+                :type "int")
+                nil [814 826])
+            ("b" variable
+               (:pointer 2
+                :type "int")
+                nil [814 826])
+            ("c" variable
+               (:pointer 2
+                :type "int")
+                nil [827 835])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [846 855])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [856 869]))                  
+                :type "int")
+                nil [837 2115])
+            ("MultiplyMatricesOptimized" function (:type "void") nil [2118 2396])
+            ("MultiplyMatricesStandard" function (:type "void") nil [2398 2638])
+            ("InitializeRandomMatrices" function (:type "void") nil [2640 2878])
+            ("AllocateMatrix" function
+               (:pointer 2
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2902 2911]))                  
+                :type "int")
+                nil [2880 3157])
+            ("ParseArguments" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3178 3187])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3188 3201]))                  
+                :type "int")
+                nil [3159 3926])
+            ("PrintUsage" function (:type "void") nil [3929 4179]))          
+    :file "MatrixMultiply.c"
+    :pointmax 4183
+    :fsize 4182
+    :lastmodtime '(21541 4040 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STANDARD" . ((number "0" 511 . 512)))
+          ("OPTIMIZED" . ((number "1" 531 . 532)))
+          )
+
+    )
+   (semanticdb-table "rdtsc.h"
+    :file "rdtsc.h"
+    :fsize 1618
+    :lastmodtime '(21541 4040 0 0)
+    )
+   (semanticdb-table "timer.h"
+    :file "timer.h"
+    :fsize 637
+    :lastmodtime '(21541 4040 0 0)
+    )
+   )
+  :file "!Users!nshetty!Documents!Homework-1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

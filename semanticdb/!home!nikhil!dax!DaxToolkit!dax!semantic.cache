@@ -1,0 +1,974 @@
+;; Object dax/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dax/"
+  :tables (list 
+   (semanticdb-table "Types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_Types_h" variable (:constant-flag t) nil [679 692])
+            ("dax/internal/Configure.h" include (:system-flag t) nil [694 729])
+            ("dax/internal/ExportMacros.h" include (:system-flag t) nil [730 768])
+            ("dax" type
+               (:members 
+                  ( ("internal" type
+                       (:members 
+                          ( ("Int32Type" type
+                               (:typedef ("int")
+                                :superclasses "int"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2838 2860])
+                            ("UInt32Type" type
+                               (:typedef ("unsigned int")
+                                :superclasses "unsigned int"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2861 2893])
+                            ("Int64Type" type
+                               (:typedef ("long")
+                                :superclasses "long"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2971 2994])
+                            ("UInt64Type" type
+                               (:typedef ("unsigned long")
+                                :superclasses "unsigned long"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2995 3028])
+                            ("Int64Type" type
+                               (:typedef ("long long")
+                                :superclasses "long long"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3059 3087])
+                            ("UInt64Type" type
+                               (:typedef ("unsigned long long")
+                                :superclasses "unsigned long long"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3088 3126])
+                            ("equals" type
+                               (:template 
+                                  ( ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3359 3370])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3371 3382]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3343 3456]))                                  )
+                                (reparse-symbol namespacesubparts) [3262 3459])
+                            ("equals" type
+                               (:type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3553 3564])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3565 3576]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3537 3615]))                                  
+                                :template-specifier (("1")))
+                                (reparse-symbol namespacesubparts) [3461 3618])
+                            ("assign_scalar_to_vector" type
+                               (:template 
+                                  ( ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:reference 1
+                                                :type ("VectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3769 3786])
+                                            ("src" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ComponentType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3787 3812]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3753 3894]))                                  )
+                                (reparse-symbol namespacesubparts) [3620 3897])
+                            ("assign_scalar_to_vector" type
+                               (:type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:reference 1
+                                                :type ("VectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4043 4060])
+                                            ("src" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ComponentType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4061 4086]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4027 4113]))                                  
+                                :template-specifier (("1")))
+                                (reparse-symbol namespacesubparts) [3899 4116])
+                            ("copy_vector" type
+                               (:template 
+                                  ( ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:reference 1
+                                                :type ("T1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4234 4243])
+                                            ("src" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4244 4258]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4218 4336]))                                  )
+                                (reparse-symbol namespacesubparts) [4118 4339])
+                            ("copy_vector" type
+                               (:type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:reference 1
+                                                :type ("T1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4452 4461])
+                                            ("src" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4462 4476]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4436 4506]))                                  
+                                :template-specifier (("1")))
+                                (reparse-symbol namespacesubparts) [4341 4509]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2794 4512])
+                    ("Id" type
+                       (:typedef ("internal::Int32Type" type (:type "class") nil nil)
+                        :superclasses "internal::Int32Type"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4661 4731])
+                    ("Id" type
+                       (:typedef ("internal::Int64Type" type (:type "class") nil nil)
+                        :superclasses "internal::Int64Type"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4779 4849])
+                    ("Scalar" type
+                       (:typedef ("float")
+                        :superclasses "float"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5124 5188])
+                    ("Tuple" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5399 5406])
+                            ("ComponentType" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5409 5433])
+                            ("NUM_COMPONENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5436 5473])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5477 5507])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5546 5573]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5531 5675])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5714 5742]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5699 5848])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("Size" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5880 5918]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5851 6023])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("Size" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6088 6126]))                                  
+                                :type ("Tuple" type
+                                     (:template-specifier 
+                                        ( ("ComponentType" type nil nil nil)
+                                          ("Size" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6050 6249])
+                            ("[]" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6306 6314]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6274 6360])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6410 6418]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6384 6458])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6501 6538]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6485 6776])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6818 6855]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6802 6908])
+                            ("protected" label nil (reparse-symbol classsubparts) [6910 6920])
+                            ("Components" variable
+                               (:dereference 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6923 6964]))                          )
+                        (reparse-symbol namespacesubparts) [5354 6967])
+                    ("Tuple" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7153 7160])
+                            ("ComponentType" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7163 7187])
+                            ("NUM_COMPONENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [7190 7226])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7230 7260])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7299 7326]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7284 7415])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7454 7482]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7439 7561])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7591 7607])
+                                    ("y" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7608 7624]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7564 7688])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7720 7768]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7691 7855])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7933 7981]))                                  
+                                :type ("Tuple" type
+                                     (:template-specifier 
+                                        ( ("ComponentType" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7882 8086])
+                            ("[]" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [8143 8151]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8111 8197])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [8247 8255]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8221 8295])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8338 8375]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8322 8450])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8492 8529]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8476 8582])
+                            ("protected" label nil (reparse-symbol classsubparts) [8584 8594])
+                            ("Components" variable
+                               (:dereference 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8597 8638]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("2"))                          )
+                        (reparse-symbol namespacesubparts) [7114 8641])
+                    ("Vector2" type
+                       (:typedef ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("dax::Scalar" type nil nil nil)
+                                  ("2"))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "dax::Tuple"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [8680 8769])
+                    ("Tuple" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8810 8817])
+                            ("ComponentType" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8820 8844])
+                            ("NUM_COMPONENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [8847 8883])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8887 8917])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8956 8983]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8941 9072])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9111 9139]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9096 9218])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9250 9266])
+                                    ("y" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9267 9283])
+                                    ("z" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9284 9300]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9221 9393])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9425 9473]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9396 9560])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9638 9686]))                                  
+                                :type ("Tuple" type
+                                     (:template-specifier 
+                                        ( ("ComponentType" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [9587 9791])
+                            ("[]" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [9848 9856]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9816 9902])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [9952 9960]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9926 10000])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10043 10080]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10027 10155])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10197 10234]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10181 10287])
+                            ("protected" label nil (reparse-symbol classsubparts) [10289 10299])
+                            ("Components" variable
+                               (:dereference 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10302 10343]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("3"))                          )
+                        (reparse-symbol namespacesubparts) [8771 10346])
+                    ("Vector3" type
+                       (:typedef ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("dax::Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "dax::Tuple"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [10385 10474])
+                    ("Tuple" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [10515 10522])
+                            ("ComponentType" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10525 10549])
+                            ("NUM_COMPONENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [10552 10588])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10592 10622])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10661 10688]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10646 10777])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ComponentType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10816 10844]))                                  
+                                :type ("explicit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10801 10923])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10955 10971])
+                                    ("y" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10972 10988])
+                                    ("z" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10989 11005])
+                                    ("w" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11006 11022]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10926 11144])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11176 11224]))                                  
+                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11147 11311])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("ComponentType" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11389 11437]))                                  
+                                :type ("Tuple" type
+                                     (:template-specifier 
+                                        ( ("ComponentType" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [11338 11542])
+                            ("[]" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [11599 11607]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11567 11653])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [11703 11711]))                                  
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11677 11751])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11794 11831]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11778 11906])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("NUM_COMPONENTS" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11948 11985]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11932 12038])
+                            ("protected" label nil (reparse-symbol classsubparts) [12040 12050])
+                            ("Components" variable
+                               (:dereference 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12053 12094]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("4"))                          )
+                        (reparse-symbol namespacesubparts) [10476 12097])
+                    ("Vector4" type
+                       (:typedef ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("dax::Scalar" type nil nil nil)
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "dax::Tuple"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12136 12225])
+                    ("Id3" type
+                       (:typedef ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("dax::Id" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "dax::Tuple"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12357 12430])
+                    ("make_Vector2" function
+                       (:arguments 
+                          ( ("x" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12518 12532])
+                            ("y" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12580 12594]))                          
+                        :type ("dax::Vector2" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12492 12627])
+                    ("make_Vector3" function
+                       (:arguments 
+                          ( ("x" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12715 12729])
+                            ("y" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12777 12791])
+                            ("z" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12839 12853]))                          
+                        :type ("dax::Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12689 12889])
+                    ("make_Vector4" function
+                       (:arguments 
+                          ( ("x" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12977 12991])
+                            ("y" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13039 13053])
+                            ("z" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13101 13115])
+                            ("w" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13163 13177]))                          
+                        :type ("dax::Vector4" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12951 13216])
+                    ("make_Id3" function
+                       (:arguments 
+                          ( ("x" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13292 13302])
+                            ("y" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13303 13313])
+                            ("z" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13314 13324]))                          
+                        :type ("dax::Id3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13274 13356])
+                    ("dot" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("Size" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13416 13444])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("Size" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13472 13500]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13410 13680])
+                    ("dot" function
+                       (:arguments 
+                          ( ("a" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13715 13725])
+                            ("b" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13726 13736]))                          
+                        :type ("dax::Id" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13703 13756])
+                    ("dot" function
+                       (:arguments 
+                          ( ("a" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13795 13809])
+                            ("b" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13810 13824]))                          
+                        :type ("dax::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13779 13844]))                  
+                :type "namespace")
+                nil [2472 13847])
+            ("+" function
+               (:operator-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13954 13982])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14033 14061]))                  
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13925 14263])
+            ("-" function
+               (:operator-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14345 14373])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14424 14452]))                  
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14316 14654])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14707 15045])
+            ("/" function
+               (:operator-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15127 15155])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::Tuple" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("Size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15206 15234]))                  
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15098 15436])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("Ta" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16050 16360])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("dax::Tuple" type
+                     (:template-specifier 
+                        ( ("Tb" type nil nil nil)
+                          ("Size" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16427 16737]))          
+    :file "Types.h"
+    :pointmax 16762
+    :fsize 16761
+    :lastmodtime '(20761 16587)
+    :unmatched-syntax '((symbol 16406 . 16426) (punctuation 16404 . 16405) (symbol 16400 . 16404) (INT 16396 . 16399) (punctuation 16394 . 16395) (symbol 16392 . 16394) (TYPENAME 16383 . 16391) (punctuation 16381 . 16382) (symbol 16379 . 16381) (TYPENAME 16370 . 16378) (punctuation 16369 . 16370) (TEMPLATE 16361 . 16369) (symbol 16029 . 16049) (punctuation 16027 . 16028) (symbol 16023 . 16027) (INT 16019 . 16022) (punctuation 16017 . 16018) (symbol 16015 . 16017) (TYPENAME 16006 . 16014) (punctuation 16004 . 16005) (symbol 16002 . 16004) (TYPENAME 15993 . 16001) (punctuation 15992 . 15993) (TEMPLATE 15984 . 15992) (symbol 15077 . 15097) (punctuation 15075 . 15076) (symbol 15071 . 15075) (INT 15067 . 15070) (punctuation 15065 . 15066) (symbol 15064 . 15065) (TYPENAME 15055 . 15063) (punctuation 15054 . 15055) (TEMPLATE 15046 . 15054) (symbol 14686 . 14706) (punctuation 14684 . 14685) (symbol 14680 . 14684) (INT 14676 . 14679) (punctuation 14674 . 14675) (symbol 14673 . 14674) (TYPENAME 14664 . 14672) (punctuation 14663 . 14664) (TEMPLATE 14655 . 14663) (symbol 14295 . 14315) (punctuation 14293 . 14294) (symbol 14289 . 14293) (INT 14285 . 14288) (punctuation 14283 . 14284) (symbol 14282 . 14283) (TYPENAME 14273 . 14281) (punctuation 14272 . 14273) (TEMPLATE 14264 . 14272) (symbol 13904 . 13924) (punctuation 13902 . 13903) (symbol 13898 . 13902) (INT 13894 . 13897) (punctuation 13892 . 13893) (symbol 13891 . 13892) (TYPENAME 13882 . 13890) (punctuation 13881 . 13882) (TEMPLATE 13873 . 13881) (symbol 13758 . 13778) (symbol 13682 . 13702) (symbol 13389 . 13409) (punctuation 13387 . 13388) (symbol 13383 . 13387) (INT 13379 . 13382) (punctuation 13377 . 13378) (symbol 13376 . 13377) (TYPENAME 13367 . 13375) (punctuation 13366 . 13367) (TEMPLATE 13358 . 13366) (symbol 13253 . 13273) (symbol 12930 . 12950) (symbol 12668 . 12688) (symbol 12471 . 12491) (symbol 11909 . 11929) (symbol 11755 . 11775) (symbol 11656 . 11676) (symbol 11546 . 11566) (symbol 11315 . 11335) (symbol 10780 . 10800) (symbol 10625 . 10645) (symbol 10158 . 10178) (symbol 10004 . 10024) (symbol 9905 . 9925) (symbol 9795 . 9815) (symbol 9564 . 9584) (symbol 9075 . 9095) (symbol 8920 . 8940) (symbol 8453 . 8473) (symbol 8299 . 8319) (symbol 8200 . 8220) (symbol 8090 . 8110) (symbol 7859 . 7879) (symbol 7418 . 7438) (symbol 7263 . 7283) (symbol 6779 . 6799) (symbol 6462 . 6482) (symbol 6363 . 6383) (symbol 6253 . 6273) (symbol 6027 . 6047) (symbol 5678 . 5698) (symbol 5510 . 5530) (symbol 4415 . 4435) (punctuation 4411 . 4412) (symbol 4409 . 4411) (TYPENAME 4400 . 4408) (punctuation 4398 . 4399) (symbol 4396 . 4398) (TYPENAME 4387 . 4395) (punctuation 4386 . 4387) (TEMPLATE 4378 . 4386) (symbol 4197 . 4217) (punctuation 4193 . 4194) (symbol 4191 . 4193) (TYPENAME 4182 . 4190) (punctuation 4180 . 4181) (symbol 4178 . 4180) (TYPENAME 4169 . 4177) (punctuation 4168 . 4169) (TEMPLATE 4160 . 4168) (symbol 4004 . 4024) (punctuation 4000 . 4001) (symbol 3987 . 4000) (TYPENAME 3978 . 3986) (punctuation 3976 . 3977) (symbol 3966 . 3976) (TYPENAME 3957 . 3965) (punctuation 3956 . 3957) (TEMPLATE 3948 . 3956) (symbol 3730 . 3750) (punctuation 3726 . 3727) (symbol 3713 . 3726) (TYPENAME 3704 . 3712) (punctuation 3702 . 3703) (symbol 3692 . 3702) (TYPENAME 3683 . 3691) (punctuation 3682 . 3683) (TEMPLATE 3674 . 3682) (symbol 3516 . 3536) (punctuation 3512 . 3513) (symbol 3511 . 3512) (TYPENAME 3502 . 3510) (punctuation 3501 . 3502) (TEMPLATE 3493 . 3501) (symbol 3322 . 3342) (punctuation 3318 . 3319) (symbol 3317 . 3318) (TYPENAME 3308 . 3316) (punctuation 3307 . 3308) (TEMPLATE 3299 . 3307))
+    :lexical-table 
+        '(("__dax_Types_h")
+          )
+
+    )
+   (semanticdb-table "CellTag.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_CellTag_h" variable (:constant-flag t) nil [681 696])
+            ("dax" type
+               (:members 
+                  ( ("CellTagHexahedron" type (:type "struct") (reparse-symbol namespacesubparts) [1093 1122])
+                    ("CellTagLine" type (:type "struct") (reparse-symbol namespacesubparts) [1123 1146])
+                    ("CellTagQuadrilateral" type (:type "struct") (reparse-symbol namespacesubparts) [1147 1179])
+                    ("CellTagTetrahedron" type (:type "struct") (reparse-symbol namespacesubparts) [1180 1210])
+                    ("CellTagTriangle" type (:type "struct") (reparse-symbol namespacesubparts) [1211 1238])
+                    ("CellTagVertex" type (:type "struct") (reparse-symbol namespacesubparts) [1239 1264])
+                    ("CellTagVoxel" type (:type "struct") (reparse-symbol namespacesubparts) [1265 1289])
+                    ("CellTagWedge" type (:type "struct") (reparse-symbol namespacesubparts) [1290 1314]))                  
+                :type "namespace")
+                nil [698 1317]))          
+    :file "CellTag.h"
+    :pointmax 1361
+    :fsize 1360
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax_CellTag_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

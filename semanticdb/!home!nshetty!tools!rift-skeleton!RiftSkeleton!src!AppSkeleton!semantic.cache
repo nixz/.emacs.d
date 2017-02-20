@@ -1,0 +1,424 @@
+;; Object AppSkeleton/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AppSkeleton/"
+  :tables (list 
+   (semanticdb-table "RiftAppSkeleton.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AppSkeleton.h" include nil nil [181 205])
+            ("Kernel/OVR_Types.h" include (:system-flag t) nil [207 236])
+            ("OVR_CAPI.h" include (:system-flag t) nil [265 286])
+            ("OVR_CAPI_GL.h" include (:system-flag t) nil [287 311])
+            ("RiftAppSkeleton" type
+               (:superclasses 
+                  ( ("AppSkeleton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [476 483])
+                    ("RiftAppSkeleton" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [488 506])
+                    ("RiftAppSkeleton" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [511 538])
+                    ("initHMD" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [544 559])
+                    ("initVR" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("swapBackBufferDims" variable (:type "bool") (reparse-symbol arg-sub-list) [576 601])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [602 608]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [564 609])
+                    ("exitVR" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [614 628])
+                    ("RecenterPose" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [633 653])
+                    ("ConfigureRendering" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [658 683])
+                    ("ConfigureSDKRendering" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [688 716])
+                    ("ConfigureClientRendering" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [721 752])
+                    ("ToggleVignette" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [758 780])
+                    ("ToggleTimeWarp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [785 807])
+                    ("ToggleOverdrive" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [812 835])
+                    ("ToggleLowPersistence" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [840 868])
+                    ("ToggleMirrorToWindow" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [873 901])
+                    ("ToggleDynamicPrediction" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [906 937])
+                    ("DismissHealthAndSafetyWarning" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [943 986])
+                    ("CheckForTapToDismissHealthAndSafetyWarning" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [991 1047])
+                    ("display_stereo_undistorted" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1053 1093])
+                    ("display_sdk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1098 1123])
+                    ("display_client" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1128 1156])
+                    ("AttachToWindow" function
+                       (:arguments 
+                          ( ("pWindow" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1225 1239]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1205 1294])
+                    ("timestep" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("absTime" variable (:type "double") (reparse-symbol arg-sub-list) [1499 1514])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [1515 1525]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1477 1526])
+                    ("getHmdResolution" function
+                       (:prototype-flag t
+                        :type ("ovrSizei" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1532 1566])
+                    ("getHmdWindowPos" function
+                       (:prototype-flag t
+                        :type ("ovrVector2i" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1571 1607])
+                    ("UsingDebugHmd" function (:type "bool") (reparse-symbol classsubparts) [1612 1666])
+                    ("UsingDirectMode" function (:type "bool") (reparse-symbol classsubparts) [1671 1727])
+                    ("protected" label nil (reparse-symbol classsubparts) [1729 1739])
+                    ("_initPresentDistMesh" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shader" variable
+                               (:reference 1
+                                :type ("ShaderWithVariables" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1770 1798])
+                            ("eyeIdx" variable (:type "int") (reparse-symbol arg-sub-list) [1799 1810]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1744 1811])
+                    ("getRTSize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("glm::ivec2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1816 1853])
+                    ("makeWorldToEyeMatrix" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("glm::mat4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1859 1906])
+                    ("m_Hmd" variable (:type ("ovrHmd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1912 1925])
+                    ("m_EyeFov" variable
+                       (:dereference 1
+                        :type ("ovrFovPort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1930 1953])
+                    ("m_Cfg" variable (:type ("ovrGLConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1958 1976])
+                    ("m_EyeRenderDesc" variable
+                       (:dereference 1
+                        :type ("ovrEyeRenderDesc" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1981 2017])
+                    ("m_EyeTexture" variable
+                       (:dereference 1
+                        :type ("ovrGLTexture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2022 2051])
+                    ("m_hmdCaps" variable (:type "unsigned int") (reparse-symbol classsubparts) [2056 2079])
+                    ("m_distortionCaps" variable (:type "unsigned int") (reparse-symbol classsubparts) [2084 2114])
+                    ("m_usingDebugHmd" variable (:type "bool") (reparse-symbol classsubparts) [2119 2140])
+                    ("m_directHmdMode" variable (:type "bool") (reparse-symbol classsubparts) [2145 2166])
+                    ("m_RenderViewports" variable
+                       (:dereference 1
+                        :type ("ovrRecti" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2200 2230])
+                    ("m_DistMeshes" variable
+                       (:dereference 1
+                        :type ("ovrDistortionMesh" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2235 2269])
+                    ("m_eyePoseCached" variable
+                       (:typemodifiers ("mutable")
+                        :type ("ovrPosef" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2274 2307])
+                    ("m_logUserData" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2313 2337])
+                    ("private" label nil (reparse-symbol classsubparts) [2339 2347])
+                    ("RiftAppSkeleton" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2414 2437]))                          
+                        :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2398 2438])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2470 2493]))                          
+                        :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2443 2494]))                  
+                :type "class")
+                nil [431 2497]))          
+    :file "RiftAppSkeleton.h"
+    :pointmax 2498
+    :fsize 2498
+    :lastmodtime '(21952 60042 621663 961000)
+    :unmatched-syntax '((punctuation 600 . 601) (symbol 31 . 35) (symbol 24 . 30) (punctuation 23 . 24))
+    )
+   (semanticdb-table "AppSkeleton.h"
+    :file "AppSkeleton.h"
+    :fsize 3216
+    :lastmodtime '(21952 60042 621663 961000)
+    )
+   (semanticdb-table "RiftAppSkeleton.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [120 140])
+            ("_USE_MATH_DEFINES" variable (:constant-flag t) nil [150 167])
+            ("math.h" include (:system-flag t) nil [168 185])
+            ("algorithm" include (:system-flag t) nil [186 206])
+            ("iostream" include (:system-flag t) nil [207 226])
+            ("OVR.h" include (:system-flag t) nil [228 244])
+            ("RiftAppSkeleton.h" include nil nil [246 274])
+            ("ShaderFunctions.h" include nil nil [275 303])
+            ("MatrixFunctions.h" include nil nil [304 332])
+            ("GLUtils.h" include nil nil [333 353])
+            ("USE_OVR_PERF_LOGGING" variable (:constant-flag t) nil [363 383])
+            ("PROJECT_NAME" variable (:constant-flag t) nil [464 476])
+            ("RiftAppSkeleton" function
+               (:constructor-flag t
+                :parent "RiftAppSkeleton"
+                :type ("RiftAppSkeleton" type (:type "class") nil nil))
+                nil [500 927])
+            ("RiftAppSkeleton" function
+               (:destructor-flag t
+                :parent "RiftAppSkeleton"
+                :type "void")
+                nil [929 968])
+            ("RecenterPose" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [970 1081])
+            ("getHmdResolution" function
+               (:parent "RiftAppSkeleton"
+                :type ("ovrSizei" type (:type "class") nil nil))
+                nil [1083 1262])
+            ("getHmdWindowPos" function
+               (:parent "RiftAppSkeleton"
+                :type ("ovrVector2i" type (:type "class") nil nil))
+                nil [1264 1443])
+            ("getRTSize" function
+               (:parent "RiftAppSkeleton"
+                :type ("glm::ivec2" type (:type "class") nil nil))
+                nil [1445 1587])
+            ("makeWorldToEyeMatrix" function
+               (:parent "RiftAppSkeleton"
+                :type ("glm::mat4" type (:type "class") nil nil))
+                nil [1726 1862])
+            ("initHMD" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [1955 2929])
+            ("initVR" function
+               (:parent "RiftAppSkeleton"
+                :arguments 
+                  ( ("swapBackBufferDims" variable (:type "bool") (reparse-symbol arg-sub-list) [2960 2984]))                  
+                :type "void")
+                nil [2931 3643])
+            ("_initPresentDistMesh" function
+               (:parent "RiftAppSkeleton"
+                :arguments 
+                  ( ("shader" variable
+                       (:reference 1
+                        :type ("ShaderWithVariables" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3688 3716])
+                    ("eyeIdx" variable (:type "int") (reparse-symbol arg-sub-list) [3717 3728]))                  
+                :type "void")
+                nil [3645 5734])
+            ("exitVR" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [5736 5919])
+            ("calculateCombinedTextureSize" function
+               (:arguments 
+                  ( ("pHmd" variable (:type ("ovrHmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6040 6052]))                  
+                :type ("ovrSizei" type (:type "class") nil nil))
+                nil [6002 6432])
+            ("ConfigureRendering" function
+               (:parent "RiftAppSkeleton"
+                :type "int")
+                nil [6480 7484])
+            ("ConfigureSDKRendering" function
+               (:parent "RiftAppSkeleton"
+                :type "int")
+                nil [7564 8030])
+            ("ConfigureClientRendering" function
+               (:parent "RiftAppSkeleton"
+                :type "int")
+                nil [8102 8796])
+            ("ToggleVignette" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [8905 9096])
+            ("ToggleTimeWarp" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [9098 9289])
+            ("ToggleOverdrive" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [9291 9484])
+            ("ToggleLowPersistence" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [9486 9622])
+            ("ToggleMirrorToWindow" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [9624 9843])
+            ("ToggleDynamicPrediction" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [9845 9987])
+            ("DismissHealthAndSafetyWarning" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [10062 10309])
+            ("CheckForTapToDismissHealthAndSafetyWarning" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [10492 11229])
+            ("timestep" function
+               (:parent "RiftAppSkeleton"
+                :arguments 
+                  ( ("absTime" variable (:type "double") (reparse-symbol arg-sub-list) [11262 11277])
+                    ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [11278 11288]))                  
+                :type "void")
+                nil [11231 11545])
+            ("display_stereo_undistorted" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [11547 14379])
+            ("display_sdk" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [14381 16935])
+            ("display_client" function
+               (:parent "RiftAppSkeleton"
+                :type "void")
+                nil [16937 21175]))          
+    :file "RiftAppSkeleton.cpp"
+    :pointmax 21176
+    :fsize 21175
+    :lastmodtime '(21952 60042 621663 961000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_USE_MATH_DEFINES")
+          ("USE_OVR_PERF_LOGGING")
+          ("PROJECT_NAME" . ((string "\"RiftSkeleton\"" 477 . 491)))
+          )
+
+    )
+   (semanticdb-table "RenderingMode.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("RenderingMode" type
+               (:members 
+                  ( ("outputType" type
+                       (:members 
+                          ( ("Mono_Raw" variable
+                               (:constant-flag t
+                                :default-value (224 225)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [215 225])
+                            ("Mono_Buffered" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [235 249])
+                            ("SideBySide_Undistorted" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [258 281])
+                            ("OVR_SDK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [290 298])
+                            ("OVR_Client" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [307 318]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [189 325])
+                    ("RenderingMode" function
+                       (:constructor-flag t
+                        :type ("RenderingMode" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [331 377])
+                    ("outputType" variable (:type ("outputType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [383 405])
+                    ("toggleRenderingType" function (:type "void") (reparse-symbol classsubparts) [411 834])
+                    ("toggleRenderingTypeReverse" function (:type "void") (reparse-symbol classsubparts) [840 1267])
+                    ("toggleRenderingTypeMono" function (:type "void") (reparse-symbol classsubparts) [1273 1439])
+                    ("toggleRenderingTypeHMD" function (:type "void") (reparse-symbol classsubparts) [1445 1709])
+                    ("toggleRenderingTypeDistortion" function (:type "void") (reparse-symbol classsubparts) [1715 1882]))                  
+                :type "struct")
+                nil [162 1885]))          
+    :file "RenderingMode.h"
+    :pointmax 1886
+    :fsize 1885
+    :lastmodtime '(21952 60042 621663 961000)
+    :unmatched-syntax '((symbol 29 . 33) (symbol 22 . 28) (punctuation 21 . 22))
+    )
+   )
+  :file "!home!nshetty!tools!rift-skeleton!RiftSkeleton!src!AppSkeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

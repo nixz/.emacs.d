@@ -1,0 +1,107 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkRenderWindow.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkRenderWindow_h" variable (:constant-flag t) nil [1825 1844])
+            ("vtkRenderingCoreModule.h" include nil nil [1846 1881])
+            ("vtkWindow.h" include nil nil [1902 1924])
+            ("vtkFloatArray" type
+               (:prototype t
+                :type "class")
+                nil [1926 1946])
+            ("vtkPainterDeviceAdapter" type
+               (:prototype t
+                :type "class")
+                nil [1947 1977])
+            ("vtkProp" type
+               (:prototype t
+                :type "class")
+                nil [1978 1992])
+            ("vtkCollection" type
+               (:prototype t
+                :type "class")
+                nil [1993 2013])
+            ("vtkRenderWindowInteractor" type
+               (:prototype t
+                :type "class")
+                nil [2014 2046])
+            ("vtkRenderer" type
+               (:prototype t
+                :type "class")
+                nil [2047 2065])
+            ("vtkRendererCollection" type
+               (:prototype t
+                :type "class")
+                nil [2066 2094])
+            ("vtkUnsignedCharArray" type
+               (:prototype t
+                :type "class")
+                nil [2095 2122])
+            ("VTK_STEREO_CRYSTAL_EYES" variable (:constant-flag t) nil [2177 2200])
+            ("VTK_STEREO_RED_BLUE" variable (:constant-flag t) nil [2211 2230])
+            ("VTK_STEREO_INTERLACED" variable (:constant-flag t) nil [2245 2266])
+            ("VTK_STEREO_LEFT" variable (:constant-flag t) nil [2279 2294])
+            ("VTK_STEREO_RIGHT" variable (:constant-flag t) nil [2313 2329])
+            ("VTK_STEREO_DRESDEN" variable (:constant-flag t) nil [2347 2365])
+            ("VTK_STEREO_ANAGLYPH" variable (:constant-flag t) nil [2381 2400])
+            ("VTK_STEREO_CHECKERBOARD" variable (:constant-flag t) nil [2415 2438])
+            ("VTK_STEREO_SPLITVIEWPORT_HORIZONTAL" variable (:constant-flag t) nil [2449 2484])
+            ("VTK_CURSOR_DEFAULT" variable (:constant-flag t) nil [2496 2514])
+            ("VTK_CURSOR_ARROW" variable (:constant-flag t) nil [2527 2543])
+            ("VTK_CURSOR_SIZENE" variable (:constant-flag t) nil [2558 2575])
+            ("VTK_CURSOR_SIZENW" variable (:constant-flag t) nil [2589 2606])
+            ("VTK_CURSOR_SIZESW" variable (:constant-flag t) nil [2620 2637])
+            ("VTK_CURSOR_SIZESE" variable (:constant-flag t) nil [2651 2668])
+            ("VTK_CURSOR_SIZENS" variable (:constant-flag t) nil [2682 2699])
+            ("VTK_CURSOR_SIZEWE" variable (:constant-flag t) nil [2713 2730])
+            ("VTK_CURSOR_SIZEALL" variable (:constant-flag t) nil [2744 2762])
+            ("VTK_CURSOR_HAND" variable (:constant-flag t) nil [2775 2790])
+            ("VTK_CURSOR_CROSSHAIR" variable (:constant-flag t) nil [2806 2826])
+            ("vtkGraphicErrorMacro" variable (:constant-flag t) nil [3374 3394])
+            ("vtkWindow" variable (:type "int") nil [4034 25067]))          
+    :file "vtkRenderWindow.h"
+    :pointmax 25076
+    :fsize 25075
+    :lastmodtime '(20865 5173)
+    :unmatched-syntax '((PUBLIC 4027 . 4033) (punctuation 4025 . 4026) (symbol 4009 . 4024) (symbol 3985 . 4008) (CLASS 3979 . 3984))
+    :lexical-table 
+        '(("VTK_STEREO_INTERLACED" . ((number "3" 2269 . 2270)))
+          ("VTK_STEREO_RIGHT" . ((number "5" 2337 . 2338)))
+          ("VTK_CURSOR_SIZENW" . ((number "3" 2610 . 2611)))
+          ("VTK_STEREO_CRYSTAL_EYES" . ((number "1" 2201 . 2202)))
+          ("VTK_CURSOR_SIZEALL" . ((number "8" 2765 . 2766)))
+          ("VTK_CURSOR_SIZESW" . ((number "4" 2641 . 2642)))
+          ("vtkGraphicErrorMacro" (spp-arg-list ("renderWindow" "message") 3394 . 3416) . 
+              ((IF "if" 3441 . 3443) (semantic-list "(renderWindow->GetReportGraphicErrors())" 3443 . 3483) (semantic-list "{                                                                   \\
+    renderWindow->CheckGraphicError();                                  \\
+    if(renderWindow->HasGraphicError())                                 \\
+      {                                                                 \\
+      vtkErrorMacro(<<message<<\" \"<<renderWindow->GetLastGraphicErrorString()); \\
+      }                                                                 \\
+    }" 3517 . 3970)))
+          ("__vtkRenderWindow_h")
+          ("VTK_STEREO_RED_BLUE" . ((number "2" 2235 . 2236)))
+          ("VTK_STEREO_DRESDEN" . ((number "6" 2371 . 2372)))
+          ("VTK_STEREO_ANAGLYPH" . ((number "7" 2405 . 2406)))
+          ("VTK_CURSOR_ARROW" . ((number "1" 2548 . 2549)))
+          ("VTK_CURSOR_SIZENE" . ((number "2" 2579 . 2580)))
+          ("VTK_CURSOR_CROSSHAIR" . ((number "10" 2827 . 2829)))
+          ("VTK_STEREO_SPLITVIEWPORT_HORIZONTAL" . ((number "9" 2485 . 2486)))
+          ("VTK_CURSOR_DEFAULT" . ((number "0" 2517 . 2518)))
+          ("VTK_CURSOR_SIZENS" . ((number "6" 2703 . 2704)))
+          ("VTK_CURSOR_SIZEWE" . ((number "7" 2734 . 2735)))
+          ("VTK_CURSOR_SIZESE" . ((number "5" 2672 . 2673)))
+          ("VTK_STEREO_LEFT" . ((number "4" 2303 . 2304)))
+          ("VTK_STEREO_CHECKERBOARD" . ((number "8" 2439 . 2440)))
+          ("VTK_CURSOR_HAND" . ((number "9" 2796 . 2797)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Rendering!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,123 @@
+;; Object matrixMul/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "matrixMul/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("OSUPPER" variable (:default-value ("$(shell uname -s 2>/dev/null | tr \"[:lower:]\" \"[:upper:]\")")) nil [1815 1884])
+            ("OSLOWER" variable (:default-value ("$(shell uname -s 2>/dev/null | tr \"[:upper:]\" \"[:lower:]\")")) nil [1884 1953])
+            ("OS_SIZE" variable (:default-value ("$(shell uname -m | sed -e \"s/x86_64/64/\" -e \"s/armv7l/32/\" -e \"s/aarch64/64/\")")) nil [1954 2046])
+            ("OS_ARCH" variable (:default-value ("$(shell uname -m)")) nil [2046 2077])
+            ("ARCH_FLAGS" variable nil nil [2077 2090])
+            ("DARWIN" variable (:default-value ("$(strip $(findstring DARWIN, $(OSUPPER)))")) nil [2091 2142])
+            ("NVCC" variable (:default-value ("$(CUDA_PATH)/bin/nvcc" "-ccbin" "$(GCC)")) nil [2778 2822])
+            ("NVCCFLAGS" variable (:default-value ("-m${OS_SIZE}" "${ARCH_FLAGS}")) nil [2840 2882])
+            ("CCFLAGS" variable nil nil [2882 2897])
+            ("LDFLAGS" variable nil nil [2897 2912])
+            ("GCCVERSIONLTEQ46" variable (:default-value ("$(shell expr `$(GCC) -dumpversion` \\<= 4.6)")) nil [3541 3605])
+            ("CCFLAGS" variable (:default-value ("--sysroot=$(TARGET_FS)")) nil [3634 3668])
+            ("LDFLAGS" variable (:default-value ("--sysroot=$(TARGET_FS)")) nil [3674 3708])
+            ("LDFLAGS" variable (:default-value ("-rpath-link=$(TARGET_FS)/lib")) nil [3708 3748])
+            ("LDFLAGS" variable (:default-value ("-rpath-link=$(TARGET_FS)/usr/lib")) nil [3748 3792])
+            ("LDFLAGS" variable (:default-value ("-rpath-link=$(TARGET_FS)/usr/lib/arm-linux-$(abi)")) nil [3792 3853])
+            ("ALL_CCFLAGS" variable nil nil [3985 4000])
+            ("ALL_CCFLAGS" variable (:default-value ("$(NVCCFLAGS)")) nil [4000 4028])
+            ("ALL_CCFLAGS" variable (:default-value ("$(EXTRA_NVCCFLAGS)")) nil [4028 4062])
+            ("ALL_CCFLAGS" variable (:default-value ("$(addprefix -Xcompiler ,$(CCFLAGS))")) nil [4062 4113])
+            ("ALL_CCFLAGS" variable (:default-value ("$(addprefix -Xcompiler ,$(EXTRA_CCFLAGS))")) nil [4113 4170])
+            ("ALL_LDFLAGS" variable nil nil [4171 4186])
+            ("ALL_LDFLAGS" variable (:default-value ("$(ALL_CCFLAGS)")) nil [4186 4216])
+            ("ALL_LDFLAGS" variable (:default-value ("$(addprefix -Xlinker ,$(LDFLAGS))")) nil [4216 4265])
+            ("ALL_LDFLAGS" variable (:default-value ("$(addprefix -Xlinker ,$(EXTRA_LDFLAGS))")) nil [4265 4320])
+            ("INCLUDES" variable (:default-value ("-I../../common/inc")) nil [4358 4390])
+            ("LIBRARIES" variable nil nil [4390 4403])
+            ("SAMPLE_ENABLED" variable (:default-value ("1")) nil [4486 4506])
+            ("SAMPLE_ENABLED" variable (:default-value ("0")) nil [4712 4732])
+            ("HIGHEST_SM" variable (:default-value ("$(lastword $(sort $(SMS)))")) nil [5014 5055])
+            ("GENCODE_FLAGS" variable (:default-value ("-gencode" "arch=compute_$(HIGHEST_SM),code=compute_$(HIGHEST_SM)")) nil [5078 5158])
+            ("all" function (:arguments ("build")) nil [5322 5333])
+            ("build" function (:arguments ("matrixMul")) nil [5334 5351])
+            ("check.deps" function nil nil [5352 5364])
+            ("matrixMul.o" function (:arguments ("matrixMul.cu")) nil [5530 5628])
+            ("matrixMul" function (:arguments ("matrixMul.o")) nil [5629 5880])
+            ("run" function (:arguments ("build")) nil [5881 5913])
+            ("clean" function nil nil [5914 6030]))          
+    :file "Makefile"
+    :pointmax 6046
+    :fsize 6045
+    :lastmodtime '(21611 42889 0 0)
+    :unmatched-syntax '((symbol 6040 . 6045) (punctuation 6038 . 6039) (symbol 6031 . 6038) (bol 6031 . 6031) (shell-command 5466 . 5522) (bol 5465 . 5465) (shell-command 5392 . 5459) (bol 5391 . 5391) (string 5212 . 5217) (symbol 5207 . 5211) (punctuation 5206 . 5207) (punctuation 5204 . 5205) (punctuation 5203 . 5204) (symbol 5198 . 5202) (bol 5198 . 5198) (semantic-list 4828 . 4914) (punctuation 4827 . 4828) (bol 4827 . 4827) (semantic-list 4630 . 4711) (punctuation 4629 . 4630) (bol 4629 . 4629) (symbol 4604 . 4606) (symbol 4601 . 4603) (symbol 4598 . 4600) (symbol 4595 . 4597) (symbol 4592 . 4594) (symbol 4589 . 4591) (punctuation 4587 . 4588) (punctuation 4586 . 4587) (symbol 4582 . 4585) (bol 4582 . 4582) (symbol 4574 . 4576) (symbol 4571 . 4573) (symbol 4568 . 4570) (symbol 4565 . 4567) (symbol 4562 . 4564) (symbol 4559 . 4561) (punctuation 4557 . 4558) (punctuation 4556 . 4557) (symbol 4552 . 4555) (bol 4552 . 4552) (symbol 3970 . 3977) (punctuation 3968 . 3969) (punctuation 3967 . 3968) (symbol 3960 . 3966) (bol 3954 . 3954) (symbol 3943 . 3948) (punctuation 3941 . 3942) (punctuation 3940 . 3941) (symbol 3933 . 3939) (bol 3927 . 3927) (symbol 3924 . 3926) (symbol 3921 . 3923) (punctuation 3919 . 3920) (punctuation 3918 . 3919) (symbol 3908 . 3917) (bol 3902 . 3902) (ENDIF 3488 . 3493) (bol 3486 . 3486) (ENDIF 3480 . 3485) (bol 3476 . 3476) (ENDIF 3470 . 3475) (bol 3464 . 3464) (symbol 3459 . 3463) (punctuation 3458 . 3459) (symbol 3447 . 3458) (punctuation 3445 . 3446) (punctuation 3444 . 3445) (symbol 3436 . 3443) (bol 3428 . 3428) (symbol 3403 . 3427) (punctuation 3402 . 3403) (symbol 3386 . 3402) (punctuation 3384 . 3385) (punctuation 3383 . 3384) (symbol 3375 . 3382) (bol 3367 . 3367) (symbol 3357 . 3366) (punctuation 3355 . 3356) (punctuation 3354 . 3355) (symbol 3350 . 3353) (symbol 3341 . 3349) (bol 3333 . 3333) (bol 3302 . 3302) (ELSE 3297 . 3301) (bol 3291 . 3291) (symbol 3284 . 3290) (punctuation 3283 . 3284) (symbol 3272 . 3283) (punctuation 3270 . 3271) (punctuation 3269 . 3270) (symbol 3261 . 3268) (bol 3253 . 3253) (semantic-list 3236 . 3252) (IFEQ 3231 . 3235) (bol 3225 . 3225) (ELSE 3220 . 3224) (bol 3216 . 3216) (symbol 3208 . 3215) (symbol 3189 . 3207) (punctuation 3187 . 3188) (punctuation 3186 . 3187) (symbol 3176 . 3185) (bol 3170 . 3170) (semantic-list 3149 . 3169) (IFEQ 3144 . 3148) (bol 3140 . 3140) (semantic-list 3120 . 3139) (IFEQ 3115 . 3119) (bol 3113 . 3113) (semantic-list 3098 . 3107) (punctuation 3097 . 3098) (symbol 3091 . 3096) (punctuation 3089 . 3090) (punctuation 3088 . 3089) (symbol 3080 . 3087) (bol 3078 . 3078) (symbol 3073 . 3077) (semantic-list 3062 . 3073) (punctuation 3061 . 3062) (symbol 3054 . 3060) (punctuation 3052 . 3053) (punctuation 3051 . 3052) (symbol 3043 . 3050) (bol 3041 . 3041) (punctuation 2993 . 2994) (punctuation 2992 . 2993) (symbol 2974 . 2987) (bol 2974 . 2974) (punctuation 2972 . 2973) (punctuation 2971 . 2972) (symbol 2953 . 2966) (bol 2953 . 2953) (punctuation 2951 . 2952) (punctuation 2950 . 2951) (symbol 2932 . 2947) (bol 2932 . 2932) (punctuation 2764 . 2765) (punctuation 2763 . 2764) (symbol 2762 . 2763) (punctuation 2760 . 2761) (punctuation 2759 . 2760) (symbol 2755 . 2758) (bol 2753 . 2753) (punctuation 2746 . 2747) (punctuation 2745 . 2746) (symbol 2724 . 2745) (punctuation 2722 . 2723) (punctuation 2721 . 2722) (symbol 2717 . 2720) (bol 2715 . 2715) (punctuation 2684 . 2685) (punctuation 2683 . 2684) (symbol 2682 . 2683) (punctuation 2680 . 2681) (punctuation 2679 . 2680) (symbol 2675 . 2678) (bol 2673 . 2673) (symbol 2662 . 2667) (punctuation 2660 . 2661) (punctuation 2659 . 2660) (symbol 2655 . 2658) (bol 2653 . 2653) (shell-command 2552 . 2585) (bol 2551 . 2551) (shell-command 2530 . 2550) (bol 2529 . 2529) (shell-command 2513 . 2528) (bol 2512 . 2512) (shell-command 2452 . 2485) (bol 2451 . 2451) (shell-command 2431 . 2450) (bol 2430 . 2430) (shell-command 2414 . 2429) (bol 2413 . 2413) (shell-command 2372 . 2388) (bol 2371 . 2371) (shell-command 2358 . 2370) (bol 2357 . 2357) (shell-command 2162 . 2268) (bol 2161 . 2161) (symbol 1787 . 1813) (punctuation 1785 . 1786) (punctuation 1784 . 1785) (symbol 1768 . 1777) (bol 1768 . 1768))
+    )
+   (semanticdb-table "matrixMul.cu"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [995 1013])
+            ("assert.h" include (:system-flag t) nil [1014 1033])
+            ("cuda_runtime.h" include (:system-flag t) nil [1051 1076])
+            ("matrixMulCUDA" function
+               (:arguments 
+                  ( ("C" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1331 1340])
+                    ("A" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1341 1350])
+                    ("B" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1351 1360])
+                    ("wA" variable (:type "int") (reparse-symbol arg-sub-list) [1361 1368])
+                    ("wB" variable (:type "int") (reparse-symbol arg-sub-list) [1369 1376]))                  
+                :type "void")
+                nil [1312 3567])
+            ("constantInit" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3587 3599])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [3600 3609])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [3610 3620]))                  
+                :type "void")
+                nil [3569 3694])
+            ("matrixMultiply" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3780 3789])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3790 3802])
+                    ("block_size" variable (:type "int") (reparse-symbol arg-sub-list) [3803 3818])
+                    ("dimsA" variable
+                       (:reference 1
+                        :type ("dim3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3819 3831])
+                    ("dimsB" variable
+                       (:reference 1
+                        :type ("dim3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3832 3844]))                  
+                :type "int")
+                nil [3761 10478])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10514 10523])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10524 10536]))                  
+                :type "int")
+                nil [10505 13474]))          
+    :file "matrixMul.cu"
+    :pointmax 13475
+    :fsize 13447
+    :lastmodtime '(21611 43680 0 0)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!Users!nshetty!Code!COSC5010!Homework-5!matrixMul!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

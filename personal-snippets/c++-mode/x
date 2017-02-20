@@ -1,0 +1,32 @@
+#name : eXceptions ... { ... }
+# --
+//---------------------------------------------------------------------
+/**
+ * @class ${1:Name}Exception
+ *
+ * @brief $0
+ */
+//---------------------------------------------------------------------
+class ${1:Name}Exception : public exception
+{
+public:
+    ${1:$(yas/substr text "[^: ]*")}Exception (const string &whatString, ${2:DataType} ${3:Name})
+        :_whatString(whatString),
+         _${3:$(yas/substr text "[^; ]*")}(${3:$(yas/substr text "[^; ]*")})
+         
+    {}
+         
+    virtual const char *what() const
+    {
+        return _whatString.c_str();
+    }
+    
+    void Report()
+    {
+        cout << "${1:$(yas/substr text "[^: ]*")}Exception Error: ${3:$(yas/substr text "[^; ]*")} = " << _${3:$(yas/substr text "[^; ]*")} << endl;
+        cout << what() <<  endl;
+    }
+private:
+    string _whatString;
+    ${2:$(yas/substr text "*")} _${3:$(yas/substr text "[^; ]*")};
+};

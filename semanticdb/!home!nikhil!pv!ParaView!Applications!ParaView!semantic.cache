@@ -1,0 +1,143 @@
+;; Object ParaView/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ParaView/"
+  :tables (list 
+   (semanticdb-table "ParaViewVRUI.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ParaViewVRUI.h" include nil nil [1354 1379])
+            ("vruiPipe.h" include nil nil [1381 1402])
+            ("vruiServerState.h" include nil nil [1403 1431])
+            ("vruiThread.h" include nil nil [1432 1455])
+            ("vector" include (:system-flag t) nil [1456 1473])
+            ("iostream" include (:system-flag t) nil [1474 1493])
+            ("QTcpSocket" include (:system-flag t) nil [1494 1515])
+            ("QWaitCondition" include (:system-flag t) nil [1516 1541])
+            ("QMutex" include (:system-flag t) nil [1542 1559])
+            ("vtkMath.h" include nil nil [1560 1580])
+            ("vtkSMCaveRenderViewProxy.h" include nil nil [1581 1618])
+            ("pqActiveObjects.h" include nil nil [1619 1647])
+            ("pqView.h" include nil nil [1648 1667])
+            ("pqInternals" type
+               (:parent "ParaViewVRUI"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1704 1711])
+                    ("pqInternals" function
+                       (:constructor-flag t
+                        :type ("pqInternals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1714 1952])
+                    ("pqInternals" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1955 2200])
+                    ("Pipe" variable
+                       (:pointer 1
+                        :type ("vruiPipe" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2203 2218])
+                    ("State" variable
+                       (:pointer 1
+                        :type ("vruiServerState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2221 2244])
+                    ("Active" variable (:type "bool") (reparse-symbol classsubparts) [2247 2259])
+                    ("Streaming" variable (:type "bool") (reparse-symbol classsubparts) [2262 2277])
+                    ("Thread" variable
+                       (:pointer 1
+                        :type ("vruiThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2280 2299])
+                    ("StateMutex" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2303 2322])
+                    ("PacketSignalCond" variable
+                       (:pointer 1
+                        :type ("QWaitCondition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2326 2359])
+                    ("PacketSignalCondMutex" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2362 2392]))                  
+                :type "class")
+                nil [1670 2395])
+            ("ParaViewVRUI" function
+               (:constructor-flag t
+                :parent "ParaViewVRUI"
+                :type ("ParaViewVRUI" type (:type "class") nil nil))
+                nil [3412 3543])
+            ("SetName" function
+               (:parent "ParaViewVRUI"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3652 3669]))                  
+                :type "void")
+                nil [3625 3919])
+            ("GetName" function
+               (:pointer 1
+                :parent "ParaViewVRUI"
+                :constant-flag t
+                :type "char")
+                nil [4001 4067])
+            ("GetPort" function
+               (:parent "ParaViewVRUI"
+                :type "int")
+                nil [4149 4207])
+            ("SetPort" function
+               (:parent "ParaViewVRUI"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [4316 4325]))                  
+                :type "void")
+                nil [4289 4348])
+            ("GetInitialized" function
+               (:parent "ParaViewVRUI"
+                :type "bool")
+                nil [4431 4504])
+            ("Init" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [4586 5491])
+            ("Activate" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [5573 5744])
+            ("Deactivate" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [5826 6001])
+            ("StartStream" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [6083 6738])
+            ("StopStream" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [6820 7038])
+            ("ParaViewVRUI" function
+               (:destructor-flag t
+                :parent "ParaViewVRUI"
+                :type "void")
+                nil [7120 7282])
+            ("callback" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [7364 7721])
+            ("GetNextPacket" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [7803 8908])
+            ("PrintPositionOrientation" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [8990 10166]))          
+    :file "ParaViewVRUI.cxx"
+    :pointmax 10167
+    :fsize 10166
+    :lastmodtime '(20762 34838)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Applications!ParaView!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,141 @@
+;; Object tools-master/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tools-master/"
+  :tables (list 
+   (semanticdb-table "cl-helper.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cl-helper.h" include nil nil [1127 1149])
+            ("string.h" include (:system-flag t) nil [1150 1169])
+            ("stdbool.h" include (:system-flag t) nil [1170 1190])
+            ("MAX_NAME_LEN" variable (:constant-flag t) nil [1203 1215])
+            ("cl_error_to_str" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("e" variable (:type ("cl_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1253 1262]))                  
+                :type "char")
+                nil [1225 4762])
+            ("print_platforms_devices" function (:type "void") nil [4767 6257])
+            ("read_a_line" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6387 6392]))                  
+                :type "char")
+                nil [6369 6949])
+            ("CHOOSE_INTERACTIVELY" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [6954 7003])
+            ("MIN" variable (:constant-flag t) nil [7014 7017])
+            ("MAX" variable (:constant-flag t) nil [7051 7054])
+            ("create_context_on" function
+               (:arguments 
+                  ( ("plat_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7104 7126])
+                    ("dev_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7127 7147])
+                    ("idx" variable (:type ("cl_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7148 7160])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("cl_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7165 7181])
+                    ("queue" variable
+                       (:pointer 1
+                        :type ("cl_command_queue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7182 7206])
+                    ("enable_profiling" variable (:type "int") (reparse-symbol arg-sub-list) [7207 7228]))                  
+                :type "void")
+                nil [7081 11752])
+            ("read_file" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11773 11794]))                  
+                :type "char")
+                nil [11757 12461])
+            ("printed_compiler_output_message" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [12466 12513])
+            ("kernel_from_string" function
+               (:arguments 
+                  ( ("ctx" variable (:type ("cl_context" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12544 12559])
+                    ("knl" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12564 12580])
+                    ("knl_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12581 12602])
+                    ("options" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12603 12623]))                  
+                :type ("cl_kernel" type (:type "class") nil nil))
+                nil [12515 14931])
+            ("print_device_info" function
+               (:arguments 
+                  ( ("device" variable (:type ("cl_device_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14959 14979]))                  
+                :type "void")
+                nil [14936 21481])
+            ("print_device_info_from_queue" function
+               (:arguments 
+                  ( ("queue" variable (:type ("cl_command_queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21519 21542]))                  
+                :type "void")
+                nil [21485 21691]))          
+    :file "cl-helper.c"
+    :pointmax 21692
+    :fsize 21691
+    :lastmodtime '(21065 39427 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX" (spp-arg-list ("a" "b") 7054 . 7059) . ((semantic-list "(((a)>(b))?(a):(b))" 7060 . 7079)))
+          ("MIN" (spp-arg-list ("a" "b") 7017 . 7022) . ((semantic-list "(((a)<(b))?(a):(b))" 7023 . 7042)))
+          ("MAX_NAME_LEN" . ((number "1000" 1216 . 1220)))
+          )
+
+    )
+   (semanticdb-table "cl-helper.h"
+    :file "cl-helper.h"
+    :fsize 10925
+    :lastmodtime '(21065 39427 0 0)
+    )
+   (semanticdb-table "print-devices.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cl-helper.h" include nil nil [1 23])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34 43])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44 56]))                  
+                :type "int")
+                nil [25 101]))          
+    :file "print-devices.c"
+    :pointmax 102
+    :fsize 101
+    :lastmodtime '(21065 39427 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nshetty!Desktop!tools-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

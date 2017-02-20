@@ -1,0 +1,67 @@
+;; Object ANALYSIS/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ANALYSIS/"
+  :tables
+  (list
+    (semanticdb-table "BaseLocator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Vrui/LocatorTool.h" include (:system-flag t) nil [180 209])
+            ("ANALYSIS/BaseLocator.h" include (:system-flag t) nil [211 244])
+            ("Toirt_Samhlaigh.h" include (:system-flag t) nil [245 273])
+            ("BaseLocator" function
+               (:constructor-flag t
+                :parent "BaseLocator"
+                :arguments 
+                  ( ("_locatorTool" variable
+                       (:pointer 1
+                        :type ("Vrui::LocatorTool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [417 449])
+                    ("_application" variable
+                       (:pointer 1
+                        :type ("Toirt_Samhlaigh" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [450 480]))                  
+                :type ("BaseLocator" type (:type "class") nil nil))
+                nil [392 555])
+            ("BaseLocator" function
+               (:destructor-flag t
+                :parent "BaseLocator"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [640 645]))                  
+                :type "void")
+                nil [614 667])
+            ("highlightLocator" function
+               (:parent "BaseLocator"
+                :arguments 
+                  ( ("glContextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [824 853]))                  
+                :type "void")
+                nil [789 863])
+            ("glRenderAction" function
+               (:parent "BaseLocator"
+                :arguments 
+                  ( ("glContextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1032 1061]))                  
+                :type "void")
+                nil [999 1071])
+            ("glRenderActionTransparent" function
+               (:parent "BaseLocator"
+                :arguments 
+                  ( ("glContextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1265 1294]))                  
+                :type "void")
+                nil [1221 1304]))          
+      :file "BaseLocator.cpp"
+      :pointmax 1340
+      :fsize 1344
+      :lastmodtime '(20777 24929 0 0)
+      :unmatched-syntax nil))
+  :file "!apps!Toirt-Samhlaigh!source!ANALYSIS!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

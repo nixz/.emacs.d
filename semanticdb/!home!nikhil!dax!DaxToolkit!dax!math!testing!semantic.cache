@@ -1,0 +1,214 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables (list 
+   (semanticdb-table "UnitTestMathCompare.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("functional" include (:system-flag t) nil [650 671])
+            ("dax/math/Compare.h" include (:system-flag t) nil [672 701])
+            ("dax/internal/testing/Testing.h" include (:system-flag t) nil [702 743])
+            ("unnamed" type
+               (:members 
+                  ( ("TestMinMax" function
+                       (:template 
+                          ( ("VectorType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("x" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [804 817])
+                            ("y" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [818 831]))                          )
+                        (reparse-symbol namespacesubparts) [758 1822])
+                    ("VerifyFunctor" function
+                       (:template 
+                          ( ("VectorType" type (:type "class") nil nil)
+                            ("Functor" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("x" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1891 1904])
+                            ("y" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1905 1918])
+                            ("f" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1919 1929]))                          )
+                        (reparse-symbol namespacesubparts) [1824 2395])
+                    ("TestCompFunctor" function
+                       (:template 
+                          ( ("VectorType" type (:type "class") nil nil)
+                            ("DaxCompFunctor" type (:type "class") nil nil)
+                            ("STLCompFunctor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("x" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2498 2511])
+                            ("y" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2525])
+                            ("daxFunctor" variable (:type ("DaxCompFunctor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2547 2573])
+                            ("stdFunctor" variable (:type ("STLCompFunctor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2600])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2601 2618]))                          )
+                        (reparse-symbol namespacesubparts) [2397 3390])
+                    ("MAX_VECTOR_SIZE" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("dax::Id" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3393 3434])
+                    ("VectorInitX" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type ("dax::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3435 3510])
+                    ("VectorInitY" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type ("dax::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3511 3588])
+                    ("TestCompareFunctor" type
+                       (:members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3658 3667]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [3620 5993]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3590 5996])
+                    ("TestCompare" function (:type "void") (reparse-symbol namespacesubparts) [5998 6081]))                  
+                :type "namespace")
+                nil [745 6084])
+            ("UnitTestMathCompare" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6133 6137])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6138 6146]))                  
+                :type "int")
+                nil [6109 6202]))          
+    :file "UnitTestMathCompare.cxx"
+    :pointmax 6204
+    :fsize 6203
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((semantic-list 6144 . 6146))
+    )
+   (semanticdb-table "UnitTestMathSign.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [770 790])
+            ("dax/math/Sign.h" include (:system-flag t) nil [792 818])
+            ("dax/internal/testing/Testing.h" include (:system-flag t) nil [820 861])
+            ("unnamed" type
+               (:members 
+                  ( ("Copy" function
+                       (:template 
+                          ( ("OutT" type (:type "class") nil nil)
+                            ("InT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("OutT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [924 934])
+                            ("in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [935 949]))                          )
+                        (reparse-symbol namespacesubparts) [876 1330])
+                    ("TestAbs" function
+                       (:template 
+                          ( ("VectorType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("negative" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1375 1395])
+                            ("positive" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1396 1416]))                          )
+                        (reparse-symbol namespacesubparts) [1332 1819])
+                    ("TestIsNegative" function
+                       (:arguments 
+                          ( ("negative" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1841 1862])
+                            ("positive" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1863 1884]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1821 2247])
+                    ("TestCopySign" function
+                       (:arguments 
+                          ( ("negative" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2267 2288])
+                            ("positive" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2310]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2249 3684])
+                    ("AbsInput" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("negative" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3721 3733])
+                            ("positive" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3734 3746])
+                            ("" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3747 3759]))                          )
+                        (reparse-symbol namespacesubparts) [3686 3893])
+                    ("AbsInput" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("negative" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3930 3942])
+                            ("positive" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3943 3955])
+                            ("" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3956 3964]))                          )
+                        (reparse-symbol namespacesubparts) [3895 4062])
+                    ("TestSignFunctor" type
+                       (:members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4129 4138]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4091 4318]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4064 4321])
+                    ("TestSign" function (:type "void") (reparse-symbol namespacesubparts) [4323 4456]))                  
+                :type "namespace")
+                nil [863 4459])
+            ("UnitTestMathSign" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4505 4509])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4510 4518]))                  
+                :type "int")
+                nil [4484 4571]))          
+    :file "UnitTestMathSign.cxx"
+    :pointmax 4572
+    :fsize 4571
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((semantic-list 4516 . 4518))
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!math!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,386 @@
+;; Object internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "internal/"
+  :tables (list 
+   (semanticdb-table "DeviceAdapterAlgorithmSerial.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_internal_DeviceAdapterAlgorithmSerial_h" variable (:constant-flag t) nil [716 766])
+            ("dax/Functional.h" include (:system-flag t) nil [768 795])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [797 830])
+            ("dax/cont/ErrorExecution.h" include (:system-flag t) nil [831 867])
+            ("dax/cont/internal/DeviceAdapterAlgorithm.h" include (:system-flag t) nil [868 921])
+            ("dax/cont/internal/DeviceAdapterTagSerial.h" include (:system-flag t) nil [922 975])
+            ("dax/exec/internal/ErrorMessageBuffer.h" include (:system-flag t) nil [977 1026])
+            ("boost/iterator/counting_iterator.hpp" include (:system-flag t) nil [1028 1075])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [1076 1114])
+            ("algorithm" include (:system-flag t) nil [1116 1136])
+            ("numeric" include (:system-flag t) nil [1137 1155])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("DeviceAdapterAlgorithm" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1290 1297])
+                                            ("Copy" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1386 1452])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1459 1521]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1362 2074])
+                                            ("LowerBounds" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2183 2249])
+                                                    ("values" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CVal" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2256 2324])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2331 2399]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2152 3787])
+                                            ("LowerBounds" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3872 3944])
+                                                    ("values_output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3951 4025]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3841 5112])
+                                            ("ScanInclusive" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5208 5274])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5281 5343]))                                                  
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5178 6091])
+                                            ("ScanExclusive" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6187 6253])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6260 6322]))                                                  
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6157 7238])
+                                            ("private" label nil (reparse-symbol classsubparts) [7240 7248])
+                                            ("ScheduleKernel" type
+                                               (:template 
+                                                  ( ("FunctorType" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [7353 7360])
+                                                    ("ScheduleKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("functor" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("FunctorType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [7380 7407]))                                                          
+                                                        :type ("ScheduleKernel" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [7365 7437])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7530 7544]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [7514 7590])
+                                                    ("private" label nil (reparse-symbol classsubparts) [7594 7602])
+                                                    ("Functor" variable
+                                                       (:constant-flag t
+                                                        :type ("FunctorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [7607 7633]))                                                  )
+                                                (reparse-symbol classsubparts) [7296 7638])
+                                            ("public" label nil (reparse-symbol classsubparts) [7640 7647])
+                                            ("Schedule" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("functor" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7713 7729])
+                                                    ("numInstances" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7769 7790]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7692 8370])
+                                            ("Sort" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("values" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("Container" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [8455 8522]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8431 8783])
+                                            ("StreamCompact" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("stencil" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CStencil" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [8887 8960])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [8967 9035]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8854 10132])
+                                            ("StreamCompact" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10259 10325])
+                                                    ("stencil" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("U" type nil nil nil)
+                                                                  ("CStencil" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10332 10405])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10412 10474]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10226 11796])
+                                            ("Unique" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("values" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("Container" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11882 11949]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11856 12329])
+                                            ("UpperBounds" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12438 12504])
+                                                    ("values" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil)
+                                                                  ("CVal" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12511 12579])
+                                                    ("output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12586 12654]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12407 14042])
+                                            ("UpperBounds" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("input" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("CIn" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [14127 14199])
+                                                    ("values_output" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::ArrayHandle" type
+                                                             (:template-specifier 
+                                                                ( ("dax::Id" type nil nil nil)
+                                                                  ("COut" type nil nil nil)
+                                                                  ("DeviceAdapterTagSerial" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [14206 14281]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14096 15368]))                                          
+                                        :template-specifier 
+                                          ( ("dax::cont::DeviceAdapterTagSerial" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1212 15372]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1190 15375]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1173 15377]))                  
+                :type "namespace")
+                nil [1157 15379]))          
+    :file "DeviceAdapterAlgorithmSerial.h"
+    :pointmax 15474
+    :fsize 15473
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 14080 . 14095) (punctuation 14076 . 14077) (symbol 14072 . 14076) (CLASS 14066 . 14071) (punctuation 14064 . 14065) (symbol 14061 . 14064) (CLASS 14055 . 14060) (punctuation 14054 . 14055) (TEMPLATE 14046 . 14054) (symbol 12391 . 12406) (punctuation 12387 . 12388) (symbol 12383 . 12387) (CLASS 12377 . 12382) (punctuation 12375 . 12376) (symbol 12371 . 12375) (CLASS 12365 . 12370) (punctuation 12363 . 12364) (symbol 12360 . 12363) (CLASS 12354 . 12359) (punctuation 12352 . 12353) (symbol 12351 . 12352) (TYPENAME 12342 . 12350) (punctuation 12341 . 12342) (TEMPLATE 12333 . 12341) (symbol 11840 . 11855) (punctuation 11836 . 11837) (symbol 11827 . 11836) (CLASS 11821 . 11826) (punctuation 11819 . 11820) (symbol 11818 . 11819) (TYPENAME 11809 . 11817) (punctuation 11808 . 11809) (TEMPLATE 11800 . 11808) (symbol 10210 . 10225) (punctuation 10206 . 10207) (symbol 10202 . 10206) (CLASS 10196 . 10201) (punctuation 10194 . 10195) (symbol 10186 . 10194) (CLASS 10180 . 10185) (punctuation 10178 . 10179) (symbol 10175 . 10178) (CLASS 10169 . 10174) (punctuation 10167 . 10168) (symbol 10166 . 10167) (TYPENAME 10157 . 10165) (punctuation 10155 . 10156) (symbol 10154 . 10155) (TYPENAME 10145 . 10153) (punctuation 10144 . 10145) (TEMPLATE 10136 . 10144) (symbol 8838 . 8853) (punctuation 8834 . 8835) (symbol 8830 . 8834) (CLASS 8824 . 8829) (punctuation 8822 . 8823) (symbol 8814 . 8822) (CLASS 8808 . 8813) (punctuation 8806 . 8807) (symbol 8805 . 8806) (TYPENAME 8796 . 8804) (punctuation 8795 . 8796) (TEMPLATE 8787 . 8795) (symbol 8415 . 8430) (punctuation 8411 . 8412) (symbol 8402 . 8411) (CLASS 8396 . 8401) (punctuation 8394 . 8395) (symbol 8393 . 8394) (TYPENAME 8384 . 8392) (punctuation 8383 . 8384) (TEMPLATE 8375 . 8383) (symbol 7676 . 7691) (punctuation 7672 . 7673) (symbol 7665 . 7672) (CLASS 7659 . 7664) (punctuation 7658 . 7659) (TEMPLATE 7650 . 7658) (symbol 7498 . 7513) (symbol 6141 . 6156) (punctuation 6137 . 6138) (symbol 6133 . 6137) (CLASS 6127 . 6132) (punctuation 6125 . 6126) (symbol 6122 . 6125) (CLASS 6116 . 6121) (punctuation 6114 . 6115) (symbol 6113 . 6114) (TYPENAME 6104 . 6112) (punctuation 6103 . 6104) (TEMPLATE 6095 . 6103) (symbol 5162 . 5177) (punctuation 5158 . 5159) (symbol 5154 . 5158) (CLASS 5148 . 5153) (punctuation 5146 . 5147) (symbol 5143 . 5146) (CLASS 5137 . 5142) (punctuation 5135 . 5136) (symbol 5134 . 5135) (TYPENAME 5125 . 5133) (punctuation 5124 . 5125) (TEMPLATE 5116 . 5124) (symbol 3825 . 3840) (punctuation 3821 . 3822) (symbol 3817 . 3821) (CLASS 3811 . 3816) (punctuation 3809 . 3810) (symbol 3806 . 3809) (CLASS 3800 . 3805) (punctuation 3799 . 3800) (TEMPLATE 3791 . 3799) (symbol 2136 . 2151) (punctuation 2132 . 2133) (symbol 2128 . 2132) (CLASS 2122 . 2127) (punctuation 2120 . 2121) (symbol 2116 . 2120) (CLASS 2110 . 2115) (punctuation 2108 . 2109) (symbol 2105 . 2108) (CLASS 2099 . 2104) (punctuation 2097 . 2098) (symbol 2096 . 2097) (TYPENAME 2087 . 2095) (punctuation 2086 . 2087) (TEMPLATE 2078 . 2086) (symbol 1346 . 1361) (punctuation 1342 . 1343) (symbol 1338 . 1342) (CLASS 1332 . 1337) (punctuation 1330 . 1331) (symbol 1327 . 1330) (CLASS 1321 . 1326) (punctuation 1319 . 1320) (symbol 1318 . 1319) (TYPENAME 1309 . 1317) (punctuation 1308 . 1309) (TEMPLATE 1300 . 1308))
+    :lexical-table 
+        '(("__dax_cont_internal_DeviceAdapterAlgorithmSerial_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!cont!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,176 @@
+;; Object SimulatedAnnealing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SimulatedAnnealing/"
+  :tables
+  (list
+    (semanticdb-table "VectorIndividual.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VECTORINDIVIDUAL_HPP_" variable (:constant-flag t) nil [283 304])
+            ("vector" include (:system-flag t) nil [306 323])
+            ("Individual.hpp" include nil nil [325 350])
+            ("Random.hpp" include nil nil [351 372])
+            ("VectorIndividual" type
+               (:superclasses 
+                  ( ("Individual" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [418 425])
+                    ("VectorIndividual" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [447 462])
+                            ("min" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [464 480])
+                            ("max" variable
+                               (:default-value "1.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [482 498])
+                            ("mutationRate" variable
+                               (:default-value "0.05"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [500 526]))                          
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [430 627])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [797 934])
+                    ("mutate" function (:type "void") (reparse-symbol classsubparts) [1130 1307])
+                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1368 1430])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("nIndex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1528 1545]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1508 1594])
+                    ("private" label nil (reparse-symbol classsubparts) [1596 1604])
+                    ("_valueVector" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1609 1642])
+                    ("_min" variable (:type "double") (reparse-symbol classsubparts) [1647 1659])
+                    ("_max" variable (:type "double") (reparse-symbol classsubparts) [1664 1676])
+                    ("_mutationRate" variable (:type "double") (reparse-symbol classsubparts) [1681 1702]))                  
+                :type "class")
+                nil [374 1705])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1797 1814])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1815 1837]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1772 2007]))          
+      :file "VectorIndividual.hpp"
+      :pointmax 2044
+      :fsize 2043
+      :lastmodtime '(21713 22859 809046 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTORINDIVIDUAL_HPP_")
+          )
+)
+    (semanticdb-table "Individual.hpp"
+      :file "Individual.hpp"
+      :fsize 650
+      :lastmodtime '(21713 22859 809046 103000))
+    (semanticdb-table "Random.hpp"
+      :file "Random.hpp"
+      :fsize 970
+      :lastmodtime '(21713 22859 809046 103000))
+    (semanticdb-table "VectorFitnessFunction.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VECTORFITNESSFUNCTION_HPP_" variable (:constant-flag t) nil [211 237])
+            ("VectorIndividual.hpp" include nil nil [239 270])
+            ("VectorFitnessFunction" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [302 309])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("VectorIndividual" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [613 642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [599 869]))                  
+                :type "class")
+                nil [272 872]))          
+      :file "VectorFitnessFunction.hpp"
+      :pointmax 916
+      :fsize 915
+      :lastmodtime '(21713 22859 809046 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTORFITNESSFUNCTION_HPP_")
+          )
+)
+    (semanticdb-table "HillClimber.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("HILLCLIMBER_HPP_" variable (:constant-flag t) nil [189 205])
+            ("fstream" include (:system-flag t) nil [207 225])
+            ("iostream" include (:system-flag t) nil [226 245])
+            ("HillClimber" type
+               (:template 
+                  ( ("Indiv" type (:type "class") nil nil)
+                    ("Fit" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [306 313])
+                    ("HillClimber" function
+                       (:constructor-flag t
+                        :type ("HillClimber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [318 352])
+                    ("init" function
+                       (:arguments 
+                          ( ("initialIndividual" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [865 889])
+                            ("fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [890 910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [855 1073])
+                    ("run" function
+                       (:arguments 
+                          ( ("numberOfGenerations" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2813 2840])
+                            ("fitnessFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2841 2873])
+                            ("individualFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2875 2910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2804 3597])
+                    ("getParent" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3669 3718])
+                    ("getChild" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3789 3836])
+                    ("private" label nil (reparse-symbol classsubparts) [3838 3846])
+                    ("_parent" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3851 3865])
+                    ("_child" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3870 3883])
+                    ("_fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3888 3909]))                  )
+                nil [247 3912]))          
+      :file "HillClimber.hpp"
+      :pointmax 3946
+      :fsize 3945
+      :lastmodtime '(21713 22859 809046 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HILLCLIMBER_HPP_")
+          )
+))
+  :file "!lisp!EvoRobo!cpp!SimulatedAnnealing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,914 @@
+;; Object MultiObjective/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MultiObjective/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("roboTournament" function (:arguments ("main.cpp" "Ind_EvolvingRobot.hpp" "Ind_CPPN_NEAT.hpp" "CTRNN_NEAT.hpp" "PopulationEA.hpp" "TournamentSelection.hpp" "ReplaceSelection.hpp" "RobotDistanceFitness.hpp" "HillClimber.hpp" "NeuralNetwork.hpp" "Individual.hpp" "VectorIndividual.hpp" "RobotDistanceFitness.hpp" "TableRobot.hpp" "TableSimulator.hpp" "TouchSensor.hpp")) nil [1 594])
+            ("clean" function nil nil [595 633]))          
+      :file "Makefile"
+      :pointmax 633
+      :fsize 632
+      :lastmodtime '(21813 2585 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "EA_MultiObj.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EA_MULTIOBJ_HPP_" variable (:constant-flag t) nil [124 140])
+            ("Ind_WrapMultiObj.hpp" include (:system-flag t) nil [142 173])
+            ("fstream" include (:system-flag t) nil [174 192])
+            ("iostream" include (:system-flag t) nil [193 212])
+            ("vector" include (:system-flag t) nil [213 230])
+            ("TournamentSelection.hpp" include (:system-flag t) nil [231 265])
+            ("algorithm" include (:system-flag t) nil [266 286])
+            ("MultiObjective" type
+               (:template 
+                  ( ("Fit" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [334 341])
+                    ("indiv_t" type
+                       (:typedef ("Fit::indiv_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [346 384])
+                    ("pop_t" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("indiv_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [389 424])
+                    ("front_t" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("pop_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [429 464])
+                    ("MultiObjective" function
+                       (:constructor-flag t
+                        :type ("MultiObjective" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [470 507])
+                    ("init" function
+                       (:arguments 
+                          ( ("initialIndividual" variable (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [836 862])
+                            ("fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [877 897])
+                            ("populationSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [912 934]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [826 1183])
+                    ("epoch" function (:type "void") (reparse-symbol classsubparts) [2616 3252])
+                    ("paretoSelect" function
+                       (:arguments 
+                          ( ("population" variable (:type ("pop_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3512 3529]))                          
+                        :type ("pop_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3492 4239])
+                    ("makeMixed" function
+                       (:arguments 
+                          ( ("population" variable (:type ("pop_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4309 4326])
+                            ("children" variable (:type ("pop_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4327 4343]))                          
+                        :type ("pop_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4292 4679])
+                    ("paretoRank" function
+                       (:arguments 
+                          ( ("population" variable (:type ("pop_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5056 5073]))                          
+                        :type ("pop_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5038 5650])
+                    ("getParetoFront" function
+                       (:constant-flag t
+                        :type ("pop_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5706 5774])
+                    ("getPopulation" function
+                       (:constant-flag t
+                        :type ("pop_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5837 5906])
+                    ("private" label nil (reparse-symbol classsubparts) [5908 5916])
+                    ("_population" variable (:type ("pop_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5921 5939])
+                    ("fronts" variable (:type ("front_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5944 5959])
+                    ("_fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5964 5985])
+                    ("_sortFun" variable (:type ("Sorting" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5990 6139])
+                    ("Sorting" type
+                       (:members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6034 6044])
+                                    ("j" variable (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6045 6055]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6015 6123]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5990 6139]))                  )
+                nil [288 6142]))          
+      :file "EA_MultiObj.hpp"
+      :pointmax 6177
+      :fsize 6176
+      :lastmodtime '(21817 46661 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EA_MULTIOBJ_HPP_")
+          )
+)
+    (semanticdb-table "Ind_WrapMultiObj.hpp"
+      :file "Ind_WrapMultiObj.hpp"
+      :fsize 2266
+      :lastmodtime '(21793 42583 0 0))
+    (semanticdb-table "HillClimber.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("HILLCLIMBER_HPP_" variable (:constant-flag t) nil [189 205])
+            ("fstream" include (:system-flag t) nil [207 225])
+            ("iostream" include (:system-flag t) nil [226 245])
+            ("HillClimber" type
+               (:template 
+                  ( ("Indiv" type (:type "class") nil nil)
+                    ("Fit" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [306 313])
+                    ("HillClimber" function
+                       (:constructor-flag t
+                        :type ("HillClimber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [318 352])
+                    ("init" function
+                       (:arguments 
+                          ( ("initialIndividual" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [865 889])
+                            ("fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [890 910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [855 1131])
+                    ("run" function
+                       (:arguments 
+                          ( ("numberOfGenerations" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2871 2898])
+                            ("fitnessFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2899 2931])
+                            ("individualFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2933 2968]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2862 3710])
+                    ("getParent" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3782 3831])
+                    ("getChild" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3902 3949])
+                    ("private" label nil (reparse-symbol classsubparts) [3951 3959])
+                    ("_parent" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3964 3978])
+                    ("_child" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3983 3996])
+                    ("_fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4001 4022]))                  )
+                nil [247 4025]))          
+      :file "HillClimber.hpp"
+      :pointmax 4059
+      :fsize 4058
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HILLCLIMBER_HPP_")
+          )
+)
+    (semanticdb-table "Random.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RANDOM_HPP_" variable (:constant-flag t) nil [224 235])
+            ("stdlib.h" include (:system-flag t) nil [237 256])
+            ("time.h" include (:system-flag t) nil [257 274])
+            ("math.h" include (:system-flag t) nil [275 292])
+            ("iostream" include (:system-flag t) nil [293 312])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [401 419]))                  
+                :type "void")
+                nil [384 511])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :type "void")
+                nil [585 754])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :type "double")
+                nil [814 991])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type "double") (reparse-symbol arg-sub-list) [1077 1088]))                  
+                :type "double")
+                nil [1052 1231])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type "double") (reparse-symbol arg-sub-list) [1320 1331])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [1332 1343]))                  
+                :type "double")
+                nil [1295 1504])
+            ("randInt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [1525 1533])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1534 1542]))                  
+                :type "int")
+                nil [1506 1782])
+            ("randInt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1803 1811]))                  
+                :type "int")
+                nil [1784 1842])
+            ("randGaussian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("m" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2198 2210])
+                    ("v" variable
+                       (:default-value "1.0"
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2211 2223]))                  
+                :type "double")
+                nil [2171 2483])
+            ("randIndex" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2894])
+                    ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2895 2906]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2859 3157])
+            ("randIndex" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3237]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3202 3270]))          
+      :file "Random.hpp"
+      :pointmax 3298
+      :fsize 3297
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RANDOM_HPP_")
+          )
+)
+    (semanticdb-table "EA_NolvetySearch.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EA_NOLVETYSEARCH_HPP_" variable (:constant-flag t) nil [134 155])
+            ("Ind_WrapNovelty.hpp" include nil nil [158 188])
+            ("fstream" include (:system-flag t) nil [189 207])
+            ("iostream" include (:system-flag t) nil [208 227])
+            ("vector" include (:system-flag t) nil [228 245])
+            ("NoveltySearch" type
+               (:template 
+                  ( ("Fit" type (:type "class") nil nil)
+                    ("ParentSelector" type (:type "class") nil nil)
+                    ("SurivorSelector" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [344 351])
+                    ("behavior_t" type
+                       (:typedef ("Fit::behavior_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [356 400])
+                    ("indiv_t" type
+                       (:typedef ("Fit::indiv_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [405 443])
+                    ("NoveltySearch" function
+                       (:constructor-flag t
+                        :type ("NoveltySearch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [449 505])
+                    ("init" function
+                       (:arguments 
+                          ( ("initialIndividual" variable (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1035 1061])
+                            ("fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1074 1094])
+                            ("parentSelector" variable (:type ("ParentSelector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1107 1137])
+                            ("survivorSelector" variable (:type ("SurivorSelector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1150 1183])
+                            ("populationSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1196 1218])
+                            ("addToArchiveProb" variable
+                               (:default-value "0.05"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1231 1261]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1025 2012])
+                    ("epoch" function (:type "void") (reparse-symbol classsubparts) [3066 4251])
+                    ("getBest" function (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4421 4468])
+                    ("getPopulation" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("indiv_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4529 4601])
+                    ("getArchive" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("indiv_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4662 4728])
+                    ("private" label nil (reparse-symbol classsubparts) [4730 4738])
+                    ("_population" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("indiv_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4743 4776])
+                    ("_archive" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("indiv_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4781 4811])
+                    ("_best" variable (:type ("indiv_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4816 4830])
+                    ("_addToArchiveProb" variable (:type "double") (reparse-symbol classsubparts) [4835 4860])
+                    ("_fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4865 4886])
+                    ("_parentSelector" variable (:type ("ParentSelector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4891 4922])
+                    ("_survivorSelector" variable (:type ("SurivorSelector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4927 4961]))                  )
+                nil [248 5008]))          
+      :file "EA_NolvetySearch.hpp"
+      :pointmax 5046
+      :fsize 5045
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EA_NOLVETYSEARCH_HPP_")
+          )
+)
+    (semanticdb-table "Ind_WrapNovelty.hpp"
+      :file "Ind_WrapNovelty.hpp"
+      :fsize 1661
+      :lastmodtime '(21813 1544 0 0))
+    (semanticdb-table "TournamentSelection.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TOURNAMENTSELECTION_HPP_" variable (:constant-flag t) nil [140 164])
+            ("TournamentSelector" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [197 204])
+                    ("TournamentSelector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("tournamentSize" variable
+                               (:default-value "2"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [228 253])
+                            ("eletism" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [255 274]))                          
+                        :type ("TournamentSelector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [209 343])
+                    ("select" function
+                       (:template 
+                          ( ("Indiv" type (:type "class") nil nil))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Indiv" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("population" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Indiv" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1030 1061])
+                            ("nrToSelect" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1062 1080]))                          )
+                        (reparse-symbol classsubparts) [975 2077])
+                    ("select" function
+                       (:template 
+                          ( ("Indiv" type (:type "class") nil nil))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Indiv" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("population" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Indiv" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2289 2320]))                          )
+                        (reparse-symbol classsubparts) [2234 2383])
+                    ("select" function
+                       (:template 
+                          ( ("Indiv" type (:type "class") nil nil))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Indiv" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("population" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Indiv" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2788 2819])
+                            ("children" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Indiv" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2820 2849]))                          )
+                        (reparse-symbol classsubparts) [2733 3157])
+                    ("private" label nil (reparse-symbol classsubparts) [3159 3167])
+                    ("_randIndex" function
+                       (:arguments 
+                          ( ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3608 3619]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3590 3804])
+                    ("_tournamentSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3810 3833])
+                    ("_elitism" variable (:type "bool") (reparse-symbol classsubparts) [3838 3852]))                  
+                :type "class")
+                nil [167 3855]))          
+      :file "TournamentSelection.hpp"
+      :pointmax 3896
+      :fsize 3895
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TOURNAMENTSELECTION_HPP_")
+          )
+)
+    (semanticdb-table "Fit_MultiObjDistLong.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIT_MULTIOBJDISTLONG_HPP_" variable (:constant-flag t) nil [142 167])
+            ("Ind_WrapMultiObj.hpp" include nil nil [169 200])
+            ("btBulletDynamicsCommon.h" include nil nil [201 236])
+            ("Fit_MultiObjDistLong" type
+               (:template 
+                  ( ("SimType" type (:type "class") nil nil)
+                    ("Indiv" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [310 317])
+                    ("indiv_t" type
+                       (:typedef ("Indiv" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [322 344])
+                    ("Fit_MultiObjDistLong" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simulator" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SimType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [371 393]))                          
+                        :type ("Fit_MultiObjDistLong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [350 433])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [912 932]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [898 1314])
+                    ("private" label nil (reparse-symbol classsubparts) [1316 1324])
+                    ("_simulator" variable
+                       (:pointer 1
+                        :type ("SimType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1329 1349]))                  )
+                nil [238 1352]))          
+      :file "Fit_MultiObjDistLong.hpp"
+      :pointmax 1396
+      :fsize 1395
+      :lastmodtime '(21817 49683 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIT_MULTIOBJDISTLONG_HPP_")
+          )
+)
+    (semanticdb-table "Fit_EvolvingRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIT_EVOLVINGROBOT_HPP_" variable (:constant-flag t) nil [114 136])
+            ("Fit_EvolvedRobot" type
+               (:template 
+                  ( ("SimType" type (:type "class") nil nil)
+                    ("Indiv" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [206 213])
+                    ("indiv_t" type
+                       (:typedef ("Indiv" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [218 240])
+                    ("Fit_EvolvedRobot" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simulator" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SimType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [263 285]))                          
+                        :type ("Fit_EvolvedRobot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [246 325])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 628]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [594 670])
+                    ("private" label nil (reparse-symbol classsubparts) [674 682])
+                    ("_simulator" variable
+                       (:pointer 1
+                        :type ("SimType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [687 707]))                  )
+                nil [138 710]))          
+      :file "Fit_EvolvingRobot.hpp"
+      :pointmax 750
+      :fsize 749
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIT_EVOLVINGROBOT_HPP_")
+          )
+)
+    (semanticdb-table "Fit_NoveltyEvoRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIT_NOVELTYEVOROBOT_HPP_" variable (:constant-flag t) nil [140 164])
+            ("FitNoveltyEvoRobot" type
+               (:template 
+                  ( ("SimType" type (:type "class") nil nil)
+                    ("Indiv" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [237 244])
+                    ("indiv_t" type
+                       (:typedef ("Indiv" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [249 271])
+                    ("behavior_t" type
+                       (:typedef ("indiv_t::behavior_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [276 324])
+                    ("FitNoveltyEvoRobot" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simulator" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SimType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [598 620])
+                            ("k_neighbours" variable
+                               (:default-value "10"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [622 646]))                          
+                        :type ("FitNoveltyEvoRobot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [579 724])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1063 1083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1049 1126])
+                    ("dist" function
+                       (:arguments 
+                          ( ("individual_1" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1300 1322])
+                            ("individual_2" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1345]))                          
+                        :type ("btScalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1286 1388])
+                    ("calulcateNovelty" function
+                       (:arguments 
+                          ( ("archive" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("indiv_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1643 1673])
+                            ("population" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("indiv_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1674 1707]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1621 1750])
+                    ("private" label nil (reparse-symbol classsubparts) [1753 1761])
+                    ("_simulator" variable
+                       (:pointer 1
+                        :type ("SimType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1766 1786])
+                    ("_k_neighbours" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1791 1812]))                  )
+                nil [167 1860]))          
+      :file "Fit_NoveltyEvoRobot.hpp"
+      :pointmax 1902
+      :fsize 1901
+      :lastmodtime '(21813 1544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIT_NOVELTYEVOROBOT_HPP_")
+          )
+)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Ind_WrapMultiObj.hpp" include nil nil [122 153])
+            ("Ind_EvolvingRobot.hpp" include nil nil [154 186])
+            ("Sim_Simulator.hpp" include nil nil [187 215])
+            ("fstream" include (:system-flag t) nil [362 380])
+            ("iostream" include (:system-flag t) nil [381 400])
+            ("string" include (:system-flag t) nil [401 418])
+            ("Test_HW8UnitTest.hpp" include nil nil [419 450])
+            ("gDebugDrawer" variable (:type ("GLDebugDrawer" type (:type "class") nil nil)) nil [451 480])
+            ("indiv_t" type
+               (:typedef ("IndivMultiObj" type
+                     (:template-specifier 
+                        ( ("EvolvingRobot" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [482 527])
+            ("sim_t" type
+               (:typedef ("Simulator" type
+                     (:template-specifier 
+                        ( ("TableRobot" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [587 623])
+            ("fit_t" type
+               (:typedef ("FitNoveltyDistance" type
+                     (:template-specifier 
+                        ( ("sim_t" type nil nil nil)
+                          ("indiv_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [624 673])
+            ("ea_t" type
+               (:typedef ("NoveltySearch" type
+                     (:template-specifier 
+                        ( ("fit_t" type nil nil nil)
+                          ("TournamentSelector" type nil nil nil)
+                          ("TournamentSelector" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [674 748])
+            ("run" function
+               (:arguments 
+                  ( ("tournamentSize" variable (:type "int") (reparse-symbol arg-sub-list) [831 850])
+                    ("populationSize" variable (:type "int") (reparse-symbol arg-sub-list) [861 880])
+                    ("noOfGenerations" variable (:type "int") (reparse-symbol arg-sub-list) [891 912])
+                    ("bestFileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [923 948])
+                    ("averageFileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 987])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [998 1007])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1008 1021]))                  
+                :type "int")
+                nil [822 2617])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2628 2637])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2638 2651]))                  
+                :type "int")
+                nil [2619 2834]))          
+      :file "main.cpp"
+      :pointmax 2836
+      :fsize 2835
+      :lastmodtime '(21817 52188 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Ind_CTRNN_NEAT.hpp"
+      :file "Ind_CTRNN_NEAT.hpp"
+      :fsize 20219
+      :lastmodtime '(21813 1544 0 0))
+    (semanticdb-table "Sim_Simulator.hpp"
+      :file "Sim_Simulator.hpp"
+      :fsize 10606
+      :lastmodtime '(21813 1544 0 0))
+    (semanticdb-table "Fit_NoveltyDistance.hpp"
+      :file "Fit_NoveltyDistance.hpp"
+      :fsize 4087
+      :lastmodtime '(21813 1544 0 0))
+    (semanticdb-table "Test_HW8UnitTest.hpp"
+      :file "Test_HW8UnitTest.hpp"
+      :fsize 2003
+      :lastmodtime '(21813 1544 0 0))
+    (semanticdb-table "Ind_EvolvingRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IND_EVOLVINGROBOT_HPP_" variable (:constant-flag t) nil [136 158])
+            ("map" include (:system-flag t) nil [180 194])
+            ("btBulletDynamicsCommon.h" include (:system-flag t) nil [214 249])
+            ("Ind_CPPN_NEAT.hpp" include nil nil [268 296])
+            ("coord_t" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [298 331])
+            ("getPosition" function (:type ("btVector3" type (:type "class") nil nil)) nil [8358 8560])
+            ("getPositions" function (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("btVector3" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [8737 8972])
+            ("printLimits" function (:type "void") nil [9097 9386])
+            ("step" function
+               (:arguments 
+                  ( ("timeStep" variable (:type "double") (reparse-symbol arg-sub-list) [9457 9473]))                  
+                :type "void")
+                nil [9447 9735])
+            ("executeMotorCommand" function (:type "void") nil [9819 10017])
+            ("mutate" function (:type "void") nil [10121 10168])
+            ("randomize" function (:type "void") nil [10278 10331])
+            ("m_ownerWorld" variable
+               (:pointer 1
+                :type ("btDynamicsWorld" type (:type "class") nil nil))
+                nil [10394 10424])
+            ("m_block" variable
+               (:pointer 1
+                :type ("btCollisionShape" type (:type "class") nil nil))
+                nil [10497 10523])
+            ("m_bodies" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("btRigidBody" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [10556 10591])
+            ("m_joints" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("btHingeConstraint" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [10622 10663])
+            ("m_motorCommands" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("double" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [10747 10783])
+            ("m_motorFrequency" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("double" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [10834 10871])
+            ("m_motorPhaseShift" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("double" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [10924 10962])
+            ("m_componentMap" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("coord_t" type nil nil nil)
+                      ("btRigidBody" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [11046 11093])
+            ("m_sides" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("side_t" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [11185 11213])
+            ("m_genome" variable (:type ("CPPN_NEAT" type (:type "class") nil nil)) nil [11266 11285])
+            ("m_timer" variable (:type ("btScalar" type (:type "class") nil nil)) nil [11360 11377])
+            ("_connect" function
+               (:arguments 
+                  ( ("thisCoord" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("coord_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13183 13208])
+                    ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13209 13221]))                  
+                :type "void")
+                nil [13169 14162])
+            ("_activateCppn" function
+               (:arguments 
+                  ( ("coord" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("coord_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15535 15556])
+                    ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15557 15569]))                  
+                :type "void")
+                nil [15516 16488])
+            ("_getAdjacentCoord" function
+               (:arguments 
+                  ( ("current" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("coord_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16664 16687])
+                    ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16688 16700]))                  
+                :type ("coord_t" type (:type "class") nil nil))
+                nil [16638 17284])
+            ("_getPivot" function
+               (:arguments 
+                  ( ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17386 17398]))                  
+                :type ("btVector3" type (:type "class") nil nil))
+                nil [17366 17933])
+            ("_addJoint" function
+               (:arguments 
+                  ( ("body1" variable
+                       (:pointer 1
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18335 18354])
+                    ("body2" variable
+                       (:pointer 1
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18355 18374])
+                    ("axis" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18375 18397])
+                    ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18398 18410]))                  
+                :type "void")
+                nil [18320 18780])
+            ("_addBlock" function
+               (:arguments 
+                  ( ("coord" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("coord_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18893 18914])
+                    ("offset" variable (:type ("btTransform" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18915 18934]))                  
+                :type "void")
+                nil [18878 19228])
+            ("_actuateJoint" function
+               (:arguments 
+                  ( ("jointIndex" variable (:type "int") (reparse-symbol arg-sub-list) [19510 19525])
+                    ("desiredAngle" variable (:type "double") (reparse-symbol arg-sub-list) [19526 19546]))                  
+                :type "void")
+                nil [19491 20001])
+            ("_localCreateRigidBody" function
+               (:pointer 1
+                :arguments 
+                  ( ("mass" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20208 20222])
+                    ("startTransform" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20223 20257])
+                    ("shape" variable
+                       (:pointer 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20258 20282]))                  
+                :type ("btRigidBody" type (:type "class") nil nil))
+                nil [20172 20762])
+            ("EvolvingRobot::cppn_scale" variable
+               (:constant-flag t
+                :default-value "0.4"
+                :type "double")
+                nil [21022 21067])
+            ("EvolvingRobot::motorMaxImpulse" variable
+               (:constant-flag t
+                :default-value "2"
+                :type "double")
+                nil [21068 21116])
+            ("EvolvingRobot::motorSpeedModifier" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "double")
+                nil [21117 21168]))          
+      :file "Ind_EvolvingRobot.hpp"
+      :pointmax 21207
+      :fsize 21206
+      :lastmodtime '(21817 56421 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IND_EVOLVINGROBOT_HPP_")
+          )
+)
+    (semanticdb-table "Ind_CPPN_NEAT.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Ind_CPPN_NEAT.hpp"
+      :pointmax 32343
+      :fsize 32342
+      :lastmodtime '(21817 55684 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!nshetty!Code!EvoRobo!cpp!MultiObjective!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,124 @@
+;; Object AI_Challenge_2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AI_Challenge_2/"
+  :tables
+  (list
+    (semanticdb-table "search.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+In search.py, you will implement generic search algorithms which are called
+by Pacman agents (in searchAgents.py).
+\"\"\"" code nil nil [691 813])
+            ("game" include nil nil [814 841])
+            ("game" include nil nil [842 864])
+            ("game" include nil nil [865 889])
+            ("util" include nil nil [890 901])
+            ("tinyMazeSearch" function
+               (:documentation "
+    Returns a sequence of moves that solves tinyMaze.  For any other
+    maze, the sequence of moves will be incorrect, so only use this for tinyMaze
+    "
+                :arguments 
+                  ( ("problem" variable nil (reparse-symbol function_parameters) [1085 1092]))                  )
+                nil [1066 1372])
+            ("depthFirstSearch" function
+               (:documentation "
+    Search the deepest nodes in the search tree first
+
+    Your search algorithm needs to return a list of actions that reaches
+    the goal.  Make sure to implement a graph search algorithm
+
+    To get started, you might want to try some of these simple commands to
+    understand the search problem that is being passed in:
+
+    print \"Start:\", problem.getStartState()
+    print \"Is the start a goal?\", problem.isGoalState(problem.getStartState())
+    print \"Start's successors:\", problem.getSuccessors(problem.getStartState())
+
+    Note that get successors does not just, as its name suggests, returns successors.
+    It actuall returns a list of triples (successor, action, stepCost).
+    So to get, for example, the successor of the first successor, you can do something like:
+
+    firstSuccessorList = problem.getSuccessors(problem.getStartState())
+    firstSuccessor, firstAction, firstCost = firstSuccessorList[0]
+    secondSuccessor = problem.getSuccessors(firstSuccessor)
+
+    Note that, for this problem, the successor is just a Pacman position (x, y).
+    IMPORTANT: this will not be the case once we start introducing heuristics,
+    successors might be positions, list or pointers to objects your program
+    knows nothing about. Do not assume anything about what a successor is!
+    "
+                :arguments 
+                  ( ("problem" variable nil (reparse-symbol function_parameters) [1558 1565]))                  )
+                nil [1537 2934])
+            ("breadthFirstSearch" function
+               (:documentation "
+    Search the shallowest nodes in the search tree first.
+    "
+                :arguments 
+                  ( ("problem" variable nil (reparse-symbol function_parameters) [3122 3129]))                  )
+                nil [3099 3262])
+            ("uniformCostSearch" function (:arguments 
+              ( ("problem" variable nil (reparse-symbol function_parameters) [3449 3456]))              ) nil [3427 3565])
+            ("ApproximateSearchAgent" type
+               (:documentation "
+    Agent that should collect all food in the fewest number of steps possible,
+    while all calculations should remain within the time-limit.
+    Change anything but the class name.
+     
+    It is recommmended that you reuse your search algrotihms implemented above.
+    To use one of your search algrotihms you'll need a search problem
+    (see searchAgents.py for examples of search problems).
+    For example, if you want to use the AnyFoodSearchProblem found in searchProblems.py
+    you can do the following:
+     
+    from searchProblems import AnyFoodSearchProblem
+    problem = AnyFoodSearchProblem(state)
+    path = breadthFirstSearch(problem)
+    "
+                :superclasses ("Agent")
+                :members 
+                  ( ("registerInitialState" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4468 4472])
+                            ("state" variable nil (reparse-symbol function_parameters) [4474 4479]))                          
+                        :documentation "\"
+         This method is called before any moves are made.
+         You can do most of your searching here, and simply
+         execute the move in getAction
+        ")
+                        (reparse-symbol indented_block_body) [4443 4728])
+                    ("getAction" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4747 4751])
+                            ("state" variable nil (reparse-symbol function_parameters) [4753 4758]))                          
+                        :documentation "
+        From game.py:
+        The Agent will receive a GameState and must return an action from
+        Directions.{North, South, East, West, Stop}
+        ")
+                        (reparse-symbol indented_block_body) [4733 4997]))                  
+                :type "class")
+                nil [3730 4997])
+            ("bfs" variable nil nil [5015 5039])
+            ("dfs" variable nil nil [5040 5062])
+            ("ucs" variable nil nil [5063 5086]))          
+      :file "search.py"
+      :pointmax 5087
+      :fsize 5086
+      :lastmodtime '(22469 50922 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "game.py"
+      :file "game.py"
+      :fsize 25467
+      :lastmodtime '(20977 49452 0 0))
+    (semanticdb-table "util.py"
+      :file "util.py"
+      :fsize 27319
+      :lastmodtime '(22486 56300 0 0)))
+  :file "!home!nshetty!Code!AI_Challenge_2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

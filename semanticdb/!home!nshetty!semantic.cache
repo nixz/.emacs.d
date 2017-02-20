@@ -1,0 +1,61 @@
+;; Object nshetty/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nshetty/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [643 662])
+            ("base" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [676 686])
+                    ("a" variable (:type "int") (reparse-symbol classsubparts) [691 697])
+                    ("public" label nil (reparse-symbol classsubparts) [698 705])
+                    ("base" function
+                       (:constructor-flag t
+                        :type ("base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [710 739])
+                    ("base" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 768])
+                    ("geta" function (:type "int") (reparse-symbol classsubparts) [774 810]))                  
+                :type "class")
+                nil [663 813])
+            ("child" type
+               (:superclasses 
+                  ( ("base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [842 849])
+                    ("child" function (:type "int") (reparse-symbol classsubparts) [854 887])
+                    ("child" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [892 917])
+                    ("fun" function (:type "void") (reparse-symbol classsubparts) [922 992]))                  
+                :type "class")
+                nil [815 995])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1006 1015])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1016 1029]))                  
+                :type "int")
+                nil [997 1081]))          
+      :file "test.cpp"
+      :pointmax 1083
+      :fsize 1082
+      :lastmodtime '(21734 17029 923824 471000)
+      :unmatched-syntax nil))
+  :file "!home!nshetty!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

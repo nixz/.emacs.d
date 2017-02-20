@@ -1,0 +1,329 @@
+;; Object Homework6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Homework6/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("all" function (:arguments ("sparseMatMul")) nil [1 19])
+            ("sparseMatMul" function (:arguments ("readMatrix.cu")) nil [20 88])
+            ("clean" function nil nil [89 122]))          
+    :file "Makefile"
+    :pointmax 122
+    :fsize 121
+    :lastmodtime '(21654 5542 0 0)
+    :unmatched-syntax '((shell-command 98 . 121) (bol 97 . 97))
+    )
+    (semanticdb-table "readMatrix.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__readMatrix_h" variable (:constant-flag t) nil [349 363])
+            ("MatrixNonZeroEntry" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rowIndex" variable (:type "int") (reparse-symbol classsubparts) [464 477])
+                          ("columnIndex" variable (:type "int") (reparse-symbol classsubparts) [480 496])
+                          ("value" variable (:type "float") (reparse-symbol classsubparts) [499 511]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [445 533])
+            ("BasicSparseMatrix" type
+               (:typedef ("tagBasicSparseMatrix" type (:type "struct") nil nil)
+                :superclasses "tagBasicSparseMatrix"
+                :type "typedef")
+                nil [615 861])
+            ("tagBasicSparseMatrix" type
+               (:members 
+                  ( ("numOfRows" variable (:type "unsigned int") (reparse-symbol classsubparts) [655 678])
+                    ("numOfColumns" variable (:type "unsigned int") (reparse-symbol classsubparts) [681 707])
+                    ("numOfNonZeroEntries" variable (:type "unsigned int") (reparse-symbol classsubparts) [710 743])
+                    ("nonZeroEntries" variable
+                       (:pointer 1
+                        :type ("MatrixNonZeroEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [746 781])
+                    ("rowIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [784 809])
+                    ("columnIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [812 840]))                  
+                :type "struct")
+                nil [615 861])
+            ("SparseMatrixCSR" type
+               (:typedef ("tagSparseMatrixCSR" type (:type "struct") nil nil)
+                :superclasses "tagSparseMatrixCSR"
+                :type "typedef")
+                nil [943 1092])
+            ("tagSparseMatrixCSR" type
+               (:members 
+                  ( ("numOfRows" variable (:type "int") (reparse-symbol classsubparts) [980 994])
+                    ("numOfColumns" variable (:type "int") (reparse-symbol classsubparts) [997 1014])
+                    ("numNonzero" variable (:type "int") (reparse-symbol classsubparts) [1017 1032])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1035 1044])
+                    ("index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1047 1058])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1061 1073]))                  
+                :type "struct")
+                nil [943 1092])
+            ("compareRow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1189 1208])
+                    ("entry2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1209 1228]))                  
+                :type "int")
+                nil [1174 1229])
+            ("loadBasicSparseMatrix" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1352 1373]))                  
+                :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                nil [1311 1374])
+            ("convertToSparseMatrixCSR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("basicSparseMatrix" variable
+                       (:pointer 1
+                        :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1548 1585]))                  
+                :type ("SparseMatrixCSR" type (:type "class") nil nil))
+                nil [1506 1586]))          
+    :file "readMatrix.h"
+    :pointmax 1614
+    :fsize 1613
+    :lastmodtime '(21652 32890 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__readMatrix_h")
+          )
+
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("readMatrix.h" include nil nil [242 265])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [276 285])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [286 299]))                  
+                :type "int")
+                nil [267 471]))          
+    :file "main.cpp"
+    :pointmax 472
+    :fsize 471
+    :lastmodtime '(21653 31111 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "readMatrix.cu"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [81 100])
+            ("stdio.h" include (:system-flag t) nil [123 141])
+            ("MatrixNonZeroEntry" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rowIndex" variable (:type "int") (reparse-symbol classsubparts) [241 254])
+                          ("columnIndex" variable (:type "int") (reparse-symbol classsubparts) [256 272])
+                          ("value" variable (:type "float") (reparse-symbol classsubparts) [274 286]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [223 308])
+            ("BasicSparseMatrix" type
+               (:typedef ("tagBasicSparseMatrix" type (:type "struct") nil nil)
+                :superclasses "tagBasicSparseMatrix"
+                :type "typedef")
+                nil [390 630])
+            ("tagBasicSparseMatrix" type
+               (:members 
+                  ( ("numOfRows" variable (:type "unsigned int") (reparse-symbol classsubparts) [429 452])
+                    ("numOfColumns" variable (:type "unsigned int") (reparse-symbol classsubparts) [454 480])
+                    ("numOfNonZeroEntries" variable (:type "unsigned int") (reparse-symbol classsubparts) [482 515])
+                    ("nonZeroEntries" variable
+                       (:pointer 1
+                        :type ("MatrixNonZeroEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [517 552])
+                    ("rowIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [554 579])
+                    ("columnIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [581 609]))                  
+                :type "struct")
+                nil [390 630])
+            ("SparseMatrixCSR" type
+               (:typedef ("tagSparseMatrixCSR" type (:type "struct") nil nil)
+                :superclasses "tagSparseMatrixCSR"
+                :type "typedef")
+                nil [712 855])
+            ("tagSparseMatrixCSR" type
+               (:members 
+                  ( ("numOfRows" variable (:type "int") (reparse-symbol classsubparts) [748 762])
+                    ("numOfColumns" variable (:type "int") (reparse-symbol classsubparts) [764 781])
+                    ("numNonzero" variable (:type "int") (reparse-symbol classsubparts) [783 798])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [800 809])
+                    ("index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [811 822])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [824 836]))                  
+                :type "struct")
+                nil [712 855])
+            ("compareRow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [977 996])
+                    ("entry2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [997 1016]))                  
+                :type "int")
+                nil [962 1017])
+            ("loadBasicSparseMatrix" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1059 1080]))                  
+                :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                nil [1018 1081])
+            ("convertToSparseMatrixCSR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("basicSparseMatrix" variable
+                       (:pointer 1
+                        :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1124 1161]))                  
+                :type ("SparseMatrixCSR" type (:type "class") nil nil))
+                nil [1082 1162])
+            ("spmv_csr_vector_kernel" function
+               (:arguments 
+                  ( ("num_rows" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1286 1305])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1347 1362])
+                    ("indices" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1404 1423])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1465 1483])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1525 1541])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1583 1592]))                  
+                :type "void")
+                nil [1256 2616])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2707 2716])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2717 2730]))                  
+                :type "int")
+                nil [2698 4562])
+            ("compareRow" function
+               (:arguments 
+                  ( ("entry1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4660 4679])
+                    ("entry2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4680 4699]))                  
+                :type "int")
+                nil [4645 5206])
+            ("loadBasicSparseMatrix" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5329 5350]))                  
+                :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                nil [5288 7011])
+            ("convertToSparseMatrixCSR" function
+               (:pointer 1
+                :arguments 
+                  ( ("basicSparseMatrix" variable
+                       (:pointer 1
+                        :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7185 7222]))                  
+                :type ("SparseMatrixCSR" type (:type "class") nil nil))
+                nil [7143 8359]))          
+    :file "readMatrix.cu"
+    :pointmax 8361
+    :fsize 8621
+    :lastmodtime '(21654 5933 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Documents!Homework6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

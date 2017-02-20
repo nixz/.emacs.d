@@ -1,0 +1,126 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables
+  (list
+    (semanticdb-table "vtkInformationDataObjectKey.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkInformationDataObjectKey.h" include nil nil [601 641])
+            ("vtkInformationDataObjectKey" function
+               (:constructor-flag t
+                :parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [869 886])
+                    ("location" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [887 908]))                  
+                :type ("vtkInformationDataObjectKey" type (:type "class") nil nil))
+                nil [812 999])
+            ("vtkInformationDataObjectKey" function
+               (:destructor-flag t
+                :parent "vtkInformationDataObjectKey"
+                :type "void")
+                nil [1080 1143])
+            ("PrintSelf" function
+               (:parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1268 1280])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1298]))                  
+                :type "void")
+                nil [1224 1345])
+            ("Set" function
+               (:parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1464 1485])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1545]))                  
+                :type "void")
+                nil [1426 1634])
+            ("Get" function
+               (:pointer 1
+                :parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1763 1784]))                  
+                :type ("vtkDataObject" type (:type "class") nil nil))
+                nil [1715 1921])
+            ("ShallowCopy" function
+               (:parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2048 2069])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2116 2135]))                  
+                :type "void")
+                nil [2002 2173])
+            ("Report" function
+               (:parent "vtkInformationDataObjectKey"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2295 2316])
+                    ("collector" variable
+                       (:pointer 1
+                        :type ("vtkGarbageCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2358 2389]))                  
+                :type "void")
+                nil [2254 2438]))          
+      :file "vtkInformationDataObjectKey.cxx"
+      :pointmax 2439
+      :fsize 2438
+      :lastmodtime '(20469 50013 709364 37000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkInformationDataObjectKey.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__vtkInformationDataObjectKey_h" variable (:constant-flag t) nil [864 895])
+            ("vtkCommonCoreModule.h" include nil nil [897 929])
+            ("vtkInformationKey.h" include nil nil [950 980])
+            ("vtkCommonInformationKeyManager.h" include nil nil [982 1025])
+            ("vtkDataObject" type
+               (:prototype t
+                :type "class")
+                nil [1061 1081])
+            ("vtkInformationKey" variable (:type "int") nil [1147 2239]))          
+      :file "vtkInformationDataObjectKey.h"
+      :pointmax 2248
+      :fsize 2247
+      :lastmodtime '(20469 50013 709364 37000)
+      :unmatched-syntax '((PUBLIC 1140 . 1146) (punctuation 1138 . 1139) (symbol 1110 . 1137) (symbol 1089 . 1109) (CLASS 1083 . 1088))
+      :lexical-table 
+        '(("__vtkInformationDataObjectKey_h")
+          )
+)
+    (semanticdb-table "vtkInformationKey.h"
+      :file "vtkInformationKey.h"
+      :fsize 5554
+      :lastmodtime '(20469 50013 709364 37000))
+    (semanticdb-table "vtkCommonInformationKeyManager.h"
+      :file "vtkCommonInformationKeyManager.h"
+      :fsize 2098
+      :lastmodtime '(20469 50013 701364 37000)))
+  :file "!home!nikhil!modules!vtk!VTK!Common!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

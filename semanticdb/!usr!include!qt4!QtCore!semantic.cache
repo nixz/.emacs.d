@@ -1,0 +1,2463 @@
+;; Object QtCore/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "QtCore/"
+  :tables (list 
+   (semanticdb-table "qpointer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QPOINTER_H" variable (:constant-flag t) nil [1713 1723])
+            ("QtCore/qobject.h" include (:system-flag t) nil [1725 1752])
+            ("QPointer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1848 1859])
+                    ("public" label nil (reparse-symbol classsubparts) [1860 1867])
+                    ("QPointer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("QPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1872 1899])
+                    ("QPointer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1920 1925]))                          
+                        :type ("QPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1904 1971])
+                    ("QPointer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QPointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1992 2013]))                          
+                        :type ("QPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1976 2061])
+                    ("QPointer" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2066 2126])
+                    ("=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QPointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2161 2182]))                          
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2131 2259])
+                    ("=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2294 2299]))                          
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2264 2370])
+                    ("isNull" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2376 2425])
+                    ("->" function
+                       (:operator-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2431 2520])
+                    ("" variable
+                       (:functionpointer-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2525 2614])
+                    ("data" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2711 2794]))                  )
+                nil [1808 2797])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2933 2944])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2945 2966]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [2891 2998])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3041 3062])
+                    ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3063 3074]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3000 3106])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3387 3392])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3393 3414]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3345 3446])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3489 3510])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3511 3516]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3448 3548])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3591 3613])
+                    ("p2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3614 3636]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3550 3683])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3819 3830])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3831 3852]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3777 3884])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3928 3949])
+                    ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3950 3961]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3886 3993])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4276 4281])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4282 4303]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [4234 4335])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4379 4400])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4401 4406]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [4337 4438])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("p1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4482 4504])
+                    ("p2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4505 4527]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [4440 4575])
+            ("==" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4721 4727])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4728 4749]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [4679 4796])
+            ("!=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4840 4846])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4847 4868]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [4798 4916]))          
+    :file "qpointer.h"
+    :pointmax 4979
+    :fsize 4978
+    :lastmodtime '(20558 38322)
+    :unmatched-syntax '((symbol 4943 . 4956) (symbol 4925 . 4941) (semantic-list 2654 . 2706) (CONST 2640 . 2645) (semantic-list 2637 . 2639) (punctuation 2636 . 2637) (symbol 2635 . 2636) (OPERATOR 2626 . 2634) (INLINE 2619 . 2625) (semantic-list 1800 . 1806) (symbol 1791 . 1800) (symbol 1771 . 1789) (symbol 1754 . 1769))
+    :lexical-table 
+        '(("QPOINTER_H")
+          )
+
+    )
+   (semanticdb-table "qlist.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QLIST_H" variable (:constant-flag t) nil [1710 1717])
+            ("QtCore/qiterator.h" include (:system-flag t) nil [1719 1748])
+            ("QtCore/qatomic.h" include (:system-flag t) nil [1749 1776])
+            ("QtCore/qalgorithms.h" include (:system-flag t) nil [1777 1808])
+            ("iterator" include (:system-flag t) nil [1828 1847])
+            ("list" include (:system-flag t) nil [1848 1863])
+            ("new" include (:system-flag t) nil [1963 1977])
+            ("limits.h" include (:system-flag t) nil [1978 1997])
+            ("string.h" include (:system-flag t) nil [1998 2017])
+            ("QVector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [2073 2109])
+            ("QSet" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [2110 2143])
+            ("QListData" variable (:type ("Q_CORE_EXPORT" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2145 3253])
+            ("QList" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("Node" type
+                       (:members 
+                          ( ("v" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [3309 3317])
+                            ("t" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3406 3553]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3295 3567])
+                    ("" type
+                       (:members 
+                          ( ("p" variable (:type ("QListData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3581 3593])
+                            ("d" variable
+                               (:pointer 1
+                                :type ("QListData::Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3594 3613]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [3573 3616])
+                    ("public" label nil (reparse-symbol classsubparts) [3618 3625])
+                    ("QList" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("QList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3630 3691])
+                    ("QList" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3709 3727]))                          
+                        :type ("QList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3696 3789])
+                    ("QList" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3794 3803])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3828 3846]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3808 3847])
+                    ("swap" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3990 4006]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3973 4029])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4252 4270]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4236 4277])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4305 4323]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4282 4355])
+                    ("size" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4361 4405])
+                    ("detach" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4411 4469])
+                    ("detachShared" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4475 4663])
+                    ("isDetached" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4669 4723])
+                    ("setSharable" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("sharable" variable (:type "bool") (reparse-symbol arg-sub-list) [4752 4766]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4728 4819])
+                    ("isSharedWith" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4849 4871]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4824 4902])
+                    ("isEmpty" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4908 4959])
+                    ("clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4965 4978])
+                    ("at" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4996 5002]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4984 5009])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5034 5040]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5014 5047])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5066 5072]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5052 5073])
+                    ("reserve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [5092 5101]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5079 5102])
+                    ("append" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5119 5130]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5107 5131])
+                    ("append" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5148 5166]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5136 5167])
+                    ("prepend" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5185 5196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5172 5197])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5214 5220])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5221 5232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5202 5233])
+                    ("replace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5251 5257])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5258 5269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5238 5270])
+                    ("removeAt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5289 5295]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5275 5296])
+                    ("removeAll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5315 5326]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5301 5327])
+                    ("removeOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5347 5358]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5332 5359])
+                    ("takeAt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5373 5379]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5364 5380])
+                    ("takeFirst" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5385 5399])
+                    ("takeLast" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5404 5417])
+                    ("move" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable (:type "int") (reparse-symbol arg-sub-list) [5432 5441])
+                            ("to" variable (:type "int") (reparse-symbol arg-sub-list) [5442 5449]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5422 5450])
+                    ("swap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5465 5471])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [5472 5478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5455 5479])
+                    ("indexOf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5496 5507])
+                            ("from" variable (:type "int") (reparse-symbol arg-sub-list) [5508 5518]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5484 5528])
+                    ("lastIndexOf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5549 5560])
+                            ("from" variable (:type "int") (reparse-symbol arg-sub-list) [5561 5571]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5533 5582])
+                    ("contains" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5602 5613]))                          
+                        :type ("QBool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5587 5620])
+                    ("count" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5635 5646]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5625 5653])
+                    ("const_iterator" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [5659 5680])
+                    ("iterator" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5707 5714])
+                            ("i" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5723 5731])
+                            ("iterator_category" type
+                               (:typedef ("std::random_access_iterator_tag" type (:type "class") nil nil)
+                                :superclasses "std::random_access_iterator_tag"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5740 5799])
+                            ("difference_type" type
+                               (:typedef ("qptrdiff" type (:type "class") nil nil)
+                                :superclasses "qptrdiff"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5808 5841])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5850 5871])
+                            ("pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5880 5899])
+                            ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5916 5929])
+                            ("iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5939 5966])
+                            ("iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("n" variable
+                                       (:pointer 1
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5991 5999]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5975 6009])
+                            ("iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6034 6052]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6018 6062])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6071 6117])
+                            ("->" function
+                               (:operator-flag t
+                                :pointer 1
+                                :typemodifiers ("inline")
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6126 6174])
+                            ("[]" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [6204 6210]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6183 6237])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6269 6287]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6246 6314])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6346 6364]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6323 6391])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6422 6444]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6400 6474])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6506 6528]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6483 6559])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6590 6612]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6568 6642])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6674 6696]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6651 6727])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6787 6811]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6764 6850])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6882 6906]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6859 6945])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6976 7004]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6954 7046])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7078 7106]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7055 7149])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7180 7208]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7158 7250])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7282 7310]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7259 7353])
+                            ("++" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7369 7421])
+                            ("++" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7457 7461]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7430 7493])
+                            ("--" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7502 7554])
+                            ("--" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7590 7594]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7563 7626])
+                            ("+=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [7663 7669]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7635 7693])
+                            ("-=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [7730 7736]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7702 7760])
+                            ("+" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [7795 7801]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7769 7833])
+                            ("-" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [7868 7874]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7842 7906])
+                            ("-" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7936 7947]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [7915 7978]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [5686 7985])
+                    ("iterator" friend nil (reparse-symbol classsubparts) [7990 8011])
+                    ("const_iterator" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8045 8052])
+                            ("i" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8061 8069])
+                            ("iterator_category" type
+                               (:typedef ("std::random_access_iterator_tag" type (:type "class") nil nil)
+                                :superclasses "std::random_access_iterator_tag"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8078 8137])
+                            ("difference_type" type
+                               (:typedef ("qptrdiff" type (:type "class") nil nil)
+                                :superclasses "qptrdiff"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8146 8179])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8188 8209])
+                            ("pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8218 8243])
+                            ("reference" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8260 8279])
+                            ("const_iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8289 8322])
+                            ("const_iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("n" variable
+                                       (:pointer 1
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8353 8361]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8331 8371])
+                            ("const_iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8402 8426]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8380 8437])
+                            ("const_iterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8570 8588]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8548 8599])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8615 8667])
+                            ("->" function
+                               (:operator-flag t
+                                :pointer 1
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8676 8730])
+                            ("[]" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [8766 8772]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8739 8799])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8831 8855]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8808 8882])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8914 8938]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8891 8965])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8996 9024]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8974 9054])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9086 9114]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9063 9145])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9176 9204]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9154 9234])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9266 9294]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9243 9325])
+                            ("++" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9334 9392])
+                            ("++" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [9434 9438]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9401 9470])
+                            ("--" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9479 9537])
+                            ("--" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [9579 9583]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9546 9615])
+                            ("+=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9658 9664]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9624 9688])
+                            ("-=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9731 9737]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9697 9761])
+                            ("+" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9802 9808]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9770 9846])
+                            ("-" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9887 9893]))                                  
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9855 9931])
+                            ("-" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable (:type ("const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9961 9978]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [9940 10004]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [8018 10011])
+                    ("const_iterator" friend nil (reparse-symbol classsubparts) [10016 10043])
+                    ("begin" function
+                       (:typemodifiers ("inline")
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10067 10148])
+                    ("begin" function
+                       (:typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10153 10236])
+                    ("constBegin" function
+                       (:typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10241 10329])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10334 10411])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10416 10495])
+                    ("constEnd" function
+                       (:typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10500 10584])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("before" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10605 10621])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10622 10633]))                          
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10589 10634])
+                    ("erase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10654 10667]))                          
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10639 10668])
+                    ("erase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("first" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10688 10703])
+                            ("last" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10704 10718]))                          
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10673 10719])
+                    ("Iterator" type
+                       (:typedef ("iterator" type (:type "class") nil nil)
+                        :superclasses "iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [10740 10766])
+                    ("ConstIterator" type
+                       (:typedef ("const_iterator" type (:type "class") nil nil)
+                        :superclasses "const_iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [10771 10808])
+                    ("count" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [10813 10858])
+                    ("length" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [10863 10909])
+                    ("first" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10933 10993])
+                    ("first" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10998 11067])
+                    ("last" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11072 11126])
+                    ("last" function
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11131 11202])
+                    ("removeFirst" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11207 11274])
+                    ("removeLast" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11279 11345])
+                    ("startsWith" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11373 11384]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11350 11429])
+                    ("endsWith" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11455 11466]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11434 11510])
+                    ("mid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [11528 11536])
+                            ("length" variable (:type "int") (reparse-symbol arg-sub-list) [11537 11549]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11515 11560])
+                    ("value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11574 11580]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11566 11587])
+                    ("value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11600 11606])
+                            ("defaultValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11607 11629]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11592 11636])
+                    ("push_back" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11689 11700]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11667 11715])
+                    ("push_front" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11743 11754]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11720 11770])
+                    ("front" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11775 11812])
+                    ("front" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11817 11866])
+                    ("back" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11871 11906])
+                    ("back" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11911 11958])
+                    ("pop_front" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11963 12005])
+                    ("pop_back" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12010 12050])
+                    ("empty" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12055 12102])
+                    ("size_type" type
+                       (:typedef ("int")
+                        :superclasses "int"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12107 12129])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :superclasses "T"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12134 12155])
+                    ("pointer" type
+                       (:typedef ("value_type" type (:type "class") nil nil)
+                        :pointer 1
+                        :superclasses "value_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12160 12188])
+                    ("const_pointer" type
+                       (:typedef ("value_type" type (:type "class") nil nil)
+                        :pointer 1
+                        :superclasses "value_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12193 12233])
+                    ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12246 12268])
+                    ("const_reference" variable
+                       (:constant-flag t
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12281 12315])
+                    ("difference_type" type
+                       (:typedef ("qptrdiff" type (:type "class") nil nil)
+                        :superclasses "qptrdiff"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12320 12353])
+                    ("+=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13200 13218]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13179 13219])
+                    ("+" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13250 13268]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13224 13317])
+                    ("+=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13350 13361]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13322 13394])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13428 13439]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13399 13472])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13505 13523]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13477 13557])
+                    ("toVector" function
+                       (:prototype-flag t
+                        :type ("QVector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13563 13591])
+                    ("toSet" function
+                       (:prototype-flag t
+                        :type ("QSet" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13596 13618])
+                    ("fromVector" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("vector" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13651 13676]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13624 13677])
+                    ("fromSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("set" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QSet" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13706 13725]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13682 13726])
+                    ("fromStdList" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13785 13810]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13750 13902])
+                    ("toStdList" function
+                       (:typemodifiers ("inline")
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13907 14040])
+                    ("private" label nil (reparse-symbol classsubparts) [14049 14057])
+                    ("detach_helper_grow" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [14087 14093])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [14094 14100]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14062 14101])
+                    ("detach_helper" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("alloc" variable (:type "int") (reparse-symbol arg-sub-list) [14125 14135]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14106 14136])
+                    ("detach_helper" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14141 14162])
+                    ("free" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("d" variable
+                               (:pointer 1
+                                :type ("QListData::Data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14177 14196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14167 14197])
+                    ("node_construct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14223 14231])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14232 14243]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14203 14244])
+                    ("node_destruct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14268 14276]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14249 14277])
+                    ("node_copy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14297 14308])
+                            ("to" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14309 14318])
+                            ("src" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14319 14329]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14282 14330])
+                    ("node_destruct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14354 14365])
+                            ("to" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14366 14375]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14335 14376]))                  )
+                nil [3255 14379])
+            ("node_construct" function
+               (:parent "QList"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14623 14631])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14632 14643]))                  
+                :type "void")
+                nil [14593 15252])
+            ("node_destruct" function
+               (:parent "QList"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15323 15331]))                  
+                :type "void")
+                nil [15294 15496])
+            ("node_copy" function
+               (:parent "QList"
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15563 15574])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15575 15584])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15585 15595]))                  
+                :type "void")
+                nil [15538 16517])
+            ("node_destruct" function
+               (:parent "QList"
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16588 16599])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16600 16609]))                  
+                :type "void")
+                nil [16559 16841])
+            ("=" function
+               (:operator-flag t
+                :parent "QList"
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16913 16931]))                  
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16883 17155])
+            ("insert" function
+               (:parent "QList"
+                :arguments 
+                  ( ("before" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17230 17246])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17247 17258]))                  
+                :type ("iterator" type (:type "class") nil nil))
+                nil [17204 17524])
+            ("erase" function
+               (:parent "QList"
+                :arguments 
+                  ( ("it" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17598 17610]))                  
+                :type ("iterator" type (:type "class") nil nil))
+                nil [17573 17710])
+            ("at" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [17762 17768]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [17711 17900])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [17960 17966]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :parent "QList"
+                :operator-flag t)
+                nil [17901 18106])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [18160 18166]))                  
+                :typemodifiers ("inline")
+                :parent "QList"
+                :operator-flag t)
+                nil [18107 18311])
+            ("removeAt" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [18365 18371]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [18312 18480])
+            ("takeAt" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [18529 18535]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [18481 18727])
+            ("takeFirst" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [18728 18824])
+            ("takeLast" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [18825 18918])
+            ("reserve" function
+               (:parent "QList"
+                :arguments 
+                  ( ("alloc" variable (:type "int") (reparse-symbol arg-sub-list) [18986 18996]))                  
+                :type "void")
+                nil [18963 19136])
+            ("append" function
+               (:parent "QList"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19203 19214]))                  
+                :type "void")
+                nil [19181 20080])
+            ("prepend" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20134 20145]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [20082 21011])
+            ("insert" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [21064 21070])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21071 21082]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [21013 21950])
+            ("replace" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [22004 22010])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22011 22022]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [21952 22171])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [22222 22228])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [22229 22235]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [22173 22498])
+            ("move" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("from" variable (:type "int") (reparse-symbol arg-sub-list) [22549 22558])
+                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [22559 22566]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [22500 22735])
+            ("mid" function
+               (:parent "QList"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [22802 22810])
+                    ("alength" variable (:type "int") (reparse-symbol arg-sub-list) [22811 22823]))                  
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [22779 23407])
+            ("value" function
+               (:parent "QList"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [23469 23475]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [23451 23596])
+            ("value" function
+               (:parent "QList"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [23658 23664])
+                    ("defaultValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23665 23687]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [23640 23792])
+            ("detach_helper_grow" function
+               (:pointer 1
+                :parent "QList"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [23891 23897])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [23898 23904]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [23856 24655])
+            ("detach_helper" function
+               (:parent "QList"
+                :arguments 
+                  ( ("alloc" variable (:type "int") (reparse-symbol arg-sub-list) [24729 24739]))                  
+                :type "void")
+                nil [24700 25067])
+            ("detach_helper" function
+               (:parent "QList"
+                :type "void")
+                nil [25112 25175])
+            ("QList" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Q_OUTOFLINE_TEMPLATE" type (:type "class") nil nil)
+                :parent "QList"
+                :destructor-flag t)
+                nil [25177 25284])
+            ("==" function
+               (:operator-flag t
+                :parent "QList"
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25355 25373]))                  
+                :type "bool")
+                nil [25329 25751])
+            ("free" function
+               (:parent "QList"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("QListData::Data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25883 25905]))                  
+                :type "void")
+                nil [25863 26067])
+            ("clear" function
+               (:parent "QList"
+                :type "void")
+                nil [26113 26163])
+            ("removeAll" function
+               (:parent "QList"
+                :arguments 
+                  ( ("_t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26232 26244]))                  
+                :type "int")
+                nil [26208 26697])
+            ("removeOne" function
+               (:parent "QList"
+                :arguments 
+                  ( ("_t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26767 26779]))                  
+                :type "bool")
+                nil [26742 26905])
+            ("erase" function
+               (:parent "QList"
+                :arguments 
+                  ( ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26994 27012])
+                    ("afirst" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27013 27029])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27095 27113])
+                    ("alast" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27114 27129]))                  
+                :type ("iterator" type (:type "class") nil nil))
+                nil [26969 27299])
+            ("+=" function
+               (:operator-flag t
+                :parent "QList"
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27375 27393]))                  
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [27344 28016])
+            ("append" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28069 28087]))                  
+                :typemodifiers ("inline")
+                :parent "QList")
+                nil [28018 28107])
+            ("indexOf" function
+               (:parent "QList"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28174 28185])
+                    ("from" variable (:type "int") (reparse-symbol arg-sub-list) [28186 28195]))                  
+                :type "int")
+                nil [28152 28547])
+            ("lastIndexOf" function
+               (:parent "QList"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28618 28629])
+                    ("from" variable (:type "int") (reparse-symbol arg-sub-list) [28630 28639]))                  
+                :type "int")
+                nil [28592 29004])
+            ("contains" function
+               (:parent "QList"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29074 29085]))                  
+                :type ("QBool" type (:type "class") nil nil))
+                nil [29049 29298])
+            ("count" function
+               (:parent "QList"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29363 29374]))                  
+                :type "int")
+                nil [29343 29576]))          
+    :file "qlist.h"
+    :pointmax 29710
+    :fsize 29709
+    :lastmodtime '(20558 38322)
+    :unmatched-syntax '((symbol 29677 . 29690) (symbol 29659 . 29675) (semantic-list 29651 . 29657) (symbol 29614 . 29651) (semantic-list 29607 . 29613) (symbol 29578 . 29607) (symbol 29322 . 29342) (punctuation 29320 . 29321) (symbol 29319 . 29320) (TYPENAME 29310 . 29318) (punctuation 29309 . 29310) (TEMPLATE 29300 . 29308) (symbol 29028 . 29048) (punctuation 29026 . 29027) (symbol 29025 . 29026) (TYPENAME 29016 . 29024) (punctuation 29015 . 29016) (TEMPLATE 29006 . 29014) (symbol 28571 . 28591) (punctuation 28569 . 28570) (symbol 28568 . 28569) (TYPENAME 28559 . 28567) (punctuation 28558 . 28559) (TEMPLATE 28549 . 28557) (symbol 28131 . 28151) (punctuation 28129 . 28130) (symbol 28128 . 28129) (TYPENAME 28119 . 28127) (punctuation 28118 . 28119) (TEMPLATE 28109 . 28117) (symbol 27323 . 27343) (punctuation 27321 . 27322) (symbol 27320 . 27321) (TYPENAME 27311 . 27319) (punctuation 27310 . 27311) (TEMPLATE 27301 . 27309) (punctuation 27113 . 27114) (punctuation 27112 . 27113) (punctuation 27012 . 27013) (punctuation 27011 . 27012) (punctuation 26968 . 26969) (punctuation 26967 . 26968) (punctuation 26966 . 26967) (symbol 26965 . 26966) (punctuation 26964 . 26965) (symbol 26959 . 26964) (TYPENAME 26950 . 26958) (symbol 26929 . 26949) (punctuation 26927 . 26928) (symbol 26926 . 26927) (TYPENAME 26917 . 26925) (punctuation 26916 . 26917) (TEMPLATE 26907 . 26915) (symbol 26721 . 26741) (punctuation 26719 . 26720) (symbol 26718 . 26719) (TYPENAME 26709 . 26717) (punctuation 26708 . 26709) (TEMPLATE 26699 . 26707) (symbol 26187 . 26207) (punctuation 26185 . 26186) (symbol 26184 . 26185) (TYPENAME 26175 . 26183) (punctuation 26174 . 26175) (TEMPLATE 26165 . 26173) (symbol 26092 . 26112) (punctuation 26090 . 26091) (symbol 26089 . 26090) (TYPENAME 26080 . 26088) (punctuation 26079 . 26080) (TEMPLATE 26070 . 26078) (symbol 25842 . 25862) (punctuation 25840 . 25841) (symbol 25839 . 25840) (TYPENAME 25830 . 25838) (punctuation 25829 . 25830) (TEMPLATE 25820 . 25828) (symbol 25308 . 25328) (punctuation 25306 . 25307) (symbol 25305 . 25306) (TYPENAME 25296 . 25304) (punctuation 25295 . 25296) (TEMPLATE 25286 . 25294) (symbol 25091 . 25111) (punctuation 25089 . 25090) (symbol 25088 . 25089) (TYPENAME 25079 . 25087) (punctuation 25078 . 25079) (TEMPLATE 25069 . 25077) (symbol 24679 . 24699) (punctuation 24677 . 24678) (symbol 24676 . 24677) (TYPENAME 24667 . 24675) (punctuation 24666 . 24667) (TEMPLATE 24657 . 24665) (punctuation 23855 . 23856) (punctuation 23854 . 23855) (punctuation 23853 . 23854) (symbol 23852 . 23853) (punctuation 23851 . 23852) (symbol 23846 . 23851) (TYPENAME 23837 . 23845) (symbol 23816 . 23836) (punctuation 23814 . 23815) (symbol 23813 . 23814) (TYPENAME 23804 . 23812) (punctuation 23803 . 23804) (TEMPLATE 23794 . 23802) (symbol 23619 . 23639) (punctuation 23617 . 23618) (symbol 23616 . 23617) (TYPENAME 23607 . 23615) (punctuation 23606 . 23607) (TEMPLATE 23598 . 23606) (symbol 23430 . 23450) (punctuation 23428 . 23429) (symbol 23427 . 23428) (TYPENAME 23418 . 23426) (punctuation 23417 . 23418) (TEMPLATE 23409 . 23417) (symbol 22758 . 22778) (punctuation 22756 . 22757) (symbol 22755 . 22756) (TYPENAME 22746 . 22754) (punctuation 22745 . 22746) (TEMPLATE 22737 . 22745) (symbol 19160 . 19180) (punctuation 19158 . 19159) (symbol 19157 . 19158) (TYPENAME 19148 . 19156) (punctuation 19147 . 19148) (TEMPLATE 19138 . 19146) (symbol 18942 . 18962) (punctuation 18940 . 18941) (symbol 18939 . 18940) (TYPENAME 18930 . 18938) (punctuation 18929 . 18930) (TEMPLATE 18920 . 18928) (punctuation 17572 . 17573) (punctuation 17571 . 17572) (punctuation 17570 . 17571) (symbol 17569 . 17570) (punctuation 17568 . 17569) (symbol 17563 . 17568) (TYPENAME 17554 . 17562) (INLINE 17547 . 17553) (punctuation 17545 . 17546) (symbol 17544 . 17545) (TYPENAME 17535 . 17543) (punctuation 17534 . 17535) (TEMPLATE 17525 . 17533) (punctuation 17203 . 17204) (punctuation 17202 . 17203) (punctuation 17201 . 17202) (symbol 17200 . 17201) (punctuation 17199 . 17200) (symbol 17194 . 17199) (TYPENAME 17185 . 17193) (INLINE 17178 . 17184) (punctuation 17176 . 17177) (symbol 17175 . 17176) (TYPENAME 17166 . 17174) (punctuation 17165 . 17166) (TEMPLATE 17156 . 17164) (symbol 16865 . 16882) (punctuation 16863 . 16864) (symbol 16862 . 16863) (TYPENAME 16853 . 16861) (punctuation 16852 . 16853) (TEMPLATE 16843 . 16851) (symbol 16541 . 16558) (punctuation 16539 . 16540) (symbol 16538 . 16539) (TYPENAME 16529 . 16537) (punctuation 16528 . 16529) (TEMPLATE 16519 . 16527) (symbol 15520 . 15537) (punctuation 15518 . 15519) (symbol 15517 . 15518) (TYPENAME 15508 . 15516) (punctuation 15507 . 15508) (TEMPLATE 15498 . 15506) (symbol 15276 . 15293) (punctuation 15274 . 15275) (symbol 15273 . 15274) (TYPENAME 15264 . 15272) (punctuation 15263 . 15264) (TEMPLATE 15254 . 15262) (symbol 14575 . 14592) (punctuation 14573 . 14574) (symbol 14572 . 14573) (TYPENAME 14563 . 14571) (punctuation 14562 . 14563) (TEMPLATE 14553 . 14561) (TYPEDEF 12273 . 12280) (TYPEDEF 12238 . 12245) (number 11551 . 11552) (punctuation 11550 . 11551) (punctuation 11548 . 11549) (punctuation 10043 . 10044) (TYPEDEF 8252 . 8259) (TYPEDEF 8252 . 8259) (punctuation 8011 . 8012) (TYPEDEF 5908 . 5915) (TYPEDEF 5908 . 5915) (number 5573 . 5574) (punctuation 5572 . 5573) (punctuation 5570 . 5571) (number 5519 . 5520) (punctuation 5517 . 5518) (symbol 3388 . 3405) (symbol 3388 . 3405) (semantic-list 2065 . 2071) (symbol 2056 . 2065) (symbol 2036 . 2054) (symbol 2019 . 2034))
+    :lexical-table 
+        '(("QLIST_H")
+          )
+
+    )
+   (semanticdb-table "qatomic_x86_64.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QATOMIC_X86_64_H" variable (:constant-flag t) nil [1719 1735])
+            ("Q_ATOMIC_INT_REFERENCE_COUNTING_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [1782 1830])
+            ("Q_ATOMIC_INT_REFERENCE_COUNTING_IS_WAIT_FREE" variable (:constant-flag t) nil [1839 1883])
+            ("isReferenceCountingNative" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [1885 1958])
+            ("isReferenceCountingWaitFree" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [1959 2034])
+            ("Q_ATOMIC_INT_TEST_AND_SET_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [2044 2086])
+            ("Q_ATOMIC_INT_TEST_AND_SET_IS_WAIT_FREE" variable (:constant-flag t) nil [2095 2133])
+            ("isTestAndSetNative" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2135 2201])
+            ("isTestAndSetWaitFree" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2202 2270])
+            ("Q_ATOMIC_INT_FETCH_AND_STORE_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [2280 2325])
+            ("Q_ATOMIC_INT_FETCH_AND_STORE_IS_WAIT_FREE" variable (:constant-flag t) nil [2334 2375])
+            ("isFetchAndStoreNative" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2377 2446])
+            ("isFetchAndStoreWaitFree" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2447 2518])
+            ("Q_ATOMIC_INT_FETCH_AND_ADD_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [2528 2571])
+            ("Q_ATOMIC_INT_FETCH_AND_ADD_IS_WAIT_FREE" variable (:constant-flag t) nil [2580 2619])
+            ("isFetchAndAddNative" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2621 2688])
+            ("isFetchAndAddWaitFree" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [2689 2758])
+            ("Q_ATOMIC_POINTER_TEST_AND_SET_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [2768 2814])
+            ("Q_ATOMIC_POINTER_TEST_AND_SET_IS_WAIT_FREE" variable (:constant-flag t) nil [2823 2865])
+            ("isTestAndSetNative" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [2907 2973])
+            ("isTestAndSetWaitFree" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [3014 3082])
+            ("Q_ATOMIC_POINTER_FETCH_AND_STORE_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [3092 3141])
+            ("Q_ATOMIC_POINTER_FETCH_AND_STORE_IS_WAIT_FREE" variable (:constant-flag t) nil [3150 3195])
+            ("isFetchAndStoreNative" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [3237 3306])
+            ("isFetchAndStoreWaitFree" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [3347 3418])
+            ("Q_ATOMIC_POINTER_FETCH_AND_ADD_IS_ALWAYS_NATIVE" variable (:constant-flag t) nil [3428 3475])
+            ("Q_ATOMIC_POINTER_FETCH_AND_ADD_IS_WAIT_FREE" variable (:constant-flag t) nil [3484 3527])
+            ("isFetchAndAddNative" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [3569 3636])
+            ("isFetchAndAddWaitFree" function
+               (:parent "QBasicAtomicPointer"
+                :type "bool")
+                nil [3677 3746])
+            ("ref" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [3794 4071])
+            ("deref" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [4073 4352])
+            ("testAndSetOrdered" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [4401 4419])
+                    ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [4420 4433]))                  
+                :type "bool")
+                nil [4354 4722])
+            ("fetchAndStoreOrdered" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [4773 4786]))                  
+                :type "int")
+                nil [4724 4958])
+            ("fetchAndAddOrdered" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("valueToAdd" variable (:type "int") (reparse-symbol arg-sub-list) [5007 5022]))                  
+                :type "int")
+                nil [4960 5226])
+            ("testAndSetOrdered" function
+               (:parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("expectedValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5315 5332])
+                    ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5333 5345]))                  
+                :type "bool")
+                nil [5268 5633])
+            ("fetchAndStoreOrdered" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5723 5735]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [5675 5906])
+            ("fetchAndAddOrdered" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("valueToAdd" variable (:type ("qptrdiff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5994 6014]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [5948 6252])
+            ("testAndSetRelaxed" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [8177 8195])
+                    ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8196 8209]))                  
+                :type "bool")
+                nil [8130 8268])
+            ("testAndSetAcquire" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [8317 8335])
+                    ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8336 8349]))                  
+                :type "bool")
+                nil [8270 8408])
+            ("testAndSetRelease" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [8457 8475])
+                    ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8476 8489]))                  
+                :type "bool")
+                nil [8410 8548])
+            ("fetchAndStoreRelaxed" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8599 8612]))                  
+                :type "int")
+                nil [8550 8659])
+            ("fetchAndStoreAcquire" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8710 8723]))                  
+                :type "int")
+                nil [8661 8770])
+            ("fetchAndStoreRelease" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("newValue" variable (:type "int") (reparse-symbol arg-sub-list) [8821 8834]))                  
+                :type "int")
+                nil [8772 8881])
+            ("fetchAndAddRelaxed" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("valueToAdd" variable (:type "int") (reparse-symbol arg-sub-list) [8930 8945]))                  
+                :type "int")
+                nil [8883 8992])
+            ("fetchAndAddAcquire" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("valueToAdd" variable (:type "int") (reparse-symbol arg-sub-list) [9041 9056]))                  
+                :type "int")
+                nil [8994 9103])
+            ("fetchAndAddRelease" function
+               (:parent "QBasicAtomicInt"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("valueToAdd" variable (:type "int") (reparse-symbol arg-sub-list) [9152 9167]))                  
+                :type "int")
+                nil [9105 9214])
+            ("testAndSetRelaxed" function
+               (:parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("expectedValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9303 9320])
+                    ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9321 9333]))                  
+                :type "bool")
+                nil [9256 9392])
+            ("testAndSetAcquire" function
+               (:parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("expectedValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9481 9498])
+                    ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9499 9511]))                  
+                :type "bool")
+                nil [9434 9570])
+            ("testAndSetRelease" function
+               (:parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("expectedValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9659 9676])
+                    ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9677 9689]))                  
+                :type "bool")
+                nil [9612 9748])
+            ("fetchAndStoreRelaxed" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9838 9850]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [9790 9897])
+            ("fetchAndStoreAcquire" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9987 9999]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [9939 10046])
+            ("fetchAndStoreRelease" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("newValue" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10136 10148]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [10088 10195])
+            ("fetchAndAddRelaxed" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("valueToAdd" variable (:type ("qptrdiff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10283 10303]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [10237 10350])
+            ("fetchAndAddAcquire" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("valueToAdd" variable (:type ("qptrdiff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10438 10458]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [10392 10505])
+            ("fetchAndAddRelease" function
+               (:pointer 1
+                :parent "QBasicAtomicPointer"
+                :arguments 
+                  ( ("valueToAdd" variable (:type ("qptrdiff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10593 10613]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [10547 10660]))          
+    :file "qatomic_x86_64.h"
+    :pointmax 10722
+    :fsize 10721
+    :lastmodtime '(20558 38322)
+    :unmatched-syntax '((symbol 10680 . 10693) (symbol 10662 . 10678) (symbol 10529 . 10546) (punctuation 10527 . 10528) (symbol 10526 . 10527) (TYPENAME 10517 . 10525) (punctuation 10516 . 10517) (TEMPLATE 10507 . 10515) (symbol 10374 . 10391) (punctuation 10372 . 10373) (symbol 10371 . 10372) (TYPENAME 10362 . 10370) (punctuation 10361 . 10362) (TEMPLATE 10352 . 10360) (symbol 10219 . 10236) (punctuation 10217 . 10218) (symbol 10216 . 10217) (TYPENAME 10207 . 10215) (punctuation 10206 . 10207) (TEMPLATE 10197 . 10205) (symbol 10070 . 10087) (punctuation 10068 . 10069) (symbol 10067 . 10068) (TYPENAME 10058 . 10066) (punctuation 10057 . 10058) (TEMPLATE 10048 . 10056) (symbol 9921 . 9938) (punctuation 9919 . 9920) (symbol 9918 . 9919) (TYPENAME 9909 . 9917) (punctuation 9908 . 9909) (TEMPLATE 9899 . 9907) (symbol 9772 . 9789) (punctuation 9770 . 9771) (symbol 9769 . 9770) (TYPENAME 9760 . 9768) (punctuation 9759 . 9760) (TEMPLATE 9750 . 9758) (symbol 9594 . 9611) (punctuation 9592 . 9593) (symbol 9591 . 9592) (TYPENAME 9582 . 9590) (punctuation 9581 . 9582) (TEMPLATE 9572 . 9580) (symbol 9416 . 9433) (punctuation 9414 . 9415) (symbol 9413 . 9414) (TYPENAME 9404 . 9412) (punctuation 9403 . 9404) (TEMPLATE 9394 . 9402) (symbol 9238 . 9255) (punctuation 9236 . 9237) (symbol 9235 . 9236) (TYPENAME 9226 . 9234) (punctuation 9225 . 9226) (TEMPLATE 9216 . 9224) (symbol 5930 . 5947) (punctuation 5928 . 5929) (symbol 5927 . 5928) (TYPENAME 5918 . 5926) (punctuation 5917 . 5918) (TEMPLATE 5908 . 5916) (symbol 5657 . 5674) (punctuation 5655 . 5656) (symbol 5654 . 5655) (TYPENAME 5645 . 5653) (punctuation 5644 . 5645) (TEMPLATE 5635 . 5643) (symbol 5250 . 5267) (punctuation 5248 . 5249) (symbol 5247 . 5248) (TYPENAME 5238 . 5246) (punctuation 5237 . 5238) (TEMPLATE 5228 . 5236) (symbol 3659 . 3676) (punctuation 3657 . 3658) (symbol 3656 . 3657) (TYPENAME 3647 . 3655) (punctuation 3646 . 3647) (TEMPLATE 3637 . 3645) (symbol 3551 . 3568) (punctuation 3549 . 3550) (symbol 3548 . 3549) (TYPENAME 3539 . 3547) (punctuation 3538 . 3539) (TEMPLATE 3529 . 3537) (symbol 3329 . 3346) (punctuation 3327 . 3328) (symbol 3326 . 3327) (TYPENAME 3317 . 3325) (punctuation 3316 . 3317) (TEMPLATE 3307 . 3315) (symbol 3219 . 3236) (punctuation 3217 . 3218) (symbol 3216 . 3217) (TYPENAME 3207 . 3215) (punctuation 3206 . 3207) (TEMPLATE 3197 . 3205) (symbol 2996 . 3013) (punctuation 2994 . 2995) (symbol 2993 . 2994) (TYPENAME 2984 . 2992) (punctuation 2983 . 2984) (TEMPLATE 2974 . 2982) (symbol 2889 . 2906) (punctuation 2887 . 2888) (symbol 2886 . 2887) (TYPENAME 2877 . 2885) (punctuation 2876 . 2877) (TEMPLATE 2867 . 2875) (symbol 1754 . 1772) (symbol 1737 . 1752))
+    :lexical-table 
+        '(("Q_ATOMIC_INT_FETCH_AND_ADD_IS_WAIT_FREE")
+          ("Q_ATOMIC_INT_FETCH_AND_STORE_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_POINTER_TEST_AND_SET_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_POINTER_TEST_AND_SET_IS_WAIT_FREE")
+          ("Q_ATOMIC_INT_REFERENCE_COUNTING_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_INT_REFERENCE_COUNTING_IS_WAIT_FREE")
+          ("Q_ATOMIC_INT_TEST_AND_SET_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_INT_FETCH_AND_ADD_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_POINTER_FETCH_AND_ADD_IS_ALWAYS_NATIVE")
+          ("QATOMIC_X86_64_H")
+          ("Q_ATOMIC_INT_FETCH_AND_STORE_IS_WAIT_FREE")
+          ("Q_ATOMIC_POINTER_FETCH_AND_ADD_IS_WAIT_FREE")
+          ("Q_ATOMIC_POINTER_FETCH_AND_STORE_IS_ALWAYS_NATIVE")
+          ("Q_ATOMIC_POINTER_FETCH_AND_STORE_IS_WAIT_FREE")
+          ("Q_ATOMIC_INT_TEST_AND_SET_IS_WAIT_FREE")
+          )
+
+    )
+   )
+  :file "!usr!include!qt4!QtCore!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

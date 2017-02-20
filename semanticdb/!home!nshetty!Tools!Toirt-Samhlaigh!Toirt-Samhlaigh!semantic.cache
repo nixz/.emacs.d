@@ -1,0 +1,42 @@
+;; Object Toirt-Samhlaigh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Toirt-Samhlaigh/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUIDIR" variable (:default-value ("$(HOME)/Tools/Vrui/Vrui-3.1-004-install")) nil [40 90])
+            ("TARGET" variable (:default-value ("Toirt_Samhlaigh")) nil [116 141])
+            ("TYPE" variable (:default-value ("release")) nil [162 177])
+            ("DIRS" variable (:default-value ("source" "source/ANALYSIS" "source/COLORMAP" "source/DATA" "source/DATASTRUCTURE" "source/GRAPHIC" "source/GUI" "source/IO" "source/MATH" "source/SHADER" "source/UTILITY")) nil [218 374])
+            ("LIBS" variable (:default-value ("GLU")) nil [403 414])
+            ("DLIBS" variable (:default-value ("-lglu")) nil [434 448])
+            ("FRAMEWORKS" variable nil nil [469 483])
+            ("INCPATH" variable (:default-value ("$(DIRS)")) nil [1004 1022])
+            ("LIBPATH" variable nil nil [1022 1033])
+            ("EXTRA_FILES" variable (:default-value ("Makefile")) nil [1094 1117])
+            ("EXECDIR" variable (:default-value ("bin")) nil [1164 1178])
+            ("SRCDIR" variable (:default-value ("source")) nil [1200 1216])
+            ("OBJDIR" variable (:default-value ("objects")) nil [1263 1280])
+            ("SOURCE" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.cpp))")) nil [1311 1369])
+            ("HEADERS" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.h))")) nil [1398 1455])
+            ("OBJECTS" variable (:default-value ("$(addprefix $(OBJDIR)/, $(SOURCE:.cpp=.o))")) nil [1484 1538])
+            ("DFILES" variable (:default-value ("$(addprefix $(OBJDIR)/,$(SOURCE:.cpp=.d))")) nil [1571 1623])
+            (".PHONY" function (:arguments ("clean" "backup" "dirs" "all")) nil [1688 1718])
+            ("ALL" variable (:default-value ("$(TARGET)")) nil [1719 1735])
+            ("all" function (:arguments ("$(ALL)")) nil [1736 1748])
+            ("Toirt_Samhlaigh" function (:arguments ("dirs" "$(OBJECTS)")) nil [1851 2135])
+            ("$(OBJDIR)" function (:arguments ("%.cpp")) nil [2334 2652])
+            ("%.hpp" function (:arguments (";")) nil [2712 2721])
+            ("clean" function nil nil [2773 2908])
+            ("backup" function nil nil [2936 3082])
+            ("dirs" function nil nil [3114 3324]))          
+      :file "Makefile"
+      :pointmax 3423
+      :fsize 3422
+      :lastmodtime '(22386 60133 99585 513000)
+      :unmatched-syntax nil))
+  :file "!home!nshetty!Tools!Toirt-Samhlaigh!Toirt-Samhlaigh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

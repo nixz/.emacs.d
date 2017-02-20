@@ -1,0 +1,77 @@
+;; Object Tcl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Tcl/"
+  :tables
+  (list
+    (semanticdb-table "vtkParaTkAppInit.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VTK_COMPILED_USING_MPI" variable (:constant-flag t) nil [598 620])
+            ("vtkTkAppInit.cxx" include nil nil [621 648]))          
+      :file "vtkParaTkAppInit.cxx"
+      :pointmax 649
+      :fsize 648
+      :lastmodtime '(21917 17318 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VTK_COMPILED_USING_MPI")
+          )
+)
+    (semanticdb-table "vtkTkAppInit.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkConfigure.h" include nil nil [1077 1102])
+            ("vtkSystemIncludes.h" include nil nil [1103 1133])
+            ("vtkToolkits.h" include nil nil [1134 1158])
+            ("vtkTkAppInitConfigure.h" include nil nil [1159 1193])
+            ("vtkTcl.h" include nil nil [1308 1328])
+            ("vtkTclUtil.h" include nil nil [1337 1360])
+            ("vtkTkAppInitEnableMSVCDebugHook" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [1362 1408])
+            ("_ANSI_ARGS_" function
+               (:prototype-flag t
+                :type ("TclGetLibraryPath" type (:type "class") nil nil))
+                nil [1679 1717])
+            ("_ANSI_ARGS_" function
+               (:prototype-flag t
+                :type ("TclSetLibraryPath" type (:type "class") nil nil))
+                nil [1730 1781])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2828 2837])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2838 2850]))                  
+                :type "int")
+                nil [2819 3437])
+            ("vtktcl_static_prototypes.h" include nil nil [4053 4091])
+            ("help" function (:type "void") nil [4100 4115])
+            ("Tcl_AppInit" function
+               (:arguments 
+                  ( ("interp" variable
+                       (:pointer 1
+                        :type ("Tcl_Interp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4133 4152]))                  
+                :type "int")
+                nil [4117 7378])
+            ("vtkTkAppInitEnableMSVCDebugHook" function (:type "void") nil [7786 7828]))          
+      :file "vtkTkAppInit.cxx"
+      :pointmax 7836
+      :fsize 7835
+      :lastmodtime '(21917 17318 0 0)
+      :unmatched-syntax '((semantic-list 1760 . 1779) (VOID 1725 . 1729) (symbol 1718 . 1724) (semantic-list 1709 . 1715) (punctuation 1677 . 1678) (symbol 1670 . 1677) (symbol 1663 . 1669)))
+    (semanticdb-table "vtkTcl.h"
+      :file "vtkTcl.h"
+      :fsize 750
+      :lastmodtime '(21917 17318 0 0))
+    (semanticdb-table "vtkTclUtil.h"
+      :file "vtkTclUtil.h"
+      :fsize 3650
+      :lastmodtime '(21917 17318 0 0)))
+  :file "!Users!nshetty!Code!VTK!VTK!Wrapping!Tcl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

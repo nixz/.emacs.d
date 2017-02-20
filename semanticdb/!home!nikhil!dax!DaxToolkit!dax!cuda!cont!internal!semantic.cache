@@ -1,0 +1,107 @@
+;; Object internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "internal/"
+  :tables (list 
+   (semanticdb-table "SetThrustForCuda.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cuda_cont_internal_SetThrustForCuda_h" variable (:constant-flag t) nil [709 752])
+            ("THRUST_DEVICE_BACKEND" variable (:constant-flag t) nil [792 813]))          
+    :file "SetThrustForCuda.h"
+    :pointmax 1138
+    :fsize 1137
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("THRUST_DEVICE_BACKEND" . ((symbol "THRUST_DEVICE_BACKEND_CUDA" 814 . 840)))
+          ("__dax_cuda_cont_internal_SetThrustForCuda_h")
+          )
+
+    )
+   (semanticdb-table "ArrayManagerExecutionCuda.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cuda_cont_internal_ArrayManagerExecutionCuda_h" variable (:constant-flag t) nil [718 770])
+            ("dax/cuda/cont/internal/SetThrustForCuda.h" include (:system-flag t) nil [772 824])
+            ("dax/cuda/cont/internal/DeviceAdapterTagCuda.h" include (:system-flag t) nil [826 882])
+            ("dax/cont/internal/ArrayManagerExecution.h" include (:system-flag t) nil [884 936])
+            ("dax/thrust/cont/internal/ArrayManagerExecutionThrustDevice.h" include (:system-flag t) nil [937 1008])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("ArrayManagerExecution" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("ArrayContainerTag" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1415 1422])
+                                            ("Superclass" type
+                                               (:typedef ("dax::thrust::cont::internal::ArrayManagerExecutionThrustDevice" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("ArrayContainerTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::thrust::cont::internal::ArrayManagerExecutionThrustDevice"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1425 1536])
+                                            ("ValueType" type
+                                               (:typedef ("Superclass::ValueType" type (:type "class") nil nil)
+                                                :superclasses "Superclass::ValueType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1539 1588])
+                                            ("PortalType" type
+                                               (:typedef ("Superclass::PortalType" type (:type "class") nil nil)
+                                                :superclasses "Superclass::PortalType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1591 1642])
+                                            ("PortalConstType" type
+                                               (:typedef ("Superclass::PortalConstType" type (:type "class") nil nil)
+                                                :superclasses "Superclass::PortalConstType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1645 1706])
+                                            ("ThrustIteratorType" type
+                                               (:typedef ("Superclass::ThrustIteratorType" type (:type "class") nil nil)
+                                                :superclasses "Superclass::ThrustIteratorType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1710 1777])
+                                            ("ThrustIteratorConstType" type
+                                               (:typedef ("Superclass::ThrustIteratorConstType" type (:type "class") nil nil)
+                                                :superclasses "Superclass::ThrustIteratorConstType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1780 1857]))                                          
+                                        :superclasses 
+                                          ( ("dax::thrust::cont::internal::ArrayManagerExecutionThrustDevice" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("T" type nil nil nil)
+                                            ("ArrayContainerTag" type nil nil nil)
+                                            ("dax::cuda::cont::DeviceAdapterTagCuda" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1165 1860]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1143 1863]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1126 1865]))                  
+                :type "namespace")
+                nil [1110 1867]))          
+    :file "ArrayManagerExecutionCuda.h"
+    :pointmax 1965
+    :fsize 1964
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax_cuda_cont_internal_ArrayManagerExecutionCuda_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!cuda!cont!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

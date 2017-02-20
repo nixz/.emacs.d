@@ -1,0 +1,2773 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("swigmod.h" include nil nil [642 662])
+            ("cparse.h" include nil nil [663 682])
+            ("ctype.h" include (:system-flag t) nil [683 701])
+            ("iostream" include (:system-flag t) nil [702 721])
+            ("set" include (:system-flag t) nil [722 736])
+            ("usage" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "(char *) \"\\
+CFFI Options (available with -cffi)\\n\\
+     -generate-typedef - Use defctype to generate shortcuts according to the\\n\\
+                         typedefs in the input.\\n\\
+     -[no]cwrap        - Turn on or turn off generation of an intermediate C\\n\\
+                         file when creating a C interface. By default this is\\n\\
+                         only done for C++ code.\\n\\
+     -[no]swig-lisp    - Turn on or off generation of code for helper lisp\\n\\
+                         macro, functions, etc. which SWIG uses while\\n\\
+                         generating wrappers. These macros, functions may still\\n\\
+                         be used by generated wrapper code.\\n\\
+     -[no]asdf-package - [Only C++ for now]. Generates *.asd, *-package.lisp\\n\\
+                         *-library.lisp for every module. This should make\\n\\
+                         it easier to make binding for libraries and have it\\n\\
+                         available as a package. Note: the C wrapper library\\n\\
+                         which is automatically generated for C++ will have\\n\\
+                         cl-xxx pattern (xxx = module-name).\\n\\
+\""
+                :type "char")
+                nil [786 1968])
+            ("CFFI" type
+               (:superclasses 
+                  ( ("Language" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1999 2006])
+                    ("f_cl" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2009 2022])
+                    ("f_clhead" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2025 2042])
+                    ("f_clwrap" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2045 2062])
+                    ("CWrap" variable (:type "bool") (reparse-symbol classsubparts) [2065 2076])
+                    ("f_begin" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2122 2136])
+                    ("f_runtime" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2139 2155])
+                    ("f_cxx_header" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2158 2177])
+                    ("f_cxx_wrapper" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2180 2200])
+                    ("f_clos" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2203 2216])
+                    ("f_asd" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2219 2231])
+                    ("f_package" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2234 2250])
+                    ("f_library" variable
+                       (:pointer 1
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2253 2269])
+                    ("check_duplicate" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2272 2310])
+                    ("module" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2314 2329])
+                    ("main" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2350 2359])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2360 2373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2332 2374])
+                    ("top" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2393 2401]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2377 2402])
+                    ("functionWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2433 2441]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2405 2442])
+                    ("variableWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2473 2481]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2445 2482])
+                    ("constantWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2513 2521]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2485 2522])
+                    ("enumDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2598 2606]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2570 2607])
+                    ("typedefHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2637 2645]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2610 2646])
+                    ("constructorHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2703 2711]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2672 2712])
+                    ("destructorHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2745 2753]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2715 2754])
+                    ("memberfunctionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2791 2799]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2757 2800])
+                    ("membervariableHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2837 2845]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2803 2846])
+                    ("classHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2874 2882]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2849 2883])
+                    ("private" label nil (reparse-symbol classsubparts) [2885 2893])
+                    ("emit_defun" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2912 2920])
+                            ("name" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2921 2934]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2896 2935])
+                    ("emit_defmethod" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2958 2966]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2938 2967])
+                    ("emit_initialize_instance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3000 3008]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2970 3009])
+                    ("emit_getter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3029 3037]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3012 3038])
+                    ("emit_setter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3058 3066]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3041 3067])
+                    ("emit_class" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3086 3094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3070 3095])
+                    ("emit_struct_union" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3121 3129])
+                            ("un" variable (:type "bool") (reparse-symbol arg-sub-list) [3130 3138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3098 3139])
+                    ("emit_export" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3159 3167])
+                            ("name" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3168 3181]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3142 3182])
+                    ("emit_inline" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3202 3210])
+                            ("name" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3211 3224]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3185 3225])
+                    ("null_if_duplicate" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3255 3269]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3228 3270])
+                    ("lispy_name" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3292 3303]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3273 3304])
+                    ("lispify_name" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3328 3336])
+                            ("ty" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3337 3348])
+                            ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3349 3366])
+                            ("kw" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3367 3382]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3307 3384])
+                    ("convert_literal" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("num_param" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3411 3429])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3430 3443])
+                            ("try_to_split" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3444 3468]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3387 3470])
+                    ("infix_to_prefix" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("val" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3497 3509])
+                            ("split_op" variable (:type "char") (reparse-symbol arg-sub-list) [3510 3524])
+                            ("op" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3525 3542])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3543 3556]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3473 3557])
+                    ("strip_parens" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("string" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3581 3596]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3560 3597])
+                    ("trim" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("string" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3613 3628]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3600 3629])
+                    ("generate_typedef_flag" variable (:type "int") (reparse-symbol classsubparts) [3632 3658])
+                    ("no_swig_lisp" variable (:type "bool") (reparse-symbol classsubparts) [3661 3679])
+                    ("no_asdf_package" variable (:type "bool") (reparse-symbol classsubparts) [3682 3703]))                  
+                :type "class")
+                nil [1970 3748])
+            ("main" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3766 3775])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3776 3789]))                  
+                :type "void")
+                nil [3750 4944])
+            ("top" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4960 4968]))                  
+                :type "int")
+                nil [4946 11114])
+            ("null_if_duplicate" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11368 11381]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11335 11566])
+            ("classHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11591 11599]))                  
+                :type "int")
+                nil [11568 12367])
+            ("constructorHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12398 12406]))                  
+                :type "int")
+                nil [12369 12769])
+            ("destructorHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12799 12807]))                  
+                :type "int")
+                nil [12771 12988])
+            ("emit_defmethod" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13016 13024]))                  
+                :type "void")
+                nil [12990 15109])
+            ("emit_initialize_instance" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15147 15155]))                  
+                :type "void")
+                nil [15111 16521])
+            ("emit_setter" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16546 16554]))                  
+                :type "void")
+                nil [16523 17001])
+            ("emit_getter" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17027 17035]))                  
+                :type "void")
+                nil [17004 17460])
+            ("memberfunctionHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17494 17502]))                  
+                :type "int")
+                nil [17462 17646])
+            ("membervariableHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17680 17688]))                  
+                :type "int")
+                nil [17648 17827])
+            ("functionWrapper" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17855 17863]))                  
+                :type "int")
+                nil [17829 21707])
+            ("emit_defun" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21732 21740])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21741 21754]))                  
+                :type "void")
+                nil [21710 23024])
+            ("constantWrapper" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23053 23061]))                  
+                :type "int")
+                nil [23027 23607])
+            ("variableWrapper" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23635 23643]))                  
+                :type "int")
+                nil [23609 24292])
+            ("typedefHandler" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24319 24327]))                  
+                :type "int")
+                nil [24294 24653])
+            ("enumDeclaration" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24681 24689]))                  
+                :type "int")
+                nil [24655 26523])
+            ("emit_class" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26546 26554]))                  
+                :type "void")
+                nil [26524 30294])
+            ("emit_struct_union" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30345 30353])
+                    ("un" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [30354 30369]))                  
+                :type "void")
+                nil [30316 33333])
+            ("emit_export" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33358 33366])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33367 33380]))                  
+                :type "void")
+                nil [33335 33466])
+            ("emit_inline" function
+               (:parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33491 33499])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33500 33513]))                  
+                :type "void")
+                nil [33468 33611])
+            ("lispify_name" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33640 33648])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33649 33660])
+                    ("flag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33661 33678])
+                    ("kw" variable (:type "bool") (reparse-symbol arg-sub-list) [33679 33687]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [33613 34026])
+            ("strip_parens" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34115 34130]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [34088 34535])
+            ("trim" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34556 34568]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [34537 34712])
+            ("infix_to_prefix" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34744 34756])
+                    ("split_op" variable (:type "char") (reparse-symbol arg-sub-list) [34757 34771])
+                    ("op" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34772 34789])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34790 34803]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [34714 35861])
+            ("convert_literal" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("literal" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36107 36123])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36124 36137])
+                    ("try_to_split" variable (:type "bool") (reparse-symbol arg-sub-list) [36138 36156]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [36077 39332])
+            ("lispy_name" function
+               (:pointer 1
+                :parent "CFFI"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39452 39463]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [39427 39958])
+            ("swig_cffi" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39991 39996]))                  
+                :type ("Language" type (:type "class") nil nil))
+                nil [39971 40021]))          
+      :file "cffi.cxx"
+      :pointmax 40022
+      :fsize 40021
+      :lastmodtime '(22233 57254 537616 948000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SWIG_SWIGMOD_H_" variable (:constant-flag t) nil [678 693])
+            ("swig.h" include nil nil [695 712])
+            ("preprocessor.h" include nil nil [713 738])
+            ("swigwarn.h" include nil nil [739 760])
+            ("true" variable (:constant-flag t) nil [812 816])
+            ("false" variable (:constant-flag t) nil [835 840])
+            ("NOT_VIRTUAL" variable (:constant-flag t) nil [867 878])
+            ("PLAIN_VIRTUAL" variable (:constant-flag t) nil [893 906])
+            ("PURE_VIRTUAL" variable (:constant-flag t) nil [919 931])
+            ("input_file" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("String" type (:type "class") nil nil))
+                nil [938 964])
+            ("line_number" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [965 988])
+            ("start_line" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [989 1011])
+            ("CPlusPlus" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1012 1033])
+            ("Extend" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1047 1065])
+            ("Verbose" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1082 1101])
+            ("IsVirtual" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1102 1123])
+            ("ImportMode" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1124 1146])
+            ("NoExcept" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1147 1167])
+            ("Abstract" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1190 1210])
+            ("SmartPointer" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1235 1259])
+            ("SwigRuntime" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1299 1322])
+            ("argv_template_string" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("String" type (:type "class") nil nil))
+                nil [1357 1393])
+            ("argc_template_string" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("String" type (:type "class") nil nil))
+                nil [1394 1430])
+            ("tab2" variable (:constant-flag t) nil [1468 1472])
+            ("tab4" variable (:constant-flag t) nil [1489 1493])
+            ("tab8" variable (:constant-flag t) nil [1512 1516])
+            ("Dispatcher" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1550 1557])
+                    ("Dispatcher" function
+                       (:constructor-flag t
+                        :type ("Dispatcher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1561 1599])
+                    ("Dispatcher" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1602 1631])
+                    ("emit_one" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1656 1664]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1635 1665])
+                    ("emit_children" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1694 1702]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1668 1703])
+                    ("defaultHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1733 1741]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1706 1742])
+                    ("top" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1792 1800]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1776 1805])
+                    ("applyDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1861 1869]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1834 1870])
+                    ("clearDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1900 1908]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1873 1909])
+                    ("constantDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1942 1950]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1912 1951])
+                    ("extendDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1982 1990]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1954 1991])
+                    ("fragmentDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2024 2032]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1994 2033])
+                    ("importDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2064 2072]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2036 2073])
+                    ("includeDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2105 2113]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2076 2114])
+                    ("insertDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2145 2153]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2117 2154])
+                    ("moduleDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2185 2193]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2157 2194])
+                    ("nativeDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2225 2233]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2197 2234])
+                    ("pragmaDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2265 2273]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2237 2274])
+                    ("typemapDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2306 2314]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2277 2315])
+                    ("typemapitemDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2351 2359]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2318 2360])
+                    ("typemapcopyDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2396 2404]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2363 2405])
+                    ("typesDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2435 2443]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2408 2444])
+                    ("cDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2496 2504]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2471 2505])
+                    ("externDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2538 2546]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2508 2547])
+                    ("enumDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2578 2586]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2550 2587])
+                    ("enumvalueDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2623 2631]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2590 2632])
+                    ("enumforwardDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2670 2678]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2635 2679])
+                    ("classDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2711 2719]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2682 2720])
+                    ("classforwardDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2759 2767]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2723 2768])
+                    ("constructorDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2806 2814]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2771 2815])
+                    ("destructorDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2852 2860]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2818 2861])
+                    ("accessDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2894 2902]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2864 2903])
+                    ("usingDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2935 2943]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2906 2944])
+                    ("namespaceDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2980 2988]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2947 2989])
+                    ("templateDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3024 3032]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2992 3033])
+                    ("AccessMode" type
+                       (:members 
+                          ( ("PUBLIC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3055 3062])
+                            ("PRIVATE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3063 3071])
+                            ("PROTECTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3072 3083]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3037 3084])
+                    ("protected" label nil (reparse-symbol classsubparts) [3086 3096])
+                    ("cplus_mode" variable (:type ("AccessMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3099 3121]))                  
+                :type "class")
+                nil [1531 3124])
+            ("Language" type
+               (:superclasses 
+                  ( ("Dispatcher" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3557 3564])
+                    ("Language" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Language" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3567 3578])
+                    ("Language" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3581 3601])
+                    ("emit_one" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3625 3633]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3604 3634])
+                    ("directorClassName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3664 3672]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3638 3673])
+                    ("main" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3731 3740])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3741 3754]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3713 3755])
+                    ("top" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3806 3814]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3790 3815])
+                    ("applyDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3872 3880]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3845 3881])
+                    ("clearDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3911 3919]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3884 3920])
+                    ("constantDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3953 3961]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3923 3962])
+                    ("extendDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3993 4001]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3965 4002])
+                    ("fragmentDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4035 4043]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4005 4044])
+                    ("importDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4075 4083]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4047 4084])
+                    ("includeDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4116 4124]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4087 4125])
+                    ("insertDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4156 4164]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4128 4165])
+                    ("moduleDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4196 4204]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4168 4205])
+                    ("nativeDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4236 4244]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4208 4245])
+                    ("pragmaDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4276 4284]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4248 4285])
+                    ("typemapDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4317 4325]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4288 4326])
+                    ("typemapcopyDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4362 4370]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4329 4371])
+                    ("typesDirective" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4401 4409]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4374 4410])
+                    ("cDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4462 4470]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4437 4471])
+                    ("externDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4504 4512]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4474 4513])
+                    ("enumDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4544 4552]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4516 4553])
+                    ("enumvalueDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4589 4597]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4556 4598])
+                    ("enumforwardDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4636 4644]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4601 4645])
+                    ("classDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4677 4685]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4648 4686])
+                    ("classforwardDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4725 4733]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4689 4734])
+                    ("constructorDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4772 4780]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4737 4781])
+                    ("destructorDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4818 4826]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4784 4827])
+                    ("accessDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4860 4868]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4830 4869])
+                    ("namespaceDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4905 4913]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4872 4914])
+                    ("usingDeclaration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4946 4954]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4917 4955])
+                    ("functionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5014 5022]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4986 5023])
+                    ("globalfunctionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5060 5068]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5026 5069])
+                    ("memberfunctionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5106 5114]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5072 5115])
+                    ("staticmemberfunctionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5158 5166]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5118 5167])
+                    ("callbackfunctionHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5206 5214]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5170 5215])
+                    ("variableHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5274 5282]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5246 5283])
+                    ("globalvariableHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5320 5328]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5286 5329])
+                    ("membervariableHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5366 5374]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5332 5375])
+                    ("staticmembervariableHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5418 5426]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5378 5427])
+                    ("memberconstantHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5487 5495]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5453 5496])
+                    ("constructorHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5530 5538]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5499 5539])
+                    ("copyconstructorHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5577 5585]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5542 5586])
+                    ("destructorHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5619 5627]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5589 5628])
+                    ("classHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5656 5664]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5631 5665])
+                    ("typedefHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5719 5727]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5692 5728])
+                    ("constantWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5795 5803]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5767 5804])
+                    ("variableWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5835 5843]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5807 5844])
+                    ("functionWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5875 5883]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5847 5884])
+                    ("nativeWrapper" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5913 5921]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5887 5922])
+                    ("classDirector" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5990 5998]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5964 5999])
+                    ("classDirectorInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6032 6040]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6002 6041])
+                    ("classDirectorEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6073 6081]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6044 6082])
+                    ("unrollVirtualMethods" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6118 6126])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6127 6140])
+                            ("vm" variable
+                               (:pointer 1
+                                :type ("List" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6141 6150])
+                            ("default_director" variable (:type "int") (reparse-symbol arg-sub-list) [6151 6172])
+                            ("virtual_destructor" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6173 6197])
+                            ("protectedbase" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6198 6219]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6085 6221])
+                    ("classDirectorConstructor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6261 6269]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6224 6270])
+                    ("classDirectorDefaultConstructor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6317 6325]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6273 6326])
+                    ("classDirectorMethod" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6361 6369])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6370 6383])
+                            ("super" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6384 6398]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6329 6399])
+                    ("classDirectorConstructors" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6440 6448]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6402 6449])
+                    ("classDirectorDestructor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6488 6496]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6452 6497])
+                    ("classDirectorMethods" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6533 6541]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6500 6542])
+                    ("classDirectorDisown" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6577 6585]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6545 6586])
+                    ("validIdentifier" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6640 6650]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6612 6651])
+                    ("addSymbol" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6700 6716])
+                            ("n" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6717 6731])
+                            ("scope" variable
+                               (:default-value "\"\""
+                                :type ("const_String_or_char_ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6732 6767]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6678 6769])
+                    ("dumpSymbols" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6796 6823])
+                    ("symbolLookup" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6853 6863])
+                            ("scope" variable
+                               (:default-value "\"\""
+                                :type ("const_String_or_char_ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6864 6899]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6826 6901])
+                    ("classLookup" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SwigType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6956 6974]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6930 6981])
+                    ("enumLookup" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type ("SwigType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7033 7045]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7008 7046])
+                    ("abstractClassTest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7103 7111]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7073 7112])
+                    ("is_assignable" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7173 7181]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7147 7182])
+                    ("runtimeCode" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7215 7245])
+                    ("defaultExternalRuntimeFilename" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7297 7346])
+                    ("replaceSpecialVariables" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("method" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7438 7453])
+                            ("tm" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7454 7465])
+                            ("parm" variable
+                               (:pointer 1
+                                :type ("Parm" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7466 7477]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7401 7478])
+                    ("enable_cplus_runtime_mode" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7611 7644])
+                    ("cplus_runtime_mode" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [7687 7712])
+                    ("allow_directors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7784 7795]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7763 7797])
+                    ("directorsEnabled" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [7846 7875])
+                    ("allow_dirprot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7963 7974]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7944 7976])
+                    ("allow_allprotected" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8072 8083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8048 8085])
+                    ("dirprot_mode" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8122 8147])
+                    ("need_nonpublic_ctor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8246 8254]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8222 8255])
+                    ("need_nonpublic_member" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8351 8359]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8325 8360])
+                    ("setSubclassInstanceCheck" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8429 8439]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8399 8440])
+                    ("setOverloadResolutionTemplates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8534 8547])
+                            ("argv" variable
+                               (:pointer 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8548 8561]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8498 8562])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("Language" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8622 8650])
+                    ("protected" label nil (reparse-symbol classsubparts) [8652 8662])
+                    ("allow_multiple_input" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8729 8740]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8703 8742])
+                    ("allow_overloading" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8804 8815]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8781 8817])
+                    ("is_wrapping_class" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8850 8880])
+                    ("getCurrentClass" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8930 8960])
+                    ("getCPlusMode" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8988 9013])
+                    ("getNSpace" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9086 9112])
+                    ("getClassName" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9166 9195])
+                    ("getClassHash" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("Hash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9231 9258])
+                    ("getClassPrefix" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9302 9333])
+                    ("getClassType" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9378 9407])
+                    ("is_smart_pointer" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [9480 9509])
+                    ("extraDirectorProtectedCPPMethodsRequired" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9619 9681])
+                    ("isNonVirtualProtectedAccess" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9917 9925]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9884 9932])
+                    ("use_naturalvar_mode" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10052 10060]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10028 10067])
+                    ("none_comparison" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10113 10137])
+                    ("director_ctor_code" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10186 10213])
+                    ("director_prot_ctor_code" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10274 10306])
+                    ("director_multiple_inheritance" variable (:type "int") (reparse-symbol classsubparts) [10355 10389])
+                    ("director_language" variable (:type "int") (reparse-symbol classsubparts) [10426 10448])
+                    ("private" label nil (reparse-symbol classsubparts) [10450 10458])
+                    ("symtabs" variable
+                       (:pointer 1
+                        :type ("Hash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10461 10475])
+                    ("classtypes" variable
+                       (:pointer 1
+                        :type ("Hash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10498 10515])
+                    ("enumtypes" variable
+                       (:pointer 1
+                        :type ("Hash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10518 10534])
+                    ("overloading" variable (:type "int") (reparse-symbol classsubparts) [10537 10553])
+                    ("multiinput" variable (:type "int") (reparse-symbol classsubparts) [10556 10571])
+                    ("cplus_runtime" variable (:type "int") (reparse-symbol classsubparts) [10574 10592])
+                    ("directors" variable (:type "int") (reparse-symbol classsubparts) [10595 10609])
+                    ("this_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("Language" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10612 10635]))                  
+                :type "class")
+                nil [3522 10638])
+            ("SWIG_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10654 10658])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10659 10667])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Language" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10668 10679]))                  
+                :type "int")
+                nil [10640 10680])
+            ("emit_parameter_variables" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10711 10723])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("Wrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10724 10735]))                  
+                :type "void")
+                nil [10681 10736])
+            ("emit_return_variable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10763 10771])
+                    ("rt" variable
+                       (:pointer 1
+                        :type ("SwigType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10772 10785])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("Wrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10786 10797]))                  
+                :type "void")
+                nil [10737 10798])
+            ("SWIG_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10814 10818]))                  
+                :type "void")
+                nil [10799 10819])
+            ("SWIG_config_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10876 10902]))                  
+                :type "void")
+                nil [10854 10903])
+            ("SWIG_output_directory" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :type ("String" type (:type "class") nil nil))
+                nil [10904 10942])
+            ("SWIG_config_cppext" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10967 10983]))                  
+                :type "void")
+                nil [10943 10984])
+            ("Swig_print_xml" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11005 11015])
+                    ("filename" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11016 11033]))                  
+                :type "void")
+                nil [10985 11034])
+            ("SWIG_output_files" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("List" type (:type "class") nil nil))
+                nil [11074 11100])
+            ("SWIG_library_directory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11130 11143]))                  
+                :type "void")
+                nil [11102 11144])
+            ("emit_num_arguments" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11168 11179]))                  
+                :type "int")
+                nil [11145 11180])
+            ("emit_num_required" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11203 11214]))                  
+                :type "int")
+                nil [11181 11215])
+            ("emit_isvarargs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11235 11246]))                  
+                :type "int")
+                nil [11216 11247])
+            ("emit_attach_parmmaps" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11274 11285])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("Wrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11286 11297]))                  
+                :type "void")
+                nil [11248 11298])
+            ("emit_mark_varargs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11322 11334]))                  
+                :type "void")
+                nil [11299 11335])
+            ("emit_action" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11356 11364]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11336 11365])
+            ("emit_action_code" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11387 11395])
+                    ("wrappercode" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11396 11416])
+                    ("action" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11417 11432]))                  
+                :type "int")
+                nil [11366 11433])
+            ("Swig_overload_check" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11459 11467]))                  
+                :type "void")
+                nil [11434 11468])
+            ("Swig_overload_dispatch" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11500 11508])
+                    ("fmt" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11509 11538])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11539 11545]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11469 11546])
+            ("Swig_overload_dispatch_cast" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11583 11591])
+                    ("fmt" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11592 11621])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11622 11628]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11547 11629])
+            ("Swig_overload_dispatch_fast" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11666 11674])
+                    ("fmt" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11675 11704])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11705 11711]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11630 11712])
+            ("Swig_overload_rank" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11738 11746])
+                    ("script_lang_wrapping" variable (:type "bool") (reparse-symbol arg-sub-list) [11747 11773]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [11713 11774])
+            ("cplus_value_type" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("SwigType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11802 11814]))                  
+                :type ("SwigType" type (:type "class") nil nil))
+                nil [11775 11815])
+            ("Swig_csuperclass_call" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11873 11886])
+                    ("method" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11887 11902])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11903 11915]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11843 11916])
+            ("Swig_class_declaration" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11948 11956])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11957 11970]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11917 11971])
+            ("Swig_class_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11996 12004]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [11972 12005])
+            ("Swig_method_call" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12031 12061])
+                    ("parms" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12062 12078]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [12006 12079])
+            ("Swig_method_decl" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("rtype" variable
+                       (:pointer 1
+                        :type ("SwigType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12105 12121])
+                    ("decl" variable
+                       (:pointer 1
+                        :type ("SwigType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12122 12137])
+                    ("id" variable (:type ("const_String_or_char_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12138 12166])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12167 12178])
+                    ("strip" variable (:type "int") (reparse-symbol arg-sub-list) [12179 12189])
+                    ("values" variable (:type "int") (reparse-symbol arg-sub-list) [12190 12201]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [12080 12202])
+            ("Swig_director_declaration" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12237 12245]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [12203 12246])
+            ("Swig_director_emit_dynamic_cast" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12284 12292])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("Wrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12293 12304]))                  
+                :type "void")
+                nil [12247 12305])
+            ("Swig_director_parms_fixup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parms" variable
+                       (:pointer 1
+                        :type ("ParmList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12337 12353]))                  
+                :type "void")
+                nil [12306 12354])
+            ("ModuleFactory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Language" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12471 12476]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12443 12477])
+            ("SWIG_typemap_lang" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12418 12431]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12395 12432])
+            ("Swig_register_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12507 12524])
+                    ("fac" variable (:type ("ModuleFactory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12525 12543]))                  
+                :type "void")
+                nil [12481 12544])
+            ("Swig_find_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12576 12593]))                  
+                :type ("ModuleFactory" type (:type "class") nil nil))
+                nil [12545 12594])
+            ("is_public" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12627 12635]))                  
+                :type "int")
+                nil [12613 12636])
+            ("is_private" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12652 12660]))                  
+                :type "int")
+                nil [12637 12661])
+            ("is_protected" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12679 12687]))                  
+                :type "int")
+                nil [12662 12688])
+            ("is_member_director" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parentnode" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12712 12729])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12730 12743]))                  
+                :type "int")
+                nil [12689 12744])
+            ("is_member_director" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("member" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12768 12781]))                  
+                :type "int")
+                nil [12745 12782])
+            ("is_non_virtual_protected_access" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12819 12827]))                  
+                :type "int")
+                nil [12783 12828])
+            ("Wrapper_virtual_elimination_mode_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [12950 12954]))                  
+                :type "void")
+                nil [12908 12955])
+            ("Wrapper_fast_dispatch_mode_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [12992 12996]))                  
+                :type "void")
+                nil [12956 12997])
+            ("Wrapper_cast_dispatch_mode_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13034 13038]))                  
+                :type "void")
+                nil [12998 13039])
+            ("Wrapper_naturalvar_mode_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13073 13077]))                  
+                :type "void")
+                nil [13040 13078])
+            ("clean_overloaded" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13102 13110]))                  
+                :type "void")
+                nil [13080 13111])
+            ("Swig_print_with_location" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13338 13350])
+                    ("count" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13351 13365]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13308 13367])
+            ("Swig_print" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13276 13288])
+                    ("count" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13289 13303]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13260 13305])
+            ("Swig_to_string_with_location" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13228 13240])
+                    ("count" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13241 13255]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13187 13257])
+            ("Swig_to_string" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13155 13167])
+                    ("count" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13168 13182]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13128 13184])
+            ("Swig_contracts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13408 13416]))                  
+                :type "void")
+                nil [13388 13417])
+            ("Swig_contract_mode_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [13446 13455]))                  
+                :type "void")
+                nil [13418 13456])
+            ("Swig_contract_mode_get" function
+               (:prototype-flag t
+                :type "int")
+                nil [13457 13486])
+            ("Swig_browser" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13521 13529])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13530 13534]))                  
+                :type "void")
+                nil [13503 13535])
+            ("Swig_default_allocators" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13565 13573]))                  
+                :type "void")
+                nil [13536 13574])
+            ("Swig_process_types" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13599 13607]))                  
+                :type "void")
+                nil [13575 13608]))          
+      :file "swigmod.h"
+      :pointmax 13617
+      :fsize 13618
+      :lastmodtime '(21079 16905 194073 526000)
+      :unmatched-syntax '((TYPEDEF 12435 . 12442) (punctuation 802 . 803) (BOOL 798 . 802) (INT 794 . 797) (TYPEDEF 786 . 793))
+      :lexical-table 
+        '(("tab8" . ((string "\"        \"" 1519 . 1529)))
+          ("false" . ((semantic-list "((bool)0)" 841 . 850)))
+          ("PURE_VIRTUAL" . ((number "2" 935 . 936)))
+          ("NOT_VIRTUAL" . ((number "0" 883 . 884)))
+          ("PLAIN_VIRTUAL" . ((number "1" 909 . 910)))
+          ("tab2" . ((string "\"  \"" 1475 . 1479)))
+          ("SWIG_SWIGMOD_H_")
+          ("true" . ((semantic-list "((bool)1)" 817 . 826)))
+          ("tab4" . ((string "\"    \"" 1496 . 1502)))
+          )
+))
+  :file "!home!nikhil!swig!swig!Source!Modules!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

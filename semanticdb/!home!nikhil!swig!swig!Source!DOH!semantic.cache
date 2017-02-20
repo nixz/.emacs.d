@@ -1,0 +1,3845 @@
+;; Object DOH/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DOH/"
+  :tables
+  (list
+    (semanticdb-table "string.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [708 727])
+            ("DohStringType" variable
+               (:typemodifiers ("extern")
+                :type ("DohObjInfo" type (:type "class") nil nil))
+                nil [729 761])
+            ("String" type
+               (:typedef ("String" type (:type "struct") nil nil)
+                :superclasses "String"
+                :type "typedef")
+                nil [763 1020])
+            ("String" type
+               (:members 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [789 799])
+                    ("line" variable (:type "int") (reparse-symbol classsubparts) [802 811])
+                    ("maxsize" variable (:type "int") (reparse-symbol classsubparts) [814 826])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [856 864])
+                    ("hashkey" variable (:type "int") (reparse-symbol classsubparts) [894 906])
+                    ("sp" variable (:type "int") (reparse-symbol classsubparts) [936 943])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [973 983]))                  
+                :type "struct")
+                nil [763 1020])
+            ("String_data" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1253 1261]))                  
+                :type "void")
+                nil [1228 1351])
+            ("String_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1669 1677])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1678 1687]))                  
+                :type "int")
+                nil [1646 1922])
+            ("CopyString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2145 2153]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [2122 2588])
+            ("DelString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2811 2819]))                  
+                :type "void")
+                nil [2789 2894])
+            ("String_len" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3124 3132]))                  
+                :type "int")
+                nil [3102 3191])
+            ("String_cmp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so1" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3420 3429])
+                    ("so2" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3430 3439]))                  
+                :type "int")
+                nil [3398 3909])
+            ("String_equal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so1" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4149 4158])
+                    ("so2" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4159 4168]))                  
+                :type "int")
+                nil [4125 4812])
+            ("String_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5048 5056]))                  
+                :type "int")
+                nil [5025 5602])
+            ("DohString_append" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5835 5843])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5844 5873]))                  
+                :type "void")
+                nil [5806 6766])
+            ("String_clear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6995 7003]))                  
+                :type "void")
+                nil [6970 7123])
+            ("String_insert" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7353 7361])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [7362 7370])
+                    ("str" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7371 7380]))                  
+                :type "int")
+                nil [7328 8320])
+            ("String_delitem" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8555 8563])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [8564 8572]))                  
+                :type "int")
+                nil [8529 8967])
+            ("String_delslice" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9201 9209])
+                    ("sindex" variable (:type "int") (reparse-symbol arg-sub-list) [9210 9221])
+                    ("eindex" variable (:type "int") (reparse-symbol arg-sub-list) [9222 9233]))                  
+                :type "int")
+                nil [9174 9897])
+            ("String_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10151 10159]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10128 10251])
+            ("String_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10485 10493])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10494 10507])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10508 10516]))                  
+                :type "int")
+                nil [10462 10833])
+            ("String_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11067 11075])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11076 11095])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11096 11104]))                  
+                :type "int")
+                nil [11043 11551])
+            ("String_seek" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11784 11792])
+                    ("offset" variable (:type "long") (reparse-symbol arg-sub-list) [11793 11805])
+                    ("whence" variable (:type "int") (reparse-symbol arg-sub-list) [11806 11817]))                  
+                :type "int")
+                nil [11761 12760])
+            ("String_tell" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12995 13003]))                  
+                :type "long")
+                nil [12971 13070])
+            ("String_putc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13278 13286])
+                    ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [13287 13294]))                  
+                :type "int")
+                nil [13255 13849])
+            ("String_getc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14057 14065]))                  
+                :type "int")
+                nil [14034 14249])
+            ("String_ungetc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14461 14469])
+                    ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [14470 14477]))                  
+                :type "int")
+                nil [14436 14642])
+            ("end_quote" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14667 14675]))                  
+                :type "char")
+                nil [14644 15195])
+            ("match_simple" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15223 15234])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15235 15243])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15244 15256])
+                    ("tokenlen" variable (:type "int") (reparse-symbol arg-sub-list) [15257 15270]))                  
+                :type "char")
+                nil [15197 15335])
+            ("match_identifier" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15367 15378])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15379 15387])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15388 15400])
+                    ("tokenlen" variable (:type "int") (reparse-symbol arg-sub-list) [15401 15414]))                  
+                :type "char")
+                nil [15337 15744])
+            ("match_identifier_begin" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15783 15794])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15795 15803])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15804 15816])
+                    ("tokenlen" variable (:type "int") (reparse-symbol arg-sub-list) [15817 15830]))                  
+                :type "char")
+                nil [15747 16047])
+            ("match_identifier_end" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16083 16094])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16095 16103])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16104 16116])
+                    ("tokenlen" variable (:type "int") (reparse-symbol arg-sub-list) [16117 16130]))                  
+                :type "char")
+                nil [16049 16360])
+            ("match_number_end" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16392 16403])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16404 16412])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16413 16425])
+                    ("tokenlen" variable (:type "int") (reparse-symbol arg-sub-list) [16426 16439]))                  
+                :type "char")
+                nil [16362 16641])
+            ("replace_simple" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16938 16950])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16951 16963])
+                    ("rep" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16964 16974])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [16975 16985])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [16986 16996])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16997 17011]))                  
+                :type "int")
+                nil [16912 21881])
+            ("String_replace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stro" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22095 22105])
+                    ("token" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22106 22137])
+                    ("rep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22138 22167])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [22168 22178]))                  
+                :type "int")
+                nil [22069 22920])
+            ("String_chop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23129 23137]))                  
+                :type "void")
+                nil [23105 23499])
+            ("String_setfile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23528 23536])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23537 23547]))                  
+                :type "void")
+                nil [23501 23747])
+            ("String_getfile" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23776 23784]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [23749 23848])
+            ("String_setline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23877 23885])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [23886 23895]))                  
+                :type "void")
+                nil [23850 23959])
+            ("String_getline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23987 23995]))                  
+                :type "int")
+                nil [23961 24059])
+            ("StringListMethods" variable
+               (:typemodifiers ("static")
+                :type ("DohListMethods" type (:type "class") nil nil))
+                nil [24061 24271])
+            ("StringFileMethods" variable
+               (:typemodifiers ("static")
+                :type ("DohFileMethods" type (:type "class") nil nil))
+                nil [24273 24447])
+            ("StringStringMethods" variable
+               (:typemodifiers ("static")
+                :type ("DohStringMethods" type (:type "class") nil nil))
+                nil [24449 24532])
+            ("DohStringType" variable (:type ("DohObjInfo" type (:type "class") nil nil)) nil [24534 25313])
+            ("INIT_MAXSIZE" variable (:constant-flag t) nil [25324 25336])
+            ("DohNewString" function
+               (:pointer 1
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25569 25597]))                  
+                :type ("DOHString" type (:type "class") nil nil))
+                nil [25545 26319])
+            ("DohNewStringEmpty" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26559 26564]))                  
+                :type ("DOHString" type (:type "class") nil nil))
+                nil [26530 26856])
+            ("DohNewStringWithSize" function
+               (:pointer 1
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27101 27129])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [27130 27138]))                  
+                :type ("DOHString" type (:type "class") nil nil))
+                nil [27069 27739])
+            ("DohNewStringf" function
+               (:pointer 1
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27998 28027])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [28028 28032]))                  
+                :type ("DOHString" type (:type "class") nil nil))
+                nil [27973 28177])
+            ("DohStrcmp" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28438 28466])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28467 28495]))                  
+                :type "int")
+                nil [28424 28582])
+            ("DohStrncmp" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28599 28627])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28628 28656])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [28657 28663]))                  
+                :type "int")
+                nil [28584 28708])
+            ("DohStrstr" function
+               (:pointer 1
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28726 28754])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28755 28783]))                  
+                :type "char")
+                nil [28710 28899])
+            ("DohStrchr" function
+               (:pointer 1
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOHString_or_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28917 28945])
+                    ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [28946 28953]))                  
+                :type "char")
+                nil [28901 28988]))          
+      :file "string.c"
+      :pointmax 28989
+      :fsize 28988
+      :lastmodtime '(21079 16905 182073 523000)
+      :unmatched-syntax '((semantic-list 17012 . 17041) (semantic-list 17003 . 17011))
+      :lexical-table 
+        '(("INIT_MAXSIZE" . ((number "16" 25338 . 25340)))
+          )
+)
+    (semanticdb-table "dohint.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_DOHINT_H" variable (:constant-flag t) nil [688 697])
+            ("doh.h" include nil nil [699 715])
+            ("stdlib.h" include (:system-flag t) nil [717 736])
+            ("stdio.h" include (:system-flag t) nil [737 755])
+            ("string.h" include (:system-flag t) nil [756 775])
+            ("assert.h" include (:system-flag t) nil [776 795])
+            ("ctype.h" include (:system-flag t) nil [796 814])
+            ("stdarg.h" include (:system-flag t) nil [815 834])
+            ("DohHashMethods" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("doh_getattr" variable
+                             (:functionpointer-flag t
+                              :type ("DOH" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [874 916])
+                          ("doh_setattr" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [939 992])
+                          ("doh_delattr" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1015 1056])
+                          ("doh_keys" variable
+                             (:functionpointer-flag t
+                              :type ("DOH" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1079 1107]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [855 1150])
+            ("DohListMethods" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("doh_getitem" variable
+                             (:functionpointer-flag t
+                              :type ("DOH" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1190 1232])
+                          ("doh_setitem" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1255 1308])
+                          ("doh_delitem" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1331 1372])
+                          ("doh_insitem" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1395 1448])
+                          ("doh_delslice" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1471 1526]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1171 1564])
+            ("DohFileMethods" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("doh_read" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1604 1657])
+                          ("doh_write" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1677 1737])
+                          ("doh_putc" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1758 1793])
+                          ("doh_getc" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1816 1843])
+                          ("doh_ungetc" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1866 1903])
+                          ("doh_seek" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1928 1980])
+                          ("doh_tell" variable
+                             (:functionpointer-flag t
+                              :type "long")
+                              (reparse-symbol classsubparts) [1994 2022])
+                          ("doh_close" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [2036 2064]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1585 2094])
+            ("DohStringMethods" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("doh_replace" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [2136 2237])
+                          ("doh_chop" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [2240 2268]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2117 2288])
+            ("DohObjInfo" type
+               (:typedef ("DohObjInfo" type (:type "struct") nil nil)
+                :superclasses "DohObjInfo"
+                :type "typedef")
+                nil [2470 3766])
+            ("DohObjInfo" type
+               (:members 
+                  ( ("objname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2500 2520])
+                    ("doh_del" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2579 2606])
+                    ("doh_copy" variable
+                       (:functionpointer-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2634 2662])
+                    ("doh_clear" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2690 2719])
+                    ("doh_str" variable
+                       (:functionpointer-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2768 2795])
+                    ("doh_data" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2823 2852])
+                    ("doh_dump" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2880 2917])
+                    ("doh_len" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2977 3003])
+                    ("doh_hashval" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3006 3036])
+                    ("doh_cmp" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3056 3094])
+                    ("doh_equal" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3112 3152])
+                    ("doh_first" variable
+                       (:functionpointer-flag t
+                        :type ("DohIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3174 3210])
+                    ("doh_next" variable
+                       (:functionpointer-flag t
+                        :type ("DohIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3213 3251])
+                    ("doh_setfile" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3274 3330])
+                    ("doh_getfile" variable
+                       (:functionpointer-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3333 3364])
+                    ("doh_setline" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3367 3408])
+                    ("doh_getline" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3411 3441])
+                    ("doh_hash" variable
+                       (:pointer 1
+                        :type ("DohHashMethods" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3445 3470])
+                    ("doh_list" variable
+                       (:pointer 1
+                        :type ("DohListMethods" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3498 3523])
+                    ("doh_file" variable
+                       (:pointer 1
+                        :type ("DohFileMethods" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3551 3576])
+                    ("doh_string" variable
+                       (:pointer 1
+                        :type ("DohStringMethods" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3604 3633])
+                    ("doh_reserved" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3661 3680])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3709 3726]))                  
+                :type "struct")
+                nil [2470 3766])
+            ("DohBase" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("data" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3787 3798])
+                          ("type" variable
+                             (:pointer 1
+                              :type ("DohObjInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3822 3839])
+                          ("meta" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3842 3853])
+                          ("flag_intern" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [3874 3901])
+                          ("flag_marked" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [3926 3953])
+                          ("flag_user" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [4013 4038])
+                          ("flag_usermark" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [4057 4086])
+                          ("refcount" variable
+                             (:suffix ":28"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [4107 4132]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3768 4182])
+            ("Decref" variable (:constant-flag t) nil [4259 4265])
+            ("Incref" variable (:constant-flag t) nil [4320 4326])
+            ("Refcount" variable (:constant-flag t) nil [4381 4389])
+            ("ObjData" variable (:constant-flag t) nil [4489 4496])
+            ("ObjSetMark" variable (:constant-flag t) nil [4536 4546])
+            ("ObjGetMark" variable (:constant-flag t) nil [4594 4604])
+            ("ObjType" variable (:constant-flag t) nil [4648 4655])
+            ("DohObjMalloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type ("DohObjInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4713 4730])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4731 4742]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [4688 4743])
+            ("DohObjFree" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4795 4804]))                  
+                :type "void")
+                nil [4772 4805]))          
+      :file "dohint.h"
+      :pointmax 4860
+      :fsize 4860
+      :lastmodtime '(21079 16905 178073 523000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Refcount" (spp-arg-list ("a") 4389 . 4392) . 
+              ((semantic-list "((DohBase *) a)" 4399 . 4414) (punctuation "-" 4414 . 4415) (punctuation ">" 4415 . 4416) (symbol "refcount" 4416 . 4424)))
+          ("ObjData" (spp-arg-list ("a") 4496 . 4499) . 
+              ((semantic-list "((DohBase *)a)" 4507 . 4521) (punctuation "-" 4521 . 4522) (punctuation ">" 4522 . 4523) (symbol "data" 4523 . 4527)))
+          ("Decref" (spp-arg-list ("a") 4265 . 4268) . 
+              ((IF "if" 4277 . 4279) (semantic-list "(a)" 4280 . 4283) (semantic-list "((DohBase *) a)" 4284 . 4299) (punctuation "-" 4299 . 4300) (punctuation ">" 4300 . 4301) (symbol "refcount" 4301 . 4309) (punctuation "-" 4309 . 4310) (punctuation "-" 4310 . 4311)))
+          ("ObjSetMark" (spp-arg-list ("a" "x") 4546 . 4551) . 
+              ((semantic-list "((DohBase *)a)" 4554 . 4568) (punctuation "-" 4568 . 4569) (punctuation ">" 4569 . 4570) (symbol "flag_marked" 4570 . 4581) (punctuation "=" 4582 . 4583) (symbol "x" 4584 . 4585)))
+          ("ObjGetMark" (spp-arg-list ("a") 4604 . 4607) . 
+              ((semantic-list "((DohBase *)a)" 4612 . 4626) (punctuation "-" 4626 . 4627) (punctuation ">" 4627 . 4628) (symbol "flag_marked" 4628 . 4639)))
+          ("ObjType" (spp-arg-list ("a") 4655 . 4658) . 
+              ((semantic-list "((DohBase *)a)" 4666 . 4680) (punctuation "-" 4680 . 4681) (punctuation ">" 4681 . 4682) (symbol "type" 4682 . 4686)))
+          ("Incref" (spp-arg-list ("a") 4326 . 4329) . 
+              ((IF "if" 4338 . 4340) (semantic-list "(a)" 4341 . 4344) (semantic-list "((DohBase *) a)" 4345 . 4360) (punctuation "-" 4360 . 4361) (punctuation ">" 4361 . 4362) (symbol "refcount" 4362 . 4370) (punctuation "+" 4370 . 4371) (punctuation "+" 4371 . 4372)))
+          ("_DOHINT_H")
+          )
+)
+    (semanticdb-table "hash.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [652 671])
+            ("DohHashType" variable
+               (:typemodifiers ("extern")
+                :type ("DohObjInfo" type (:type "class") nil nil))
+                nil [673 703])
+            ("HashNode" type
+               (:typedef ("HashNode" type (:type "struct") nil nil)
+                :superclasses "HashNode"
+                :type "typedef")
+                nil [721 810])
+            ("HashNode" type
+               (:members 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 758])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [761 773])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("HashNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [776 798]))                  
+                :type "struct")
+                nil [721 810])
+            ("Hash" type
+               (:typedef ("Hash" type (:type "struct") nil nil)
+                :superclasses "Hash"
+                :type "typedef")
+                nil [830 938])
+            ("Hash" type
+               (:members 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [854 864])
+                    ("line" variable (:type "int") (reparse-symbol classsubparts) [867 876])
+                    ("hashtable" variable
+                       (:pointer 2
+                        :type ("HashNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [879 900])
+                    ("hashsize" variable (:type "int") (reparse-symbol classsubparts) [903 916])
+                    ("nitems" variable (:type "int") (reparse-symbol classsubparts) [919 930]))                  
+                :type "struct")
+                nil [830 938])
+            ("KeyValue" type
+               (:typedef ("KeyValue" type (:type "struct") nil nil)
+                :superclasses "KeyValue"
+                :type "typedef")
+                nil [970 1085])
+            ("KeyValue" type
+               (:members 
+                  ( ("cstr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [998 1009])
+                    ("sstr" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1012 1022])
+                    ("left" variable
+                       (:pointer 1
+                        :type ("KeyValue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1025 1047])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("KeyValue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1050 1073]))                  
+                :type "struct")
+                nil [970 1085])
+            ("root" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("KeyValue" type (:type "class") nil nil))
+                nil [1087 1113])
+            ("max_expand" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1114 1140])
+            ("find_key" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("doh_c" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1216 1227]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [1195 1987])
+            ("HASH_INIT_SIZE" variable (:constant-flag t) nil [1997 2011])
+            ("NewNode" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("k" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2071 2078])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2079 2089]))                  
+                :type ("HashNode" type (:type "class") nil nil))
+                nil [2046 2250])
+            ("DelNode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hn" variable
+                       (:pointer 1
+                        :type ("HashNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2297 2310]))                  
+                :type "void")
+                nil [2277 2370])
+            ("DelHash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2598 2606]))                  
+                :type "void")
+                nil [2578 2899])
+            ("Hash_clear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3156 3164]))                  
+                :type "void")
+                nil [3133 3421])
+            ("resize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("Hash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3470 3478]))                  
+                :type "void")
+                nil [3451 4351])
+            ("Hash_setattr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4656 4664])
+                    ("k" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4665 4672])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4673 4682]))                  
+                :type "int")
+                nil [4632 5527])
+            ("binop" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [5795 5831])
+            ("Hash_getattr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5859 5866])
+                    ("k" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5867 5874]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [5834 6513])
+            ("Hash_delattr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6767 6775])
+                    ("k" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6776 6783]))                  
+                :type "int")
+                nil [6743 7239])
+            ("Hash_firstiter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7275 7283]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [7241 7968])
+            ("Hash_nextiter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable (:type ("DohIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8003 8020]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [7970 8602])
+            ("Hash_keys" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8835 8843]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [8813 8983])
+            ("DohSetMaxHashExpand" function
+               (:arguments 
+                  ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [9272 9282]))                  
+                :type "void")
+                nil [9247 9308])
+            ("DohGetMaxHashExpand" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9595 9600]))                  
+                :type "int")
+                nil [9571 9625])
+            ("Hash_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9905 9913]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [9884 10843])
+            ("Hash_len" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11095 11103]))                  
+                :type "int")
+                nil [11075 11161])
+            ("CopyHash" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11430 11438]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [11409 12048])
+            ("Hash_setfile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12077 12085])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12086 12096]))                  
+                :type "void")
+                nil [12052 12286])
+            ("Hash_getfile" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12313 12321]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12288 12377])
+            ("Hash_setline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12404 12412])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [12413 12422]))                  
+                :type "void")
+                nil [12379 12478])
+            ("Hash_getline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12504 12512]))                  
+                :type "int")
+                nil [12480 12568])
+            ("HashHashMethods" variable
+               (:typemodifiers ("static")
+                :type ("DohHashMethods" type (:type "class") nil nil))
+                nil [12756 12861])
+            ("DohHashType" variable (:type ("DohObjInfo" type (:type "class") nil nil)) nil [12863 13550])
+            ("DohNewHash" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13778 13783]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13762 14109]))          
+      :file "hash.c"
+      :pointmax 14110
+      :fsize 14109
+      :lastmodtime '(21079 16905 182073 523000)
+      :unmatched-syntax '((TYPEDEF 5787 . 5794))
+      :lexical-table 
+        '(("HASH_INIT_SIZE" . ((number "7" 2014 . 2015)))
+          )
+)
+    (semanticdb-table "doh.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_DOH_H" variable (:constant-flag t) nil [698 704])
+            ("swigconfig.h" include nil nil [722 745])
+            ("stdio.h" include (:system-flag t) nil [754 772])
+            ("stdarg.h" include (:system-flag t) nil [773 792])
+            ("DOH_MAJOR_VERSION" variable (:constant-flag t) nil [5634 5651])
+            ("DOH_MINOR_VERSION" variable (:constant-flag t) nil [5662 5679])
+            ("DOH" type
+               (:typedef ("void")
+                :superclasses "void"
+                :type "typedef")
+                nil [5683 5700])
+            ("DOHString" variable (:constant-flag t) nil [5885 5894])
+            ("DOHList" variable (:constant-flag t) nil [5916 5923])
+            ("DOHHash" variable (:constant-flag t) nil [5947 5954])
+            ("DOHFile" variable (:constant-flag t) nil [5978 5985])
+            ("DOHVoid" variable (:constant-flag t) nil [6009 6016])
+            ("DOHString_or_char" variable (:constant-flag t) nil [6040 6057])
+            ("DOHObj_or_char" variable (:constant-flag t) nil [6071 6085])
+            ("const_String_or_char_ptr" type
+               (:typedef ("DOH" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "DOH"
+                :type "typedef")
+                nil [6095 6154])
+            ("DOHconst_String_or_char_ptr" type
+               (:typedef ("DOH" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "DOH"
+                :type "typedef")
+                nil [6155 6217])
+            ("DOH_BEGIN" variable (:constant-flag t) nil [6227 6236])
+            ("DOH_END" variable (:constant-flag t) nil [6257 6264])
+            ("DOH_CUR" variable (:constant-flag t) nil [6287 6294])
+            ("DOH_CURRENT" variable (:constant-flag t) nil [6317 6328])
+            ("DohIterator" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("key" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6383 6393])
+                          ("item" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6431 6442])
+                          ("object" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6480 6493])
+                          ("_current" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6531 6546])
+                          ("_index" variable (:type "int") (reparse-symbol classsubparts) [6569 6580]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6364 6616])
+            ("DohMalloc" variable (:constant-flag t) nil [6669 6678])
+            ("DohRealloc" variable (:constant-flag t) nil [6720 6730])
+            ("DohFree" variable (:constant-flag t) nil [6770 6777])
+            ("DohCheck" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6811 6826]))                  
+                :type "int")
+                nil [6791 6827])
+            ("DohIntern" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6878 6884]))                  
+                :type "void")
+                nil [6856 6885])
+            ("DohDelete" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6990 6999]))                  
+                :type "void")
+                nil [6968 7000])
+            ("DohCopy" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7049 7064]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [7029 7065])
+            ("DohClear" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7087 7096]))                  
+                :type "void")
+                nil [7066 7097])
+            ("DohStr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7123 7138]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [7098 7139])
+            ("DohData" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7161 7176]))                  
+                :type "void")
+                nil [7140 7177])
+            ("DohDump" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7197 7212])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7213 7227]))                  
+                :type "int")
+                nil [7178 7228])
+            ("DohLen" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7247 7262]))                  
+                :type "int")
+                nil [7229 7263])
+            ("DohHashval" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7286 7301]))                  
+                :type "int")
+                nil [7264 7302])
+            ("DohCmp" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7321 7337])
+                    ("obj2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7338 7354]))                  
+                :type "int")
+                nil [7303 7355])
+            ("DohEqual" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7376 7392])
+                    ("obj2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7393 7409]))                  
+                :type "int")
+                nil [7356 7410])
+            ("DohIncref" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7433 7442]))                  
+                :type "void")
+                nil [7411 7443])
+            ("DohGetattr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7491 7500])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7501 7531]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [7468 7532])
+            ("DohSetattr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7555 7564])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7565 7595])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7596 7625]))                  
+                :type "int")
+                nil [7533 7626])
+            ("DohDelattr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7649 7658])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7659 7689]))                  
+                :type "int")
+                nil [7627 7690])
+            ("DohCheckattr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7715 7724])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7725 7755])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7756 7787]))                  
+                :type "int")
+                nil [7691 7788])
+            ("DohKeys" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7809 7818]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [7789 7819])
+            ("DohGetInt" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7841 7850])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7851 7881]))                  
+                :type "int")
+                nil [7820 7882])
+            ("DohSetInt" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7905 7914])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7915 7945])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [7946 7950]))                  
+                :type "void")
+                nil [7883 7951])
+            ("DohGetDouble" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7979 7988])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7989 8019]))                  
+                :type "double")
+                nil [7952 8020])
+            ("DohSetDouble" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8046 8055])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8056 8086])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [8087 8094]))                  
+                :type "void")
+                nil [8021 8095])
+            ("DohGetChar" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8120 8129])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8130 8160]))                  
+                :type "char")
+                nil [8096 8161])
+            ("DohSetChar" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8185 8194])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8195 8211])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8212 8224]))                  
+                :type "void")
+                nil [8162 8225])
+            ("DohGetFlagAttr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8254 8263])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8264 8294]))                  
+                :type "void")
+                nil [8226 8295])
+            ("DohGetFlag" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8318 8327])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8328 8358]))                  
+                :type "int")
+                nil [8296 8359])
+            ("DohSetFlagAttr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8387 8396])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8397 8427])
+                    ("attr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8428 8458]))                  
+                :type "void")
+                nil [8360 8459])
+            ("DohSetFlag" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8483 8492])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8493 8523]))                  
+                :type "void")
+                nil [8460 8524])
+            ("DohGetVoid" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8549 8558])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8559 8589]))                  
+                :type "void")
+                nil [8525 8590])
+            ("DohSetVoid" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8614 8623])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8624 8654])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8655 8667]))                  
+                :type "void")
+                nil [8591 8668])
+            ("DohGetitem" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8717 8726])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8727 8737]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [8694 8738])
+            ("DohSetitem" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8761 8770])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8771 8781])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8782 8811]))                  
+                :type "int")
+                nil [8739 8812])
+            ("DohDelitem" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8835 8844])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8845 8855]))                  
+                :type "int")
+                nil [8813 8856])
+            ("DohInsertitem" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8882 8891])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8892 8902])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8903 8932]))                  
+                :type "int")
+                nil [8857 8933])
+            ("DohDelslice" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8957 8966])
+                    ("sindex" variable (:type "int") (reparse-symbol arg-sub-list) [8967 8978])
+                    ("eindex" variable (:type "int") (reparse-symbol arg-sub-list) [8979 8990]))                  
+                :type "int")
+                nil [8934 8991])
+            ("DohWrite" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9033 9047])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9048 9067])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [9068 9079]))                  
+                :type "int")
+                nil [9013 9080])
+            ("DohRead" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9100 9114])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9115 9128])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [9129 9140]))                  
+                :type "int")
+                nil [9081 9141])
+            ("DohSeek" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9161 9175])
+                    ("offset" variable (:type "long") (reparse-symbol arg-sub-list) [9176 9188])
+                    ("whence" variable (:type "int") (reparse-symbol arg-sub-list) [9189 9200]))                  
+                :type "int")
+                nil [9142 9201])
+            ("DohTell" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9222 9236]))                  
+                :type "long")
+                nil [9202 9237])
+            ("DohGetc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9257 9271]))                  
+                :type "int")
+                nil [9238 9272])
+            ("DohPutc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [9292 9299])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9300 9314]))                  
+                :type "int")
+                nil [9273 9315])
+            ("DohUngetc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [9337 9344])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9345 9359]))                  
+                :type "int")
+                nil [9316 9360])
+            ("DohFirst" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9408 9417]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [9380 9418])
+            ("DohNext" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("x" variable (:type ("DohIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9446 9460]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [9419 9461])
+            ("DohGetline" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9503 9518]))                  
+                :type "int")
+                nil [9481 9519])
+            ("DohSetline" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9543 9552])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [9553 9562]))                  
+                :type "void")
+                nil [9520 9563])
+            ("DohGetfile" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9587 9602]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [9564 9603])
+            ("DohSetfile" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9627 9636])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9637 9647]))                  
+                :type "void")
+                nil [9604 9648])
+            ("DohReplace" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9696 9712])
+                    ("token" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9713 9744])
+                    ("rep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9745 9774])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [9775 9785]))                  
+                :type "int")
+                nil [9674 9786])
+            ("DohChop" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9807 9823]))                  
+                :type "void")
+                nil [9787 9824])
+            ("DohGetmeta" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9870 9876])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9877 9889]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [9847 9890])
+            ("DohSetmeta" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9913 9919])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9920 9932])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9933 9950]))                  
+                :type "int")
+                nil [9891 9951])
+            ("DohDelmeta" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9974 9980])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9981 9993]))                  
+                :type "int")
+                nil [9952 9994])
+            ("DohEncoding" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10047 10064])
+                    ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10065 10075]))                  
+                :type "void")
+                nil [10023 10086])
+            ("DohPrintf" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10108 10122])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10123 10142])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10143 10147]))                  
+                :type "int")
+                nil [10087 10148])
+            ("DohvPrintf" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10171 10185])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10186 10205])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10206 10217]))                  
+                :type "int")
+                nil [10149 10218])
+            ("DohPrintv" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10240 10254])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10255 10259]))                  
+                :type "int")
+                nil [10219 10260])
+            ("DohReadline" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10285 10298]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10261 10299])
+            ("DohIsMapping" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10348 10363]))                  
+                :type "int")
+                nil [10324 10364])
+            ("DohIsSequence" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10390 10405]))                  
+                :type "int")
+                nil [10365 10406])
+            ("DohIsString" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10430 10445]))                  
+                :type "int")
+                nil [10407 10446])
+            ("DohIsFile" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10468 10483]))                  
+                :type "int")
+                nil [10447 10484])
+            ("DohSetMaxHashExpand" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [10518 10528]))                  
+                :type "void")
+                nil [10486 10529])
+            ("DohGetMaxHashExpand" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10561 10566]))                  
+                :type "int")
+                nil [10530 10567])
+            ("DohSetmark" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10591 10600])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10601 10607]))                  
+                :type "void")
+                nil [10568 10608])
+            ("DohGetmark" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10631 10640]))                  
+                :type "int")
+                nil [10609 10641])
+            ("DohNewStringEmpty" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10857 10862]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10821 10863])
+            ("DohNewString" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10895 10922]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10864 10923])
+            ("DohNewStringWithSize" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10963 10990])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10991 10999]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10924 11000])
+            ("DohNewStringf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11033 11062])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [11063 11067]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [11001 11068])
+            ("DohStrcmp" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11091 11119])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11120 11148]))                  
+                :type "int")
+                nil [11070 11149])
+            ("DohStrncmp" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11172 11200])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11201 11229])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [11230 11236]))                  
+                :type "int")
+                nil [11150 11237])
+            ("DohStrstr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11261 11289])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11290 11318]))                  
+                :type "char")
+                nil [11238 11319])
+            ("DohStrchr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11343 11371])
+                    ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [11372 11379]))                  
+                :type "char")
+                nil [11320 11380])
+            ("DOH_REPLACE_ANY" variable (:constant-flag t) nil [11424 11439])
+            ("DOH_REPLACE_NOQUOTE" variable (:constant-flag t) nil [11463 11482])
+            ("DOH_REPLACE_ID" variable (:constant-flag t) nil [11502 11516])
+            ("DOH_REPLACE_FIRST" variable (:constant-flag t) nil [11541 11558])
+            ("DOH_REPLACE_ID_BEGIN" variable (:constant-flag t) nil [11580 11600])
+            ("DOH_REPLACE_ID_END" variable (:constant-flag t) nil [11619 11637])
+            ("DOH_REPLACE_NUMBER_END" variable (:constant-flag t) nil [11658 11680])
+            ("Replaceall" variable (:constant-flag t) nil [11696 11706])
+            ("Replaceid" variable (:constant-flag t) nil [11757 11766])
+            ("DohNewFile" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12012 12026])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12027 12044])
+                    ("outfiles" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12045 12063]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [11985 12064])
+            ("DohNewFileFromFile" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12100 12108]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12065 12109])
+            ("DohNewFileFromFd" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [12143 12150]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12110 12151])
+            ("DohFileErrorDisplay" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12184 12205]))                  
+                :type "void")
+                nil [12152 12206])
+            ("DohCopyto" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12298 12314])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12315 12332]))                  
+                :type "int")
+                nil [12277 12333])
+            ("DohNewList" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12537 12542]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12510 12543])
+            ("DohSortList" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12568 12576])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [12577 12587]))                  
+                :type "void")
+                nil [12544 12616])
+            ("DohNewHash" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12819 12824]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12792 12825])
+            ("DohNewVoid" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13028 13038])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [13039 13050]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13001 13061])
+            ("DohSplit" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13087 13103])
+                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [13104 13112])
+                    ("nsplits" variable (:type "int") (reparse-symbol arg-sub-list) [13113 13125]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13062 13126])
+            ("DohSplitLines" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13157 13173]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13127 13174])
+            ("DohNone" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13175 13195])
+            ("DohMemoryDebug" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13224 13229]))                  
+                :type "void")
+                nil [13197 13230])
+            ("Delete" variable (:constant-flag t) nil [13394 13400])
+            ("Copy" variable (:constant-flag t) nil [13431 13435])
+            ("Clear" variable (:constant-flag t) nil [13466 13471])
+            ("Str" variable (:constant-flag t) nil [13502 13505])
+            ("Dump" variable (:constant-flag t) nil [13536 13540])
+            ("Getattr" variable (:constant-flag t) nil [13571 13578])
+            ("Setattr" variable (:constant-flag t) nil [13609 13616])
+            ("Delattr" variable (:constant-flag t) nil [13647 13654])
+            ("Checkattr" variable (:constant-flag t) nil [13685 13694])
+            ("Hashval" variable (:constant-flag t) nil [13725 13732])
+            ("Getitem" variable (:constant-flag t) nil [13763 13770])
+            ("Setitem" variable (:constant-flag t) nil [13801 13808])
+            ("Delitem" variable (:constant-flag t) nil [13839 13846])
+            ("Insert" variable (:constant-flag t) nil [13877 13883])
+            ("Delslice" variable (:constant-flag t) nil [13918 13926])
+            ("Append" variable (:constant-flag t) nil [13957 13963])
+            ("Push" variable (:constant-flag t) nil [14011 14015])
+            ("Len" variable (:constant-flag t) nil [14067 14070])
+            ("Data" variable (:constant-flag t) nil [14101 14105])
+            ("Char" variable (:constant-flag t) nil [14136 14140])
+            ("Cmp" variable (:constant-flag t) nil [14177 14180])
+            ("Equal" variable (:constant-flag t) nil [14211 14216])
+            ("Setline" variable (:constant-flag t) nil [14247 14254])
+            ("Getline" variable (:constant-flag t) nil [14285 14292])
+            ("Setfile" variable (:constant-flag t) nil [14323 14330])
+            ("Getfile" variable (:constant-flag t) nil [14361 14368])
+            ("Write" variable (:constant-flag t) nil [14399 14404])
+            ("Read" variable (:constant-flag t) nil [14435 14439])
+            ("Seek" variable (:constant-flag t) nil [14470 14474])
+            ("Tell" variable (:constant-flag t) nil [14505 14509])
+            ("Printf" variable (:constant-flag t) nil [14540 14546])
+            ("Printv" variable (:constant-flag t) nil [14577 14583])
+            ("Getc" variable (:constant-flag t) nil [14614 14618])
+            ("Putc" variable (:constant-flag t) nil [14649 14653])
+            ("Ungetc" variable (:constant-flag t) nil [14684 14690])
+            ("Close" variable (:constant-flag t) nil [15047 15052])
+            ("vPrintf" variable (:constant-flag t) nil [15083 15090])
+            ("GetInt" variable (:constant-flag t) nil [15121 15127])
+            ("GetDouble" variable (:constant-flag t) nil [15158 15167])
+            ("GetChar" variable (:constant-flag t) nil [15198 15205])
+            ("GetVoid" variable (:constant-flag t) nil [15236 15243])
+            ("GetFlagAttr" variable (:constant-flag t) nil [15274 15285])
+            ("GetFlag" variable (:constant-flag t) nil [15316 15323])
+            ("SetInt" variable (:constant-flag t) nil [15354 15360])
+            ("SetDouble" variable (:constant-flag t) nil [15391 15400])
+            ("SetChar" variable (:constant-flag t) nil [15431 15438])
+            ("SetVoid" variable (:constant-flag t) nil [15469 15476])
+            ("SetFlagAttr" variable (:constant-flag t) nil [15507 15518])
+            ("SetFlag" variable (:constant-flag t) nil [15549 15556])
+            ("UnsetFlag" variable (:constant-flag t) nil [15587 15596])
+            ("ClearFlag" variable (:constant-flag t) nil [15639 15648])
+            ("Readline" variable (:constant-flag t) nil [15689 15697])
+            ("Replace" variable (:constant-flag t) nil [15728 15735])
+            ("Chop" variable (:constant-flag t) nil [15766 15770])
+            ("Getmeta" variable (:constant-flag t) nil [15801 15808])
+            ("Setmeta" variable (:constant-flag t) nil [15839 15846])
+            ("Delmeta" variable (:constant-flag t) nil [15877 15884])
+            ("NewString" variable (:constant-flag t) nil [15915 15924])
+            ("NewStringEmpty" variable (:constant-flag t) nil [15955 15969])
+            ("NewStringWithSize" variable (:constant-flag t) nil [16000 16017])
+            ("NewStringf" variable (:constant-flag t) nil [16048 16058])
+            ("NewHash" variable (:constant-flag t) nil [16089 16096])
+            ("NewList" variable (:constant-flag t) nil [16127 16134])
+            ("NewFile" variable (:constant-flag t) nil [16165 16172])
+            ("NewFileFromFile" variable (:constant-flag t) nil [16203 16218])
+            ("NewFileFromFd" variable (:constant-flag t) nil [16249 16262])
+            ("FileErrorDisplay" variable (:constant-flag t) nil [16293 16309])
+            ("Close" variable (:constant-flag t) nil [16340 16345])
+            ("NewVoid" variable (:constant-flag t) nil [16376 16383])
+            ("Keys" variable (:constant-flag t) nil [16414 16418])
+            ("Strcmp" variable (:constant-flag t) nil [16449 16455])
+            ("Strncmp" variable (:constant-flag t) nil [16486 16493])
+            ("Strstr" variable (:constant-flag t) nil [16524 16530])
+            ("Strchr" variable (:constant-flag t) nil [16561 16567])
+            ("Copyto" variable (:constant-flag t) nil [16598 16604])
+            ("Split" variable (:constant-flag t) nil [16635 16640])
+            ("SplitLines" variable (:constant-flag t) nil [16671 16681])
+            ("Setmark" variable (:constant-flag t) nil [16712 16719])
+            ("Getmark" variable (:constant-flag t) nil [16750 16757])
+            ("SetMaxHashExpand" variable (:constant-flag t) nil [16788 16804])
+            ("GetMaxHashExpand" variable (:constant-flag t) nil [16835 16851])
+            ("None" variable (:constant-flag t) nil [16882 16886])
+            ("Call" variable (:constant-flag t) nil [16917 16921])
+            ("First" variable (:constant-flag t) nil [16952 16957])
+            ("Next" variable (:constant-flag t) nil [16988 16992])
+            ("Iterator" variable (:constant-flag t) nil [17023 17031])
+            ("SortList" variable (:constant-flag t) nil [17062 17070])
+            ("NIL" variable (:constant-flag t) nil [17139 17142]))          
+      :file "doh.h"
+      :pointmax 17182
+      :fsize 17182
+      :lastmodtime '(21079 16905 178073 523000)
+      :unmatched-syntax '((semantic-list 13051 . 13059) (semantic-list 13044 . 13050) (semantic-list 12588 . 12614) (semantic-list 12581 . 12587) (semantic-list 10076 . 10084) (semantic-list 10070 . 10075))
+      :lexical-table 
+        '(("DOH_MINOR_VERSION" . ((number "1" 5680 . 5681)))
+          ("DOH_CURRENT" . ((punctuation "-" 6336 . 6337) (number "3" 6337 . 6338)))
+          ("DohRealloc" . ((symbol "realloc" 6731 . 6738)))
+          ("Str" . ((symbol "DohStr" 13521 . 13527)))
+          ("Dump" . ((symbol "DohDump" 13555 . 13562)))
+          ("ClearFlag" (spp-arg-list ("o" "n") 15648 . 15653) . ((symbol "DohSetFlagAttr" 15658 . 15672) (semantic-list "(o,n,\"\")" 15672 . 15680)))
+          ("None" . ((symbol "DohNone" 16901 . 16908)))
+          ("Write" . ((symbol "DohWrite" 14418 . 14426)))
+          ("Readline" . ((symbol "DohReadline" 15708 . 15719)))
+          ("NewStringEmpty" . ((symbol "DohNewStringEmpty" 15974 . 15991)))
+          ("NewFileFromFile" . ((symbol "DohNewFileFromFile" 16222 . 16240)))
+          ("DOH_BEGIN" . ((punctuation "-" 6246 . 6247) (number "1" 6247 . 6248)))
+          ("DOH_CUR" . ((punctuation "-" 6306 . 6307) (number "3" 6307 . 6308)))
+          ("Delete" . ((symbol "DohDelete" 13413 . 13422)))
+          ("Copy" . ((symbol "DohCopy" 13450 . 13457)))
+          ("Setitem" . ((symbol "DohSetitem" 13820 . 13830)))
+          ("Delitem" . ((symbol "DohDelitem" 13858 . 13868)))
+          ("Cmp" . ((symbol "DohCmp" 14196 . 14202)))
+          ("Replace" . ((symbol "DohReplace" 15747 . 15757)))
+          ("NewFile" . ((symbol "DohNewFile" 16184 . 16194)))
+          ("Strstr" . ((symbol "DohStrstr" 16543 . 16552)))
+          ("SplitLines" . ((symbol "DohSplitLines" 16690 . 16703)))
+          ("Setmark" . ((symbol "DohSetmark" 16731 . 16741)))
+          ("Iterator" . ((symbol "DohIterator" 17042 . 17053)))
+          ("DOH_REPLACE_ANY" . ((number "0x01" 11448 . 11452)))
+          ("Getitem" . ((symbol "DohGetitem" 13782 . 13792)))
+          ("Setline" . ((symbol "DohSetline" 14266 . 14276)))
+          ("GetInt" . ((symbol "DohGetInt" 15140 . 15149)))
+          ("UnsetFlag" (spp-arg-list ("o" "n") 15596 . 15601) . ((symbol "DohSetFlagAttr" 15606 . 15620) (semantic-list "(o,n,NULL)" 15620 . 15630)))
+          ("NewStringf" . ((symbol "DohNewStringf" 16067 . 16080)))
+          ("Getmark" . ((symbol "DohGetmark" 16769 . 16779)))
+          ("DOHFile" . ((symbol "DOH" 5997 . 6000)))
+          ("Replaceid" (spp-arg-list ("s" "t" "r") 11766 . 11773) . ((symbol "DohReplace" 11776 . 11786) (semantic-list "(s,t,r,DOH_REPLACE_ID)" 11786 . 11808)))
+          ("Char" . ((semantic-list "(char *)" 14155 . 14163) (symbol "Data" 14164 . 14168)))
+          ("Equal" . ((symbol "DohEqual" 14230 . 14238)))
+          ("Getline" . ((symbol "DohGetline" 14304 . 14314)))
+          ("Setfile" . ((symbol "DohSetfile" 14342 . 14352)))
+          ("Read" . ((symbol "DohRead" 14454 . 14461)))
+          ("Strcmp" . ((symbol "DohStrcmp" 16468 . 16477)))
+          ("Strchr" . ((symbol "DohStrchr" 16580 . 16589)))
+          ("DOH_REPLACE_FIRST" . ((number "0x08" 11565 . 11569)))
+          ("DOH_REPLACE_ID_BEGIN" . ((number "0x10" 11604 . 11608)))
+          ("DOH_REPLACE_NUMBER_END" . ((number "0x40" 11682 . 11686)))
+          ("Setattr" . ((symbol "DohSetattr" 13628 . 13638)))
+          ("Delattr" . ((symbol "DohDelattr" 13666 . 13676)))
+          ("Delslice" . ((symbol "DohDelslice" 13937 . 13948)))
+          ("Len" . ((symbol "DohLen" 14086 . 14092)))
+          ("Getfile" . ((symbol "DohGetfile" 14380 . 14390)))
+          ("SetChar" . ((symbol "DohSetattr" 15450 . 15460)))
+          ("Chop" . ((symbol "DohChop" 15785 . 15792)))
+          ("NewList" . ((symbol "DohNewList" 16146 . 16156)))
+          ("SortList" . ((symbol "DohSortList" 17081 . 17092)))
+          ("DOHString_or_char" . ((symbol "DOH" 6059 . 6062)))
+          ("DohFree" . ((symbol "free" 6778 . 6782)))
+          ("Getattr" . ((symbol "DohGetattr" 13590 . 13600)))
+          ("Append" (spp-arg-list ("s" "x") 13963 . 13968) . ((symbol "DohInsertitem" 13976 . 13989) (semantic-list "(s,DOH_END,x)" 13989 . 14002)))
+          ("Ungetc" . ((symbol "DohUngetc" 14703 . 14712)))
+          ("GetChar" . ((symbol "DohGetChar" 15217 . 15227)))
+          ("SetVoid" . ((symbol "DohSetVoid" 15488 . 15498)))
+          ("SetFlagAttr" . ((symbol "DohSetFlagAttr" 15526 . 15540)))
+          ("NewString" . ((symbol "DohNewString" 15934 . 15946)))
+          ("Keys" . ((symbol "DohKeys" 16433 . 16440)))
+          ("DOH_MAJOR_VERSION" . ((number "0" 5652 . 5653)))
+          ("DOHList" . ((symbol "DOH" 5935 . 5938)))
+          ("DOH_REPLACE_ID" . ((number "0x04" 11526 . 11530)))
+          ("Replaceall" (spp-arg-list ("s" "t" "r") 11706 . 11713) . ((symbol "DohReplace" 11715 . 11725) (semantic-list "(s,t,r,DOH_REPLACE_ANY)" 11725 . 11748)))
+          ("Printf" . ((symbol "DohPrintf" 14559 . 14568)))
+          ("Putc" . ((symbol "DohPutc" 14668 . 14675)))
+          ("GetVoid" . ((symbol "DohGetVoid" 15255 . 15265)))
+          ("SetInt" . ((symbol "DohSetInt" 15373 . 15382)))
+          ("SetFlag" . ((symbol "DohSetFlag" 15568 . 15578)))
+          ("Call" . ((symbol "DohCall" 16936 . 16943)))
+          ("Next" . ((symbol "DohNext" 17007 . 17014)))
+          ("Hashval" . ((symbol "DohHashval" 13744 . 13754)))
+          ("Data" . ((symbol "DohData" 14120 . 14127)))
+          ("Tell" . ((symbol "DohTell" 14524 . 14531)))
+          ("vPrintf" . ((symbol "DohvPrintf" 15102 . 15112)))
+          ("GetDouble" . ((symbol "DohGetDouble" 15177 . 15189)))
+          ("GetFlag" . ((symbol "DohGetFlag" 15335 . 15345)))
+          ("Setmeta" . ((symbol "DohSetmeta" 15858 . 15868)))
+          ("Delmeta" . ((symbol "DohDelmeta" 15896 . 15906)))
+          ("NewHash" . ((symbol "DohNewHash" 16108 . 16118)))
+          ("SetMaxHashExpand" . ((symbol "DohSetMaxHashExpand" 16807 . 16826)))
+          ("First" . ((symbol "DohFirst" 16971 . 16979)))
+          ("DohMalloc" . ((symbol "malloc" 6679 . 6685)))
+          ("Checkattr" . ((symbol "DohCheckattr" 13704 . 13716)))
+          ("Push" (spp-arg-list ("s" "x") 14015 . 14020) . ((symbol "DohInsertitem" 14030 . 14043) (semantic-list "(s,DOH_BEGIN,x)" 14043 . 14058)))
+          ("GetFlagAttr" . ((symbol "DohGetFlagAttr" 15293 . 15307)))
+          ("Getmeta" . ((symbol "DohGetmeta" 15820 . 15830)))
+          ("NewStringWithSize" . ((symbol "DohNewStringWithSize" 16019 . 16039)))
+          ("FileErrorDisplay" . ((symbol "DohFileErrorDisplay" 16312 . 16331)))
+          ("Copyto" . ((symbol "DohCopyto" 16617 . 16626)))
+          ("Split" . ((symbol "DohSplit" 16654 . 16662)))
+          ("NIL" . ((semantic-list "(char *)" 17144 . 17152) (symbol "NULL" 17153 . 17157)))
+          ("DOHHash" . ((symbol "DOH" 5966 . 5969)))
+          ("DOH_REPLACE_ID_END" . ((number "0x20" 11643 . 11647)))
+          ("Printv" . ((symbol "DohPrintv" 14596 . 14605)))
+          ("Getc" . ((symbol "DohGetc" 14633 . 14640)))
+          ("NewFileFromFd" . ((symbol "DohNewFileFromFd" 16268 . 16284)))
+          ("NewVoid" . ((symbol "DohNewVoid" 16395 . 16405)))
+          ("Strncmp" . ((symbol "DohStrncmp" 16505 . 16515)))
+          ("_DOH_H")
+          ("DOHString" . ((symbol "DOH" 5904 . 5907)))
+          ("DOHObj_or_char" . ((symbol "DOH" 6090 . 6093)))
+          ("DOH_END" . ((punctuation "-" 6276 . 6277) (number "2" 6277 . 6278)))
+          ("DOH_REPLACE_NOQUOTE" . ((number "0x02" 11487 . 11491)))
+          ("Clear" . ((symbol "DohClear" 13485 . 13493)))
+          ("Seek" . ((symbol "DohSeek" 14489 . 14496)))
+          ("GetMaxHashExpand" . ((symbol "DohGetMaxHashExpand" 16854 . 16873)))
+          ("DOHVoid" . ((symbol "DOH" 6028 . 6031)))
+          ("Insert" . ((symbol "DohInsertitem" 13896 . 13909)))
+          ("Close" . ((symbol "DohClose" 16359 . 16367)))
+          ("SetDouble" . ((symbol "DohSetDouble" 15410 . 15422)))
+          )
+)
+    (semanticdb-table "memory.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [732 751])
+            ("DOH_POOL_SIZE" variable (:constant-flag t) nil [783 796])
+            ("PoolSize" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [951 987])
+            ("DohNone" variable
+               (:pointer 1
+                :type ("DOH" type (:type "class") nil nil))
+                nil [989 1006])
+            ("Pool" type
+               (:typedef ("pool" type (:type "struct") nil nil)
+                :superclasses "pool"
+                :type "typedef")
+                nil [1035 1342])
+            ("pool" type
+               (:members 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("DohBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1059 1072])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [1097 1105])
+                    ("blen" variable (:type "int") (reparse-symbol classsubparts) [1131 1140])
+                    ("current" variable (:type "int") (reparse-symbol classsubparts) [1171 1183])
+                    ("pbeg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1231 1242])
+                    ("pend" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1265 1276])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("pool" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1299 1317]))                  
+                :type "struct")
+                nil [1035 1342])
+            ("FreeList" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("DohBase" type (:type "class") nil nil))
+                nil [1344 1373])
+            ("Pools" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Pool" type (:type "class") nil nil))
+                nil [1401 1424])
+            ("pools_initialized" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1425 1458])
+            ("CreatePool" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1656 2054])
+            ("InitPools" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2257 2468])
+            ("DohCheck" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2706 2721]))                  
+                :type "int")
+                nil [2693 3204])
+            ("DohIntern" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3402 3411]))                  
+                :type "void")
+                nil [3387 3469])
+            ("DohObjMalloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type ("DohObjInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3699 3716])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3717 3728]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [3681 4284])
+            ("DohObjFree" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4490 4499]))                  
+                :type "void")
+                nil [4474 4743])
+            ("DohMemoryDebug" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4975 4980]))                  
+                :type "void")
+                nil [4955 6370]))          
+      :file "memory.c"
+      :pointmax 6371
+      :fsize 6370
+      :lastmodtime '(21079 16905 182073 523000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DOH_POOL_SIZE" . ((number "16384" 805 . 810)))
+          )
+)
+    (semanticdb-table "fio.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [729 748])
+            ("OBUFLEN" variable (:constant-flag t) nil [758 765])
+            ("encodings" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("DOH" type (:type "class") nil nil))
+                nil [772 798])
+            ("Writen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1171 1180])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1181 1194])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1195 1203]))                  
+                :type "int")
+                nil [1153 1389])
+            ("DohEncoding" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1722 1739])
+                    ("" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1740 1750]))                  
+                :type "void")
+                nil [1705 1871])
+            ("encode" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1943 1954])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1955 1962]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [1924 2533])
+            ("DohvPrintf" function
+               (:arguments 
+                  ( ("so" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3385 3393])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3394 3413])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3414 3425]))                  
+                :type "int")
+                nil [3370 9617])
+            ("DohPrintf" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9867 9876])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9877 9896])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9897 9901]))                  
+                :type "int")
+                nil [9853 10019])
+            ("DohPrintv" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("DOHFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10283 10295])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10296 10300]))                  
+                :type "int")
+                nil [10269 10616])
+            ("DohCopyto" function
+               (:arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10925 10933])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10934 10943]))                  
+                :type "int")
+                nil [10911 11394])
+            ("DohSplit" function
+               (:pointer 1
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11742 11750])
+                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [11751 11759])
+                    ("nsplits" variable (:type "int") (reparse-symbol arg-sub-list) [11760 11772]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [11728 12268])
+            ("DohSplitLines" function
+               (:pointer 1
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12558 12566]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12539 12870])
+            ("DohReadline" function
+               (:pointer 1
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13131 13139]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [13114 13415]))          
+      :file "fio.c"
+      :pointmax 13416
+      :fsize 13415
+      :lastmodtime '(21079 16905 182073 523000)
+      :unmatched-syntax '((semantic-list 1751 . 1759) (semantic-list 1745 . 1750))
+      :lexical-table 
+        '(("OBUFLEN" . ((number "512" 767 . 770)))
+          )
+)
+    (semanticdb-table "list.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [647 666])
+            ("List" type
+               (:typedef ("List" type (:type "struct") nil nil)
+                :superclasses "List"
+                :type "typedef")
+                nil [668 803])
+            ("List" type
+               (:members 
+                  ( ("maxitems" variable (:type "int") (reparse-symbol classsubparts) [692 705])
+                    ("nitems" variable (:type "int") (reparse-symbol classsubparts) [726 737])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [758 768])
+                    ("line" variable (:type "int") (reparse-symbol classsubparts) [771 780])
+                    ("items" variable
+                       (:pointer 2
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [783 795]))                  
+                :type "struct")
+                nil [668 803])
+            ("DohListType" variable
+               (:typemodifiers ("extern")
+                :type ("DohObjInfo" type (:type "class") nil nil))
+                nil [805 835])
+            ("more" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [895 903]))                  
+                :type "void")
+                nil [878 1026])
+            ("CopyList" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1265 1273]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [1244 1713])
+            ("DelList" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1935 1943]))                  
+                :type "void")
+                nil [1915 2084])
+            ("List_clear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2362 2370]))                  
+                :type "void")
+                nil [2339 2499])
+            ("List_insert" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2864 2872])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [2873 2881])
+                    ("item" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2882 2892]))                  
+                :type "int")
+                nil [2841 3347])
+            ("List_remove" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3589 3597])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [3598 3606]))                  
+                :type "int")
+                nil [3566 3916])
+            ("List_len" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4166 4174]))                  
+                :type "int")
+                nil [4146 4232])
+            ("List_get" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4473 4481])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4482 4488]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [4452 4666])
+            ("List_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4933 4941])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4942 4948])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4949 4958]))                  
+                :type "int")
+                nil [4913 5222])
+            ("List_first" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5477 5485]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [5447 5720])
+            ("List_next" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable (:type ("DohIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5973 5990]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [5944 6210])
+            ("List_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6462 6470]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [6441 6846])
+            ("List_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7092 7100])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7101 7110]))                  
+                :type "int")
+                nil [7071 7321])
+            ("List_setfile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7348 7356])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7357 7367]))                  
+                :type "void")
+                nil [7323 7557])
+            ("List_getfile" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7584 7592]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [7559 7648])
+            ("List_setline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7675 7683])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [7684 7693]))                  
+                :type "void")
+                nil [7650 7749])
+            ("List_getline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7775 7783]))                  
+                :type "int")
+                nil [7751 7839])
+            ("ListListMethods" variable
+               (:typemodifiers ("static")
+                :type ("DohListMethods" type (:type "class") nil nil))
+                nil [7841 7962])
+            ("DohListType" variable (:type ("DohObjInfo" type (:type "class") nil nil)) nil [7964 8672])
+            ("MAXLISTITEMS" variable (:constant-flag t) nil [8886 8898])
+            ("DohNewList" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8918 8923]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [8902 9232])
+            ("List_sort_compare_func" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [9234 9298])
+            ("List_qsort_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9329 9343])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9344 9358]))                  
+                :type "int")
+                nil [9299 9425])
+            ("DohSortList" function
+               (:arguments 
+                  ( ("lo" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9462 9470])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [9471 9481]))                  
+                :type "void")
+                nil [9445 9711]))          
+      :file "list.c"
+      :pointmax 9712
+      :fsize 9711
+      :lastmodtime '(21079 16905 182073 523000)
+      :unmatched-syntax '((semantic-list 9482 . 9508) (semantic-list 9475 . 9481))
+      :lexical-table 
+        '(("MAXLISTITEMS" . ((number "8" 8899 . 8900)))
+          )
+)
+    (semanticdb-table "base.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dohint.h" include nil nil [762 781])
+            ("SWIG_DEBUG_DELETE" variable (:constant-flag t) nil [998 1015])
+            ("DohDelete" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1050]))                  
+                :type "void")
+                nil [1026 1578])
+            ("DohCopy" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1772 1787]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [1759 2259])
+            ("DohIncref" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2276 2285]))                  
+                :type "void")
+                nil [2261 2304])
+            ("DohClear" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2500 2509]))                  
+                :type "void")
+                nil [2486 2634])
+            ("DohStr" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2826 2841]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [2814 3181])
+            ("DohDump" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3374 3389])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3390 3399]))                  
+                :type "int")
+                nil [3362 3552])
+            ("DohLen" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3785 3800]))                  
+                :type "int")
+                nil [3774 4060])
+            ("DohHashval" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4259 4274]))                  
+                :type "int")
+                nil [4244 4543])
+            ("DohData" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4738 4753]))                  
+                :type "void")
+                nil [4724 4972])
+            ("RawData" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("DohBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5174 5185]))                  
+                :type "void")
+                nil [5153 5282])
+            ("DohCmp" function
+               (:arguments 
+                  ( ("obj1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5474 5490])
+                    ("obj2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5491 5507]))                  
+                :type "int")
+                nil [5463 6112])
+            ("DohEqual" function
+               (:arguments 
+                  ( ("obj1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6307 6323])
+                    ("obj2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6324 6340]))                  
+                :type "int")
+                nil [6294 7320])
+            ("DohFirst" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7523 7532]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [7502 7839])
+            ("DohNext" function
+               (:arguments 
+                  ( ("iter" variable (:type ("DohIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8040 8057]))                  
+                :type ("DohIterator" type (:type "class") nil nil))
+                nil [8020 8306])
+            ("DohIsMapping" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8508 8523]))                  
+                :type "int")
+                nil [8491 8697])
+            ("DohGetattr" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8897 8906])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8907 8923]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [8881 9169])
+            ("DohSetattr" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9368 9377])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9378 9394])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9395 9412]))                  
+                :type "int")
+                nil [9353 9636])
+            ("DohDelattr" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9835 9844])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9845 9861]))                  
+                :type "int")
+                nil [9820 10070])
+            ("DohCheckattr" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10273 10282])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10283 10299])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10300 10317]))                  
+                :type "int")
+                nil [10256 10408])
+            ("DohKeys" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10602 10611]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [10589 10790])
+            ("DohGetInt" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10987 10996])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10997 11013]))                  
+                :type "int")
+                nil [10973 11170])
+            ("DohGetDouble" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11376 11385])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11386 11402]))                  
+                :type "double")
+                nil [11356 11559])
+            ("DohGetChar" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11760 11769])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11770 11786]))                  
+                :type "char")
+                nil [11743 11937])
+            ("DohGetFlagAttr" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12453 12462])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12463 12479]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [12433 12687])
+            ("DohGetFlag" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12704 12713])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12714 12730]))                  
+                :type "int")
+                nil [12689 12778])
+            ("DohGetVoid" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12980 12989])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12990 13006]))                  
+                :type "void")
+                nil [12963 13113])
+            ("DohSetInt" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13311 13320])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13321 13337])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [13338 13348]))                  
+                :type "void")
+                nil [13296 13457])
+            ("DohSetDouble" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13661 13670])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13671 13687])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [13688 13701]))                  
+                :type "void")
+                nil [13643 13814])
+            ("DohSetChar" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14014 14023])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14024 14040])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14041 14053]))                  
+                :type "void")
+                nil [13998 14105])
+            ("DohSetFlagAttr" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14309 14318])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14319 14335])
+                    ("attr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14336 14352]))                  
+                :type "void")
+                nil [14289 14416])
+            ("DohSetFlag" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14434 14443])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14444 14460]))                  
+                :type "void")
+                nil [14418 14510])
+            ("DohSetVoid" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14710 14719])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14720 14736])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14737 14749]))                  
+                :type "void")
+                nil [14694 14802])
+            ("DohIsSequence" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15007 15022]))                  
+                :type "int")
+                nil [14989 15196])
+            ("DohGetitem" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15396 15405])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15406 15416]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [15380 15618])
+            ("DohSetitem" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15817 15826])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15827 15837])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15838 15855]))                  
+                :type "int")
+                nil [15802 16073])
+            ("DohDelitem" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16272 16281])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [16282 16292]))                  
+                :type "int")
+                nil [16257 16495])
+            ("DohInsertitem" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16700 16709])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [16710 16720])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16721 16738]))                  
+                :type "int")
+                nil [16682 16956])
+            ("DohDelslice" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17158 17167])
+                    ("sindex" variable (:type "int") (reparse-symbol arg-sub-list) [17168 17179])
+                    ("eindex" variable (:type "int") (reparse-symbol arg-sub-list) [17180 17191]))                  
+                :type "int")
+                nil [17142 17405])
+            ("DohIsFile" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17602 17617]))                  
+                :type "int")
+                nil [17588 17791])
+            ("DohRead" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17984 17993])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17994 18007])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [18008 18019]))                  
+                :type "int")
+                nil [17972 18375])
+            ("DohWrite" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18570 18579])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18580 18599])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [18600 18611]))                  
+                :type "int")
+                nil [18557 18970])
+            ("DohSeek" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19163 19172])
+                    ("offset" variable (:type "long") (reparse-symbol arg-sub-list) [19173 19185])
+                    ("whence" variable (:type "int") (reparse-symbol arg-sub-list) [19186 19197]))                  
+                :type "int")
+                nil [19151 19499])
+            ("DohTell" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19693 19702]))                  
+                :type "long")
+                nil [19680 19972])
+            ("DohGetc" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20165 20174]))                  
+                :type "int")
+                nil [20153 20565])
+            ("DohPutc" function
+               (:arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [20758 20765])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20766 20775]))                  
+                :type "int")
+                nil [20746 21179])
+            ("DohUngetc" function
+               (:arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [21376 21383])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21384 21393]))                  
+                :type "int")
+                nil [21362 21652])
+            ("DohIsString" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22312 22327]))                  
+                :type "int")
+                nil [22296 22503])
+            ("DohReplace" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22702 22711])
+                    ("token" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22712 22729])
+                    ("rep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22730 22745])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [22746 22756]))                  
+                :type "int")
+                nil [22687 23072])
+            ("DohChop" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23266 23275]))                  
+                :type "void")
+                nil [23253 23477])
+            ("DohSetfile" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23676 23684])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23685 23695]))                  
+                :type "void")
+                nil [23660 23862])
+            ("DohGetfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24061 24075]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [24045 24257])
+            ("DohSetline" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24456 24464])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [24465 24471]))                  
+                :type "void")
+                nil [24440 24635])
+            ("DohGetline" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24833 24847]))                  
+                :type "int")
+                nil [24818 25029])
+            ("DohGetmeta" function
+               (:pointer 1
+                :arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25229 25237])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25238 25254]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [25213 25390])
+            ("DohSetmeta" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25589 25597])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25598 25614])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25615 25632]))                  
+                :type "int")
+                nil [25574 25786])
+            ("DohDelmeta" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25985 25993])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25994 26010]))                  
+                :type "int")
+                nil [25970 26146])
+            ("DohSetmark" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26346 26354])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [26355 26361]))                  
+                :type "void")
+                nil [26330 26420])
+            ("DohGetmark" function
+               (:arguments 
+                  ( ("ho" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26437 26445]))                  
+                :type "int")
+                nil [26422 26507])
+            ("DohCall" function
+               (:pointer 1
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27001 27011])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("DOH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27012 27022]))                  
+                :type ("DOH" type (:type "class") nil nil))
+                nil [26988 27202]))          
+      :file "base.c"
+      :pointmax 27203
+      :fsize 27202
+      :lastmodtime '(21079 16905 178073 523000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SWIG_DEBUG_DELETE" . ((number "0" 1016 . 1017)))
+          )
+))
+  :file "!home!nikhil!swig!swig!Source!DOH!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

@@ -1,0 +1,215 @@
+;; Object Vrui/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Vrui/"
+  :tables
+  (list
+    (semanticdb-table "NavigationTool.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Vrui/NavigationTool.h" include (:system-flag t) nil [1075 1107])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1109 1131])
+            ("Vrui/ToolManager.h" include (:system-flag t) nil [1132 1161])
+            ("Vrui" type
+               (:members 
+                  ( ("NavigationToolFactory" function
+                       (:constructor-flag t
+                        :parent "NavigationToolFactory"
+                        :arguments 
+                          ( ("toolManager" variable
+                               (:reference 1
+                                :type ("ToolManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1347 1372]))                          
+                        :type ("NavigationToolFactory" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1302 1601])
+                    ("getName" function
+                       (:pointer 1
+                        :parent "NavigationToolFactory"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1646 1651]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1603 1685])
+                    ("getButtonFunction" function
+                       (:pointer 1
+                        :parent "NavigationToolFactory"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1740 1744]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1687 1776])
+                    ("getValuatorFunction" function
+                       (:pointer 1
+                        :parent "NavigationToolFactory"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1833 1837]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1778 1869])
+                    ("NavigationTool" function
+                       (:constructor-flag t
+                        :parent "NavigationTool"
+                        :arguments 
+                          ( ("factory" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ToolFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2002 2029])
+                            ("inputAssignment" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ToolInputAssignment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2029 2072]))                          
+                        :type ("NavigationTool" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1971 2127])
+                    ("NavigationTool" function
+                       (:destructor-flag t
+                        :parent "NavigationTool"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2161 2166]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2129 2272])
+                    ("activate" function
+                       (:parent "NavigationTool"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2304 2309]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2274 2383])
+                    ("deactivate" function
+                       (:parent "NavigationTool"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2417 2422]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2385 2498]))                  
+                :type "namespace")
+                nil [1163 2501]))          
+      :file "NavigationTool.cpp"
+      :pointmax 2502
+      :fsize 2501
+      :lastmodtime '(19601 2706 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "NavigationTool.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VRUI_NAVIGATIONTOOL_INCLUDED" variable (:constant-flag t) nil [1120 1148])
+            ("Vrui/Tool.h" include (:system-flag t) nil [1150 1172])
+            ("Vrui" type
+               (:members 
+                  ( ("ToolManager" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1219 1237]))                  
+                :type "namespace")
+                nil [1202 1239])
+            ("Vrui" type
+               (:members 
+                  ( ("NavigationToolFactory" type
+                       (:superclasses 
+                          ( ("ToolFactory" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1347 1354])
+                            ("NavigationToolFactory" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("toolManager" variable
+                                       (:reference 1
+                                        :type ("ToolManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1378 1403]))                                  
+                                :type ("NavigationToolFactory" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1356 1404])
+                            ("getName" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1468 1473]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [1440 1480])
+                            ("getButtonFunction" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("buttonSlotIndex" variable (:type "int") (reparse-symbol arg-sub-list) [1520 1540]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [1482 1547])
+                            ("rFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("valuatorSlotIndex" variable (:type "int") (reparse-symbol arg-sub-list) [1589 1611]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1579 1618]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1259 1622])
+                    ("NavigationTool" type
+                       (:superclasses 
+                          ( ("Tool" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1678 1686])
+                            ("active" variable (:type "bool") (reparse-symbol classsubparts) [1688 1700])
+                            ("public" label nil (reparse-symbol classsubparts) [1801 1808])
+                            ("NavigationTool" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("factory" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ToolFactory" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1825 1852])
+                                    ("inputAssignment" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ToolInputAssignment" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1852 1895]))                                  
+                                :type ("NavigationTool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1810 1896])
+                            ("NavigationTool" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1922 1927]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1898 1928])
+                            ("isActive" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1965 1970]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1951 2060])
+                            ("activate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2076 2081]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2062 2082])
+                            ("deactivate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2153 2158]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2137 2159]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1624 2187]))                  
+                :type "namespace")
+                nil [1241 2190]))          
+      :file "NavigationTool.h"
+      :pointmax 2199
+      :fsize 2201
+      :lastmodtime '(19601 2706 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VRUI_NAVIGATIONTOOL_INCLUDED")
+          )
+))
+  :file "!home!nikhil!modules!vrui!Vrui-3.0-002!Vrui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

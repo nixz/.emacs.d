@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: class
+# key: class
+# --
+// ----------------------------------------------------------------------------
+/**
+ * @class ${1:Name}
+ *
+ * @brief ${3:What is the responsibility of this class}
+ *
+ */
+ 
+class ${1:$(yas/substr yas-text "[^: ]*")}
+{
+public:
+    ${1:$(yas/substr yas-text "[^: ]*")}();
+    ${2:virtual ~${1:$(yas/substr yas-text "[^: ]*")}();}
+public:
+    friend ostream& operator<<(ostream& output, const ${1:$(yas/substr yas-text "[^: ]*")}& obj);
+    friend ostream& operator>>(ostream&  input, const ${1:$(yas/substr yas-text "[^: ]*")}& obj);
+private:
+    $0
+};

@@ -1,0 +1,384 @@
+;; Object VizBallAndStick/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "VizBallAndStick/"
+  :tables
+  (list
+    (semanticdb-table "vtkBallStickReader.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkCMLMoleculeReader_h" variable (:constant-flag t) nil [738 760])
+            ("vtkDomainsChemistryModule.h" include nil nil [762 800])
+            ("vtkMoleculeAlgorithm.h" include nil nil [821 854])
+            ("config.h" include nil nil [855 874])
+            ("vtkMolecule" type
+               (:prototype t
+                :type "class")
+                nil [876 894])
+            ("vtkMoleculeAlgorithm" variable (:type "int") nil [957 2182]))          
+      :file "vtkBallStickReader.h"
+      :pointmax 2191
+      :fsize 2190
+      :lastmodtime '(22695 33625 296309 680000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("vtkCMLMoleculeReader_h")
+          )
+)
+    (semanticdb-table "vtkBallStickReader.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkBallStickReader.h" include nil nil [587 618])
+            ("vtkBallStickParser.h" include nil nil [619 650])
+            ("vtkDataObject.h" include nil nil [652 678])
+            ("vtkExecutive.h" include nil nil [679 704])
+            ("vtkFieldData.h" include nil nil [705 730])
+            ("vtkInformation.h" include nil nil [731 758])
+            ("vtkInformationVector.h" include nil nil [759 792])
+            ("vtkMolecule.h" include nil nil [793 817])
+            ("vtkNew.h" include nil nil [818 837])
+            ("vtkObjectFactory.h" include nil nil [838 867])
+            ("vtkPeriodicTable.h" include nil nil [868 897])
+            ("vtkCMLParser.h" include nil nil [898 923])
+            ("config.h" include nil nil [924 943])
+            ("string" include (:system-flag t) nil [945 962])
+            ("vector" include (:system-flag t) nil [963 980])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkBallStickReader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1079]))                  
+                :type "int")
+                nil [1040 1080])
+            ("vtkBallStickReader" function
+               (:constructor-flag t
+                :parent "vtkBallStickReader"
+                :type ("vtkBallStickReader" type (:type "class") nil nil))
+                nil [1161 1301])
+            ("vtkBallStickReader" function
+               (:destructor-flag t
+                :parent "vtkBallStickReader"
+                :type "void")
+                nil [1382 1519])
+            ("GetOutput" function
+               (:pointer 1
+                :parent "vtkBallStickReader"
+                :type ("vtkMolecule" type (:type "class") nil nil))
+                nil [1600 1715])
+            ("SetOutput" function
+               (:parent "vtkBallStickReader"
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("vtkMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1831 1851]))                  
+                :type "void")
+                nil [1796 1905])
+            ("RequestData" function
+               (:parent "vtkBallStickReader"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1946 1963])
+                    ("" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1966 1990])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2028]))                  
+                :type "int")
+                nil [1907 2950])
+            ("FillOutputPortInformation" function
+               (:parent "vtkBallStickReader"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3002 3006])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3007 3028]))                  
+                :type "int")
+                nil [2952 3105])
+            ("PrintSelf" function
+               (:parent "vtkBallStickReader"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3142 3154])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3155 3172]))                  
+                :type "void")
+                nil [3107 3218]))          
+      :file "vtkBallStickReader.cxx"
+      :pointmax 3220
+      :fsize 3243
+      :lastmodtime '(22698 657 362805 258000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkBallStickParser.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VTKCMLPARSER_H" variable (:constant-flag t) nil [32 46])
+            ("vtkXMLParser.h" include nil nil [47 72])
+            ("vtkMolecule.h" include nil nil [73 97])
+            ("vtkNew.h" include nil nil [98 117])
+            ("vtkPeriodicTable.h" include nil nil [118 147])
+            ("vector" include (:system-flag t) nil [148 165])
+            ("vtkBallStickParser" type
+               (:superclasses 
+                  ( ("vtkXMLParser" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [216 223])
+                    ("vtkTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vtkBallStickParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [239 258])
+                            ("" variable (:type ("vtkXMLParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 272]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [226 273])
+                    ("New" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkBallStickParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [276 310])
+                    ("vtkSetObjectMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Target" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [332 339])
+                            ("" variable (:type ("vtkMolecule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 352]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [314 353])
+                    ("vtkGetObjectMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Target" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [374 381])
+                            ("" variable (:type ("vtkMolecule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [382 394]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [356 395])
+                    ("vtkSetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("BallFileName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [475 488]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [457 489])
+                    ("vtkGetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("BallFileName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [510 523]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [492 524])
+                    ("vtkSetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("StickFileName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 627]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [595 628])
+                    ("vtkGetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("StickFileName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [649 663]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [631 664])
+                    ("protected" label nil (reparse-symbol classsubparts) [673 683])
+                    ("vtkBallStickParser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vtkBallStickParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [686 707])
+                    ("VTK_OVERRIDE" variable (:type "int") (reparse-symbol classsubparts) [732 745])
+                    ("VTK_OVERRIDE" variable (:type "int") (reparse-symbol classsubparts) [803 816])
+                    ("VTK_OVERRIDE" variable (:type "int") (reparse-symbol classsubparts) [853 866])
+                    ("AtomNames" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [870 905])
+                    ("Target" variable
+                       (:pointer 1
+                        :type ("vtkMolecule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [909 929])
+                    ("NewMolecule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("attr" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [950 968]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [933 969])
+                    ("NewAtom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("attr" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [985 1003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [972 1004])
+                    ("NewBond" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("attr" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1020 1038]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1007 1039])
+                    ("pTab" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkPeriodicTable" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1043 1073])
+                    ("BallFileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1076 1095])
+                    ("StickFileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1098 1118])
+                    ("private" label nil (reparse-symbol classsubparts) [1120 1128])
+                    ("VTK_DELETE_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [1177 1197])
+                    ("VTK_DELETE_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [1242 1262]))                  
+                :type "class")
+                nil [167 1265]))          
+      :file "vtkBallStickParser.h"
+      :pointmax 1292
+      :fsize 1340
+      :lastmodtime '(22697 65081 177654 74000)
+      :unmatched-syntax '((semantic-list 1214 . 1241) (punctuation 1213 . 1214) (OPERATOR 1205 . 1213) (VOID 1200 . 1204) (semantic-list 1149 . 1176) (symbol 1131 . 1149) (semantic-list 834 . 852) (symbol 824 . 834) (VOID 819 . 823) (semantic-list 765 . 802) (symbol 753 . 765) (VOID 748 . 752) (semantic-list 729 . 731) (symbol 711 . 729) (punctuation 710 . 711))
+      :lexical-table 
+        '(("VTKCMLPARSER_H")
+          )
+)
+    (semanticdb-table "main.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkActor.h" include nil nil [1 22])
+            ("vtkBallStickReader.h" include nil nil [23 54])
+            ("vtkCamera.h" include nil nil [55 77])
+            ("vtkMolecule.h" include nil nil [78 102])
+            ("vtkMoleculeMapper.h" include nil nil [103 133])
+            ("vtkNew.h" include nil nil [134 153])
+            ("vtkRenderWindow.h" include nil nil [154 182])
+            ("vtkRenderWindowInteractor.h" include nil nil [183 221])
+            ("vtkRenderer.h" include nil nil [222 246])
+            ("vtkSphereSource.h" include nil nil [247 275])
+            ("config.h" include nil nil [276 295])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [306 310])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [311 319]))                  
+                :type "int")
+                nil [297 1425]))          
+      :file "main.cxx"
+      :pointmax 1426
+      :fsize 1459
+      :lastmodtime '(22697 64593 645029 549000)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.h"
+      :file "config.h"
+      :fsize 59
+      :lastmodtime '(22698 657 374805 32000))
+    (semanticdb-table "vtkCMLParser.h"
+      :file "vtkCMLParser.h"
+      :fsize 922
+      :lastmodtime '(22695 15158 114293 266000))
+    (semanticdb-table "vtkBallStickParser.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkBallStickParser.h" include nil nil [1 32])
+            ("vtkObjectFactory.h" include nil nil [33 62])
+            ("string" include (:system-flag t) nil [94 111])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkBallStickParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133 152]))                  
+                :type "int")
+                nil [113 153])
+            ("vtkBallStickParser" function
+               (:constructor-flag t
+                :parent "vtkBallStickParser"
+                :type ("vtkBallStickParser" type (:type "class") nil nil))
+                nil [155 237])
+            ("vtkBallStickParser" function
+               (:destructor-flag t
+                :parent "vtkBallStickParser"
+                :type "void")
+                nil [239 309])
+            ("Parse" function
+               (:parent "vtkBallStickParser"
+                :type "int")
+                nil [390 1181])
+            ("StartElement" function
+               (:parent "vtkBallStickParser"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1221 1238])
+                    ("attr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1239 1257]))                  
+                :type "void")
+                nil [1183 1858])
+            ("EndElement" function
+               (:parent "vtkBallStickParser"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1896 1909]))                  
+                :type "void")
+                nil [1860 1913])
+            ("NewMolecule" function
+               (:parent "vtkBallStickParser"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1952 1966]))                  
+                :type "void")
+                nil [1915 2000])
+            ("NewAtom" function
+               (:parent "vtkBallStickParser"
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2035 2053]))                  
+                :type "void")
+                nil [2002 3246])
+            ("NewBond" function
+               (:parent "vtkBallStickParser"
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3281 3299]))                  
+                :type "void")
+                nil [3248 5554]))          
+      :file "vtkBallStickParser.cxx"
+      :pointmax 5555
+      :fsize 5558
+      :lastmodtime '(22699 17226 28010 530000)
+      :unmatched-syntax nil))
+  :file "!home!nshetty!apps!vizballandstick!VizBallAndStick!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

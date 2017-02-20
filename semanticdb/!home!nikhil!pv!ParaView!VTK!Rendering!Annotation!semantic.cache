@@ -1,0 +1,750 @@
+;; Object Annotation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Annotation/"
+  :tables (list 
+   (semanticdb-table "vtkCubeAxesActor.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkCubeAxesActor.h" include nil nil [666 695])
+            ("vtkAxisActor.h" include nil nil [697 722])
+            ("vtkAxisFollower.h" include nil nil [723 751])
+            ("vtkBoundingBox.h" include nil nil [752 779])
+            ("vtkCamera.h" include nil nil [780 802])
+            ("vtkCoordinate.h" include nil nil [803 829])
+            ("vtkFollower.h" include nil nil [830 854])
+            ("vtkMath.h" include nil nil [855 875])
+            ("vtkObjectFactory.h" include nil nil [876 905])
+            ("vtkProperty.h" include nil nil [906 930])
+            ("vtkStringArray.h" include nil nil [931 958])
+            ("vtkTextProperty.h" include nil nil [959 987])
+            ("vtkViewport.h" include nil nil [988 1012])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCubeAxesActor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1035 1052]))                  
+                :type "int")
+                nil [1015 1053])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCubeAxesActor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1075 1092])
+                    ("" variable (:type ("Camera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1093 1100])
+                    ("" variable (:type ("vtkCamera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1100 1110]))                  
+                :type "int")
+                nil [1054 1111])
+            ("vtkCubeAxesActor" function
+               (:constructor-flag t
+                :parent "vtkCubeAxesActor"
+                :type ("vtkCubeAxesActor" type (:type "class") nil nil))
+                nil [1294 11251])
+            ("SetUse2DMode" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [11290 11299]))                  
+                :type "void")
+                nil [11253 11608])
+            ("GetUse2DMode" function
+               (:parent "vtkCubeAxesActor"
+                :type "int")
+                nil [11610 11744])
+            ("SetSaveTitlePosition" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [11791 11800]))                  
+                :type "void")
+                nil [11746 12163])
+            ("vtkCubeAxesActor" function
+               (:destructor-flag t
+                :parent "vtkCubeAxesActor"
+                :type "void")
+                nil [12245 15251])
+            ("RenderOpaqueGeometry" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15653 15675]))                  
+                :type "int")
+                nil [15610 15831])
+            ("RenderTranslucentGeometry" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16238 16260]))                  
+                :type "int")
+                nil [16190 16421])
+            ("RenderTranslucentPolygonalGeometry" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16837 16859]))                  
+                :type "int")
+                nil [16780 17029])
+            ("RenderOverlay" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17263 17285]))                  
+                :type "int")
+                nil [17227 17435])
+            ("HasTranslucentPolygonalGeometry" function
+               (:parent "vtkCubeAxesActor"
+                :type "int")
+                nil [17515 17896])
+            ("AdjustAxes" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("bounds" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18065 18082])
+                    ("xCoords" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18117 18159])
+                    ("yCoords" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18194 18236])
+                    ("zCoords" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18271 18313])
+                    ("xRange" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18348 18365])
+                    ("yRange" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18366 18383])
+                    ("zRange" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18418 18435]))                  
+                :type "void")
+                nil [18031 21615])
+            ("SetScreenSize" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("screenSize" variable (:type "double") (reparse-symbol arg-sub-list) [21858 21876]))                  
+                :type "void")
+                nil [21821 23233])
+            ("ReleaseGraphicsResources" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("vtkWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23600 23615]))                  
+                :type "void")
+                nil [23552 23835])
+            ("PrintSelf" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23940 23952])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23953 23970]))                  
+                :type "void")
+                nil [23907 30215])
+            ("TransformBounds" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30334 30356])
+                    ("bounds" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [30396 30419])
+                    ("pts" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [30459 30476]))                  
+                :type "void")
+                nil [30295 30942])
+            ("ComputeTickSize" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("bounds" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [31387 31404]))                  
+                :type "bool")
+                nil [31348 35629])
+            ("AdjustValues" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("xRange" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36284 36307])
+                    ("yRange" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36344 36367])
+                    ("zRange" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36404 36427]))                  
+                :type "void")
+                nil [36248 39851])
+            ("AdjustRange" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("bnds" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [40331 40352]))                  
+                :type "void")
+                nil [40296 42266])
+            ("Digits" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("min" variable (:type "double") (reparse-symbol arg-sub-list) [42727 42738])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [42739 42751]))                  
+                :type "int")
+                nil [42698 43521])
+            ("LabelExponent" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("min" variable (:type "double") (reparse-symbol arg-sub-list) [44086 44097])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [44098 44109]))                  
+                :type "int")
+                nil [44050 45010])
+            ("BuildAxes" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45257 45279]))                  
+                :type "void")
+                nil [45224 56724])
+            ("SetNonDependentAttributes" function
+               (:parent "vtkCubeAxesActor"
+                :type "void")
+                nil [57037 61665])
+            ("" type
+               (:members 
+                  ( ("mm" variable
+                       (:constant-flag t
+                        :default-value (61882 61883)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [61877 61883])
+                    ("mX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [61885 61888])
+                    ("XX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [61889 61892])
+                    ("Xm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [61893 61897]))                  
+                :type "enum")
+                nil [61871 61898])
+            ("vtkCubeAxesActorTriads" variable
+               (:dereference 2
+                :typemodifiers ("static")
+                :type "int")
+                nil [62034 62178])
+            ("vtkCubeAxesActorConn" variable
+               (:dereference 2
+                :typemodifiers ("static")
+                :type "int")
+                nil [62179 62333])
+            ("DetermineRenderAxes" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62745 62767]))                  
+                :type "void")
+                nil [62702 65881])
+            ("MaxOf" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [65992 66001])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [66002 66011]))                  
+                :type "double")
+                nil [65961 66041])
+            ("MaxOf" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [66152 66161])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [66162 66171])
+                    ("c" variable (:type "double") (reparse-symbol arg-sub-list) [66172 66181])
+                    ("d" variable (:type "double") (reparse-symbol arg-sub-list) [66182 66191]))                  
+                :type "double")
+                nil [66121 66255])
+            ("FFix" function
+               (:parent "vtkCubeAxesActor"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [66372 66385]))                  
+                :type "double")
+                nil [66335 66446])
+            ("FRound" function
+               (:parent "vtkCubeAxesActor"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [66484 66497]))                  
+                :type "int")
+                nil [66448 66604])
+            ("GetNumTicks" function
+               (:parent "vtkCubeAxesActor"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("range" variable (:type "double") (reparse-symbol arg-sub-list) [66647 66660])
+                    ("fxt" variable (:type "double") (reparse-symbol arg-sub-list) [66661 66672]))                  
+                :type "int")
+                nil [66606 66814])
+            ("FSign" function
+               (:parent "vtkCubeAxesActor"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [66932 66945])
+                    ("sign" variable (:type "double") (reparse-symbol arg-sub-list) [66946 66958]))                  
+                :type "double")
+                nil [66894 67048])
+            ("AdjustTicksComputeRange" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("vtkAxisActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67444 67487])
+                    ("boundsMin" variable (:type "double") (reparse-symbol arg-sub-list) [67492 67509])
+                    ("boundsMax" variable (:type "double") (reparse-symbol arg-sub-list) [67510 67527]))                  
+                :type "void")
+                nil [67397 71186])
+            ("AutoScale" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71289 71311]))                  
+                :type "void")
+                nil [71256 71503])
+            ("AutoScale" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71606 71628])
+                    ("axis" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("vtkAxisActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71629 71672]))                  
+                :type "void")
+                nil [71573 72326])
+            ("AutoScale" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72431 72453])
+                    ("screenSize" variable (:type "double") (reparse-symbol arg-sub-list) [72454 72472])
+                    ("position" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [72508 72527]))                  
+                :type "double")
+                nil [72396 72944])
+            ("BuildLabels" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("vtkAxisActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73184 73227]))                  
+                :type "void")
+                nil [73149 76843])
+            ("GetAxisLabels" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axis" variable (:type "int") (reparse-symbol arg-sub-list) [76893 76902]))                  
+                :type ("vtkStringArray" type (:type "class") nil nil))
+                nil [76845 76972])
+            ("SetAxisLabels" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axis" variable (:type "int") (reparse-symbol arg-sub-list) [77011 77020])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("vtkStringArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77021 77043]))                  
+                :type "void")
+                nil [76974 77380])
+            ("SetLabelScaling" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("autoscale" variable (:type "bool") (reparse-symbol arg-sub-list) [77653 77668])
+                    ("upowX" variable (:type "int") (reparse-symbol arg-sub-list) [77669 77679])
+                    ("upowY" variable (:type "int") (reparse-symbol arg-sub-list) [77680 77690])
+                    ("upowZ" variable (:type "int") (reparse-symbol arg-sub-list) [77730 77740]))                  
+                :type "void")
+                nil [77614 78032])
+            ("GetTitleTextProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axis" variable (:type "int") (reparse-symbol arg-sub-list) [78288 78297]))                  
+                :type ("vtkTextProperty" type (:type "class") nil nil))
+                nil [78232 78374])
+            ("GetLabelTextProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axis" variable (:type "int") (reparse-symbol arg-sub-list) [78630 78639]))                  
+                :type ("vtkTextProperty" type (:type "class") nil nil))
+                nil [78574 78716])
+            ("UpdateLabels" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("axis" variable
+                       (:pointer 2
+                        :type ("vtkAxisActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78958 78978])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [78979 78989]))                  
+                :type "void")
+                nil [78922 79950])
+            ("SetXAxesLinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80076 80094]))                  
+                :type "void")
+                nil [80031 80162])
+            ("SetYAxesLinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80208 80226]))                  
+                :type "void")
+                nil [80163 80294])
+            ("SetZAxesLinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80340 80358]))                  
+                :type "void")
+                nil [80295 80426])
+            ("GetXAxesLinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [80508 80601])
+            ("GetYAxesLinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [80602 80695])
+            ("GetZAxesLinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [80696 80789])
+            ("SetXAxesGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80920 80938]))                  
+                :type "void")
+                nil [80871 81010])
+            ("SetYAxesGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81060 81078]))                  
+                :type "void")
+                nil [81011 81150])
+            ("SetZAxesGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81200 81218]))                  
+                :type "void")
+                nil [81151 81290])
+            ("GetXAxesGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [81372 81473])
+            ("GetYAxesGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [81474 81575])
+            ("GetZAxesGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [81576 81677])
+            ("SetXAxesInnerGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81813 81831]))                  
+                :type "void")
+                nil [81759 81908])
+            ("SetYAxesInnerGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81963 81981]))                  
+                :type "void")
+                nil [81909 82058])
+            ("SetZAxesInnerGridlinesProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82113 82131]))                  
+                :type "void")
+                nil [82059 82208])
+            ("GetXAxesInnerGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [82290 82401])
+            ("GetYAxesInnerGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [82402 82513])
+            ("GetZAxesInnerGridlinesProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [82514 82625])
+            ("SetXAxesGridpolysProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82756 82774]))                  
+                :type "void")
+                nil [82707 82846])
+            ("SetYAxesGridpolysProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82896 82914]))                  
+                :type "void")
+                nil [82847 82986])
+            ("SetZAxesGridpolysProperty" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("prop" variable
+                       (:pointer 1
+                        :type ("vtkProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83036 83054]))                  
+                :type "void")
+                nil [82987 83126])
+            ("GetXAxesGridpolysProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [83208 83309])
+            ("GetYAxesGridpolysProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [83310 83411])
+            ("GetZAxesGridpolysProperty" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type ("vtkProperty" type (:type "class") nil nil))
+                nil [83412 83513])
+            ("UpdateGridLineVisibility" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [83640 83648]))                  
+                :type "void")
+                nil [83592 85298])
+            ("FindClosestAxisIndex" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("pts" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [85420 85437]))                  
+                :type "int")
+                nil [85377 85684])
+            ("FindFurtherstAxisIndex" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("pts" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [85809 85826]))                  
+                :type "int")
+                nil [85764 86077])
+            ("FindBoundaryEdge" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("xloc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86198 86208])
+                    ("yloc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86209 86219])
+                    ("zloc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86262 86272])
+                    ("pts" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [86273 86290]))                  
+                :type "void")
+                nil [86157 89288])
+            ("RenderGeometry" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("initialRender" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [89410 89430])
+                    ("viewport" variable
+                       (:pointer 1
+                        :type ("vtkViewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89431 89453])
+                    ("checkAxisVisibility" variable (:type "bool") (reparse-symbol arg-sub-list) [89454 89479])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [89484 89517]))                  
+                :type "int")
+                nil [89368 90691])
+            ("GetRenderedBounds" function
+               (:parent "vtkCubeAxesActor"
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [90812 90822]))                  
+                :type "void")
+                nil [90771 91058])
+            ("GetRenderedBounds" function
+               (:pointer 1
+                :parent "vtkCubeAxesActor"
+                :type "double")
+                nil [91138 91295]))          
+    :file "vtkCubeAxesActor.cxx"
+    :pointmax 91296
+    :fsize 91295
+    :lastmodtime '(20772 6567)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkCubeAxesActor.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkCubeAxesActor_h" variable (:constant-flag t) nil [2722 2742])
+            ("VTK_FLY_OUTER_EDGES" variable (:constant-flag t) nil [2752 2771])
+            ("VTK_FLY_CLOSEST_TRIAD" variable (:constant-flag t) nil [2786 2807])
+            ("VTK_FLY_FURTHEST_TRIAD" variable (:constant-flag t) nil [2820 2842])
+            ("VTK_FLY_STATIC_TRIAD" variable (:constant-flag t) nil [2854 2874])
+            ("VTK_FLY_STATIC_EDGES" variable (:constant-flag t) nil [2888 2908])
+            ("VTK_TICKS_INSIDE" variable (:constant-flag t) nil [2923 2939])
+            ("VTK_TICKS_OUTSIDE" variable (:constant-flag t) nil [2957 2974])
+            ("VTK_TICKS_BOTH" variable (:constant-flag t) nil [2991 3005])
+            ("VTK_GRID_LINES_ALL" variable (:constant-flag t) nil [3026 3044])
+            ("VTK_GRID_LINES_CLOSEST" variable (:constant-flag t) nil [3060 3082])
+            ("VTK_GRID_LINES_FURTHEST" variable (:constant-flag t) nil [3094 3117])
+            ("NUMBER_OF_ALIGNED_AXIS" variable (:constant-flag t) nil [3129 3151])
+            ("vtkRenderingAnnotationModule.h" include nil nil [3155 3196])
+            ("vtkActor.h" include nil nil [3217 3238])
+            ("vtkAxisActor" type
+               (:prototype t
+                :type "class")
+                nil [3240 3259])
+            ("vtkCamera" type
+               (:prototype t
+                :type "class")
+                nil [3260 3276])
+            ("vtkTextProperty" type
+               (:prototype t
+                :type "class")
+                nil [3277 3299])
+            ("vtkStringArray" type
+               (:prototype t
+                :type "class")
+                nil [3300 3321])
+            ("vtkActor" variable
+               (:dereference 1
+                :type "int")
+                nil [3385 22214]))          
+    :file "vtkCubeAxesActor.h"
+    :pointmax 22224
+    :fsize 22223
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 3378 . 3384) (punctuation 3376 . 3377) (symbol 3359 . 3375) (symbol 3329 . 3358) (CLASS 3323 . 3328))
+    :lexical-table 
+        '(("VTK_FLY_STATIC_EDGES" . ((number "4" 2912 . 2913)))
+          ("VTK_TICKS_OUTSIDE" . ((number "1" 2981 . 2982)))
+          ("VTK_GRID_LINES_CLOSEST" . ((number "1" 3084 . 3085)))
+          ("VTK_FLY_CLOSEST_TRIAD" . ((number "1" 2810 . 2811)))
+          ("VTK_FLY_OUTER_EDGES" . ((number "0" 2776 . 2777)))
+          ("VTK_FLY_FURTHEST_TRIAD" . ((number "2" 2844 . 2845)))
+          ("VTK_GRID_LINES_ALL" . ((number "0" 3050 . 3051)))
+          ("VTK_TICKS_BOTH" . ((number "2" 3015 . 3016)))
+          ("VTK_GRID_LINES_FURTHEST" . ((number "2" 3118 . 3119)))
+          ("VTK_TICKS_INSIDE" . ((number "0" 2947 . 2948)))
+          ("__vtkCubeAxesActor_h")
+          ("NUMBER_OF_ALIGNED_AXIS" . ((number "4" 3152 . 3153)))
+          ("VTK_FLY_STATIC_TRIAD" . ((number "3" 2878 . 2879)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Rendering!Annotation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,253 @@
+;; Object Chemistry/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Chemistry/"
+  :tables
+  (list
+    (semanticdb-table "vtkMoleculeMapper.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkMoleculeMapper.h" include nil nil [591 621])
+            ("vtkActor.h" include nil nil [623 644])
+            ("vtkColor.h" include nil nil [645 666])
+            ("vtkCylinderSource.h" include nil nil [667 697])
+            ("vtkDataArray.h" include nil nil [698 723])
+            ("vtkEventForwarderCommand.h" include nil nil [724 761])
+            ("vtkExecutive.h" include nil nil [762 787])
+            ("vtkFloatArray.h" include nil nil [788 814])
+            ("vtkGlyph3DMapper.h" include nil nil [815 844])
+            ("vtkIdTypeArray.h" include nil nil [845 872])
+            ("vtkInformation.h" include nil nil [873 900])
+            ("vtkLookupTable.h" include nil nil [901 928])
+            ("vtkMath.h" include nil nil [929 949])
+            ("vtkMolecule.h" include nil nil [950 974])
+            ("vtkNew.h" include nil nil [975 994])
+            ("vtkObjectFactory.h" include nil nil [995 1024])
+            ("vtkPeriodicTable.h" include nil nil [1025 1054])
+            ("vtkPointData.h" include nil nil [1055 1080])
+            ("vtkPolyData.h" include nil nil [1081 1105])
+            ("vtkSelection.h" include nil nil [1106 1131])
+            ("vtkSelectionNode.h" include nil nil [1132 1161])
+            ("vtkSphereSource.h" include nil nil [1162 1190])
+            ("vtkTransform.h" include nil nil [1191 1216])
+            ("vtkTransformPolyDataFilter.h" include nil nil [1217 1256])
+            ("vtkTrivialProducer.h" include nil nil [1257 1288])
+            ("vtkUnsignedCharArray.h" include nil nil [1289 1322])
+            ("vtkUnsignedShortArray.h" include nil nil [1323 1357])
+            ("vtkVector.h" include nil nil [1358 1380])
+            ("vtkVectorOperators.h" include nil nil [1381 1412])
+            ("vtkObjectFactoryNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkMoleculeMapper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1595 1614]))                  
+                :type "int")
+                nil [1569 1615])
+            ("vtkMoleculeMapper" function
+               (:constructor-flag t
+                :parent "vtkMoleculeMapper"
+                :type ("vtkMoleculeMapper" type (:type "class") nil nil))
+                nil [1696 4673])
+            ("vtkMoleculeMapper" function
+               (:destructor-flag t
+                :parent "vtkMoleculeMapper"
+                :type "void")
+                nil [4754 4797])
+            ("SetInputData" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("vtkMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4915 4934]))                  
+                :type "void")
+                nil [4878 4978])
+            ("GetInput" function
+               (:pointer 1
+                :parent "vtkMoleculeMapper"
+                :type ("vtkMolecule" type (:type "class") nil nil))
+                nil [5059 5183])
+            ("UseBallAndStickSettings" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [5264 5584])
+            ("UseVDWSpheresSettings" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [5665 5983])
+            ("UseLiquoriceStickSettings" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [6064 6388])
+            ("UseFastSettings" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [6469 6817])
+            ("GetAtomicRadiusTypeAsString" function
+               (:pointer 1
+                :parent "vtkMoleculeMapper"
+                :constant-flag t
+                :type "char")
+                nil [6898 7196])
+            ("GetBondColorModeAsString" function
+               (:pointer 1
+                :parent "vtkMoleculeMapper"
+                :constant-flag t
+                :type "char")
+                nil [7277 7525])
+            ("GetSelectedAtomsAndBonds" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("selection" variable
+                       (:pointer 1
+                        :type ("vtkSelection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7655 7679])
+                    ("atomIds" variable
+                       (:pointer 1
+                        :type ("vtkIdTypeArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7729 7753])
+                    ("bondIds" variable
+                       (:pointer 1
+                        :type ("vtkIdTypeArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7803 7827]))                  
+                :type "void")
+                nil [7606 9468])
+            ("Render" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("ren" variable
+                       (:pointer 1
+                        :type ("vtkRenderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9580 9597])
+                    ("act" variable
+                       (:pointer 1
+                        :type ("vtkActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9598 9613]))                  
+                :type "void")
+                nil [9549 9727])
+            ("GlyphRender" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("ren" variable
+                       (:pointer 1
+                        :type ("vtkRenderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9844 9861])
+                    ("act" variable
+                       (:pointer 1
+                        :type ("vtkActor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9862 9876]))                  
+                :type "void")
+                nil [9808 10143])
+            ("UpdateGlyphPolyData" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [10224 10867])
+            ("UpdateAtomGlyphPolyData" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [11012 12654])
+            ("UpdateBondGlyphPolyData" function
+               (:parent "vtkMoleculeMapper"
+                :type "void")
+                nil [12811 23818])
+            ("ReleaseGraphicsResources" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("vtkWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23948 23961]))                  
+                :type "void")
+                nil [23899 24073])
+            ("GetBounds" function
+               (:pointer 1
+                :parent "vtkMoleculeMapper"
+                :type "double")
+                nil [24075 24594])
+            ("FillInputPortInformation" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("vtkNotUsed" variable (:type "int") (reparse-symbol arg-sub-list) [24723 24743])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24793 24814]))                  
+                :type "int")
+                nil [24675 24900])
+            ("PrintSelf" function
+               (:parent "vtkMoleculeMapper"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25015 25027])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25028 25045]))                  
+                :type "void")
+                nil [24981 25301]))          
+      :file "vtkMoleculeMapper.cxx"
+      :pointmax 25302
+      :fsize 25301
+      :lastmodtime '(21766 64482 0 0)
+      :unmatched-syntax '((semantic-list 24737 . 24743)))
+    (semanticdb-table "vtkMoleculeMapper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkMoleculeMapper_h" variable (:constant-flag t) nil [802 821])
+            ("vtkDomainsChemistryModule.h" include nil nil [823 861])
+            ("vtkMapper.h" include nil nil [882 904])
+            ("vtkNew.h" include nil nil [905 924])
+            ("vtkActor" type
+               (:prototype t
+                :type "class")
+                nil [940 955])
+            ("vtkGlyph3DMapper" type
+               (:prototype t
+                :type "class")
+                nil [956 979])
+            ("vtkIdTypeArray" type
+               (:prototype t
+                :type "class")
+                nil [980 1001])
+            ("vtkMolecule" type
+               (:prototype t
+                :type "class")
+                nil [1002 1020])
+            ("vtkPeriodicTable" type
+               (:prototype t
+                :type "class")
+                nil [1021 1044])
+            ("vtkPolyData" type
+               (:prototype t
+                :type "class")
+                nil [1045 1063])
+            ("vtkRenderer" type
+               (:prototype t
+                :type "class")
+                nil [1064 1082])
+            ("vtkSelection" type
+               (:prototype t
+                :type "class")
+                nil [1083 1102])
+            ("vtkSphereSource" type
+               (:prototype t
+                :type "class")
+                nil [1103 1125])
+            ("vtkTrivialProducer" type
+               (:prototype t
+                :type "class")
+                nil [1126 1151])
+            ("vtkMapper" variable (:type "int") nil [1213 8100]))          
+      :file "vtkMoleculeMapper.h"
+      :pointmax 8109
+      :fsize 8108
+      :lastmodtime '(21766 64482 0 0)
+      :unmatched-syntax '((PUBLIC 1206 . 1212) (punctuation 1204 . 1205) (symbol 1186 . 1203) (symbol 1159 . 1185) (CLASS 1153 . 1158))
+      :lexical-table 
+        '(("vtkMoleculeMapper_h")
+          )
+)
+    (semanticdb-table "vtkPeriodicTable.h"
+      :file "vtkPeriodicTable.h"
+      :fsize 3226
+      :lastmodtime '(21766 64482 0 0)))
+  :file "!Users!nshetty!Code!VTK!VTK!Domains!Chemistry!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

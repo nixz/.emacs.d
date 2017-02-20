@@ -1,0 +1,1130 @@
+;; Object DataModel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DataModel/"
+  :tables (list 
+   (semanticdb-table "vtkDoubleDispatcher.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDoubleDispatcher_h" variable (:constant-flag t) nil [2815 2838])
+            ("vtkDispatcher_Private.h" include nil nil [2840 2874])
+            ("map" include (:system-flag t) nil [2919 2933])
+            ("vtkDoubleDispatcher" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3205 3212])
+                    ("Add" function
+                       (:template 
+                          ( ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil)
+                            ("Functor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("fun" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3836 3848]))                          )
+                        (reparse-symbol classsubparts) [3770 3896])
+                    ("Remove" function
+                       (:template 
+                          ( ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4034 4144])
+                    ("Go" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lhs" variable
+                               (:pointer 1
+                                :type ("BaseLhs" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4957 4970])
+                            ("rhs" variable
+                               (:pointer 1
+                                :type ("BaseRhs" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4971 4984]))                          
+                        :type ("ReturnType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4943 4985])
+                    ("protected" label nil (reparse-symbol classsubparts) [4987 4997])
+                    ("TypeInfo" type
+                       (:typedef ("vtkDispatcherCommon::TypeInfo" type (:type "class") nil nil)
+                        :superclasses "vtkDispatcherCommon::TypeInfo"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5000 5047])
+                    ("MappedType" type
+                       (:typedef ("vtkDoubleDispatcherPrivate::Functor" type
+                             (:template-specifier 
+                                ( ("ReturnType" type nil nil nil)
+                                  ("BaseLhs" type nil nil nil)
+                                  ("BaseRhs" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "vtkDoubleDispatcherPrivate::Functor"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5050 5179])
+                    ("DoAddFunctor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5201 5214])
+                            ("rhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5214 5227])
+                            ("fun" variable (:type ("MappedType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5228 5243]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5183 5244])
+                    ("DoRemove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5261 5274])
+                            ("rhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5275 5288]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5247 5289])
+                    ("KeyType" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("TypeInfo" type nil nil nil)
+                                  ("TypeInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5293 5338])
+                    ("MapType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("KeyType" type nil nil nil)
+                                  ("MappedType" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5341 5388])
+                    ("FunctorMap" variable (:type ("MapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5391 5410])
+                    ("private" label nil (reparse-symbol classsubparts) [5411 5419])
+                    ("AddInternal" function
+                       (:template 
+                          ( ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil)
+                            ("Functor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("fun" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5496 5515])
+                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [5516 5521]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [5422 5522])
+                    ("AddInternal" function
+                       (:template 
+                          ( ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil)
+                            ("Functor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("fun" variable
+                               (:pointer 1
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5599 5612])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [5613 5617]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [5525 5618]))                  
+                :type "class")
+                nil [3177 5621])
+            ("AddInternal" function
+               (:template 
+                  ( ("SomeLhs" type (:type "class") nil nil)
+                    ("SomeRhs" type (:type "class") nil nil)
+                    ("Functor" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("fun" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Functor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6028 6047])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [6048 6053]))                  
+                :parent "vtkDoubleDispatcher")
+                nil [5892 6393])
+            ("AddInternal" function
+               (:template 
+                  ( ("SomeLhs" type (:type "class") nil nil)
+                    ("SomeRhs" type (:type "class") nil nil)
+                    ("Functor" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("fun" variable
+                       (:pointer 1
+                        :type ("Functor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6724 6737])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6738 6742]))                  
+                :parent "vtkDoubleDispatcher")
+                nil [6588 7080])
+            ("DoAddFunctor" function
+               (:parent "vtkDoubleDispatcher"
+                :arguments 
+                  ( ("lhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7357 7370])
+                    ("rhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7371 7384])
+                    ("fun" variable (:type ("MappedType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7385 7400]))                  
+                :type "void")
+                nil [7275 7447])
+            ("DoRemove" function
+               (:parent "vtkDoubleDispatcher"
+                :arguments 
+                  ( ("lhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7722 7735])
+                    ("rhs" variable (:type ("TypeInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7736 7749]))                  
+                :type "bool")
+                nil [7644 7808])
+            ("Go" function
+               (:parent "vtkDoubleDispatcher"
+                :arguments 
+                  ( ("lhs" variable
+                       (:pointer 1
+                        :type ("BaseLhs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8083 8096])
+                    ("rhs" variable
+                       (:pointer 1
+                        :type ("BaseRhs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8097 8110]))                  
+                :type ("ReturnType" type (:type "class") nil nil))
+                nil [8005 8472]))          
+    :file "vtkDoubleDispatcher.h"
+    :pointmax 8557
+    :fsize 8556
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkDoubleDispatcher_h")
+          )
+
+    )
+   (semanticdb-table "vtkDispatcher_Private.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDispatcher_Private_h" variable (:constant-flag t) nil [1521 1546])
+            ("typeinfo" include (:system-flag t) nil [1548 1567])
+            ("cassert" include (:system-flag t) nil [1568 1586])
+            ("memory" include (:system-flag t) nil [1587 1604])
+            ("vtkDispatcherPrivate" type
+               (:members 
+                  ( ("FunctorRefDispatcherHelper" type
+                       (:template 
+                          ( ("BaseLhs" type (:type "class") nil nil)
+                            ("SomeLhs" type (:type "class") nil nil)
+                            ("RT" type (:type "class") nil nil)
+                            ("CastLhs" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("fun_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1999 2009])
+                            ("public" label nil (reparse-symbol classsubparts) [2010 2017])
+                            ("ResultType" type
+                               (:typedef ("RT" type (:type "class") nil nil)
+                                :superclasses "RT"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2020 2042])
+                            ("FunctorRefDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2073 2111]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2046 2131])
+                            ("FunctorRefDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("Fun" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2161 2168]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2134 2181])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :type ("BaseLhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2207 2220]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2185 2269])
+                            ("private" label nil (reparse-symbol classsubparts) [2270 2278])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2320 2356]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2281 2357]))                          )
+                        (reparse-symbol namespacesubparts) [1843 2360])
+                    ("FunctorDispatcherHelper" type
+                       (:template 
+                          ( ("BaseLhs" type (:type "class") nil nil)
+                            ("SomeLhs" type (:type "class") nil nil)
+                            ("RT" type (:type "class") nil nil)
+                            ("CastLhs" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("fun_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2696 2705])
+                            ("public" label nil (reparse-symbol classsubparts) [2706 2713])
+                            ("ResultType" type
+                               (:typedef ("RT" type (:type "class") nil nil)
+                                :superclasses "RT"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2716 2738])
+                            ("FunctorDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2766 2801]))                                  
+                                :type ("FunctorDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2742 2821])
+                            ("FunctorDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fun" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2848 2856]))                                  
+                                :type ("FunctorDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2824 2871])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :type ("BaseLhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2897 2910]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2875 2959]))                          )
+                        (reparse-symbol namespacesubparts) [2543 2962])
+                    ("FunctorImpl" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("P1" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3253 3260])
+                            ("ResultType" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :superclasses "R"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3265 3286])
+                            ("Parm1" type
+                               (:typedef ("P1" type (:type "class") nil nil)
+                                :superclasses "P1"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3291 3308])
+                            ("FunctorImpl" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3314 3339])
+                            ("()" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("P1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3366 3370]))                                  
+                                :type ("R" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3345 3375])
+                            ("DoClone" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("FunctorImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3380 3421])
+                            ("Clone" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("U" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("pObj" variable
+                                       (:pointer 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3466 3474]))                                  
+                                :typemodifiers ("static")
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [3427 3642]))                          )
+                        (reparse-symbol namespacesubparts) [3197 3645])
+                    ("FunctorHandler" type
+                       (:template 
+                          ( ("ParentFunctor" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("Base" type
+                               (:typedef ("ParentFunctor::Impl" type (:type "class") nil nil)
+                                :superclasses "ParentFunctor::Impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3948 3990])
+                            ("public" label nil (reparse-symbol classsubparts) [3991 3998])
+                            ("ResultType" type
+                               (:typedef ("Base::ResultType" type (:type "class") nil nil)
+                                :superclasses "Base::ResultType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4001 4046])
+                            ("Parm1" type
+                               (:typedef ("Base::Parm1" type (:type "class") nil nil)
+                                :superclasses "Base::Parm1"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4049 4084])
+                            ("FunctorHandler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fun" variable
+                                       (:reference 1
+                                        :type ("Fun" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4103 4112]))                                  
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4088 4125])
+                            ("FunctorHandler" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4128 4155])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p1" variable
+                                       (:reference 1
+                                        :type ("Parm1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4181 4191]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4159 4212])
+                            ("DoClone" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4215 4292])
+                            ("private" label nil (reparse-symbol classsubparts) [4294 4302])
+                            ("f_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4305 4312])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4342 4366]))                                  
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4315 4367]))                          
+                        :superclasses 
+                          ( ("ParentFunctor::Impl" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3851 4370])
+                    ("Functor" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("Parm1" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4613 4620])
+                            ("Impl" type
+                               (:typedef ("FunctorImpl" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil)
+                                          ("Parm1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "FunctorImpl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4623 4658])
+                            ("ResultType" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :superclasses "R"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4661 4682])
+                            ("Functor" function
+                               (:constructor-flag t
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4686 4715])
+                            ("Functor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Functor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4727 4746]))                                  
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4719 4795])
+                            ("Functor" function
+                               (:template 
+                                  ( ("Fun" type (:type "class") nil nil))                                  
+                                :type ("Functor" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("fun" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4833 4841]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4799 4898])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Functor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4921 4940]))                                  
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4902 5134])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p1" variable
+                                       (:reference 1
+                                        :type ("Parm1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5161 5171]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5139 5203])
+                            ("private" label nil (reparse-symbol classsubparts) [5204 5212])
+                            ("spImpl_" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("Impl" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5215 5243]))                          )
+                        (reparse-symbol namespacesubparts) [4560 5246]))                  
+                :type "namespace")
+                nil [1606 5249])
+            ("vtkDoubleDispatcherPrivate" type
+               (:members 
+                  ( ("FunctorRefDispatcherHelper" type
+                       (:template 
+                          ( ("BaseLhs" type (:type "class") nil nil)
+                            ("BaseRhs" type (:type "class") nil nil)
+                            ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil)
+                            ("RT" type (:type "class") nil nil)
+                            ("CastLhs" type (:type "class") nil nil)
+                            ("CastRhs" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("fun_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5674 5684])
+                            ("public" label nil (reparse-symbol classsubparts) [5685 5692])
+                            ("ResultType" type
+                               (:typedef ("RT" type (:type "class") nil nil)
+                                :superclasses "RT"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5695 5717])
+                            ("FunctorRefDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5747 5785]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5720 5805])
+                            ("FunctorRefDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fun" variable
+                                       (:reference 1
+                                        :type ("Fun" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5835 5844]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5808 5859])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :type ("BaseLhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5885 5898])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("BaseRhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5899 5912]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5863 5981])
+                            ("private" label nil (reparse-symbol classsubparts) [5982 5990])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6032 6068]))                                  
+                                :type ("FunctorRefDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5993 6069]))                          )
+                        (reparse-symbol namespacesubparts) [5473 6072])
+                    ("FunctorDoubleDispatcherHelper" type
+                       (:template 
+                          ( ("BaseLhs" type (:type "class") nil nil)
+                            ("BaseRhs" type (:type "class") nil nil)
+                            ("SomeLhs" type (:type "class") nil nil)
+                            ("SomeRhs" type (:type "class") nil nil)
+                            ("RT" type (:type "class") nil nil)
+                            ("CastLhs" type (:type "class") nil nil)
+                            ("CastRhs" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("fun_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6278 6287])
+                            ("public" label nil (reparse-symbol classsubparts) [6288 6295])
+                            ("ResultType" type
+                               (:typedef ("RT" type (:type "class") nil nil)
+                                :superclasses "RT"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6298 6320])
+                            ("FunctorDoubleDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorDoubleDispatcherHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6353 6394]))                                  
+                                :type ("FunctorDoubleDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6323 6414])
+                            ("FunctorDoubleDispatcherHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fun" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6447 6455]))                                  
+                                :type ("FunctorDoubleDispatcherHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6417 6470])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :type ("BaseLhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6496 6509])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("BaseRhs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6510 6523]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6474 6592]))                          )
+                        (reparse-symbol namespacesubparts) [6074 6596])
+                    ("FunctorImpl" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("P1" type (:type "class") nil nil)
+                            ("P2" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6899 6906])
+                            ("ResultType" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :superclasses "R"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6911 6932])
+                            ("Parm1" type
+                               (:typedef ("P1" type (:type "class") nil nil)
+                                :superclasses "P1"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6937 6954])
+                            ("Parm2" type
+                               (:typedef ("P2" type (:type "class") nil nil)
+                                :superclasses "P2"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6959 6976])
+                            ("FunctorImpl" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6982 7007])
+                            ("()" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("P1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7034 7038])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("P2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7038 7042]))                                  
+                                :type ("R" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7013 7047])
+                            ("DoClone" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("FunctorImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7052 7093])
+                            ("Clone" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("U" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("pObj" variable
+                                       (:pointer 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7138 7146]))                                  
+                                :typemodifiers ("static")
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [7099 7314]))                          )
+                        (reparse-symbol namespacesubparts) [6830 7317])
+                    ("FunctorHandler" type
+                       (:template 
+                          ( ("ParentFunctor" type (:type "class") nil nil)
+                            ("Fun" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("Base" type
+                               (:typedef ("ParentFunctor::Impl" type (:type "class") nil nil)
+                                :superclasses "ParentFunctor::Impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7620 7662])
+                            ("public" label nil (reparse-symbol classsubparts) [7663 7670])
+                            ("ResultType" type
+                               (:typedef ("Base::ResultType" type (:type "class") nil nil)
+                                :superclasses "Base::ResultType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7673 7718])
+                            ("Parm1" type
+                               (:typedef ("Base::Parm1" type (:type "class") nil nil)
+                                :superclasses "Base::Parm1"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7721 7756])
+                            ("Parm2" type
+                               (:typedef ("Base::Parm2" type (:type "class") nil nil)
+                                :superclasses "Base::Parm2"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7759 7794])
+                            ("FunctorHandler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fun" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Fun" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7813 7828]))                                  
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7798 7841])
+                            ("FunctorHandler" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7844 7871])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p1" variable
+                                       (:reference 1
+                                        :type ("Parm1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7897 7907])
+                                    ("p2" variable
+                                       (:reference 1
+                                        :type ("Parm2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7907 7917]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7875 7941])
+                            ("DoClone" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7945 8022])
+                            ("private" label nil (reparse-symbol classsubparts) [8024 8032])
+                            ("f_" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8035 8042])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FunctorHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8072 8096]))                                  
+                                :type ("FunctorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8045 8097]))                          
+                        :superclasses 
+                          ( ("ParentFunctor::Impl" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7523 8100])
+                    ("Functor" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("Parm1" type (:type "class") nil nil)
+                            ("Parm2" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8358 8365])
+                            ("Impl" type
+                               (:typedef ("FunctorImpl" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil)
+                                          ("Parm1" type nil nil nil)
+                                          ("Parm2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "FunctorImpl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8368 8409])
+                            ("ResultType" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :superclasses "R"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8412 8433])
+                            ("Functor" function
+                               (:constructor-flag t
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8437 8466])
+                            ("Functor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Functor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8478 8497]))                                  
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8470 8546])
+                            ("Functor" function
+                               (:template 
+                                  ( ("Fun" type (:type "class") nil nil))                                  
+                                :type ("Functor" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("fun" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Fun" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8584 8599]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [8550 8656])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Functor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8679 8698]))                                  
+                                :type ("Functor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8660 8892])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p1" variable
+                                       (:reference 1
+                                        :type ("Parm1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8918 8928])
+                                    ("p2" variable
+                                       (:reference 1
+                                        :type ("Parm2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8928 8938]))                                  
+                                :type ("ResultType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8896 8973])
+                            ("private" label nil (reparse-symbol classsubparts) [8974 8982])
+                            ("spImpl_" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("Impl" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8985 9013]))                          )
+                        (reparse-symbol namespacesubparts) [8289 9016]))                  
+                :type "namespace")
+                nil [5252 9018])
+            ("vtkDispatcherCommon" type
+               (:members 
+                  ( ("DynamicCaster" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Cast" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9126 9136]))                                  
+                                :type ("To" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9110 9183])
+                            ("Cast" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9203 9213]))                                  
+                                :type ("To" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9187 9260]))                          )
+                        (reparse-symbol namespacesubparts) [9053 9263])
+                    ("vtkCaster" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Cast" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9334 9344]))                                  
+                                :type ("To" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9318 9394])
+                            ("Cast" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9414 9424]))                                  
+                                :type ("To" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9398 9470]))                          )
+                        (reparse-symbol namespacesubparts) [9265 9473])
+                    ("TypeInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9492 9499])
+                            ("TypeInfo" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9520 9531])
+                            ("TypeInfo" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::type_info" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9568 9590]))                                  
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9559 9591])
+                            ("Get" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9654 9688])
+                            ("before" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TypeInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9732 9752]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9720 9759])
+                            ("name" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [9762 9787])
+                            ("private" label nil (reparse-symbol classsubparts) [9789 9797])
+                            ("pInfo_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9800 9829]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9475 9832])
+                    ("TypeInfo" function
+                       (:constructor-flag t
+                        :parent "TypeInfo"
+                        :typemodifiers ("inline")
+                        :type ("TypeInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9853 9947])
+                    ("TypeInfo" function
+                       (:constructor-flag t
+                        :parent "TypeInfo"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("ti" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9975 10000]))                          
+                        :type ("TypeInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9949 10038])
+                    ("before" function
+                       (:parent "TypeInfo"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10069 10089]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10040 10227])
+                    ("Get" function
+                       (:parent "TypeInfo"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::type_info" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10229 10323])
+                    ("name" function
+                       (:pointer 1
+                        :parent "TypeInfo"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [10325 10417])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10467 10487])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10488 10508]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10444 10617])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10641 10661])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10662 10682]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10619 10712])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10737 10757])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10758 10778]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10714 10806])
+                    (">" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10830 10850])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10851 10871]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10808 10895])
+                    ("<=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10920 10940])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10941 10961]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10897 10988])
+                    (">=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11013 11033])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11034 11054]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10990 11081]))                  
+                :type "namespace")
+                nil [9020 11084]))          
+    :file "vtkDispatcher_Private.h"
+    :pointmax 11172
+    :fsize 11171
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((punctuation 7007 . 7008) (punctuation 3339 . 3340))
+    :lexical-table 
+        '(("__vtkDispatcher_Private_h")
+          )
+
+    )
+   (semanticdb-table "vtkCompositeDataIterator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkCompositeDataIterator_h" variable (:constant-flag t) nil [861 889])
+            ("vtkCommonDataModelModule.h" include nil nil [891 928])
+            ("vtkObject.h" include nil nil [949 971])
+            ("vtkCompositeDataSet" type
+               (:prototype t
+                :type "class")
+                nil [973 999])
+            ("vtkCompositeDataSetInternals" type
+               (:prototype t
+                :type "class")
+                nil [1000 1035])
+            ("vtkCompositeDataSetIndex" type
+               (:prototype t
+                :type "class")
+                nil [1036 1067])
+            ("vtkDataObject" type
+               (:prototype t
+                :type "class")
+                nil [1068 1088])
+            ("vtkInformation" type
+               (:prototype t
+                :type "class")
+                nil [1089 1110])
+            ("vtkObject" variable (:type "int") nil [1178 3686]))          
+    :file "vtkCompositeDataIterator.h"
+    :pointmax 3697
+    :fsize 3696
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 1171 . 1177) (punctuation 1169 . 1170) (symbol 1144 . 1168) (symbol 1118 . 1143) (CLASS 1112 . 1117))
+    :lexical-table 
+        '(("__vtkCompositeDataIterator_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Common!DataModel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

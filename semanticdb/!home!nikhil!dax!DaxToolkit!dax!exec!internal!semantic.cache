@@ -1,0 +1,317 @@
+;; Object internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "internal/"
+  :tables (list 
+   (semanticdb-table "Functor.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_exec_internal_Functor_h" variable (:constant-flag t) nil [734 763])
+            ("dax/internal/ParameterPackCxx03.h" include (:system-flag t) nil [1472 1518])
+            ("dax/Types.h" include (:system-flag t) nil [1557 1580])
+            ("dax/cont/internal/Bindings.h" include (:system-flag t) nil [1581 1621])
+            ("dax/exec/arg/FindBinding.h" include (:system-flag t) nil [1622 1660])
+            ("dax/exec/internal/WorkletBase.h" include (:system-flag t) nil [1661 1704])
+            ("dax/internal/GetNthType.h" include (:system-flag t) nil [1705 1742])
+            ("dax/internal/Members.h" include (:system-flag t) nil [1743 1777])
+            ("dax" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("SaveOutArgs" type
+                                               (:members 
+                                                  ( ("protected" label nil (reparse-symbol classsubparts) [1875 1885])
+                                                    ("Index" variable
+                                                       (:constant-flag t
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1888 1908])
+                                                    ("Work" variable
+                                                       (:constant-flag t
+                                                        :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1911 1956])
+                                                    ("public" label nil (reparse-symbol classsubparts) [1957 1964])
+                                                    ("SaveOutArgs" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1995 2009])
+                                                            ("w" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2040 2082]))                                                          
+                                                        :type ("DAX_EXEC_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1967 2116])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("execArg" variable
+                                                               (:reference 1
+                                                                :type ("BindType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2183 2201]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2167 2264]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [1854 2267])
+                                            ("FunctorMemberMap" type
+                                               (:template 
+                                                  ( ("Invocation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("WorkletType" type
+                                                       (:typedef ("dax::internal::GetNthType::type" type (:type "class") nil nil)
+                                                        :superclasses "dax::internal::GetNthType::type"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2328 2404])
+                                                    ("Get" type
+                                                       (:template 
+                                                          ( ("int" type nil nil nil)
+                                                            ("Parameter" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("type" type
+                                                               (:typedef ("arg::FindBinding::type" type (:type "class") nil nil)
+                                                                :superclasses "arg::FindBinding::type"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2464 2545]))                                                          )
+                                                        (reparse-symbol classsubparts) [2407 2550]))                                                  )
+                                                (reparse-symbol namespacesubparts) [2269 2553])
+                                            ("FunctorImpl" type
+                                               (:template 
+                                                  ( ("Invocation" type (:type "class") nil nil)
+                                                    ("ExecutionSignature" type (:type "class") nil nil)
+                                                    ("NumList" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :prototype t)
+                                                (reparse-symbol namespacesubparts) [2583 2679])
+                                            ("FunctorNums" type
+                                               (:template 
+                                                  ( ("ExecutionSignature" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :prototype t)
+                                                (reparse-symbol namespacesubparts) [2680 2738])
+                                            ("FunctorImplLookup" type
+                                               (:template 
+                                                  ( ("Invocation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("WorkletType" type
+                                                       (:typedef ("dax::internal::GetNthType::type" type (:type "class") nil nil)
+                                                        :superclasses "dax::internal::GetNthType::type"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2943 3019])
+                                                    ("Sig" type
+                                                       (:typedef ("WorkletType::ExecutionSignature" type (:type "class") nil nil)
+                                                        :superclasses "WorkletType::ExecutionSignature"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3022 3075])
+                                                    ("type" variable (:type "int") (reparse-symbol classsubparts) [3148 3153]))                                                  )
+                                                (reparse-symbol namespacesubparts) [2883 3156])
+                                            ("_dax_FunctorImpl_Argument" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3540 3565])
+                                            ("_dax_FunctorImpl_T0" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3622 3641])
+                                            ("_dax_FunctorImpl_void" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3706 3727])
+                                            ("_dax_FunctorImpl" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3736 3752])
+                                            ("_dax_pp_enum___" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5327 5342]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1834 6103])
+                                    ("Functor" type
+                                       (:template 
+                                          ( ("Invocation" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("derived" type
+                                               (:typedef ("detail::FunctorImplLookup::type" type (:type "class") nil nil)
+                                                :superclasses "detail::FunctorImplLookup::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6306 6375])
+                                            ("public" label nil (reparse-symbol classsubparts) [6376 6383])
+                                            ("WorkletType" type
+                                               (:typedef ("derived::WorkletType" type (:type "class") nil nil)
+                                                :superclasses "derived::WorkletType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6386 6436])
+                                            ("BindingsType" type
+                                               (:typedef ("derived::BindingsType" type (:type "class") nil nil)
+                                                :superclasses "derived::BindingsType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6439 6491])
+                                            ("Functor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("worklet" variable (:type ("WorkletType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6520 6540])
+                                                    ("args" variable
+                                                       (:reference 1
+                                                        :type ("BindingsType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6541 6560]))                                                  
+                                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6494 6587])
+                                            ("SetErrorMessageBuffer" function
+                                               (:arguments 
+                                                  ( ("errorBuffer" variable
+                                                       (:reference 1
+                                                        :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6640 6693]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6606 6753]))                                          
+                                        :superclasses 
+                                          ( ("detail::FunctorImplLookup::type" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6205 6756]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1812 6759]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1795 6760]))                  
+                :type "namespace")
+                nil [1779 6761]))          
+    :file "Functor.h"
+    :pointmax 7405
+    :fsize 7404
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 6590 . 6605) (punctuation 5771 . 5772) (semantic-list 5702 . 5771) (punctuation 5700 . 5701) (punctuation 5698 . 5699) (punctuation 5697 . 5698) (punctuation 5696 . 5697) (punctuation 5695 . 5696) (symbol 5694 . 5695) (punctuation 5693 . 5694) (symbol 5686 . 5693) (punctuation 5685 . 5686) (punctuation 5684 . 5685) (symbol 5678 . 5684) (punctuation 5677 . 5678) (punctuation 5676 . 5677) (symbol 5668 . 5676) (punctuation 5667 . 5668) (punctuation 5666 . 5667) (symbol 5663 . 5666) (punctuation 5661 . 5662) (semantic-list 5655 . 5661) (VOID 5651 . 5655) (punctuation 5649 . 5650) (symbol 5639 . 5649) (punctuation 5638 . 5639) (symbol 5627 . 5638) (CLASS 5621 . 5626) (punctuation 5619 . 5620) (symbol 5618 . 5619) (punctuation 5617 . 5618) (punctuation 5616 . 5617) (punctuation 5615 . 5616) (INT 5612 . 5615) (punctuation 5610 . 5611) (symbol 5609 . 5610) (punctuation 5608 . 5609) (punctuation 5607 . 5608) (punctuation 5606 . 5607) (TYPENAME 5598 . 5606) (punctuation 5596 . 5597) (symbol 5586 . 5596) (TYPENAME 5577 . 5585) (punctuation 5576 . 5577) (TEMPLATE 5567 . 5575) (punctuation 5565 . 5566) (semantic-list 5500 . 5565) (punctuation 5498 . 5499) (punctuation 5496 . 5497) (punctuation 5495 . 5496) (punctuation 5494 . 5495) (punctuation 5493 . 5494) (symbol 5492 . 5493) (punctuation 5491 . 5492) (symbol 5484 . 5491) (punctuation 5483 . 5484) (punctuation 5482 . 5483) (symbol 5476 . 5482) (punctuation 5475 . 5476) (punctuation 5474 . 5475) (symbol 5466 . 5474) (punctuation 5465 . 5466) (punctuation 5464 . 5465) (symbol 5461 . 5464) (punctuation 5459 . 5460) (semantic-list 5453 . 5459) (symbol 5451 . 5453) (punctuation 5449 . 5450) (symbol 5439 . 5449) (punctuation 5438 . 5439) (symbol 5427 . 5438) (CLASS 5421 . 5426) (punctuation 5419 . 5420) (symbol 5418 . 5419) (punctuation 5417 . 5418) (punctuation 5416 . 5417) (punctuation 5415 . 5416) (INT 5412 . 5415) (punctuation 5410 . 5411) (symbol 5409 . 5410) (punctuation 5408 . 5409) (punctuation 5407 . 5408) (punctuation 5406 . 5407) (TYPENAME 5398 . 5406) (punctuation 5396 . 5397) (symbol 5394 . 5396) (TYPENAME 5385 . 5393) (punctuation 5383 . 5384) (symbol 5373 . 5383) (TYPENAME 5364 . 5372) (punctuation 5363 . 5364) (TEMPLATE 5354 . 5362) (punctuation 3146 . 3147) (symbol 3142 . 3146) (punctuation 3141 . 3142) (punctuation 3140 . 3141) (punctuation 3139 . 3140) (symbol 3136 . 3139) (punctuation 3135 . 3136) (symbol 3124 . 3135) (TYPENAME 3115 . 3123) (punctuation 3113 . 3114) (symbol 3110 . 3113) (punctuation 3108 . 3109) (symbol 3098 . 3108) (punctuation 3097 . 3098) (symbol 3086 . 3097) (TYPEDEF 3078 . 3085) (punctuation 2881 . 2882) (semantic-list 2805 . 2881) (punctuation 2803 . 2804) (semantic-list 2797 . 2803) (symbol 2795 . 2797) (punctuation 2794 . 2795) (symbol 2783 . 2794) (STRUCT 2776 . 2782) (punctuation 2774 . 2775) (symbol 2773 . 2774) (punctuation 2772 . 2773) (punctuation 2771 . 2772) (punctuation 2770 . 2771) (TYPENAME 2762 . 2770) (punctuation 2760 . 2761) (symbol 2758 . 2760) (TYPENAME 2749 . 2757) (punctuation 2748 . 2749) (TEMPLATE 2739 . 2747) (symbol 2151 . 2166) (punctuation 2147 . 2148) (symbol 2139 . 2147) (TYPENAME 2130 . 2138) (punctuation 2129 . 2130) (TEMPLATE 2120 . 2128) (symbol 6590 . 6605) (punctuation 5771 . 5772) (semantic-list 5702 . 5771) (punctuation 5700 . 5701) (punctuation 5698 . 5699) (punctuation 5697 . 5698) (punctuation 5696 . 5697) (punctuation 5695 . 5696) (symbol 5694 . 5695) (punctuation 5693 . 5694) (symbol 5686 . 5693) (punctuation 5685 . 5686) (punctuation 5684 . 5685) (symbol 5678 . 5684) (punctuation 5677 . 5678) (punctuation 5676 . 5677) (symbol 5668 . 5676) (punctuation 5667 . 5668) (punctuation 5666 . 5667) (symbol 5663 . 5666) (punctuation 5661 . 5662) (semantic-list 5655 . 5661) (VOID 5651 . 5655) (punctuation 5649 . 5650) (symbol 5639 . 5649) (punctuation 5638 . 5639) (symbol 5627 . 5638) (CLASS 5621 . 5626) (punctuation 5619 . 5620) (symbol 5618 . 5619) (punctuation 5617 . 5618) (punctuation 5616 . 5617) (punctuation 5615 . 5616) (INT 5612 . 5615) (punctuation 5610 . 5611) (symbol 5609 . 5610) (punctuation 5608 . 5609) (punctuation 5607 . 5608) (punctuation 5606 . 5607) (TYPENAME 5598 . 5606) (punctuation 5596 . 5597) (symbol 5586 . 5596) (TYPENAME 5577 . 5585) (punctuation 5576 . 5577) (TEMPLATE 5567 . 5575) (punctuation 5565 . 5566) (semantic-list 5500 . 5565) (punctuation 5498 . 5499) (punctuation 5496 . 5497) (punctuation 5495 . 5496) (punctuation 5494 . 5495) (punctuation 5493 . 5494) (symbol 5492 . 5493) (punctuation 5491 . 5492) (symbol 5484 . 5491) (punctuation 5483 . 5484) (punctuation 5482 . 5483) (symbol 5476 . 5482) (punctuation 5475 . 5476) (punctuation 5474 . 5475) (symbol 5466 . 5474) (punctuation 5465 . 5466) (punctuation 5464 . 5465) (symbol 5461 . 5464) (punctuation 5459 . 5460) (semantic-list 5453 . 5459) (symbol 5451 . 5453) (punctuation 5449 . 5450) (symbol 5439 . 5449) (punctuation 5438 . 5439) (symbol 5427 . 5438) (CLASS 5421 . 5426) (punctuation 5419 . 5420) (symbol 5418 . 5419) (punctuation 5417 . 5418) (punctuation 5416 . 5417) (punctuation 5415 . 5416) (INT 5412 . 5415) (punctuation 5410 . 5411) (symbol 5409 . 5410) (punctuation 5408 . 5409) (punctuation 5407 . 5408) (punctuation 5406 . 5407) (TYPENAME 5398 . 5406) (punctuation 5396 . 5397) (symbol 5394 . 5396) (TYPENAME 5385 . 5393) (punctuation 5383 . 5384) (symbol 5373 . 5383) (TYPENAME 5364 . 5372) (punctuation 5363 . 5364) (TEMPLATE 5354 . 5362) (punctuation 3146 . 3147) (symbol 3142 . 3146) (punctuation 3141 . 3142) (punctuation 3140 . 3141) (punctuation 3139 . 3140) (symbol 3136 . 3139) (punctuation 3135 . 3136) (symbol 3124 . 3135) (TYPENAME 3115 . 3123) (punctuation 3113 . 3114) (symbol 3110 . 3113) (punctuation 3108 . 3109) (symbol 3098 . 3108) (punctuation 3097 . 3098) (symbol 3086 . 3097) (TYPEDEF 3078 . 3085) (punctuation 2881 . 2882) (semantic-list 2805 . 2881) (punctuation 2803 . 2804) (semantic-list 2797 . 2803) (symbol 2795 . 2797) (punctuation 2794 . 2795) (symbol 2783 . 2794) (STRUCT 2776 . 2782) (punctuation 2774 . 2775) (symbol 2773 . 2774) (punctuation 2772 . 2773) (punctuation 2771 . 2772) (punctuation 2770 . 2771) (TYPENAME 2762 . 2770) (punctuation 2760 . 2761) (symbol 2758 . 2760) (TYPENAME 2749 . 2757) (punctuation 2748 . 2749) (TEMPLATE 2739 . 2747) (symbol 2151 . 2166) (punctuation 2147 . 2148) (symbol 2139 . 2147) (TYPENAME 2130 . 2138) (punctuation 2129 . 2130) (TEMPLATE 2120 . 2128) (symbol 6590 . 6605) (punctuation 5771 . 5772) (semantic-list 5702 . 5771) (punctuation 5700 . 5701) (punctuation 5698 . 5699) (punctuation 5697 . 5698) (punctuation 5696 . 5697) (punctuation 5695 . 5696) (symbol 5694 . 5695) (punctuation 5693 . 5694) (symbol 5686 . 5693) (punctuation 5685 . 5686) (punctuation 5684 . 5685) (symbol 5678 . 5684) (punctuation 5677 . 5678) (punctuation 5676 . 5677) (symbol 5668 . 5676) (punctuation 5667 . 5668) (punctuation 5666 . 5667) (symbol 5663 . 5666) (punctuation 5661 . 5662) (semantic-list 5655 . 5661) (VOID 5651 . 5655) (punctuation 5649 . 5650) (symbol 5639 . 5649) (punctuation 5638 . 5639) (symbol 5627 . 5638) (CLASS 5621 . 5626) (punctuation 5619 . 5620) (symbol 5618 . 5619) (punctuation 5617 . 5618) (punctuation 5616 . 5617) (punctuation 5615 . 5616) (INT 5612 . 5615) (punctuation 5610 . 5611) (symbol 5609 . 5610) (punctuation 5608 . 5609) (punctuation 5607 . 5608) (punctuation 5606 . 5607) (TYPENAME 5598 . 5606) (punctuation 5596 . 5597) (symbol 5586 . 5596) (TYPENAME 5577 . 5585) (punctuation 5576 . 5577) (TEMPLATE 5567 . 5575) (punctuation 5565 . 5566) (semantic-list 5500 . 5565) (punctuation 5498 . 5499) (punctuation 5496 . 5497) (punctuation 5495 . 5496) (punctuation 5494 . 5495) (punctuation 5493 . 5494) (symbol 5492 . 5493) (punctuation 5491 . 5492) (symbol 5484 . 5491) (punctuation 5483 . 5484) (punctuation 5482 . 5483) (symbol 5476 . 5482) (punctuation 5475 . 5476) (punctuation 5474 . 5475) (symbol 5466 . 5474) (punctuation 5465 . 5466) (punctuation 5464 . 5465) (symbol 5461 . 5464) (punctuation 5459 . 5460) (semantic-list 5453 . 5459) (symbol 5451 . 5453) (punctuation 5449 . 5450) (symbol 5439 . 5449) (punctuation 5438 . 5439) (symbol 5427 . 5438) (CLASS 5421 . 5426) (punctuation 5419 . 5420) (symbol 5418 . 5419) (punctuation 5417 . 5418) (punctuation 5416 . 5417) (punctuation 5415 . 5416) (INT 5412 . 5415) (punctuation 5410 . 5411) (symbol 5409 . 5410) (punctuation 5408 . 5409) (punctuation 5407 . 5408) (punctuation 5406 . 5407) (TYPENAME 5398 . 5406) (punctuation 5396 . 5397) (symbol 5394 . 5396) (TYPENAME 5385 . 5393) (punctuation 5383 . 5384) (symbol 5373 . 5383) (TYPENAME 5364 . 5372) (punctuation 5363 . 5364) (TEMPLATE 5354 . 5362) (punctuation 3146 . 3147) (symbol 3142 . 3146) (punctuation 3141 . 3142) (punctuation 3140 . 3141) (punctuation 3139 . 3140) (symbol 3136 . 3139) (punctuation 3135 . 3136) (symbol 3124 . 3135) (TYPENAME 3115 . 3123) (punctuation 3113 . 3114) (symbol 3110 . 3113) (punctuation 3108 . 3109) (symbol 3098 . 3108) (punctuation 3097 . 3098) (symbol 3086 . 3097) (TYPEDEF 3078 . 3085) (punctuation 2881 . 2882) (semantic-list 2805 . 2881) (punctuation 2803 . 2804) (semantic-list 2797 . 2803) (symbol 2795 . 2797) (punctuation 2794 . 2795) (symbol 2783 . 2794) (STRUCT 2776 . 2782) (punctuation 2774 . 2775) (symbol 2773 . 2774) (punctuation 2772 . 2773) (punctuation 2771 . 2772) (punctuation 2770 . 2771) (TYPENAME 2762 . 2770) (punctuation 2760 . 2761) (symbol 2758 . 2760) (TYPENAME 2749 . 2757) (punctuation 2748 . 2749) (TEMPLATE 2739 . 2747) (symbol 2151 . 2166) (punctuation 2147 . 2148) (symbol 2139 . 2147) (TYPENAME 2130 . 2138) (punctuation 2129 . 2130) (TEMPLATE 2120 . 2128))
+    :lexical-table 
+        '(("__dax_exec_internal_Functor_h")
+          )
+
+    )
+   (semanticdb-table "ErrorMessageBuffer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_exec_internal_ErrorMessageBuffer_h" variable (:constant-flag t) nil [706 746])
+            ("dax/Types.h" include (:system-flag t) nil [748 770])
+            ("dax" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("ErrorMessageBuffer" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1483 1490])
+                                            ("ErrorMessageBuffer" function
+                                               (:constructor-flag t
+                                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1493 1583])
+                                            ("ErrorMessageBuffer" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("messageBuffer" variable
+                                                       (:pointer 1
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [1629 1649])
+                                                    ("bufferSize" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1650 1669]))                                                  
+                                                :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1587 1739])
+                                            ("RaiseError" function
+                                               (:arguments 
+                                                  ( ("message" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [1775 1795]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1759 2693])
+                                            ("IsErrorRaised" function (:type "bool") (reparse-symbol classsubparts) [2718 2961])
+                                            ("private" label nil (reparse-symbol classsubparts) [2963 2971])
+                                            ("MessageBuffer" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [2974 2994])
+                                            ("MessageBufferSize" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2997 3023]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1456 3026]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [805 3029]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [788 3031]))                  
+                :type "namespace")
+                nil [772 3033]))          
+    :file "ErrorMessageBuffer.h"
+    :pointmax 3119
+    :fsize 3118
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 2697 . 2717) (symbol 1743 . 1758))
+    :lexical-table 
+        '(("__dax_exec_internal_ErrorMessageBuffer_h")
+          )
+
+    )
+   (semanticdb-table "TopologyUnstructured.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax__exec__internal__TopologyUnstructured_h" variable (:constant-flag t) nil [711 756])
+            ("dax/Types.h" include (:system-flag t) nil [758 780])
+            ("dax/exec/CellVertices.h" include (:system-flag t) nil [782 816])
+            ("dax" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("TopologyUnstructured" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("ConnectionsPortalT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("CellTag" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :superclasses "T"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1580 1598])
+                                            ("CellConnectionsPortalType" type
+                                               (:typedef ("ConnectionsPortalT" type (:type "class") nil nil)
+                                                :superclasses "ConnectionsPortalT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1601 1654])
+                                            ("TopologyUnstructured" function
+                                               (:constructor-flag t
+                                                :type ("TopologyUnstructured" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1658 1792])
+                                            ("TopologyUnstructured" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("cellConnections" variable (:type ("CellConnectionsPortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2228 2270])
+                                                    ("numberOfPoints" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2294 2317])
+                                                    ("numberOfCells" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2341 2363]))                                                  
+                                                :type ("TopologyUnstructured" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2207 2478])
+                                            ("CellConnections" variable (:type ("CellConnectionsPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2482 2524])
+                                            ("NumberOfPoints" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2527 2550])
+                                            ("NumberOfCells" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2553 2575])
+                                            ("GetNumberOfCells" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2661 2733])
+                                            ("GetNumberOfPoints" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2820 2894])
+                                            ("GetCellConnections" function
+                                               (:arguments 
+                                                  ( ("cellIndex" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3024 3042]))                                                  
+                                                :type ("dax::exec::CellVertices" type
+                                                     (:template-specifier 
+                                                        ( ("CellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2972 3450]))                                          )
+                                        (reparse-symbol namespacesubparts) [1501 3453]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [851 3456]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [834 3469]))                  
+                :type "namespace")
+                nil [818 3478]))          
+    :file "TopologyUnstructured.h"
+    :pointmax 3542
+    :fsize 3541
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 2954 . 2969) (symbol 2802 . 2817) (symbol 2643 . 2658))
+    :lexical-table 
+        '(("__dax__exec__internal__TopologyUnstructured_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!exec!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

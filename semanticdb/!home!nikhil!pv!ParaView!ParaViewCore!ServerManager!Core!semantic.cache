@@ -1,0 +1,1529 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkSMPythonTraceObserver.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMPythonTraceObserver.h" include nil nil [564 601])
+            ("vtkSMProxyManager.h" include nil nil [603 633])
+            ("vtkCommand.h" include nil nil [634 657])
+            ("vtkObjectFactory.h" include nil nil [658 687])
+            ("vtkProcessModule.h" include nil nil [688 717])
+            ("vtkSMSessionProxyManager.h" include nil nil [718 755])
+            ("vtkWeakPointer.h" include nil nil [756 783])
+            ("vtkSMPythonTraceObserverCommandHelper" type
+               (:superclasses 
+                  ( ("vtkCommand" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [931 938])
+                    ("New" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkSMPythonTraceObserverCommandHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [941 1060])
+                    ("SetTarget" function
+                       (:arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("vtkSMPythonTraceObserver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1081 1109]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1066 1143])
+                    ("Execute" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("caller" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1168 1186])
+                            ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1187 1209])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1210 1221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1147 1328])
+                    ("private" label nil (reparse-symbol classsubparts) [1330 1338])
+                    ("vtkSMPythonTraceObserverCommandHelper" function
+                       (:constructor-flag t
+                        :type ("vtkSMPythonTraceObserverCommandHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1341 1414])
+                    ("Target" variable
+                       (:pointer 1
+                        :type ("vtkSMPythonTraceObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1418 1451]))                  
+                :type "class")
+                nil [865 1454])
+            ("vtkInternal" type
+               (:parent "vtkSMPythonTraceObserver"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1582 1589])
+                    ("SessionProxyManager" variable (:type ("vtkWeakPointer" type
+                         (:template-specifier 
+                            ( ("vtkSMSessionProxyManager" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1592 1653])
+                    ("LastRegisterProxyInfo" variable (:type ("vtkSMProxyManager::RegisteredProxyInformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1656 1724])
+                    ("LastUnRegisterProxyInfo" variable (:type ("vtkSMProxyManager::RegisteredProxyInformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1727 1797])
+                    ("LastModifiedPropertyInfo" variable (:type ("vtkSMProxyManager::ModifiedPropertyInformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1800 1872]))                  
+                :type "class")
+                nil [1536 1875])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkSMPythonTraceObserver" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1977 2002]))                  
+                :type "int")
+                nil [1957 2003])
+            ("vtkSMPythonTraceObserver" function
+               (:constructor-flag t
+                :parent "vtkSMPythonTraceObserver"
+                :type ("vtkSMPythonTraceObserver" type (:type "class") nil nil))
+                nil [2085 3318])
+            ("vtkSMPythonTraceObserver" function
+               (:destructor-flag t
+                :parent "vtkSMPythonTraceObserver"
+                :type "void")
+                nil [3400 3694])
+            ("ExecuteEvent" function
+               (:parent "vtkSMPythonTraceObserver"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3820 3849])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3854 3876])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3877 3888]))                  
+                :type "void")
+                nil [3776 5220])
+            ("GetLastPropertyModifiedProxy" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [5303 5432])
+            ("GetLastProxyRegistered" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [5514 5634])
+            ("GetLastProxyUnRegistered" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [5716 5840])
+            ("GetLastPropertyModifiedName" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :constant-flag t
+                :type "char")
+                nil [5922 6057])
+            ("GetLastProxyRegisteredGroup" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :constant-flag t
+                :type "char")
+                nil [6139 6268])
+            ("GetLastProxyRegisteredName" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :constant-flag t
+                :type "char")
+                nil [6350 6478])
+            ("GetLastProxyUnRegisteredGroup" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :constant-flag t
+                :type "char")
+                nil [6560 6693])
+            ("GetLastProxyUnRegisteredName" function
+               (:pointer 1
+                :parent "vtkSMPythonTraceObserver"
+                :constant-flag t
+                :type "char")
+                nil [6775 6907])
+            ("PrintSelf" function
+               (:parent "vtkSMPythonTraceObserver"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7030 7042])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7043 7060]))                  
+                :type "void")
+                nil [6989 7157]))          
+    :file "vtkSMPythonTraceObserver.cxx"
+    :pointmax 7158
+    :fsize 8463
+    :lastmodtime '(20784 62487)
+    :unmatched-syntax '((semantic-list 3841 . 3849))
+    )
+   (semanticdb-table "vtkSMPythonTraceObserver.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSMPythonTraceObserver_h" variable (:constant-flag t) nil [864 892])
+            ("vtkPVServerManagerCoreModule.h" include nil nil [894 935])
+            ("vtkSMObject.h" include nil nil [957 981])
+            ("vtkSMPythonTraceObserverCommandHelper" type
+               (:prototype t
+                :type "class")
+                nil [983 1027])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [1028 1045])
+            ("vtkSMObject" variable (:type "int") nil [1117 2167]))          
+    :file "vtkSMPythonTraceObserver.h"
+    :pointmax 2176
+    :fsize 2260
+    :lastmodtime '(20784 62487)
+    :unmatched-syntax '((PUBLIC 1110 . 1116) (punctuation 1108 . 1109) (symbol 1083 . 1107) (symbol 1053 . 1082) (CLASS 1047 . 1052))
+    :lexical-table 
+        '(("__vtkSMPythonTraceObserver_h")
+          )
+
+    )
+   (semanticdb-table "vtkSMPluginManager.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMPluginManager.h" include nil nil [545 576])
+            ("vtkCommand.h" include nil nil [578 601])
+            ("vtkObjectFactory.h" include nil nil [602 631])
+            ("vtkPVPluginLoader.h" include nil nil [632 662])
+            ("vtkPVPluginsInformation.h" include nil nil [663 699])
+            ("vtkPVPluginTracker.h" include nil nil [700 731])
+            ("vtkSmartPointer.h" include nil nil [732 760])
+            ("vtkSMPluginLoaderProxy.h" include nil nil [761 796])
+            ("vtkSMPropertyHelper.h" include nil nil [797 829])
+            ("vtkSMProxyDefinitionManager.h" include nil nil [830 870])
+            ("vtkSMProxyManager.h" include nil nil [871 901])
+            ("vtkSMSession.h" include nil nil [902 927])
+            ("vtkSMSessionProxyManager.h" include nil nil [928 965])
+            ("vtkWeakPointer.h" include nil nil [966 993])
+            ("assert.h" include (:system-flag t) nil [995 1014])
+            ("map" include (:system-flag t) nil [1015 1029])
+            ("vtkInternals" type
+               (:parent "vtkSMPluginManager"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1072 1079])
+                    ("RemoteInfoMapType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("vtkSMSession" type (:pointer 1) nil nil)
+                                  ("vtkSmartPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1082 1185])
+                    ("RemoteInformations" variable (:type ("RemoteInfoMapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1188 1225]))                  
+                :type "class")
+                nil [1031 1228])
+            ("unnamed" type
+               (:members 
+                  ( ("vtkFlagStateUpdated" type
+                       (:members 
+                          ( ("Prev" variable (:type "bool") (reparse-symbol classsubparts) [1280 1290])
+                            ("Flag" variable (:type "bool") (reparse-symbol classsubparts) [1295 1306])
+                            ("public" label nil (reparse-symbol classsubparts) [1310 1317])
+                            ("vtkFlagStateUpdated" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("flag" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1342 1353])
+                                    ("new_val" variable (:type "bool") (reparse-symbol arg-sub-list) [1354 1367])
+                                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1367 1372]))                                  
+                                :type ("vtkFlagStateUpdated" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1322 1441])
+                            ("vtkFlagStateUpdated" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1446 1515])
+                            ("private" label nil (reparse-symbol classsubparts) [1519 1527])
+                            ("vtkFlagStateUpdated" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkFlagStateUpdated" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1552 1579]))                                  
+                                :type ("vtkFlagStateUpdated" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1532 1580])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkFlagStateUpdated" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1619 1646]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1604 1647]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1244 1671]))                  
+                :type "namespace")
+                nil [1230 1673])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkSMPluginManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1695 1714]))                  
+                :type "int")
+                nil [1675 1715])
+            ("vtkSMPluginManager" function
+               (:constructor-flag t
+                :parent "vtkSMPluginManager"
+                :type ("vtkSMPluginManager" type (:type "class") nil nil))
+                nil [1795 2456])
+            ("vtkSMPluginManager" function
+               (:destructor-flag t
+                :parent "vtkSMPluginManager"
+                :type "void")
+                nil [2537 2704])
+            ("RegisterSession" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2826 2848]))                  
+                :type "void")
+                nil [2785 3747])
+            ("UnRegisterSession" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3871 3893]))                  
+                :type "void")
+                nil [3828 3951])
+            ("GetRemoteInformation" function
+               (:pointer 1
+                :parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4101 4123]))                  
+                :type ("vtkPVPluginsInformation" type (:type "class") nil nil))
+                nil [4032 4200])
+            ("LoadLocalPlugin" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4322 4343]))                  
+                :type "bool")
+                nil [4281 5167])
+            ("LoadRemotePlugin" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5290 5311])
+                    ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5314 5336]))                  
+                :type "bool")
+                nil [5248 6453])
+            ("LoadPluginConfigurationXMLFromString" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("xmlcontents" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6599 6623])
+                    ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6624 6646])
+                    ("remote" variable (:type "bool") (reparse-symbol arg-sub-list) [6647 6659]))                  
+                :type "void")
+                nil [6534 7805])
+            ("OnPluginRegistered" function
+               (:parent "vtkSMPluginManager"
+                :type "void")
+                nil [7886 8344])
+            ("GetLocalPluginSearchPaths" function
+               (:pointer 1
+                :parent "vtkSMPluginManager"
+                :constant-flag t
+                :type "char")
+                nil [8425 8539])
+            ("GetRemotePluginSearchPaths" function
+               (:pointer 1
+                :parent "vtkSMPluginManager"
+                :constant-flag t
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8679 8701]))                  
+                :type "char")
+                nil [8620 8778])
+            ("PrintSelf" function
+               (:parent "vtkSMPluginManager"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8894 8906])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8907 8924]))                  
+                :type "void")
+                nil [8859 8971]))          
+    :file "vtkSMPluginManager.cxx"
+    :pointmax 8972
+    :fsize 8971
+    :lastmodtime '(20902 10079)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkSMSessionProxyManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSMSessionProxyManager_h" variable (:constant-flag t) nil [4588 4616])
+            ("vtkPVServerManagerCoreModule.h" include nil nil [4618 4659])
+            ("vtkSMSessionObject.h" include nil nil [4681 4712])
+            ("vtkSMMessageMinimal.h" include nil nil [4713 4745])
+            ("vtkCollection" type
+               (:prototype t
+                :type "class")
+                nil [4775 4795])
+            ("vtkEventForwarderCommand" type
+               (:prototype t
+                :type "class")
+                nil [4796 4827])
+            ("vtkPVXMLElement" type
+               (:prototype t
+                :type "class")
+                nil [4828 4850])
+            ("vtkSMCompoundSourceProxy" type
+               (:prototype t
+                :type "class")
+                nil [4851 4882])
+            ("vtkSMDocumentation" type
+               (:prototype t
+                :type "class")
+                nil [4883 4908])
+            ("vtkSMGlobalPropertiesManager" type
+               (:prototype t
+                :type "class")
+                nil [4909 4944])
+            ("vtkSMLink" type
+               (:prototype t
+                :type "class")
+                nil [4945 4961])
+            ("vtkSMProperty" type
+               (:prototype t
+                :type "class")
+                nil [4962 4982])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [4983 5000])
+            ("vtkSMProxyDefinitionManager" type
+               (:prototype t
+                :type "class")
+                nil [5001 5035])
+            ("vtkSMProxyIterator" type
+               (:prototype t
+                :type "class")
+                nil [5036 5061])
+            ("vtkSMProxyLocator" type
+               (:prototype t
+                :type "class")
+                nil [5062 5086])
+            ("vtkSMProxyManagerObserver" type
+               (:prototype t
+                :type "class")
+                nil [5087 5119])
+            ("vtkSMProxyManagerProxySet" type
+               (:prototype t
+                :type "class")
+                nil [5120 5152])
+            ("vtkSMSession" type
+               (:prototype t
+                :type "class")
+                nil [5153 5172])
+            ("vtkSMStateLoader" type
+               (:prototype t
+                :type "class")
+                nil [5173 5196])
+            ("vtkStringList" type
+               (:prototype t
+                :type "class")
+                nil [5197 5217])
+            ("vtkSMPipelineState" type
+               (:prototype t
+                :type "class")
+                nil [5218 5243])
+            ("vtkSMStateLocator" type
+               (:prototype t
+                :type "class")
+                nil [5244 5268])
+            ("vtkSMProxySelectionModel" type
+               (:prototype t
+                :type "class")
+                nil [5269 5300])
+            ("vtkSMSessionProxyManagerInternals" type
+               (:prototype t
+                :type "struct")
+                nil [5308 5349])
+            ("vtkClientServerID" type
+               (:prototype t
+                :type "struct")
+                nil [5350 5375])
+            ("vtkSMSessionObject" variable (:type "int") nil [5453 22473]))          
+    :file "vtkSMSessionProxyManager.h"
+    :pointmax 22537
+    :fsize 22536
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 5446 . 5452) (punctuation 5444 . 5445) (symbol 5419 . 5443) (symbol 5389 . 5418) (CLASS 5383 . 5388))
+    :lexical-table 
+        '(("__vtkSMSessionProxyManager_h")
+          )
+
+    )
+   (semanticdb-table "vtkSMPluginManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSMPluginManager_h" variable (:constant-flag t) nil [935 957])
+            ("vtkPVServerManagerCoreModule.h" include nil nil [959 1000])
+            ("vtkSMObject.h" include nil nil [1022 1046])
+            ("vtkPVPluginsInformation" type
+               (:prototype t
+                :type "class")
+                nil [1048 1078])
+            ("vtkSMSession" type
+               (:prototype t
+                :type "class")
+                nil [1079 1098])
+            ("vtkSMObject" variable (:type "int") nil [1164 3771]))          
+    :file "vtkSMPluginManager.h"
+    :pointmax 3780
+    :fsize 3838
+    :lastmodtime '(20784 62487)
+    :unmatched-syntax '((PUBLIC 1157 . 1163) (punctuation 1155 . 1156) (symbol 1136 . 1154) (symbol 1106 . 1135) (CLASS 1100 . 1105))
+    :lexical-table 
+        '(("__vtkSMPluginManager_h")
+          )
+
+    )
+   (semanticdb-table "vtkSMProxyManager.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMProxyManager.h" include nil nil [557 587])
+            ("vtkCommand.h" include nil nil [589 612])
+            ("vtkObjectFactory.h" include nil nil [613 642])
+            ("vtkProcessModule.h" include nil nil [643 672])
+            ("vtkPVConfig.h" include nil nil [673 697])
+            ("vtkPVXMLElement.h" include nil nil [724 752])
+            ("vtkSessionIterator.h" include nil nil [753 784])
+            ("vtkSmartPointer.h" include nil nil [785 813])
+            ("vtkSMGlobalPropertiesLinkUndoElement.h" include nil nil [814 863])
+            ("vtkSMGlobalPropertiesManager.h" include nil nil [864 905])
+            ("vtkSMPluginManager.h" include nil nil [906 937])
+            ("vtkSMReaderFactory.h" include nil nil [938 969])
+            ("vtkSMSession.h" include nil nil [970 995])
+            ("vtkSMSessionProxyManager.h" include nil nil [996 1033])
+            ("vtkSMUndoStackBuilder.h" include nil nil [1034 1068])
+            ("vtkSMWriterFactory.h" include nil nil [1069 1100])
+            ("vtkWeakPointer.h" include nil nil [1101 1128])
+            ("map" include (:system-flag t) nil [1130 1144])
+            ("PARAVIEW_SOURCE_VERSION" variable (:constant-flag t) nil [1154 1177])
+            ("vtkPXMInternal" type
+               (:parent "vtkSMProxyManager"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1340 1347])
+                    ("vtkPXMInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1408 1910])
+                    ("vtkPXMInternal" function
+                       (:constructor-flag t
+                        :type ("vtkPXMInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1914 1959])
+                    ("ActiveSessionID" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1965 1991])
+                    ("GlobalPropertiesManagersType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("vtkSmartPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2053 2182])
+                    ("GlobalPropertiesManagersCallBackIDType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("unsigned long" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2185 2292])
+                    ("GlobalPropertiesManagers" variable (:type ("GlobalPropertiesManagersType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2295 2349])
+                    ("GlobalPropertiesManagersCallBackID" variable (:type ("GlobalPropertiesManagersCallBackIDType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2352 2426])
+                    ("GlobalPropertyEvent" function
+                       (:arguments 
+                          ( ("src" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2492 2507])
+                            ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2508 2528])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2529 2540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2467 4332]))                  
+                :type "class")
+                nil [1298 4335])
+            ("vtkSMProxyManager::Singleton" variable (:type ("vtkSmartPointer" type
+                 (:template-specifier 
+                    ( ("vtkSMProxyManager" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [4428 4492])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkSMProxyManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4515 4533])
+                    ("" variable (:type ("UndoStackBuilder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4534 4551])
+                    ("" variable (:type ("vtkSMUndoStackBuilder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4554 4576]))                  
+                :type "int")
+                nil [4494 4577])
+            ("New" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :type ("vtkSMProxyManager" type (:type "class") nil nil))
+                nil [4656 4881])
+            ("vtkSMProxyManager" function
+               (:constructor-flag t
+                :parent "vtkSMProxyManager"
+                :type ("vtkSMProxyManager" type (:type "class") nil nil))
+                nil [4961 5667])
+            ("vtkSMProxyManager" function
+               (:destructor-flag t
+                :parent "vtkSMProxyManager"
+                :type "void")
+                nil [5747 6066])
+            ("GetProxyManager" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :type ("vtkSMProxyManager" type (:type "class") nil nil))
+                nil [6147 6414])
+            ("Finalize" function
+               (:parent "vtkSMProxyManager"
+                :type "void")
+                nil [6495 6572])
+            ("IsInitialized" function
+               (:parent "vtkSMProxyManager"
+                :type "bool")
+                nil [6652 6744])
+            ("GetParaViewSourceVersion" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :constant-flag t
+                :type "char")
+                nil [6825 6920])
+            ("GetVersionMajor" function
+               (:parent "vtkSMProxyManager"
+                :type "int")
+                nil [7001 7078])
+            ("GetVersionMinor" function
+               (:parent "vtkSMProxyManager"
+                :type "int")
+                nil [7159 7236])
+            ("GetVersionPatch" function
+               (:parent "vtkSMProxyManager"
+                :type "int")
+                nil [7317 7394])
+            ("GetActiveSession" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :type ("vtkSMSession" type (:type "class") nil nil))
+                nil [7475 7698])
+            ("ConnectionsUpdated" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7825 7836])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7837 7859])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7860 7875]))                  
+                :type "void")
+                nil [7779 8958])
+            ("SetActiveSession" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("sid" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9080 9094]))                  
+                :type "void")
+                nil [9039 9404])
+            ("SetActiveSession" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9526 9548]))                  
+                :type "void")
+                nil [9485 9704])
+            ("GetActiveSessionProxyManager" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :type ("vtkSMSessionProxyManager" type (:type "class") nil nil))
+                nil [9785 9929])
+            ("GetSessionProxyManager" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10078 10100]))                  
+                :type ("vtkSMSessionProxyManager" type (:type "class") nil nil))
+                nil [10010 10164])
+            ("PrintSelf" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10279 10291])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10292 10309]))                  
+                :type "void")
+                nil [10245 10430])
+            ("SetGlobalPropertiesManager" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10561 10578])
+                    ("mgr" variable
+                       (:pointer 1
+                        :type ("vtkSMGlobalPropertiesManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10583 10617]))                  
+                :type "void")
+                nil [10510 11363])
+            ("GetGlobalPropertiesManagerName" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :constant-flag t
+                :arguments 
+                  ( ("mgr" variable
+                       (:pointer 1
+                        :type ("vtkSMGlobalPropertiesManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11508 11542]))                  
+                :type "char")
+                nil [11443 11867])
+            ("GetGlobalPropertiesManager" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12026 12043]))                  
+                :type ("vtkSMGlobalPropertiesManager" type (:type "class") nil nil))
+                nil [11947 12119])
+            ("RemoveGlobalPropertiesManager" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12253 12270]))                  
+                :type "void")
+                nil [12199 12795])
+            ("GetNumberOfGlobalPropertiesManagers" function
+               (:parent "vtkSMProxyManager"
+                :type "unsigned int")
+                nil [12875 13040])
+            ("GetGlobalPropertiesManager" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13199 13218]))                  
+                :type ("vtkSMGlobalPropertiesManager" type (:type "class") nil nil))
+                nil [13120 13563])
+            ("SaveGlobalPropertiesManagers" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13695 13717]))                  
+                :type "void")
+                nil [13642 14080])
+            ("NewProxy" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("groupName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14200 14222])
+                    ("proxyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14225 14247])
+                    ("subProxyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14248 14273]))                  
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [14160 14487])
+            ("RegisterProxy" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("groupname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14608 14630])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14631 14648])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14649 14667]))                  
+                :type "void")
+                nil [14567 14873])
+            ("GetProxy" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("groupname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14993 15015])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15016 15033]))                  
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [14953 15228])
+            ("UnRegisterProxy" function
+               (:parent "vtkSMProxyManager"
+                :arguments 
+                  ( ("groupname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15351 15373])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15374 15391])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15392 15410]))                  
+                :type "void")
+                nil [15308 15618])
+            ("GetProxyName" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :constant-flag t
+                :arguments 
+                  ( ("groupname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15742 15764])
+                    ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15765 15782]))                  
+                :type "char")
+                nil [15698 16001])
+            ("GetProxyName" function
+               (:pointer 1
+                :parent "vtkSMProxyManager"
+                :constant-flag t
+                :arguments 
+                  ( ("groupname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16128 16150])
+                    ("pxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16151 16167]))                  
+                :type "char")
+                nil [16081 16386]))          
+    :file "vtkSMProxyManager.cxx"
+    :pointmax 16387
+    :fsize 16386
+    :lastmodtime '(20902 5353)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PARAVIEW_SOURCE_VERSION" . ((string "\"paraview version \"" 1178 . 1197) (symbol "PARAVIEW_VERSION_FULL" 1198 . 1219)))
+          )
+
+    )
+   (semanticdb-table "vtkSMProxyManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSMProxyManager_h" variable (:constant-flag t) nil [990 1011])
+            ("vtkPVServerManagerCoreModule.h" include nil nil [1013 1054])
+            ("vtkSMObject.h" include nil nil [1076 1100])
+            ("vtkSmartPointer.h" include nil nil [1101 1129])
+            ("vtkPVXMLElement" type
+               (:prototype t
+                :type "class")
+                nil [1159 1181])
+            ("vtkSMGlobalPropertiesManager" type
+               (:prototype t
+                :type "class")
+                nil [1182 1217])
+            ("vtkSMPluginManager" type
+               (:prototype t
+                :type "class")
+                nil [1218 1243])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [1244 1261])
+            ("vtkSMProxyLocator" type
+               (:prototype t
+                :type "class")
+                nil [1262 1286])
+            ("vtkSMProxySelectionModel" type
+               (:prototype t
+                :type "class")
+                nil [1287 1318])
+            ("vtkSMReaderFactory" type
+               (:prototype t
+                :type "class")
+                nil [1319 1344])
+            ("vtkSMSession" type
+               (:prototype t
+                :type "class")
+                nil [1345 1364])
+            ("vtkSMSessionProxyManager" type
+               (:prototype t
+                :type "class")
+                nil [1365 1396])
+            ("vtkSMStateLoader" type
+               (:prototype t
+                :type "class")
+                nil [1397 1420])
+            ("vtkSMUndoStackBuilder" type
+               (:prototype t
+                :type "class")
+                nil [1421 1449])
+            ("vtkSMWriterFactory" type
+               (:prototype t
+                :type "class")
+                nil [1450 1475])
+            ("vtkSMObject" variable (:type "int") nil [1540 7572]))          
+    :file "vtkSMProxyManager.h"
+    :pointmax 7581
+    :fsize 7725
+    :lastmodtime '(20900 54572)
+    :unmatched-syntax '((PUBLIC 1533 . 1539) (punctuation 1531 . 1532) (symbol 1513 . 1530) (symbol 1483 . 1512) (CLASS 1477 . 1482))
+    :lexical-table 
+        '(("__vtkSMProxyManager_h")
+          )
+
+    )
+   (semanticdb-table "vtkSMPropertyHelper.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMPropertyHelper.h" include nil nil [2103 2135])
+            ("vtkObjectFactory.h" include nil nil [2137 2166])
+            ("vtkSMDoubleVectorProperty.h" include nil nil [2167 2205])
+            ("vtkSMIdTypeVectorProperty.h" include nil nil [2206 2244])
+            ("vtkSMInputProperty.h" include nil nil [2245 2276])
+            ("vtkSMIntVectorProperty.h" include nil nil [2277 2312])
+            ("vtkSMProxy.h" include nil nil [2313 2336])
+            ("vtkSMStringVectorProperty.h" include nil nil [2337 2375])
+            ("vtkStringList.h" include nil nil [2376 2402])
+            ("vtkSMEnumerationDomain.h" include nil nil [2403 2438])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [2440 2469])
+            ("assert.h" include (:system-flag t) nil [2471 2490])
+            ("algorithm" include (:system-flag t) nil [2491 2511])
+            ("vtkSMPropertyHelperWarningMacro" variable (:constant-flag t) nil [2521 2552])
+            ("GetProperty" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2776 2795]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [2713 2836])
+            ("GetProperty" function
+               (:type "int"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2972 2991]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [2917 3656])
+            ("GetProperty" function
+               (:type "double"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3795 3814]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [3737 4444])
+            ("GetProperty" function
+               (:type ("vtkIdType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4627 4646]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [4566 5087])
+            ("GetProperty" function
+               (:type "char"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5238 5257]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper"
+                :pointer 1)
+                nil [5175 6010])
+            ("GetProperty" function
+               (:type ("vtkSMProxy" type (:type "class") nil nil)
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6154 6173]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper"
+                :pointer 1)
+                nil [6091 6431])
+            ("GetProperty" function
+               (:type ("vtkVariant" type (:type "class") nil nil)
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6574 6593]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [6512 7609])
+            ("GetPropertyArray" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [7690 7946])
+            ("GetPropertyArray" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "unsigned int"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8099 8109])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8110 8129]))                  
+                :parent "vtkSMPropertyHelper")
+                nil [8027 8302])
+            ("SetProperty" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8449 8468])
+                    ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8469 8477]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [8383 8513])
+            ("SetProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8650 8669])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [8670 8680]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [8594 9463])
+            ("SetProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9600 9619])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [9620 9633]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [9544 10209])
+            ("SetProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10387 10406])
+                    ("value" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10407 10423]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [10331 10963])
+            ("SetProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11028 11047])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11048 11066]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [10972 12016])
+            ("SetPropertyArray" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12168 12184])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12185 12204]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [12097 12241])
+            ("SetPropertyArray" function
+               (:type "void"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12383 12401])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12402 12421]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [12322 13039])
+            ("SetPropertyArray" function
+               (:type "void"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [13181 13202])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13203 13222]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [13120 13576])
+            ("SetPropertyArrayIdType" function
+               (:parent "vtkSMPropertyHelper"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13716 13740])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13741 13760]))                  
+                :type "void")
+                nil [13657 14114])
+            ("SetPropertyArray" function
+               (:type "void"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14297 14321])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14322 14341]))                  
+                :typemodifiers ("inline")
+                :parent "vtkSMPropertyHelper")
+                nil [14236 14392])
+            ("vtkSMPropertyHelper" function
+               (:constructor-flag t
+                :parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14521 14539])
+                    ("pname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14540 14558])
+                    ("quiet" variable (:type "bool") (reparse-symbol arg-sub-list) [14561 14572]))                  
+                :type ("vtkSMPropertyHelper" type (:type "class") nil nil))
+                nil [14480 14815])
+            ("vtkSMPropertyHelper" function
+               (:constructor-flag t
+                :parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("property" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14937 14961])
+                    ("quiet" variable (:type "bool") (reparse-symbol arg-sub-list) [14962 14973]))                  
+                :type ("vtkSMPropertyHelper" type (:type "class") nil nil))
+                nil [14896 15050])
+            ("vtkSMPropertyHelper" function
+               (:destructor-flag t
+                :parent "vtkSMPropertyHelper"
+                :type "void")
+                nil [15131 15178])
+            ("Initialize" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("property" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15296 15320]))                  
+                :type "void")
+                nil [15259 16282])
+            ("UpdateValueFromServer" function
+               (:parent "vtkSMPropertyHelper"
+                :type "void")
+                nil [16363 16570])
+            ("SetNumberOfElements" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("elems" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16697 16716]))                  
+                :type "void")
+                nil [16651 17390])
+            ("GetNumberOfElements" function
+               (:parent "vtkSMPropertyHelper"
+                :type "unsigned int")
+                nil [17471 18139])
+            ("GetAsVariant" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18265 18284]))                  
+                :type ("vtkVariant" type (:type "class") nil nil))
+                nil [18220 18329])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18440 18459])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [18460 18470]))                  
+                :type "void")
+                nil [18410 18514])
+            ("GetAsInt" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18629 18655]))                  
+                :type "int")
+                nil [18595 18699])
+            ("Get" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18818 18830])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18831 18857]))                  
+                :type "unsigned int")
+                nil [18780 18914])
+            ("GetIntArray" function
+               (:parent "vtkSMPropertyHelper"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [18995 19090])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19201 19219])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19220 19239]))                  
+                :type "void")
+                nil [19171 19289])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19400 19419])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [19420 19433]))                  
+                :type "void")
+                nil [19370 19480])
+            ("GetAsDouble" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19601 19627]))                  
+                :type "double")
+                nil [19561 19674])
+            ("Get" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [19793 19808])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19809 19835]))                  
+                :type "unsigned int")
+                nil [19755 19895])
+            ("GetDoubleArray" function
+               (:parent "vtkSMPropertyHelper"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19976 20080])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [20191 20212])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20213 20232]))                  
+                :type "void")
+                nil [20161 20285])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20437 20456])
+                    ("value" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20457 20473]))                  
+                :type "void")
+                nil [20407 20523])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20634 20658])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20659 20678]))                  
+                :type "void")
+                nil [20604 20734])
+            ("Get" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20853 20871])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20872 20898]))                  
+                :type "unsigned int")
+                nil [20815 20961])
+            ("GetAsIdType" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21092 21118]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [21049 21168])
+            ("GetIdTypeArray" function
+               (:parent "vtkSMPropertyHelper"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("vtkIdType" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21249 21359])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21470 21489])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21490 21508]))                  
+                :type "void")
+                nil [21440 21560])
+            ("GetAsString" function
+               (:pointer 1
+                :parent "vtkSMPropertyHelper"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21686 21712]))                  
+                :type "char")
+                nil [21641 21764])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21875 21894])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21895 21913])
+                    ("outputport" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21916 21946]))                  
+                :type "void")
+                nil [21845 22546])
+            ("Set" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 2
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22657 22676])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22677 22696])
+                    ("outputports" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [22699 22734]))                  
+                :type "void")
+                nil [22627 23189])
+            ("Add" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23300 23318])
+                    ("outputport" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23319 23349]))                  
+                :type "void")
+                nil [23270 23794])
+            ("Remove" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23908 23926]))                  
+                :type "void")
+                nil [23875 24293])
+            ("GetAsProxy" function
+               (:pointer 1
+                :parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24418 24443]))                  
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [24374 24495])
+            ("GetOutputPort" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24624 24649]))                  
+                :type "unsigned int")
+                nil [24576 25006])
+            ("SetStatus" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25123 25139])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [25140 25150]))                  
+                :type "void")
+                nil [25087 25246])
+            ("GetStatus" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25362 25378])
+                    ("default_value" variable (:type "int") (reparse-symbol arg-sub-list) [25379 25403]))                  
+                :type "int")
+                nil [25327 25564])
+            ("SetStatus" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25681 25697])
+                    ("values" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [25698 25713])
+                    ("num_values" variable (:type "int") (reparse-symbol arg-sub-list) [25716 25731]))                  
+                :type "void")
+                nil [25645 27180])
+            ("GetStatus" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27297 27313])
+                    ("values" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [27314 27329])
+                    ("num_values" variable (:type "int") (reparse-symbol arg-sub-list) [27330 27345]))                  
+                :type "bool")
+                nil [27261 28667])
+            ("SetStatus" function
+               (:parent "vtkSMPropertyHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28784 28800])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28801 28819]))                  
+                :type "void")
+                nil [28748 30227])
+            ("GetStatus" function
+               (:pointer 1
+                :parent "vtkSMPropertyHelper"
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30351 30367])
+                    ("default_value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30368 30394]))                  
+                :type "char")
+                nil [30308 31749]))          
+    :file "vtkSMPropertyHelper.cxx"
+    :pointmax 31751
+    :fsize 31754
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkSMPropertyHelperWarningMacro" (spp-arg-list ("blah") 2552 . 2558) . 
+              ((IF "if" 2562 . 2564) (semantic-list "(this->Quiet == false)" 2565 . 2587) (semantic-list "{\\
+    vtkGenericWarningMacro(blah)\\
+  }" 2592 . 2632)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!ServerManager!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,380 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL/SDL.h" include (:system-flag t) nil [129 149])
+            ("GL/gl.h" include (:system-flag t) nil [150 168])
+            ("GL/glu.h" include (:system-flag t) nil [169 188])
+            ("stdio.h" include (:system-flag t) nil [190 208])
+            ("stdlib.h" include (:system-flag t) nil [209 228])
+            ("should_rotate" variable
+               (:typemodifiers ("static")
+                :type ("GLboolean" type (:type "class") nil nil))
+                nil [230 271])
+            ("quit_tutorial" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("code" variable (:type "int") (reparse-symbol arg-sub-list) [300 310]))                  
+                :type "void")
+                nil [273 503])
+            ("handle_key_down" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keysym" variable
+                       (:pointer 1
+                        :type ("SDL_keysym" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [534 554]))                  
+                :type "void")
+                nil [505 951])
+            ("process_events" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [981 987]))                  
+                :type "void")
+                nil [953 1445])
+            ("draw_screen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1472 1478]))                  
+                :type "void")
+                nil [1447 5597])
+            ("setup_opengl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [5625 5635])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [5636 5648]))                  
+                :type "void")
+                nil [5599 6293])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6305 6314])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6315 6329]))                  
+                :type "int")
+                nil [6295 9668]))          
+      :file "sdltest.c"
+      :pointmax 9669
+      :fsize 9668
+      :lastmodtime '(20081 54499 993889 255000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("kAntiAliasingSamples" variable
+               (:constant-flag t
+                :type "int")
+                nil [1 37])
+            ("kMaxTraceDepth" variable
+               (:constant-flag t
+                :type "int")
+                nil [38 67])
+            ("kMaxRenderDist" variable
+               (:constant-flag t
+                :type "float")
+                nil [68 105])
+            ("Material" type
+               (:members 
+                  ( ("computeColorType" variable (:type "int") (reparse-symbol classsubparts) [193 214])
+                    ("color" variable (:type ("float4" type (:type "class") nil nil)) (reparse-symbol classsubparts) [216 229])
+                    ("reflectivity" variable (:type "float") (reparse-symbol classsubparts) [231 250])
+                    ("refractivity" variable (:type "float") (reparse-symbol classsubparts) [252 271]))                  
+                :type "struct")
+                nil [107 274])
+            ("createMaterial" function (:type ("Material" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [276 440])
+            ("Sphere" type
+               (:members 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("Material" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [458 477])
+                    ("pos" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [479 490])
+                    ("radius" variable (:type "float") (reparse-symbol classsubparts) [492 505]))                  
+                :type "struct")
+                nil [442 508])
+            ("Plane" type
+               (:members 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("Material" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [525 544])
+                    ("normal" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [546 560])
+                    ("point" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [562 575]))                  
+                :type "struct")
+                nil [510 578])
+            ("Ray" type
+               (:members 
+                  ( ("origin" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [593 607])
+                    ("dir" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [609 620]))                  
+                :type "struct")
+                nil [580 623])
+            ("Light" type
+               (:members 
+                  ( ("pos" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [640 651])
+                    ("dir" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [653 664])
+                    ("directional" variable (:type "bool") (reparse-symbol classsubparts) [666 683])
+                    ("color" variable (:type ("float4" type (:type "class") nil nil)) (reparse-symbol classsubparts) [685 698]))                  
+                :type "struct")
+                nil [625 701])
+            ("Scene" type
+               (:members 
+                  ( ("spheres" variable
+                       (:dereference 1
+                        :type ("Sphere" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [719 745])
+                    ("spheresCount" variable (:type "int") (reparse-symbol classsubparts) [747 764])
+                    ("planes" variable
+                       (:dereference 1
+                        :type ("Plane" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [768 792])
+                    ("planesCount" variable (:type "int") (reparse-symbol classsubparts) [794 810])
+                    ("lights" variable
+                       (:dereference 1
+                        :type ("Light" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [814 838])
+                    ("lightsCount" variable (:type "int") (reparse-symbol classsubparts) [840 856])
+                    ("standardMaterial" variable (:type ("Material" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [860 893]))                  
+                :type "struct")
+                nil [704 896])
+            ("reflect" function
+               (:arguments 
+                  ( ("V" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [913 922])
+                    ("N" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [923 932]))                  
+                :type ("float3" type (:type "class") nil nil))
+                nil [898 971])
+            ("refract" function
+               (:arguments 
+                  ( ("V" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 997])
+                    ("N" variable (:type ("float3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [998 1007])
+                    ("refrIndex" variable (:type "float") (reparse-symbol arg-sub-list) [1008 1024]))                  
+                :type ("float3" type (:type "class") nil nil))
+                nil [973 1196])
+            ("raySphere" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("Sphere" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1213 1230])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("Ray" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1231 1245])
+                    ("t" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1246 1255]))                  
+                :type "bool")
+                nil [1198 1599])
+            ("rayPlane" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Plane" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1615 1631])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("Ray" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1632 1646])
+                    ("t" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1647 1656]))                  
+                :type "bool")
+                nil [1601 1819])
+            ("intersect" function
+               (:arguments 
+                  ( ("ray" variable
+                       (:pointer 1
+                        :type ("Ray" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1837 1853])
+                    ("scene" variable
+                       (:pointer 1
+                        :type ("Scene" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1854 1874])
+                    ("object" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1875 1889])
+                    ("type" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1890 1900]))                  
+                :type "float")
+                nil [1821 2358])
+            ("raytrace" function
+               (:arguments 
+                  ( ("ray" variable
+                       (:pointer 1
+                        :type ("Ray" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2376 2392])
+                    ("scene" variable
+                       (:pointer 1
+                        :type ("Scene" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2393 2413])
+                    ("traceDepth" variable (:type "int") (reparse-symbol arg-sub-list) [2413 2428]))                  
+                :type ("float4" type (:type "class") nil nil))
+                nil [2360 4628])
+            ("matrixVectorMultiply" function
+               (:arguments 
+                  ( ("" variable (:type ("__global" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4658 4672])
+                    ("matrix" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4667 4681])
+                    ("vector" variable
+                       (:pointer 1
+                        :type ("float3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4682 4697]))                  
+                :type ("float3" type (:type "class") nil nil))
+                nil [4630 5022])
+            ("main" function
+               (:arguments 
+                  ( ("float4" variable (:type ("__global" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5044 5061])
+                    ("" variable (:type ("dst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5061 5065])
+                    ("width" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5066 5077])
+                    ("height" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5078 5090])
+                    ("" variable (:type ("__global" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5091 5105])
+                    ("viewTransform" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5100 5121])
+                    ("" variable (:type ("__global" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5122 5136])
+                    ("worldTransforms" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5131 5155]))                  
+                :type "void")
+                nil [5033 8171]))          
+      :file "raytracerOpenCLKernel.c"
+      :pointmax 8174
+      :fsize 8172
+      :lastmodtime '(21151 12252 671656 854000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("test.h" include nil nil [643 660])
+            ("Test" function
+               (:constructor-flag t
+                :parent "Test"
+                :type ("Test" type (:type "class") nil nil))
+                nil [661 678])
+            ("Test" function
+               (:destructor-flag t
+                :parent "Test"
+                :type "void")
+                nil [680 698]))          
+      :file "test.cpp"
+      :pointmax 907
+      :fsize 906
+      :lastmodtime '(22361 38209 961404 197000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__test_h" variable (:constant-flag t) nil [26 34])
+            ("__test_h" variable (:constant-flag t) nil [26 34])
+            ("__test_h" variable (:constant-flag t) nil [26 34])
+            ("__test_h" variable (:constant-flag t) nil [26 34])
+            ("__test_h" variable (:constant-flag t) nil [26 34])
+            ("iostream" include (:system-flag t) nil [115 134])
+            ("Test" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [148 155])
+                    ("Test" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Test" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [160 167])
+                    ("Test" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [172 188])
+                    ("setA" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [204 211]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [193 238])
+                    ("setB" function
+                       (:arguments 
+                          ( ("b" variable (:type "int") (reparse-symbol arg-sub-list) [254 261]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [243 288])
+                    ("setC" function
+                       (:arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [304 311]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [293 338])
+                    ("add" function (:type "int") (reparse-symbol classsubparts) [343 382])
+                    ("private" label nil (reparse-symbol classsubparts) [383 391])
+                    ("a" variable (:type "int") (reparse-symbol classsubparts) [396 408])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [396 408])
+                    ("c" variable (:type "int") (reparse-symbol classsubparts) [396 408]))                  
+                :type "class")
+                nil [135 411]))          
+      :file "test.h"
+      :pointmax 432
+      :fsize 431
+      :lastmodtime '(22361 38190 609403 620000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__test_h")
+          )
+))
+  :file "!home!nikhil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0")

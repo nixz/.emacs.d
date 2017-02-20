@@ -1,0 +1,447 @@
+;; Object ClientServerStream/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ClientServerStream/"
+  :tables (list 
+   (semanticdb-table "vtkClientServerInterpreter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkClientServerInterpreter.h" include nil nil [566 605])
+            ("vtkClientServerStream.h" include nil nil [607 641])
+            ("vtkCommand.h" include nil nil [642 665])
+            ("vtkDynamicLoader.h" include nil nil [666 695])
+            ("vtkObjectFactory.h" include nil nil [696 725])
+            ("map" include (:system-flag t) nil [727 741])
+            ("string" include (:system-flag t) nil [742 759])
+            ("vector" include (:system-flag t) nil [760 777])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [778 807])
+            ("sys/stat.h" include (:system-flag t) nil [808 829])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkClientServerInterpreter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [851 878]))                  
+                :type "int")
+                nil [831 879])
+            ("vtkClientServerInterpreterInternals" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1004 1011])
+                    ("NewInstanceFunctionsType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("vtkClientServerNewInstanceFunction" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1014 1105])
+                    ("ClassToFunctionMapType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("vtkClientServerCommandFunction" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1108 1193])
+                    ("IDToMessageMapType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("vtkTypeUInt32" type nil nil nil)
+                                  ("vtkClientServerStream" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1196 1271])
+                    ("NewInstanceFunctions" variable (:type ("NewInstanceFunctionsType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1274 1320])
+                    ("ClassToFunctionMap" variable (:type ("ClassToFunctionMapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1323 1365])
+                    ("IDToMessageMap" variable (:type ("IDToMessageMapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1368 1402]))                  
+                :type "class")
+                nil [960 1405])
+            ("vtkClientServerInterpreter" function
+               (:constructor-flag t
+                :parent "vtkClientServerInterpreter"
+                :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                nil [1486 1746])
+            ("vtkClientServerInterpreter" function
+               (:destructor-flag t
+                :parent "vtkClientServerInterpreter"
+                :type "void")
+                nil [1827 2295])
+            ("GetObjectFromID" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("id" variable (:type ("vtkClientServerID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2435 2456])
+                    ("noerror" variable (:type "int") (reparse-symbol arg-sub-list) [2457 2469]))                  
+                :type ("vtkObjectBase" type (:type "class") nil nil))
+                nil [2376 3184])
+            ("GetIDFromObject" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3327 3346]))                  
+                :type ("vtkClientServerID" type (:type "class") nil nil))
+                nil [3265 3775])
+            ("SetLogFile" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3900 3917]))                  
+                :type "void")
+                nil [3856 4449])
+            ("SetLogStream" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("ostr" variable
+                       (:pointer 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4576 4590]))                  
+                :type "void")
+                nil [4530 4899])
+            ("ProcessStream" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5026 5051])
+                    ("msgLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5098 5115]))                  
+                :type "int")
+                nil [4980 5214])
+            ("ProcessStream" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5341 5374]))                  
+                :type "int")
+                nil [5295 5526])
+            ("ProcessOneMessage" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5657 5690])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [5737 5749]))                  
+                :type "int")
+                nil [5607 7673])
+            ("ProcessCommandNew" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7805 7838])
+                    ("midx" variable (:type "int") (reparse-symbol arg-sub-list) [7839 7848]))                  
+                :type "int")
+                nil [7754 10279])
+            ("ProcessCommandInvoke" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10414 10447])
+                    ("midx" variable (:type "int") (reparse-symbol arg-sub-list) [10448 10457]))                  
+                :type "int")
+                nil [10360 12371])
+            ("ProcessCommandDelete" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12506 12539])
+                    ("midx" variable (:type "int") (reparse-symbol arg-sub-list) [12540 12549]))                  
+                :type "int")
+                nil [12452 14325])
+            ("ProcessCommandAssign" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14460 14493])
+                    ("midx" variable (:type "int") (reparse-symbol arg-sub-list) [14494 14503]))                  
+                :type "int")
+                nil [14406 16653])
+            ("ExpandMessage" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16780 16812])
+                    ("inIndex" variable (:type "int") (reparse-symbol arg-sub-list) [16859 16871])
+                    ("startArgument" variable (:type "int") (reparse-symbol arg-sub-list) [16872 16890])
+                    ("out" variable
+                       (:reference 1
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16937 16964]))                  
+                :type "int")
+                nil [16734 19596])
+            ("GetMessageFromID" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreter"
+                :constant-flag t
+                :arguments 
+                  ( ("id" variable (:type ("vtkClientServerID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19751 19772]))                  
+                :type ("vtkClientServerStream" type (:type "class") nil nil))
+                nil [19677 20067])
+            ("GetLastResult" function
+               (:parent "vtkClientServerInterpreter"
+                :constant-flag t
+                :type ("vtkClientServerStream" type (:type "class") nil nil))
+                nil [20148 20265])
+            ("NewInstance" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20390 20409])
+                    ("id" variable (:type ("vtkClientServerID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20454 20475]))                  
+                :type "int")
+                nil [20346 21159])
+            ("vtkClientServerInterpreterCommand" type
+               (:superclasses 
+                  ( ("vtkCommand" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [21301 21308])
+                    ("New" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkClientServerInterpreterCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21311 21412])
+                    ("Execute" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21428 21439])
+                            ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21440 21454])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [21455 21462]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21415 21518])
+                    ("Stream" variable (:type ("vtkClientServerStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21522 21551])
+                    ("Interpreter" variable
+                       (:pointer 1
+                        :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21554 21594])
+                    ("protected" label nil (reparse-symbol classsubparts) [21595 21605])
+                    ("vtkClientServerInterpreterCommand" function
+                       (:constructor-flag t
+                        :type ("vtkClientServerInterpreterCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21608 21646])
+                    ("vtkClientServerInterpreterCommand" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21649 21688])
+                    ("private" label nil (reparse-symbol classsubparts) [21689 21697])
+                    ("vtkClientServerInterpreterCommand" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkClientServerInterpreterCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21734 21775]))                          
+                        :type ("vtkClientServerInterpreterCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21700 21776])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkClientServerInterpreterCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21794 21835]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21779 21836]))                  
+                :type "class")
+                nil [21240 21839])
+            ("NewObserver" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21885 21900])
+                    ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21901 21919])
+                    ("css" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21964 21997]))                  
+                :type "int")
+                nil [21841 22455])
+            ("AddCommandFunction" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("cname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22589 22607])
+                    ("func" variable (:type ("vtkClientServerCommandFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22608 22644]))                  
+                :type "void")
+                nil [22536 22700])
+            ("GetCommandFunction" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22859 22878]))                  
+                :type ("vtkClientServerCommandFunction" type (:type "class") nil nil))
+                nil [22781 23361])
+            ("GetCommandFunction" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("cname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23520 23538]))                  
+                :type ("vtkClientServerCommandFunction" type (:type "class") nil nil))
+                nil [23442 23978])
+            ("AddNewInstanceFunction" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24036 24053])
+                    ("f" variable (:type ("vtkClientServerNewInstanceFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24105 24142]))                  
+                :type "void")
+                nil [23980 24194])
+            ("Load" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("moduleName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24312 24335]))                  
+                :type "int")
+                nil [24275 24375])
+            ("vtkClientServerInterpreterSplit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24500 24517])
+                    ("split" variable (:type "char") (reparse-symbol arg-sub-list) [24555 24566])
+                    ("slash" variable (:type "char") (reparse-symbol arg-sub-list) [24567 24578])
+                    ("paths" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24616 24648]))                  
+                :type "void")
+                nil [24456 25211])
+            ("Load" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("moduleName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25329 25352])
+                    ("optionalPaths" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25390 25422]))                  
+                :type "int")
+                nil [25292 27584])
+            ("LoadInternal" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("moduleName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27710 27733])
+                    ("fullPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27779 27800]))                  
+                :type "int")
+                nil [27665 28740])
+            ("ClearLastResult" function
+               (:parent "vtkClientServerInterpreter"
+                :type "void")
+                nil [28821 28911])
+            ("GetNextAvailableId" function
+               (:parent "vtkClientServerInterpreter"
+                :type ("vtkClientServerID" type (:type "class") nil nil))
+                nil [28991 29114])
+            ("NewInstance" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("classname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29250 29272]))                  
+                :type ("vtkObjectBase" type (:type "class") nil nil))
+                nil [29195 29417])
+            ("PrintSelf" function
+               (:parent "vtkClientServerInterpreter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29541 29553])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29554 29571]))                  
+                :type "void")
+                nil [29498 29618]))          
+    :file "vtkClientServerInterpreter.cxx"
+    :pointmax 29619
+    :fsize 29618
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!ClientServerStream!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

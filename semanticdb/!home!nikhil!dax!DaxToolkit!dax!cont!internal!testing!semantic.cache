@@ -1,0 +1,904 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables (list 
+   (semanticdb-table "TestingGridGenerator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_internal_TestingGridGenerator_h" variable (:constant-flag t) nil [709 751])
+            ("dax/CellTag.h" include (:system-flag t) nil [753 777])
+            ("dax/CellTraits.h" include (:system-flag t) nil [778 805])
+            ("dax/Types.h" include (:system-flag t) nil [806 828])
+            ("dax/cont/ArrayContainerControlBasic.h" include (:system-flag t) nil [830 878])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [879 912])
+            ("dax/cont/DeviceAdapter.h" include (:system-flag t) nil [913 948])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [949 982])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [983 1021])
+            ("vector" include (:system-flag t) nil [1023 1040])
+            ("iostream" include (:system-flag t) nil [1042 1061])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("TestGrid" type
+                                       (:template 
+                                          ( ("GridType" type (:type "class") nil nil)
+                                            ("ArrayContainerControlTag" type (:type "class") nil nil)
+                                            ("DeviceAdapterTag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1305 1313])
+                                            ("Size" variable
+                                               (:constant-flag t
+                                                :type ("dax::Id" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1460 1479])
+                                            ("Grid" variable (:type ("GridType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1482 1496])
+                                            ("GridStorage" type
+                                               (:template 
+                                                  ( ("GT" type (:type "class") nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [1499 1543])
+                                            ("GridStorage" type
+                                               (:template 
+                                                  ( ("U" type (:type "class") nil nil)
+                                                    ("UCCT" type (:type "class") nil nil)
+                                                    ("DAT" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("topology" variable (:type ("std::vector" type
+                                                         (:template-specifier 
+                                                            ( ("dax::Id" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1668 1698])
+                                                    ("points" variable (:type ("std::vector" type
+                                                         (:template-specifier 
+                                                            ( ("dax::Vector3" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1703 1736]))                                                  
+                                                :template-specifier 
+                                                  ( ("dax::cont::UnstructuredGrid" type nil nil nil))                                                  )
+                                                (reparse-symbol classsubparts) [1546 1743])
+                                            ("Info" variable (:type ("GridStorage" type
+                                                 (:template-specifier 
+                                                    ( ("GridType" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1746 1773])
+                                            ("TopoType" type
+                                               (:typedef ("GridType::TopologyStructConstExecution" type (:type "class") nil nil)
+                                                :superclasses "GridType::TopologyStructConstExecution"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1777 1842])
+                                            ("public" label nil (reparse-symbol classsubparts) [1844 1851])
+                                            ("CellTag" type
+                                               (:typedef ("GridType::CellTag" type (:type "class") nil nil)
+                                                :superclasses "GridType::CellTag"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1854 1897])
+                                            ("TestGrid" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("size" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1909 1929]))                                                  
+                                                :type ("TestGrid" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1900 2016])
+                                            ("->" function
+                                               (:operator-flag t
+                                                :pointer 1
+                                                :constant-flag t
+                                                :type ("GridType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2121 2191])
+                                            ("GetRealGrid" function
+                                               (:constant-flag t
+                                                :type ("GridType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2250 2320])
+                                            ("GetPointCoordinates" function
+                                               (:arguments 
+                                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2518 2532]))                                                  
+                                                :type ("dax::Vector3" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2485 2594])
+                                            ("private" label nil (reparse-symbol classsubparts) [2596 2604])
+                                            ("GetTopology" function (:type ("TopoType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2607 2684])
+                                            ("public" label nil (reparse-symbol classsubparts) [2686 2693])
+                                            ("GetCellConnections" function
+                                               (:arguments 
+                                                  ( ("cellId" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2811 2826]))                                                  
+                                                :type ("dax::exec::CellVertices" type
+                                                     (:template-specifier 
+                                                        ( ("CellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2759 2899])
+                                            ("GetCellVertexCoordinates" function
+                                               (:arguments 
+                                                  ( ("cellIndex" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3085 3103]))                                                  
+                                                :type ("dax::exec::CellField" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Vector3" type nil nil nil)
+                                                          ("CellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3015 3680])
+                                            ("TestGrid" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3684 3842])
+                                            ("private" label nil (reparse-symbol classsubparts) [3844 3852])
+                                            ("MakeArrayHandle" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("array" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4047 4075]))                                                  )
+                                                (reparse-symbol classsubparts) [3936 4256])
+                                            ("MakeInfoPoints" function
+                                               (:arguments 
+                                                  ( ("uniform" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UniformGrid" type
+                                                             (:template-specifier 
+                                                                ( ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4360 4410]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4340 4666])
+                                            ("MakeInfoTopology" function
+                                               (:arguments 
+                                                  ( ("uniform" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UniformGrid" type
+                                                             (:template-specifier 
+                                                                ( ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4772 4822])
+                                                    ("vertexIdList" variable
+                                                       (:dereference 1
+                                                        :constant-flag t
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4847 4876])
+                                                    ("numPointsPerCell" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4901 4926])
+                                                    ("totalCells" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4951 4970]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4750 5823])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UniformGrid" type
+                                                             (:template-specifier 
+                                                                ( ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5922 5969]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5907 6064])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagHexahedron" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6168 6307]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6148 7222])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagTetrahedron" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [7326 7466]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7306 8365])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagWedge" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [8469 8603]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8449 9527])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagTriangle" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9631 9768]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9611 10899])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagQuadrilateral" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11003 11145]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10983 12187])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagLine" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12291 12424]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12271 13453])
+                                            ("BuildGrid" function
+                                               (:arguments 
+                                                  ( ("grid" variable
+                                                       (:reference 1
+                                                        :type ("dax::cont::UnstructuredGrid" type
+                                                             (:template-specifier 
+                                                                ( ("dax::CellTagVertex" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                                  ("DeviceAdapterTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [13557 13692]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [13537 14507]))                                          )
+                                        (reparse-symbol namespacesubparts) [1118 14510])
+                                    ("GridTesting" type
+                                       (:members 
+                                          ( ("TypeCheckAlwaysTrue" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil)
+                                                            ("Functor" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14693 14697])
+                                                            ("function" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14698 14715]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [14636 14738]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [14603 14743])
+                                            ("TypeCheckUniformGrid" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil)
+                                                            ("Functor" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("daxNotUsed" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14838 14853])
+                                                            ("daxNotUsed" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14855 14883]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [14781 14895])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("DeviceAdapterTag" type (:type "class") nil nil)
+                                                            ("Functor" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("t" variable (:type ("dax::cont::UniformGrid" type
+                                                                 (:template-specifier 
+                                                                    ( ("DeviceAdapterTag" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol arg-sub-list) [14969 15012])
+                                                            ("function" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15033 15050]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [14901 15073]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [14747 15078])
+                                            ("InternalPrintOnInvoke" type
+                                               (:template 
+                                                  ( ("FunctionType" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("InternalPrintOnInvoke" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15170 15192])
+                                                            ("toprint" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15193 15213]))                                                          
+                                                        :type ("InternalPrintOnInvoke" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [15148 15262])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15305 15309]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [15267 15389])
+                                                    ("private" label nil (reparse-symbol classsubparts) [15392 15400])
+                                                    ("Function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15405 15427])
+                                                    ("ToPrint" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15432 15452]))                                                  )
+                                                (reparse-symbol classsubparts) [15082 15457])
+                                            ("TryAllGridTypes" function
+                                               (:template 
+                                                  ( ("FunctionType" type (:type "class") nil nil)
+                                                    ("CheckType" type (:type "class") nil nil)
+                                                    ("ArrayContainerControlTag" type (:type "class") nil nil)
+                                                    ("DeviceAdapterTag" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15990 16012])
+                                                    ("check" variable (:type ("CheckType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16043 16059])
+                                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16090 16115])
+                                                    ("" variable (:type ("DeviceAdapterTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16146 16163]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [15825 18257])
+                                            ("TryAllGridTypes" function
+                                               (:template 
+                                                  ( ("FunctionType" type (:type "class") nil nil)
+                                                    ("ArrayContainerControlTag" type (:type "class") nil nil)
+                                                    ("DeviceAdapterTag" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18397 18419])
+                                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18450 18475])
+                                                    ("" variable (:type ("DeviceAdapterTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18506 18523]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [18260 18693])
+                                            ("TryAllGridTypes" function
+                                               (:template 
+                                                  ( ("FunctionType" type (:type "class") nil nil)
+                                                    ("CheckType" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18772 18794])
+                                                    ("check" variable (:type ("CheckType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18795 18811]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [18696 18994])
+                                            ("TryAllGridTypes" function
+                                               (:template 
+                                                  ( ("FunctionType" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable (:type ("FunctionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19056 19078]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [18997 19140]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [14513 19144]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1096 19148]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1079 19150]))                  
+                :type "namespace")
+                nil [1063 19152]))          
+    :file "TestingGridGenerator.h"
+    :pointmax 19240
+    :fsize 19239
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((semantic-list 14873 . 14883) (semantic-list 14850 . 14853) (semantic-list 14873 . 14883) (semantic-list 14850 . 14853))
+    :lexical-table 
+        '(("__dax_cont_internal_TestingGridGenerator_h")
+          )
+
+    )
+   (semanticdb-table "TestingDeviceAdapter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_internal_TestingDeviceAdapter_h" variable (:constant-flag t) nil [708 750])
+            ("dax/cont/ArrayContainerControlBasic.h" include (:system-flag t) nil [752 800])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [801 834])
+            ("dax/cont/ErrorExecution.h" include (:system-flag t) nil [835 871])
+            ("dax/cont/ErrorControlOutOfMemory.h" include (:system-flag t) nil [872 917])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [918 949])
+            ("dax/cont/PermutationContainer.h" include (:system-flag t) nil [950 992])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [993 1026])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [1027 1065])
+            ("dax/worklet/CellGradient.worklet" include (:system-flag t) nil [1067 1110])
+            ("dax/worklet/Square.worklet" include (:system-flag t) nil [1111 1148])
+            ("dax/worklet/testing/CellMapError.worklet" include (:system-flag t) nil [1149 1200])
+            ("dax/worklet/testing/FieldMapError.worklet" include (:system-flag t) nil [1201 1253])
+            ("dax/cont/internal/testing/Testing.h" include (:system-flag t) nil [1255 1301])
+            ("dax/cont/internal/testing/TestingGridGenerator.h" include (:system-flag t) nil [1302 1361])
+            ("utility" include (:system-flag t) nil [1363 1381])
+            ("vector" include (:system-flag t) nil [1382 1399])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("ERROR_MESSAGE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1464 1477])
+                                    ("ARRAY_SIZE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1502 1512])
+                                    ("OFFSET" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1525 1531])
+                                    ("DIM" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1545 1548])
+                                    ("TestingDeviceAdapter" type
+                                       (:template 
+                                          ( ("DeviceAdapterTag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1728 1736])
+                                            ("ArrayContainerControlTag" type
+                                               (:typedef ("dax::cont::ArrayContainerControlTagBasic" type (:type "class") nil nil)
+                                                :superclasses "dax::cont::ArrayContainerControlTagBasic"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1739 1813])
+                                            ("IdArrayHandle" type
+                                               (:typedef ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Id" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::ArrayHandle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1817 1930])
+                                            ("IdArrayManagerExecution" type
+                                               (:typedef ("dax::cont::internal::ArrayManagerExecution" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Id" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::internal::ArrayManagerExecution"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1933 2074])
+                                            ("IdContainer" type
+                                               (:typedef ("ArrayContainerControl" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Id" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "ArrayContainerControl"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2077 2160])
+                                            ("IdPortalType" type
+                                               (:typedef ("IdArrayHandle::PortalExecution" type (:type "class") nil nil)
+                                                :superclasses "IdArrayHandle::PortalExecution"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2164 2225])
+                                            ("IdPortalConstType" type
+                                               (:typedef ("IdArrayHandle::PortalConstExecution" type (:type "class") nil nil)
+                                                :superclasses "IdArrayHandle::PortalConstExecution"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2228 2299])
+                                            ("ScalarArrayHandle" type
+                                               (:typedef ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Scalar" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::ArrayHandle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2303 2420])
+                                            ("Vector3ArrayHandle" type
+                                               (:typedef ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Vector3" type nil nil nil)
+                                                          ("ArrayContainerControlTag" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::ArrayHandle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2423 2542])
+                                            ("Algorithm" type
+                                               (:typedef ("dax::cont::internal::DeviceAdapterAlgorithm" type
+                                                     (:template-specifier 
+                                                        ( ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::internal::DeviceAdapterAlgorithm"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2546 2632])
+                                            ("public" label nil (reparse-symbol classsubparts) [2634 2641])
+                                            ("CopyArrayKernel" type
+                                               (:members 
+                                                  ( ("CopyArrayKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalConstType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2763 2794])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2815 2842]))                                                          
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2727 2894])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2941 2955])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2964 3012]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2916 3095])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3153 3201]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3117 3206])
+                                                    ("InputArray" variable (:type ("IdPortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3212 3241])
+                                                    ("OutputArray" variable (:type ("IdPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3246 3271]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [2696 3276])
+                                            ("ClearArrayKernel" type
+                                               (:members 
+                                                  ( ("ClearArrayKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("array" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3349 3375]))                                                          
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3312 3395])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3447]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3417 3503])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3561 3609]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3525 3614])
+                                                    ("Array" variable (:type ("IdPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3620 3639]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3280 3644])
+                                            ("ClearArrayMapKernel" type
+                                               (:superclasses 
+                                                  ( ("dax::exec::WorkletMapField" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("ControlSignature" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3749 3759]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3727 3761])
+                                                    ("ExecutionSignature" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3798 3801]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3774 3802])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("value" variable
+                                                               (:reference 1
+                                                                :type ("T" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3865 3874]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3849 3914]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3648 3919])
+                                            ("AddArrayKernel" type
+                                               (:members 
+                                                  ( ("AddArrayKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("array" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3988 4014]))                                                          
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3953 4034])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4072 4086]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4056 4166])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4224 4272]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4188 4277])
+                                                    ("Array" variable (:type ("IdPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4283 4302]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3923 4307])
+                                            ("OneErrorKernel" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4373 4387]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4357 4512])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("errorMessage" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4570 4630]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4534 4683])
+                                                    ("ErrorMessage" variable (:type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4689 4742]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [4311 4747])
+                                            ("AllErrorKernel" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("daxNotUsed" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4813 4838]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4797 4909])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("errorMessage" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4967 5027]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4931 5080])
+                                                    ("ErrorMessage" variable (:type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5086 5139]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [4751 5144])
+                                            ("OffsetPlusIndexKernel" type
+                                               (:members 
+                                                  ( ("OffsetPlusIndexKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("array" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5227 5253]))                                                          
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5185 5273])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5311 5325]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5295 5389])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5447 5495]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5411 5500])
+                                                    ("Array" variable (:type ("IdPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5506 5525]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [5148 5530])
+                                            ("MarkOddNumbersKernel" type
+                                               (:members 
+                                                  ( ("MarkOddNumbersKernel" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("array" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("IdPortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5611 5637]))                                                          
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5570 5657])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5695 5709]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5679 5766])
+                                                    ("SetErrorMessageBuffer" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::exec::internal::ErrorMessageBuffer" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5824 5872]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5788 5877])
+                                                    ("Array" variable (:type ("IdPortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5883 5902]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [5534 5907])
+                                            ("NGMult" type
+                                               (:superclasses 
+                                                  ( ("dax::exec::WorkletMapField" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("ControlSignature" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5998 6007])
+                                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6009 6018])
+                                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6020 6030]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5976 6032])
+                                                    ("ExecutionSignature" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6067 6070])
+                                                            ("" variable (:type ("_2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6071 6074]))                                                          
+                                                        :type ("_3" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6045 6075])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6135 6139])
+                                                            ("b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6140 6144]))                                                          
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6122 6186]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [5911 6191])
+                                            ("private" label nil (reparse-symbol classsubparts) [6194 6202])
+                                            ("MakeArrayHandle" function
+                                               (:arguments 
+                                                  ( ("array" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6347 6362])
+                                                    ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6363 6378]))                                                  
+                                                :type ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("ArrayContainerControlTagBasic" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [6254 6611])
+                                            ("MakeArrayHandle" function
+                                               (:arguments 
+                                                  ( ("array" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6756 6784]))                                                  
+                                                :type ("dax::cont::ArrayHandle" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("ArrayContainerControlTagBasic" type nil nil nil)
+                                                          ("DeviceAdapterTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [6663 6970])
+                                            ("TestArrayManagerExecution" function (:type "void") (reparse-symbol classsubparts) [7256 8422])
+                                            ("TestOutOfMemory" function (:type "void") (reparse-symbol classsubparts) [8449 9894])
+                                            ("TestSchedule" function (:type "void") (reparse-symbol classsubparts) [9921 10845])
+                                            ("TestScheduleClass" function (:type "void") (reparse-symbol classsubparts) [10872 13149])
+                                            ("TestStreamCompact" function (:type "void") (reparse-symbol classsubparts) [13176 14166])
+                                            ("TestStreamCompactWithStencil" function (:type "void") (reparse-symbol classsubparts) [14193 15205])
+                                            ("TestOrderedUniqueValues" function (:type "void") (reparse-symbol classsubparts) [15232 19166])
+                                            ("TestScanInclusive" function (:type "void") (reparse-symbol classsubparts) [19193 20273])
+                                            ("TestScanExclusive" function (:type "void") (reparse-symbol classsubparts) [20300 21380])
+                                            ("TestErrorExecution" function (:type "void") (reparse-symbol classsubparts) [21407 22476])
+                                            ("TestWorkletMapField" function (:type "void") (reparse-symbol classsubparts) [22533 24253])
+                                            ("TestWorkletFieldMapError" function (:type "void") (reparse-symbol classsubparts) [24310 25198])
+                                            ("TestWorkletMapCell" function (:type "void") (reparse-symbol classsubparts) [25255 25948])
+                                            ("TestWorkletMapCellImpl" function (:type "void") (reparse-symbol classsubparts) [26005 27417])
+                                            ("TestWorkletCellMapError" function (:type "void") (reparse-symbol classsubparts) [27474 28325])
+                                            ("TestWorklets" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("GridType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [28421 28437]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [28405 28623]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [28329 28628])
+                                            ("TestAll" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [28671 29395]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [28632 29400])
+                                            ("public" label nil (reparse-symbol classsubparts) [29402 29409])
+                                            ("Run" function (:type "int") (reparse-symbol classsubparts) [29672 29746]))                                          )
+                                        (reparse-symbol namespacesubparts) [1665 29749]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1434 29817]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1417 29819]))                  
+                :type "namespace")
+                nil [1401 29821]))          
+    :file "TestingDeviceAdapter.h"
+    :pointmax 29908
+    :fsize 29907
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 29656 . 29671) (STATIC 29649 . 29655) (symbol 28655 . 28670) (symbol 28655 . 28670) (symbol 28389 . 28404) (punctuation 28383 . 28384) (symbol 28375 . 28383) (TYPENAME 28366 . 28374) (punctuation 28365 . 28366) (TEMPLATE 28357 . 28365) (symbol 28389 . 28404) (punctuation 28383 . 28384) (symbol 28375 . 28383) (TYPENAME 28366 . 28374) (punctuation 28365 . 28366) (TEMPLATE 28357 . 28365) (symbol 27458 . 27473) (STATIC 27451 . 27457) (punctuation 27447 . 27448) (symbol 27439 . 27447) (TYPENAME 27430 . 27438) (punctuation 27429 . 27430) (TEMPLATE 27421 . 27429) (symbol 25989 . 26004) (STATIC 25982 . 25988) (punctuation 25978 . 25979) (symbol 25970 . 25978) (TYPENAME 25961 . 25969) (punctuation 25960 . 25961) (TEMPLATE 25952 . 25960) (symbol 25239 . 25254) (STATIC 25232 . 25238) (punctuation 25228 . 25229) (symbol 25220 . 25228) (TYPENAME 25211 . 25219) (punctuation 25210 . 25211) (TEMPLATE 25202 . 25210) (symbol 24294 . 24309) (STATIC 24287 . 24293) (punctuation 24283 . 24284) (symbol 24275 . 24283) (TYPENAME 24266 . 24274) (punctuation 24265 . 24266) (TEMPLATE 24257 . 24265) (symbol 22517 . 22532) (STATIC 22510 . 22516) (punctuation 22506 . 22507) (symbol 22498 . 22506) (TYPENAME 22489 . 22497) (punctuation 22488 . 22489) (TEMPLATE 22480 . 22488) (symbol 21391 . 21406) (STATIC 21384 . 21390) (symbol 20284 . 20299) (STATIC 20277 . 20283) (symbol 19177 . 19192) (STATIC 19170 . 19176) (symbol 15216 . 15231) (STATIC 15209 . 15215) (symbol 14177 . 14192) (STATIC 14170 . 14176) (symbol 13160 . 13175) (STATIC 13153 . 13159) (symbol 10856 . 10871) (STATIC 10849 . 10855) (symbol 9905 . 9920) (STATIC 9898 . 9904) (symbol 8433 . 8448) (STATIC 8426 . 8432) (symbol 7240 . 7255) (STATIC 7233 . 7239) (symbol 6645 . 6660) (STATIC 6638 . 6644) (punctuation 6634 . 6635) (symbol 6633 . 6634) (TYPENAME 6624 . 6632) (punctuation 6623 . 6624) (TEMPLATE 6615 . 6623) (symbol 6236 . 6251) (STATIC 6229 . 6235) (punctuation 6225 . 6226) (symbol 6224 . 6225) (TYPENAME 6215 . 6223) (punctuation 6214 . 6215) (TEMPLATE 6206 . 6214) (symbol 6106 . 6121) (punctuation 6100 . 6101) (symbol 6099 . 6100) (TYPENAME 6090 . 6098) (punctuation 6089 . 6090) (TEMPLATE 6081 . 6089) (TYPEDEF 6037 . 6044) (semantic-list 6025 . 6030) (semantic-list 6014 . 6018) (semantic-list 6003 . 6007) (TYPEDEF 5968 . 5975) (symbol 6106 . 6121) (punctuation 6100 . 6101) (symbol 6099 . 6100) (TYPENAME 6090 . 6098) (punctuation 6089 . 6090) (TEMPLATE 6081 . 6089) (TYPEDEF 6037 . 6044) (semantic-list 6025 . 6030) (semantic-list 6014 . 6018) (semantic-list 6003 . 6007) (TYPEDEF 5968 . 5975) (symbol 5772 . 5787) (symbol 5663 . 5678) (symbol 5772 . 5787) (symbol 5663 . 5678) (symbol 5395 . 5410) (symbol 5279 . 5294) (symbol 5395 . 5410) (symbol 5279 . 5294) (symbol 4915 . 4930) (semantic-list 4831 . 4838) (symbol 4781 . 4796) (symbol 4915 . 4930) (semantic-list 4831 . 4838) (symbol 4781 . 4796) (symbol 4518 . 4533) (symbol 4341 . 4356) (symbol 4518 . 4533) (symbol 4341 . 4356) (symbol 4172 . 4187) (symbol 4040 . 4055) (symbol 4172 . 4187) (symbol 4040 . 4055) (symbol 3833 . 3848) (punctuation 3827 . 3828) (symbol 3826 . 3827) (TYPENAME 3817 . 3825) (punctuation 3816 . 3817) (TEMPLATE 3808 . 3816) (TYPEDEF 3766 . 3773) (semantic-list 3754 . 3759) (TYPEDEF 3719 . 3726) (symbol 3833 . 3848) (punctuation 3827 . 3828) (symbol 3826 . 3827) (TYPENAME 3817 . 3825) (punctuation 3816 . 3817) (TEMPLATE 3808 . 3816) (TYPEDEF 3766 . 3773) (semantic-list 3754 . 3759) (TYPEDEF 3719 . 3726) (symbol 3509 . 3524) (symbol 3401 . 3416) (symbol 3509 . 3524) (symbol 3401 . 3416) (symbol 3101 . 3116) (symbol 2900 . 2915) (symbol 3101 . 3116) (symbol 2900 . 2915))
+    :lexical-table 
+        '(("__dax_cont_internal_TestingDeviceAdapter_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!cont!internal!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

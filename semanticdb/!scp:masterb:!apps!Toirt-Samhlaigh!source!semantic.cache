@@ -1,0 +1,747 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TOIRT_SAMHLAIGH_H_" variable (:constant-flag t) nil [201 219])
+            ("Geometry/OrthogonalTransformation.h" include (:system-flag t) nil [241 287])
+            ("GL/GLTransformationWrappers.h" include (:system-flag t) nil [288 328])
+            ("GLMotif/Menu.h" include (:system-flag t) nil [329 354])
+            ("GLMotif/Popup.h" include (:system-flag t) nil [355 381])
+            ("GLMotif/PopupMenu.h" include (:system-flag t) nil [382 412])
+            ("GLMotif/PopupWindow.h" include (:system-flag t) nil [413 445])
+            ("GLMotif/RadioBox.h" include (:system-flag t) nil [446 475])
+            ("GLMotif/Slider.h" include (:system-flag t) nil [476 503])
+            ("GLMotif/TextField.h" include (:system-flag t) nil [504 534])
+            ("GLMotif/ToggleButton.h" include (:system-flag t) nil [535 568])
+            ("GLMotif/CascadeButton.h" include (:system-flag t) nil [569 603])
+            ("Misc/CallbackData.h" include (:system-flag t) nil [604 634])
+            ("Misc/Timer.h" include (:system-flag t) nil [635 658])
+            ("Vrui/Application.h" include (:system-flag t) nil [659 688])
+            ("Animation" type
+               (:prototype t
+                :type "class")
+                nil [720 736])
+            ("BaseLocator" type
+               (:prototype t
+                :type "class")
+                nil [737 755])
+            ("ClippingPlane" type
+               (:prototype t
+                :type "class")
+                nil [756 776])
+            ("DownSampling" type
+               (:prototype t
+                :type "class")
+                nil [777 796])
+            ("FeatureEnhancement" type
+               (:prototype t
+                :type "class")
+                nil [797 822])
+            ("FocusAndContextPlane" type
+               (:prototype t
+                :type "class")
+                nil [823 850])
+            ("Lighting" type
+               (:prototype t
+                :type "class")
+                nil [851 866])
+            ("Materials" type
+               (:prototype t
+                :type "class")
+                nil [867 883])
+            ("RGBTransferFunction1D" type
+               (:prototype t
+                :type "class")
+                nil [884 912])
+            ("Scene" type
+               (:prototype t
+                :type "class")
+                nil [913 925])
+            ("Shading" type
+               (:prototype t
+                :type "class")
+                nil [926 940])
+            ("Slices" type
+               (:prototype t
+                :type "class")
+                nil [941 954])
+            ("TransferFunction1D" type
+               (:prototype t
+                :type "class")
+                nil [955 980])
+            ("TransferFunction2_5D" type
+               (:prototype t
+                :type "class")
+                nil [981 1008])
+            ("Vector4" type
+               (:prototype t
+                :type "class")
+                nil [1009 1023])
+            ("Volume" type
+               (:prototype t
+                :type "class")
+                nil [1024 1037])
+            ("Toirt_Samhlaigh" type
+               (:superclasses 
+                  ( ("Vrui::Application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1117 1124])
+                    ("BaseLocatorList" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("BaseLocator" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1129 1179])
+                    ("Scalar" type
+                       (:typedef ("float")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1184 1205])
+                    ("Toirt_Samhlaigh" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1226 1236])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1237 1244])
+                            ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1245 1250])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1251 1258])
+                            ("" variable (:type ("appDefaults" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1259 1271]))                          
+                        :type ("Toirt_Samhlaigh" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1210 1272])
+                    ("Toirt_Samhlaigh" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1302 1307]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1277 1308])
+                    ("alphaChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1339 1372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1313 1373])
+                    ("blueChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1403 1436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1378 1437])
+                    ("calculateNumberOfLeafNodesInOctree" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1483 1488]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [1442 1489])
+                    ("centerDisplayCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1521 1554]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1494 1555])
+                    ("changeAlphaCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1585 1643]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1560 1644])
+                    ("changeBlueCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1673 1731]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1649 1732])
+                    ("changeColorMapCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1765 1823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1737 1824])
+                    ("changeGreenCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1854 1912]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1829 1913])
+                    ("changeRedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1941 1999]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1918 2000])
+                    ("changeShadingCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2032 2090]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2005 2091])
+                    ("colorMapChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2125 2158]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2096 2159])
+                    ("colorMap2_5DChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2197 2230]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2164 2231])
+                    ("display" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2257 2284]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2236 2291])
+                    ("frame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2307 2312]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2296 2313])
+                    ("getClippingPlanes" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2352 2357]))                          
+                        :type ("ClippingPlane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2318 2358])
+                    ("getFocusAndContextPlanes" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2411 2416]))                          
+                        :type ("FocusAndContextPlane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2363 2417])
+                    ("setDownSamplingChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("downSamplingChanged" variable (:type "bool") (reparse-symbol arg-sub-list) [2450 2475]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2422 2476])
+                    ("isInteractive" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2500 2505]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2481 2506])
+                    ("getNumberOfClippingPlanes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2541 2546]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2511 2547])
+                    ("getNumberOfFocusAndContextPlanes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2589 2594]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2552 2595])
+                    ("greenChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2626 2659]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2600 2660])
+                    ("setSliceColorMapChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("_sliceColorMapChanged" variable (:type "bool") (reparse-symbol arg-sub-list) [2694 2721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2665 2722])
+                    ("menuToggleSelectCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2757 2819]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2727 2820])
+                    ("redChangedCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2849 2882]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2825 2883])
+                    ("set1D" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2899 2904]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2888 2905])
+                    ("set2D" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2921 2926]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2910 2927])
+                    ("setAnimating" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("_animating" variable (:type "bool") (reparse-symbol arg-sub-list) [2950 2966]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2932 2967])
+                    ("setPreintegrationColormap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3003 3008]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2972 3009])
+                    ("setTransferFunction2_5DChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("transferFunction2_5DChanged" variable (:type "bool") (reparse-symbol arg-sub-list) [3050 3083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3014 3084])
+                    ("showTransferFunction1DCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3125 3187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3089 3188])
+                    ("showTransferFunction2_5DCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3231 3293]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3193 3294])
+                    ("sliderCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callBackData" variable
+                               (:pointer 1
+                                :type ("GLMotif::Slider::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3319 3375]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3299 3376])
+                    ("private" label nil (reparse-symbol classsubparts) [3377 3385])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3390 3404])
+                    ("alpha2_5D" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3409 3427])
+                    ("alphaChanged" variable (:type "bool") (reparse-symbol classsubparts) [3432 3450])
+                    ("analysisTool" variable (:type "int") (reparse-symbol classsubparts) [3455 3472])
+                    ("animating" variable (:type "bool") (reparse-symbol classsubparts) [3477 3492])
+                    ("animation" variable
+                       (:pointer 1
+                        :type ("Animation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3497 3519])
+                    ("baseLocators" variable (:type ("BaseLocatorList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3524 3553])
+                    ("blue" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3558 3570])
+                    ("blueScale" variable (:type "float") (reparse-symbol classsubparts) [3575 3591])
+                    ("blueVolumeFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3596 3623])
+                    ("clippingPlanes" variable
+                       (:pointer 1
+                        :type ("ClippingPlane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3628 3659])
+                    ("colormap" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [3664 3688])
+                    ("colorMapChanged" variable (:type "bool") (reparse-symbol classsubparts) [3693 3714])
+                    ("downSampling" variable
+                       (:pointer 1
+                        :type ("DownSampling" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3719 3747])
+                    ("downSamplingChanged" variable (:type "bool") (reparse-symbol classsubparts) [3752 3777])
+                    ("featureEnhancement" variable
+                       (:pointer 1
+                        :type ("FeatureEnhancement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3782 3822])
+                    ("firstFrame" variable (:type "bool") (reparse-symbol classsubparts) [3827 3843])
+                    ("focusAndContextPlanes" variable
+                       (:pointer 1
+                        :type ("FocusAndContextPlane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3848 3893])
+                    ("green" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3898 3911])
+                    ("greenScale" variable (:type "float") (reparse-symbol classsubparts) [3916 3933])
+                    ("greenVolumeFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3938 3966])
+                    ("interactive" variable (:type "bool") (reparse-symbol classsubparts) [3971 3988])
+                    ("lighting" variable
+                       (:pointer 1
+                        :type ("Lighting" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3993 4013])
+                    ("mainMenu" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupMenu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4018 4047])
+                    ("materials" variable
+                       (:pointer 1
+                        :type ("Materials" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4052 4074])
+                    ("maximumPriorityQueueTest" variable (:type "bool") (reparse-symbol classsubparts) [4079 4109])
+                    ("maximumPriorityQueueSize" variable (:type "int") (reparse-symbol classsubparts) [4114 4143])
+                    ("maximumPriorityQueueSizeChanged" variable (:type "bool") (reparse-symbol classsubparts) [4148 4185])
+                    ("maximumPriorityQueueSizeDialog" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4190 4243])
+                    ("priorityQueueTestToggle" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4248 4295])
+                    ("maximumPriorityQueueSizeValue" variable
+                       (:pointer 1
+                        :type ("GLMotif::TextField" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4300 4350])
+                    ("numberOfClippingPlanes" variable (:type "int") (reparse-symbol classsubparts) [4355 4382])
+                    ("numberOfComponents" variable (:type "int") (reparse-symbol classsubparts) [4387 4410])
+                    ("numberOfFocusAndContextPlanes" variable (:type "int") (reparse-symbol classsubparts) [4415 4449])
+                    ("ratioOfVisibilityTest" variable (:type "bool") (reparse-symbol classsubparts) [4454 4481])
+                    ("ratioOfVisibilityThreshold" variable (:type "float") (reparse-symbol classsubparts) [4486 4519])
+                    ("ratioOfVisibilityThresholdDialog" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4524 4579])
+                    ("ratioTestToggle" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4584 4623])
+                    ("ratioOfVisibilityThresholdValue" variable
+                       (:pointer 1
+                        :type ("GLMotif::TextField" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4628 4680])
+                    ("red" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [4685 4696])
+                    ("redScale" variable (:type "float") (reparse-symbol classsubparts) [4701 4716])
+                    ("redVolumeFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4721 4747])
+                    ("renderingCost" variable (:type "float") (reparse-symbol classsubparts) [4752 4772])
+                    ("renderingCostFunctionDialog" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4777 4827])
+                    ("renderingCostFunctionTest" variable (:type "bool") (reparse-symbol classsubparts) [4832 4863])
+                    ("renderingCostFunctionTestToggle" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4868 4923])
+                    ("renderingCostValue" variable
+                       (:pointer 1
+                        :type ("GLMotif::TextField" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4928 4967])
+                    ("rgbChanged" variable (:type "bool") (reparse-symbol classsubparts) [4972 4988])
+                    ("rgbTransferFunction1D" variable
+                       (:pointer 1
+                        :type ("RGBTransferFunction1D" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4993 5038])
+                    ("scene" variable
+                       (:pointer 1
+                        :type ("Scene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5043 5056])
+                    ("secondFrame" variable (:type "bool") (reparse-symbol classsubparts) [5061 5078])
+                    ("shading" variable
+                       (:pointer 1
+                        :type ("Shading" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5083 5101])
+                    ("showBricks" variable (:type "bool") (reparse-symbol classsubparts) [5106 5122])
+                    ("showOcNodes" variable (:type "bool") (reparse-symbol classsubparts) [5127 5144])
+                    ("showOutline" variable (:type "bool") (reparse-symbol classsubparts) [5149 5166])
+                    ("showVolume" variable (:type "bool") (reparse-symbol classsubparts) [5171 5187])
+                    ("showTransferFunction1DToggle" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5192 5245])
+                    ("showTransferFunction2_5DToggle" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5250 5305])
+                    ("slices" variable
+                       (:pointer 1
+                        :type ("Slices" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5310 5326])
+                    ("sliceColormap" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [5331 5360])
+                    ("sliceColorMapChanged" variable (:type "bool") (reparse-symbol classsubparts) [5365 5391])
+                    ("sliceFactorDialog" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5396 5436])
+                    ("sliceFactorValue" variable
+                       (:pointer 1
+                        :type ("GLMotif::TextField" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5441 5478])
+                    ("transferFunction1D" variable
+                       (:pointer 1
+                        :type ("TransferFunction1D" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5483 5523])
+                    ("transferFunction2_5D" variable
+                       (:pointer 1
+                        :type ("TransferFunction2_5D" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5528 5572])
+                    ("transferFunction2_5DChanged" variable (:type "bool") (reparse-symbol classsubparts) [5577 5610])
+                    ("typeOfComponents" variable (:type "int") (reparse-symbol classsubparts) [5615 5636])
+                    ("volume" variable
+                       (:pointer 1
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5642 5657])
+                    ("volumeFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5662 5685])
+                    ("changeAnalysisToolsCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5723 5775]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5690 5776])
+                    ("createAlphaSubMenu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mainMenu" variable
+                               (:pointer 1
+                                :type ("GLMotif::Menu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5805 5829]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5781 5830])
+                    ("createAnalysisToolsSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5878 5883]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5835 5884])
+                    ("createBlueSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5923 5928]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5889 5929])
+                    ("createColorMapSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5972 5977]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5934 5978])
+                    ("createComponentSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6022 6027]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5983 6028])
+                    ("createGreenSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6068 6073]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6033 6074])
+                    ("createGridSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6113 6118]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6079 6119])
+                    ("createMainMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6159 6164]))                          
+                        :type ("GLMotif::PopupMenu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6124 6165])
+                    ("createMaximumPriorityQueueSizeDialog" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6229 6234]))                          
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6170 6235])
+                    ("createMotionInterpolationDialog" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6294 6299]))                          
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6240 6300])
+                    ("createRatioOfVisibilityThresholdDialog" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6366 6371]))                          
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6305 6372])
+                    ("createRedSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6410 6415]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6377 6416])
+                    ("createRenderingCostFunctionDialog" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6477 6482]))                          
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6421 6483])
+                    ("createSettingsSubMenu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6526 6531]))                          
+                        :type ("GLMotif::Popup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6488 6532])
+                    ("createSliceFactorDialog" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6583 6588]))                          
+                        :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6537 6589])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6610 6615]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6594 6616])
+                    ("processCommandLineArguments" function
+                       (:prototype-flag t
+                        :throws ("std::runtime_error")
+                        :arguments 
+                          ( ("argc" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6654 6664])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6665 6672])
+                            ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6673 6678]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6621 6706])
+                    ("toolCreationCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Vrui::ToolManager::ToolCreationCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6745 6797]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6711 6798])
+                    ("toolDestructionCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Vrui::ToolManager::ToolDestructionCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6840 6895]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6803 6896]))                  
+                :type "class")
+                nil [1067 6899]))          
+      :file "Toirt_Samhlaigh.h"
+      :pointmax 6908
+      :fsize 6907
+      :lastmodtime '(20777 24778)
+      :unmatched-syntax '((punctuation 6671 . 6672) (punctuation 1257 . 1258) (punctuation 1243 . 1244))
+      :lexical-table 
+        '(("TOIRT_SAMHLAIGH_H_")
+          )
+))
+  :file "!scp:masterb:!apps!Toirt-Samhlaigh!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

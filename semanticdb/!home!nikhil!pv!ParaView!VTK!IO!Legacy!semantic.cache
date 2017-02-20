@@ -1,0 +1,191 @@
+;; Object Legacy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Legacy/"
+  :tables (list 
+   (semanticdb-table "vtkGenericDataObjectWriter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkGenericDataObjectWriter.h" include nil nil [600 639])
+            ("vtkCompositeDataSet.h" include nil nil [641 673])
+            ("vtkCompositeDataWriter.h" include nil nil [674 709])
+            ("vtkDataObject.h" include nil nil [710 736])
+            ("vtkErrorCode.h" include nil nil [737 762])
+            ("vtkGraph.h" include nil nil [763 784])
+            ("vtkGraphWriter.h" include nil nil [785 812])
+            ("vtkImageData.h" include nil nil [813 838])
+            ("vtkInformation.h" include nil nil [839 866])
+            ("vtkObjectFactory.h" include nil nil [867 896])
+            ("vtkPolyData.h" include nil nil [897 921])
+            ("vtkPolyDataWriter.h" include nil nil [922 952])
+            ("vtkRectilinearGrid.h" include nil nil [953 984])
+            ("vtkRectilinearGridWriter.h" include nil nil [985 1022])
+            ("vtkStructuredGrid.h" include nil nil [1023 1053])
+            ("vtkStructuredGridWriter.h" include nil nil [1054 1090])
+            ("vtkStructuredPoints.h" include nil nil [1091 1123])
+            ("vtkStructuredPointsWriter.h" include nil nil [1124 1162])
+            ("vtkTable.h" include nil nil [1163 1184])
+            ("vtkTableWriter.h" include nil nil [1185 1212])
+            ("vtkTree.h" include nil nil [1213 1233])
+            ("vtkTreeWriter.h" include nil nil [1234 1260])
+            ("vtkUnstructuredGrid.h" include nil nil [1261 1293])
+            ("vtkUnstructuredGridWriter.h" include nil nil [1294 1332])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkGenericDataObjectWriter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1354 1381]))                  
+                :type "int")
+                nil [1334 1382])
+            ("CreateWriter" function
+               (:template 
+                  ( ("WriterT" type (:type "class") nil nil))                  
+                :type ("vtkDataWriter" type (:type "class") nil nil)
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("vtkAlgorithmOutput" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1439 1465]))                  
+                :pointer 1)
+                nil [1384 1565])
+            ("vtkGenericDataObjectWriter" function
+               (:constructor-flag t
+                :parent "vtkGenericDataObjectWriter"
+                :type ("vtkGenericDataObjectWriter" type (:type "class") nil nil))
+                nil [1567 1627])
+            ("vtkGenericDataObjectWriter" function
+               (:destructor-flag t
+                :parent "vtkGenericDataObjectWriter"
+                :type "void")
+                nil [1629 1690])
+            ("WriteData" function
+               (:parent "vtkGenericDataObjectWriter"
+                :type "void")
+                nil [1692 5244])
+            ("FillInputPortInformation" function
+               (:parent "vtkGenericDataObjectWriter"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5303 5307])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5308 5329]))                  
+                :type "int")
+                nil [5246 5417])
+            ("PrintSelf" function
+               (:parent "vtkGenericDataObjectWriter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5462 5474])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5475 5492]))                  
+                :type "void")
+                nil [5419 5538]))          
+    :file "vtkGenericDataObjectWriter.cxx"
+    :pointmax 5539
+    :fsize 5538
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkGenericDataObjectWriter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkGenericDataObjectWriter_h" variable (:constant-flag t) nil [897 927])
+            ("vtkIOLegacyModule.h" include nil nil [929 959])
+            ("vtkDataWriter.h" include nil nil [980 1006])
+            ("vtkDataWriter" variable (:type "int") nil [1069 1586]))          
+    :file "vtkGenericDataObjectWriter.h"
+    :pointmax 1595
+    :fsize 1594
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1062 . 1068) (punctuation 1060 . 1061) (symbol 1033 . 1059) (symbol 1014 . 1032) (CLASS 1008 . 1013))
+    :lexical-table 
+        '(("__vtkGenericDataObjectWriter_h")
+          )
+
+    )
+   (semanticdb-table "vtkDataSetWriter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDataSetWriter_h" variable (:constant-flag t) nil [896 916])
+            ("vtkIOLegacyModule.h" include nil nil [918 948])
+            ("vtkDataWriter.h" include nil nil [969 995])
+            ("vtkDataWriter" variable (:type "int") nil [1048 1616]))          
+    :file "vtkDataSetWriter.h"
+    :pointmax 1625
+    :fsize 1624
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1041 . 1047) (punctuation 1039 . 1040) (symbol 1022 . 1038) (symbol 1003 . 1021) (CLASS 997 . 1002))
+    :lexical-table 
+        '(("__vtkDataSetWriter_h")
+          )
+
+    )
+   (semanticdb-table "vtkDataWriter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDataWriter_h" variable (:constant-flag t) nil [1091 1108])
+            ("vtkIOLegacyModule.h" include nil nil [1110 1140])
+            ("vtkWriter.h" include nil nil [1161 1183])
+            ("vtkCellArray" type
+               (:prototype t
+                :type "class")
+                nil [1185 1204])
+            ("vtkDataArray" type
+               (:prototype t
+                :type "class")
+                nil [1205 1224])
+            ("vtkDataSet" type
+               (:prototype t
+                :type "class")
+                nil [1225 1242])
+            ("vtkFieldData" type
+               (:prototype t
+                :type "class")
+                nil [1243 1262])
+            ("vtkGraph" type
+               (:prototype t
+                :type "class")
+                nil [1263 1278])
+            ("vtkPoints" type
+               (:prototype t
+                :type "class")
+                nil [1279 1295])
+            ("vtkTable" type
+               (:prototype t
+                :type "class")
+                nil [1296 1311])
+            ("vtkWriter" variable (:type "int") nil [1361 7911]))          
+    :file "vtkDataWriter.h"
+    :pointmax 7920
+    :fsize 7919
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1354 . 1360) (punctuation 1352 . 1353) (symbol 1338 . 1351) (symbol 1319 . 1337) (CLASS 1313 . 1318))
+    :lexical-table 
+        '(("__vtkDataWriter_h")
+          )
+
+    )
+   (semanticdb-table "vtkDataObjectWriter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDataObjectWriter_h" variable (:constant-flag t) nil [1023 1046])
+            ("vtkIOLegacyModule.h" include nil nil [1048 1078])
+            ("vtkWriter.h" include nil nil [1099 1121])
+            ("vtkDataWriter.h" include nil nil [1122 1148])
+            ("vtkStdString.h" include nil nil [1194 1219])
+            ("vtkWriter" variable (:type "int") nil [1301 3196]))          
+    :file "vtkDataObjectWriter.h"
+    :pointmax 3205
+    :fsize 3204
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1294 . 1300) (punctuation 1292 . 1293) (symbol 1272 . 1291) (symbol 1253 . 1271) (CLASS 1247 . 1252))
+    :lexical-table 
+        '(("__vtkDataObjectWriter_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!IO!Legacy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

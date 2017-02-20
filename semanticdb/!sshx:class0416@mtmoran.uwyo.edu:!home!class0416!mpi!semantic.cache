@@ -1,0 +1,38 @@
+;; Object mpi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mpi/"
+  :tables (list 
+   (semanticdb-table "hello.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("mpi.h" include (:system-flag t) nil [41 58])
+            ("stdio.h" include (:system-flag t) nil [59 78])
+            ("string.h" include (:system-flag t) nil [79 99])
+            ("BUFSIZE" variable (:constant-flag t) nil [111 118])
+            ("TAG" variable (:constant-flag t) nil [132 135])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [150 159])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [160 173]))                  
+                :type "int")
+                nil [141 1584]))          
+    :file "hello.c"
+    :pointmax 1585
+    :fsize 1584
+    :lastmodtime '(21556 2654)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFSIZE" . ((number "128" 119 . 122)))
+          ("TAG" . ((number "0" 136 . 137)))
+          )
+
+    )
+   )
+  :file "!sshx:class0416@mtmoran.uwyo.edu:!home!class0416!mpi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

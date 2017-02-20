@@ -1,0 +1,276 @@
+;; Object gpu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gpu/"
+  :tables (list 
+   (semanticdb-table "fann_gpu.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("fann_gpu.h" include nil nil [807 828])
+            ("initOpenGL" function (:type "void") nil [830 1043])
+            ("test" function
+               (:pointer 1
+                :type "char")
+                nil [1046 1943])
+            ("init" function (:type "int") nil [1946 4927])
+            ("generateLayer" function
+               (:pointer 1
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5027 5040])
+                    ("input_size" variable (:type "int") (reparse-symbol arg-sub-list) [5041 5056])
+                    ("output_size" variable (:type "int") (reparse-symbol arg-sub-list) [5057 5073])
+                    ("output_offset" variable (:type "int") (reparse-symbol arg-sub-list) [5074 5092]))                  
+                :type ("layer" type (:type "class") nil nil))
+                nil [5006 6457])
+            ("destroyLayer" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6490 6505]))                  
+                :type "void")
+                nil [6472 6699])
+            ("setInput" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6802 6816])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6817 6830]))                  
+                :type "void")
+                nil [6788 6878])
+            ("setOutput" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6968 6982])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6983 6997]))                  
+                :type "void")
+                nil [6953 7046])
+            ("attachShaderProgram" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7176 7190])
+                    ("source_file" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7191 7209]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [7149 8721])
+            ("copyVectorToTexture" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [8820 8833])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8834 8849]))                  
+                :type "void")
+                nil [8795 9699])
+            ("copyVectorFromTexture" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [9760 9772])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9773 9787]))                  
+                :type "void")
+                nil [9733 10109])
+            ("copyWeightsToTexture" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [10222 10234])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10235 10249]))                  
+                :type "void")
+                nil [10196 11347])
+            ("copyMaskToTexture" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [11444 11456])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11457 11471]))                  
+                :type "void")
+                nil [11421 12488])
+            ("setupTexture" function
+               (:arguments 
+                  ( ("texID" variable
+                       (:constant-flag t
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12573 12592])
+                    ("width" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12593 12606])
+                    ("height" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12607 12621])
+                    ("tex_target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12622 12640])
+                    ("tex_format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12641 12659])
+                    ("internal_format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12660 12683]))                  
+                :type "void")
+                nil [12555 13453])
+            ("printLayer" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13531 13545]))                  
+                :type "void")
+                nil [13515 13768])
+            ("parseShader" function
+               (:pointer 1
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13911 13922])
+                    ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13923 13934])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13935 13950]))                  
+                :type "char")
+                nil [13893 15231])
+            ("printLog" function
+               (:arguments 
+                  ( ("obj" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15283 15294]))                  
+                :type "void")
+                nil [15269 16063])
+            ("run" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16074 16089]))                  
+                :type "void")
+                nil [16065 17921]))          
+    :file "fann_gpu.c"
+    :pointmax 17923
+    :fsize 17922
+    :lastmodtime '(18136 11178 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fann_gpu.h"
+    :file "fann_gpu.h"
+    :fsize 8201
+    :lastmodtime '(18135 13352 0 0)
+    )
+   (semanticdb-table "fann_gpu_example.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("fann_gpu.h" include nil nil [807 828])
+            ("time.h" include (:system-flag t) nil [925 942])
+            ("run_time" variable (:type "double") nil [943 971])
+            ("end" variable (:type "double") nil [943 971])
+            ("start" variable (:type "double") nil [943 971])
+            ("E" variable
+               (:pointer 1
+                :type ("layer" type (:type "class") nil nil))
+                nil [980 1005])
+            ("D" variable
+               (:pointer 1
+                :type ("layer" type (:type "class") nil nil))
+                nil [980 1005])
+            ("C" variable
+               (:pointer 1
+                :type ("layer" type (:type "class") nil nil))
+                nil [980 1005])
+            ("B" variable
+               (:pointer 1
+                :type ("layer" type (:type "class") nil nil))
+                nil [980 1005])
+            ("A" variable
+               (:pointer 1
+                :type ("layer" type (:type "class") nil nil))
+                nil [980 1005])
+            ("mask_matrix" variable
+               (:pointer 1
+                :type "float")
+                nil [1006 1049])
+            ("weight_matrix" variable
+               (:pointer 1
+                :type "float")
+                nil [1006 1049])
+            ("input" variable
+               (:pointer 1
+                :type "float")
+                nil [1006 1049])
+            ("j" variable (:type "int") nil [1050 1058])
+            ("i" variable (:type "int") nil [1050 1058])
+            ("fillWeights" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1198 1212]))                  
+                :type "void")
+                nil [1181 1213])
+            ("fillVector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1253 1267]))                  
+                :type "void")
+                nil [1237 1268])
+            ("main2" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1281 1290])
+                    ("arg" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1291 1302]))                  
+                :type "int")
+                nil [1271 3382])
+            ("fillWeights" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3522 3536]))                  
+                :type "void")
+                nil [3505 3951])
+            ("fillVector" function
+               (:arguments 
+                  ( ("target" variable
+                       (:pointer 1
+                        :type ("layer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3991 4005]))                  
+                :type "void")
+                nil [3975 4151]))          
+    :file "fann_gpu_example.c"
+    :pointmax 4152
+    :fsize 4151
+    :lastmodtime '(18136 11178 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!code!fann!src!gpu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,120 @@
+;; Object emokitd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emokitd/"
+  :tables
+  (list
+    (semanticdb-table "emokitd.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("errno.h" include (:system-flag t) nil [60 78])
+            ("fcntl.h" include (:system-flag t) nil [79 97])
+            ("unistd.h" include (:system-flag t) nil [98 117])
+            ("syslog.h" include (:system-flag t) nil [118 137])
+            ("signal.h" include (:system-flag t) nil [138 157])
+            ("pthread.h" include (:system-flag t) nil [158 178])
+            ("sys/resource.h" include (:system-flag t) nil [179 204])
+            ("sys/types.h" include (:system-flag t) nil [205 227])
+            ("sys/stat.h" include (:system-flag t) nil [228 249])
+            ("emokit/emokit.h" include nil nil [251 277])
+            ("emokitd.h" include nil nil [279 299])
+            ("mask" variable (:type ("sigset_t" type (:type "class") nil nil)) nil [301 315])
+            ("emokit_device" type
+               (:typedef ("emokit_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [317 360])
+            ("fatal_err" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [377 393]))                  
+                :type "void")
+                nil [362 431])
+            ("init_fatal_err" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [453 469]))                  
+                :type "void")
+                nil [433 512])
+            ("thr_signal_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [539 549]))                  
+                :type "void")
+                nil [514 919])
+            ("daemon_running" function (:type "int") nil [921 1438])
+            ("daemonize" function (:type "void") nil [1440 2523])
+            ("dbg_stream" function
+               (:arguments 
+                  ( ("eeg" variable
+                       (:pointer 1
+                        :type ("emokit_device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2541 2560]))                  
+                :type "void")
+                nil [2525 2764])
+            ("decrypt_loop" function
+               (:arguments 
+                  ( ("eeg" variable
+                       (:pointer 1
+                        :type ("emokit_device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2784 2803]))                  
+                :type "void")
+                nil [2766 3161])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3173 3182])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3183 3195]))                  
+                :type "int")
+                nil [3164 4234]))          
+      :file "emokitd.c"
+      :pointmax 4235
+      :fsize 4234
+      :lastmodtime '(21841 10106 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG" . ((number "1" 3177 . 3178)))
+          )
+)
+    (semanticdb-table "emokitd.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sys/stat.h" include nil nil [1 22])
+            ("DAEMON_IDENT" variable (:constant-flag t) nil [32 44])
+            ("PIDFILE" variable (:constant-flag t) nil [63 70])
+            ("LOCKMODE" variable (:constant-flag t) nil [102 110])
+            ("FIFO_PATH" variable (:constant-flag t) nil [153 162])
+            ("EMOKIT_PKT_SIZE" variable (:constant-flag t) nil [186 201])
+            ("DEBUG" variable (:constant-flag t) nil [228 233]))          
+      :file "emokitd.h"
+      :pointmax 243
+      :fsize 242
+      :lastmodtime '(21841 9973 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DAEMON_IDENT" . ((string "\"emokitd\"" 45 . 54)))
+          ("PIDFILE" . ((string "\"/var/run/emokitd.pid\"" 71 . 93)))
+          ("FIFO_PATH" . ((string "\"/dev/emokitd\"" 163 . 177)))
+          ("DEBUG" . ((number "1" 234 . 235)))
+          ("LOCKMODE" . ((semantic-list "(S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH)" 111 . 144)))
+          ("EMOKIT_PKT_SIZE" . ((number "32" 202 . 204)))
+          )
+))
+  :file "!Users!nshetty!Code!emokit!emokit!examples!emokitd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

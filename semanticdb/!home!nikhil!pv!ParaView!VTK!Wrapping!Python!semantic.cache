@@ -1,0 +1,158 @@
+;; Object Python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Python/"
+  :tables (list 
+   (semanticdb-table "vtkPythonAppInitConfigure.h.in"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPythonAppInitConfigure_h" variable (:constant-flag t) nil [47 76])
+            ("VTK_PYTHON_LIBRARY_DIR" variable (:constant-flag t) nil [86 108]))          
+    :file "vtkPythonAppInitConfigure.h.in"
+    :pointmax 152
+    :fsize 151
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkPythonAppInitConfigure_h")
+          ("VTK_PYTHON_LIBRARY_DIR" . ((string "\"@CMAKE_LIBRARY_OUTPUT_DIRECTORY@\"" 109 . 143)))
+          )
+
+    )
+   (semanticdb-table "vtkPythonAppInit.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPython.h" include nil nil [660 682])
+            ("vtkVersion.h" include nil nil [797 820])
+            ("vtkPythonAppInitConfigure.h" include nil nil [821 859])
+            ("vtkpythonmodules.h" include nil nil [861 890])
+            ("sys/stat.h" include (:system-flag t) nil [1135 1156])
+            ("string" include (:system-flag t) nil [1158 1175])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1176 1209])
+            ("Py_Main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1901 1905])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1906 1914]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1893 1915])
+            ("C" extern (:members 
+              ( ("Py_Main" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1901 1905])
+                        ("" variable
+                           (:pointer 2
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1906 1914]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1893 1915]))              ) nil [1856 1917])
+            ("vtkPythonAppInitEnableMSVCDebugHook" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [1919 1969])
+            ("vtkPythonAppInitPrependPath" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self_dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2010 2031]))                  
+                :type "void")
+                nil [1970 2032])
+            ("VTK_PYTHON_MAXPATH" variable (:constant-flag t) nil [2215 2233])
+            ("VTK_PYTHON_TO_STRING" variable (:constant-flag t) nil [2298 2318])
+            ("VTK_PYTHON_TO_STRING0" variable (:constant-flag t) nil [2355 2376])
+            ("VTK_PYTHON_TO_STRING1" variable (:constant-flag t) nil [2413 2434])
+            ("VTK_PYTHON_VERSION" variable (:constant-flag t) nil [2449 2467])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2534 2543])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2544 2556]))                  
+                :type "int")
+                nil [2525 4590])
+            ("crtdbg.h" include (:system-flag t) nil [4728 4748])
+            ("vtkPythonAppInitDebugReport" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4788 4792])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4793 4807])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4808 4813]))                  
+                :type "int")
+                nil [4749 4856])
+            ("vtkPythonAppInitEnableMSVCDebugHook" function (:type "void") nil [4857 5046])
+            ("vtkPythonAppInitPrependPythonPath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5233 5249]))                  
+                :type "void")
+                nil [5187 5768])
+            ("vtkPythonAppInitPrependPath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self_dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5889 5910]))                  
+                :type "void")
+                nil [5849 9709]))          
+    :file "vtkPythonAppInit.cxx"
+    :pointmax 9710
+    :fsize 9709
+    :lastmodtime '(20811 15812)
+    :unmatched-syntax '((semantic-list 1887 . 1892) (symbol 1878 . 1887) (EXTERN 1871 . 1877))
+    :lexical-table 
+        '(("VTK_PYTHON_TO_STRING" (spp-arg-list ("x") 2318 . 2321) . ((symbol "VTK_PYTHON_TO_STRING0" 2322 . 2343) (semantic-list "(x)" 2343 . 2346)))
+          ("VTK_PYTHON_TO_STRING0" (spp-arg-list ("x") 2376 . 2379) . ((symbol "VTK_PYTHON_TO_STRING1" 2380 . 2401) (semantic-list "(x)" 2401 . 2404)))
+          ("VTK_PYTHON_MAXPATH" . ((number "16384" 2234 . 2239)))
+          ("VTK_PYTHON_TO_STRING1" (spp-arg-list ("x") 2434 . 2437) . ((punctuation "#" 2438 . 2439) (symbol "x" 2439 . 2440)))
+          ("VTK_PYTHON_VERSION" . ((symbol "VTK_PYTHON_TO_STRING" 2468 . 2488) (semantic-list "(PY_MAJOR_VERSION.PY_MINOR_VERSION)" 2488 . 2523)))
+          )
+
+    )
+   (semanticdb-table "compile_all_vtk.py.in"
+    :major-mode 'python-mode
+    :tags 
+        '( ("compileall" include nil nil [1 18])
+            ("file" code nil nil [160 178]))          
+    :file "compile_all_vtk.py.in"
+    :pointmax 179
+    :fsize 170
+    :lastmodtime '(20811 15812)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkpython.cxx.in"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "vtkpython.cxx.in"
+    :pointmax 82
+    :fsize 81
+    :lastmodtime '(20819 17003)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Wrapping!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,470 @@
+;; Object AnnHillClimber/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AnnHillClimber/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CHECKER" variable (:constant-flag t) nil [136 144])
+            ("_USE_MATH_DEFINES" variable (:constant-flag t) nil [174 191])
+            ("iostream" include (:system-flag t) nil [192 211])
+            ("fstream" include (:system-flag t) nil [212 230])
+            ("math.h" include (:system-flag t) nil [231 248])
+            ("NeuralNetwork.hpp" include nil nil [269 297])
+            ("HillClimber.hpp" include nil nil [298 324])
+            ("NNCheckerboardFitness.hpp" include nil nil [342 378])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [435 444])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [445 458]))                  
+                :type "int")
+                nil [426 1540]))          
+      :file "main.cpp"
+      :pointmax 1541
+      :fsize 1540
+      :lastmodtime '(21734 44324 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CHECKER")
+          ("_USE_MATH_DEFINES")
+          )
+)
+    (semanticdb-table "NeuralNetwork.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NEURALNETWORK_HPP_" variable (:constant-flag t) nil [128 146])
+            ("vector" include (:system-flag t) nil [148 165])
+            ("fstream" include (:system-flag t) nil [166 184])
+            ("VectorIndividual.hpp" include nil nil [186 217])
+            ("Random.hpp" include nil nil [218 239])
+            ("Neuron" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [609 616])
+                    ("Neuron" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("numberOfConnections" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [793 823]))                          
+                        :type ("Neuron" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [786 938])
+                    ("getValue" function (:type "double") (reparse-symbol classsubparts) [1019 1066])
+                    ("setValue" function
+                       (:arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [1133 1146]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1119 1177])
+                    ("getNewValue" function (:type "double") (reparse-symbol classsubparts) [1229 1282])
+                    ("setNewValue" function
+                       (:arguments 
+                          ( ("newValue" variable (:type "double") (reparse-symbol arg-sub-list) [1348 1364]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1331 1401])
+                    ("getConnection" function
+                       (:arguments 
+                          ( ("connectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1513 1536]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1492 1598])
+                    ("setConnection" function
+                       (:arguments 
+                          ( ("connectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1728])
+                            ("weight" variable (:type "double") (reparse-symbol arg-sub-list) [1729 1743]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1686 1807])
+                    ("getConnections" function (:type ("VectorIndividual" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1880 1959])
+                    ("private" label nil (reparse-symbol classsubparts) [2019 2027])
+                    ("_value" variable (:type "double") (reparse-symbol classsubparts) [2032 2046])
+                    ("_newValue" variable (:type "double") (reparse-symbol classsubparts) [2051 2068])
+                    ("_incommingConnections" variable (:type ("VectorIndividual" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2073 2112]))                  
+                :type "class")
+                nil [594 2115])
+            ("NeuralNetwork" type
+               (:superclasses 
+                  ( ("Individual" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2341 2348])
+                    ("NeuralNetwork" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("numberOfNeurons" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2655 2681])
+                            ("mutationRate" variable
+                               (:default-value "0.05"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2683 2709]))                          
+                        :type ("NeuralNetwork" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2641 2931])
+                    ("step" function (:type "void") (reparse-symbol classsubparts) [3806 4477])
+                    ("logActivation" function
+                       (:arguments 
+                          ( ("activationFile" variable
+                               (:reference 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4835 4865]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4816 5027])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [5284 5508])
+                    ("mutate" function (:type "void") (reparse-symbol classsubparts) [5699 5993])
+                    ("getNeurons" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Neuron" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6084 6149])
+                    ("getPreviousActivations" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6218 6307])
+                    ("init" function
+                       (:arguments 
+                          ( ("val" variable (:type "double") (reparse-symbol arg-sub-list) [6384 6395]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6374 6505])
+                    ("size" function (:type "int") (reparse-symbol classsubparts) [6582 6633])
+                    ("copyPreviousActivation" function (:type "void") (reparse-symbol classsubparts) [6727 6887])
+                    ("private" label nil (reparse-symbol classsubparts) [6888 6896])
+                    ("_neurons" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Neuron" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6901 6930])
+                    ("_previousActivation" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6935 6975])
+                    ("_mutationRate" variable (:type "double") (reparse-symbol classsubparts) [6980 7001]))                  
+                :type "class")
+                nil [2300 7004])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7114 7131])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("NeuralNetwork" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7132 7151]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [7089 7321]))          
+      :file "NeuralNetwork.hpp"
+      :pointmax 7357
+      :fsize 7356
+      :lastmodtime '(21732 48196 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NEURALNETWORK_HPP_")
+          )
+)
+    (semanticdb-table "NNLastRowFitness.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NNLASTROWFITNESS_HPP_" variable (:constant-flag t) nil [134 155])
+            ("cmath" include (:system-flag t) nil [157 173])
+            ("NNLastRowFitness" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [200 207])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("NeuralNetwork" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [758 784]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 1167]))                  
+                :type "class")
+                nil [175 1213]))          
+      :file "NNLastRowFitness.hpp"
+      :pointmax 1252
+      :fsize 1251
+      :lastmodtime '(21738 38023 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NNLASTROWFITNESS_HPP_")
+          )
+)
+    (semanticdb-table "HillClimber.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("HILLCLIMBER_HPP_" variable (:constant-flag t) nil [189 205])
+            ("fstream" include (:system-flag t) nil [207 225])
+            ("iostream" include (:system-flag t) nil [226 245])
+            ("HillClimber" type
+               (:template 
+                  ( ("Indiv" type (:type "class") nil nil)
+                    ("Fit" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [306 313])
+                    ("HillClimber" function
+                       (:constructor-flag t
+                        :type ("HillClimber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [318 352])
+                    ("init" function
+                       (:arguments 
+                          ( ("initialIndividual" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [865 889])
+                            ("fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [890 910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [855 1073])
+                    ("run" function
+                       (:arguments 
+                          ( ("numberOfGenerations" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2813 2840])
+                            ("fitnessFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2841 2873])
+                            ("individualFileName" variable
+                               (:default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2875 2910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2804 3597])
+                    ("getParent" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3669 3718])
+                    ("getChild" function (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3789 3836])
+                    ("private" label nil (reparse-symbol classsubparts) [3838 3846])
+                    ("_parent" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3851 3865])
+                    ("_child" variable (:type ("Indiv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3870 3883])
+                    ("_fitnessFunction" variable (:type ("Fit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3888 3909]))                  )
+                nil [247 3912]))          
+      :file "HillClimber.hpp"
+      :pointmax 3946
+      :fsize 3945
+      :lastmodtime '(21731 48379 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HILLCLIMBER_HPP_")
+          )
+)
+    (semanticdb-table "VectorIndividual.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VECTORINDIVIDUAL_HPP_" variable (:constant-flag t) nil [283 304])
+            ("vector" include (:system-flag t) nil [306 323])
+            ("Individual.hpp" include nil nil [325 350])
+            ("Random.hpp" include nil nil [351 372])
+            ("VectorIndividual" type
+               (:superclasses 
+                  ( ("Individual" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [418 425])
+                    ("VectorIndividual" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [447 462])
+                            ("min" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [464 480])
+                            ("max" variable
+                               (:default-value "1.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [482 498])
+                            ("mutationRate" variable
+                               (:default-value "0.05"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [500 526]))                          
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [430 627])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [797 934])
+                    ("mutate" function (:type "void") (reparse-symbol classsubparts) [1130 1332])
+                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1393 1455])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("nIndex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1553 1570]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1533 1619])
+                    ("private" label nil (reparse-symbol classsubparts) [1621 1629])
+                    ("_valueVector" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1634 1667])
+                    ("_min" variable (:type "double") (reparse-symbol classsubparts) [1672 1684])
+                    ("_max" variable (:type "double") (reparse-symbol classsubparts) [1689 1701])
+                    ("_mutationRate" variable (:type "double") (reparse-symbol classsubparts) [1706 1727]))                  
+                :type "class")
+                nil [374 1730])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1822 1839])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1840 1862]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1797 2032]))          
+      :file "VectorIndividual.hpp"
+      :pointmax 2069
+      :fsize 2068
+      :lastmodtime '(21729 62610 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTORINDIVIDUAL_HPP_")
+          )
+)
+    (semanticdb-table "Random.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RANDOM_HPP_" variable (:constant-flag t) nil [224 235])
+            ("stdlib.h" include (:system-flag t) nil [237 256])
+            ("time.h" include (:system-flag t) nil [257 274])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [363 381]))                  
+                :type "void")
+                nil [346 401])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :type "void")
+                nil [475 519])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :type "double")
+                nil [579 652])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type "double") (reparse-symbol arg-sub-list) [738 749]))                  
+                :type "double")
+                nil [713 783])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type "double") (reparse-symbol arg-sub-list) [872 883])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [884 895]))                  
+                :type "double")
+                nil [847 943]))          
+      :file "Random.hpp"
+      :pointmax 971
+      :fsize 970
+      :lastmodtime '(21729 58168 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RANDOM_HPP_")
+          )
+)
+    (semanticdb-table "VectorFitnessFunction.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VECTORFITNESSFUNCTION_HPP_" variable (:constant-flag t) nil [211 237])
+            ("VectorIndividual.hpp" include nil nil [239 270])
+            ("VectorFitnessFunction" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [302 309])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("VectorIndividual" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [613 642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [599 869]))                  
+                :type "class")
+                nil [272 872]))          
+      :file "VectorFitnessFunction.hpp"
+      :pointmax 916
+      :fsize 915
+      :lastmodtime '(21729 58168 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTORFITNESSFUNCTION_HPP_")
+          )
+)
+    (semanticdb-table "Individual.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INDIVIDUAL_HPP_" variable (:constant-flag t) nil [242 257])
+            ("Individual" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [278 285])
+                    ("Individual" function
+                       (:constructor-flag t
+                        :type ("Individual" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [290 336])
+                    ("setFitness" function
+                       (:arguments 
+                          ( ("fitness" variable (:type "double") (reparse-symbol arg-sub-list) [418 433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [402 468])
+                    ("getFitness" function (:type "double") (reparse-symbol classsubparts) [535 586])
+                    ("private" label nil (reparse-symbol classsubparts) [588 596])
+                    ("_fitness" variable (:type "double") (reparse-symbol classsubparts) [601 617]))                  
+                :type "class")
+                nil [259 620]))          
+      :file "Individual.hpp"
+      :pointmax 651
+      :fsize 650
+      :lastmodtime '(21729 58168 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INDIVIDUAL_HPP_")
+          )
+)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("ann" function (:arguments ("main.cpp" "NNLastRowFitness.hpp" "NNCheckerboardFitness.hpp" "NeuralNetwork.hpp" "HillClimber.hpp" "Individual.hpp" "Random.hpp" "VectorFitnessFunction.hpp" "VectorIndividual.hpp")) nil [1 194])
+            ("clean" function nil nil [195 222]))          
+      :file "Makefile"
+      :pointmax 222
+      :fsize 221
+      :lastmodtime '(21730 31524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "NNCheckerboardFitness.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NNCHECKERBOARDFITNESS_HPP_" variable (:constant-flag t) nil [144 170])
+            ("math.h" include (:system-flag t) nil [172 189])
+            ("NNCheckerboardFitness" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [221 228])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("NeuralNetwork" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1298 1324]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1284 2016]))                  
+                :type "class")
+                nil [191 2019]))          
+      :file "NNCheckerboardFitness.hpp"
+      :pointmax 2063
+      :fsize 2062
+      :lastmodtime '(21734 43710 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NNCHECKERBOARDFITNESS_HPP_")
+          )
+))
+  :file "!Users!nshetty!Code!EvoRobo!cpp!AnnHillClimber!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

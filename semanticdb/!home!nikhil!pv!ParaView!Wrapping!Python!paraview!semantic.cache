@@ -1,0 +1,1072 @@
+;; Object paraview/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "paraview/"
+  :tables (list 
+   (semanticdb-table "simple.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "simple.py"
+    :pointmax 55380
+    :fsize 55379
+    :lastmodtime '(20900 54572)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "servermanager.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("r"""servermanager is a module for using paraview server manager in Python.
+One can always use the server manager API directly. However, this module
+provides an interface easier to use from Python by wrapping several VTK
+classes around Python classes.
+
+Note that, upon load, this module will create several sub-modules: sources,
+filters and rendering. These modules can be used to instantiate specific
+proxy types. For a list, try "dir(servermanager.sources)"
+
+Usually users should use the paraview.simple module instead as it provide a
+more user friendly API.
+
+A simple example::
+
+  from paraview.servermanager import *
+
+  # Creates a new built-in session and makes it the active session.
+  Connect()
+
+  # Creates a new render view on the active session.
+  renModule = CreateRenderView()
+
+  # Create a new sphere proxy on the active session and register it
+  # in the sources group.
+  sphere = sources.SphereSource(registrationGroup="sources", ThetaResolution=16, PhiResolution=32)
+
+  # Create a representation for the sphere proxy and adds it to the render
+  # module.
+  display = CreateRepresentation(sphere, renModule)
+
+  renModule.StillRender()
+
+"""" code nil nil [1 1154])
+            ("paraview" include nil nil [1725 1780])
+            ("if" code nil nil [1782 1856])
+            ("if" code nil nil [1856 1930])
+            ("vtkPVServerImplementationCorePython" include nil nil [1931 1980])
+            ("vtkPVClientServerCoreCorePython" include nil nil [1981 2026])
+            ("vtkPVServerManagerCorePython" include nil nil [2027 2069])
+            ("try" code nil nil [2071 2211])
+            ("try" code nil nil [2211 2355])
+            ("try" code nil nil [2355 2503])
+            ("vtkPVCommonPython" include nil nil [2503 2534])
+            ("_wrap_property" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [2555 2560])
+                ("smproperty" variable nil (reparse-symbol function_parameters) [2562 2572]))              ) nil [2536 4659])
+            ("Proxy" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Proxy for a server side object. A proxy manages the lifetime of
+    one or more server manager objects. It also provides an interface
+    to set and get the properties of the server side objects. These
+    properties are presented as Python properties. For example,
+    you can set a property Foo using the following::
+
+       proxy.Foo = (1,2)
+
+    or
+
+       proxy.Foo.SetData((1,2))
+
+    or
+
+       proxy.Foo[0:2] = (1,2)
+
+    For more information, see the documentation of the property which
+    you can obtain with
+    help(proxy.Foo).
+
+    This class also provides an iterator which can be used to iterate
+    over all properties.
+    eg::
+
+        proxy = Proxy(proxy=smproxy)
+        for property in proxy:
+            print property
+
+
+    For advanced users:
+    This is a python class that wraps a vtkSMProxy.. Makes it easier to
+    set/get properties.
+    Instead of::
+
+        proxy.GetProperty("Foo").SetElement(0, 1)
+        proxy.GetProperty("Foo").SetElement(0, 2)
+
+    you can do::
+
+        proxy.Foo = (1,2)
+
+    or
+
+        proxy.Foo.SetData((1,2))
+
+    or
+
+        proxy.Foo[0:2] = (1,2)
+
+    Instead of::
+
+        proxy.GetProperty("Foo").GetElement(0)
+
+    you can do::
+
+        proxy.Foo.GetData()[0]
+
+    or
+
+        proxy.Foo[0]
+
+    For proxy properties, you can use append:
+     proxy.GetProperty("Bar").AddProxy(foo)
+    you can do:
+     proxy.Bar.append(foo)
+    Properties support most of the list API. See VectorProperty and
+    ProxyProperty documentation for details.
+
+    Please note that some of the methods accessible through the Proxy
+    class are not listed by help() because the Proxy objects forward
+    unresolved attributes to the underlying object. To get the full list,
+    see also dir(proxy.SMProxy). See also the doxygen based documentation
+    of the vtkSMProxy C++ class.
+    """" code nil (reparse-symbol indented_block_body) [4685 6518])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6537 6541])
+                        ("args" variable nil (reparse-symbol function_parameters) [6543 6549]))                      ) (reparse-symbol indented_block_body) [6524 8289])
+                    ("__setattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8310 8314])
+                        ("name" variable nil (reparse-symbol function_parameters) [8316 8320])
+                        ("value" variable nil (reparse-symbol function_parameters) [8322 8327]))                      ) (reparse-symbol indented_block_body) [8294 8880])
+                    ("add_attribute" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8903 8907])
+                        ("name" variable nil (reparse-symbol function_parameters) [8909 8913])
+                        ("value" variable nil (reparse-symbol function_parameters) [8915 8920]))                      ) (reparse-symbol indented_block_body) [8885 8959])
+                    ("__del__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8976 8980]))                      ) (reparse-symbol indented_block_body) [8964 9498])
+                    ("InitializeFromProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [9527 9531])
+                        ("aProxy" variable nil (reparse-symbol function_parameters) [9533 9539])
+                        ("update" variable nil (reparse-symbol function_parameters) [9541 9547]))                      ) (reparse-symbol indented_block_body) [9503 9885])
+                    ("Initialize" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [9905 9909]))                      ) (reparse-symbol indented_block_body) [9890 9984])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10000 10004])
+                        ("other" variable nil (reparse-symbol function_parameters) [10006 10011]))                      ) (reparse-symbol indented_block_body) [9989 10337])
+                    ("__ne__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10353 10357])
+                        ("other" variable nil (reparse-symbol function_parameters) [10359 10364]))                      ) (reparse-symbol indented_block_body) [10342 10471])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10489 10493]))                      ) (reparse-symbol indented_block_body) [10476 10584])
+                    ("SetPropertyWithName" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10613 10617])
+                        ("pname" variable nil (reparse-symbol function_parameters) [10619 10624])
+                        ("arg" variable nil (reparse-symbol function_parameters) [10626 10629]))                      ) (reparse-symbol indented_block_body) [10589 10900])
+                    ("GetPropertyValue" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10926 10930])
+                        ("name" variable nil (reparse-symbol function_parameters) [10932 10936]))                      ) (reparse-symbol indented_block_body) [10905 11735])
+                    ("GetProperty" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [11756 11760])
+                        ("name" variable nil (reparse-symbol function_parameters) [11762 11766]))                      ) (reparse-symbol indented_block_body) [11740 12564])
+                    ("ListProperties" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [12588 12592]))                      ) (reparse-symbol indented_block_body) [12569 12898])
+                    ("__ConvertArgumentsAndCall" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [12933 12937])
+                        ("args" variable nil (reparse-symbol function_parameters) [12939 12944]))                      ) (reparse-symbol indented_block_body) [12903 13680])
+                    ("__GetActiveCamera" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [13707 13711]))                      ) (reparse-symbol indented_block_body) [13685 14182])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [14203 14207])
+                        ("name" variable nil (reparse-symbol function_parameters) [14209 14213]))                      ) (reparse-symbol indented_block_body) [14187 15041]))                  
+                :type "class")
+                nil [4660 15041])
+            ("SourceProxy" type
+               (:superclasses ("Proxy")
+                :members 
+                  ( (""""Proxy for a source object. This class adds a few methods to Proxy
+    that are specific to sources. It also provides access to the output
+    ports. Output ports can be accessed by name or index:
+    > op = source[0]
+    or
+    > op = source['some name'].
+    """" code nil (reparse-symbol indented_block_body) [15072 15338])
+                    ("UpdatePipeline" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [15362 15366])
+                        ("time" variable nil (reparse-symbol function_parameters) [15368 15372]))                      ) (reparse-symbol indented_block_body) [15343 15897])
+                    ("FileNameChanged" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [15922 15926]))                      ) (reparse-symbol indented_block_body) [15902 16035])
+                    ("UpdatePipelineInformation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [16070 16074]))                      ) (reparse-symbol indented_block_body) [16040 16256])
+                    ("GetDataInformation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [16284 16288])
+                        ("idx" variable nil (reparse-symbol function_parameters) [16290 16293]))                      ) (reparse-symbol indented_block_body) [16261 16605])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [16626 16630])
+                        ("idx" variable nil (reparse-symbol function_parameters) [16632 16635]))                      ) (reparse-symbol indented_block_body) [16610 17244])
+                    ("GetPointDataInformation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [17277 17281]))                      ) (reparse-symbol indented_block_body) [17249 17449])
+                    ("GetCellDataInformation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [17481 17485]))                      ) (reparse-symbol indented_block_body) [17454 17651])
+                    ("GetFieldDataInformation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [17684 17688]))                      ) (reparse-symbol indented_block_body) [17656 17855])
+                    ("PointData" variable nil (reparse-symbol indented_block_body) [17860 17951])
+                    ("CellData" variable nil (reparse-symbol indented_block_body) [17956 18044])
+                    ("FieldData" variable nil (reparse-symbol indented_block_body) [18049 18140]))                  
+                :type "class")
+                nil [15042 18141])
+            ("ExodusIIReaderProxy" type
+               (:superclasses ("SourceProxy")
+                :members 
+                  ( (""""Special class to define convenience functions for array
+    selection."""" code nil (reparse-symbol indented_block_body) [18187 18263])
+                    ("if" code nil (reparse-symbol indented_block_body) [18269 19091]))                  
+                :type "class")
+                nil [18143 19091])
+            ("ViewLayoutProxy" type
+               (:superclasses ("Proxy")
+                :members 
+                  ( (""""Special class to define convenience methods for View Layout"""" code nil (reparse-symbol indented_block_body) [19126 19191])
+                    ("SplitViewHorizontal" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19221 19225])
+                        ("view" variable nil (reparse-symbol function_parameters) [19227 19231])
+                        ("fraction" variable nil (reparse-symbol function_parameters) [19233 19241]))                      ) (reparse-symbol indented_block_body) [19197 19899])
+                    ("SplitViewVertical" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19926 19930])
+                        ("view" variable nil (reparse-symbol function_parameters) [19932 19936])
+                        ("fraction" variable nil (reparse-symbol function_parameters) [19943 19951]))                      ) (reparse-symbol indented_block_body) [19904 20661])
+                    ("AssignView" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [20681 20685])
+                        ("location" variable nil (reparse-symbol function_parameters) [20687 20695])
+                        ("view" variable nil (reparse-symbol function_parameters) [20697 20701]))                      ) (reparse-symbol indented_block_body) [20666 21013])
+                    ("GetViewLocation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [21038 21042])
+                        ("view" variable nil (reparse-symbol function_parameters) [21044 21048]))                      ) (reparse-symbol indented_block_body) [21018 21169]))                  
+                :type "class")
+                nil [19092 21169])
+            ("Property" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Generic property object that provides access to one of the properties of
+    a server object. This class does not allow setting/getting any values but
+    provides an interface to update a property using __call__. This can be used
+    for command properties that correspond to function calls without arguments.
+    For example,
+    > proxy.Foo()
+    would push a Foo property which may cause the proxy to call a Foo method
+    on the actual VTK object.
+
+    For advanced users:
+    Python wrapper around a vtkSMProperty with a simple interface.
+    In addition to all method provided by vtkSMProperty (obtained by
+    forwarding unknown attributes requests to the underlying SMProxy),
+    Property and sub-class provide a list API.
+
+    Please note that some of the methods accessible through the Property
+    class are not listed by help() because the Property objects forward
+    unresolved attributes to the underlying object. To get the full list,
+    see also dir(proxy.SMProperty). See also the doxygen based documentation
+    of the vtkSMProperty C++ class.
+    """" code nil (reparse-symbol indented_block_body) [21198 22273])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [22291 22295])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [22297 22302])
+                        ("smproperty" variable nil (reparse-symbol function_parameters) [22304 22314]))                      ) (reparse-symbol indented_block_body) [22278 22472])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [22490 22494]))                      ) (reparse-symbol indented_block_body) [22477 23002])
+                    ("__call__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [23020 23024]))                      ) (reparse-symbol indented_block_body) [23007 23269])
+                    ("_FindPropertyName" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [23296 23300]))                      ) (reparse-symbol indented_block_body) [23274 23407])
+                    ("_UpdateProperty" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [23432 23436]))                      ) (reparse-symbol indented_block_body) [23412 23986])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [24007 24011])
+                        ("name" variable nil (reparse-symbol function_parameters) [24013 24017]))                      ) (reparse-symbol indented_block_body) [23991 24132])
+                    ("Name" variable nil (reparse-symbol indented_block_body) [24137 24231]))                  
+                :type "class")
+                nil [21170 24232])
+            ("GenericIterator" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Iterator for container type objects"""" code nil (reparse-symbol indented_block_body) [24268 24309])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [24328 24332])
+                        ("obj" variable nil (reparse-symbol function_parameters) [24334 24337]))                      ) (reparse-symbol indented_block_body) [24315 24389])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [24407 24411]))                      ) (reparse-symbol indented_block_body) [24394 24434])
+                    ("next" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [24448 24452]))                      ) (reparse-symbol indented_block_body) [24439 24612]))                  
+                :type "class")
+                nil [24233 24612])
+            ("VectorProperty" type
+               (:superclasses ("Property")
+                :members 
+                  ( (""""A VectorProperty provides access to one or more values. You can use
+    a slice to get one or more property values:
+    > val = property[2]
+    or
+    > vals = property[0:5:2]
+    You can use a slice to set one or more property values:
+    > property[2] = val
+    or
+    > property[1:3] = (1,2)
+    """" code nil (reparse-symbol indented_block_body) [24649 24954])
+                    ("ConvertValue" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [24976 24980])
+                        ("value" variable nil (reparse-symbol function_parameters) [24982 24987]))                      ) (reparse-symbol indented_block_body) [24959 25011])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [25028 25032]))                      ) (reparse-symbol indented_block_body) [25016 25134])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [25152 25156]))                      ) (reparse-symbol indented_block_body) [25139 25245])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [25266 25270])
+                        ("idx" variable nil (reparse-symbol function_parameters) [25272 25275])
+                        ("value" variable nil (reparse-symbol function_parameters) [25277 25282]))                      ) (reparse-symbol indented_block_body) [25250 25792])
+                    ("GetElement" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [25812 25816])
+                        ("index" variable nil (reparse-symbol function_parameters) [25818 25823]))                      ) (reparse-symbol indented_block_body) [25797 25875])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [25896 25900])
+                        ("idx" variable nil (reparse-symbol function_parameters) [25902 25905]))                      ) (reparse-symbol indented_block_body) [25880 26465])
+                    ("GetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [26482 26486]))                      ) (reparse-symbol indented_block_body) [26470 26804])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [26821 26825])
+                        ("values" variable nil (reparse-symbol function_parameters) [26827 26833]))                      ) (reparse-symbol indented_block_body) [26809 27473])
+                    ("Clear" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27488 27492]))                      ) (reparse-symbol indented_block_body) [27478 27607]))                  
+                :type "class")
+                nil [24613 27607])
+            ("DoubleMapProperty" type
+               (:superclasses ("Property")
+                :members 
+                  ( (""""A DoubleMapProperty provides access to a map of double vector values."""" code nil (reparse-symbol indented_block_body) [27647 27722])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27740 27744]))                      ) (reparse-symbol indented_block_body) [27728 27846])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27867 27871])
+                        ("key" variable nil (reparse-symbol function_parameters) [27873 27876]))                      ) (reparse-symbol indented_block_body) [27851 27956])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27977 27981])
+                        ("key" variable nil (reparse-symbol function_parameters) [27983 27986])
+                        ("values" variable nil (reparse-symbol function_parameters) [27988 27994]))                      ) (reparse-symbol indented_block_body) [27961 28173])
+                    (""""Returns True if the property contains key."""" code nil (reparse-symbol indented_block_body) [28208 28256])
+                    (""""Returns the keys."""" code nil (reparse-symbol indented_block_body) [28313 28336])
+                    (""""Returns all the elements as a dictionary"""" code nil (reparse-symbol indented_block_body) [28399 28445])
+                    ("data" variable nil (reparse-symbol indented_block_body) [28448 28457])
+                    ("iter" variable nil (reparse-symbol indented_block_body) [28460 28496])
+                    ("return" code nil (reparse-symbol indented_block_body) [28780 28791])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [28809 28813])
+                        ("elements" variable nil (reparse-symbol function_parameters) [28815 28823]))                      ) (reparse-symbol indented_block_body) [28797 28871])
+                    ("self" code nil (reparse-symbol indented_block_body) [28909 28921])
+                    ("Clear" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [29129 29133]))                      ) (reparse-symbol indented_block_body) [29119 29243]))                  
+                :type "class")
+                nil [27608 29243])
+            ("ColorArrayProperty" type
+               (:superclasses ("VectorProperty")
+                :members 
+                  ( (""""This subclass of VectorProperty handles setting of the array to
+    color by. It handles attribute type as well as well array name."""" code nil (reparse-symbol indented_block_body) [29290 29427])
+                    ("GetAvailable" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [29450 29454]))                      ) (reparse-symbol indented_block_body) [29433 29795])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [29812 29816])
+                        ("value" variable nil (reparse-symbol function_parameters) [29818 29823]))                      ) (reparse-symbol indented_block_body) [29800 31359])
+                    ("__str__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [31376 31380]))                      ) (reparse-symbol indented_block_body) [31364 31730])
+                    ("Available" variable nil (reparse-symbol indented_block_body) [31735 31869]))                  
+                :type "class")
+                nil [29244 31870])
+            ("EnumerationProperty" type
+               (:superclasses ("VectorProperty")
+                :members 
+                  ( (""""Subclass of VectorProperty that is applicable for enumeration type
+    properties."""" code nil (reparse-symbol indented_block_body) [31919 32007])
+                    ("GetElement" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [32028 32032])
+                        ("index" variable nil (reparse-symbol function_parameters) [32034 32039]))                      ) (reparse-symbol indented_block_body) [32013 32421])
+                    ("ConvertValue" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [32443 32447])
+                        ("value" variable nil (reparse-symbol function_parameters) [32449 32454]))                      ) (reparse-symbol indented_block_body) [32426 32864])
+                    ("GetAvailable" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [32886 32890]))                      ) (reparse-symbol indented_block_body) [32869 33154])
+                    ("Available" variable nil (reparse-symbol indented_block_body) [33159 33308]))                  
+                :type "class")
+                nil [31872 33309])
+            ("FileNameProperty" type
+               (:superclasses ("VectorProperty")
+                :members 
+                  ( (""""Property to set/get one or more file names.
+    This property updates the pipeline information everytime its value changes.
+    This is used to keep the array lists up to date."""" code nil (reparse-symbol indented_block_body) [33355 33537])
+                    ("_UpdateProperty" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [33563 33567]))                      ) (reparse-symbol indented_block_body) [33543 33711]))                  
+                :type "class")
+                nil [33311 33711])
+            ("ArraySelectionProperty" type
+               (:superclasses ("VectorProperty")
+                :members 
+                  ( (""Property to select an array to be processed by a filter."" code nil (reparse-symbol indented_block_body) [33762 33820])
+                    ("GetAssociation" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [33845 33849]))                      ) (reparse-symbol indented_block_body) [33826 34065])
+                    ("GetArrayName" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [34087 34091]))                      ) (reparse-symbol indented_block_body) [34070 34128])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [34145 34149]))                      ) (reparse-symbol indented_block_body) [34133 34215])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [34236 34240])
+                        ("idx" variable nil (reparse-symbol function_parameters) [34242 34245])
+                        ("value" variable nil (reparse-symbol function_parameters) [34247 34252]))                      ) (reparse-symbol indented_block_body) [34220 34336])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [34357 34361])
+                        ("idx" variable nil (reparse-symbol function_parameters) [34363 34366]))                      ) (reparse-symbol indented_block_body) [34341 35021])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [35038 35042])
+                        ("values" variable nil (reparse-symbol function_parameters) [35044 35050]))                      ) (reparse-symbol indented_block_body) [35026 35859])
+                    ("UpdateDefault" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [35882 35886]))                      ) (reparse-symbol indented_block_body) [35864 36363]))                  
+                :type "class")
+                nil [33712 36363])
+            ("ArrayListProperty" type
+               (:superclasses ("VectorProperty")
+                :members 
+                  ( (""""This property provides a simpler interface for selecting arrays.
+    Simply assign a list of arrays that should be loaded by the reader.
+    Use the Available property to get a list of available arrays."""" code nil (reparse-symbol indented_block_body) [36409 36617])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [36636 36640])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [36642 36647])
+                        ("smproperty" variable nil (reparse-symbol function_parameters) [36649 36659]))                      ) (reparse-symbol indented_block_body) [36623 36746])
+                    ("GetAvailable" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [36768 36772]))                      ) (reparse-symbol indented_block_body) [36751 36998])
+                    ("Available" variable nil (reparse-symbol indented_block_body) [37003 37143])
+                    ("SelectAll" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37163 37167]))                      ) (reparse-symbol indented_block_body) [37149 37237])
+                    ("DeselectAll" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37258 37262]))                      ) (reparse-symbol indented_block_body) [37242 37322])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37340 37344]))                      ) (reparse-symbol indented_block_body) [37327 37433])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37450 37454]))                      ) (reparse-symbol indented_block_body) [37438 37538])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37559 37563])
+                        ("idx" variable nil (reparse-symbol function_parameters) [37565 37568])
+                        ("value" variable nil (reparse-symbol function_parameters) [37570 37575]))                      ) (reparse-symbol indented_block_body) [37543 38051])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [38072 38076])
+                        ("idx" variable nil (reparse-symbol function_parameters) [38078 38081]))                      ) (reparse-symbol indented_block_body) [38056 38532])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [38549 38553])
+                        ("values" variable nil (reparse-symbol function_parameters) [38555 38561]))                      ) (reparse-symbol indented_block_body) [38537 39926])
+                    ("GetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [39943 39947]))                      ) (reparse-symbol indented_block_body) [39931 40434]))                  
+                :type "class")
+                nil [36364 40434])
+            ("ProxyProperty" type
+               (:superclasses ("Property")
+                :members 
+                  ( (""""A ProxyProperty provides access to one or more proxies. You can use
+    a slice to get one or more property values:
+    > proxy = property[2]
+    or
+    > proxies = property[0:5:2]
+    You can use a slice to set one or more property values:
+    > property[2] = proxy
+    or
+    > property[1:3] = (proxy1, proxy2)
+    You can also append and delete:
+    > property.append(proxy)
+    and
+    > del property[1:2]
+
+    You can also remove all elements with Clear().
+
+    Note that some properties expect only 1 proxy and will complain if
+    you set the number of values to be something else.
+    """" code nil (reparse-symbol indented_block_body) [40470 41069])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [41087 41091])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [41093 41098])
+                        ("smproperty" variable nil (reparse-symbol function_parameters) [41100 41110]))                      ) (reparse-symbol indented_block_body) [41074 42261])
+                    ("GetAvailable" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [42283 42287]))                      ) (reparse-symbol indented_block_body) [42266 42768])
+                    ("Available" variable nil (reparse-symbol indented_block_body) [42773 43044])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43063 43067]))                      ) (reparse-symbol indented_block_body) [43050 43156])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43173 43177]))                      ) (reparse-symbol indented_block_body) [43161 43278])
+                    ("remove" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43294 43298])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [43300 43305]))                      ) (reparse-symbol indented_block_body) [43283 43464])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43485 43489])
+                        ("idx" variable nil (reparse-symbol function_parameters) [43491 43494])
+                        ("value" variable nil (reparse-symbol function_parameters) [43496 43501]))                      ) (reparse-symbol indented_block_body) [43469 43947])
+                    ("__delitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43968 43972])
+                        ("idx" variable nil (reparse-symbol function_parameters) [43973 43976]))                      ) (reparse-symbol indented_block_body) [43952 44596])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [44617 44621])
+                        ("idx" variable nil (reparse-symbol function_parameters) [44623 44626]))                      ) (reparse-symbol indented_block_body) [44601 45090])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45111 45115])
+                        ("name" variable nil (reparse-symbol function_parameters) [45117 45121]))                      ) (reparse-symbol indented_block_body) [45095 45236])
+                    ("index" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45251 45255])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [45257 45262]))                      ) (reparse-symbol indented_block_body) [45241 45435])
+                    ("append" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45451 45455])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [45457 45462]))                      ) (reparse-symbol indented_block_body) [45440 45602])
+                    ("GetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45619 45623]))                      ) (reparse-symbol indented_block_body) [45607 45980])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45997 46001])
+                        ("values" variable nil (reparse-symbol function_parameters) [46003 46009]))                      ) (reparse-symbol indented_block_body) [45985 46832])
+                    ("Clear" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [46847 46851]))                      ) (reparse-symbol indented_block_body) [46837 46960]))                  
+                :type "class")
+                nil [40435 46960])
+            ("InputProperty" type
+               (:superclasses ("ProxyProperty")
+                :members 
+                  ( (""""An InputProperty allows making pipeline connections. You can set either
+    a source proxy or an OutputProperty to an input property:
+
+    > property[0] = proxy
+    or
+    > property[0] = OuputPort(proxy, 1)
+
+    > property.append(proxy)
+    or
+    > property.append(OutputPort(proxy, 0))
+    """" code nil (reparse-symbol indented_block_body) [47001 47300])
+                    ("__setitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [47321 47325])
+                        ("idx" variable nil (reparse-symbol function_parameters) [47327 47330])
+                        ("value" variable nil (reparse-symbol function_parameters) [47332 47337]))                      ) (reparse-symbol indented_block_body) [47305 47853])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [47874 47878])
+                        ("idx" variable nil (reparse-symbol function_parameters) [47880 47883]))                      ) (reparse-symbol indented_block_body) [47858 48625])
+                    ("append" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [48641 48645])
+                        ("value" variable nil (reparse-symbol function_parameters) [48647 48652]))                      ) (reparse-symbol indented_block_body) [48630 48863])
+                    ("GetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [48880 48884]))                      ) (reparse-symbol indented_block_body) [48868 49381])
+                    ("SetData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [49398 49402])
+                        ("values" variable nil (reparse-symbol function_parameters) [49404 49410]))                      ) (reparse-symbol indented_block_body) [49386 49977])
+                    ("_UpdateProperty" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50002 50006]))                      ) (reparse-symbol indented_block_body) [49982 50276]))                  
+                :type "class")
+                nil [46961 50276])
+            ("DataInformation" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""DataInformation is a contained for meta-data associated with an
+    output data.
+
+    DataInformation is a python wrapper around a vtkPVDataInformation.
+    In addition to proving all methods of a vtkPVDataInformation, it provides
+    a few convenience methods.
+
+    Please note that some of the methods accessible through the DataInformation
+    class are not listed by help() because the DataInformation objects forward
+    unresolved attributes to the underlying object. To get the full list,
+    see also dir(proxy.DataInformation).
+    See also the doxygen based documentation of the vtkPVDataInformation C++
+    class.
+    """" code nil (reparse-symbol indented_block_body) [50313 50948])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50966 50970])
+                        ("dataInformation" variable nil (reparse-symbol function_parameters) [50972 50987])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [50989 50994])
+                        ("idx" variable nil (reparse-symbol function_parameters) [50996 50999]))                      ) (reparse-symbol indented_block_body) [50953 51213])
+                    ("Update" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [51229 51233]))                      ) (reparse-symbol indented_block_body) [51218 51705])
+                    ("GetDataSetType" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [51729 51733]))                      ) (reparse-symbol indented_block_body) [51710 52118])
+                    ("GetDataSetTypeAsString" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [52150 52154]))                      ) (reparse-symbol indented_block_body) [52123 52367])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [52388 52392])
+                        ("name" variable nil (reparse-symbol function_parameters) [52394 52398]))                      ) (reparse-symbol indented_block_body) [52372 52698]))                  
+                :type "class")
+                nil [50278 52698])
+            ("ArrayInformation" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Meta-information associated with an array. Use the Name
+    attribute to get the array name.
+
+    Please note that some of the methods accessible through the ArrayInformation
+    class are not listed by help() because the ArrayInformation objects forward
+    unresolved attributes to the underlying object.
+    See the doxygen based documentation of the vtkPVArrayInformation C++
+    class for a full list.
+    """" code nil (reparse-symbol indented_block_body) [52735 53152])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53170 53174])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [53176 53181])
+                        ("field" variable nil (reparse-symbol function_parameters) [53183 53188])
+                        ("name" variable nil (reparse-symbol function_parameters) [53190 53194]))                      ) (reparse-symbol indented_block_body) [53157 53280])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53301 53305])
+                        ("name" variable nil (reparse-symbol function_parameters) [53307 53311]))                      ) (reparse-symbol indented_block_body) [53285 53524])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53542 53546]))                      ) (reparse-symbol indented_block_body) [53529 53647])
+                    ("GetRange" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53665 53669])
+                        ("component" variable nil (reparse-symbol function_parameters) [53671 53680]))                      ) (reparse-symbol indented_block_body) [53652 53930])
+                    ("if" code nil (reparse-symbol indented_block_body) [53935 54062]))                  
+                :type "class")
+                nil [52699 54062])
+            ("FieldDataInformationIterator" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Iterator for FieldDataInformation"""" code nil (reparse-symbol indented_block_body) [54111 54150])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [54169 54173])
+                        ("info" variable nil (reparse-symbol function_parameters) [54175 54179])
+                        ("items" variable nil (reparse-symbol function_parameters) [54181 54186]))                      ) (reparse-symbol indented_block_body) [54156 54286])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [54304 54308]))                      ) (reparse-symbol indented_block_body) [54291 54331])
+                    ("next" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [54345 54349]))                      ) (reparse-symbol indented_block_body) [54336 54631]))                  
+                :type "class")
+                nil [54063 54631])
+            ("FieldDataInformation" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Meta-data for a field of an output object (point data, cell data etc...).
+    Provides easy access to the arrays using the slice interface:
+    > narrays = len(field_info)
+    > for i in range(narrays):
+    >   array_info = field_info[i]
+
+    Full slice interface is supported:
+    > arrays = field_info[0:5:3]
+    where arrays is a list.
+
+    Array access by name is also possible:
+    > array_info = field_info['Temperature']
+
+    The number of arrays can also be accessed using the NumberOfArrays
+    property.
+    """" code nil (reparse-symbol indented_block_body) [54673 55197])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [55215 55219])
+                        ("proxy" variable nil (reparse-symbol function_parameters) [55221 55226])
+                        ("idx" variable nil (reparse-symbol function_parameters) [55228 55231])
+                        ("field" variable nil (reparse-symbol function_parameters) [55233 55238]))                      ) (reparse-symbol indented_block_body) [55202 55329])
+                    ("GetFieldData" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [55351 55355]))                      ) (reparse-symbol indented_block_body) [55334 55565])
+                    ("GetNumberOfArrays" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [55592 55596]))                      ) (reparse-symbol indented_block_body) [55570 55734])
+                    ("GetArray" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [55752 55756])
+                        ("idx" variable nil (reparse-symbol function_parameters) [55758 55761]))                      ) (reparse-symbol indented_block_body) [55739 56283])
+                    ("__len__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [56300 56304]))                      ) (reparse-symbol indented_block_body) [56288 56391])
+                    ("__getitem__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [56412 56416])
+                        ("idx" variable nil (reparse-symbol function_parameters) [56418 56421]))                      ) (reparse-symbol indented_block_body) [56396 56754])
+                    ("keys" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [56768 56772]))                      ) (reparse-symbol indented_block_body) [56759 56989])
+                    ("values" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57005 57009]))                      ) (reparse-symbol indented_block_body) [56994 57219])
+                    ("iteritems" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57238 57242]))                      ) (reparse-symbol indented_block_body) [57224 57352])
+                    ("items" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57367 57371]))                      ) (reparse-symbol indented_block_body) [57357 57617])
+                    ("has_key" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57634 57638])
+                        ("key" variable nil (reparse-symbol function_parameters) [57640 57643]))                      ) (reparse-symbol indented_block_body) [57622 57773])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57791 57795]))                      ) (reparse-symbol indented_block_body) [57778 57899])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [57920 57924])
+                        ("name" variable nil (reparse-symbol function_parameters) [57926 57930]))                      ) (reparse-symbol indented_block_body) [57904 58187])
+                    ("NumberOfArrays" variable nil (reparse-symbol indented_block_body) [58192 58281]))                  
+                :type "class")
+                nil [54633 58282])
+            ("OutputPort" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [58298 58303])
+                ("outputPort" variable nil (reparse-symbol function_parameters) [58305 58315]))              ) nil [58283 58755])
+            ("ProxyManager" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""When running scripts from the python shell in the ParaView application,
+    registering proxies with the proxy manager is the only mechanism to
+    notify the graphical user interface (GUI) that a proxy
+    exists. Therefore, unless a proxy is registered, it will not show up in
+    the user interface. Also, the proxy manager is the only way to get
+    access to proxies created using the GUI. Proxies created using the GUI
+    are automatically registered under an appropriate group (sources,
+    filters, representations and views). To get access to these objects,
+    you can use proxyManager.GetProxy(group, name). The name is the same
+    as the name shown in the pipeline browser.
+
+    This class is a python wrapper for vtkSMProxyManager. Note that the
+    underlying vtkSMProxyManager is a singleton. All instances of this
+    class will refer to the same object. In addition to all methods provided by
+    vtkSMProxyManager (all unknown attribute requests are forwarded
+    to the vtkSMProxyManager), this class provides several convenience
+    methods.
+
+    Please note that some of the methods accessible through the ProxyManager
+    class are not listed by help() because the ProxyManager objects forwards
+    unresolved attributes to the underlying object. To get the full list,
+    see also dir(proxy.SMProxyManager). See also the doxygen based documentation
+    of the vtkSMProxyManager C++ class.
+    """" code nil (reparse-symbol indented_block_body) [58788 60212])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [60231 60235])
+                        ("session" variable nil (reparse-symbol function_parameters) [60237 60244]))                      ) (reparse-symbol indented_block_body) [60218 60522])
+                    ("RegisterProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [60545 60549])
+                        ("group" variable nil (reparse-symbol function_parameters) [60551 60556])
+                        ("name" variable nil (reparse-symbol function_parameters) [60558 60562])
+                        ("aProxy" variable nil (reparse-symbol function_parameters) [60564 60570]))                      ) (reparse-symbol indented_block_body) [60527 60857])
+                    ("NewProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [60875 60879])
+                        ("group" variable nil (reparse-symbol function_parameters) [60881 60886])
+                        ("name" variable nil (reparse-symbol function_parameters) [60888 60892]))                      ) (reparse-symbol indented_block_body) [60862 61380])
+                    ("GetProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [61398 61402])
+                        ("group" variable nil (reparse-symbol function_parameters) [61404 61409])
+                        ("name" variable nil (reparse-symbol function_parameters) [61411 61415]))                      ) (reparse-symbol indented_block_body) [61385 61683])
+                    ("GetPrototypeProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [61710 61714])
+                        ("group" variable nil (reparse-symbol function_parameters) [61716 61721])
+                        ("name" variable nil (reparse-symbol function_parameters) [61723 61727]))                      ) (reparse-symbol indented_block_body) [61688 62096])
+                    ("GetProxiesInGroup" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [62123 62127])
+                        ("groupname" variable nil (reparse-symbol function_parameters) [62129 62138]))                      ) (reparse-symbol indented_block_body) [62101 62399])
+                    ("UnRegisterProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [62424 62428])
+                        ("groupname" variable nil (reparse-symbol function_parameters) [62430 62439])
+                        ("proxyname" variable nil (reparse-symbol function_parameters) [62441 62450])
+                        ("aProxy" variable nil (reparse-symbol function_parameters) [62452 62458]))                      ) (reparse-symbol indented_block_body) [62404 62740])
+                    ("GetProxies" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [62760 62764])
+                        ("groupname" variable nil (reparse-symbol function_parameters) [62766 62775])
+                        ("proxyname" variable nil (reparse-symbol function_parameters) [62777 62786]))                      ) (reparse-symbol indented_block_body) [62745 63579])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [63597 63601]))                      ) (reparse-symbol indented_block_body) [63584 63719])
+                    ("NewGroupIterator" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [63745 63749])
+                        ("group_name" variable nil (reparse-symbol function_parameters) [63751 63761]))                      ) (reparse-symbol indented_block_body) [63724 64032])
+                    ("NewDefinitionIterator" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [64063 64067])
+                        ("groupname" variable nil (reparse-symbol function_parameters) [64069 64078]))                      ) (reparse-symbol indented_block_body) [64037 64532])
+                    ("__ConvertArgumentsAndCall" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [64567 64571])
+                        ("args" variable nil (reparse-symbol function_parameters) [64573 64578]))                      ) (reparse-symbol indented_block_body) [64537 65031])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [65052 65056])
+                        ("name" variable nil (reparse-symbol function_parameters) [65058 65062]))                      ) (reparse-symbol indented_block_body) [65036 65360])
+                    ("LoadState" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [65379 65383])
+                        ("filename" variable nil (reparse-symbol function_parameters) [65385 65393])
+                        ("loader" variable nil (reparse-symbol function_parameters) [65395 65401]))                      ) (reparse-symbol indented_block_body) [65365 65470])
+                    ("SaveState" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [65489 65493])
+                        ("filename" variable nil (reparse-symbol function_parameters) [65495 65503]))                      ) (reparse-symbol indented_block_body) [65475 65557]))                  
+                :type "class")
+                nil [58756 65557])
+            ("PropertyIterator" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Wrapper for a vtkSMPropertyIterator class to satisfy
+       the python iterator protocol. Note that the list of
+       properties can also be obtained from the class object's
+       dictionary.
+       See the doxygen documentation for vtkSMPropertyIterator C++
+       class for details.
+       """" code nil (reparse-symbol indented_block_body) [65594 65894])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [65913 65917])
+                        ("aProxy" variable nil (reparse-symbol function_parameters) [65919 65925]))                      ) (reparse-symbol indented_block_body) [65900 66178])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [66196 66200]))                      ) (reparse-symbol indented_block_body) [66183 66223])
+                    ("next" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [66237 66241]))                      ) (reparse-symbol indented_block_body) [66228 66594])
+                    ("GetProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [66612 66616]))                      ) (reparse-symbol indented_block_body) [66599 66740])
+                    ("GetKey" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [66756 66760]))                      ) (reparse-symbol indented_block_body) [66745 66881])
+                    ("GetProperty" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [66902 66906]))                      ) (reparse-symbol indented_block_body) [66886 67031])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [67052 67056])
+                        ("name" variable nil (reparse-symbol function_parameters) [67058 67062]))                      ) (reparse-symbol indented_block_body) [67036 67176]))                  
+                :type "class")
+                nil [65558 67176])
+            ("ProxyDefinitionIterator" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Wrapper for a vtkPVProxyDefinitionIterator class to satisfy
+       the python iterator protocol.
+       See the doxygen documentation of the vtkPVProxyDefinitionIterator
+       C++ class for more information."""" code nil (reparse-symbol indented_block_body) [67220 67434])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [67452 67456])
+                        ("iter" variable nil (reparse-symbol function_parameters) [67458 67462]))                      ) (reparse-symbol indented_block_body) [67439 67663])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [67681 67685]))                      ) (reparse-symbol indented_block_body) [67668 67708])
+                    ("next" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [67722 67726]))                      ) (reparse-symbol indented_block_body) [67713 68064])
+                    ("GetProxyName" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [68086 68090]))                      ) (reparse-symbol indented_block_body) [68069 68219])
+                    ("GetGroup" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [68237 68241]))                      ) (reparse-symbol indented_block_body) [68224 68374])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [68395 68399])
+                        ("name" variable nil (reparse-symbol function_parameters) [68401 68405]))                      ) (reparse-symbol indented_block_body) [68379 68526]))                  
+                :type "class")
+                nil [67177 68526])
+            ("ProxyIterator" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""Wrapper for a vtkSMProxyIterator class to satisfy the
+     python iterator protocol.
+     See the doxygen documentation of vtkSMProxyIterator C++ class for
+     more information.
+     """" code nil (reparse-symbol indented_block_body) [68561 68751])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [68769 68773]))                      ) (reparse-symbol indented_block_body) [68756 68993])
+                    ("__iter__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69011 69015]))                      ) (reparse-symbol indented_block_body) [68998 69038])
+                    ("next" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69052 69056]))                      ) (reparse-symbol indented_block_body) [69043 69454])
+                    ("GetProxy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69472 69476]))                      ) (reparse-symbol indented_block_body) [69459 69576])
+                    ("GetKey" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69592 69596]))                      ) (reparse-symbol indented_block_body) [69581 69714])
+                    ("GetGroup" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69732 69736]))                      ) (reparse-symbol indented_block_body) [69719 69858])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [69879 69883])
+                        ("name" variable nil (reparse-symbol function_parameters) [69885 69889]))                      ) (reparse-symbol indented_block_body) [69863 70000]))                  
+                :type "class")
+                nil [68528 70000])
+            ("_update_definitions_callback" function (:arguments 
+              ( ("self" variable nil (reparse-symbol function_parameters) [70174 70178]))              ) nil [70141 70548])
+            ("Connection" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""
+      This is a python representation for a session/connection.
+    """" code nil (reparse-symbol indented_block_body) [70579 70654])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [70672 70676])
+                        ("connectionId" variable nil (reparse-symbol function_parameters) [70678 70690])
+                        ("session" variable nil (reparse-symbol function_parameters) [70692 70699]))                      ) (reparse-symbol indented_block_body) [70659 71424])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [71475 71479])
+                        ("other" variable nil (reparse-symbol function_parameters) [71481 71486]))                      ) (reparse-symbol indented_block_body) [71464 71585])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [71603 71607]))                      ) (reparse-symbol indented_block_body) [71590 71733])
+                    ("GetURI" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [71749 71753]))                      ) (reparse-symbol indented_block_body) [71738 71833])
+                    ("IsRemote" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [71851 71855]))                      ) (reparse-symbol indented_block_body) [71838 72059])
+                    ("GetNumberOfDataPartitions" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [72094 72098]))                      ) (reparse-symbol indented_block_body) [72064 72272])
+                    ("AttachDefinitionUpdater" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [72305 72309]))                      ) (reparse-symbol indented_block_body) [72277 72746])
+                    ("close" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [72761 72765]))                      ) (reparse-symbol indented_block_body) [72751 73088])
+                    ("__del__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [73105 73109]))                      ) (reparse-symbol indented_block_body) [73093 73159]))                  
+                :type "class")
+                nil [70549 73159])
+            ("SaveState" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [73174 73182]))              ) nil [73160 73336])
+            ("LoadState" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [73351 73359])
+                ("connection" variable nil (reparse-symbol function_parameters) [73361 73371]))              ) nil [73337 74071])
+            ("Connect" function (:arguments 
+              ( ("ds_host" variable nil (reparse-symbol function_parameters) [74084 74091])
+                ("ds_port" variable nil (reparse-symbol function_parameters) [74098 74105])
+                ("rs_host" variable nil (reparse-symbol function_parameters) [74113 74120])
+                ("rs_port" variable nil (reparse-symbol function_parameters) [74127 74134]))              ) nil [74072 75480])
+            ("ReverseConnect" function (:arguments 
+              ( ("port" variable nil (reparse-symbol function_parameters) [75500 75504]))              ) nil [75481 76340])
+            ("Disconnect" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [76356 76366]))              ) nil [76341 76616])
+            ("CreateProxy" function (:arguments 
+              ( ("xml_group" variable nil (reparse-symbol function_parameters) [76633 76642])
+                ("xml_name" variable nil (reparse-symbol function_parameters) [76644 76652])
+                ("session" variable nil (reparse-symbol function_parameters) [76654 76661]))              ) nil [76617 77254])
+            ("GetRenderView" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [77273 77283]))              ) nil [77255 77584])
+            ("GetRenderViews" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [77604 77614]))              ) nil [77585 77842])
+            ("GetContextViews" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [77863 77873]))              ) nil [77843 78106])
+            ("CreateRenderView" function (:arguments 
+              ( ("session" variable nil (reparse-symbol function_parameters) [78128 78135])
+                ("extraArgs" variable nil (reparse-symbol function_parameters) [78142 78153]))              ) nil [78107 78666])
+            ("_create_view" function (:arguments 
+              ( ("view_xml_name" variable nil (reparse-symbol function_parameters) [78684 78697])
+                ("session" variable nil (reparse-symbol function_parameters) [78699 78706])
+                ("extraArgs" variable nil (reparse-symbol function_parameters) [78713 78724]))              ) nil [78667 79507])
+            ("GetRepresentation" function (:arguments 
+              ( ("aProxy" variable nil (reparse-symbol function_parameters) [79530 79536])
+                ("view" variable nil (reparse-symbol function_parameters) [79538 79542]))              ) nil [79508 79698])
+            ("CreateRepresentation" function (:arguments 
+              ( ("aProxy" variable nil (reparse-symbol function_parameters) [79724 79730])
+                ("view" variable nil (reparse-symbol function_parameters) [79732 79736])
+                ("extraArgs" variable nil (reparse-symbol function_parameters) [79738 79749]))              ) nil [79699 81073])
+            ("_ModuleLoader" type
+               (:superclasses ("object")
+                :members 
+                  ( ("find_module" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [81123 81127])
+                        ("fullname" variable nil (reparse-symbol function_parameters) [81129 81137])
+                        ("path" variable nil (reparse-symbol function_parameters) [81139 81143]))                      ) (reparse-symbol indented_block_body) [81107 81263])
+                    ("load_module" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [81283 81287])
+                        ("fullname" variable nil (reparse-symbol function_parameters) [81289 81297]))                      ) (reparse-symbol indented_block_body) [81267 81826]))                  
+                :type "class")
+                nil [81074 81826])
+            ("LoadXML" function (:arguments 
+              ( ("xmlstring" variable nil (reparse-symbol function_parameters) [81839 81848]))              ) nil [81827 82002])
+            ("LoadPlugin" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [82019 82027])
+                ("remote" variable nil (reparse-symbol function_parameters) [82030 82036])
+                ("connection" variable nil (reparse-symbol function_parameters) [82043 82053]))              ) nil [82004 82905])
+            ("Fetch" function (:arguments 
+              ( ("input" variable nil (reparse-symbol function_parameters) [82917 82922])
+                ("arg1" variable nil (reparse-symbol function_parameters) [82924 82928])
+                ("arg2" variable nil (reparse-symbol function_parameters) [82935 82939])
+                ("idx" variable nil (reparse-symbol function_parameters) [82946 82949]))              ) nil [82907 86253])
+            ("AnimateReader" function (:arguments 
+              ( ("reader" variable nil (reparse-symbol function_parameters) [86272 86278])
+                ("view" variable nil (reparse-symbol function_parameters) [86280 86284])
+                ("filename" variable nil (reparse-symbol function_parameters) [86286 86294]))              ) nil [86254 88166])
+            ("GetProgressPrintingIsEnabled" function nil nil [88167 88246])
+            ("SetProgressPrintingEnabled" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [88278 88283]))              ) nil [88247 89139])
+            ("ToggleProgressPrinting" function nil nil [89140 89314])
+            ("Finalize" function nil nil [89315 89573])
+            ("_getPyProxy" function (:arguments 
+              ( ("smproxy" variable nil (reparse-symbol function_parameters) [89610 89617])
+                ("outputPort" variable nil (reparse-symbol function_parameters) [89619 89629]))              ) nil [89594 90476])
+            ("_makeUpdateCameraMethod" function (:arguments 
+              ( ("rv" variable nil (reparse-symbol function_parameters) [90505 90507]))              ) nil [90477 91004])
+            ("_createInitialize" function (:arguments 
+              ( ("group" variable nil (reparse-symbol function_parameters) [91027 91032])
+                ("name" variable nil (reparse-symbol function_parameters) [91034 91038]))              ) nil [91005 91765])
+            ("_createGetProperty" function (:arguments 
+              ( ("pName" variable nil (reparse-symbol function_parameters) [91789 91794]))              ) nil [91766 92108])
+            ("_createSetProperty" function (:arguments 
+              ( ("pName" variable nil (reparse-symbol function_parameters) [92132 92137]))              ) nil [92109 92349])
+            ("_findClassForProxy" function (:arguments 
+              ( ("xmlName" variable nil (reparse-symbol function_parameters) [92373 92380])
+                ("xmlGroup" variable nil (reparse-symbol function_parameters) [92382 92390]))              ) nil [92350 93468])
+            ("_printProgress" function (:arguments 
+              ( ("caller" variable nil (reparse-symbol function_parameters) [93488 93494])
+                ("event" variable nil (reparse-symbol function_parameters) [93496 93501]))              ) nil [93469 94604])
+            ("updateModules" function (:arguments 
+              ( ("m" variable nil (reparse-symbol function_parameters) [94623 94624]))              ) nil [94605 95450])
+            ("_createModules" function (:arguments 
+              ( ("m" variable nil (reparse-symbol function_parameters) [95470 95471]))              ) nil [95451 96296])
+            ("PVModule" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [96325 96329]))                  
+                :type "class")
+                nil [96297 96330])
+            ("_make_name_valid" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [96352 96356]))              ) nil [96331 96401])
+            ("createModule" function (:arguments 
+              ( ("groupName" variable nil (reparse-symbol function_parameters) [96419 96428])
+                ("mdl" variable nil (reparse-symbol function_parameters) [96430 96433]))              ) nil [96402 99587])
+            ("__determineGroup" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [99610 99615]))              ) nil [99589 100614])
+            ("__nameCounter" variable nil nil [100615 100633])
+            ("__determineName" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [100654 100659])
+                ("group" variable nil (reparse-symbol function_parameters) [100661 100666]))              ) nil [100634 100977])
+            ("__getName" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [100992 100997])
+                ("group" variable nil (reparse-symbol function_parameters) [100999 101004]))              ) nil [100978 101155])
+            ("MissingRegistrationInformation" type
+               (:superclasses ("Exception")
+                :members 
+                  ( (""""Exception for missing registration information. Raised when a name or group
+    is not specified or when a group cannot be deduced."""" code nil (reparse-symbol indented_block_body) [101209 101346])
+                    ("pass" code nil (reparse-symbol indented_block_body) [101351 101355]))                  
+                :type "class")
+                nil [101156 101356])
+            ("MissingProxy" type
+               (:superclasses ("Exception")
+                :members 
+                  ( (""""Exception fired when the requested proxy is missing."""" code nil (reparse-symbol indented_block_body) [101392 101450])
+                    ("pass" code nil (reparse-symbol indented_block_body) [101455 101459]))                  
+                :type "class")
+                nil [101357 101460])
+            ("Register" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [101474 101479])
+                ("extraArgs" variable nil (reparse-symbol function_parameters) [101481 101492]))              ) nil [101461 102467])
+            ("UnRegister" function (:arguments 
+              ( ("proxy" variable nil (reparse-symbol function_parameters) [102483 102488])
+                ("extraArgs" variable nil (reparse-symbol function_parameters) [102490 102501]))              ) nil [102468 103156])
+            ("demo1" function nil nil [103157 103982])
+            ("demo2" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [103993 103998]))              ) nil [103983 106884])
+            ("demo3" function nil nil [106885 109218])
+            ("demo4" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [109229 109234]))              ) nil [109219 109706])
+            ("demo5" function nil nil [109708 110883])
+            ("ASSOCIATIONS" variable nil nil [110884 110968])
+            ("ActiveConnection" variable nil nil [111159 111182])
+            (""""Keeps track of all connection objects. Unless the process was run with
+--multi-servers flag set to True, this will generally be just 1 item long at the
+most."""" code nil nil [111184 111347])
+            ("Connections" variable nil nil [111348 111364])
+            ("SetActiveConnection" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [111390 111400]))              ) nil [111366 112339])
+            ("if" code nil nil [112443 112814])
+            ("progressObserverTag" variable nil nil [112910 112936])
+            ("currentAlgorithm" variable nil nil [112937 112961])
+            ("currentProgress" variable nil nil [112962 112981])
+            ("if" code nil nil [112982 113036])
+            ("_pyproxies" variable nil nil [113037 113052])
+            ("loader" variable nil nil [113218 113242])
+            ("sys" code nil nil [113243 113271])
+            ("__exposeActiveModules__" function nil nil [113274 113681])
+            ("GetConnectionFromId" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [113706 113708]))              ) nil [113682 113943])
+            ("GetConnectionFromSession" function (:arguments 
+              ( ("session" variable nil (reparse-symbol function_parameters) [113973 113980]))              ) nil [113944 114537])
+            ("__connectionCreatedCallback" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [114571 114574])
+                ("string" variable nil (reparse-symbol function_parameters) [114576 114582]))              ) nil [114539 114852])
+            ("__connectionClosedCallback" function (:arguments 
+              ( ("obg" variable nil (reparse-symbol function_parameters) [114884 114887])
+                ("string" variable nil (reparse-symbol function_parameters) [114889 114895]))              ) nil [114853 115369])
+            ("__initialize" function nil nil [115370 116424])
+            ("__initialize" code nil nil [116425 116439])
+            ("if" code nil nil [116441 116572]))          
+    :file "servermanager.py"
+    :pointmax 116572
+    :fsize 116571
+    :lastmodtime '(20900 54572)
+    :unmatched-syntax '((INDENT_BLOCK 28923 . 29114) (INDENT_BLOCK 28497 . 28778) (INDENT_BLOCK 28337 . 28374) (INDENT_BLOCK 28257 . 28291) (INDENT_BLOCK 4592 . 4639) (NEWLINE 4591 . 4592) (COLON 4590 . 4591) (ELSE 4586 . 4590))
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Wrapping!Python!paraview!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

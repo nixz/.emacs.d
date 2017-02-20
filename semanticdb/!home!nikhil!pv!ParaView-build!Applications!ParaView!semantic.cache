@@ -1,0 +1,31 @@
+;; Object ParaView/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ParaView/"
+  :tables (list 
+   (semanticdb-table "paraview_main.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QApplication" include (:system-flag t) nil [1655 1678])
+            ("pqparaviewInitializer.h" include nil nil [1679 1713])
+            ("clocale" include (:system-flag t) nil [1766 1784])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1795 1804])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1805 1818]))                  
+                :type "int")
+                nil [1786 2932]))          
+    :file "paraview_main.cxx"
+    :pointmax 3002
+    :fsize 3004
+    :lastmodtime '(20762 35288)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView-build!Applications!ParaView!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

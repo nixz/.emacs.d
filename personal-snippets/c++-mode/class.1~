@@ -1,0 +1,21 @@
+#name : /*--doc--*/ class ... {... friend << >> ... }
+# --
+//--------------------------------------------------------------------------nix
+/**
+ * @class ${1:Name}
+ *
+ * @brief ${3:What is the responcibility of this class}
+ *
+ */
+ 
+class ${1:$(yas/substr text "[^: ]*")}
+{
+public:
+    ${1:$(yas/substr text "[^: ]*")}($2);
+    virtual ~${1:$(yas/substr text "[^: ]*")}();
+public:
+    friend ostream& operator<<(ostream& output, const ${1:$(yas/substr text "[^: ]*")}& obj);
+    friend ostream& operator>>(ostream&  input, const ${1:$(yas/substr text "[^: ]*")}& obj);
+private:
+    $0
+};

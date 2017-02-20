@@ -1,0 +1,357 @@
+;; Object PythonSupport/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PythonSupport/"
+  :tables (list 
+   (semanticdb-table "vtkPVPythonInterpretor.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPython.h" include nil nil [562 584])
+            ("vtkPVPythonInterpretor.h" include nil nil [585 620])
+            ("vtkCommand.h" include nil nil [622 645])
+            ("vtkObjectFactory.h" include nil nil [646 675])
+            ("vtkPVConfig.h" include nil nil [676 700])
+            ("vtkPVPythonAppInitConfigure.h" include nil nil [701 741])
+            ("vtkStdString.h" include nil nil [742 767])
+            ("vtkWindows.h" include nil nil [768 791])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [793 826])
+            ("algorithm" include (:system-flag t) nil [827 847])
+            ("string" include (:system-flag t) nil [848 865])
+            ("signal.h" include (:system-flag t) nil [867 886])
+            ("VTK_PYTHON_MAXPATH" variable (:constant-flag t) nil [1165 1183])
+            ("VTK_PYTHON_TO_STRING" variable (:constant-flag t) nil [1248 1268])
+            ("VTK_PYTHON_TO_STRING0" variable (:constant-flag t) nil [1305 1326])
+            ("VTK_PYTHON_TO_STRING1" variable (:constant-flag t) nil [1363 1384])
+            ("VTK_PYTHON_VERSION" variable (:constant-flag t) nil [1399 1417])
+            ("Py_Main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1522 1526])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1527 1535]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1514 1536])
+            ("C" extern (:members 
+              ( ("Py_Main" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1522 1526])
+                        ("" variable
+                           (:pointer 2
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1527 1535]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1514 1536]))              ) nil [1477 1538])
+            ("vtkPVPythonInterpretorWrapper.h" include nil nil [1540 1582])
+            ("vtkPythonAppInitPrependPythonPath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1708 1724]))                  
+                :type "void")
+                nil [1662 2151])
+            ("vtkPythonAppInitPrependPath2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2273 2299])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2302 2326]))                  
+                :type "bool")
+                nil [2232 3038])
+            ("vtkPythonAppInitPrependPath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self_dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3158 3179]))                  
+                :type "void")
+                nil [3118 7871])
+            ("vtkPythonMessage" type
+               (:members 
+                  ( ("Message" variable (:type ("vtkStdString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7901 7922])
+                    ("IsError" variable (:type "bool") (reparse-symbol classsubparts) [7925 7938]))                  
+                :type "struct")
+                nil [7873 7941])
+            ("vtkPVPythonInterpretorInternal" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8062 8069])
+                    ("Interpretor" variable
+                       (:pointer 1
+                        :type ("PyThreadState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8072 8099])
+                    ("PreviousInterpretor" variable
+                       (:pointer 1
+                        :type ("PyThreadState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8102 8137])
+                    ("Messages" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("vtkPythonMessage" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8177 8216])
+                    ("vtkPVPythonInterpretorInternal" function
+                       (:constructor-flag t
+                        :type ("vtkPVPythonInterpretorInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8220 8326])
+                    ("vtkPVPythonInterpretorInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8330 8548])
+                    ("MakeCurrent" function (:type "void") (reparse-symbol classsubparts) [8552 8907])
+                    ("ReleaseControl" function (:type "void") (reparse-symbol classsubparts) [8911 9030]))                  
+                :type "class")
+                nil [8023 9033])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVPythonInterpretor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9135 9158]))                  
+                :type "int")
+                nil [9115 9159])
+            ("vtkPVPythonInterpretor" function
+               (:constructor-flag t
+                :parent "vtkPVPythonInterpretor"
+                :type ("vtkPVPythonInterpretor" type (:type "class") nil nil))
+                nil [9241 9457])
+            ("vtkPVPythonInterpretor" function
+               (:destructor-flag t
+                :parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [9539 9686])
+            ("GetInputLine" function
+               (:parent "vtkPVPythonInterpretor"
+                :type ("vtkStdString" type (:type "class") nil nil))
+                nil [9768 9909])
+            ("DumpError" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10030 10046]))                  
+                :type "void")
+                nil [9991 10509])
+            ("DumpOutput" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10631 10647]))                  
+                :type "void")
+                nil [10591 11114])
+            ("FlushMessages" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [11196 11609])
+            ("ClearMessages" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [11691 11775])
+            ("InitializeInternal" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [11857 13730])
+            ("InitializeSubInterpretor" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("vtkNotUsed" variable (:type "int") (reparse-symbol arg-sub-list) [13865 13885])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13889 13901]))                  
+                :type "int")
+                nil [13812 14687])
+            ("AddPythonPath" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14812 14829]))                  
+                :type "void")
+                nil [14769 15067])
+            ("AddPythonPathInternal" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15200 15217]))                  
+                :type "void")
+                nil [15149 15264])
+            ("PyMain" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15381 15390])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15391 15403]))                  
+                :type "int")
+                nil [15346 15629])
+            ("MakeCurrent" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [15711 15790])
+            ("ReleaseControl" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [15872 15957])
+            ("RunSimpleString" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("script" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16084 16109]))                  
+                :type "void")
+                nil [16039 16595])
+            ("RunSimpleFile" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16720 16747]))                  
+                :type "void")
+                nil [16677 17082])
+            ("ExecuteInitFromGUI" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [17164 17637])
+            ("DetachActiveSessionObserver" function
+               (:parent "vtkPVPythonInterpretor"
+                :type "void")
+                nil [17719 17931])
+            ("PrintSelf" function
+               (:parent "vtkPVPythonInterpretor"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18052 18064])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18065 18082]))                  
+                :type "void")
+                nil [18013 18129]))          
+    :file "vtkPVPythonInterpretor.cxx"
+    :pointmax 18130
+    :fsize 18130
+    :lastmodtime '(20811 24934)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VTK_PYTHON_TO_STRING" (spp-arg-list ("x") 1266 . 1269) . ((symbol "VTK_PYTHON_TO_STRING0" 1270 . 1291) (semantic-list "(x)" 1291 . 1294)))
+          ("VTK_PYTHON_TO_STRING0" (spp-arg-list ("x") 1324 . 1327) . ((symbol "VTK_PYTHON_TO_STRING1" 1328 . 1349) (semantic-list "(x)" 1349 . 1352)))
+          ("VTK_PYTHON_MAXPATH" . ((number "16384" 1182 . 1187)))
+          ("VTK_PYTHON_TO_STRING1" (spp-arg-list ("x") 1382 . 1385) . ((punctuation "#" 1386 . 1387) (symbol "x" 1387 . 1388)))
+          ("VTK_PYTHON_VERSION" . ((symbol "VTK_PYTHON_TO_STRING" 1416 . 1436) (semantic-list "(PY_MAJOR_VERSION.PY_MINOR_VERSION)" 1436 . 1471)))
+          )
+
+    )
+   (semanticdb-table "vtkPVPythonInteractiveInterpretor.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPython.h" include nil nil [573 595])
+            ("vtkPVPythonInteractiveInterpretor.h" include nil nil [596 642])
+            ("vtkObjectFactory.h" include nil nil [644 673])
+            ("string" include (:system-flag t) nil [675 692])
+            ("vtkInternal" type
+               (:parent "vtkPVPythonInteractiveInterpretor"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [749 756])
+                    ("InteractiveConsole" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [759 788]))                  
+                :type "class")
+                nil [694 791])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVPythonInteractiveInterpretor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [813 847]))                  
+                :type "int")
+                nil [793 848])
+            ("vtkPVPythonInteractiveInterpretor" function
+               (:constructor-flag t
+                :parent "vtkPVPythonInteractiveInterpretor"
+                :type ("vtkPVPythonInteractiveInterpretor" type (:type "class") nil nil))
+                nil [928 1080])
+            ("vtkPVPythonInteractiveInterpretor" function
+               (:destructor-flag t
+                :parent "vtkPVPythonInteractiveInterpretor"
+                :type "void")
+                nil [1161 1464])
+            ("InitializeInternal" function
+               (:parent "vtkPVPythonInteractiveInterpretor"
+                :type "void")
+                nil [1545 2433])
+            ("Push" function
+               (:parent "vtkPVPythonInteractiveInterpretor"
+                :arguments 
+                  ( ("code" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2559 2582]))                  
+                :type "bool")
+                nil [2514 3659])
+            ("ResetBuffer" function
+               (:parent "vtkPVPythonInteractiveInterpretor"
+                :type "void")
+                nil [3740 4107])
+            ("PrintSelf" function
+               (:parent "vtkPVPythonInteractiveInterpretor"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4238 4250])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4251 4268]))                  
+                :type "void")
+                nil [4188 4315]))          
+    :file "vtkPVPythonInteractiveInterpretor.cxx"
+    :pointmax 4318
+    :fsize 4320
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVPythonAppInitConfigure.h.in"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVPythonAppInitConfigure_h" variable (:constant-flag t) nil [49 80])
+            ("VTK_PYTHON_LIBRARY_DIR" variable (:constant-flag t) nil [90 112]))          
+    :file "vtkPVPythonAppInitConfigure.h.in"
+    :pointmax 156
+    :fsize 155
+    :lastmodtime '(20811 24978)
+    :unmatched-syntax '((symbol 49 . 80))
+    :lexical-table 
+        '(("__vtkPVPythonAppInitConfigure_h")
+          ("VTK_PYTHON_LIBRARY_DIR" . ((string "\"@CMAKE_LIBRARY_OUTPUT_DIRECTORY@\"" 113 . 147)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!PythonSupport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,135 @@
+;; Object arg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "arg/"
+  :tables (list 
+   (semanticdb-table "BindDirect.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_exec_arg_BindDirect_h" variable (:constant-flag t) nil [693 720])
+            ("dax/Types.h" include (:system-flag t) nil [789 811])
+            ("dax/cont/internal/Bindings.h" include (:system-flag t) nil [812 851])
+            ("dax/exec/internal/WorkletBase.h" include (:system-flag t) nil [853 895])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [897 935])
+            ("dax" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("arg" type
+                               (:members 
+                                  ( ("BindDirect" type
+                                       (:template 
+                                          ( ("Invocation" type (:type "class") nil nil)
+                                            ("int" type nil nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("AllControlBindings" type
+                                               (:typedef ("dax::cont::internal::Bindings" type
+                                                     (:template-specifier 
+                                                        ( ("Invocation" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::internal::Bindings"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1046 1115])
+                                            ("MyControlBinding" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1176 1198])
+                                            ("ExecArgType" type
+                                               (:typedef ("MyControlBinding::ExecArg" type (:type "class") nil nil)
+                                                :superclasses "MyControlBinding::ExecArg"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1201 1256])
+                                            ("Tags" type
+                                               (:typedef ("dax::cont::arg::ConceptMapTraits::Tags" type (:type "class") nil nil)
+                                                :superclasses "dax::cont::arg::ConceptMapTraits::Tags"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1259 1338])
+                                            ("ExecArg" variable (:type ("ExecArgType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1341 1361])
+                                            ("public" label nil (reparse-symbol classsubparts) [1362 1369])
+                                            ("ReturnType" type
+                                               (:typedef ("ExecArgType::ReturnType" type (:type "class") nil nil)
+                                                :superclasses "ExecArgType::ReturnType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1372 1424])
+                                            ("BindDirect" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("bindings" variable
+                                                       (:reference 1
+                                                        :type ("AllControlBindings" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1455 1484]))                                                  
+                                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1428 1541])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1594])
+                                                    ("worklet" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1617 1665]))                                                  
+                                                :type ("ReturnType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1561 1716])
+                                            ("SaveExecutionResult" function
+                                               (:arguments 
+                                                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1761 1768])
+                                                    ("worklet" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1792 1840]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1736 2234])
+                                            ("saveResult" function
+                                               (:arguments 
+                                                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2363 2370])
+                                                    ("worklet" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2389 2437])
+                                                    ("" variable (:type ("HasOutTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2456 2466])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :typemodifiers ("typename")
+                                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2485 2530]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2347 2590])
+                                            ("saveResult" function
+                                               (:arguments 
+                                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2660 2664])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("dax::exec::internal::WorkletBase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2683 2723])
+                                                    ("" variable (:type ("HasOutTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2742 2752])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :typemodifiers ("typename")
+                                                        :type ("boost::disable_if::type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2771 2817]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2644 2828]))                                          )
+                                        (reparse-symbol namespacesubparts) [987 2832]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [970 2835]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [953 2836]))                  
+                :type "namespace")
+                nil [937 2837]))          
+    :file "BindDirect.h"
+    :pointmax 2941
+    :fsize 2940
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((number 2818 . 2819) (punctuation 2816 . 2817) (symbol 2626 . 2641) (punctuation 2622 . 2623) (symbol 2613 . 2622) (TYPENAME 2604 . 2612) (punctuation 2603 . 2604) (TEMPLATE 2594 . 2602) (number 2531 . 2532) (punctuation 2529 . 2530) (symbol 2329 . 2344) (punctuation 2325 . 2326) (symbol 2316 . 2325) (TYPENAME 2307 . 2315) (punctuation 2306 . 2307) (TEMPLATE 2297 . 2305) (symbol 1720 . 1735) (symbol 1545 . 1560) (punctuation 1175 . 1176) (punctuation 1174 . 1175) (punctuation 1173 . 1174) (symbol 1172 . 1173) (punctuation 1171 . 1172) (symbol 1164 . 1171) (TEMPLATE 1155 . 1163) (punctuation 1154 . 1155) (punctuation 1153 . 1154) (symbol 1135 . 1153) (TYPENAME 1126 . 1134) (TYPEDEF 1118 . 1125))
+    :lexical-table 
+        '(("__dax_exec_arg_BindDirect_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!exec!arg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,308 @@
+;; Object Default/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Default/"
+  :tables (list 
+   (semanticdb-table "vtkSMAnimationScene.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSMAnimationScene_h" variable (:constant-flag t) nil [1033 1056])
+            ("vtkPVServerManagerDefaultModule.h" include nil nil [1058 1102])
+            ("vtkPVAnimationScene.h" include nil nil [1124 1156])
+            ("vtkCompositeAnimationPlayer" type
+               (:prototype t
+                :type "class")
+                nil [1158 1192])
+            ("vtkEventForwarderCommand" type
+               (:prototype t
+                :type "class")
+                nil [1193 1224])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [1225 1242])
+            ("vtkSMViewProxy" type
+               (:prototype t
+                :type "class")
+                nil [1243 1264])
+            ("vtkPVAnimationScene" variable (:type "int") nil [1334 4426]))          
+    :file "vtkSMAnimationScene.h"
+    :pointmax 4435
+    :fsize 4434
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1327 . 1333) (punctuation 1325 . 1326) (symbol 1305 . 1324) (symbol 1272 . 1304) (CLASS 1266 . 1271))
+    :lexical-table 
+        '(("__vtkSMAnimationScene_h")
+          )
+
+    )
+   (semanticdb-table "vtkSMAnimationScene.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMAnimationScene.h" include nil nil [545 577])
+            ("vtkCacheSizeKeeper.h" include nil nil [579 610])
+            ("vtkCompositeAnimationPlayer.h" include nil nil [611 651])
+            ("vtkEventForwarderCommand.h" include nil nil [652 689])
+            ("vtkObjectFactory.h" include nil nil [690 719])
+            ("vtkSmartPointer.h" include nil nil [720 748])
+            ("vtkSMProperty.h" include nil nil [749 775])
+            ("vtkSMPropertyHelper.h" include nil nil [776 808])
+            ("vtkSMViewProxy.h" include nil nil [809 836])
+            ("vector" include (:system-flag t) nil [838 855])
+            ("vtkInternals" type
+               (:parent "vtkSMAnimationScene"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [978 985])
+                    ("VectorOfViews" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("vtkSmartPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [988 1056])
+                    ("ViewModules" variable (:type ("VectorOfViews" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1059 1085])
+                    ("StillRenderAllViews" function (:type "void") (reparse-symbol classsubparts) [1088 1297])
+                    ("PassCacheTime" function
+                       (:arguments 
+                          ( ("cachetime" variable (:type "double") (reparse-symbol arg-sub-list) [1320 1337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1301 1596])
+                    ("PassUseCache" function
+                       (:arguments 
+                          ( ("usecache" variable (:type "bool") (reparse-symbol arg-sub-list) [1618 1632]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1600 1890]))                  
+                :type "class")
+                nil [936 1893])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkSMAnimationScene" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1935]))                  
+                :type "int")
+                nil [1895 1936])
+            ("vtkSMAnimationScene" function
+               (:constructor-flag t
+                :parent "vtkSMAnimationScene"
+                :type ("vtkSMAnimationScene" type (:type "class") nil nil))
+                nil [2016 2761])
+            ("vtkSMAnimationScene" function
+               (:destructor-flag t
+                :parent "vtkSMAnimationScene"
+                :type "void")
+                nil [2842 3163])
+            ("SetTimeKeeper" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("tkp" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3284 3300]))                  
+                :type "void")
+                nil [3244 4342])
+            ("TimeKeeperTimestepsChanged" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [4423 4737])
+            ("TimeKeeperTimeRangeChanged" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [4818 5351])
+            ("AddViewProxy" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("vtkSMViewProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5471 5492]))                  
+                :type "void")
+                nil [5432 5796])
+            ("RemoveViewProxy" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("vtkSMViewProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5922 5943]))                  
+                :type "void")
+                nil [5877 6222])
+            ("RemoveAllViewProxies" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [6303 6395])
+            ("GetNumberOfViewProxies" function
+               (:parent "vtkSMAnimationScene"
+                :type "unsigned int")
+                nil [6476 6611])
+            ("GetViewProxy" function
+               (:pointer 1
+                :parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6742 6758]))                  
+                :type ("vtkSMViewProxy" type (:type "class") nil nil))
+                nil [6692 6878])
+            ("TickInternal" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("currenttime" variable (:type "double") (reparse-symbol arg-sub-list) [7001 7020])
+                    ("deltatime" variable (:type "double") (reparse-symbol arg-sub-list) [7021 7038])
+                    ("clocktime" variable (:type "double") (reparse-symbol arg-sub-list) [7039 7056]))                  
+                :type "void")
+                nil [6959 7665])
+            ("PrintSelf" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7782 7794])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7795 7812]))                  
+                :type "void")
+                nil [7746 7859])
+            ("SetLoop" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [7974 7982]))                  
+                :type "void")
+                nil [7940 8030])
+            ("GetLoop" function
+               (:parent "vtkSMAnimationScene"
+                :type "int")
+                nil [8111 8192])
+            ("Play" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [8273 8342])
+            ("Stop" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [8422 8491])
+            ("GoToNext" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [8572 8683])
+            ("GoToPrevious" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [8764 8883])
+            ("GoToFirst" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [8964 9043])
+            ("GoToLast" function
+               (:parent "vtkSMAnimationScene"
+                :type "void")
+                nil [9124 9201])
+            ("SetPlayMode" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [9320 9328]))                  
+                :type "void")
+                nil [9282 9375])
+            ("SetNumberOfFrames" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [9500 9508]))                  
+                :type "void")
+                nil [9456 9561])
+            ("SetDuration" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [9680 9688]))                  
+                :type "void")
+                nil [9642 9735])
+            ("SetFramesPerTimestep" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [9863 9871]))                  
+                :type "void")
+                nil [9816 9927])
+            ("SetCacheLimit" function
+               (:parent "vtkSMAnimationScene"
+                :arguments 
+                  ( ("kbs" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10048 10066]))                  
+                :type "void")
+                nil [10008 10385]))          
+    :file "vtkSMAnimationScene.cxx"
+    :pointmax 10386
+    :fsize 10385
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkSMAnimationSceneWriter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMAnimationSceneWriter.h" include nil nil [565 603])
+            ("vtkAnimationCue.h" include nil nil [605 633])
+            ("vtkCommand.h" include nil nil [634 657])
+            ("vtkObjectFactory.h" include nil nil [658 687])
+            ("vtkSMAnimationScene.h" include nil nil [688 720])
+            ("vtkSMProxy.h" include nil nil [721 744])
+            ("vtkSMSession.h" include nil nil [745 770])
+            ("vtkSMAnimationSceneWriter" function
+               (:constructor-flag t
+                :parent "vtkSMAnimationSceneWriter"
+                :type ("vtkSMAnimationSceneWriter" type (:type "class") nil nil))
+                nil [852 1036])
+            ("vtkSMAnimationSceneWriter" function
+               (:destructor-flag t
+                :parent "vtkSMAnimationSceneWriter"
+                :type "void")
+                nil [1118 1256])
+            ("SetAnimationScene" function
+               (:parent "vtkSMAnimationSceneWriter"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1388 1406]))                  
+                :type "void")
+                nil [1338 1606])
+            ("SetAnimationScene" function
+               (:parent "vtkSMAnimationSceneWriter"
+                :arguments 
+                  ( ("scene" variable
+                       (:pointer 1
+                        :type ("vtkSMAnimationScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1738 1765]))                  
+                :type "void")
+                nil [1688 2154])
+            ("ExecuteEvent" function
+               (:parent "vtkSMAnimationSceneWriter"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2281 2310])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2314 2336])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2337 2352]))                  
+                :type "void")
+                nil [2236 2818])
+            ("Save" function
+               (:parent "vtkSMAnimationSceneWriter"
+                :type "bool")
+                nil [2900 4510])
+            ("PrintSelf" function
+               (:parent "vtkSMAnimationSceneWriter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4634 4646])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4647 4664]))                  
+                :type "void")
+                nil [4592 4873]))          
+    :file "vtkSMAnimationSceneWriter.cxx"
+    :pointmax 4874
+    :fsize 4873
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((semantic-list 2302 . 2310) (semantic-list 2302 . 2310) (semantic-list 2302 . 2310) (semantic-list 2302 . 2310) (semantic-list 2302 . 2310))
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!ServerManager!Default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

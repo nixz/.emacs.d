@@ -1,0 +1,59 @@
+;; Object sampleshading/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sampleshading/"
+  :tables (list 
+   (semanticdb-table "sampleshading.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sb6.h" include (:system-flag t) nil [1159 1175])
+            ("vmath.h" include (:system-flag t) nil [1176 1194])
+            ("sampleshading_app" type
+               (:superclasses 
+                  ( ("sb6::application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("init" function (:type "void") (reparse-symbol classsubparts) [1252 1466])
+                    ("startup" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1472 6185])
+                    ("render" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("currentTime" variable (:type "double") (reparse-symbol arg-sub-list) [6211 6230]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6191 8609])
+                    ("shutdown" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8615 8769])
+                    ("onKey" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [8794 8802])
+                            ("action" variable (:type "int") (reparse-symbol arg-sub-list) [8803 8814]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8775 9064])
+                    ("private" label nil (reparse-symbol classsubparts) [9066 9074])
+                    ("program" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9079 9103])
+                    ("vao" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9108 9128])
+                    ("position_buffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9133 9165])
+                    ("index_buffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9170 9199])
+                    ("mv_location" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9204 9232])
+                    ("proj_location" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9237 9267])
+                    ("sample_shading" variable (:type "bool") (reparse-symbol classsubparts) [9272 9303]))                  
+                :type "class")
+                nil [1196 9306]))          
+    :file "sampleshading.cpp"
+    :pointmax 9340
+    :fsize 9572
+    :lastmodtime '(21216 18554 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Code!OpenGLSuperBible!sb6code!src!sampleshading!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

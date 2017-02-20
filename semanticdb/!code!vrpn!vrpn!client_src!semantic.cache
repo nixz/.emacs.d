@@ -1,0 +1,211 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [362 380])
+            ("stdlib.h" include (:system-flag t) nil [416 435])
+            ("signal.h" include (:system-flag t) nil [473 492])
+            ("string.h" include (:system-flag t) nil [522 541])
+            ("vrpn_Analog.h" include (:system-flag t) nil [578 602])
+            ("vrpn_Button.h" include (:system-flag t) nil [637 661])
+            ("vrpn_Dial.h" include (:system-flag t) nil [701 723])
+            ("vrpn_FileConnection.h" include (:system-flag t) nil [763 795])
+            ("vrpn_Shared.h" include (:system-flag t) nil [835 859])
+            ("vrpn_Text.h" include (:system-flag t) nil [891 913])
+            ("vrpn_Tracker.h" include (:system-flag t) nil [955 980])
+            ("vector" include (:system-flag t) nil [1018 1035])
+            ("vrpn_BaseClass.h" include nil nil [1066 1093])
+            ("vrpn_Configure.h" include nil nil [1130 1157])
+            ("vrpn_Types.h" include nil nil [1179 1202])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1240 1260])
+            ("done" variable
+               (:default-value "0"
+                :type "int")
+                nil [1262 1275])
+            ("tracker_stride" variable
+               (:default-value "1"
+                :type "unsigned int")
+                nil [1331 1359])
+            ("device_info" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1856 1863])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1868 1879])
+                    ("tkr" variable
+                       (:pointer 1
+                        :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1884 1909])
+                    ("btn" variable
+                       (:pointer 1
+                        :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1914 1938])
+                    ("ana" variable
+                       (:pointer 1
+                        :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1943 1967])
+                    ("dial" variable
+                       (:pointer 1
+                        :type ("vrpn_Dial_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1972 1995])
+                    ("text" variable
+                       (:pointer 1
+                        :type ("vrpn_Text_Receiver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2000 2025]))                  
+                :type "class")
+                nil [1836 2028])
+            ("MAX_DEVICES" variable
+               (:constant-flag t
+                :default-value "50"
+                :type "unsigned int")
+                nil [2029 2061])
+            ("t_user_callback" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2774 2781])
+                    ("t_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2786 2817])
+                    ("t_counts" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2822 2848]))                  
+                :type "class")
+                nil [2750 2851])
+            ("handle_tracker_pos_quat" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3083 3098])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TRACKERCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3099 3122]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [3045 3927])
+            ("handle_tracker_vel" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3967 3982])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TRACKERVELCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3983 4009]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [3934 4835])
+            ("handle_tracker_acc" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4875 4890])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TRACKERACCCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4891 4917]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [4842 5742])
+            ("handle_button" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5777 5792])
+                    ("b" variable
+                       (:constant-flag t
+                        :type ("vrpn_BUTTONCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5793 5815]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [5749 5953])
+            ("handle_button_states" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5995 6010])
+                    ("b" variable
+                       (:constant-flag t
+                        :type ("vrpn_BUTTONSTATESCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6011 6039]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [5960 6278])
+            ("handle_analog" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6313 6328])
+                    ("a" variable
+                       (:constant-flag t
+                        :type ("vrpn_ANALOGCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6329 6351]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [6285 6642])
+            ("handle_dial" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6675 6690])
+                    ("d" variable
+                       (:constant-flag t
+                        :type ("vrpn_DIALCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6691 6711]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [6649 6841])
+            ("handle_text" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6874 6889])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TEXTCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6890 6910]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [6848 7129])
+            ("handle_cntl_c" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7521 7525]))                  
+                :type "void")
+                nil [7502 7539])
+            ("Usage" function
+               (:arguments 
+                  ( ("arg0" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7552 7569]))                  
+                :type "void")
+                nil [7541 8544])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8555 8564])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8565 8578]))                  
+                :type "int")
+                nil [8546 14732]))          
+      :file "vrpn_print_devices.C"
+      :pointmax 14744
+      :fsize 14743
+      :lastmodtime '(22241 52131 676524 787000)
+      :unmatched-syntax nil))
+  :file "!code!vrpn!vrpn!client_src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

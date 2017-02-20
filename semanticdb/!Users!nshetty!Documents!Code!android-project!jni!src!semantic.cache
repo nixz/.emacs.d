@@ -1,0 +1,73 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Android.mk"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("LOCAL_PATH" variable (:default-value ("$(call my-dir)")) nil [1 30])
+            ("$(CLEAR_VARS)" include nil nil [31 53])
+            ("LOCAL_MODULE" variable (:default-value ("main")) nil [54 75])
+            ("SDL_PATH" variable (:default-value ("../SDL")) nil [76 95])
+            ("LOCAL_C_INCLUDES" variable (:default-value ("$(LOCAL_PATH)/$(SDL_PATH)/include")) nil [96 150])
+            ("LOCAL_SRC_FILES" variable (:default-value ("$(SDL_PATH)/src/main/android/SDL_android_main.c" "main.cpp")) nil [195 274])
+            ("LOCAL_SHARED_LIBRARIES" variable (:default-value ("SDL2")) nil [275 306])
+            ("LOCAL_LDLIBS" variable (:default-value ("-ldl" "-lGLESv1_CM" "-lGLESv2" "-lGLESv3" "-llog")) nil [345 402])
+            ("$(BUILD_SHARED_LIBRARY)" include nil nil [403 435]))          
+    :file "Android.mk"
+    :pointmax 374
+    :fsize 434
+    :lastmodtime '(21242 32837 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [159 178])
+            ("SDL.h" include (:system-flag t) nil [179 195])
+            ("GLES3/gl3.h" include (:system-flag t) nil [196 218])
+            ("GLES3/gl3ext.h" include (:system-flag t) nil [219 244])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [245 265])
+            ("Graphics" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [284 291])
+                    ("update" function (:type "void") (reparse-symbol classsubparts) [297 500]))                  
+                :type "class")
+                nil [267 503])
+            ("EventFilter" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [521 536])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SDL_Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [537 554]))                  
+                :type "int")
+                nil [505 1356])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1367 1376])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1377 1397]))                  
+                :type "int")
+                nil [1358 6406]))          
+    :file "main.cpp"
+    :pointmax 6864
+    :fsize 6399
+    :lastmodtime '(21242 32766 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Documents!Code!android-project!jni!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

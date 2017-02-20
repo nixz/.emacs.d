@@ -1,0 +1,106 @@
+;; Object UWYO_CSProjects/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "UWYO_CSProjects/"
+  :tables (list 
+   (semanticdb-table "bang.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__bang_h" variable (:constant-flag t) nil [722 730])
+            ("vsg/Utility/vsgMacro.h" include nil nil [811 844])
+            ("vsg/Utility/vsgTypes.h" include nil nil [845 878])
+            ("vsg" type
+               (:members 
+                  ( ("std" type
+                       (:members 
+                          ( ("bangInternal" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [998 1017])
+                            ("bang" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1126 1133])
+                                    ("bang" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("bang" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1220 1227])
+                                    ("bang" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1234 1250])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1258 1268])
+                                    ("private" label nil (reparse-symbol classsubparts) [1356 1364])
+                                    ("_internal" variable
+                                       (:pointer 1
+                                        :type ("bangInternal" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1451 1475])
+                                    ("fun" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1482 1492]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1103 1500]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [898 1504]))                  
+                :type "namespace")
+                nil [880 1506])
+            ("junkFun" function
+               (:prototype-flag t
+                :type "int")
+                nil [1508 1522]))          
+    :file "bang.h"
+    :pointmax 1546
+    :fsize 1545
+    :lastmodtime '(21555 30335 0 0)
+    :unmatched-syntax '((INT 1523 . 1526))
+    :lexical-table 
+        '(("__bang_h")
+          )
+
+    )
+   (semanticdb-table "bang.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bang.h" include (:system-flag t) nil [643 660])
+            ("vsg/std/bang.h" include nil nil [661 686])
+            ("vsg" type
+               (:members 
+                  ( ("unnamed" type
+                       (:members 
+                          ( ("bangInternal" type
+                               (:members 
+                                  ( ("value" variable (:type "double") (reparse-symbol classsubparts) [1215 1228]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1183 1246])
+                            ("bang" function
+                               (:constructor-flag t
+                                :parent "bang"
+                                :type ("bang" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1412 1483])
+                            ("bang" function
+                               (:destructor-flag t
+                                :parent "bang"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1569 1627]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [788 1792]))                  
+                :type "namespace")
+                nil [770 1794])
+            ("fun" function
+               (:parent "vsg::std::bang"
+                :type "int")
+                nil [1796 1826])
+            ("junkFun" function (:type "int") nil [1828 1846]))          
+    :file "bang.cpp"
+    :pointmax 1847
+    :fsize 1846
+    :lastmodtime '(21555 30335 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Code!manasa!UWYO_CSProjects!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

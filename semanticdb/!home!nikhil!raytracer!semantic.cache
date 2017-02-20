@@ -1,0 +1,78 @@
+;; Object raytracer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "raytracer/"
+  :tables
+  (list
+    (semanticdb-table "raytracerOpenCLmain.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CL/cl.h" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("fstream" include (:system-flag t) nil [40 58])
+            ("sstream" include (:system-flag t) nil [59 77])
+            ("SDL/SDL.h" include (:system-flag t) nil [79 99])
+            ("SDL/SDL_opengl.h" include (:system-flag t) nil [100 127])
+            ("kWidth" variable
+               (:constant-flag t
+                :type "int")
+                nil [129 153])
+            ("kHeight" variable
+               (:constant-flag t
+                :type "int")
+                nil [154 178])
+            ("kFullscreen" variable
+               (:constant-flag t
+                :type "bool")
+                nil [179 209])
+            ("global_work_size" variable (:type ("size_t" type (:type "class") nil nil)) nil [211 254])
+            ("viewMatrix" variable
+               (:dereference 1
+                :type "float")
+                nil [256 277])
+            ("sphere1Pos" variable
+               (:dereference 1
+                :type "float")
+                nil [279 310])
+            ("sphere2Pos" variable
+               (:dereference 1
+                :type "float")
+                nil [311 343])
+            ("sphereVelocity" variable (:type "float") nil [344 369])
+            ("sphereTransforms" variable
+               (:dereference 2
+                :type "float")
+                nil [370 400])
+            ("queue" variable (:type ("cl_command_queue" type (:type "class") nil nil)) nil [402 425])
+            ("kernel" variable (:type ("cl_kernel" type (:type "class") nil nil)) nil [426 443])
+            ("buffer" variable (:type ("cl_mem" type (:type "class") nil nil)) nil [444 490])
+            ("viewTransform" variable (:type ("cl_mem" type (:type "class") nil nil)) nil [444 490])
+            ("worldTransforms" variable (:type ("cl_mem" type (:type "class") nil nil)) nil [444 490])
+            ("InitOpenCL" function (:type "void") nil [492 2493])
+            ("Render" function
+               (:arguments 
+                  ( ("delta" variable (:type "int") (reparse-symbol arg-sub-list) [2507 2517]))                  
+                :type "void")
+                nil [2495 4694])
+            ("Update" function
+               (:arguments 
+                  ( ("delta" variable (:type "int") (reparse-symbol arg-sub-list) [4708 4718]))                  
+                :type "void")
+                nil [4696 5945])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5956 5965])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5966 5979]))                  
+                :type "int")
+                nil [5947 6883]))          
+      :file "raytracerOpenCLmain.cpp"
+      :pointmax 6768
+      :fsize 6883
+      :lastmodtime '(21151 11959 831648 127000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!raytracer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

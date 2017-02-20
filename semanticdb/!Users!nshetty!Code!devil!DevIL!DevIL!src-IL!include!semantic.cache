@@ -1,0 +1,135 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UTX_H" variable (:constant-flag t) nil [506 511])
+            ("il_dds.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [578 597])
+            ("il_internal.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [553 577])
+            ("memory" include (:system-flag t) nil [629 646])
+            ("vector" include (:system-flag t) nil [647 664])
+            ("string" include (:system-flag t) nil [665 682])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [683 703])
+            ("UTXHEADER" type
+               (:members 
+                  ( ("Signature" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [734 752])
+                    ("Version" variable (:type ("ILushort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [754 771])
+                    ("LicenseMode" variable (:type ("ILushort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [773 794])
+                    ("Flags" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [796 810])
+                    ("NameCount" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [812 830])
+                    ("NameOffset" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [832 851])
+                    ("ExportCount" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [853 873])
+                    ("ExportOffset" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [875 896])
+                    ("ImportCount" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [898 918])
+                    ("ImportOffset" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [920 941]))                  
+                :type "struct")
+                nil [706 954])
+            ("UTXHEADER" type
+               (:typedef ("UTXHEADER" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [706 954])
+            ("UTXENTRYNAME" type
+               (:members 
+                  ( ("Name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1002 1014])
+                    ("Flags" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1016 1029]))                  
+                :type "struct")
+                nil [956 1045])
+            ("UTXENTRYNAME" type
+               (:typedef ("UTXENTRYNAME" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [956 1045])
+            ("UTXEXPORTTABLE" type
+               (:members 
+                  ( ("Class" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1080 1092])
+                    ("Super" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1094 1106])
+                    ("Group" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1108 1120])
+                    ("ObjectName" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1122 1139])
+                    ("ObjectFlags" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1141 1160])
+                    ("SerialSize" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1162 1179])
+                    ("SerialOffset" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1181 1200])
+                    ("ClassImported" variable (:type ("ILboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1203 1227])
+                    ("SuperImported" variable (:type ("ILboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1229 1253])
+                    ("GroupImported" variable (:type ("ILboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1255 1279]))                  
+                :type "struct")
+                nil [1047 1297])
+            ("UTXEXPORTTABLE" type
+               (:typedef ("UTXEXPORTTABLE" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1047 1297])
+            ("UTXIMPORTTABLE" type
+               (:members 
+                  ( ("ClassPackage" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1332 1352])
+                    ("ClassName" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1354 1371])
+                    ("Package" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1373 1388])
+                    ("ObjectName" variable (:type ("ILint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1390 1408])
+                    ("PackageImported" variable (:type ("ILboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1437]))                  
+                :type "struct")
+                nil [1299 1455])
+            ("UTXIMPORTTABLE" type
+               (:typedef ("UTXIMPORTTABLE" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1299 1455])
+            ("UTXPALETTE" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1476 1483])
+                    ("UTXPALETTE" function
+                       (:constructor-flag t
+                        :type ("UTXPALETTE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1485 1513])
+                    ("UTXPALETTE" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1515 1547])
+                    ("Pal" variable
+                       (:pointer 1
+                        :type ("ILubyte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1550 1563])
+                    ("Count" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1565 1578])
+                    ("Name" variable (:type ("ILuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1580 1592]))                  
+                :type "class")
+                nil [1457 1595])
+            ("UTX_P8" variable (:constant-flag t) nil [1621 1627])
+            ("UTX_DXT1" variable (:constant-flag t) nil [1642 1650])
+            ("iLoadUtxInternal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1684 1689]))                  
+                :type ("ILboolean" type (:type "class") nil nil))
+                nil [1657 1690]))          
+      :file "il_utx.h"
+      :pointmax 1706
+      :fsize 1705
+      :lastmodtime '(22277 31210 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UTX_DXT1" . ((number "0x03" 1651 . 1655)))
+          ("UTX_H")
+          ("UTX_P8" . ((number "0x00" 1629 . 1633)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("noinst_HEADERS" variable (:default-value ("il_targa.h" "il_doompal.h" "il_jpeg.h" "il_pnm.h" "il_endian.h" "il_lif.h" "il_q2pal.h" "il_alloc.h" "il_manip.h" "il_hdr.h" "il_register.h" "il_bits.h" "il_files.h" "il_mdl.h" "il_rle.h" "il_bmp.h" "il_icon.h" "il_pal.h" "il_sgi.h" "il_dcx.h" "il_internal.h" "il_pcx.h" "il_states.h" "il_dds.h" "il_stack.h" "il_pic.h" "il_psd.h" "il_psp.h" "il_gif.h" "il_vtf.h" "il_exr.h" "altivec_common.h" "altivec_typeconversion.h")) nil [1 785]))          
+      :file "Makefile.am"
+      :pointmax 785
+      :fsize 784
+      :lastmodtime '(21936 20342 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "il_dds.h"
+      :fsize 6524
+      :lastmodtime '(21936 20342 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "il_internal.h"
+      :fsize 20608
+      :lastmodtime '(21936 20342 0 0)))
+  :file "!Users!nshetty!Code!devil!DevIL!DevIL!src-IL!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

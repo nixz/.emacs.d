@@ -1,0 +1,219 @@
+;; Object kiwi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kiwi/"
+  :tables (list 
+   (semanticdb-table "vesKiwiStreamingDataRepresentation.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vesKiwiStreamingDataRepresentation.h" include nil nil [804 851])
+            ("vesRenderer.h" include nil nil [853 877])
+            ("vesCamera.h" include nil nil [878 900])
+            ("vesMapper.h" include nil nil [901 923])
+            ("vesGeometryData.h" include nil nil [924 952])
+            ("vesActor.h" include nil nil [953 974])
+            ("vesShaderProgram.h" include nil nil [975 1004])
+            ("vesKiwiDataConversionTools.h" include nil nil [1005 1044])
+            ("vesKiwiPolyDataRepresentation.h" include nil nil [1045 1087])
+            ("vtkPolyData.h" include (:system-flag t) nil [1089 1113])
+            ("vtkTimerLog.h" include (:system-flag t) nil [1114 1138])
+            ("vtkNew.h" include (:system-flag t) nil [1139 1158])
+            ("vtkDoubleArray.h" include (:system-flag t) nil [1159 1186])
+            ("vtkUnsignedCharArray.h" include (:system-flag t) nil [1187 1220])
+            ("vtkSphereSource.h" include (:system-flag t) nil [1221 1249])
+            ("vtkClientSocket.h" include (:system-flag t) nil [1250 1278])
+            ("vtkCharArray.h" include (:system-flag t) nil [1279 1304])
+            ("vtkFloatArray.h" include (:system-flag t) nil [1305 1331])
+            ("vtkUnsignedCharArray.h" include (:system-flag t) nil [1332 1365])
+            ("vtkPoints.h" include (:system-flag t) nil [1366 1388])
+            ("vtkPointData.h" include (:system-flag t) nil [1389 1414])
+            ("vtkShortArray.h" include (:system-flag t) nil [1415 1441])
+            ("vtkMultiThreader.h" include (:system-flag t) nil [1442 1471])
+            ("vtkMutexLock.h" include (:system-flag t) nil [1472 1497])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1499 1532])
+            ("vector" include (:system-flag t) nil [1534 1551])
+            ("cassert" include (:system-flag t) nil [1552 1570])
+            ("sstream" include (:system-flag t) nil [1571 1589])
+            ("vesInternal" type
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1726 1733])
+                    ("vesInternal" function
+                       (:constructor-flag t
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1737 1846])
+                    ("vesInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1850 1872])
+                    ("ClientThreadId" variable (:type "int") (reparse-symbol classsubparts) [1876 1895])
+                    ("HaveNew" variable (:type "bool") (reparse-symbol classsubparts) [1898 1911])
+                    ("ShouldQuit" variable (:type "bool") (reparse-symbol classsubparts) [1914 1930])
+                    ("Comm" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkClientSocket" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1934 1963])
+                    ("GeometryData" variable (:type ("vesGeometryData::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1967 2001])
+                    ("MultiThreader" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkMultiThreader" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2005 2044])
+                    ("Lock" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkMutexLock" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2047 2073])
+                    ("ExitLock" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkMutexLock" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2076 2106])
+                    ("PolyDataRep" variable (:type ("vesKiwiPolyDataRepresentation::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2110 2157])
+                    ("GeometryShader" variable (:type ("vesShaderProgram::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2160 2197]))                  
+                :type "class")
+                nil [1670 2200])
+            ("vesKiwiStreamingDataRepresentation" function
+               (:constructor-flag t
+                :parent "vesKiwiStreamingDataRepresentation"
+                :type ("vesKiwiStreamingDataRepresentation" type (:type "class") nil nil))
+                nil [2281 2395])
+            ("vesKiwiStreamingDataRepresentation" function
+               (:destructor-flag t
+                :parent "vesKiwiStreamingDataRepresentation"
+                :type "void")
+                nil [2476 2755])
+            ("connectToServer" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("host" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2893 2917])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2918 2927]))                  
+                :type "bool")
+                nil [2836 3006])
+            ("unnamed" type
+               (:members 
+                  ( ("CreateGeometryData" function
+                       (:arguments 
+                          ( ("points" variable
+                               (:pointer 1
+                                :type ("vtkShortArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3061 3083])
+                            ("colors" variable
+                               (:pointer 1
+                                :type ("vtkUnsignedCharArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3084 3113]))                          
+                        :type ("vesGeometryData::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3021 3977])
+                    ("ReceiveGeometryData" function
+                       (:arguments 
+                          ( ("comm" variable
+                               (:pointer 1
+                                :type ("vtkClientSocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4020 4042]))                          
+                        :type ("vesGeometryData::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3979 5173])
+                    ("ClientLoop" function
+                       (:arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5288 5298]))                          
+                        :type ("VTK_THREAD_RETURN_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5254 6063]))                  
+                :type "namespace")
+                nil [3008 6066])
+            ("initializeWithShader" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("shader" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesShaderProgram" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6213 6251]))                  
+                :type "void")
+                nil [6148 6759])
+            ("handleSingleTouchDown" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("displayX" variable (:type "int") (reparse-symbol arg-sub-list) [6903 6916])
+                    ("displayY" variable (:type "int") (reparse-symbol arg-sub-list) [6917 6930]))                  
+                :type "bool")
+                nil [6840 6998])
+            ("handleSingleTouchUp" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :type "bool")
+                nil [7079 7161])
+            ("handleSingleTouchTap" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("displayX" variable (:type "int") (reparse-symbol arg-sub-list) [7304 7317])
+                    ("displayY" variable (:type "int") (reparse-symbol arg-sub-list) [7318 7331]))                  
+                :type "bool")
+                nil [7242 7400])
+            ("handleSingleTouchPanGesture" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("deltaX" variable (:type "double") (reparse-symbol arg-sub-list) [7550 7564])
+                    ("deltaY" variable (:type "double") (reparse-symbol arg-sub-list) [7565 7579]))                  
+                :type "bool")
+                nil [7481 7643])
+            ("willRender" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("renderer" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesRenderer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7776 7811]))                  
+                :type "void")
+                nil [7724 8072])
+            ("addSelfToRenderer" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("renderer" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesRenderer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8212 8247]))                  
+                :type "void")
+                nil [8153 8360])
+            ("removeSelfFromRenderer" function
+               (:parent "vesKiwiStreamingDataRepresentation"
+                :arguments 
+                  ( ("renderer" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesRenderer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8505 8540]))                  
+                :type "void")
+                nil [8441 8706]))          
+    :file "vesKiwiStreamingDataRepresentation.cpp"
+    :pointmax 8707
+    :fsize 8706
+    :lastmodtime '(21278 6459 304844 438000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vesKiwiStreamingDataRepresentation.h"
+    :file "vesKiwiStreamingDataRepresentation.h"
+    :fsize 2192
+    :lastmodtime '(21278 6459 304844 438000)
+    )
+   (semanticdb-table "vesKiwiDataConversionTools.h"
+    :file "vesKiwiDataConversionTools.h"
+    :fsize 4914
+    :lastmodtime '(21278 6459 304844 438000)
+    )
+   (semanticdb-table "vesKiwiPolyDataRepresentation.h"
+    :file "vesKiwiPolyDataRepresentation.h"
+    :fsize 4225
+    :lastmodtime '(21374 27129 659583 892000)
+    )
+   )
+  :file "!home!nshetty!Code!ves!VES!src!kiwi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

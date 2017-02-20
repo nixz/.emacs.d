@@ -1,0 +1,54 @@
+;; Object data-generator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data-generator/"
+  :tables (list 
+   (semanticdb-table "TestGenerateHugeData.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkXMLMultiBlockDataWriter.h" include nil nil [785 824])
+            ("vtkNew.h" include nil nil [825 844])
+            ("vtkObjectFactory.h" include nil nil [845 874])
+            ("vtkSphereSource.h" include nil nil [875 903])
+            ("vtkStdString.h" include nil nil [904 929])
+            ("vtkMultiBlockDataSet.h" include nil nil [930 963])
+            ("vtkTesting.h" include nil nil [964 987])
+            ("generate" function
+               (:pointer 1
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1014 1024]))                  
+                :type ("vtkDataObject" type (:type "class") nil nil))
+                nil [989 1822])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1913 1917])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1918 1925]))                  
+                :type "int")
+                nil [1904 2406]))          
+    :file "TestGenerateHugeData.cxx"
+    :pointmax 2408
+    :fsize 2407
+    :lastmodtime '(20809 63196)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "generate.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("vtk" include nil nil [1 18])
+            ("generate" function (:arguments 
+              ( ("level" variable nil (reparse-symbol function_parameters) [113 118]))              ) nil [100 679])
+            ("main" function nil nil [761 1007])
+            ("if" code nil nil [1011 1047]))          
+    :file "generate.py"
+    :pointmax 1048
+    :fsize 1046
+    :lastmodtime '(20809 64647)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!data-generator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,126 @@
+;; Object Common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Common/"
+  :tables (list 
+   (semanticdb-table "vtkClientServerInterpreterInitializer.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkClientServerInterpreterInitializer.h" include nil nil [577 627])
+            ("vtkClientServerInterpreter.h" include nil nil [629 668])
+            ("vtkObjectFactory.h" include nil nil [669 698])
+            ("vtkSmartPointer.h" include nil nil [699 727])
+            ("vtkWeakPointer.h" include nil nil [728 755])
+            ("vector" include (:system-flag t) nil [757 774])
+            ("vtkInternals" type
+               (:parent "vtkClientServerInterpreterInitializer"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [836 843])
+                    ("VectorOfInterpreters" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("vtkWeakPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [846 936])
+                    ("Interpreters" variable (:type ("VectorOfInterpreters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [939 973])
+                    ("VectorOfCallbacks" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("vtkClientServerInterpreterInitializer::InterpreterInitializationCallback" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [976 1097])
+                    ("Callbacks" variable (:type ("VectorOfCallbacks" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1100 1128]))                  
+                :type "class")
+                nil [776 1131])
+            ("New" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreterInitializer"
+                :type ("vtkClientServerInterpreterInitializer" type (:type "class") nil nil))
+                nil [1379 1708])
+            ("vtkClientServerInterpreterInitializer" function
+               (:constructor-flag t
+                :parent "vtkClientServerInterpreterInitializer"
+                :type ("vtkClientServerInterpreterInitializer" type (:type "class") nil nil))
+                nil [1789 1911])
+            ("vtkClientServerInterpreterInitializer" function
+               (:destructor-flag t
+                :parent "vtkClientServerInterpreterInitializer"
+                :type "void")
+                nil [1992 2101])
+            ("GetInitializer" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreterInitializer"
+                :type ("vtkClientServerInterpreterInitializer" type (:type "class") nil nil))
+                nil [2182 2480])
+            ("GetGlobalInterpreter" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreterInitializer"
+                :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                nil [2561 2949])
+            ("NewInterpreter" function
+               (:pointer 1
+                :parent "vtkClientServerInterpreterInitializer"
+                :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                nil [3030 3282])
+            ("RegisterInterpreter" function
+               (:parent "vtkClientServerInterpreterInitializer"
+                :arguments 
+                  ( ("interp" variable
+                       (:pointer 1
+                        :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3430 3465]))                  
+                :type "void")
+                nil [3363 3790])
+            ("RegisterCallback" function
+               (:parent "vtkClientServerInterpreterInitializer"
+                :arguments 
+                  ( ("callback" variable (:type ("vtkClientServerInterpreterInitializer::InterpreterInitializationCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3935 4019]))                  
+                :type "void")
+                nil [3871 4340])
+            ("PrintSelf" function
+               (:parent "vtkClientServerInterpreterInitializer"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4475 4487])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4488 4505]))                  
+                :type "void")
+                nil [4421 4552]))          
+    :file "vtkClientServerInterpreterInitializer.cxx"
+    :pointmax 4553
+    :fsize 4552
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkClientServerInterpreterInitializer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkClientServerInterpreterInitializer_h" variable (:constant-flag t) nil [1178 1219])
+            ("vtkObject.h" include nil nil [1221 1243])
+            ("vtkPVCommonModule.h" include nil nil [1244 1274])
+            ("vtkClientServerInterpreter" type
+               (:prototype t
+                :type "class")
+                nil [1303 1336])
+            ("vtkObject" variable (:type "int") nil [1410 3582]))          
+    :file "vtkClientServerInterpreterInitializer.h"
+    :pointmax 3591
+    :fsize 3590
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1403 . 1409) (punctuation 1401 . 1402) (symbol 1363 . 1400) (symbol 1344 . 1362) (CLASS 1338 . 1343))
+    :lexical-table 
+        '(("__vtkClientServerInterpreterInitializer_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!Common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

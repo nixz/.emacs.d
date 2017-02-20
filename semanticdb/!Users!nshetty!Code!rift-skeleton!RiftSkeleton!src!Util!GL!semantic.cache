@@ -1,0 +1,234 @@
+;; Object GL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GL/"
+  :tables
+  (list
+    (semanticdb-table "ShaderWithVariables.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [137 157])
+            ("map" include (:system-flag t) nil [159 173])
+            ("string" include (:system-flag t) nil [174 191])
+            ("ShaderWithVariables" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [231 238])
+                    ("ShaderWithVariables" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ShaderWithVariables" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [243 265])
+                    ("ShaderWithVariables" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [270 301])
+                    ("initProgram" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("shadername" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [332 355]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [307 356])
+                    ("AddVbo" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [381 404])
+                            ("vbo" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 416]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [361 440])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [445 468])
+                    ("prog" function
+                       (:typemodifiers ("virtual")
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [474 523])
+                    ("bindVAO" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [528 586])
+                    ("GetAttrLoc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [616 639]))                          
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [591 646])
+                    ("GetUniLoc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [675 698]))                          
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [651 705])
+                    ("GetVboLoc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [735 758]))                          
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [710 765])
+                    ("protected" label nil (reparse-symbol classsubparts) [767 777])
+                    ("findVariables" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("vertsrc" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [809 829]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [782 830])
+                    ("m_program" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [836 853])
+                    ("m_vao" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [858 871])
+                    ("m_attrs" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("GLint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [876 913])
+                    ("m_unis" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("GLint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [918 954])
+                    ("m_vbos" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("GLuint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [959 996])
+                    ("private" label nil (reparse-symbol classsubparts) [998 1006])
+                    ("ShaderWithVariables" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ShaderWithVariables" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1077 1104]))                          
+                        :type ("ShaderWithVariables" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1057 1105])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ShaderWithVariables" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1141 1168]))                          
+                        :type ("ShaderWithVariables" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1110 1169]))                  
+                :type "class")
+                nil [203 1172]))          
+      :file "ShaderWithVariables.h"
+      :pointmax 1173
+      :fsize 1173
+      :lastmodtime '(21953 29295 0 0)
+      :unmatched-syntax '((symbol 35 . 39) (symbol 28 . 34) (punctuation 27 . 28)))
+    (semanticdb-table "ShaderWithVariables.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ShaderWithVariables.h" include nil nil [29 61])
+            ("ShaderFunctions.h" include nil nil [62 90])
+            ("StringFunctions.h" include nil nil [91 119])
+            ("iostream" include (:system-flag t) nil [121 140])
+            ("string" include (:system-flag t) nil [141 158])
+            ("sstream" include (:system-flag t) nil [159 177])
+            ("vector" include (:system-flag t) nil [178 195])
+            ("ShaderWithVariables" function
+               (:constructor-flag t
+                :parent "ShaderWithVariables"
+                :type ("ShaderWithVariables" type (:type "class") nil nil))
+                nil [197 303])
+            ("ShaderWithVariables" function
+               (:destructor-flag t
+                :parent "ShaderWithVariables"
+                :type "void")
+                nil [305 367])
+            ("destroy" function
+               (:parent "ShaderWithVariables"
+                :type "void")
+                nil [369 850])
+            ("initProgram" function
+               (:parent "ShaderWithVariables"
+                :arguments 
+                  ( ("shadername" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [890 913]))                  
+                :type "void")
+                nil [852 1637])
+            ("findVariables" function
+               (:parent "ShaderWithVariables"
+                :arguments 
+                  ( ("vertsrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1679 1699]))                  
+                :type "void")
+                nil [1639 2708])
+            ("GetAttrLoc" function
+               (:parent "ShaderWithVariables"
+                :arguments 
+                  ( ("name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2748 2771]))                  
+                :type ("GLint" type (:type "class") nil nil))
+                nil [2710 2943])
+            ("GetUniLoc" function
+               (:parent "ShaderWithVariables"
+                :arguments 
+                  ( ("name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3005]))                  
+                :type ("GLint" type (:type "class") nil nil))
+                nil [2945 3215])
+            ("GetVboLoc" function
+               (:parent "ShaderWithVariables"
+                :arguments 
+                  ( ("name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3255 3278]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [3217 3488]))          
+      :file "ShaderWithVariables.cpp"
+      :pointmax 3489
+      :fsize 3488
+      :lastmodtime '(21953 29295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ShaderFunctions.h"
+      :file "ShaderFunctions.h"
+      :fsize 519
+      :lastmodtime '(21953 29295 0 0)))
+  :file "!Users!nshetty!Code!rift-skeleton!RiftSkeleton!src!Util!GL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

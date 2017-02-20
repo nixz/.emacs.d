@@ -1,0 +1,481 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables
+  (list
+    (semanticdb-table "VRProteinShop.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [982 999])
+            ("cstring" include (:system-flag t) nil [1000 1018])
+            ("string.h" include (:system-flag t) nil [1019 1038])
+            ("iostream" include (:system-flag t) nil [1039 1058])
+            ("stdexcept" include (:system-flag t) nil [1059 1079])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1081 1110])
+            ("Misc/Timer.h" include (:system-flag t) nil [1111 1134])
+            ("Cluster/MulticastPipe.h" include (:system-flag t) nil [1135 1169])
+            ("Math/Math.h" include (:system-flag t) nil [1170 1192])
+            ("Geometry/Vector.h" include (:system-flag t) nil [1193 1221])
+            ("Geometry/OrthonormalTransformation.h" include (:system-flag t) nil [1222 1269])
+            ("Geometry/OrthogonalTransformation.h" include (:system-flag t) nil [1270 1316])
+            ("GL/gl.h" include (:system-flag t) nil [1317 1335])
+            ("GL/GLColorMap.h" include (:system-flag t) nil [1336 1362])
+            ("GL/GLContextData.h" include (:system-flag t) nil [1363 1392])
+            ("GL/GLLineIlluminator.h" include (:system-flag t) nil [1393 1426])
+            ("GLMotif/Popup.h" include (:system-flag t) nil [1427 1453])
+            ("GLMotif/Menu.h" include (:system-flag t) nil [1454 1479])
+            ("GLMotif/SubMenu.h" include (:system-flag t) nil [1480 1508])
+            ("GLMotif/PopupMenu.h" include (:system-flag t) nil [1509 1539])
+            ("GLMotif/RowColumn.h" include (:system-flag t) nil [1540 1570])
+            ("GLMotif/CascadeButton.h" include (:system-flag t) nil [1571 1605])
+            ("GLMotif/TitleBar.h" include (:system-flag t) nil [1606 1635])
+            ("GLMotif/PopupWindow.h" include (:system-flag t) nil [1636 1668])
+            ("GLMotif/WidgetManager.h" include (:system-flag t) nil [1669 1703])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1704 1726])
+            ("Vrui/ClusterSupport.h" include (:system-flag t) nil [1727 1759])
+            ("Protein/ClientServerPipe.h" include (:system-flag t) nil [1761 1798])
+            ("Protein/CreateProtein.h" include (:system-flag t) nil [1799 1833])
+            ("Protein/DragBox.h" include (:system-flag t) nil [1834 1862])
+            ("Protein/EnergyAPI.h" include (:system-flag t) nil [1863 1893])
+            ("Protein/Globals.h" include (:system-flag t) nil [1894 1922])
+            ("Protein/ParsePdbFile.h" include (:system-flag t) nil [1923 1956])
+            ("Protein/Protein.h" include (:system-flag t) nil [1957 1985])
+            ("Protein/ProteinInteractor.h" include (:system-flag t) nil [1986 2024])
+            ("Protein/ProteinRenderer.h" include (:system-flag t) nil [2025 2061])
+            ("Protein/Stride.h" include (:system-flag t) nil [2062 2089])
+            ("Protein/UndoBuffer.h" include (:system-flag t) nil [2090 2121])
+            ("VRProteinShop.h" include nil nil [2123 2149])
+            ("offlineBuildBeta" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2166 2221])
+            ("checkBondSites" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2166 2221])
+            ("slowTrans" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2166 2221])
+            ("lastIKResidual" variable
+               (:typemodifiers ("extern")
+                :type "double")
+                nil [2222 2251])
+            ("strand_to_coil_penalty" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("flatfrac" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("flatPhi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("flflatPhi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("raflatPhi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("flatPsi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("flflatPsi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("raflatPsi" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("bb0" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("bb1" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "float")
+                nil [2252 2379])
+            ("alignBase" variable
+               (:default-value "2"
+                :type "int")
+                nil [2396 2427])
+            ("planepr" variable
+               (:default-value "0"
+                :type "int")
+                nil [2396 2427])
+            ("inputfilename_size" variable
+               (:constant-flag t
+                :default-value "200"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2428 2466])
+            ("inputfilename" variable
+               (:dereference 1
+                :type "char")
+                nil [2467 2506])
+            ("prolpr" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [2523 2545])
+            ("buttonPressCallback" function
+               (:parent "VRProteinShop::StructureLocator"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::LocatorTool::ButtonPressCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2757 2808]))                  
+                :type "void")
+                nil [2696 3989])
+            ("dragStartCallback" function
+               (:parent "VRProteinShop::StructureDragger"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::DraggingTool::DragStartCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4199 4249]))                  
+                :type "void")
+                nil [4140 5065])
+            ("dragCallback" function
+               (:parent "VRProteinShop::StructureDragger"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::DraggingTool::DragCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5121 5166]))                  
+                :type "void")
+                nil [5067 5935])
+            ("dragEndCallback" function
+               (:parent "VRProteinShop::StructureDragger"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::DraggingTool::DragEndCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5994 6042]))                  
+                :type "void")
+                nil [5937 6234])
+            ("addProtein" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("newProtein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6363 6387])
+                    ("Id" variable (:type "int") (reparse-symbol arg-sub-list) [6388 6395]))                  
+                :type "void")
+                nil [6331 8033])
+            ("createGlobalDisplayMenu" function
+               (:pointer 1
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8090 8095]))                  
+                :type ("GLMotif::Popup" type (:type "class") nil nil))
+                nil [8035 10602])
+            ("createMainMenu" function
+               (:pointer 1
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10654 10659]))                  
+                :type ("GLMotif::PopupMenu" type (:type "class") nil nil))
+                nil [10604 11721])
+            ("createInteractionDialog" function
+               (:pointer 1
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11784 11789]))                  
+                :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                nil [11723 14197])
+            ("updateMenuState" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14235 14240]))                  
+                :type "void")
+                nil [14199 14972])
+            ("ikUpdateThreadMethod" function
+               (:pointer 1
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15016 15021]))                  
+                :type "void")
+                nil [14974 16015])
+            ("VRProteinShop" function
+               (:constructor-flag t
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16046 16056])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16057 16064])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16065 16070])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16071 16078])
+                    ("" variable (:type ("appDefaults" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16079 16091]))                  
+                :type ("VRProteinShop" type (:type "class") nil nil))
+                nil [16017 20399])
+            ("VRProteinShop" function
+               (:destructor-flag t
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20431 20436]))                  
+                :type "void")
+                nil [20401 20726])
+            ("initContext" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20760 20787]))                  
+                :type "void")
+                nil [20728 20878])
+            ("loadProteins" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20914 20935]))                  
+                :type "void")
+                nil [20880 25096])
+            ("loadPdb" function
+               (:pointer 1
+                :parent "VRProteinShop"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25136 25157]))                  
+                :type ("MD::Protein" type (:type "class") nil nil))
+                nil [25098 26460])
+            ("toolCreationCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::ToolManager::ToolCreationCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26506 26558]))                  
+                :type "void")
+                nil [26462 27333])
+            ("toolDestructionCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::ToolManager::ToolDestructionCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27382 27437]))                  
+                :type "void")
+                nil [27335 28364])
+            ("frame" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28392 28397]))                  
+                :type "void")
+                nil [28366 28937])
+            ("display" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28967 28994]))                  
+                :type "void")
+                nil [28939 29851])
+            ("centerDisplayCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29895 29915]))                  
+                :type "void")
+                nil [29853 30198])
+            ("menuToggleSelectCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30248 30304]))                  
+                :type "void")
+                nil [30200 31599])
+            ("showInteractionDialogValueChangedCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31666 31722]))                  
+                :type "void")
+                nil [31601 32018])
+            ("selectionModeValueChangedCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32077 32129]))                  
+                :type "void")
+                nil [32020 32392])
+            ("ikUpdateDirectionValueChangedCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32455 32507]))                  
+                :type "void")
+                nil [32394 32511])
+            ("resetActiveCoilRegionsCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32564 32584]))                  
+                :type "void")
+                nil [32513 32588])
+            ("autoBondingValueChangedCallback" function
+               (:parent "VRProteinShop"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::RadioBox::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32645 32697]))                  
+                :type "void")
+                nil [32590 32701])
+            ("updateDihedralAngles" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32786 32791]))                  
+                :type "void")
+                nil [32760 32795])
+            ("updateProteinNow" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32819 32824]))                  
+                :type "void")
+                nil [32797 32828])
+            ("applyTransformation" function
+               (:arguments 
+                  ( ("transformation" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProteinInteractor::Transformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32855 32911]))                  
+                :type "void")
+                nil [32830 35600])
+            ("zipAntiParallel" function
+               (:arguments 
+                  ( ("manipulatedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35622 35663])
+                    ("anchorResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35663 35699])
+                    ("pl" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35700 35712])
+                    ("cn" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35713 35725]))                  
+                :type "int")
+                nil [35602 40339])
+            ("zipParallel" function
+               (:arguments 
+                  ( ("manipulatedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40357 40398])
+                    ("anchorResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40398 40434])
+                    ("pl" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [40435 40447])
+                    ("cn" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [40448 40460]))                  
+                :type "int")
+                nil [40341 45249])
+            ("altZipAntiParallel" function
+               (:arguments 
+                  ( ("manipulatedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45274 45315])
+                    ("anchorResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45315 45351])
+                    ("pl" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [45352 45364])
+                    ("cn" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [45365 45377]))                  
+                :type "int")
+                nil [45251 50240])
+            ("altZipParallel" function
+               (:arguments 
+                  ( ("manipulatedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50261 50302])
+                    ("anchorResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50302 50338])
+                    ("pl" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [50339 50351])
+                    ("cn" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [50352 50364]))                  
+                :type "int")
+                nil [50242 54920])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54931 54940])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [54941 54954]))                  
+                :type "int")
+                nil [54922 55176]))          
+      :file "VRProteinShop.cpp"
+      :pointmax 55177
+      :fsize 55176
+      :lastmodtime '(20848 40002 0 0)
+      :unmatched-syntax '((punctuation 16077 . 16078) (punctuation 16063 . 16064) (punctuation 16077 . 16078) (punctuation 16063 . 16064)))
+    (semanticdb-table "VRProteinShop.h"
+      :file "VRProteinShop.h"
+      :fsize 8091
+      :lastmodtime '(20848 40217 0 0)))
+  :file "!apps!VRProteinShop!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

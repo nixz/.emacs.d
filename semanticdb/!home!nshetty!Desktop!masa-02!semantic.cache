@@ -1,0 +1,675 @@
+;; Object masa-02/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "masa-02/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("globalDefinition.h" include nil nil [1 30])
+            ("globalVariables.h" include nil nil [31 59])
+            ("configurationCxx.h" include nil nil [61 90])
+            ("configurationDirectory.h" include nil nil [91 126])
+            ("configurationFunction.h" include nil nil [127 161])
+            ("configurationStructure.h" include nil nil [162 197])
+            ("configurationUserInput.h" include nil nil [198 233])
+            ("configurationVTK.h" include nil nil [234 263])
+            ("analyzeGraph.h" include nil nil [265 290])
+            ("connectivityAnalysis.h" include nil nil [291 324])
+            ("constructDataStructure.h" include nil nil [325 360])
+            ("defineThroatInformation.h" include nil nil [361 397])
+            ("displayFunction.h" include nil nil [398 426])
+            ("distanceDistributionDriver.h" include nil nil [427 466])
+            ("euclideanDistanceOptimization.h" include nil nil [467 509])
+            ("graphConstructionDriver.h" include nil nil [510 546])
+            ("makeBridge.h" include nil nil [547 570])
+            ("makeCluster.h" include nil nil [571 595])
+            ("makeDirectories.h" include nil nil [596 624])
+            ("makeGraph.h" include nil nil [625 647])
+            ("makeObject.h" include nil nil [648 671])
+            ("mergeMedialPoint.h" include nil nil [672 701])
+            ("porosityAnalysis.h" include nil nil [702 731])
+            ("readConfigurationFile.h" include nil nil [732 766])
+            ("readFileCxx.h" include nil nil [767 791])
+            ("saveCoordinationNumber.h" include nil nil [792 827])
+            ("saveParameter.h" include nil nil [828 854])
+            ("savePoreSizeDistribution.h" include nil nil [855 892])
+            ("saveFluidSimulatorFormat.h" include nil nil [893 930])
+            ("saveVMDTXTFormat.h" include nil nil [931 960])
+            ("searchFunction.h" include nil nil [961 988])
+            ("shiftCoordinate.h" include nil nil [989 1017])
+            ("sphericityAnalysis.h" include nil nil [1018 1049])
+            ("stlError.h" include nil nil [1050 1071])
+            ("takePath.h" include nil nil [1072 1093])
+            ("tictoc.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1107 1130])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1144 1153])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1153 1166]))                  
+                :type "int")
+                nil [1135 4726]))          
+      :file "main.cpp"
+      :pointmax 4727
+      :fsize 4726
+      :lastmodtime '(21701 20512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "globalDefinition.h"
+      :file "globalDefinition.h"
+      :fsize 145
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "globalVariables.h"
+      :file "globalVariables.h"
+      :fsize 1658
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationCxx.h"
+      :file "configurationCxx.h"
+      :fsize 479
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationDirectory.h"
+      :file "configurationDirectory.h"
+      :fsize 2229
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationFunction.h"
+      :file "configurationFunction.h"
+      :fsize 419
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationStructure.h"
+      :file "configurationStructure.h"
+      :fsize 280
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationUserInput.h"
+      :file "configurationUserInput.h"
+      :fsize 786
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "configurationVTK.h"
+      :file "configurationVTK.h"
+      :fsize 881
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "analyzeGraph.h"
+      :file "analyzeGraph.h"
+      :fsize 564
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "connectivityAnalysis.h"
+      :file "connectivityAnalysis.h"
+      :fsize 281
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "constructDataStructure.h"
+      :file "constructDataStructure.h"
+      :fsize 341
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "defineThroatInformation.h"
+      :file "defineThroatInformation.h"
+      :fsize 363
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "displayFunction.h"
+      :file "displayFunction.h"
+      :fsize 2122
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "distanceDistributionDriver.h"
+      :file "distanceDistributionDriver.h"
+      :fsize 298
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "euclideanDistanceOptimization.h"
+      :file "euclideanDistanceOptimization.h"
+      :fsize 369
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "graphConstructionDriver.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GRAPHCONSTRUCTIONDRIVER_H" variable (:constant-flag t) nil [44 70])
+            ("graphConstruction" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117 140])
+                    ("outlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [153 177])
+                    ("userInput" variable
+                       (:reference 1
+                        :type ("configurationStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [190 228])
+                    ("ini" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [241 257])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [270 279]))                  
+                :type "void")
+                nil [74 280]))          
+      :file "graphConstructionDriver.h"
+      :pointmax 289
+      :fsize 288
+      :lastmodtime '(21704 10156 956706 821000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GRAPHCONSTRUCTIONDRIVER_H" . ((number "1" 71 . 72)))
+          )
+)
+    (semanticdb-table "makeBridge.h"
+      :file "makeBridge.h"
+      :fsize 208
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "makeCluster.h"
+      :file "makeCluster.h"
+      :fsize 395
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "makeDirectories.h"
+      :file "makeDirectories.h"
+      :fsize 144
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "makeGraph.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MAKEGRAPH_H" variable (:constant-flag t) nil [30 42])
+            ("makeGraph" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("userInput" variable
+                       (:reference 1
+                        :type ("configurationStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [81 119])
+                    ("g" variable
+                       (:reference 1
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("vtkMutableUndirectedGraph" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [132 178])
+                    ("order" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [191 217])
+                    ("inlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [230 253])
+                    ("outlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [266 290])
+                    ("fn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [303 318]))                  
+                :type "void")
+                nil [46 319]))          
+      :file "makeGraph.h"
+      :pointmax 328
+      :fsize 327
+      :lastmodtime '(21701 20512 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_MAKEGRAPH_H" . ((number "1" 43 . 44)))
+          )
+)
+    (semanticdb-table "makeObject.h"
+      :file "makeObject.h"
+      :fsize 175
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "mergeMedialPoint.h"
+      :file "mergeMedialPoint.h"
+      :fsize 342
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "porosityAnalysis.h"
+      :file "porosityAnalysis.h"
+      :fsize 324
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "readConfigurationFile.h"
+      :file "readConfigurationFile.h"
+      :fsize 160
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "readFileCxx.h"
+      :file "readFileCxx.h"
+      :fsize 1318
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "saveCoordinationNumber.h"
+      :file "saveCoordinationNumber.h"
+      :fsize 231
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "saveParameter.h"
+      :file "saveParameter.h"
+      :fsize 2262
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "savePoreSizeDistribution.h"
+      :file "savePoreSizeDistribution.h"
+      :fsize 303
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "saveFluidSimulatorFormat.h"
+      :file "saveFluidSimulatorFormat.h"
+      :fsize 449
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "saveVMDTXTFormat.h"
+      :file "saveVMDTXTFormat.h"
+      :fsize 427
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "searchFunction.h"
+      :file "searchFunction.h"
+      :fsize 3584
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "shiftCoordinate.h"
+      :file "shiftCoordinate.h"
+      :fsize 218
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "sphericityAnalysis.h"
+      :file "sphericityAnalysis.h"
+      :fsize 273
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "stlError.h"
+      :file "stlError.h"
+      :fsize 331
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "takePath.h"
+      :file "takePath.h"
+      :fsize 660
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "tictoc.h"
+      :file "tictoc.h"
+      :fsize 85
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "graphConstructionDriver.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("globalDefinition.h" include nil nil [1 30])
+            ("globalVariables.h" include nil nil [31 59])
+            ("configurationCxx.h" include nil nil [61 90])
+            ("configurationDirectory.h" include nil nil [91 126])
+            ("configurationFunction.h" include nil nil [127 161])
+            ("configurationUserInput.h" include nil nil [162 197])
+            ("configurationVTK.h" include nil nil [198 227])
+            ("analyzeGraph.h" include nil nil [229 254])
+            ("displayFunction.h" include nil nil [255 283])
+            ("euclideanDistanceOptimization.h" include nil nil [284 326])
+            ("graphConstructionDriver.h" include nil nil [327 363])
+            ("makeBridge.h" include nil nil [364 387])
+            ("makeCluster.h" include nil nil [388 412])
+            ("makeDirectories.h" include nil nil [413 441])
+            ("makeGraph.h" include nil nil [442 464])
+            ("mergeMedialPoint.h" include nil nil [465 494])
+            ("saveParameter.h" include nil nil [495 521])
+            ("readFileCxx.h" include nil nil [522 546])
+            ("stlError.h" include nil nil [547 568])
+            ("takePath.h" include nil nil [569 590])
+            ("tictoc.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [604 623])
+            ("tictoc.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [604 623])
+            ("graphConstruction" function
+               (:arguments 
+                  ( ("inlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [655 678])
+                    ("outlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [683 707])
+                    ("userInput" variable
+                       (:reference 1
+                        :type ("configurationStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [712 750])
+                    ("ini" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [755 771])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [776 785]))                  
+                :type "void")
+                nil [627 1853]))          
+      :file "graphConstructionDriver.cpp"
+      :pointmax 1854
+      :fsize 1857
+      :lastmodtime '(21704 10235 220709 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "makeGraph.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("globalDefinition.h" include nil nil [1 30])
+            ("globalVariables.h" include nil nil [31 59])
+            ("configurationCxx.h" include nil nil [61 90])
+            ("configurationDirectory.h" include nil nil [91 126])
+            ("configurationFunction.h" include nil nil [127 161])
+            ("configurationUserInput.h" include nil nil [162 197])
+            ("configurationVTK.h" include nil nil [198 227])
+            ("makeGraph.h" include nil nil [229 251])
+            ("makeGraphFunction.h" include nil nil [252 282])
+            ("readFileCxx.h" include nil nil [283 307])
+            ("stlError.h" include nil nil [308 329])
+            ("makeGraph" function
+               (:arguments 
+                  ( ("userInput" variable
+                       (:reference 1
+                        :type ("configurationStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [351 389])
+                    ("g" variable
+                       (:reference 1
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("vtkMutableUndirectedGraph" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [394 440])
+                    ("order" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [445 471])
+                    ("inlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [476 499])
+                    ("outlet" variable
+                       (:reference 1
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [504 528])
+                    ("fn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [533 548]))                  
+                :type "void")
+                nil [331 869]))          
+      :file "makeGraph.cpp"
+      :pointmax 870
+      :fsize 868
+      :lastmodtime '(21701 20512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "makeGraphFunction.h"
+      :file "makeGraphFunction.h"
+      :fsize 538
+      :lastmodtime '(21701 20512 0 0))
+    (semanticdb-table "readFileCxx.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("globalDefinition.h" include nil nil [1 30])
+            ("globalVariables.h" include nil nil [31 59])
+            ("configurationCxx.h" include nil nil [61 90])
+            ("configurationFunction.h" include nil nil [91 125])
+            ("configurationDirectory.h" include nil nil [126 161])
+            ("configurationUserInput.h" include nil nil [162 197])
+            ("configurationVTK.h" include nil nil [198 227])
+            ("readFileCxx.h" include nil nil [229 253])
+            ("stlError.h" include nil nil [254 275])
+            ("readIn3DVector" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [382 391])
+                    ("userInput" variable
+                       (:reference 1
+                        :type ("configurationStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [396 434])
+                    ("count" variable
+                       (:reference 1
+                        :type ("unint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [439 452])
+                    ("field" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [457 509]))                  
+                :type "void")
+                nil [357 1266])
+            ("readIn2DVector" function
+               (:arguments 
+                  ( ("cluster" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1373 1415])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1420 1429]))                  
+                :type "void")
+                nil [1348 2154])
+            ("read2DVector" function
+               (:arguments 
+                  ( ("cluster" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2259 2302])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2307 2316]))                  
+                :type "void")
+                nil [2236 3048])
+            ("readInVectorSet" function
+               (:arguments 
+                  ( ("cluster" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::set" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3156 3195])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3200 3209]))                  
+                :type "void")
+                nil [3130 3931])
+            ("readMap" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4072 4081])
+                    ("cluster" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4086 4117]))                  
+                :type "void")
+                nil [4054 4386])
+            ("readMap2" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4487 4496])
+                    ("cluster" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4501 4532]))                  
+                :type "void")
+                nil [4468 4800])
+            ("readMapVector" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4826 4835])
+                    ("nv" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4840 4880]))                  
+                :type "void")
+                nil [4802 5665])
+            ("readMapSet" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5687 5696])
+                    ("nv" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("std::set" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5701 5738]))                  
+                :type "void")
+                nil [5666 6508])
+            ("readMapSetANDVector" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6539 6548])
+                    ("nv" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("std::set" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6553 6590])
+                    ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6595 6617]))                  
+                :type "void")
+                nil [6509 7415])
+            ("readMapVectorANDVector" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7449 7458])
+                    ("nv" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil)
+                                  ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7463 7503])
+                    ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7508 7530]))                  
+                :type "void")
+                nil [7416 8343])
+            ("readVector" function
+               (:arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8365 8374])
+                    ("order" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8379 8405]))                  
+                :type "void")
+                nil [8344 8540]))          
+      :file "readFileCxx.cpp"
+      :pointmax 8541
+      :fsize 8008
+      :lastmodtime '(21701 20512 0 0)
+      :unmatched-syntax '((symbol 4801 . 4802))))
+  :file "!home!nshetty!Desktop!masa-02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,66 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables (list 
+   (semanticdb-table "opencl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("CL/cl.hpp" include (:system-flag t) nil [21 41])
+            ("boost/foreach.hpp" include (:system-flag t) nil [42 70])
+            ("getDeviceString" function
+               (:arguments 
+                  ( ("deviceType" variable (:type "int") (reparse-symbol arg-sub-list) [101 117]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [72 265])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [276 280])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [281 288]))                  
+                :type "int")
+                nil [267 1321])
+            ("std::endl" variable (:type "int") nil [1309 1319]))          
+    :file "opencl.cpp"
+    :pointmax 1097
+    :fsize 1321
+    :lastmodtime '(21827 52952 857121 791000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clDeviceQuery.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CL/cl.h" include (:system-flag t) nil [208 226])
+            ("stdlib.h" include (:system-flag t) nil [234 253])
+            ("stdio.h" include (:system-flag t) nil [254 272])
+            ("string.h" include (:system-flag t) nil [273 292])
+            ("sstream" include (:system-flag t) nil [294 312])
+            ("fstream" include (:system-flag t) nil [313 331])
+            ("clPrintDevInfo" function
+               (:arguments 
+                  ( ("device" variable (:type ("cl_device_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 373]))                  
+                :type "void")
+                nil [333 7740])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7752 7761])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7762 7780]))                  
+                :type "int")
+                nil [7743 14696]))          
+    :file "clDeviceQuery.cpp"
+    :pointmax 14697
+    :fsize 14696
+    :lastmodtime '(21827 53939 581109 388000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nshetty!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

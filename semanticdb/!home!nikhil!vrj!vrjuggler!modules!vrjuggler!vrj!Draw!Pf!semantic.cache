@@ -1,0 +1,109 @@
+;; Object Pf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Pf/"
+  :tables (list 
+   (semanticdb-table "BasicSimulator.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/Draw/Pf/Config.h" include (:system-flag t) nil [1122 1153])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [1155 1189])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1190 1214])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1215 1241])
+            ("gmtl/MatrixOps.h" include (:system-flag t) nil [1242 1269])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1270 1291])
+            ("gmtl/VecOps.h" include (:system-flag t) nil [1292 1316])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1317 1341])
+            ("gmtl/Output.h" include (:system-flag t) nil [1342 1366])
+            ("Performer/pf.h" include (:system-flag t) nil [1368 1393])
+            ("Performer/pfdu.h" include (:system-flag t) nil [1394 1421])
+            ("Performer/pf/pfDCS.h" include (:system-flag t) nil [1422 1453])
+            ("Performer/pf/pfScene.h" include (:system-flag t) nil [1454 1487])
+            ("Performer/pf/pfChannel.h" include (:system-flag t) nil [1488 1523])
+            ("Performer/pf/pfLightSource.h" include (:system-flag t) nil [1524 1563])
+            ("Performer/pfdu.h" include (:system-flag t) nil [1564 1591])
+            ("Performer/pf/pfTraverser.h" include (:system-flag t) nil [1592 1629])
+            ("vpr/Util/FileUtils.h" include (:system-flag t) nil [1631 1662])
+            ("jccl/Config/ConfigElement.h" include (:system-flag t) nil [1663 1701])
+            ("vrj/Kernel/User.h" include (:system-flag t) nil [1703 1731])
+            ("vrj/Draw/Pf/DrawManager.h" include (:system-flag t) nil [1733 1769])
+            ("vrj/Display/DisplayManager.h" include (:system-flag t) nil [1771 1810])
+            ("vrj/Display/Projection.h" include (:system-flag t) nil [1811 1846])
+            ("vrj/Display/Viewport.h" include (:system-flag t) nil [1847 1880])
+            ("vrj/Display/SimViewport.h" include (:system-flag t) nil [1881 1917])
+            ("vrj/Display/SurfaceViewport.h" include (:system-flag t) nil [1918 1958])
+            ("vrj/Draw/Pf/SimInterfaceFactory.h" include (:system-flag t) nil [1960 2004])
+            ("vrj/Draw/Pf/Util.h" include (:system-flag t) nil [2005 2034])
+            ("vrj/Draw/Pf/BasicSimulator.h" include (:system-flag t) nil [2036 2075])
+            ("vrj" type
+               (:members 
+                  ( ("pf" type
+                       (:members 
+                          ( ("VRJ_REGISTER_PF_SIM_INTERFACE_CREATOR" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("BasicSimulator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2149 2164]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2111 2165])
+                            ("BasicSimulator" function
+                               (:constructor-flag t
+                                :parent "BasicSimulator"
+                                :type ("BasicSimulator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2167 2401])
+                            ("config" function
+                               (:parent "BasicSimulator"
+                                :arguments 
+                                  ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2472 2503]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2444 3542])
+                            ("setKeyboardMouse" function
+                               (:parent "BasicSimulator"
+                                :arguments 
+                                  ( ("kmInterface" variable (:type ("gadget::KeyboardMouseInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3669 3712]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3631 3771])
+                            ("updateProjectionData" function
+                               (:parent "BasicSimulator"
+                                :arguments 
+                                  ( ("positionScale" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [3815 3841])
+                                    ("leftProj" variable (:type ("ProjectionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3884 3907])
+                                    ("rightProj" variable (:type ("ProjectionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3950 3974]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3773 5179])
+                            ("updateInternalData" function
+                               (:parent "BasicSimulator"
+                                :arguments 
+                                  ( ("positionScale" variable (:type "float") (reparse-symbol arg-sub-list) [5256 5276]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5216 5486])
+                            ("configPerformerAPI" function
+                               (:parent "BasicSimulator"
+                                :arguments 
+                                  ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5528 5559]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [5488 6872])
+                            ("initSimulatorGraph" function
+                               (:parent "BasicSimulator"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6874 8425])
+                            ("updateSimulatorSceneGraph" function
+                               (:parent "BasicSimulator"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8427 8837]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2095 8840]))                  
+                :type "namespace")
+                nil [2078 8843]))          
+    :file "BasicSimulator.cpp"
+    :pointmax 8844
+    :fsize 8843
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!vrj!vrjuggler!modules!vrjuggler!vrj!Draw!Pf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

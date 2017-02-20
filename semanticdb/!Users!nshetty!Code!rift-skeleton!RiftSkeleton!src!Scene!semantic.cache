@@ -1,0 +1,303 @@
+;; Object Scene/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Scene/"
+  :tables
+  (list
+    (semanticdb-table "OVRScene.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OVRScene.h" include nil nil [18 39])
+            ("opengl/gl.h" include nil nil [58 80])
+            ("_USE_MATH_DEFINES" variable (:constant-flag t) nil [193 210])
+            ("math.h" include (:system-flag t) nil [211 228])
+            ("stdlib.h" include (:system-flag t) nil [230 249])
+            ("string.h" include (:system-flag t) nil [250 269])
+            ("algorithm" include (:system-flag t) nil [270 290])
+            ("OVR_CAPI.h" include (:system-flag t) nil [292 313])
+            ("OVR.h" include nil nil [314 330])
+            ("glm/glm.hpp" include (:system-flag t) nil [332 354])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [355 386])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [387 426])
+            ("GL/glew.h" include (:system-flag t) nil [428 448])
+            ("Logger.h" include nil nil [450 469])
+            ("OVRScene" function
+               (:constructor-flag t
+                :parent "OVRScene"
+                :type ("OVRScene" type (:type "class") nil nil))
+                nil [471 671])
+            ("OVRScene" function
+               (:destructor-flag t
+                :parent "OVRScene"
+                :type "void")
+                nil [673 698])
+            ("initGL" function
+               (:parent "OVRScene"
+                :type "void")
+                nil [700 841])
+            ("_InitFrustumAttributes" function
+               (:parent "OVRScene"
+                :type "void")
+                nil [921 2886])
+            ("_DrawFrustum" function
+               (:parent "OVRScene"
+                :type "void")
+                nil [2888 3089])
+            ("DrawScene" function
+               (:parent "OVRScene"
+                :arguments 
+                  ( ("modelview" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("glm::mat4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3121 3148])
+                    ("projection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("glm::mat4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3153 3181]))                  
+                :type "void")
+                nil [3091 4147])
+            ("RenderForOneEye" function
+               (:parent "OVRScene"
+                :arguments 
+                  ( ("pMview" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4180 4200])
+                    ("pPersp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4201 4221]))                  
+                :type "void")
+                nil [4149 5196])
+            ("timestep" function
+               (:parent "OVRScene"
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [5222 5241])
+                    ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [5242 5252]))                  
+                :type "void")
+                nil [5198 7561]))          
+      :file "OVRScene.cpp"
+      :pointmax 7562
+      :fsize 7561
+      :lastmodtime '(21953 29295 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_USE_MATH_DEFINES")
+          )
+)
+    (semanticdb-table "OVRScene.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [125 144])
+            ("vector" include (:system-flag t) nil [145 162])
+            ("GL/glew.h" include (:system-flag t) nil [164 184])
+            ("glm/glm.hpp" include (:system-flag t) nil [186 208])
+            ("OVR_CAPI.h" include (:system-flag t) nil [209 230])
+            ("IScene.h" include nil nil [232 251])
+            ("ShaderWithVariables.h" include nil nil [252 284])
+            ("OVRScene" type
+               (:superclasses 
+                  ( ("IScene" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [372 379])
+                    ("OVRScene" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("OVRScene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [384 395])
+                    ("OVRScene" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [400 420])
+                    ("initGL" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [426 448])
+                    ("timestep" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("absTime" variable (:type "double") (reparse-symbol arg-sub-list) [475 490])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [491 501]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [453 502])
+                    ("RenderForOneEye" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pMview" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [536 556])
+                            ("pPersp" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [557 577]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [507 584])
+                    ("SetHmdPointer" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pHmd" variable (:type ("ovrHmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [672 684]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [645 703])
+                    ("protected" label nil (reparse-symbol classsubparts) [705 715])
+                    ("_InitFrustumAttributes" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [720 750])
+                    ("_DrawFrustum" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [755 781])
+                    ("DrawScene" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modelview" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::mat4" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [810 837])
+                            ("projection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::mat4" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [846 874]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [786 881])
+                    ("m_basic" variable (:type ("ShaderWithVariables" type (:type "class") nil nil)) (reparse-symbol classsubparts) [887 915])
+                    ("m_pHmd" variable (:type ("ovrHmd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [920 934])
+                    ("m_frustumVerts" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("glm::vec3" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [939 977])
+                    ("m_distanceToFrustum" variable (:type "float") (reparse-symbol classsubparts) [982 1008])
+                    ("m_tanFromCameraCenterline" variable (:type ("glm::vec2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1013 1049])
+                    ("m_tanHalfFov" variable (:type ("glm::vec2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1054 1077])
+                    ("private" label nil (reparse-symbol classsubparts) [1079 1087])
+                    ("OVRScene" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OVRScene" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1163]))                          
+                        :type ("OVRScene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1138 1164])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OVRScene" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1189 1205]))                          
+                        :type ("OVRScene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1169 1206]))                  
+                :type "class")
+                nil [339 1209]))          
+      :file "OVRScene.h"
+      :pointmax 1210
+      :fsize 1209
+      :lastmodtime '(21953 29295 0 0)
+      :unmatched-syntax '((symbol 24 . 28) (symbol 17 . 23) (punctuation 16 . 17)))
+    (semanticdb-table "IScene.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IScene" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [77 84])
+                    ("IScene" function
+                       (:constructor-flag t
+                        :type ("IScene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [89 164])
+                    ("initGL" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [170 196])
+                    ("timestep" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("absTime" variable (:type "double") (reparse-symbol arg-sub-list) [224 239])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [240 250]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [202 255])
+                    ("RenderPrePass" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [261 298])
+                    ("RenderForOneEye" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pMview" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [342 362])
+                            ("pPersp" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [371 391]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [304 402])
+                    ("RayIntersects" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [444 457])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [485 498])
+                            ("" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [529 536])
+                            ("" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [568 575])
+                            ("" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [608 646]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [408 670])
+                    ("m_bDraw" variable (:type "bool") (reparse-symbol classsubparts) [676 689])
+                    ("m_bChassisLocalSpace" variable (:type "bool") (reparse-symbol classsubparts) [694 720]))                  
+                :type "class")
+                nil [62 723]))          
+      :file "IScene.h"
+      :pointmax 724
+      :fsize 723
+      :lastmodtime '(21953 29295 0 0)
+      :unmatched-syntax '((symbol 22 . 26) (symbol 15 . 21) (punctuation 14 . 15))))
+  :file "!Users!nshetty!Code!rift-skeleton!RiftSkeleton!src!Scene!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,793 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkPoints.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPoints.h" include nil nil [583 605])
+            ("vtkBitArray.h" include nil nil [607 631])
+            ("vtkCharArray.h" include nil nil [632 657])
+            ("vtkDoubleArray.h" include nil nil [658 685])
+            ("vtkFloatArray.h" include nil nil [686 712])
+            ("vtkIdList.h" include nil nil [713 735])
+            ("vtkIdTypeArray.h" include nil nil [736 763])
+            ("vtkIntArray.h" include nil nil [764 788])
+            ("vtkLongArray.h" include nil nil [789 814])
+            ("vtkObjectFactory.h" include nil nil [815 844])
+            ("vtkShortArray.h" include nil nil [845 871])
+            ("vtkUnsignedCharArray.h" include nil nil [872 905])
+            ("vtkUnsignedIntArray.h" include nil nil [906 938])
+            ("vtkUnsignedLongArray.h" include nil nil [939 972])
+            ("vtkUnsignedShortArray.h" include nil nil [973 1007])
+            ("vtkInstantiatorNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPoints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1166 1176]))                  
+                :type "int")
+                nil [1142 1177])
+            ("New" function
+               (:pointer 1
+                :parent "vtkPoints"
+                :arguments 
+                  ( ("dataType" variable (:type "int") (reparse-symbol arg-sub-list) [1284 1297]))                  
+                :type ("vtkPoints" type (:type "class") nil nil))
+                nil [1258 1705])
+            ("New" function
+               (:pointer 1
+                :parent "vtkPoints"
+                :type ("vtkPoints" type (:type "class") nil nil))
+                nil [1707 1774])
+            ("vtkPoints" function
+               (:constructor-flag t
+                :parent "vtkPoints"
+                :arguments 
+                  ( ("dataType" variable (:type "int") (reparse-symbol arg-sub-list) [1859 1872]))                  
+                :type ("vtkPoints" type (:type "class") nil nil))
+                nil [1838 2195])
+            ("vtkPoints" function
+               (:destructor-flag t
+                :parent "vtkPoints"
+                :type "void")
+                nil [2197 2256])
+            ("GetPoints" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("ptIds" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2338 2355])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("vtkPoints" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2356 2370]))                  
+                :type "void")
+                nil [2312 2523])
+            ("ComputeBounds" function
+               (:parent "vtkPoints"
+                :type "void")
+                nil [2590 3428])
+            ("GetBounds" function
+               (:pointer 1
+                :parent "vtkPoints"
+                :type "double")
+                nil [3466 3548])
+            ("GetBounds" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("bounds" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3612 3629]))                  
+                :type "void")
+                nil [3586 3729])
+            ("Allocate" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("sz" variable
+                       (:constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3755 3774])
+                    ("ext" variable
+                       (:constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3775 3795]))                  
+                :type "int")
+                nil [3731 3905])
+            ("Initialize" function
+               (:parent "vtkPoints"
+                :type "void")
+                nil [3907 3967])
+            ("GetDataType" function
+               (:parent "vtkPoints"
+                :type "int")
+                nil [3969 4037])
+            ("SetDataType" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("dataType" variable (:type "int") (reparse-symbol arg-sub-list) [4118 4131]))                  
+                :type "void")
+                nil [4090 4381])
+            ("SetData" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("vtkDataArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4499 4518]))                  
+                :type "void")
+                nil [4475 4960])
+            ("DeepCopy" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("da" variable
+                       (:pointer 1
+                        :type ("vtkPoints" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5072 5086]))                  
+                :type "void")
+                nil [5047 5440])
+            ("ShallowCopy" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("da" variable
+                       (:pointer 1
+                        :type ("vtkPoints" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5588 5602]))                  
+                :type "void")
+                nil [5560 5638])
+            ("GetActualMemorySize" function
+               (:parent "vtkPoints"
+                :type "unsigned long")
+                nil [5640 5734])
+            ("PrintSelf" function
+               (:parent "vtkPoints"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5762 5774])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5775 5792]))                  
+                :type "void")
+                nil [5736 6518]))          
+    :file "vtkPoints.cxx"
+    :pointmax 6519
+    :fsize 6518
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPoints.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPoints_h" variable (:constant-flag t) nil [826 839])
+            ("vtkCommonCoreModule.h" include nil nil [841 873])
+            ("vtkObject.h" include nil nil [894 916])
+            ("vtkDataArray.h" include nil nil [918 943])
+            ("vtkIdList" type
+               (:prototype t
+                :type "class")
+                nil [974 990])
+            ("vtkPoints" type
+               (:prototype t
+                :type "class")
+                nil [991 1007])
+            ("vtkObject" variable (:type "int") nil [1055 6896])
+            ("SetNumberOfPoints" function
+               (:parent "vtkPoints"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("number" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6939 6956]))                  
+                :type "void")
+                nil [6898 7041])
+            ("SetPoint" function
+               (:parent "vtkPoints"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("id" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7075 7088])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [7089 7098])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [7099 7108])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [7109 7118]))                  
+                :type "void")
+                nil [7043 7203])
+            ("InsertPoint" function
+               (:parent "vtkPoints"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("id" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7240 7253])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [7254 7263])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [7264 7273])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [7274 7283]))                  
+                :type "void")
+                nil [7205 7372])
+            ("InsertNextPoint" function
+               (:parent "vtkPoints"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [7418 7427])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [7428 7437])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [7438 7447]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [7374 7544]))          
+    :file "vtkPoints.h"
+    :pointmax 7554
+    :fsize 7553
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkPoints_h")
+          )
+
+    )
+   (semanticdb-table "vtkDataArrayTemplate.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDataArrayTemplate_h" variable (:constant-flag t) nil [917 941])
+            ("vtkCommonCoreModule.h" include nil nil [943 975])
+            ("vtkDataArray.h" include nil nil [996 1021])
+            ("vtkDataArrayTemplateLookup" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [1023 1075])
+            ("vtkDataArray" variable (:type "int") nil [1152 11173])
+            ("VTK_DATA_ARRAY_TEMPLATE_INSTANTIATE" variable (:constant-flag t) nil [11237 11272]))          
+    :file "vtkDataArrayTemplate.h"
+    :pointmax 13092
+    :fsize 13091
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 1145 . 1151) (punctuation 1143 . 1144) (symbol 1123 . 1143) (symbol 1102 . 1122) (CLASS 1096 . 1101) (punctuation 1094 . 1095) (symbol 1093 . 1094) (CLASS 1087 . 1092) (punctuation 1086 . 1087) (TEMPLATE 1077 . 1085))
+    :lexical-table 
+        '(("__vtkDataArrayTemplate_h")
+          ("VTK_DATA_ARRAY_TEMPLATE_INSTANTIATE" (spp-arg-list ("T") 11272 . 11275) . 
+              ((TEMPLATE "template" 11281 . 11289) (CLASS "class" 11290 . 11295) (symbol "VTKCOMMONCORE_EXPORT" 11296 . 11316) (symbol "vtkDataArrayTemplate" 11317 . 11337) (punctuation "<" 11337 . 11338) (symbol "T" 11339 . 11340) (punctuation ">" 11341 . 11342)))
+          )
+
+    )
+   (semanticdb-table "vtkBitArray.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkBitArray_h" variable (:constant-flag t) nil [941 956])
+            ("vtkCommonCoreModule.h" include nil nil [958 990])
+            ("vtkDataArray.h" include nil nil [1011 1036])
+            ("vtkBitArrayLookup" type
+               (:prototype t
+                :type "class")
+                nil [1038 1062])
+            ("vtkDataArray" variable (:type "int") nil [1112 8742])
+            ("SetNumberOfValues" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("number" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8787 8804]))                  
+                :type "void")
+                nil [8744 8885])
+            ("SetValue" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("id" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8921 8934])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [8935 8945]))                  
+                :type "void")
+                nil [8887 9209])
+            ("InsertValue" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("id" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9248 9261])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9262 9268]))                  
+                :type "void")
+                nil [9211 9659])
+            ("SetVariantValue" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("id" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9702 9715])
+                    ("value" variable (:type ("vtkVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9716 9733]))                  
+                :type "void")
+                nil [9661 9774])
+            ("InsertNextValue" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9822 9828]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [9776 9916])
+            ("Squeeze" function
+               (:parent "vtkBitArray"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [9918 9993]))          
+    :file "vtkBitArray.h"
+    :pointmax 10003
+    :fsize 10002
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 1105 . 1111) (punctuation 1103 . 1104) (symbol 1091 . 1102) (symbol 1070 . 1090) (CLASS 1064 . 1069))
+    :lexical-table 
+        '(("__vtkBitArray_h")
+          )
+
+    )
+   (semanticdb-table "vtkDataArray.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkDataArray_h" variable (:constant-flag t) nil [1593 1609])
+            ("vtkCommonCoreModule.h" include nil nil [1611 1643])
+            ("vtkAbstractArray.h" include nil nil [1664 1693])
+            ("vtkDoubleArray" type
+               (:prototype t
+                :type "class")
+                nil [1695 1716])
+            ("vtkIdList" type
+               (:prototype t
+                :type "class")
+                nil [1717 1733])
+            ("vtkInformationDoubleVectorKey" type
+               (:prototype t
+                :type "class")
+                nil [1734 1770])
+            ("vtkLookupTable" type
+               (:prototype t
+                :type "class")
+                nil [1771 1792])
+            ("vtkAbstractArray" variable (:type "int") nil [1843 16599]))          
+    :file "vtkDataArray.h"
+    :pointmax 16608
+    :fsize 16607
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 1836 . 1842) (punctuation 1834 . 1835) (symbol 1821 . 1833) (symbol 1800 . 1820) (CLASS 1794 . 1799))
+    :lexical-table 
+        '(("__vtkDataArray_h")
+          )
+
+    )
+   (semanticdb-table "vtkNew.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkNew_h" variable (:constant-flag t) nil [1849 1859])
+            ("vtkIOStream.h" include nil nil [1861 1885])
+            ("vtkObjectBase" type
+               (:prototype t
+                :type "class")
+                nil [1887 1907])
+            ("vtkNew" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("CheckObjectBase" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("vtkObjectBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2057 2072]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2036 2075])
+                    ("public" label nil (reparse-symbol classsubparts) [2076 2083])
+                    ("Object" function
+                       (:arguments 
+                          ( ("" variable (:type ("T::New" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2159 2167]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2152 2221])
+                    ("vtkNew" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2299 2421])
+                    ("->" function
+                       (:operator-flag t
+                        :pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2536 2594])
+                    ("GetPointer" function
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2863 2921])
+                    ("private" label nil (reparse-symbol classsubparts) [2923 2931])
+                    ("vtkNew" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkNew" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2941 2958]))                          
+                        :type ("vtkNew" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2934 2959])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkNew" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2997 3014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2982 3015])
+                    ("Object" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3040 3050]))                  )
+                nil [1909 3053])
+            ("<<" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("ostream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3180 3192])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkNew" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3193 3212]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3132 3247]))          
+    :file "vtkNew.h"
+    :pointmax 3292
+    :fsize 3291
+    :lastmodtime '(20763 27203)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkNew_h")
+          )
+
+    )
+   (semanticdb-table "vtkMath.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkMath_h" variable (:constant-flag t) nil [1650 1661])
+            ("vtkCommonCoreModule.h" include nil nil [1663 1695])
+            ("vtkObject.h" include nil nil [1716 1738])
+            ("assert.h" include (:system-flag t) nil [1740 1759])
+            ("VTK_DBL_MIN" variable (:constant-flag t) nil [1826 1837])
+            ("VTK_DBL_EPSILON" variable (:constant-flag t) nil [1966 1981])
+            ("vtkMathConfigure.h" include nil nil [2094 2123])
+            ("vtkDataArray" type
+               (:prototype t
+                :type "class")
+                nil [2384 2403])
+            ("vtkPoints" type
+               (:prototype t
+                :type "class")
+                nil [2404 2420])
+            ("vtkMathInternal" type
+               (:prototype t
+                :type "class")
+                nil [2421 2443])
+            ("vtkMinimalStandardRandomSequence" type
+               (:prototype t
+                :type "class")
+                nil [2444 2483])
+            ("vtkBoxMuellerRandomSequence" type
+               (:prototype t
+                :type "class")
+                nil [2484 2518])
+            ("vtkObject" variable
+               (:dereference 1
+                :type "int")
+                nil [2564 38516])
+            ("RadiansFromDegrees" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [38639 38648]))                  
+                :type "float")
+                nil [38597 38679])
+            ("RadiansFromDegrees" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [38803 38813]))                  
+                :type "double")
+                nil [38760 38852])
+            ("DegreesFromRadians" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [38975 38984]))                  
+                :type "float")
+                nil [38933 39017])
+            ("DegreesFromRadians" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [39141 39151]))                  
+                :type "double")
+                nil [39098 39187])
+            ("Factorial" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [39308 39315]))                  
+                :type ("vtkTypeInt64" type (:type "class") nil nil))
+                nil [39268 39397])
+            ("Floor" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [39739 39748]))                  
+                :type "int")
+                nil [39713 39889])
+            ("Ceil" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [40229 40238]))                  
+                :type "int")
+                nil [40204 40380])
+            ("Normalize" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [40493 40504]))                  
+                :type "float")
+                nil [40461 40657])
+            ("Normalize" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [40771 40783]))                  
+                :type "double")
+                nil [40738 40937])
+            ("Normalize2D" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [41052 41063]))                  
+                :type "float")
+                nil [41018 41218])
+            ("Normalize2D" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [41334 41346]))                  
+                :type "double")
+                nil [41299 41502])
+            ("Determinant3x3" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("c1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [41620 41638])
+                    ("c2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [41676 41694])
+                    ("c3" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [41732 41750]))                  
+                :type "float")
+                nil [41583 41915])
+            ("Determinant3x3" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("c1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [42034 42053])
+                    ("c2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [42092 42111])
+                    ("c3" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [42150 42169]))                  
+                :type "double")
+                nil [41996 42334])
+            ("Determinant3x3" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a1" variable (:type "double") (reparse-symbol arg-sub-list) [42453 42463])
+                    ("a2" variable (:type "double") (reparse-symbol arg-sub-list) [42464 42474])
+                    ("a3" variable (:type "double") (reparse-symbol arg-sub-list) [42475 42485])
+                    ("b1" variable (:type "double") (reparse-symbol arg-sub-list) [42524 42534])
+                    ("b2" variable (:type "double") (reparse-symbol arg-sub-list) [42535 42545])
+                    ("b3" variable (:type "double") (reparse-symbol arg-sub-list) [42546 42556])
+                    ("c1" variable (:type "double") (reparse-symbol arg-sub-list) [42595 42605])
+                    ("c2" variable (:type "double") (reparse-symbol arg-sub-list) [42606 42616])
+                    ("c3" variable (:type "double") (reparse-symbol arg-sub-list) [42617 42627]))                  
+                :type "double")
+                nil [42415 42814])
+            ("Distance2BetweenPoints" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42940 42957])
+                    ("y" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [43003 43020]))                  
+                :type "float")
+                nil [42895 43166])
+            ("Distance2BetweenPoints" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [43293 43311])
+                    ("y" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [43358 43376]))                  
+                :type "double")
+                nil [43247 43522])
+            ("Cross" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [43699 43716])
+                    ("y" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [43717 43734])
+                    ("z" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [43735 43746]))                  
+                :type "void")
+                nil [43672 43905])
+            ("Cross" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [44082 44100])
+                    ("y" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [44101 44119])
+                    ("z" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [44120 44132]))                  
+                :type "void")
+                nil [44055 44294])
+            ("vtkDeterminant3x3" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "double"
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 2
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44431 44441]))                  
+                :typemodifiers ("inline"))
+                nil [44381 44651])
+            ("Determinant3x3" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [44776 44790]))                  
+                :type "double")
+                nil [44738 44827])
+            ("Determinant3x3" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [44946 44961]))                  
+                :type "double")
+                nil [44908 44998])
+            ("ClampValue" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45111 45125])
+                    ("range" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45126 45148]))                  
+                :type "void")
+                nil [45079 45327])
+            ("ClampValue" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [45443 45456])
+                    ("range" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45457 45479])
+                    ("clamped_value" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45480 45502]))                  
+                :type "void")
+                nil [45408 45758])
+            ("ClampAndNormalizeValue" function
+               (:parent "vtkMath"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [45885 45898])
+                    ("range" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45945 45967]))                  
+                :type "double")
+                nil [45839 46555]))          
+    :file "vtkMath.h"
+    :pointmax 46932
+    :fsize 46931
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 2557 . 2563) (punctuation 2555 . 2556) (symbol 2547 . 2554) (symbol 2526 . 2546) (CLASS 2520 . 2525))
+    :lexical-table 
+        '(("VTK_DBL_MIN" . ((number "2.2250738585072014e-308" 1841 . 1864)))
+          ("VTK_DBL_EPSILON" . ((number "2.2204460492503131e-16" 1985 . 2007)))
+          ("__vtkMath_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Common!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

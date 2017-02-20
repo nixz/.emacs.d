@@ -1,0 +1,162 @@
+;; Object SimpleApp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SimpleApp/"
+  :tables (list 
+   (semanticdb-table "simpleApp.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("math.h" include (:system-flag t) nil [1150 1167])
+            ("GL/gl.h" include (:system-flag t) nil [1251 1271])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1304 1328])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1329 1355])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1356 1377])
+            ("simpleApp.h" include (:system-flag t) nil [1379 1401])
+            ("gmtl" using (:type ("gmtl" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1403 1424])
+            ("vrj" using (:type ("vrj" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1425 1445])
+            ("bufferPreDraw" function
+               (:parent "simpleApp"
+                :type "void")
+                nil [1623 1732])
+            ("draw" function
+               (:parent "simpleApp"
+                :type "void")
+                nil [1967 3715])
+            ("initGLState" function
+               (:parent "simpleApp"
+                :type "void")
+                nil [3719 4964])
+            ("drawbox" function
+               (:arguments 
+                  ( ("x0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5019 5031])
+                    ("x1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5032 5044])
+                    ("y0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5045 5057])
+                    ("y1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5058 5070])
+                    ("z0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5084 5096])
+                    ("z1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5097 5109])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5110 5122]))                  
+                :type "void")
+                nil [5006 6292]))          
+    :file "simpleApp.cpp"
+    :pointmax 6293
+    :fsize 6292
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "simpleApp.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_SIMPLE_APP" variable (:constant-flag t) nil [1150 1161])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1163 1189])
+            ("iostream" include (:system-flag t) nil [1191 1210])
+            ("iomanip" include (:system-flag t) nil [1211 1229])
+            ("GL/gl.h" include (:system-flag t) nil [1285 1305])
+            ("vrj/Draw/OpenGL/App.h" include (:system-flag t) nil [1314 1346])
+            ("gadget/Type/PositionInterface.h" include (:system-flag t) nil [1348 1390])
+            ("gadget/Type/DigitalInterface.h" include (:system-flag t) nil [1391 1432])
+            ("vrj" using (:type ("vrj" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1434 1454])
+            ("drawbox" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1505 1517])
+                    ("x1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1518 1530])
+                    ("y0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1531 1543])
+                    ("y1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1544 1556])
+                    ("z0" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1571 1583])
+                    ("z1" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1596])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1597 1610]))                  
+                :type "void")
+                nil [1491 1611])
+            ("simpleApp" type
+               (:superclasses 
+                  ( ("opengl::App" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1869 1876])
+                    ("simpleApp" function
+                       (:constructor-flag t
+                        :type ("simpleApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1880 1898])
+                    ("simpleApp" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1923 1928]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1903 1932])
+                    ("public" label nil (reparse-symbol classsubparts) [1934 1941])
+                    ("init" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2232 2486])
+                    ("apiInit" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2684 2713])
+                    ("public" label nil (reparse-symbol classsubparts) [2715 2722])
+                    ("bufferPreDraw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3422 3451])
+                    ("preFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3590 3828])
+                    ("intraFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3982 4011])
+                    ("postFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4161 4189])
+                    ("public" label nil (reparse-symbol classsubparts) [4191 4198])
+                    ("contextInit" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4466 4592])
+                    ("draw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4821 4841])
+                    ("private" label nil (reparse-symbol classsubparts) [4843 4851])
+                    ("initGLState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4855 4874])
+                    ("drawCube" function (:type "void") (reparse-symbol classsubparts) [4879 4962])
+                    ("public" label nil (reparse-symbol classsubparts) [4964 4971])
+                    ("mWand" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4975 5008])
+                    ("mHead" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5062 5095])
+                    ("mButton0" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5149 5185])
+                    ("mButton1" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5228 5264]))                  
+                :type "class")
+                nil [1830 5306]))          
+    :file "simpleApp.h"
+    :pointmax 5316
+    :fsize 5315
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SIMPLE_APP")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vrj!vrjuggler!modules!vrjuggler!samples!OGL!simple!SimpleApp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

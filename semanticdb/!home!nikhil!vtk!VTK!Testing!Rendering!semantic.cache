@@ -1,0 +1,71 @@
+;; Object Rendering/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Rendering/"
+  :tables (list 
+   (semanticdb-table "vtkRegressionTestImage.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkRegressionTestImage_h" variable (:constant-flag t) nil [637 663])
+            ("vtkTesting.h" include nil nil [872 895])
+            ("vtkRegressionTester" type
+               (:superclasses 
+                  ( ("vtkTesting" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [945 955])
+                    ("vtkRegressionTester" function
+                       (:constructor-flag t
+                        :type ("vtkRegressionTester" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [958 982])
+                    ("vtkRegressionTester" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [986 1011])
+                    ("private" label nil (reparse-symbol classsubparts) [1013 1021])
+                    ("vtkRegressionTester" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkRegressionTester" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1044 1071]))                          
+                        :type ("vtkRegressionTester" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1024 1072])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkRegressionTester" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1111 1138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1096 1139]))                  
+                :type "class")
+                nil [897 1163])
+            ("vtkRegressionTestImage" variable (:constant-flag t) nil [1173 1195])
+            ("vtkRegressionTestImageThreshold" variable (:constant-flag t) nil [1248 1279]))          
+    :file "vtkRegressionTestImage.h"
+    :pointmax 1415
+    :fsize 1414
+    :lastmodtime '(20759 20583)
+    :unmatched-syntax '((punctuation 1011 . 1012) (punctuation 982 . 983))
+    :lexical-table 
+        '(("vtkRegressionTestImage" (spp-arg-list ("rw") 1195 . 1199) . 
+              ((symbol "vtkTesting" 1202 . 1212) (punctuation ":" 1212 . 1213) (punctuation ":" 1213 . 1214) (symbol "Test" 1214 . 1218) (semantic-list "(argc, argv, rw, 10)" 1218 . 1238)))
+          ("vtkRegressionTestImageThreshold" (spp-arg-list ("rw" "t") 1279 . 1286) . 
+              ((symbol "vtkTesting" 1289 . 1299) (punctuation ":" 1299 . 1300) (punctuation ":" 1300 . 1301) (symbol "Test" 1301 . 1305) (semantic-list "(argc, argv, rw, t)" 1305 . 1324)))
+          ("__vtkRegressionTestImage_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Testing!Rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

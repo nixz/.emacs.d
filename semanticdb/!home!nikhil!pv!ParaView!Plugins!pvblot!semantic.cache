@@ -1,0 +1,408 @@
+;; Object pvblot/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pvblot/"
+  :tables (list 
+   (semanticdb-table "blotish.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("" "" The blotish module provides a set of commands that control batch ParaView visualization using semantics similar to the blot program\. Instead of calling the public methods of blotish directly this module is driven by pvblot\. The pvblot module creates an interpreter that translates blot syntax to botish method calls\. See pvblot\. "" "" code nil nil [1 342])
+            ("paraview.simple" include nil nil [1234 1256])
+            ("async_io_helper" include nil nil [1257 1279])
+            ("timestep_selection" include nil nil [1280 1305])
+            ("number_list_parser" include nil nil [1306 1331])
+            ("blot_common" include nil nil [1332 1350])
+            ("tplot" include nil nil [1351 1376])
+            ("math" include nil nil [1377 1388])
+            ("re" include nil nil [1389 1398])
+            ("state" variable nil nil [1534 1546])
+            ("BlotishError" variable nil nil [1600 1632])
+            ("NODE_VARIABLE" variable nil nil [1651 1692])
+            ("ELEMENT_VARIABLE" variable nil nil [1693 1740])
+            ("GLOBAL_VARIABLE" variable nil nil [1741 1786])
+            ("EXODUS" variable nil nil [1787 1814])
+            ("SPYPLOT" variable nil nil [1815 1844])
+            ("STANDARD_COLORS" variable nil nil [1846 1891])
+            ("_subprogram" function (:arguments 
+              ( ("names" variable nil (reparse-symbol function_parameters) [1910 1915]))              ) nil [1894 3198])
+            ("_State" type
+               (:superclasses ("object")
+                :members (("" This class holds state variables for blotish including PV objects\. "" code nil (reparse-symbol indented_block_body) [3226 3294]) ("__init__" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [3313 3317]))) (reparse-symbol indented_block_body) [3300 4079]) ("__del__" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [4096 4100]))) (reparse-symbol indented_block_body) [4084 4515]) ("_getPrompt" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [4535 4539]))) (reparse-symbol indented_block_body) [4520 4742]) ("prompt" variable nil (reparse-symbol indented_block_body) [4746 4827]) ("_pipelineObjects" variable nil (reparse-symbol indented_block_body) [4833 4854]) ("_getPipelineObject" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [4882 4886]) ("name" variable nil (reparse-symbol function_parameters) [4888 4892]) ("createFunc" variable nil (reparse-symbol function_parameters) [4894 4904]) ("newObjectOptions" variable nil (reparse-symbol function_parameters) [4906 4924]))) (reparse-symbol indented_block_body) [4859 5157]) ("hasPipelineObject" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [5184 5188]) ("name" variable nil (reparse-symbol function_parameters) [5190 5194]))) (reparse-symbol indented_block_body) [5162 5248]) ("_reader" variable nil (reparse-symbol indented_block_body) [5253 5267]) ("_getReader" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [5287 5291]))) (reparse-symbol indented_block_body) [5272 6923]) ("reader" variable nil (reparse-symbol indented_block_body) [6928 7004]) ("_surface" variable nil (reparse-symbol indented_block_body) [7010 7025]) ("_getSurface" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [7046 7050]))) (reparse-symbol indented_block_body) [7030 7232]) ("surface" variable nil (reparse-symbol indented_block_body) [7236 7339]) ("_glyph" variable nil (reparse-symbol indented_block_body) [7345 7358]) ("_getGlyph" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [7377 7381]))) (reparse-symbol indented_block_body) [7363 7514]) ("glyph" variable nil (reparse-symbol indented_block_body) [7518 7584]) ("_contour" variable nil (reparse-symbol indented_block_body) [7590 7605]) ("_getContour" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [7626 7630]))) (reparse-symbol indented_block_body) [7610 7766]) ("contour" variable nil (reparse-symbol indented_block_body) [7770 7842]) ("resetPipeline" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [7866 7870]))) (reparse-symbol indented_block_body) [7848 8055]) ("currentVariable" variable nil (reparse-symbol indented_block_body) [8094 8116]) ("currentVariableType" variable nil (reparse-symbol indented_block_body) [8217 8243]) ("loadVariable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [8266 8270]) ("name" variable nil (reparse-symbol function_parameters) [8272 8276]))) (reparse-symbol indented_block_body) [8249 8831]) ("get_next_screenshot_filename" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [8869 8873]) ("label" variable nil (reparse-symbol function_parameters) [8875 8880]))) (reparse-symbol indented_block_body) [8836 8990]) ("_getCurrentVariableInfo" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [9023 9027]))) (reparse-symbol indented_block_body) [8995 9441]) ("currentVariableInfo" variable nil (reparse-symbol indented_block_body) [9445 9500]) ("_blockLookupTable" variable nil (reparse-symbol indented_block_body) [9607 9631]) ("_getBlockLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [9661 9665]))) (reparse-symbol indented_block_body) [9636 10065]) ("blockLookupTable" variable nil (reparse-symbol indented_block_body) [10069 10196]) ("rebuildBlockLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [10230 10234]))) (reparse-symbol indented_block_body) [10202 10298]) ("_rebuildBlockLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [10331 10335]) ("lt" variable nil (reparse-symbol function_parameters) [10337 10339]))) (reparse-symbol indented_block_body) [10302 10710]) ("_spectrumLookupTable" variable nil (reparse-symbol indented_block_body) [10715 10742]) ("_spectrumLookupTableVariable" variable nil (reparse-symbol indented_block_body) [10747 10780]) ("_getSpectrumLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [10813 10817]))) (reparse-symbol indented_block_body) [10785 11319]) ("spectrumLookupTable" variable nil (reparse-symbol indented_block_body) [11323 11465]) ("rebuildSpectrumLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [11502 11506]))) (reparse-symbol indented_block_body) [11471 11576]) ("_rebuildSpectrumLookupTable" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [11612 11616]) ("lt" variable nil (reparse-symbol function_parameters) [11618 11620]))) (reparse-symbol indented_block_body) [11580 12679]) ("_getSpectrumScalarValues" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [12713 12717]))) (reparse-symbol indented_block_body) [12684 12776]) ("spectrumScalarValues" variable nil (reparse-symbol indented_block_body) [12780 12937]) ("getPlotTimes" function (:arguments (("self" variable nil (reparse-symbol function_parameters) [12960 12964]))) (reparse-symbol indented_block_body) [12943 13023]))
+                :type "class")
+                nil [3200 13023])
+            ("_cleanup" function nil nil [13025 13089])
+            ("_get_prompt" function nil nil [13090 13217])
+            ("_handle_input" function (:arguments 
+              ( ("line" variable nil (reparse-symbol function_parameters) [13236 13240]))              ) nil [13218 13288])
+            ("_get_io_helper" function nil nil [13289 13337])
+            ("_set_interactive" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [13359 13364]))              ) nil [13338 13513])
+            ("_find_variable_or_raise_exception" function (:arguments 
+              ( ("reader" variable nil (reparse-symbol function_parameters) [13552 13558])
+                ("name" variable nil (reparse-symbol function_parameters) [13560 13564]))              ) nil [13514 13800])
+            ("_init_blotish" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [13819 13827]))              ) nil [13801 16224])
+            ("_finish_plot_change" function nil nil [16225 16375])
+            ("_find_variable_command" function (:arguments 
+              ( ("variable_name" variable nil (reparse-symbol function_parameters) [16403 16416]))              ) nil [16376 16940])
+            ("_subprogram" code nil nil [16942 16962])
+            ("async_io_helper" code nil nil [16964 17000])
+            ("typlot" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [17012 17017])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [17019 17027]))              ) nil [17001 18193])
+            ("_require_plot_mode" function (:arguments 
+              ( ("mode" variable nil (reparse-symbol function_parameters) [18218 18222]))              ) nil [18195 18546])
+            ("_subprogram" code nil nil [18549 18569])
+            ("async_io_helper" code nil nil [18571 18607])
+            ("xyplot" function (:arguments 
+              ( ("io_helper" variable nil (reparse-symbol function_parameters) [18619 18628]))              ) nil [18608 20677])
+            ("detour" function nil nil [20680 20931])
+            ("tplot" function nil nil [20932 21254])
+            ("_subprogram" code nil nil [21256 21276])
+            ("overlay" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [21289 21294]))              ) nil [21277 21529])
+            ("_subprogram" code nil nil [21531 21552])
+            ("color" function (:arguments 
+              ( ("ncol" variable nil (reparse-symbol function_parameters) [21563 21567]))              ) nil [21553 22064])
+            ("_subprogram" code nil nil [22066 22087])
+            ("spectrum" function (:arguments 
+              ( ("ncol" variable nil (reparse-symbol function_parameters) [22101 22105]))              ) nil [22088 22538])
+            ("_updateMeshRender" function nil nil [22539 23442])
+            ("_subprogram" code nil nil [23444 23465])
+            ("mlines" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [23477 23482]))              ) nil [23466 23918])
+            ("diskwrite" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [23934 23939]))              ) nil [23920 24242])
+            ("_subprogram" code nil nil [24244 24265])
+            ("wireframe" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [24280 24285]))              ) nil [24266 24783])
+            ("_subprogram" code nil nil [24785 24806])
+            ("solid" function nil nil [24807 25390])
+            ("_subprogram" code nil nil [25392 25413])
+            ("paint" function (:arguments 
+              ( ("variable" variable nil (reparse-symbol function_parameters) [25424 25432]))              ) nil [25414 26384])
+            ("_subprogram" code nil nil [26386 26407])
+            ("contour" function (:arguments 
+              ( ("variable" variable nil (reparse-symbol function_parameters) [26420 26428]))              ) nil [26408 27607])
+            ("_subprogram" code nil nil [27609 27630])
+            ("vector" function (:arguments 
+              ( ("variable" variable nil (reparse-symbol function_parameters) [27642 27650]))              ) nil [27631 29329])
+            ("async_io_helper" code nil nil [29334 29370])
+            ("_tplot_plot" function (:arguments 
+              ( ("io_helper" variable nil (reparse-symbol function_parameters) [29387 29396]))              ) nil [29371 30164])
+            ("_tplot_reset" function nil nil [30166 30210])
+            ("_detour_reset" function nil nil [30215 30252])
+            ("_subprogram" code nil nil [30254 30286])
+            ("plot" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [30296 30301]))              ) nil [30287 30454])
+            ("_subprogram" code nil nil [30456 30488])
+            ("reset" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [30499 30504]))              ) nil [30489 30655])
+            ("_subprogram" code nil nil [30657 30689])
+            ("times" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [30700 30705]))              ) nil [30690 31003])
+            ("_subprogram" code nil nil [31005 31037])
+            ("steps" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [31048 31053]))              ) nil [31038 31351])
+            ("_subprogram" code nil nil [31354 31374])
+            ("xscale" function (:arguments 
+              ( ("min_value" variable nil (reparse-symbol function_parameters) [31386 31395])
+                ("max_value" variable nil (reparse-symbol function_parameters) [31402 31411]))              ) nil [31375 31600])
+            ("_subprogram" code nil nil [31602 31622])
+            ("yscale" function (:arguments 
+              ( ("min_value" variable nil (reparse-symbol function_parameters) [31634 31643])
+                ("max_value" variable nil (reparse-symbol function_parameters) [31650 31659]))              ) nil [31623 31848])
+            ("_subprogram" code nil nil [31850 31870])
+            ("xlabel" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [31882 31887]))              ) nil [31871 31982])
+            ("_subprogram" code nil nil [31984 32004])
+            ("ylabel" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [32016 32021]))              ) nil [32005 32116])
+            ("_subprogram" code nil nil [32118 32131])
+            ("nintv" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [32142 32147]))              ) nil [32132 32276])
+            ("_subprogram" code nil nil [32278 32291])
+            ("zintv" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [32302 32307]))              ) nil [32292 32436])
+            ("_subprogram" code nil nil [32438 32451])
+            ("deltime" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [32464 32469]))              ) nil [32452 32604])
+            ("_subprogram" code nil nil [32606 32619])
+            ("tmin" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [32629 32634]))              ) nil [32620 32766])
+            ("_subprogram" code nil nil [32768 32781])
+            ("tmax" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [32791 32796]))              ) nil [32782 32928])
+            ("_subprogram" code nil nil [32930 32943])
+            ("alltimes" function nil nil [32944 33084])
+            ("show" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [33094 33098]))              ) nil [33085 33582])
+            ("async_io_helper" code nil nil [33585 33621])
+            ("_detour_plot" function (:arguments 
+              ( ("io_helper" variable nil (reparse-symbol function_parameters) [33639 33648]))              ) nil [33622 34376])
+            ("autoplot" function (:arguments 
+              ( ("flag" variable nil (reparse-symbol function_parameters) [34390 34394]))              ) nil [34377 34770])
+            ("x" variable nil nil [34771 34778])
+            ("y" variable nil nil [34779 34786])
+            ("z" variable nil nil [34787 34794])
+            ("elevation" variable nil nil [34795 34818])
+            ("azimuth" variable nil nil [34819 34838])
+            ("roll" variable nil nil [34839 34852])
+            ("_subprogram" code nil nil [34855 34876])
+            ("rotate" function (:arguments 
+              ( ("rotations" variable nil (reparse-symbol function_parameters) [34888 34898]))              ) nil [34877 36310])
+            ("_subprogram" code nil nil [36313 36334])
+            ("zoom" function (:arguments 
+              ( ("factor" variable nil (reparse-symbol function_parameters) [36344 36350]))              ) nil [36335 37242])
+            ("_subprogram" code nil nil [37244 37265])
+            ("translate" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [37280 37281])
+                ("y" variable nil (reparse-symbol function_parameters) [37283 37284]))              ) nil [37266 38733])
+            ("_token_to_bool" function (:arguments 
+              ( ("token" variable nil (reparse-symbol function_parameters) [38753 38758]))              ) nil [38734 38975])
+            ("_maybe_convert" function (:arguments 
+              ( ("token" variable nil (reparse-symbol function_parameters) [38996 39001])
+                ("number_class" variable nil (reparse-symbol function_parameters) [39003 39015]))              ) nil [38977 39428]))          
+    :file "blotish.py"
+    :pointmax 39430
+    :fsize 39429
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((punctuation 37243 . 37244) (punctuation 36312 . 36313) (punctuation 34854 . 34855) (punctuation 33584 . 33585) (punctuation 32929 . 32930) (punctuation 32767 . 32768) (punctuation 32605 . 32606) (punctuation 32437 . 32438) (punctuation 32277 . 32278) (punctuation 32117 . 32118) (punctuation 31983 . 31984) (punctuation 31849 . 31850) (punctuation 31601 . 31602) (punctuation 31353 . 31354) (punctuation 31004 . 31005) (punctuation 30656 . 30657) (punctuation 30455 . 30456) (punctuation 30253 . 30254) (punctuation 29333 . 29334) (punctuation 27608 . 27609) (punctuation 26385 . 26386) (punctuation 25391 . 25392) (punctuation 24784 . 24785) (punctuation 24243 . 24244) (punctuation 23443 . 23444) (punctuation 22065 . 22066) (punctuation 21530 . 21531) (punctuation 21255 . 21256) (punctuation 18570 . 18571) (punctuation 18548 . 18549) (punctuation 16963 . 16964) (punctuation 16941 . 16942))
+    )
+   (semanticdb-table "pqBlotShell.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPython.h" include (:system-flag t) nil [926 948])
+            ("pqBlotShell.h" include nil nil [966 990])
+            ("pqConsoleWidget.h" include nil nil [992 1020])
+            ("pqServer.h" include nil nil [1021 1042])
+            ("QDir" include (:system-flag t) nil [1044 1059])
+            ("QCoreApplication" include (:system-flag t) nil [1060 1087])
+            ("QVBoxLayout" include (:system-flag t) nil [1088 1110])
+            ("vtkEventQtSlotConnect.h" include nil nil [1112 1146])
+            ("vtkProcessModule.h" include nil nil [1147 1176])
+            ("vtkPVOptions.h" include nil nil [1177 1202])
+            ("vtkPVPythonInterpretor.h" include nil nil [1203 1238])
+            ("pqBlotShell" function
+               (:constructor-flag t
+                :parent "pqBlotShell"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1345 1356]))                  
+                :type ("pqBlotShell" type (:type "class") nil nil))
+                nil [1320 1828])
+            ("pqBlotShell" function
+               (:destructor-flag t
+                :parent "pqBlotShell"
+                :type "void")
+                nil [1830 1955])
+            ("initialize" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2066 2090]))                  
+                :type "void")
+                nil [2037 2173])
+            ("initialize" function
+               (:parent "pqBlotShell"
+                :type "void")
+                nil [2175 4114])
+            ("destroyInterpretor" function
+               (:parent "pqBlotShell"
+                :type "void")
+                nil [4196 4654])
+            ("executePythonCommand" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4775 4798]))                  
+                :type "void")
+                nil [4736 4961])
+            ("executeBlotCommand" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5080 5103]))                  
+                :type "void")
+                nil [5043 5325])
+            ("echoExecuteBlotCommand" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5448 5471]))                  
+                :type "void")
+                nil [5407 5684])
+            ("executeBlotScript" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5802 5826]))                  
+                :type "void")
+                nil [5766 5982])
+            ("printStderr" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6094 6106])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6107 6121])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6122 6129])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6160 6175]))                  
+                :type "void")
+                nil [6064 6307])
+            ("printStdout" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6339 6351])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6352 6366])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6367 6374])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6405 6420]))                  
+                :type "void")
+                nil [6309 6552])
+            ("printStderr" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6664 6684]))                  
+                :type "void")
+                nil [6634 6930])
+            ("printStdout" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6962 6982]))                  
+                :type "void")
+                nil [6932 7228])
+            ("printMessage" function
+               (:parent "pqBlotShell"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7261 7281]))                  
+                :type "void")
+                nil [7230 7527])
+            ("promptForInput" function
+               (:parent "pqBlotShell"
+                :type "void")
+                nil [7609 8597]))          
+    :file "pqBlotShell.cxx"
+    :pointmax 8598
+    :fsize 8597
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tplot.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "tplot.py"
+    :pointmax 11604
+    :fsize 11603
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PVBlotPluginActions.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PVBlotPluginActions.h" include nil nil [934 966])
+            ("pqApplicationCore.h" include nil nil [968 998])
+            ("pqBlotDialog.h" include nil nil [999 1024])
+            ("pqFileDialog.h" include nil nil [1025 1050])
+            ("pqServer.h" include nil nil [1051 1072])
+            ("pqServerManagerModel.h" include nil nil [1073 1106])
+            ("QApplication" include (:system-flag t) nil [1108 1131])
+            ("QMainWindow" include (:system-flag t) nil [1132 1154])
+            ("PVBlotPluginActions" function
+               (:constructor-flag t
+                :parent "PVBlotPluginActions"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1277 1288]))                  
+                :type ("PVBlotPluginActions" type (:type "class") nil nil))
+                nil [1236 1485])
+            ("activeServer" function
+               (:pointer 1
+                :parent "PVBlotPluginActions"
+                :type ("pqServer" type (:type "class") nil nil))
+                nil [1567 1815])
+            ("mainWindow" function
+               (:pointer 1
+                :parent "PVBlotPluginActions"
+                :type ("QWidget" type (:type "class") nil nil))
+                nil [1897 2098])
+            ("startPVBlot" function
+               (:parent "PVBlotPluginActions"
+                :type "void")
+                nil [2180 2997])
+            ("startPVBlot" function
+               (:parent "PVBlotPluginActions"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3117 3141]))                  
+                :type "void")
+                nil [3079 3392])
+            ("startPVBlot" function
+               (:parent "PVBlotPluginActions"
+                :arguments 
+                  ( ("filenames" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3512 3541]))                  
+                :type "void")
+                nil [3474 3580]))          
+    :file "PVBlotPluginActions.cxx"
+    :pointmax 3581
+    :fsize 3584
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Plugins!pvblot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

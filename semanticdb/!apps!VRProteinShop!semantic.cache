@@ -1,0 +1,42 @@
+;; Object VRProteinShop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "VRProteinShop/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUIDIR" variable (:default-value ("/apps/Vrui-2.6")) nil [40 65])
+            ("TARGET" variable (:default-value ("VRProteinShop")) nil [91 114])
+            ("TYPE" variable (:default-value ("release")) nil [135 150])
+            ("DIRS" variable (:default-value ("source/GL" "source/Protein" "source")) nil [191 230])
+            ("LIBS" variable (:default-value ("GLU")) nil [259 270])
+            ("DLIBS" variable (:default-value ("-lglu")) nil [290 304])
+            ("FRAMEWORKS" variable nil nil [325 339])
+            ("INCPATH" variable (:default-value ("$(DIRS)")) nil [1140 1158])
+            ("LIBPATH" variable nil nil [1158 1169])
+            ("EXTRA_FILES" variable (:default-value ("Makefile")) nil [1230 1253])
+            ("EXECDIR" variable (:default-value ("bin")) nil [1300 1314])
+            ("SRCDIR" variable (:default-value ("source")) nil [1336 1352])
+            ("OBJDIR" variable (:default-value ("objects")) nil [1399 1416])
+            ("SOURCE" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.cpp))")) nil [1447 1505])
+            ("HEADERS" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.h))")) nil [1534 1591])
+            ("OBJECTS" variable (:default-value ("$(addprefix $(OBJDIR)/, $(SOURCE:.cpp=.o))")) nil [1620 1674])
+            ("DFILES" variable (:default-value ("$(addprefix $(OBJDIR)/,$(SOURCE:.cpp=.d))")) nil [1707 1759])
+            (".PHONY" function (:arguments ("clean" "backup" "dirs" "all")) nil [1824 1854])
+            ("ALL" variable (:default-value ("$(TARGET)")) nil [1855 1871])
+            ("all" function (:arguments ("$(ALL)")) nil [1872 1884])
+            ("VRProteinShop" function (:arguments ("dirs" "$(OBJECTS)")) nil [1987 2269])
+            ("$(OBJDIR)" function (:arguments ("%.cpp")) nil [2468 2786])
+            ("%.hpp" function (:arguments (";")) nil [2846 2855])
+            ("clean" function nil nil [2907 3042])
+            ("backup" function nil nil [3070 3216])
+            ("dirs" function nil nil [3248 3458]))          
+      :file "Makefile"
+      :pointmax 3557
+      :fsize 3556
+      :lastmodtime '(22477 50925 272690 397000)
+      :unmatched-syntax nil))
+  :file "!apps!VRProteinShop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

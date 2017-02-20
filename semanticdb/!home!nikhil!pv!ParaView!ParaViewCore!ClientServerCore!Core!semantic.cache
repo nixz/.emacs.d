@@ -1,0 +1,1699 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkPVPluginsInformation.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVPluginsInformation.h" include nil nil [563 599])
+            ("vtkObjectFactory.h" include nil nil [601 630])
+            ("vtkPVPlugin.h" include nil nil [631 655])
+            ("vtkPVPluginLoader.h" include nil nil [656 686])
+            ("vtkPVPluginTracker.h" include nil nil [687 718])
+            ("vtkClientServerStream.h" include nil nil [719 753])
+            ("set" include (:system-flag t) nil [755 769])
+            ("string" include (:system-flag t) nil [770 787])
+            ("vector" include (:system-flag t) nil [788 805])
+            ("iterator" include (:system-flag t) nil [806 825])
+            ("unnamed" type
+               (:members 
+                  ( ("vtkItem" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [863 870])
+                            ("Name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [875 892])
+                            ("FileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [897 918])
+                            ("RequiredPlugins" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [923 951])
+                            ("Version" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [956 976])
+                            ("StatusMessage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [981 1007])
+                            ("AutoLoadForce" variable (:type "bool") (reparse-symbol classsubparts) [1012 1031])
+                            ("AutoLoad" variable (:type "bool") (reparse-symbol classsubparts) [1036 1050])
+                            ("Loaded" variable (:type "bool") (reparse-symbol classsubparts) [1055 1067])
+                            ("RequiredOnClient" variable (:type "bool") (reparse-symbol classsubparts) [1072 1094])
+                            ("RequiredOnServer" variable (:type "bool") (reparse-symbol classsubparts) [1099 1121])
+                            ("vtkItem" function
+                               (:constructor-flag t
+                                :type ("vtkItem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1127 1286])
+                            ("RefersToSamePlugin" function
+                               (:arguments 
+                                  ( ("item" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkItem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1316 1336]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1292 1566])
+                            ("Load" function
+                               (:arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1582 1618])
+                                    ("offset" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [1619 1631]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1572 2681])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkItem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2703 2721])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkItem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2722 2740]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2687 2794]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [841 2801])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("vtkClientServerStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2823 2853])
+                            ("item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2854 2874]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2805 3124]))                  
+                :type "namespace")
+                nil [827 3126])
+            ("vtkInternals" type
+               (:parent "vtkPVPluginsInformation"
+                :superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [3128 3208])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVPluginsInformation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3231 3255]))                  
+                :type "int")
+                nil [3211 3256])
+            ("vtkPVPluginsInformation" function
+               (:constructor-flag t
+                :parent "vtkPVPluginsInformation"
+                :type ("vtkPVPluginsInformation" type (:type "class") nil nil))
+                nil [3336 3480])
+            ("vtkPVPluginsInformation" function
+               (:destructor-flag t
+                :parent "vtkPVPluginsInformation"
+                :type "void")
+                nil [3561 3695])
+            ("PrintSelf" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3816 3828])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3829 3846]))                  
+                :type "void")
+                nil [3776 4136])
+            ("AddInformation" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("other" variable
+                       (:pointer 1
+                        :type ("vtkPVInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4262 4286]))                  
+                :type "void")
+                nil [4217 4500])
+            ("CopyToStream" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4624 4654]))                  
+                :type "void")
+                nil [4581 4936])
+            ("CopyFromStream" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5062 5098]))                  
+                :type "void")
+                nil [5017 5625])
+            ("CopyFromObject" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5751 5762]))                  
+                :type "void")
+                nil [5706 6756])
+            ("Update" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("other" variable
+                       (:pointer 1
+                        :type ("vtkPVPluginsInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6874 6905]))                  
+                :type "void")
+                nil [6837 8108])
+            ("GetNumberOfPlugins" function
+               (:parent "vtkPVPluginsInformation"
+                :type "unsigned int")
+                nil [8189 8312])
+            ("GetPluginName" function
+               (:pointer 1
+                :parent "vtkPVPluginsInformation"
+                :constant-flag t
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8443 8459]))                  
+                :type "char")
+                nil [8392 8577])
+            ("GetPluginStatusMessage" function
+               (:pointer 1
+                :parent "vtkPVPluginsInformation"
+                :constant-flag t
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8718 8734]))                  
+                :type "char")
+                nil [8658 8921])
+            ("GetPluginFileName" function
+               (:pointer 1
+                :parent "vtkPVPluginsInformation"
+                :constant-flag t
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9057 9073]))                  
+                :type "char")
+                nil [9002 9195])
+            ("GetPluginVersion" function
+               (:pointer 1
+                :parent "vtkPVPluginsInformation"
+                :constant-flag t
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9330 9346]))                  
+                :type "char")
+                nil [9276 9467])
+            ("GetPluginLoaded" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9594 9610]))                  
+                :type "bool")
+                nil [9548 9723])
+            ("GetRequiredPlugins" function
+               (:pointer 1
+                :parent "vtkPVPluginsInformation"
+                :constant-flag t
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9860 9876]))                  
+                :type "char")
+                nil [9804 10005])
+            ("GetRequiredOnServer" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10136 10152]))                  
+                :type "bool")
+                nil [10086 10275])
+            ("GetRequiredOnClient" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10406 10422]))                  
+                :type "bool")
+                nil [10356 10545])
+            ("SetAutoLoad" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10668 10684])
+                    ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [10685 10694]))                  
+                :type "void")
+                nil [10626 10857])
+            ("SetAutoLoadAndForce" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10988 11004])
+                    ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [11005 11014]))                  
+                :type "void")
+                nil [10938 11226])
+            ("GetAutoLoad" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11350 11366]))                  
+                :type "bool")
+                nil [11308 11481])
+            ("PluginRequirementsSatisfied" function
+               (:parent "vtkPVPluginsInformation"
+                :arguments 
+                  ( ("client_plugins" variable
+                       (:pointer 1
+                        :type ("vtkPVPluginsInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11625 11665])
+                    ("server_plugins" variable
+                       (:pointer 1
+                        :type ("vtkPVPluginsInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11670 11710]))                  
+                :type "bool")
+                nil [11562 13171]))          
+    :file "vtkPVPluginsInformation.cxx"
+    :pointmax 13145
+    :fsize 13144
+    :lastmodtime '(20770 31272)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVPluginsInformation.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVPluginsInformation_h" variable (:constant-flag t) nil [831 858])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [860 904])
+            ("vtkPVInformation.h" include nil nil [926 955])
+            ("vtkPVInformation" variable (:type "int") nil [1029 3944]))          
+    :file "vtkPVPluginsInformation.h"
+    :pointmax 3953
+    :fsize 3952
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1022 . 1028) (punctuation 1020 . 1021) (symbol 996 . 1019) (symbol 963 . 995) (CLASS 957 . 962))
+    :lexical-table 
+        '(("__vtkPVPluginsInformation_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVPluginLoader.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVPluginLoader.h" include nil nil [557 587])
+            ("vtkDynamicLoader.h" include nil nil [589 618])
+            ("vtkNew.h" include nil nil [619 638])
+            ("vtkObjectFactory.h" include nil nil [639 668])
+            ("vtkProcessModule.h" include nil nil [669 698])
+            ("vtkPVOptions.h" include nil nil [699 724])
+            ("vtkPVPlugin.h" include nil nil [725 749])
+            ("vtkPVPluginTracker.h" include nil nil [750 781])
+            ("vtkPVPythonPluginInterface.h" include nil nil [782 821])
+            ("vtkPVServerManagerPluginInterface.h" include nil nil [822 868])
+            ("vtkPVXMLParser.h" include nil nil [869 896])
+            ("string" include (:system-flag t) nil [898 915])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [916 949])
+            ("vtksys/Directory.hxx" include (:system-flag t) nil [950 981])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [982 1011])
+            ("cstdlib" include (:system-flag t) nil [1013 1031])
+            ("vtkPVPluginLoaderDebugMacro" variable (:constant-flag t) nil [1041 1068])
+            ("vtkPVPluginLoaderErrorMacro" variable (:constant-flag t) nil [1224 1251])
+            ("unnamed" type
+               (:members 
+                  ( ("vtkPVXMLOnlyPlugin" type
+                       (:superclasses 
+                          ( ("vtkPVPlugin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("vtkPVServerManagerPluginInterface" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("PluginName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1527 1550])
+                            ("XML" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1553 1569])
+                            ("vtkPVXMLOnlyPlugin" function
+                               (:constructor-flag t
+                                :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1572 1594])
+                            ("vtkPVXMLOnlyPlugin" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1617 1649]))                                  
+                                :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1598 1650])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1668 1700]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1653 1701])
+                            ("public" label nil (reparse-symbol classsubparts) [1702 1709])
+                            ("Create" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("xmlfile" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1746 1766]))                                  
+                                :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1712 2468])
+                            ("GetPluginName" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2529 2605])
+                            ("GetPluginVersionString" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2669 2735])
+                            ("GetRequiredOnServer" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2817 2872])
+                            ("GetRequiredOnClient" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2954 3010])
+                            ("GetRequiredPlugins" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3107 3166])
+                            ("GetXMLs" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("xmls" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3268 3299]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3247 3342])
+                            ("GetInitializeInterpreterCallback" function
+                               (:typemodifiers ("virtual")
+                                :type ("vtkClientServerInterpreterInitializer::InterpreterInitializationCallback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3543 3685]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1406 3690])
+                    ("vtkPVPluginLoaderCleaner" type
+                       (:members 
+                          ( ("Handles" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("vtkLibHandle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3817 3851])
+                            ("XMLPlugins" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("vtkPVXMLOnlyPlugin" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3856 3900])
+                            ("public" label nil (reparse-symbol classsubparts) [3903 3910])
+                            ("Register" function
+                               (:arguments 
+                                  ( ("handle" variable
+                                       (:reference 1
+                                        :type ("vtkLibHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3929 3950]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3915 4005])
+                            ("Register" function
+                               (:arguments 
+                                  ( ("plugin" variable
+                                       (:pointer 1
+                                        :type ("vtkPVXMLOnlyPlugin" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4024 4051]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4010 4109])
+                            ("vtkPVPluginLoaderCleaner" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4115 4533]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3776 4540])
+                    ("LibCleaner" variable
+                       (:typemodifiers ("static")
+                        :type ("vtkPVPluginLoaderCleaner" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4543 4586]))                  
+                :type "namespace")
+                nil [1323 4588])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVPluginLoader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4612 4630]))                  
+                :type "int")
+                nil [4592 4631])
+            ("vtkPVPluginLoader" function
+               (:constructor-flag t
+                :parent "vtkPVPluginLoader"
+                :type ("vtkPVPluginLoader" type (:type "class") nil nil))
+                nil [4712 5903])
+            ("vtkPVPluginLoader" function
+               (:destructor-flag t
+                :parent "vtkPVPluginLoader"
+                :type "void")
+                nil [5985 6161])
+            ("LoadPluginsFromPluginSearchPath" function
+               (:parent "vtkPVPluginLoader"
+                :type "void")
+                nil [6243 6617])
+            ("LoadPluginsFromPath" function
+               (:parent "vtkPVPluginLoader"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6743 6760]))                  
+                :type "void")
+                nil [6699 7408])
+            ("LoadPluginInternal" function
+               (:parent "vtkPVPluginLoader"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7533 7550])
+                    ("no_errors" variable (:type "bool") (reparse-symbol arg-sub-list) [7551 7566]))                  
+                :type "bool")
+                nil [7490 13445])
+            ("LoadPlugin" function
+               (:parent "vtkPVPluginLoader"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13562 13579])
+                    ("plugin" variable
+                       (:pointer 1
+                        :type ("vtkPVPlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13580 13600]))                  
+                :type "bool")
+                nil [13527 15246])
+            ("LoadPluginConfigurationXMLFromString" function
+               (:parent "vtkPVPluginLoader"
+                :arguments 
+                  ( ("xmlcontents" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15389 15415]))                  
+                :type "void")
+                nil [15328 15512])
+            ("PrintSelf" function
+               (:parent "vtkPVPluginLoader"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15628 15640])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15641 15658]))                  
+                :type "void")
+                nil [15594 16165]))          
+    :file "vtkPVPluginLoader.cxx"
+    :pointmax 16166
+    :fsize 16165
+    :lastmodtime '(20901 6804)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkPVPluginLoaderErrorMacro" (spp-arg-list ("x") 1251 . 1254) . 
+              ((IF "if" 1258 . 1260) (semantic-list "(!no_errors)" 1261 . 1273) (semantic-list "{vtkErrorMacro(<< x);}" 1274 . 1296) (symbol "this" 1297 . 1301) (punctuation "-" 1301 . 1302) (punctuation ">" 1302 . 1303) (symbol "SetErrorString" 1303 . 1317) (semantic-list "(x)" 1317 . 1320) (punctuation ";" 1320 . 1321)))
+          ("vtkPVPluginLoaderDebugMacro" (spp-arg-list ("x") 1068 . 1071) . ((semantic-list "{ if (this->DebugPlugin) {\\
+  vtksys_ios::ostringstream vtkerror;\\
+  vtkerror << x;\\
+  vtkOutputWindowDisplayText(vtkerror.str().c_str());} }" 1073 . 1214)))
+          )
+
+    )
+   (semanticdb-table "vtkPVProgressHandler.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVProgressHandler_h" variable (:constant-flag t) nil [1639 1663])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [1665 1709])
+            ("vtkObject.h" include nil nil [1731 1753])
+            ("vtkMultiProcessController" type
+               (:prototype t
+                :type "class")
+                nil [1755 1787])
+            ("vtkPVSession" type
+               (:prototype t
+                :type "class")
+                nil [1788 1807])
+            ("vtkObject" variable (:type "int") nil [1878 4392]))          
+    :file "vtkPVProgressHandler.h"
+    :pointmax 4401
+    :fsize 4400
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1871 . 1877) (punctuation 1869 . 1870) (symbol 1848 . 1868) (symbol 1815 . 1847) (CLASS 1809 . 1814))
+    :lexical-table 
+        '(("__vtkPVProgressHandler_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVProgressHandler.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVProgressHandler.h" include nil nil [560 593])
+            ("vtkAlgorithm.h" include nil nil [595 620])
+            ("vtkByteSwap.h" include nil nil [621 645])
+            ("vtkCommand.h" include nil nil [646 669])
+            ("vtkCommunicator.h" include nil nil [670 698])
+            ("vtkMultiProcessController.h" include nil nil [699 737])
+            ("vtkNew.h" include nil nil [738 757])
+            ("vtkObjectFactory.h" include nil nil [758 787])
+            ("vtkOutputWindow.h" include nil nil [788 816])
+            ("vtkProcessModule.h" include nil nil [817 846])
+            ("vtkPVOptions.h" include nil nil [847 872])
+            ("vtkPVSession.h" include nil nil [873 898])
+            ("vtkTimerLog.h" include nil nil [899 923])
+            ("string" include (:system-flag t) nil [925 942])
+            ("map" include (:system-flag t) nil [943 957])
+            ("SKIP_IF_DISABLED" variable (:constant-flag t) nil [1115 1131])
+            ("vtkGetProgressText" function
+               (:pointer 1
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1234 1251]))                  
+                :type "char")
+                nil [1196 1421])
+            ("vtkInternals" type
+               (:parent "vtkPVProgressHandler"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1545 1552])
+                    ("MapOfObjectToInt" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("void" type (:pointer 1) nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1555 1601])
+                    ("RegisteredObjects" variable (:type ("MapOfObjectToInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1604 1639])
+                    ("DisableProgressHandling" variable (:type "bool") (reparse-symbol classsubparts) [1680 1709])
+                    ("EnableProgress" variable (:type "bool") (reparse-symbol classsubparts) [1862 1882])
+                    ("ProgressTimer" variable (:type ("vtkNew" type
+                         (:template-specifier 
+                            ( ("vtkTimerLog" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1886 1920])
+                    ("vtkInternals" function
+                       (:constructor-flag t
+                        :type ("vtkInternals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1923 2496])
+                    ("GetIDFromObject" function
+                       (:arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2520 2535]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2500 2696]))                  
+                :type "class")
+                nil [1502 2699])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVProgressHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2742]))                  
+                :type "int")
+                nil [2701 2743])
+            ("vtkPVProgressHandler" function
+               (:constructor-flag t
+                :parent "vtkPVProgressHandler"
+                :type ("vtkPVProgressHandler" type (:type "class") nil nil))
+                nil [2823 3254])
+            ("vtkPVProgressHandler" function
+               (:destructor-flag t
+                :parent "vtkPVProgressHandler"
+                :type "void")
+                nil [3335 3498])
+            ("RegisterProgressEvent" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3628 3646])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [3647 3654]))                  
+                :type "void")
+                nil [3579 4004])
+            ("SetSession" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("vtkPVSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4123 4142]))                  
+                :type "void")
+                nil [4085 4464])
+            ("PrepareProgress" function
+               (:parent "vtkPVProgressHandler"
+                :type "void")
+                nil [4545 5592])
+            ("CleanupPendingProgress" function
+               (:parent "vtkPVProgressHandler"
+                :type "void")
+                nil [5673 7361])
+            ("OnProgressEvent" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("caller" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7488 7506])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7507 7529])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7530 7545]))                  
+                :type "void")
+                nil [7442 8479])
+            ("RefreshProgress" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("progress_text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8606 8632])
+                    ("progress" variable (:type "double") (reparse-symbol arg-sub-list) [8633 8649]))                  
+                :type "void")
+                nil [8560 9765])
+            ("PrintSelf" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9883 9895])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9896 9913]))                  
+                :type "void")
+                nil [9846 9960])
+            ("OnWrongTagEvent" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10087 10098])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10099 10121])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10122 10137]))                  
+                :type "bool")
+                nil [10041 11310])
+            ("OnMessageEvent" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11436 11465])
+                    ("eventid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11467 11489])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11490 11505]))                  
+                :type "void")
+                nil [11391 11698])
+            ("RefreshMessage" function
+               (:parent "vtkPVProgressHandler"
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11821 11841]))                  
+                :type "void")
+                nil [11779 12321]))          
+    :file "vtkPVProgressHandler.cxx"
+    :pointmax 12322
+    :fsize 12322
+    :lastmodtime '(20784 51541)
+    :unmatched-syntax '((semantic-list 11457 . 11465))
+    :lexical-table 
+        '(("SKIP_IF_DISABLED" (spp-arg-list nil 1131 . 1133) . 
+              ((IF "if" 1137 . 1139) (semantic-list "(this->Internals->DisableProgressHandling)" 1140 . 1182) (semantic-list "{ return; }" 1183 . 1194)))
+          )
+
+    )
+   (semanticdb-table "vtkPVSession.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVSession_h" variable (:constant-flag t) nil [878 894])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [896 940])
+            ("vtkSession.h" include nil nil [962 985])
+            ("vtkMPIMToNSocketConnection" type
+               (:prototype t
+                :type "class")
+                nil [987 1020])
+            ("vtkMultiProcessController" type
+               (:prototype t
+                :type "class")
+                nil [1021 1053])
+            ("vtkPVProgressHandler" type
+               (:prototype t
+                :type "class")
+                nil [1054 1081])
+            ("vtkPVServerInformation" type
+               (:prototype t
+                :type "class")
+                nil [1082 1111])
+            ("vtkSession" variable (:type "int") nil [1174 4358]))          
+    :file "vtkPVSession.h"
+    :pointmax 4367
+    :fsize 4639
+    :lastmodtime '(20867 58914)
+    :unmatched-syntax '((PUBLIC 1167 . 1173) (punctuation 1165 . 1166) (symbol 1152 . 1164) (symbol 1119 . 1151) (CLASS 1113 . 1118))
+    :lexical-table 
+        '(("__vtkPVSession_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVSession.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVSession.h" include nil nil [552 577])
+            ("vtkObjectFactory.h" include nil nil [579 608])
+            ("vtkPVProgressHandler.h" include nil nil [609 642])
+            ("vtkPVServerInformation.h" include nil nil [643 678])
+            ("vtkPVSession" function
+               (:constructor-flag t
+                :parent "vtkPVSession"
+                :type ("vtkPVSession" type (:type "class") nil nil))
+                nil [759 984])
+            ("vtkPVSession" function
+               (:destructor-flag t
+                :parent "vtkPVSession"
+                :type "void")
+                nil [1065 1208])
+            ("GetProcessRoles" function
+               (:parent "vtkPVSession"
+                :type ("vtkPVSession::ServerFlags" type (:type "class") nil nil))
+                nil [1289 1379])
+            ("GetController" function
+               (:pointer 1
+                :parent "vtkPVSession"
+                :arguments 
+                  ( ("" variable (:type ("vtkPVSession::ServerFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1515 1541]))                  
+                :type ("vtkMultiProcessController" type (:type "class") nil nil))
+                nil [1460 1560])
+            ("GetPendingProgress" function
+               (:parent "vtkPVSession"
+                :type "bool")
+                nil [1641 1754])
+            ("PrepareProgress" function
+               (:parent "vtkPVSession"
+                :type "void")
+                nil [1835 2044])
+            ("CleanupPendingProgress" function
+               (:parent "vtkPVSession"
+                :type "void")
+                nil [2125 2578])
+            ("PrepareProgressInternal" function
+               (:parent "vtkPVSession"
+                :type "void")
+                nil [2659 2751])
+            ("CleanupPendingProgressInternal" function
+               (:parent "vtkPVSession"
+                :type "void")
+                nil [2832 2938])
+            ("OnWrongTagEvent" function
+               (:parent "vtkPVSession"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3055 3066])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3067 3081])
+                    ("calldata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3082 3097]))                  
+                :type "bool")
+                nil [3020 3690])
+            ("PrintSelf" function
+               (:parent "vtkPVSession"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3800 3812])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3813 3830]))                  
+                :type "void")
+                nil [3771 3877])
+            ("IsMultiClients" function
+               (:parent "vtkPVSession"
+                :type "bool")
+                nil [3957 4067]))          
+    :file "vtkPVSession.cxx"
+    :pointmax 4068
+    :fsize 4067
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkCompleteArrays.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkCompleteArrays.h" include nil nil [557 587])
+            ("vtkCellData.h" include nil nil [589 613])
+            ("vtkCharArray.h" include nil nil [614 639])
+            ("vtkClientServerStream.h" include nil nil [640 674])
+            ("vtkDataArray.h" include nil nil [675 700])
+            ("vtkDataSet.h" include nil nil [701 724])
+            ("vtkDoubleArray.h" include nil nil [725 752])
+            ("vtkFloatArray.h" include nil nil [753 779])
+            ("vtkIdTypeArray.h" include nil nil [780 807])
+            ("vtkInformation.h" include nil nil [808 835])
+            ("vtkInformationVector.h" include nil nil [836 869])
+            ("vtkIntArray.h" include nil nil [870 894])
+            ("vtkLongArray.h" include nil nil [895 920])
+            ("vtkMultiProcessController.h" include nil nil [921 959])
+            ("vtkObjectFactory.h" include nil nil [960 989])
+            ("vtkPVArrayInformation.h" include nil nil [990 1024])
+            ("vtkPVDataInformation.h" include nil nil [1025 1058])
+            ("vtkPVDataSetAttributesInformation.h" include nil nil [1059 1105])
+            ("vtkPointData.h" include nil nil [1106 1131])
+            ("vtkPointSet.h" include nil nil [1132 1156])
+            ("vtkShortArray.h" include nil nil [1157 1183])
+            ("vtkUnsignedCharArray.h" include nil nil [1184 1217])
+            ("vtkUnsignedIntArray.h" include nil nil [1218 1250])
+            ("vtkUnsignedLongArray.h" include nil nil [1251 1284])
+            ("vtkUnsignedShortArray.h" include nil nil [1285 1319])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCompleteArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1359]))                  
+                :type "int")
+                nil [1321 1360])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCompleteArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1383 1401])
+                    ("" variable (:type ("Controller" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1401 1412])
+                    ("" variable (:type ("vtkMultiProcessController" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1412 1438]))                  
+                :type "int")
+                nil [1362 1439])
+            ("vtkCompleteArrays" function
+               (:constructor-flag t
+                :parent "vtkCompleteArrays"
+                :type ("vtkCompleteArrays" type (:type "class") nil nil))
+                nil [1521 1708])
+            ("vtkCompleteArrays" function
+               (:destructor-flag t
+                :parent "vtkCompleteArrays"
+                :type "void")
+                nil [1790 1938])
+            ("RequestData" function
+               (:parent "vtkCompleteArrays"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2058 2074])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2077 2112])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2115 2150]))                  
+                :type "int")
+                nil [2020 5109])
+            ("CreateArray" function
+               (:pointer 1
+                :parent "vtkCompleteArrays"
+                :arguments 
+                  ( ("aInfo" variable
+                       (:pointer 1
+                        :type ("vtkPVArrayInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5236 5265]))                  
+                :type ("vtkDataArray" type (:type "class") nil nil))
+                nil [5191 6336])
+            ("FillArrays" function
+               (:parent "vtkCompleteArrays"
+                :arguments 
+                  ( ("da" variable
+                       (:pointer 1
+                        :type ("vtkDataSetAttributes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6453 6478])
+                    ("attrInfo" variable
+                       (:pointer 1
+                        :type ("vtkPVDataSetAttributesInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6514 6558]))                  
+                :type "void")
+                nil [6418 7498])
+            ("PrintSelf" function
+               (:parent "vtkCompleteArrays"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7615 7627])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7628 7645]))                  
+                :type "void")
+                nil [7581 7855]))          
+    :file "vtkCompleteArrays.cxx"
+    :pointmax 7856
+    :fsize 7856
+    :lastmodtime '(20811 22391)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkExtractsDeliveryHelper.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkExtractsDeliveryHelper.h" include nil nil [545 583])
+            ("vtkAlgorithmOutput.h" include nil nil [585 616])
+            ("vtkCompositeDataSet.h" include nil nil [617 649])
+            ("vtkDataObject.h" include nil nil [650 676])
+            ("vtkDataObjectTypes.h" include nil nil [677 708])
+            ("vtkMultiProcessController.h" include nil nil [709 747])
+            ("vtkMultiProcessControllerHelper.h" include nil nil [748 792])
+            ("vtkMultiProcessStream.h" include nil nil [793 827])
+            ("vtkObjectFactory.h" include nil nil [828 857])
+            ("vtkSocketController.h" include nil nil [858 890])
+            ("vtkTrivialProducer.h" include nil nil [891 922])
+            ("assert.h" include (:system-flag t) nil [924 943])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkExtractsDeliveryHelper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [965 991]))                  
+                :type "int")
+                nil [945 992])
+            ("vtkExtractsDeliveryHelper" function
+               (:constructor-flag t
+                :parent "vtkExtractsDeliveryHelper"
+                :type ("vtkExtractsDeliveryHelper" type (:type "class") nil nil))
+                nil [1072 1315])
+            ("vtkExtractsDeliveryHelper" function
+               (:destructor-flag t
+                :parent "vtkExtractsDeliveryHelper"
+                :type "void")
+                nil [1396 1455])
+            ("SetSimulation2VisualizationController" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("cont" variable
+                       (:pointer 1
+                        :type ("vtkSocketController" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1609 1635]))                  
+                :type "void")
+                nil [1536 1782])
+            ("SetParallelController" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("cont" variable
+                       (:pointer 1
+                        :type ("vtkMultiProcessController" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1920 1952]))                  
+                :type "void")
+                nil [1863 2067])
+            ("ClearAllExtracts" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :type "void")
+                nil [2148 2290])
+            ("AddExtractConsumer" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2425 2441])
+                    ("consumer" variable
+                       (:pointer 1
+                        :type ("vtkTrivialProducer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2471]))                  
+                :type "void")
+                nil [2371 2607])
+            ("RemoveExtractConsumer" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2742 2758]))                  
+                :type "void")
+                nil [2688 2799])
+            ("AddExtractProducer" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2934 2950])
+                    ("producerPort" variable
+                       (:pointer 1
+                        :type ("vtkAlgorithmOutput" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2951 2984]))                  
+                :type "void")
+                nil [2880 3127])
+            ("Collect" function
+               (:pointer 1
+                :parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("node_count" variable (:type "int") (reparse-symbol arg-sub-list) [3261 3276])
+                    ("dObj" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3277 3297]))                  
+                :type ("vtkDataObject" type (:type "class") nil nil))
+                nil [3208 4452])
+            ("Update" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :type "void")
+                nil [4533 10183])
+            ("PrintSelf" function
+               (:parent "vtkExtractsDeliveryHelper"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10306 10318])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10319 10336]))                  
+                :type "void")
+                nil [10264 10383]))          
+    :file "vtkExtractsDeliveryHelper.cxx"
+    :pointmax 10384
+    :fsize 10383
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVExtractArraysOverTime.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVExtractArraysOverTime.h" include nil nil [600 639])
+            ("vtkNew.h" include nil nil [641 660])
+            ("vtkObjectFactory.h" include nil nil [661 690])
+            ("vtkPVExtractSelection.h" include nil nil [691 725])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVExtractArraysOverTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [747 774]))                  
+                :type "int")
+                nil [727 775])
+            ("vtkPVExtractArraysOverTime" function
+               (:constructor-flag t
+                :parent "vtkPVExtractArraysOverTime"
+                :type ("vtkPVExtractArraysOverTime" type (:type "class") nil nil))
+                nil [856 1000])
+            ("vtkPVExtractArraysOverTime" function
+               (:destructor-flag t
+                :parent "vtkPVExtractArraysOverTime"
+                :type "void")
+                nil [1081 1142])
+            ("PrintSelf" function
+               (:parent "vtkPVExtractArraysOverTime"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1266 1278])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1279 1296]))                  
+                :type "void")
+                nil [1223 1342]))          
+    :file "vtkPVExtractArraysOverTime.cxx"
+    :pointmax 1343
+    :fsize 1342
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVExtractArraysOverTime.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVExtractArraysOverTime_h" variable (:constant-flag t) nil [1066 1096])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [1098 1142])
+            ("vtkPExtractArraysOverTime.h" include nil nil [1163 1201])
+            ("vtkPExtractArraysOverTime" variable (:type "int") nil [1278 1726]))          
+    :file "vtkPVExtractArraysOverTime.h"
+    :pointmax 1769
+    :fsize 1768
+    :lastmodtime '(20831 7772)
+    :unmatched-syntax '((PUBLIC 1271 . 1277) (punctuation 1269 . 1270) (symbol 1242 . 1268) (symbol 1209 . 1241) (CLASS 1203 . 1208) (PUBLIC 1271 . 1277) (punctuation 1269 . 1270) (symbol 1242 . 1268) (symbol 1209 . 1241) (CLASS 1203 . 1208))
+    :lexical-table 
+        '(("__vtkPVExtractArraysOverTime_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVExtractSelection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVExtractSelection_h" variable (:constant-flag t) nil [1650 1675])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [1677 1721])
+            ("vtkExtractSelection.h" include nil nil [1743 1775])
+            ("vtkSelectionNode" type
+               (:prototype t
+                :type "class")
+                nil [1777 1800])
+            ("vtkExtractSelection" variable (:type "int") nil [1872 3439]))          
+    :file "vtkPVExtractSelection.h"
+    :pointmax 3448
+    :fsize 3447
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1865 . 1871) (punctuation 1863 . 1864) (symbol 1841 . 1862) (symbol 1808 . 1840) (CLASS 1802 . 1807))
+    :lexical-table 
+        '(("__vtkPVExtractSelection_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVExtractSelection.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVExtractSelection.h" include nil nil [595 629])
+            ("vtkCellData.h" include nil nil [631 655])
+            ("vtkCompositeDataIterator.h" include nil nil [656 693])
+            ("vtkCompositeDataSet.h" include nil nil [694 726])
+            ("vtkDataObjectTypes.h" include nil nil [727 758])
+            ("vtkDataSet.h" include nil nil [759 782])
+            ("vtkExecutive.h" include nil nil [783 808])
+            ("vtkHierarchicalBoxDataIterator.h" include nil nil [844 887])
+            ("vtkIdTypeArray.h" include nil nil [888 915])
+            ("vtkInformation.h" include nil nil [916 943])
+            ("vtkInformationExecutivePortKey.h" include nil nil [944 987])
+            ("vtkInformationVector.h" include nil nil [988 1021])
+            ("vtkObjectFactory.h" include nil nil [1022 1051])
+            ("vtkPointData.h" include nil nil [1052 1077])
+            ("vtkPVConfig.h" include nil nil [1078 1102])
+            ("vtkSelection.h" include nil nil [1103 1128])
+            ("vtkSelectionNode.h" include nil nil [1129 1158])
+            ("vtkSmartPointer.h" include nil nil [1159 1187])
+            ("vtkTable.h" include nil nil [1188 1209])
+            ("vtkGraph.h" include nil nil [1210 1231])
+            ("vector" include (:system-flag t) nil [1310 1327])
+            ("vtkSelectionNodeVector" type
+               (:parent "vtkPVExtractSelection"
+                :superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [1329 1444])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVExtractSelection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1467 1489]))                  
+                :type "int")
+                nil [1447 1490])
+            ("vtkPVExtractSelection" function
+               (:parent "qvtkPVExtractSelection"
+                :type "int")
+                nil [1571 1656])
+            ("vtkPVExtractSelection" function
+               (:destructor-flag t
+                :parent "vtkPVExtractSelection"
+                :type "void")
+                nil [1737 1788])
+            ("FillOutputPortInformation" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [1925 1934])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1935 1956]))                  
+                :type "int")
+                nil [1869 2147])
+            ("RequestDataObject" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2276 2300])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2303 2339])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2342 2377]))                  
+                :type "int")
+                nil [2228 3174])
+            ("RequestData" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3297 3321])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3324 3360])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3363 3398]))                  
+                :type "int")
+                nil [3255 9024])
+            ("LocateSelection" function
+               (:pointer 1
+                :parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("level" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9162 9181])
+                    ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9184 9203])
+                    ("sel" variable
+                       (:pointer 1
+                        :type ("vtkSelection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9204 9222]))                  
+                :type ("vtkSelectionNode" type (:type "class") nil nil))
+                nil [9105 9889])
+            ("LocateSelection" function
+               (:pointer 1
+                :parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("composite_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10027 10056])
+                    ("sel" variable
+                       (:pointer 1
+                        :type ("vtkSelection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10059 10077]))                  
+                :type ("vtkSelectionNode" type (:type "class") nil nil))
+                nil [9970 10523])
+            ("RequestDataInternal" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("outputs" variable
+                       (:reference 1
+                        :type ("vtkSelectionNodeVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10652 10684])
+                    ("dataObjectOutput" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10687 10719])
+                    ("sel" variable
+                       (:pointer 1
+                        :type ("vtkSelectionNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10720 10742]))                  
+                :type "void")
+                nil [10604 13097])
+            ("GetContentType" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("sel" variable
+                       (:pointer 1
+                        :type ("vtkSelection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13220 13238]))                  
+                :type "int")
+                nil [13178 13604])
+            ("PrintSelf" function
+               (:parent "vtkPVExtractSelection"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13723 13735])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13736 13753]))                  
+                :type "void")
+                nil [13685 13799]))          
+    :file "vtkPVExtractSelection.cxx"
+    :pointmax 13801
+    :fsize 13799
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVPluginLoader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVPluginLoader_h" variable (:constant-flag t) nil [1111 1132])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [1134 1178])
+            ("vtkObject.h" include nil nil [1200 1222])
+            ("vtkIntArray" type
+               (:prototype t
+                :type "class")
+                nil [1224 1242])
+            ("vtkPVPlugin" type
+               (:prototype t
+                :type "class")
+                nil [1243 1261])
+            ("vtkStringArray" type
+               (:prototype t
+                :type "class")
+                nil [1262 1283])
+            ("vtkPVPlugin" type
+               (:prototype t
+                :type "class")
+                nil [1284 1302])
+            ("vtkObject" variable (:type "int") nil [1370 3953]))          
+    :file "vtkPVPluginLoader.h"
+    :pointmax 3964
+    :fsize 3963
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1363 . 1369) (punctuation 1361 . 1362) (symbol 1343 . 1360) (symbol 1310 . 1342) (CLASS 1304 . 1309))
+    :lexical-table 
+        '(("__vtkPVPluginLoader_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVOptions.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVOptions.h" include nil nil [523 548])
+            ("vtkObjectFactory.h" include nil nil [550 579])
+            ("vtkProcessModule.h" include nil nil [580 609])
+            ("vtkPVConfig.h" include nil nil [610 634])
+            ("vtkPVOptionsXMLParser.h" include nil nil [682 716])
+            ("vtksys/CommandLineArguments.hxx" include (:system-flag t) nil [744 786])
+            ("vtksys/SystemInformation.hxx" include (:system-flag t) nil [787 826])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [827 860])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [963 976]))                  
+                :type "int")
+                nil [943 977])
+            ("vtkPVOptions" function
+               (:constructor-flag t
+                :parent "vtkPVOptions"
+                :type ("vtkPVOptions" type (:type "class") nil nil))
+                nil [1058 3290])
+            ("vtkPVOptions" function
+               (:destructor-flag t
+                :parent "vtkPVOptions"
+                :type "void")
+                nil [3371 3866])
+            ("Initialize" function
+               (:parent "vtkPVOptions"
+                :type "void")
+                nil [3947 15245])
+            ("PostProcess" function
+               (:parent "vtkPVOptions"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15356 15360])
+                    ("" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15361 15380]))                  
+                :type "int")
+                nil [15326 17024])
+            ("WrongArgument" function
+               (:parent "vtkPVOptions"
+                :arguments 
+                  ( ("argument" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17137 17158]))                  
+                :type "int")
+                nil [17105 17794])
+            ("DeprecatedArgument" function
+               (:parent "vtkPVOptions"
+                :arguments 
+                  ( ("argument" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17912 17933]))                  
+                :type "int")
+                nil [17875 17994])
+            ("PrintSelf" function
+               (:parent "vtkPVOptions"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18104 18116])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18117 18134]))                  
+                :type "void")
+                nil [18075 22967]))          
+    :file "vtkPVOptions.cxx"
+    :pointmax 22968
+    :fsize 22967
+    :lastmodtime '(20901 7142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVOptions.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPVOptions_h" variable (:constant-flag t) nil [845 861])
+            ("vtkPVClientServerCoreCoreModule.h" include nil nil [863 907])
+            ("vtkCommandOptions.h" include nil nil [929 959])
+            ("vtkPVOptionsInternal" type
+               (:prototype t
+                :type "class")
+                nil [961 988])
+            ("vtkCommandOptions" variable (:type "int") nil [1051 8340]))          
+    :file "vtkPVOptions.h"
+    :pointmax 8350
+    :fsize 8349
+    :lastmodtime '(20901 7172)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkPVOptions_h")
+          )
+
+    )
+   (semanticdb-table "vtkPVPluginTracker.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVPluginTracker.h" include nil nil [558 589])
+            ("vtkClientServerInterpreterInitializer.h" include nil nil [591 641])
+            ("vtkCommand.h" include nil nil [642 665])
+            ("vtkObjectFactory.h" include nil nil [666 695])
+            ("vtkProcessModule.h" include nil nil [696 725])
+            ("vtkPVConfig.h" include nil nil [726 750])
+            ("vtkPVOptions.h" include nil nil [751 776])
+            ("vtkPVPlugin.h" include nil nil [777 801])
+            ("vtkPVPluginLoader.h" include nil nil [802 832])
+            ("vtkPVPythonModule.h" include nil nil [833 863])
+            ("vtkPVPythonPluginInterface.h" include nil nil [864 903])
+            ("vtkPVServerManagerPluginInterface.h" include nil nil [904 950])
+            ("vtkPVXMLElement.h" include nil nil [951 979])
+            ("vtkPVXMLParser.h" include nil nil [980 1007])
+            ("assert.h" include (:system-flag t) nil [1009 1028])
+            ("string" include (:system-flag t) nil [1029 1046])
+            ("vector" include (:system-flag t) nil [1047 1064])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [1065 1094])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1095 1128])
+            ("vtksys/String.hxx" include (:system-flag t) nil [1129 1157])
+            ("VTKSTRNCASECMP" variable (:constant-flag t) nil [1245 1259])
+            ("vtkPVPluginTrackerDebugMacro" variable (:constant-flag t) nil [1351 1379])
+            ("unnamed" type
+               (:members 
+                  ( ("vtkItem" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1566 1573])
+                            ("FileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1578 1599])
+                            ("PluginName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1604 1627])
+                            ("Plugin" variable
+                               (:pointer 1
+                                :type ("vtkPVPlugin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1632 1652])
+                            ("AutoLoad" variable (:type "bool") (reparse-symbol classsubparts) [1657 1671])
+                            ("vtkItem" function
+                               (:constructor-flag t
+                                :type ("vtkItem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1676 1758]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1544 1765])
+                    ("vtkLocatePlugin" function
+                       (:arguments 
+                          ( ("plugin" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1797 1816])
+                            ("add_extensions" variable (:type "bool") (reparse-symbol arg-sub-list) [1817 1837]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1769 3724])
+                    ("vtkGetPluginNameFromFileName" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3769 3797]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3728 4068]))                  
+                :type "namespace")
+                nil [1530 4070])
+            ("vtkPluginsList" type
+               (:parent "vtkPVPluginTracker"
+                :superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4147 4154])
+                    ("LocateUsingPluginName" function
+                       (:arguments 
+                          ( ("pluginname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4188 4211]))                          
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4157 4415])
+                    ("LocateUsingFileName" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4448 4469]))                          
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4419 4669]))                  
+                :type "class")
+                nil [4072 4672])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVPluginTracker" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4694 4713]))                  
+                :type "int")
+                nil [4674 4714])
+            ("vtkPVPluginTracker" function
+               (:constructor-flag t
+                :parent "vtkPVPluginTracker"
+                :type ("vtkPVPluginTracker" type (:type "class") nil nil))
+                nil [4794 4882])
+            ("vtkPVPluginTracker" function
+               (:destructor-flag t
+                :parent "vtkPVPluginTracker"
+                :type "void")
+                nil [4963 5064])
+            ("GetInstance" function
+               (:pointer 1
+                :parent "vtkPVPluginTracker"
+                :type ("vtkPVPluginTracker" type (:type "class") nil nil))
+                nil [5145 6025])
+            ("PrintSelf" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6141 6153])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6154 6171]))                  
+                :type "void")
+                nil [6106 6218])
+            ("LoadPluginConfigurationXML" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6351 6372]))                  
+                :type "void")
+                nil [6299 7106])
+            ("LoadPluginConfigurationXMLFromString" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("xmlcontents" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7249 7273]))                  
+                :type "void")
+                nil [7187 7670])
+            ("LoadPluginConfigurationXML" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7803 7825]))                  
+                :type "void")
+                nil [7751 10039])
+            ("GetNumberOfPlugins" function
+               (:parent "vtkPVPluginTracker"
+                :type "unsigned int")
+                nil [10120 10240])
+            ("RegisterAvailablePlugin" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10378 10399]))                  
+                :type "unsigned int")
+                nil [10321 11050])
+            ("RegisterPlugin" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("vtkPVPlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11171 11191]))                  
+                :type "void")
+                nil [11131 13456])
+            ("GetPlugin" function
+               (:pointer 1
+                :parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13580 13599]))                  
+                :type ("vtkPVPlugin" type (:type "class") nil nil))
+                nil [13537 13769])
+            ("GetPluginName" function
+               (:pointer 1
+                :parent "vtkPVPluginTracker"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13896 13915]))                  
+                :type "char")
+                nil [13850 14095])
+            ("GetPluginFileName" function
+               (:pointer 1
+                :parent "vtkPVPluginTracker"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14226 14245]))                  
+                :type "char")
+                nil [14176 14423])
+            ("GetPluginLoaded" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14545 14564]))                  
+                :type "bool")
+                nil [14504 14741])
+            ("GetPluginAutoLoad" function
+               (:parent "vtkPVPluginTracker"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14865 14884]))                  
+                :type "bool")
+                nil [14822 15057]))          
+    :file "vtkPVPluginTracker.cxx"
+    :pointmax 15058
+    :fsize 15057
+    :lastmodtime '(20901 7037)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkPVPluginTrackerDebugMacro" (spp-arg-list ("x") 1379 . 1382) . ((semantic-list "{ if (debug_plugin) {\\
+  vtksys_ios::ostringstream vtkerror;\\
+  vtkerror << x << endl;\\
+  vtkOutputWindowDisplayText(vtkerror.str().c_str());} }" 1384 . 1528)))
+          ("VTKSTRNCASECMP" . ((symbol "_strnicmp" 1260 . 1269)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!ClientServerCore!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

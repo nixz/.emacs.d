@@ -1,0 +1,168 @@
+;; Object Image/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Image/"
+  :tables (list 
+   (semanticdb-table "vtkJPEGReader.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkJPEGReader.h" include nil nil [587 613])
+            ("vtkDataArray.h" include nil nil [615 640])
+            ("vtkImageData.h" include nil nil [641 666])
+            ("vtkObjectFactory.h" include nil nil [667 696])
+            ("vtkPointData.h" include nil nil [697 722])
+            ("vtkToolkits.h" include nil nil [723 747])
+            ("setjmp.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [900 919])
+            ("vtk_jpeg.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [762 783])
+            ("C" extern (:members 
+              ( ("vtk_jpeg.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [762 783])
+                ("setjmp.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [900 919]))              ) nil [749 921])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkJPEGReader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [944 958]))                  
+                :type "int")
+                nil [924 959])
+            ("vtk_jpeg_error_mgr" type
+               (:members 
+                  ( ("pub" variable (:type ("jpeg_error_mgr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1204 1230])
+                    ("setjmp_buffer" variable (:type ("jmp_buf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1258 1280])
+                    ("JPEGReader" variable
+                       (:pointer 1
+                        :type ("vtkJPEGReader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1317 1343]))                  
+                :type "struct")
+                nil [1174 1346])
+            ("vtk_jpeg_error_exit" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_common_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1428 1447]))                  
+                :type "void")
+                nil [1402 1686])
+            ("vtk_jpeg_output_message" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_common_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1729 1748]))                  
+                :type "void")
+                nil [1699 2045])
+            ("jpg_null" function
+               (:arguments 
+                  ( ("vtkNotUsed" variable (:type ("j_decompress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2073 2107]))                  
+                :type "void")
+                nil [2058 2112])
+            ("fill_input_buffer" function
+               (:arguments 
+                  ( ("vtkNotUsed" variable (:type ("j_decompress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2152 2186]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [2125 2282])
+            ("skip_input_data" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_decompress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2317 2340])
+                    ("num_bytes" variable (:type "long") (reparse-symbol arg-sub-list) [2341 2356]))                  
+                :type "void")
+                nil [2295 2560])
+            ("jMemSrc" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_decompress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2687 2710])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2711 2724])
+                    ("nbytes" variable (:type "long") (reparse-symbol arg-sub-list) [2725 2737]))                  
+                :type "void")
+                nil [2673 3373])
+            ("ExecuteInformation" function
+               (:parent "vtkJPEGReader"
+                :type "void")
+                nil [3575 6308])
+            ("vtkJPEGReaderUpdate2" function
+               (:template 
+                  ( ("OT" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("vtkJPEGReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6355 6375])
+                    ("outPtr" variable
+                       (:pointer 1
+                        :type ("OT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6376 6387])
+                    ("outExt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6414 6426])
+                    ("outInc" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6427 6445])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [6446 6451]))                  )
+                nil [6310 8989])
+            ("vtkJPEGReaderUpdate" function
+               (:template 
+                  ( ("OT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("vtkJPEGReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9204 9224])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("vtkImageData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9225 9244])
+                    ("outPtr" variable
+                       (:pointer 1
+                        :type ("OT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9245 9256]))                  )
+                nil [9159 9983])
+            ("ExecuteDataWithInformation" function
+               (:parent "vtkJPEGReader"
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10234 10256])
+                    ("outInfo" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10304 10328]))                  
+                :type "void")
+                nil [10187 10992])
+            ("CanReadFile" function
+               (:parent "vtkJPEGReader"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11027 11045]))                  
+                :type "int")
+                nil [10996 12642])
+            ("PrintSelf" function
+               (:parent "vtkJPEGReader"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12835 12847])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12848 12865]))                  
+                :type "void")
+                nil [12805 12911]))          
+    :file "vtkJPEGReader.cxx"
+    :pointmax 12912
+    :fsize 12911
+    :lastmodtime '(20771 38590)
+    :unmatched-syntax '((semantic-list 2179 . 2186) (semantic-list 2100 . 2107) (semantic-list 1026 . 1044) (symbol 1018 . 1025) (number 1038 . 1042) (punctuation 1036 . 1037) (symbol 1011 . 1017) (number 1038 . 1042) (punctuation 1036 . 1037) (punctuation 1010 . 1011) (number 879 . 883) (symbol 874 . 878) (symbol 870 . 873) (symbol 863 . 869) (punctuation 860 . 861))
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!IO!Image!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

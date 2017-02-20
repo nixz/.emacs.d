@@ -1,0 +1,52 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "device_system.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("THRUST_DEVICE_SYSTEM_CUDA" variable (:constant-flag t) nil [668 693])
+            ("THRUST_DEVICE_SYSTEM_OMP" variable (:constant-flag t) nil [707 731])
+            ("THRUST_DEVICE_SYSTEM_TBB" variable (:constant-flag t) nil [746 770])
+            ("THRUST_DEVICE_SYSTEM" variable (:constant-flag t) nil [815 835])
+            ("THRUST_DEVICE_BACKEND_CUDA" variable (:constant-flag t) nil [1016 1042])
+            ("THRUST_DEVICE_BACKEND_OMP" variable (:constant-flag t) nil [1077 1102])
+            ("THRUST_DEVICE_BACKEND_TBB" variable (:constant-flag t) nil [1137 1162]))          
+    :file "device_system.h"
+    :pointmax 2038
+    :fsize 2037
+    :lastmodtime '(20312 433)
+    :unmatched-syntax '((symbol 627 . 631) (symbol 620 . 626) (punctuation 619 . 620))
+    :lexical-table 
+        '(("THRUST_DEVICE_SYSTEM_OMP" . ((number "2" 736 . 737)))
+          ("THRUST_DEVICE_BACKEND_OMP" . ((symbol "THRUST_DEVICE_SYSTEM_OMP" 1104 . 1128)))
+          ("THRUST_DEVICE_SYSTEM_CUDA" . ((number "1" 697 . 698)))
+          ("THRUST_DEVICE_BACKEND_CUDA" . ((symbol "THRUST_DEVICE_SYSTEM_CUDA" 1043 . 1068)))
+          ("THRUST_DEVICE_SYSTEM_TBB" . ((number "3" 775 . 776)))
+          ("THRUST_DEVICE_SYSTEM" . ((symbol "THRUST_DEVICE_SYSTEM_CUDA" 836 . 861)))
+          ("THRUST_DEVICE_BACKEND_TBB" . ((symbol "THRUST_DEVICE_SYSTEM_TBB" 1164 . 1188)))
+          )
+
+    )
+   (semanticdb-table "config.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("thrust/detail/config/simple_defines.h" include (:system-flag t) nil [745 793])
+            ("thrust/detail/config/compiler.h" include (:system-flag t) nil [794 836])
+            ("thrust/detail/config/host_system.h" include (:system-flag t) nil [956 1001])
+            ("thrust/detail/config/device_system.h" include (:system-flag t) nil [1002 1049])
+            ("thrust/detail/config/host_device.h" include (:system-flag t) nil [1050 1095])
+            ("thrust/detail/config/debug.h" include (:system-flag t) nil [1096 1135])
+            ("thrust/detail/config/compiler_fence.h" include (:system-flag t) nil [1136 1184])
+            ("thrust/detail/config/forceinline.h" include (:system-flag t) nil [1185 1230]))          
+    :file "config.h"
+    :pointmax 1232
+    :fsize 1231
+    :lastmodtime '(20312 433)
+    :unmatched-syntax '((symbol 694 . 698) (symbol 687 . 693) (punctuation 686 . 687))
+    )
+   )
+  :file "!usr!include!thrust!detail!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

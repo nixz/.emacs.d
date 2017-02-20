@@ -1,0 +1,54 @@
+;; Object ExamplePrograms/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ExamplePrograms/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUI_MAKEDIR" variable (:default-value ("/apps/Vrui-2.6/share/make")) nil [1157 1199])
+            ("INSTALLDIR" variable (:default-value ("$(shell pwd)")) nil [1663 1690])
+            ("RESOURCEDIR" variable (:default-value ("share/VruiExamplePrograms")) nil [1717 1757])
+            ("$(VRUI_MAKEDIR)/SystemDefinitions" include nil nil [2039 2081])
+            ("$(VRUI_MAKEDIR)/Packages.System" include nil nil [2081 2121])
+            ("$(VRUI_MAKEDIR)/Configuration.Vrui" include nil nil [2121 2164])
+            ("$(VRUI_MAKEDIR)/Packages.Vrui" include nil nil [2164 2202])
+            ("BININSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(EXEDIR)")) nil [2243 2283])
+            ("RESOURCEINSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(RESOURCEDIR)")) nil [2283 2333])
+            ("PACKAGES" variable (:default-value ("MYVRUI")) nil [2609 2627])
+            ("ALL" variable (:default-value ("$(EXEDIR)/VruiDemo" "$(EXEDIR)/VruiDemoSmall" "$(EXEDIR)/VruiGLTest" "$(EXEDIR)/VruiAppTemplate" "$(EXEDIR)/VruiLocatorDemo" "$(EXEDIR)/VruiEventToolDemo" "$(EXEDIR)/VruiCustomToolDemo" "$(EXEDIR)/VruiCalibrator" "$(EXEDIR)/VruiSceneGraphDemo" "$(EXEDIR)/VruiSoundTest" "$(EXEDIR)/ImageViewer" "$(EXEDIR)/ShowEarthModel" "$(EXEDIR)/Jello" "$(EXEDIR)/ClusterJello" "$(EXEDIR)/SharedJelloServer" "$(EXEDIR)/SharedJello")) nil [2911 3424])
+            (".PHONY" function (:arguments ("all")) nil [3425 3437])
+            ("all" function (:arguments ("$(ALL)")) nil [3437 3449])
+            (".PHONY" function (:arguments ("extraclean")) nil [3655 3674])
+            ("extraclean" function nil nil [3674 3686])
+            (".PHONY" function (:arguments ("extrasqueakyclean")) nil [3687 3713])
+            ("extrasqueakyclean" function nil nil [3713 3732])
+            ("$(VRUI_MAKEDIR)/BasicMakefile" include nil nil [3758 3796])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiDemo.o")) nil [4025 4066])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiDemoSmall.o")) nil [4067 4118])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiGLTest.o")) nil [4119 4164])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiAppTemplate.o")) nil [4165 4220])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiLocatorDemo.o")) nil [4221 4276])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiEventToolDemo.o")) nil [4277 4336])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiCustomToolDemo.o")) nil [4337 4398])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiCalibrator.o")) nil [4399 4452])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiSceneGraphDemo.o")) nil [4453 4514])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiSoundTest.o")) nil [4515 4566])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/ImageViewer.o")) nil [4567 4614])
+            ("SHOWEARTHMODEL_SOURCES" variable (:default-value ("EarthFunctions.cpp" "PointSet.cpp" "SeismicPath.cpp" "EarthquakeSet.cpp" "EarthquakeTool.cpp" "ShowEarthModel.cpp")) nil [4712 4976])
+            ("$(OBJDIR)" function (:arguments ("CFLAGS" "+=" "-DSHOWEARTHMODEL_IMAGEDIR='\"$(RESOURCEINSTALLDIR)\"'")) nil [4977 5067])
+            ("$(EXEDIR)" function (:arguments ("$(SHOWEARTHMODEL_SOURCES:%.cpp=$(OBJDIR)/%.o)")) nil [5068 5140])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/Jello.o")) nil [5247 5412])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/ClusterJello.o")) nil [5456 5656])
+            ("$(EXEDIR)" function (:arguments ("PACKAGES" "=" "MYGLGEOMETRYWRAPPERS" "MYGEOMETRY" "MYMATH" "MYCOMM" "MYIO" "MYTHREADS" "MYMISC" "GL")) nil [5775 5886])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/SharedJelloServer.o")) nil [5886 6054])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/SharedJello.o")) nil [6055 6250])
+            ("install" function (:arguments ("$(ALL)")) nil [6317 6594]))          
+      :file "makefile"
+      :pointmax 6594
+      :fsize 6593
+      :lastmodtime '(22478 25941 261586 239000)
+      :unmatched-syntax nil))
+  :file "!apps!src!Vrui!ExamplePrograms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

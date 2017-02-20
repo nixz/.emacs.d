@@ -1,0 +1,28 @@
+;; Object cocoahelper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cocoahelper/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("SDL_CFLAGS" variable (:default-value ("$(CFLAGS)" "$(shell sdl-config --cflags)")) nil [107 157])
+            ("SDL_LDFLAGS" variable (:default-value ("$(LDFLAGS)" "$(shell sdl-config --libs)")) nil [157 207])
+            ("SDL_CFLAGS" variable (:default-value ("$(CFLAGS)" "-D_GNU_SOURCE=1" "-D_THREAD_SAFE" "-I/Library/Frameworks/SDL.framework/Headers/")) nil [212 309])
+            ("SDL_LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-framework" "SDL" "-framework" "Cocoa")) nil [309 364])
+            (".PHONY" function (:arguments ("all")) nil [371 383])
+            ("all" function (:arguments ("cocoahelper.framework")) nil [383 410])
+            ("cocoahelper.dylib" function (:arguments ("cocoahelper.m")) nil [411 571])
+            ("cocoahelper.framework" function (:arguments ("cocoahelper.dylib")) nil [572 1124])
+            (".PHONY" function (:arguments ("clean")) nil [1801 1815])
+            ("clean" function nil nil [1815 1884]))          
+    :file "Makefile"
+    :pointmax 1885
+    :fsize 1884
+    :lastmodtime '(21474 5165 0 0)
+    :unmatched-syntax '((shell-command 1626 . 1799) (bol 1625 . 1625) (shell-command 1351 . 1469) (bol 1350 . 1350))
+    )
+   )
+  :file "!Users!nshetty!quicklisp!dists!quicklisp!software!lispbuilder-20140113-svn!lispbuilder-sdl!cocoahelper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

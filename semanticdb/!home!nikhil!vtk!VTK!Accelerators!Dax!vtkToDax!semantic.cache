@@ -1,0 +1,2616 @@
+;; Object vtkToDax/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vtkToDax/"
+  :tables (list 
+   (semanticdb-table "MarchingCubes.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_MarchingCubes_h" variable (:constant-flag t) nil [691 715])
+            ("vtkPolyData.h" include (:system-flag t) nil [717 741])
+            ("DataSetTypeToType.h" include nil nil [743 773])
+            ("CellTypeToType.h" include nil nil [774 801])
+            ("DataSetConverters.h" include nil nil [802 832])
+            ("daxToVtk/CellTypeToType.h" include (:system-flag t) nil [834 870])
+            ("daxToVtk/DataSetConverters.h" include (:system-flag t) nil [871 910])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [912 943])
+            ("dax/cont/ScheduleGenerateTopology.h" include (:system-flag t) nil [944 990])
+            ("dax/worklet/MarchingCubes.worklet" include (:system-flag t) nil [991 1035])
+            ("unnamed" type
+               (:members 
+                  ( ("MarchingCubesOuputType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("dax::CellTagTriangle" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagTriangle"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1105 1139]))                          )
+                        (reparse-symbol namespacesubparts) [1049 1142]))                  
+                :type "namespace")
+                nil [1037 1145])
+            ("vtkToDax" type
+               (:members 
+                  ( ("DoMarchingCubes" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("InGridType" type (:type "class") nil nil)
+                                    ("OutGridType" type (:type "class") nil nil)
+                                    ("ValueType" type (:type "class") nil nil)
+                                    ("TriangleValueType" type (:type "class") nil nil)
+                                    ("Container1" type (:type "class") nil nil)
+                                    ("Container2" type (:type "class") nil nil)
+                                    ("Adapter" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1461 1480])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("OutGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1500 1514])
+                                    ("" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1534 1544])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container1" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1564 1625])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("TriangleValueType" type nil nil nil)
+                                                  ("Container2" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1645 1708]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1219 1740]))                          )
+                        (reparse-symbol namespacesubparts) [1170 1745])
+                    ("DoMarchingCubes" type
+                       (:type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("InGridType" type (:type "class") nil nil)
+                                    ("OutGridType" type (:type "class") nil nil)
+                                    ("ValueType" type (:type "class") nil nil)
+                                    ("TriangleValueType" type (:type "class") nil nil)
+                                    ("Container1" type (:type "class") nil nil)
+                                    ("Container2" type (:type "class") nil nil)
+                                    ("Adapter" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("inGrid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2046 2071])
+                                    ("outGeom" variable
+                                       (:reference 1
+                                        :type ("OutGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2080 2101])
+                                    ("isoValue" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2110 2129])
+                                    ("mcHandle" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container1" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2138 2207])
+                                    ("mcResult" variable
+                                       (:reference 1
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("TriangleValueType" type nil nil nil)
+                                                  ("Container2" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2216 2287]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1795 4179]))                          
+                        :template-specifier (("1")))
+                        (reparse-symbol namespacesubparts) [1748 4184])
+                    ("MarchingCubes" type
+                       (:template 
+                          ( ("FieldType_" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4249 4256])
+                            ("FieldType" type
+                               (:typedef ("FieldType_" type (:type "class") nil nil)
+                                :superclasses "FieldType_"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4261 4290])
+                            ("T" type
+                               (:typedef ("FieldType::ValueType" type (:type "class") nil nil)
+                                :superclasses "FieldType::ValueType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4354 4394])
+                            ("MarchingCubes" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FieldType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4414 4433])
+                                    ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4434 4442]))                                  
+                                :type ("MarchingCubes" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4400 4528])
+                            ("setOutputGrid" function
+                               (:arguments 
+                                  ( ("grid" variable
+                                       (:pointer 1
+                                        :type ("vtkPolyData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4553 4571]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4534 4606])
+                            ("setFieldName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4630 4647]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4612 4693])
+                            ("()" function
+                               (:template 
+                                  ( ("LHS" type (:type "class") nil nil)
+                                    ("RHS" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("dataSet" variable
+                                       (:reference 1
+                                        :type ("LHS" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4755 4768])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RHS" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4769 4780]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4699 6754])
+                            ("private" label nil (reparse-symbol classsubparts) [6757 6765])
+                            ("Result" variable
+                               (:pointer 1
+                                :type ("vtkPolyData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6770 6790])
+                            ("Field" variable (:type ("FieldType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6795 6811])
+                            ("Value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6816 6824])
+                            ("Name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6829 6846]))                          )
+                        (reparse-symbol namespacesubparts) [4188 6852]))                  
+                :type "namespace")
+                nil [1147 6854]))          
+    :file "MarchingCubes.h"
+    :pointmax 6890
+    :fsize 6889
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_MarchingCubes_h")
+          )
+
+    )
+   (semanticdb-table "Threshold.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_Threshold_h" variable (:constant-flag t) nil [687 707])
+            ("DataSetTypeToType.h" include nil nil [709 739])
+            ("CellTypeToType.h" include nil nil [740 767])
+            ("DataSetConverters.h" include nil nil [768 798])
+            ("daxToVtk/CellTypeToType.h" include (:system-flag t) nil [800 836])
+            ("daxToVtk/DataSetConverters.h" include (:system-flag t) nil [837 876])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [878 909])
+            ("dax/cont/ScheduleGenerateTopology.h" include (:system-flag t) nil [910 956])
+            ("dax/worklet/Threshold.worklet" include (:system-flag t) nil [957 997])
+            ("unnamed" type
+               (:members 
+                  ( ("ThresholdOuputType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1063 1078]))                          )
+                        (reparse-symbol namespacesubparts) [1011 1081])
+                    ("ThresholdOuputType" type
+                       (:type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("dax::CellTagHexahedron" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagHexahedron"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1145 1181]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagVoxel" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1082 1184]))                  
+                :type "namespace")
+                nil [999 1186])
+            ("vtkToDax" type
+               (:members 
+                  ( ("DoThreshold" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("InGridType" type (:type "class") nil nil)
+                                    ("OutGridType" type (:type "class") nil nil)
+                                    ("ValueType" type (:type "class") nil nil)
+                                    ("Container1" type (:type "class") nil nil)
+                                    ("Container2" type (:type "class") nil nil)
+                                    ("Adapter" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1457 1476])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("OutGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1496 1510])
+                                    ("" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1530 1540])
+                                    ("" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1560 1570])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container1" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1590 1651])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container2" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1671 1726]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1256 1858]))                          )
+                        (reparse-symbol namespacesubparts) [1211 1863])
+                    ("DoThreshold" type
+                       (:type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("InGridType" type (:type "class") nil nil)
+                                    ("OutGridType" type (:type "class") nil nil)
+                                    ("ValueType" type (:type "class") nil nil)
+                                    ("Container1" type (:type "class") nil nil)
+                                    ("Container2" type (:type "class") nil nil)
+                                    ("Adapter" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("inGrid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2119 2144])
+                                    ("outGeom" variable
+                                       (:reference 1
+                                        :type ("OutGridType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2153 2174])
+                                    ("thresholdMin" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2206])
+                                    ("thresholdMax" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2215 2238])
+                                    ("thresholdHandle" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container1" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2247 2323])
+                                    ("thresholdResult" variable
+                                       (:reference 1
+                                        :type ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ValueType" type nil nil nil)
+                                                  ("Container2" type nil nil nil)
+                                                  ("Adapter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2332 2402]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1909 3666]))                          
+                        :template-specifier (("1")))
+                        (reparse-symbol namespacesubparts) [1866 3671])
+                    ("Threshold" type
+                       (:template 
+                          ( ("FieldType_" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3732 3739])
+                            ("FieldType" type
+                               (:typedef ("FieldType_" type (:type "class") nil nil)
+                                :superclasses "FieldType_"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3744 3773])
+                            ("T" type
+                               (:typedef ("FieldType::ValueType" type (:type "class") nil nil)
+                                :superclasses "FieldType::ValueType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3837 3877])
+                            ("Threshold" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FieldType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3893 3912])
+                                    ("min" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3913 3919])
+                                    ("max" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3920 3926]))                                  
+                                :type ("Threshold" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3883 4024])
+                            ("setOutputGrid" function
+                               (:arguments 
+                                  ( ("grid" variable
+                                       (:pointer 1
+                                        :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4049 4075]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4030 4110])
+                            ("setFieldName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4134 4151]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4116 4197])
+                            ("()" function
+                               (:template 
+                                  ( ("LHS" type (:type "class") nil nil)
+                                    ("RHS" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("dataSet" variable
+                                       (:reference 1
+                                        :type ("LHS" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4259 4272])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RHS" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4273 4284]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4203 6140])
+                            ("private" label nil (reparse-symbol classsubparts) [6143 6151])
+                            ("Result" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6156 6184])
+                            ("Field" variable (:type ("FieldType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6189 6205])
+                            ("Min" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6210 6216])
+                            ("Max" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6221 6227])
+                            ("Name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6232 6249]))                          )
+                        (reparse-symbol namespacesubparts) [3675 6255]))                  
+                :type "namespace")
+                nil [1188 6257]))          
+    :file "Threshold.h"
+    :pointmax 6289
+    :fsize 6288
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_Threshold_h")
+          )
+
+    )
+   (semanticdb-table "CellTypeToType.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_CellTypeToType_h" variable (:constant-flag t) nil [692 717])
+            ("vtkCellType.h" include (:system-flag t) nil [719 743])
+            ("vtkLine" type
+               (:prototype t
+                :type "class")
+                nil [746 760])
+            ("vtkHexahedron" type
+               (:prototype t
+                :type "class")
+                nil [761 781])
+            ("vtkQuad" type
+               (:prototype t
+                :type "class")
+                nil [782 796])
+            ("vtkTetra" type
+               (:prototype t
+                :type "class")
+                nil [797 812])
+            ("vtkTriangle" type
+               (:prototype t
+                :type "class")
+                nil [813 831])
+            ("vtkVoxel" type
+               (:prototype t
+                :type "class")
+                nil [832 847])
+            ("vtkWedge" type
+               (:prototype t
+                :type "class")
+                nil [848 863])
+            ("dax/CellTag.h" include (:system-flag t) nil [865 889])
+            ("vtkToDax" type
+               (:members 
+                  ( ("CellTypeToType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1068 1111])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1176 1185)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1164 1185]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1158 1186])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1206 1207)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1195 1207]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1189 1209])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagLine" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagLine"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1212 1249]))                          
+                        :template-specifier 
+                          ( ("vtkLine" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1112 1252])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1324 1339)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1312 1339]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1306 1340])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1360 1361)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1349 1361]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1343 1363])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagHexahedron" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagHexahedron"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1366 1409]))                          
+                        :template-specifier 
+                          ( ("vtkHexahedron" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1254 1412])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1478 1487)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1466 1487]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1460 1488])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1508 1509)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1497 1509]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1491 1511])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagQuadrilateral" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagQuadrilateral"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1514 1560]))                          
+                        :template-specifier 
+                          ( ("vtkQuad" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1414 1563])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1631 1641)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1619 1641]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1613 1642])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1662 1663)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1651 1663]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1645 1665])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagTetrahedron" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagTetrahedron"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1668 1712]))                          
+                        :template-specifier 
+                          ( ("vtkTetra" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1566 1715])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1785 1798)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1773 1798]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1767 1799])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1819 1820)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1808 1820]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1802 1822])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagTriangle" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagTriangle"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1825 1866]))                          
+                        :template-specifier 
+                          ( ("vtkTriangle" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1717 1869])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1936 1946)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1924 1946]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1918 1947])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1967 1968)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1956 1968]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1950 1970])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagVoxel" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagVoxel"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1973 2011]))                          
+                        :template-specifier 
+                          ( ("vtkVoxel" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1871 2014])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (2082 2093)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2070 2093]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2064 2094])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (2114 2115)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2103 2115]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2097 2117])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagVertex" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagVertex"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2120 2159]))                          
+                        :template-specifier 
+                          ( ("vtkVertex" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2016 2162])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (2229 2239)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2217 2239]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2211 2240])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (2260 2261)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2249 2261]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2243 2263])
+                            ("DaxCellType" type
+                               (:typedef ("dax::CellTagWedge" type (:type "class") nil nil)
+                                :superclasses "dax::CellTagWedge"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2266 2304]))                          
+                        :template-specifier 
+                          ( ("vtkWedge" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2164 2307]))                  
+                :type "namespace")
+                nil [1047 2309]))          
+    :file "CellTypeToType.h"
+    :pointmax 2348
+    :fsize 2347
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_CellTypeToType_h")
+          )
+
+    )
+   (semanticdb-table "FieldTypeToType.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_FieldTypeToType_h" variable (:constant-flag t) nil [693 719])
+            ("stdint.h" include (:system-flag t) nil [721 740])
+            ("vtkIntArray" type
+               (:prototype t
+                :type "class")
+                nil [742 760])
+            ("vtkIdTypeArray" type
+               (:prototype t
+                :type "class")
+                nil [761 782])
+            ("vtkFloatArray" type
+               (:prototype t
+                :type "class")
+                nil [783 803])
+            ("vtkUnsignedCharArray" type
+               (:prototype t
+                :type "class")
+                nil [804 831])
+            ("dax/Types.h" include (:system-flag t) nil [833 855])
+            ("vtkToDax" type
+               (:members 
+                  ( ("FieldTypeToType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [879 937])
+                    ("FieldTypeToType" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1011 1053])
+                            ("FieldType" type
+                               (:typedef ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("dax::Id" type nil nil nil)
+                                          ("NUM_COMPNENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::Tuple"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1056 1108])
+                            ("ComponentType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1111 1141]))                          
+                        :template-specifier 
+                          ( ("vtkIntArray" type nil nil nil)
+                            ("NUM_COMP" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [939 1144])
+                    ("FieldTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1199 1234])
+                            ("FieldType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1237 1263])
+                            ("ComponentType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1266 1296]))                          
+                        :template-specifier 
+                          ( ("vtkIntArray" type nil nil nil)
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [1146 1299])
+                    ("FieldTypeToType" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1376 1418])
+                            ("FieldType" type
+                               (:typedef ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("dax::Id" type nil nil nil)
+                                          ("NUM_COMPNENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::Tuple"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1421 1473])
+                            ("ComponentType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1476 1506]))                          
+                        :template-specifier 
+                          ( ("vtkIdTypeArray" type nil nil nil)
+                            ("NUM_COMP" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1301 1509])
+                    ("FieldTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1567 1602])
+                            ("FieldType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1605 1631])
+                            ("ComponentType" type
+                               (:typedef ("dax::Id" type (:type "class") nil nil)
+                                :superclasses "dax::Id"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1634 1664]))                          
+                        :template-specifier 
+                          ( ("vtkIdTypeArray" type nil nil nil)
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [1511 1667])
+                    ("FieldTypeToType" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1744 1786])
+                            ("FieldType" type
+                               (:typedef ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("dax::Scalar" type nil nil nil)
+                                          ("NUM_COMPNENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::Tuple"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1789 1845])
+                            ("ComponentType" type
+                               (:typedef ("dax::Scalar" type (:type "class") nil nil)
+                                :superclasses "dax::Scalar"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1848 1882]))                          
+                        :template-specifier 
+                          ( ("vtkFloatArray" type nil nil nil)
+                            ("NUM_COMP" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1670 1885])
+                    ("FieldTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1942 1977])
+                            ("FieldType" type
+                               (:typedef ("dax::Scalar" type (:type "class") nil nil)
+                                :superclasses "dax::Scalar"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1980 2010])
+                            ("ComponentType" type
+                               (:typedef ("dax::Scalar" type (:type "class") nil nil)
+                                :superclasses "dax::Scalar"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2013 2047]))                          
+                        :template-specifier 
+                          ( ("vtkFloatArray" type nil nil nil)
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [1887 2050])
+                    ("FieldTypeToType" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2133 2175])
+                            ("FieldType" type
+                               (:typedef ("dax::Tuple" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("NUM_COMPNENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::Tuple"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2178 2230])
+                            ("ComponentType" type
+                               (:typedef ("uint8_t" type (:type "class") nil nil)
+                                :superclasses "uint8_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2233 2263]))                          
+                        :template-specifier 
+                          ( ("vtkUnsignedCharArray" type nil nil nil)
+                            ("NUM_COMP" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2052 2266])
+                    ("FieldTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("NUM_COMPNENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2330 2365])
+                            ("FieldType" type
+                               (:typedef ("uint8_t" type (:type "class") nil nil)
+                                :superclasses "uint8_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2368 2394])
+                            ("ComponentType" type
+                               (:typedef ("uint8_t" type (:type "class") nil nil)
+                                :superclasses "uint8_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2397 2427]))                          
+                        :template-specifier 
+                          ( ("vtkUnsignedCharArray" type nil nil nil)
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [2268 2430]))                  
+                :type "namespace")
+                nil [857 2432]))          
+    :file "FieldTypeToType.h"
+    :pointmax 2471
+    :fsize 2470
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_FieldTypeToType_h")
+          )
+
+    )
+   (semanticdb-table "DataSetTypeToType.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_DataSetTypeToType_h" variable (:constant-flag t) nil [695 723])
+            ("vtkType.h" include (:system-flag t) nil [725 745])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [747 780])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [781 819])
+            ("vtkImageData" type
+               (:prototype t
+                :type "class")
+                nil [821 840])
+            ("vtkUniformGrid" type
+               (:prototype t
+                :type "class")
+                nil [841 862])
+            ("vtkStructuredGrid" type
+               (:prototype t
+                :type "class")
+                nil [863 887])
+            ("vtkUnstructuredGrid" type
+               (:prototype t
+                :type "class")
+                nil [888 914])
+            ("CellTypeAndDataType.h" include nil nil [998 1030])
+            ("Containers.h" include nil nil [1031 1054])
+            ("vtkToDax" type
+               (:members 
+                  ( ("DataSetTypeToType" type
+                       (:template 
+                          ( ("CellTypeToTypeDef" type (:type "class") nil nil)
+                            ("vtkDataSetType" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CellTypeToType" type
+                               (:typedef ("CellTypeToTypeDef" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1221 1262])
+                            ("DaxCellType" type
+                               (:typedef ("CellTypeToTypeDef::DaxCellType" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef::DaxCellType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1265 1325])
+                            ("" type
+                               (:members 
+                                  ( ("VTKDataSetType" variable
+                                       (:constant-flag t
+                                        :default-value (1349 1351)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1334 1351]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1328 1353])
+                            ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1368 1374)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1362 1374]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1356 1375])
+                            ("DaxDataSetType" type
+                               (:typedef ("bool")
+                                :superclasses "bool"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1378 1406]))                          )
+                        (reparse-symbol namespacesubparts) [1130 1409])
+                    ("DataSetTypeToType" type
+                       (:template 
+                          ( ("CellTypeToTypeDef" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CellTypeToType" type
+                               (:typedef ("CellTypeToTypeDef" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1509 1550])
+                            ("DaxCellType" type
+                               (:typedef ("CellTypeToTypeDef::DaxCellType" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef::DaxCellType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1553 1613])
+                            ("" type
+                               (:members 
+                                  ( ("VTKDataSetType" variable
+                                       (:constant-flag t
+                                        :default-value (1637 1652)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1622 1652]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1616 1653])
+                            ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1668 1742)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1662 1742]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1656 1743])
+                            ("DaxDataSetType" type
+                               (:typedef ("dax::cont::UniformGrid" type (:type "class") nil nil)
+                                :superclasses "dax::cont::UniformGrid"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1746 1794]))                          
+                        :template-specifier 
+                          ( ("CellTypeToTypeDef" type nil nil nil)
+                            ("vtkImageData" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1411 1797])
+                    ("DataSetTypeToType" type
+                       (:template 
+                          ( ("CellTypeToTypeDef" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CellTypeToType" type
+                               (:typedef ("CellTypeToTypeDef" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1899 1940])
+                            ("DaxCellType" type
+                               (:typedef ("CellTypeToTypeDef::DaxCellType" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef::DaxCellType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1943 2003])
+                            ("" type
+                               (:members 
+                                  ( ("VTKDataSetType" variable
+                                       (:constant-flag t
+                                        :default-value (2027 2044)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2012 2044]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2006 2045])
+                            ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (2060 2136)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2054 2136]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2048 2137])
+                            ("DaxDataSetType" type
+                               (:typedef ("dax::cont::UniformGrid" type (:type "class") nil nil)
+                                :superclasses "dax::cont::UniformGrid"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2140 2188]))                          
+                        :template-specifier 
+                          ( ("CellTypeToTypeDef" type nil nil nil)
+                            ("vtkUniformGrid" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1799 2191])
+                    ("DataSetTypeToType" type
+                       (:template 
+                          ( ("CellTypeToTypeDef" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CellTypeToType" type
+                               (:typedef ("CellTypeToTypeDef" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2298 2339])
+                            ("DaxCellType" type
+                               (:typedef ("CellTypeToTypeDef::DaxCellType" type (:type "class") nil nil)
+                                :superclasses "CellTypeToTypeDef::DaxCellType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2342 2402])
+                            ("" type
+                               (:members 
+                                  ( ("VTKDataSetType" variable
+                                       (:constant-flag t
+                                        :default-value (2426 2448)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2411 2448]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2405 2449])
+                            ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (2464 2545)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2458 2545]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2452 2546])
+                            ("DaxDataSetType" type
+                               (:typedef ("dax::cont::UnstructuredGrid" type
+                                     (:template-specifier 
+                                        ( ("DaxCellType" type nil nil nil)
+                                          ("vtkToDax::vtkTopologyContainerTag" type nil nil nil)
+                                          ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::UnstructuredGrid"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2549 2727]))                          
+                        :template-specifier 
+                          ( ("CellTypeToTypeDef" type nil nil nil)
+                            ("vtkUnstructuredGrid" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2193 2730]))                  
+                :type "namespace")
+                nil [1056 2732]))          
+    :file "DataSetTypeToType.h"
+    :pointmax 2773
+    :fsize 2778
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_DataSetTypeToType_h")
+          )
+
+    )
+   (semanticdb-table "CellTypeAndDataType.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_CellTypeAndDataType_h" variable (:constant-flag t) nil [697 727])
+            ("vtkType.h" include (:system-flag t) nil [729 749])
+            ("vtkCellType.h" include (:system-flag t) nil [750 774])
+            ("vtkToDax" type
+               (:members 
+                  ( ("CellTypeAndDataType" type
+                       (:template 
+                          ( ("int" type nil nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (934 935)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [928 935]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [923 937]))                          )
+                        (reparse-symbol namespacesubparts) [852 940])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1121 1122)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1115 1122]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1110 1124]))                          
+                        :template-specifier 
+                          ( ("VTK_IMAGE_DATA" type nil nil nil)
+                            ("VTK_VOXEL" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1046 1126])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1205 1206)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1199 1206]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1194 1208]))                          
+                        :template-specifier 
+                          ( ("VTK_IMAGE_DATA" type nil nil nil)
+                            ("VTK_TRIANGLE" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1127 1210])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1280 1281)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1282 1289]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1277 1291]))                          
+                        :template-specifier 
+                          ( ("VTK_UNIFORM_GRID" type nil nil nil)
+                            ("VTK_VOXEL" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1211 1293])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1368 1369)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1370 1377]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1365 1379]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_LINE" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1295 1381])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1461 1462)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1463 1470]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1458 1472]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_HEXAHEDRON" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1382 1474])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1548 1549)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1550 1557]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1545 1559]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_QUAD" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1475 1561])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1636 1637)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1638 1645]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1633 1647]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_TETRA" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1562 1649])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1727 1728)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1729 1736]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1724 1738]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_TRIANGLE" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1650 1740])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1815 1816)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1817 1824]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1812 1826]))                          
+                        :template-specifier 
+                          ( ("VTK_UNSTRUCTURED_GRID" type nil nil nil)
+                            ("VTK_WEDGE" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1741 1828])
+                    ("CellTypeAndDataType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("Valid" variable
+                                       (:constant-flag t
+                                        :default-value (1907 1908)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1909 1916]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1904 1918]))                          
+                        :template-specifier 
+                          ( ("VTK_STRUCTURED_GRID" type nil nil nil)
+                            ("VTK_HEXAHEDRON" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1830 1920]))                  
+                :type "namespace")
+                nil [777 1922]))          
+    :file "CellTypeAndDataType.h"
+    :pointmax 1958
+    :fsize 1881
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_CellTypeAndDataType_h")
+          )
+
+    )
+   (semanticdb-table "Containers.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_Containers_h" variable (:constant-flag t) nil [688 709])
+            ("vtkPoints.h" include (:system-flag t) nil [711 733])
+            ("vtkCellArray.h" include (:system-flag t) nil [734 759])
+            ("daxConfig.h" include nil nil [761 783])
+            ("Portals.h" include nil nil [785 805])
+            ("Allocators.h" include nil nil [806 829])
+            ("vtkToDax" type
+               (:members 
+                  ( ("vtkArrayContainerTag" type
+                       (:template 
+                          ( ("VTKArrayType" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("VTKArrayType" type (:type "class") nil nil)
+                                :superclasses "VTKArrayType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1018 1044]))                          )
+                        (reparse-symbol namespacesubparts) [954 1047])
+                    ("vtkPointsContainerTag" type (:type "struct") (reparse-symbol namespacesubparts) [1100 1133])
+                    ("vtkTrianglesContainerTag" type (:type "struct") (reparse-symbol namespacesubparts) [1188 1223])
+                    ("vtkTopologyContainerTag" type
+                       (:template 
+                          ( ("CellType" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("CellType" type (:type "class") nil nil)
+                                :superclasses "CellType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1358 1380]))                          )
+                        (reparse-symbol namespacesubparts) [1295 1383]))                  
+                :type "namespace")
+                nil [831 1385])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("ArrayContainerControl" type
+                                       (:template 
+                                          ( ("ValueT" type (:type "class") nil nil)
+                                            ("VTKArrayType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1577 1584])
+                                            ("ValueType" type
+                                               (:typedef ("ValueT" type (:type "class") nil nil)
+                                                :superclasses "ValueT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1587 1612])
+                                            ("PortalType" type
+                                               (:typedef ("vtkToDax::vtkArrayPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkArrayPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1615 1670])
+                                            ("PortalConstType" type
+                                               (:typedef ("vtkToDax::vtkArrayPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkArrayPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1673 1739])
+                                            ("private" label nil (reparse-symbol classsubparts) [1741 1749])
+                                            ("NUM_COMPONENTS" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [1827 1906])
+                                            ("AllocatorType" type
+                                               (:typedef ("vtkToDax::vtkAlloc" type
+                                                     (:template-specifier 
+                                                        ( ("VTKArrayType" type nil nil nil)
+                                                          ("NUM_COMPONENTS" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkAlloc"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1972 2042])
+                                            ("PointerType" type
+                                               (:typedef ("AllocatorType::pointer" type (:type "class") nil nil)
+                                                :superclasses "AllocatorType::pointer"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2088 2140])
+                                            ("public" label nil (reparse-symbol classsubparts) [2142 2149])
+                                            ("ArrayContainerControl" function
+                                               (:constructor-flag t
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2153 2213])
+                                            ("ArrayContainerControl" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2217 2279])
+                                            ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [2283 2629])
+                                            ("Allocate" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2647 2670]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2633 3377])
+                                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3381 3455])
+                                            ("Shrink" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3471 3494]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3459 3719])
+                                            ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3723 3811])
+                                            ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3815 3924])
+                                            ("private" label nil (reparse-symbol classsubparts) [3926 3934])
+                                            ("ArrayContainerControl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3981 4058]))                                                  
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3959 4059])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4077 4154]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4062 4155])
+                                            ("Array" variable (:type ("PointerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4159 4177])
+                                            ("NumberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4180 4203]))                                          
+                                        :template-specifier 
+                                          ( ("ValueT" type nil nil nil)
+                                            ("vtkToDax::vtkArrayContainerTag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1443 4206])
+                                    ("ArrayContainerControl" type
+                                       (:template 
+                                          ( ("ValueT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [4305 4312])
+                                            ("ValueType" type
+                                               (:typedef ("ValueT" type (:type "class") nil nil)
+                                                :superclasses "ValueT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4315 4340])
+                                            ("PortalType" type
+                                               (:typedef ("vtkToDax::vtkPointsPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkPointsPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4405 4461])
+                                            ("PortalConstType" type
+                                               (:typedef ("vtkToDax::vtkPointsPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkPointsPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4464 4531])
+                                            ("private" label nil (reparse-symbol classsubparts) [4533 4541])
+                                            ("AllocatorType" type
+                                               (:typedef ("vtkToDax::vtkAlloc" type
+                                                     (:template-specifier 
+                                                        ( ("vtkPoints" type nil nil nil)
+                                                          ("3"))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkAlloc"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4613 4667])
+                                            ("PointerType" type
+                                               (:typedef ("AllocatorType::pointer" type (:type "class") nil nil)
+                                                :superclasses "AllocatorType::pointer"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4739 4791])
+                                            ("public" label nil (reparse-symbol classsubparts) [4793 4800])
+                                            ("ArrayContainerControl" function
+                                               (:constructor-flag t
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4804 4864])
+                                            ("ArrayContainerControl" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4868 4930])
+                                            ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [4934 5280])
+                                            ("Allocate" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5298 5321]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5284 6028])
+                                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6032 6106])
+                                            ("Shrink" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6122 6145]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6110 6370])
+                                            ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6374 6462])
+                                            ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6466 6575])
+                                            ("private" label nil (reparse-symbol classsubparts) [6577 6585])
+                                            ("ArrayContainerControl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6632 6709]))                                                  
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6610 6710])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6728 6805]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6713 6806])
+                                            ("Array" variable (:type ("PointerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6810 6828])
+                                            ("NumberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6831 6854]))                                          
+                                        :template-specifier 
+                                          ( ("ValueT" type nil nil nil)
+                                            ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4208 6857])
+                                    ("ArrayContainerControl" type
+                                       (:template 
+                                          ( ("ValueT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [6959 6966])
+                                            ("ValueType" type
+                                               (:typedef ("ValueT" type (:type "class") nil nil)
+                                                :superclasses "ValueT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6969 6994])
+                                            ("PortalType" type
+                                               (:typedef ("vtkToDax::vtkTrianglesPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkTrianglesPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7059 7118])
+                                            ("PortalConstType" type
+                                               (:typedef ("vtkToDax::vtkTrianglesPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkTrianglesPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7121 7191])
+                                            ("private" label nil (reparse-symbol classsubparts) [7193 7201])
+                                            ("AllocatorType" type
+                                               (:typedef ("vtkToDax::vtkAlloc" type
+                                                     (:template-specifier 
+                                                        ( ("vtkPoints" type nil nil nil)
+                                                          ("9"))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkAlloc"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7273 7327])
+                                            ("PointerType" type
+                                               (:typedef ("AllocatorType::pointer" type (:type "class") nil nil)
+                                                :superclasses "AllocatorType::pointer"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7399 7451])
+                                            ("public" label nil (reparse-symbol classsubparts) [7453 7460])
+                                            ("ArrayContainerControl" function
+                                               (:constructor-flag t
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7464 7524])
+                                            ("ArrayContainerControl" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7528 7590])
+                                            ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [7594 7940])
+                                            ("Allocate" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7958 7981]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7944 8688])
+                                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8692 8766])
+                                            ("Shrink" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8782 8805]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8770 9030])
+                                            ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9034 9122])
+                                            ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9126 9235])
+                                            ("private" label nil (reparse-symbol classsubparts) [9237 9245])
+                                            ("ArrayContainerControl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkTrianglesContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9292 9372]))                                                  
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9270 9373])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkTrianglesContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9391 9471]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9376 9472])
+                                            ("Array" variable (:type ("PointerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9476 9494])
+                                            ("NumberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9497 9520]))                                          
+                                        :template-specifier 
+                                          ( ("ValueT" type nil nil nil)
+                                            ("vtkToDax::vtkTrianglesContainerTag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6859 9523])
+                                    ("ArrayContainerControl" type
+                                       (:template 
+                                          ( ("ValueT" type (:type "class") nil nil)
+                                            ("CellType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [9655 9662])
+                                            ("ValueType" type
+                                               (:typedef ("ValueT" type (:type "class") nil nil)
+                                                :superclasses "ValueT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9665 9690])
+                                            ("PortalType" type
+                                               (:typedef ("vtkToDax::vtkTopologyPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil)
+                                                          ("CellType::NUM_POINTS" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkTopologyPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9693 9773])
+                                            ("PortalConstType" type
+                                               (:typedef ("vtkToDax::vtkTopologyPortal" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type (:constant-flag t) nil nil)
+                                                          ("CellType::NUM_POINTS" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkTopologyPortal"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9776 9868])
+                                            ("private" label nil (reparse-symbol classsubparts) [9870 9878])
+                                            ("AllocatorType" type
+                                               (:typedef ("vtkToDax::vtkAlloc" type
+                                                     (:template-specifier 
+                                                        ( ("vtkCellArray" type nil nil nil)
+                                                          ("CellType::NUM_POINTS" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "vtkToDax::vtkAlloc"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9950 10028])
+                                            ("PointerType" type
+                                               (:typedef ("AllocatorType::pointer" type (:type "class") nil nil)
+                                                :superclasses "AllocatorType::pointer"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [10100 10152])
+                                            ("public" label nil (reparse-symbol classsubparts) [10154 10161])
+                                            ("ArrayContainerControl" function
+                                               (:constructor-flag t
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [10165 10225])
+                                            ("ArrayContainerControl" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10229 10291])
+                                            ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [10295 10641])
+                                            ("Allocate" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10659 10682]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10645 11389])
+                                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11393 11467])
+                                            ("Shrink" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11483 11506]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11471 11731])
+                                            ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11735 11823])
+                                            ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11827 11936])
+                                            ("private" label nil (reparse-symbol classsubparts) [11938 11946])
+                                            ("ArrayContainerControl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11993 12070]))                                                  
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11971 12071])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("vtkToDax::vtkPointsContainerTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12089 12166]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12074 12167])
+                                            ("Array" variable (:type ("PointerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12171 12189])
+                                            ("NumberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12192 12215]))                                          
+                                        :template-specifier 
+                                          ( ("ValueT" type nil nil nil)
+                                            ("vtkToDax::vtkTopologyContainerTag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9526 12218]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1420 12221]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1403 12223]))                  
+                :type "namespace")
+                nil [1387 12225]))          
+    :file "Containers.h"
+    :pointmax 12258
+    :fsize 12527
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_Containers_h")
+          )
+
+    )
+   (semanticdb-table "Allocators.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_Allocators_h" variable (:constant-flag t) nil [688 709])
+            ("dax/VectorTraits.h" include (:system-flag t) nil [711 740])
+            ("vtkToDax" type
+               (:members 
+                  ( ("vtkAlloc" type
+                       (:template 
+                          ( ("_T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("T" type
+                               (:typedef ("_T" type (:type "class") nil nil)
+                                :superclasses "_T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1238 1251])
+                            ("self" type
+                               (:typedef ("vtkAlloc" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "vtkAlloc"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1254 1294])
+                            ("size_type" type
+                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                :superclasses "std::size_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1298 1330])
+                            ("difference_type" type
+                               (:typedef ("ptrdiff_t" type (:type "class") nil nil)
+                                :superclasses "ptrdiff_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1333 1371])
+                            ("pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1374 1404])
+                            ("const_pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1407 1443])
+                            ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1454 1478])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1489 1519])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1522 1555])
+                            ("allocate" function
+                               (:arguments 
+                                  ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1595])
+                                    ("hint" variable (:type ("self::const_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1622]))                                  
+                                :type ("self::pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1560 1762])
+                            ("deallocate" function
+                               (:arguments 
+                                  ( ("p" variable (:type ("self::pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1782 1798])
+                                    ("" variable (:type ("self::size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1815]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1766 1844]))                          )
+                        (reparse-symbol namespacesubparts) [1165 1847])
+                    ("vtkAlloc" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("T" type
+                               (:typedef ("vtkPoints" type (:type "class") nil nil)
+                                :superclasses "vtkPoints"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1925 1945])
+                            ("self" type
+                               (:typedef ("vtkAlloc" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "vtkAlloc"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1948 1988])
+                            ("size_type" type
+                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                :superclasses "std::size_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1992 2024])
+                            ("difference_type" type
+                               (:typedef ("ptrdiff_t" type (:type "class") nil nil)
+                                :superclasses "ptrdiff_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2027 2065])
+                            ("pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2068 2098])
+                            ("const_pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2101 2137])
+                            ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2148 2172])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2183 2213])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2216 2249])
+                            ("allocate" function
+                               (:arguments 
+                                  ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2277 2289])
+                                    ("hint" variable (:type ("self::const_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2290 2316]))                                  
+                                :type ("self::pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2254 2409])
+                            ("deallocate" function
+                               (:arguments 
+                                  ( ("p" variable (:type ("self::pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2429 2445])
+                                    ("" variable (:type ("self::size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2446 2462]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2413 2607]))                          
+                        :template-specifier 
+                          ( ("vtkPoints" type nil nil nil)
+                            ("NUM_COMPONENTS" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1849 2610])
+                    ("vtkAlloc" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("T" type
+                               (:typedef ("vtkCellArray" type (:type "class") nil nil)
+                                :superclasses "vtkCellArray"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2692 2715])
+                            ("self" type
+                               (:typedef ("vtkAlloc" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("NUM_COMPONENTS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "vtkAlloc"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2718 2758])
+                            ("size_type" type
+                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                :superclasses "std::size_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2762 2794])
+                            ("difference_type" type
+                               (:typedef ("ptrdiff_t" type (:type "class") nil nil)
+                                :superclasses "ptrdiff_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2797 2835])
+                            ("pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2838 2868])
+                            ("const_pointer" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2871 2907])
+                            ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2918 2942])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2953 2983])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2986 3019])
+                            ("allocate" function
+                               (:arguments 
+                                  ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3129 3141])
+                                    ("hint" variable (:type ("self::const_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3142 3168]))                                  
+                                :type ("self::pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3106 3366])
+                            ("deallocate" function
+                               (:arguments 
+                                  ( ("p" variable (:type ("self::pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3386 3402])
+                                    ("" variable (:type ("self::size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3403 3419]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3370 3448]))                          
+                        :template-specifier 
+                          ( ("vtkCellArray" type nil nil nil)
+                            ("NUM_COMPONENTS" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2613 3451]))                  
+                :type "namespace")
+                nil [1144 3453]))          
+    :file "Allocators.h"
+    :pointmax 3486
+    :fsize 3485
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax '((number 3169 . 3170) (punctuation 3167 . 3168) (TYPEDEF 2945 . 2952) (TYPEDEF 2910 . 2917) (number 2317 . 2318) (punctuation 2315 . 2316) (TYPEDEF 2175 . 2182) (TYPEDEF 2140 . 2147) (number 1623 . 1624) (punctuation 1621 . 1622) (TYPEDEF 1481 . 1488) (TYPEDEF 1446 . 1453))
+    :lexical-table 
+        '(("vtkToDax_Allocators_h")
+          )
+
+    )
+   (semanticdb-table "DataSetConverters.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_DataSetConverter_h" variable (:constant-flag t) nil [694 721])
+            ("vtkDataObjectTypes.h" include (:system-flag t) nil [745 776])
+            ("vtkCellTypes.h" include (:system-flag t) nil [777 802])
+            ("vtkCellArray.h" include (:system-flag t) nil [803 828])
+            ("vtkImageData.h" include (:system-flag t) nil [829 854])
+            ("vtkUniformGrid.h" include (:system-flag t) nil [855 882])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [883 915])
+            ("vtkStructuredGrid.h" include (:system-flag t) nil [916 946])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [948 981])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [982 1015])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [1016 1054])
+            ("CellTypeToType.h" include nil nil [1056 1083])
+            ("DataSetTypeToType.h" include nil nil [1084 1114])
+            ("Portals.h" include nil nil [1116 1136])
+            ("Containers.h" include nil nil [1137 1160])
+            ("vtkToDax" type
+               (:members 
+                  ( ("convertTopology" function
+                       (:template 
+                          ( ("CellType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1241 1268])
+                            ("topo" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("dax::Id" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1290 1317]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1185 1699])
+                    ("dataSetConverter" function
+                       (:template 
+                          ( ("VTKDataSetType" type (:type "class") nil nil))                          
+                        :type ("VTKDataSetType::DaxDataSetType" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkImageData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1835 1855])
+                            ("" variable (:type ("VTKDataSetType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1860 1875]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [1732 2417])
+                    ("dataSetConverter" function
+                       (:template 
+                          ( ("VTKDataSetType" type (:type "class") nil nil))                          
+                        :type ("VTKDataSetType::DaxDataSetType" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkUniformGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2553 2575])
+                            ("" variable (:type ("VTKDataSetType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2580 2595]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [2450 3137])
+                    ("dataSetConverter" function
+                       (:template 
+                          ( ("VTKDataSetType" type (:type "class") nil nil))                          
+                        :type ("VTKDataSetType::DaxDataSetType" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3278 3305])
+                            ("" variable (:type ("VTKDataSetType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3310 3325]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [3175 4208]))                  
+                :type "namespace")
+                nil [1163 4210]))          
+    :file "DataSetConverters.h"
+    :pointmax 4251
+    :fsize 4250
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtkToDax_DataSetConverter_h")
+          )
+
+    )
+   (semanticdb-table "Portals.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkToDax_vtkPointsContainer_h" variable (:constant-flag t) nil [696 725])
+            ("vtkCellArray.h" include (:system-flag t) nil [727 752])
+            ("vtkDataArray.h" include (:system-flag t) nil [753 778])
+            ("vtkPoints.h" include (:system-flag t) nil [779 801])
+            ("dax/Types.h" include (:system-flag t) nil [803 825])
+            ("dax/VectorTraits.h" include (:system-flag t) nil [826 855])
+            ("dax/cont/ArrayPortal.h" include (:system-flag t) nil [856 889])
+            ("dax/cont/IteratorFromArrayPortal.h" include (:system-flag t) nil [890 935])
+            ("iterator" include (:system-flag t) nil [936 955])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [1151 1196])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [1197 1238])
+            ("boost/type_traits/is_base_of.hpp" include (:system-flag t) nil [1239 1282])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1283 1310])
+            ("unnamed" type
+               (:members 
+                  ( ("fillComponents" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Tuple" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("t" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1423 1428])
+                                    ("tuple" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1429 1448]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1368 1556]))                          )
+                        (reparse-symbol namespacesubparts) [1324 1561])
+                    ("fillComponents" type
+                       (:type "struct"
+                        :members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Tuple" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("t" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1660 1665])
+                                    ("tuple" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1666 1685]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1605 1757]))                          
+                        :template-specifier (("0")))
+                        (reparse-symbol namespacesubparts) [1563 1762])
+                    ("ConstCorrectedType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NUM_COMPONENTS" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1853 1924])
+                            ("ComponentType" type
+                               (:typedef ("dax::VectorTraits::ComponentType" type (:type "class") nil nil)
+                                :superclasses "dax::VectorTraits::ComponentType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1927 1994])
+                            ("correctConstT" type
+                               (:typedef ("boost::remove_const::type" type (:type "class") nil nil)
+                                :superclasses "boost::remove_const::type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2093 2153])
+                            ("isConst" type
+                               (:typedef ("boost::is_const::type" type (:type "class") nil nil)
+                                :superclasses "boost::is_const::type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2156 2206])
+                            ("Type" type
+                               (:typedef ("boost::mpl::if_::type" type (:type "class") nil nil)
+                                :superclasses "boost::mpl::if_::type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2209 2278]))                          )
+                        (reparse-symbol namespacesubparts) [1764 2281]))                  
+                :type "namespace")
+                nil [1312 2284])
+            ("vtkToDax" type
+               (:members 
+                  ( ("vtkArrayPortal" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2429 2436])
+                            ("ValueType" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2482 2497])
+                            ("ComponentType" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2543 2571])
+                            ("vtkArrayPortal" function
+                               (:constructor-flag t
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2575 2665])
+                            ("vtkArrayPortal" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("array" variable
+                                       (:pointer 1
+                                        :type ("vtkDataArray" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2700 2720])
+                                    ("size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2734]))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2669 2898])
+                            ("vtkArrayPortal" function
+                               (:template 
+                                  ( ("OtherType" type (:type "class") nil nil))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkArrayPortal" type
+                                             (:template-specifier 
+                                                ( ("OtherType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3197 3234]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [3133 3368])
+                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3390 3458])
+                            ("Get" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3494 3508]))                                  
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3480 3577])
+                            ("Set" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3608 3622])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3623 3646]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3599 3832])
+                            ("IteratorType" type
+                               (:typedef ("dax::cont::IteratorFromArrayPortal" type
+                                     (:template-specifier 
+                                        ( ("vtkArrayPortal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::IteratorFromArrayPortal"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3836 3908])
+                            ("GetIteratorBegin" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3927 3999])
+                            ("GetIteratorEnd" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4018 4097])
+                            ("Get" function
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4101 4143])
+                            ("private" label nil (reparse-symbol classsubparts) [4145 4153])
+                            ("Data" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4156 4175])
+                            ("Array" variable
+                               (:pointer 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4178 4199])
+                            ("Size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4202 4215]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2406 4219])
+                    ("vtkPointsPortal" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4343 4350])
+                            ("ValueType" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4396 4411])
+                            ("ComponentType" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4457 4485])
+                            ("vtkPointsPortal" function
+                               (:constructor-flag t
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4489 4582])
+                            ("vtkPointsPortal" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("points" variable
+                                       (:pointer 1
+                                        :type ("vtkPoints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4618 4636])
+                                    ("size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4637 4650]))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4586 4818])
+                            ("vtkPointsPortal" function
+                               (:template 
+                                  ( ("OtherType" type (:type "class") nil nil))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkPointsPortal" type
+                                             (:template-specifier 
+                                                ( ("OtherType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5117 5155]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5052 5291])
+                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5313 5381])
+                            ("Get" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5417 5431]))                                  
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5403 5500])
+                            ("Set" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5531 5545])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5546 5569]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5522 5755])
+                            ("IteratorType" type
+                               (:typedef ("dax::cont::IteratorFromArrayPortal" type
+                                     (:template-specifier 
+                                        ( ("vtkPointsPortal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::IteratorFromArrayPortal"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5759 5832])
+                            ("GetIteratorBegin" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5851 5923])
+                            ("GetIteratorEnd" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5942 6021])
+                            ("Get" function
+                               (:pointer 1
+                                :type ("vtkPoints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6025 6066])
+                            ("private" label nil (reparse-symbol classsubparts) [6068 6076])
+                            ("Points" variable
+                               (:pointer 1
+                                :type ("vtkPoints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6079 6097])
+                            ("Array" variable
+                               (:pointer 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6100 6121])
+                            ("Size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6124 6137]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4319 6141])
+                    ("vtkTrianglesPortal" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6229 6236])
+                            ("ValueType" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6282 6297])
+                            ("ComponentType" variable (:type ("ComponentType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6343 6371])
+                            ("vtkTrianglesPortal" function
+                               (:constructor-flag t
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6375 6471])
+                            ("vtkTrianglesPortal" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("points" variable
+                                       (:pointer 1
+                                        :type ("vtkPoints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6510 6528])
+                                    ("size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6529 6542]))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6475 6710])
+                            ("vtkTrianglesPortal" function
+                               (:template 
+                                  ( ("OtherType" type (:type "class") nil nil))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkTrianglesPortal" type
+                                             (:template-specifier 
+                                                ( ("OtherType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7012 7053]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [6944 7189])
+                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7211 7279])
+                            ("Get" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7315 7329]))                                  
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7301 7398])
+                            ("Set" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7429 7443])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7444 7467]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7420 7653])
+                            ("IteratorType" type
+                               (:typedef ("dax::cont::IteratorFromArrayPortal" type
+                                     (:template-specifier 
+                                        ( ("vtkTrianglesPortal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::IteratorFromArrayPortal"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7657 7733])
+                            ("GetIteratorBegin" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7752 7824])
+                            ("GetIteratorEnd" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7843 7922])
+                            ("Get" function
+                               (:pointer 1
+                                :type ("vtkPoints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7926 7967])
+                            ("private" label nil (reparse-symbol classsubparts) [7969 7977])
+                            ("Points" variable
+                               (:pointer 1
+                                :type ("vtkPoints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7980 7998])
+                            ("Array" variable
+                               (:pointer 1
+                                :type ("ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8001 8022])
+                            ("Size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8025 8038]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6202 8042])
+                    ("vtkTopologyPortal" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8483 8490])
+                            ("ValueType" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8493 8513])
+                            ("vtkTopologyPortal" function
+                               (:constructor-flag t
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8516 8617])
+                            ("vtkTopologyPortal" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cells" variable
+                                       (:pointer 1
+                                        :type ("vtkCellArray" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8752 8772])
+                                    ("daxTopoLen" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8773 8792]))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8718 9071])
+                            ("vtkTopologyPortal" function
+                               (:template 
+                                  ( ("OtherType" type (:type "class") nil nil))                                  
+                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vtkTopologyPortal" type
+                                             (:template-specifier 
+                                                ( ("OtherType" type nil nil nil)
+                                                  ("PointsPerCell" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9372 9426]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [9305 9534])
+                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9556 9619])
+                            ("Get" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9656 9670]))                                  
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9642 9741])
+                            ("Set" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9772 9786])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9787 9810]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9763 9880])
+                            ("IteratorType" type
+                               (:typedef ("dax::cont::IteratorFromArrayPortal" type
+                                     (:template-specifier 
+                                        ( ("vtkTopologyPortal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::IteratorFromArrayPortal"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9884 9959])
+                            ("GetIteratorBegin" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9978 10050])
+                            ("GetIteratorEnd" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10069 10148])
+                            ("Get" function
+                               (:pointer 1
+                                :type ("vtkCellArray" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10152 10199])
+                            ("private" label nil (reparse-symbol classsubparts) [10201 10209])
+                            ("CellArray" variable
+                               (:pointer 1
+                                :type ("vtkCellArray" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10212 10236])
+                            ("RawCells" variable
+                               (:pointer 1
+                                :type ("vtkIdType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10239 10259])
+                            ("Size" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10262 10275]))                          )
+                        (reparse-symbol namespacesubparts) [8417 10279]))                  
+                :type "namespace")
+                nil [2286 10282]))          
+    :file "Portals.h"
+    :pointmax 10326
+    :fsize 10909
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax '((symbol 10053 . 10068) (symbol 9962 . 9977) (symbol 9745 . 9760) (symbol 9624 . 9639) (symbol 9538 . 9553) (symbol 7827 . 7842) (symbol 7736 . 7751) (symbol 7402 . 7417) (symbol 7283 . 7298) (symbol 7193 . 7208) (punctuation 6342 . 6343) (punctuation 6341 . 6342) (punctuation 6340 . 6341) (symbol 6336 . 6340) (punctuation 6335 . 6336) (symbol 6317 . 6335) (TYPENAME 6308 . 6316) (TYPEDEF 6300 . 6307) (punctuation 6281 . 6282) (punctuation 6280 . 6281) (punctuation 6279 . 6280) (symbol 6275 . 6279) (punctuation 6274 . 6275) (symbol 6256 . 6274) (TYPENAME 6247 . 6255) (TYPEDEF 6239 . 6246) (punctuation 6200 . 6201) (number 6199 . 6200) (punctuation 6197 . 6198) (symbol 6182 . 6196) (INT 6178 . 6181) (punctuation 6166 . 6167) (symbol 6162 . 6166) (TYPENAME 6153 . 6161) (punctuation 6152 . 6153) (TEMPLATE 6143 . 6151) (symbol 5926 . 5941) (symbol 5835 . 5850) (symbol 5504 . 5519) (symbol 5385 . 5400) (symbol 5295 . 5310) (punctuation 4456 . 4457) (punctuation 4455 . 4456) (punctuation 4454 . 4455) (symbol 4450 . 4454) (punctuation 4449 . 4450) (symbol 4431 . 4449) (TYPENAME 4422 . 4430) (TYPEDEF 4414 . 4421) (punctuation 4395 . 4396) (punctuation 4394 . 4395) (punctuation 4393 . 4394) (symbol 4389 . 4393) (punctuation 4388 . 4389) (symbol 4370 . 4388) (TYPENAME 4361 . 4369) (TYPEDEF 4353 . 4360) (punctuation 4317 . 4318) (symbol 4303 . 4317) (punctuation 4302 . 4303) (punctuation 4301 . 4302) (punctuation 4300 . 4301) (symbol 4296 . 4300) (punctuation 4295 . 4296) (symbol 4283 . 4295) (punctuation 4282 . 4283) (punctuation 4281 . 4282) (symbol 4278 . 4281) (punctuation 4276 . 4277) (symbol 4261 . 4275) (INT 4257 . 4260) (punctuation 4245 . 4246) (symbol 4241 . 4245) (TYPENAME 4232 . 4240) (punctuation 4231 . 4232) (TEMPLATE 4222 . 4230) (symbol 4002 . 4017) (symbol 3911 . 3926) (symbol 3581 . 3596) (symbol 3462 . 3477) (symbol 3372 . 3387) (punctuation 2542 . 2543) (punctuation 2541 . 2542) (punctuation 2540 . 2541) (symbol 2536 . 2540) (punctuation 2535 . 2536) (symbol 2517 . 2535) (TYPENAME 2508 . 2516) (TYPEDEF 2500 . 2507) (punctuation 2481 . 2482) (punctuation 2480 . 2481) (punctuation 2479 . 2480) (symbol 2475 . 2479) (punctuation 2474 . 2475) (symbol 2456 . 2474) (TYPENAME 2447 . 2455) (TYPEDEF 2439 . 2446) (punctuation 2404 . 2405) (symbol 2390 . 2404) (punctuation 2389 . 2390) (punctuation 2388 . 2389) (punctuation 2387 . 2388) (symbol 2383 . 2387) (punctuation 2382 . 2383) (symbol 2370 . 2382) (punctuation 2369 . 2370) (punctuation 2368 . 2369) (symbol 2365 . 2368) (punctuation 2363 . 2364) (symbol 2348 . 2362) (INT 2344 . 2347) (punctuation 2332 . 2333) (symbol 2328 . 2332) (TYPENAME 2319 . 2327) (punctuation 2318 . 2319) (TEMPLATE 2309 . 2317))
+    :lexical-table 
+        '(("vtkToDax_vtkPointsContainer_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Accelerators!Dax!vtkToDax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

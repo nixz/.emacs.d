@@ -1,0 +1,2666 @@
+;; Object ves/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ves/"
+  :tables (list 
+   (semanticdb-table "vesGL.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESGL_H" variable (:constant-flag t) nil [827 834])
+            ("GLES2/gl2.h" include (:system-flag t) nil [1412 1438])
+            ("GLES2/gl2ext.h" include (:system-flag t) nil [1439 1468])
+            ("GL_SAMPLER_1D" variable (:constant-flag t) nil [1520 1533])
+            ("GL_SAMPLER_2D" variable (:constant-flag t) nil [1567 1580])
+            ("GL_SAMPLER_3D" variable (:constant-flag t) nil [1614 1627])
+            ("GL_SAMPLER_1D_SHADOW" variable (:constant-flag t) nil [1661 1681])
+            ("GL_SAMPLER_2D_SHADOW" variable (:constant-flag t) nil [1708 1728])
+            ("flushGLError" variable (:constant-flag t) nil [1760 1772])
+            ("printGLErrorEnum" variable (:constant-flag t) nil [1916 1932])
+            ("printGLError" variable (:constant-flag t) nil [2413 2425])
+            ("printGLErrorWithMessage" variable (:constant-flag t) nil [2556 2579]))          
+    :file "vesGL.h"
+    :pointmax 2747
+    :fsize 2746
+    :lastmodtime '(21278 6459 308844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESGL_H")
+          ("GL_SAMPLER_2D_SHADOW" . ((number "0x8B62" 1736 . 1742)))
+          ("flushGLError" (spp-arg-list ("os" "glEnum") 1772 . 1784) . ((semantic-list "{ \\
+  os << \"ERROR: Occured in \" << __FILE__ << \" at line \" << __LINE__ << \" (error code: \" << #glEnum << \")\\n\"; \\
+}" 1787 . 1903)))
+          ("GL_SAMPLER_1D_SHADOW" . ((number "0x8B61" 1689 . 1695)))
+          ("GL_SAMPLER_1D" . ((number "0x8B5D" 1548 . 1554)))
+          ("printGLErrorEnum" (spp-arg-list ("os" "error") 1932 . 1943) . ((semantic-list "{ \\
+  switch(error) \\
+  { \\
+    case GL_INVALID_ENUM: { flushGLError(os, GL_INVALID_ENUM); break; } \\
+    case GL_INVALID_FRAMEBUFFER_OPERATION: { flushGLError(os, GL_INVALID_FRAMEBUFFER_OPERATION); break; } \\
+    case GL_INVALID_VALUE: { flushGLError(os, GL_INVALID_VALUE); break; } \\
+    case GL_INVALID_OPERATION: { flushGLError(os, GL_INVALID_OPERATION); break; } \\
+    case GL_OUT_OF_MEMORY: { flushGLError(os, GL_OUT_OF_MEMORY); break; } \\
+  }; \\
+}" 1946 . 2400)))
+          ("printGLErrorWithMessage" (spp-arg-list ("message" "os") 2579 . 2592) . ((semantic-list "{ \\
+  GLenum error = glGetError(); \\
+  if (error != GL_NO_ERROR) { \\
+    os << message << \"\\n\"; \\
+    printGLErrorEnum(os, error); \\
+  } \\
+}" 2595 . 2735)))
+          ("GL_SAMPLER_2D" . ((number "0x8B5E" 1595 . 1601)))
+          ("GL_SAMPLER_3D" . ((number "0x8B5F" 1642 . 1648)))
+          ("printGLError" (spp-arg-list ("os") 2425 . 2429) . ((semantic-list "{ \\
+  GLenum error = glGetError(); \\
+  if (error != GL_NO_ERROR) { \\
+    printGLErrorEnum(os, error); \\
+  } \\
+}" 2432 . 2543)))
+          )
+
+    )
+   (semanticdb-table "vesRenderData.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESRENDERDATA_H" variable (:constant-flag t) nil [836 851])
+            ("vesGLTypes.h" include nil nil [869 892])
+            ("vesSetGet.h" include nil nil [893 915])
+            ("vesRenderData" type
+               (:members 
+                  ( ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesRenderData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [955 969]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [942 970])
+                    ("vesRenderData" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("primitiveType" variable (:type "int") (reparse-symbol arg-sub-list) [988 1006])
+                            ("pointSize" variable (:type "int") (reparse-symbol arg-sub-list) [1007 1021])
+                            ("lineWidth" variable (:type "int") (reparse-symbol arg-sub-list) [1022 1036]))                          
+                        :type ("vesRenderData" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [974 1138])
+                    ("m_pritimiveType" variable (:type "int") (reparse-symbol classsubparts) [1142 1162])
+                    ("m_pointSize" variable (:type "int") (reparse-symbol classsubparts) [1166 1182])
+                    ("m_lineWidth" variable (:type "int") (reparse-symbol classsubparts) [1185 1201]))                  
+                :type "struct")
+                nil [917 1204]))          
+    :file "vesRenderData.h"
+    :pointmax 1232
+    :fsize 1231
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESRENDERDATA_H")
+          )
+
+    )
+   (semanticdb-table "vesGLTypes.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESGLTYPES_H" variable (:constant-flag t) nil [30 42])
+            ("vesGL.h" include nil nil [44 62])
+            ("vesPrimitiveRenderType" type
+               (:members 
+                  ( ("Type" type
+                       (:members 
+                          ( ("Points" variable
+                               (:constant-flag t
+                                :default-value (132 142)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [116 142])
+                            ("LineStrip" variable
+                               (:constant-flag t
+                                :default-value (163 177)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [147 177])
+                            ("LineLoop" variable
+                               (:constant-flag t
+                                :default-value (198 211)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [182 211])
+                            ("Lines" variable
+                               (:constant-flag t
+                                :default-value (232 241)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [216 241])
+                            ("TriangleStrip" variable
+                               (:constant-flag t
+                                :default-value (262 280)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [246 280])
+                            ("TriangleFan" variable
+                               (:constant-flag t
+                                :default-value (301 317)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [285 317])
+                            ("Triangles" variable
+                               (:constant-flag t
+                                :default-value (338 354)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [322 354]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [98 355]))                  
+                :type "struct")
+                nil [64 358])
+            ("vesPrimitiveIndicesValueType" type
+               (:members 
+                  ( ("Type" type
+                       (:members 
+                          ( ("UnsignedShort" variable
+                               (:constant-flag t
+                                :default-value (434 452)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [418 452])
+                            ("UnsignedInt" variable
+                               (:constant-flag t
+                                :default-value (471 490)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [457 490]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [400 491]))                  
+                :type "struct")
+                nil [360 494])
+            ("vesColorDataType" type
+               (:members 
+                  ( ("PixelFormat" type
+                       (:members 
+                          ( ("PixelFormatNone" variable
+                               (:constant-flag t
+                                :default-value (567 568)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [549 568])
+                            ("Alpha" variable
+                               (:constant-flag t
+                                :default-value (592 601)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [574 601])
+                            ("Luminance" variable
+                               (:constant-flag t
+                                :default-value (624 637)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [606 637])
+                            ("LuminanceAlpha" variable
+                               (:constant-flag t
+                                :default-value (660 679)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [642 679])
+                            ("RGB" variable
+                               (:constant-flag t
+                                :default-value (702 709)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [684 709])
+                            ("RGBA" variable
+                               (:constant-flag t
+                                :default-value (732 743)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [714 743]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [524 744])
+                    ("PixelDataType" type
+                       (:members 
+                          ( ("PixelDataTypeNone" variable
+                               (:constant-flag t
+                                :default-value (795 796)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [775 796])
+                            ("UnsignedByte" variable
+                               (:constant-flag t
+                                :default-value (822 839)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [802 839])
+                            ("UnsignedShort565" variable
+                               (:constant-flag t
+                                :default-value (864 888)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [844 888])
+                            ("UnsignedShort4444" variable
+                               (:constant-flag t
+                                :default-value (913 939)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [893 939])
+                            ("UnsignedShort5551" variable
+                               (:constant-flag t
+                                :default-value (964 993)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [944 993]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [748 994]))                  
+                :type "struct")
+                nil [496 997])
+            ("vesDataType" type
+               (:members 
+                  ( ("Type" type
+                       (:members 
+                          ( ("Float" variable
+                               (:constant-flag t
+                                :default-value (1054 1063)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1040 1063])
+                            ("FloatVec2" variable
+                               (:constant-flag t
+                                :default-value (1082 1096)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1068 1096])
+                            ("FloatVec3" variable
+                               (:constant-flag t
+                                :default-value (1115 1129)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1101 1129])
+                            ("FloatVec4" variable
+                               (:constant-flag t
+                                :default-value (1148 1162)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1134 1162])
+                            ("Int" variable
+                               (:constant-flag t
+                                :default-value (1181 1188)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1167 1188])
+                            ("IntVec2" variable
+                               (:constant-flag t
+                                :default-value (1207 1219)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1193 1219])
+                            ("IntVec3" variable
+                               (:constant-flag t
+                                :default-value (1238 1250)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1224 1250])
+                            ("IntVec4" variable
+                               (:constant-flag t
+                                :default-value (1269 1281)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1255 1281])
+                            ("Bool" variable
+                               (:constant-flag t
+                                :default-value (1300 1308)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1286 1308])
+                            ("BoolVec2" variable
+                               (:constant-flag t
+                                :default-value (1327 1340)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1313 1340])
+                            ("BoolVec3" variable
+                               (:constant-flag t
+                                :default-value (1359 1372)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1345 1372])
+                            ("BoolVec4" variable
+                               (:constant-flag t
+                                :default-value (1391 1404)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1377 1404])
+                            ("FloatMat2" variable
+                               (:constant-flag t
+                                :default-value (1423 1437)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1409 1437])
+                            ("FloatMat3" variable
+                               (:constant-flag t
+                                :default-value (1456 1470)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1442 1470])
+                            ("FloatMat4" variable
+                               (:constant-flag t
+                                :default-value (1489 1503)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1475 1503])
+                            ("Sampler1D" variable
+                               (:constant-flag t
+                                :default-value (1522 1536)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1508 1536])
+                            ("Sampler2D" variable
+                               (:constant-flag t
+                                :default-value (1555 1569)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1541 1569])
+                            ("Sampler3D" variable
+                               (:constant-flag t
+                                :default-value (1588 1602)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1574 1602])
+                            ("SamplerCube" variable
+                               (:constant-flag t
+                                :default-value (1621 1637)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1607 1637])
+                            ("Sampler1DShadow" variable
+                               (:constant-flag t
+                                :default-value (1661 1682)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1643 1682])
+                            ("Sampler2DShadow" variable
+                               (:constant-flag t
+                                :default-value (1705 1726)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1687 1726])
+                            ("Undefined" variable
+                               (:constant-flag t
+                                :default-value (1744 1747)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1732 1747]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1022 1752]))                  
+                :type "struct")
+                nil [999 1755])
+            ("vesBufferType" type
+               (:members 
+                  ( ("Mode" type
+                       (:members 
+                          ( ("Front" variable
+                               (:constant-flag t
+                                :default-value (1809 1818)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1801 1818])
+                            ("Back" variable
+                               (:constant-flag t
+                                :default-value (1830 1841)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1823 1841]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1783 1842]))                  
+                :type "struct")
+                nil [1758 1845]))          
+    :file "vesGLTypes.h"
+    :pointmax 1870
+    :fsize 1869
+    :lastmodtime '(21278 6459 308844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESGLTYPES_H")
+          )
+
+    )
+   (semanticdb-table "vesSetGet.h"
+    :file "vesSetGet.h"
+    :fsize 1181
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesSourceData.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESSOURCEDATA_H" variable (:constant-flag t) nil [950 965])
+            ("vesGLTypes.h" include nil nil [983 1006])
+            ("vesMath.h" include nil nil [1007 1027])
+            ("vesSetGet.h" include nil nil [1028 1050])
+            ("vesVertexAttributeKeys.h" include nil nil [1051 1086])
+            ("map" include (:system-flag t) nil [1104 1118])
+            ("vector" include (:system-flag t) nil [1119 1136])
+            ("vesVertexDataP3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1204 1227]))                  
+                :type "struct")
+                nil [1176 1230])
+            ("vesVertexDataN3f" type
+               (:members 
+                  ( ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1260 1281]))                  
+                :type "struct")
+                nil [1232 1284])
+            ("vesVertexDataC3f" type
+               (:members 
+                  ( ("m_color" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1314 1334]))                  
+                :type "struct")
+                nil [1286 1337])
+            ("vesVertexDataC4f" type
+               (:members 
+                  ( ("m_color" variable (:type ("vesVector4f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1367 1387]))                  
+                :type "struct")
+                nil [1339 1390])
+            ("vesVertexDataT2f" type
+               (:members 
+                  ( ("m_textureCoordinate" variable (:type ("vesVector2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1420 1452]))                  
+                :type "struct")
+                nil [1392 1455])
+            ("vesVertexDataT3f" type
+               (:members 
+                  ( ("m_textureCoordinate" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1485 1517]))                  
+                :type "struct")
+                nil [1457 1520])
+            ("vesVertexDataP3N3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1552 1575])
+                    ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1578 1599]))                  
+                :type "struct")
+                nil [1522 1602])
+            ("vesVertexDataP3N3T3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1636 1659])
+                    ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1662 1683])
+                    ("m_texureCoordinates" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1686 1718]))                  
+                :type "struct")
+                nil [1604 1721])
+            ("vesVertexDataP3N3C3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1755 1778])
+                    ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1781 1802])
+                    ("m_color" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1805 1825]))                  
+                :type "struct")
+                nil [1723 1828])
+            ("vesVertexDataP3N3T3C3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1864 1887])
+                    ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1890 1911])
+                    ("m_texureCoordinates" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1914 1946])
+                    ("m_color" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1949 1969]))                  
+                :type "struct")
+                nil [1830 1972])
+            ("vesVertexDataP3N3T3C3S3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2010 2033])
+                    ("m_normal" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2036 2057])
+                    ("m_texureCoordinates" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2060 2092])
+                    ("m_color" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2095 2115])
+                    ("m_scalar" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2118 2139]))                  
+                :type "struct")
+                nil [1974 2142])
+            ("vesVertexDataP3T3C3f" type
+               (:members 
+                  ( ("m_position" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2176 2199])
+                    ("m_texureCoordinates" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2202 2234])
+                    ("m_color" variable (:type ("vesVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2237 2257]))                  
+                :type "struct")
+                nil [2144 2260])
+            ("vesVertexDataf" type
+               (:members 
+                  ( ("m_scalar" variable (:type "float") (reparse-symbol classsubparts) [2288 2303]))                  
+                :type "struct")
+                nil [2262 2306])
+            ("vesSourceData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2361 2368])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2385 2399]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2372 2400])
+                    ("AttributeData" type
+                       (:members 
+                          ( ("m_numberOfComponents" variable (:type "unsigned int") (reparse-symbol classsubparts) [2472 2506])
+                            ("m_dataType" variable (:type "unsigned int") (reparse-symbol classsubparts) [2553 2577])
+                            ("m_dataTypeSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [2609 2637])
+                            ("m_normalized" variable (:type "bool") (reparse-symbol classsubparts) [2813 2831])
+                            ("m_stride" variable (:type "unsigned int") (reparse-symbol classsubparts) [2873 2891])
+                            ("m_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [2912 2934]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2404 2939])
+                    ("Key" type
+                       (:typedef ("int")
+                        :superclasses "int"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2943 2959])
+                    ("AttributeMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("Key" type nil nil nil)
+                                  ("AttributeData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2962 3012])
+                    ("AttributeIterator" type
+                       (:typedef ("AttributeMap::iterator" type (:type "class") nil nil)
+                        :superclasses "AttributeMap::iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3015 3064])
+                    ("AttributeConstIterator" type
+                       (:typedef ("AttributeMap::const_iterator" type (:type "class") nil nil)
+                        :superclasses "AttributeMap::const_iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3067 3127])
+                    ("vesSourceData" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3131 3188])
+                    ("data" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3192 3217])
+                    ("sizeOfArray" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3220 3265])
+                    ("sizeInBytes" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3268 3313])
+                    ("hasKey" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3337 3345]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3317 3356])
+                    ("keys" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3359 3401])
+                    ("numberOfAttributes" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3405 3457])
+                    ("numberOfComponents" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3501 3509]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3461 3520])
+                    ("setNumberOfComponents" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3558 3566])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3567 3586]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3523 3591])
+                    ("isAttributeNormalized" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3630 3638]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3595 3649])
+                    ("setIsAttributeNormalized" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3690 3698])
+                            ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [3699 3709]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3652 3714])
+                    ("sizeOfAttributeDataType" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3763 3771]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3718 3782])
+                    ("setSizeOfAttributeDataType" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3825 3833])
+                            ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3834 3852]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3785 3857])
+                    ("attributeDataType" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3900 3908]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3861 3919])
+                    ("setAttributeDataType" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3956 3964])
+                            ("type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3965 3983]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3922 3988])
+                    ("attributeOffset" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4020 4028]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3992 4039])
+                    ("setAttributeOffset" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4074 4082])
+                            ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [4083 4094]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4042 4099])
+                    ("attributeStride" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4131 4139]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4103 4150])
+                    ("setAttributeStride" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4185 4193])
+                            ("stride" variable (:type "int") (reparse-symbol arg-sub-list) [4194 4205]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4153 4210])
+                    ("duplicateElements" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4245 4286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4214 4291]))                  
+                :type "class")
+                nil [2339 4294])
+            ("vesGenericSourceData" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4417 4424])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesGenericSourceData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4440 4461]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4427 4462])
+                    ("vesGenericSourceData" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4466 4505])
+                    ("duplicateElements" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4540 4581]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4509 4733])
+                    ("arrayReference" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4773 4845])
+                    ("arrayReference" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4849 4933])
+                    ("data" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4937 4999])
+                    ("sizeOfArray" function
+                       (:typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [5003 5083])
+                    ("sizeInBytes" function
+                       (:typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [5087 5501])
+                    ("hasKey" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5525 5533]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5505 5744])
+                    ("keys" function
+                       (:typemodifiers ("virtual")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5748 6019])
+                    ("numberOfAttributes" function
+                       (:typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6023 6145])
+                    ("numberOfComponents" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6189 6197]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6149 6406])
+                    ("setNumberOfComponents" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6445 6453])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6454 6473]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6410 6588])
+                    ("isAttributeNormalized" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6627 6635]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6592 6841])
+                    ("setIsAttributeNormalized" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6883 6891])
+                            ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [6892 6902]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6845 7008])
+                    ("sizeOfAttributeDataType" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7057 7065]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [7012 7273])
+                    ("setSizeOfAttributeDataType" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7317 7325])
+                            ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7326 7344]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7277 7452])
+                    ("attributeDataType" function
+                       (:arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7487 7495]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [7456 7699])
+                    ("setAttributeDataType" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7737 7745])
+                            ("type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7746 7764]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7703 7839])
+                    ("attributeOffset" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7871 7879]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7843 8082])
+                    ("setAttributeOffset" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [8118 8126])
+                            ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [8127 8138]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8086 8213])
+                    ("attributeStride" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [8245 8253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8217 8456])
+                    ("setAttributeStride" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [8492 8500])
+                            ("stride" variable (:type "int") (reparse-symbol arg-sub-list) [8501 8512]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8460 8587])
+                    ("pushBack" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8612 8627]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8591 8670])
+                    ("protected" label nil (reparse-symbol classsubparts) [8672 8682])
+                    ("m_data" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8701 8723])
+                    ("m_attributeMap" variable (:type ("AttributeMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8727 8755]))                  
+                :superclasses 
+                  ( ("vesSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [4343 8758])
+            ("vesSourceDataP3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8833 8840])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataP3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8856 8873]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8843 8874])
+                    ("vesSourceDataP3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataP3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8878 9506]))                  
+                :type "class")
+                nil [8760 9509])
+            ("vesGenericSourceData3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9585 9592])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesGenericSourceData3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9608 9631]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9595 9632])
+                    ("vesGenericSourceData3f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [9659 9667]))                          
+                        :type ("vesGenericSourceData3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9636 10098]))                  
+                :type "class")
+                nil [9511 10101])
+            ("vesGenericSourceData1f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10171 10178])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesGenericSourceData1f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10194 10217]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10181 10218])
+                    ("vesGenericSourceData1f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [10245 10253]))                          
+                        :type ("vesGenericSourceData1f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10222 10585]))                  
+                :type "class")
+                nil [10103 10588])
+            ("vesSourceDataf" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10659 10666])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10682 10697]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10669 10698])
+                    ("vesSourceDataf" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10702 11314]))                  
+                :type "class")
+                nil [10590 11317])
+            ("vesSourceDataN3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11392 11399])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataN3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11415 11432]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11402 11433])
+                    ("vesSourceDataN3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataN3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11437 12053]))                  
+                :type "class")
+                nil [11319 12056])
+            ("vesSourceDataC3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12131 12138])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataC3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12154 12171]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12141 12172])
+                    ("vesSourceDataC3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataC3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12176 12786]))                  
+                :type "class")
+                nil [12058 12789])
+            ("vesSourceDataC4f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12864 12871])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataC4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12887 12904]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12874 12905])
+                    ("vesSourceDataC4f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataC4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12909 13519]))                  
+                :type "class")
+                nil [12791 13522])
+            ("vesSourceDataT2f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13597 13604])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataT2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13620 13637]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13607 13638])
+                    ("vesSourceDataT2f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataT2f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13642 14324]))                  
+                :type "class")
+                nil [13524 14327])
+            ("vesSourceDataT3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14402 14409])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataT3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14425 14442]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [14412 14443])
+                    ("vesSourceDataT3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataT3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14447 15129]))                  
+                :type "class")
+                nil [14329 15132])
+            ("vesSourceDataP3N3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15211 15218])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataP3N3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15234 15253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [15221 15254])
+                    ("vesSourceDataP3N3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataP3N3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15258 16338]))                  
+                :type "class")
+                nil [15134 16341])
+            ("vesSourceDataP3N3C3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [16424 16431])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataP3N3C3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16447 16468]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [16434 16469])
+                    ("vesSourceDataP3N3C3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataP3N3C3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16473 17999]))                  
+                :type "class")
+                nil [16343 18002])
+            ("vesSourceDataP3T3C3f" type
+               (:superclasses 
+                  ( ("vesGenericSourceData" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [18085 18092])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesSourceDataP3T3C3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18108 18129]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [18095 18130])
+                    ("vesSourceDataP3T3C3f" function
+                       (:constructor-flag t
+                        :type ("vesSourceDataP3T3C3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18134 19726]))                  
+                :type "class")
+                nil [18004 19729]))          
+    :file "vesSourceData.h"
+    :pointmax 19757
+    :fsize 19756
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESSOURCEDATA_H")
+          )
+
+    )
+   (semanticdb-table "vesMath.h"
+    :file "vesMath.h"
+    :fsize 883
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesVertexAttributeKeys.h"
+    :file "vesVertexAttributeKeys.h"
+    :fsize 1132
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesRenderer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESRENDERER_H" variable (:constant-flag t) nil [1289 1302])
+            ("vesGL.h" include nil nil [1320 1338])
+            ("vesMath.h" include nil nil [1339 1359])
+            ("vesSetGet.h" include nil nil [1360 1382])
+            ("string" include (:system-flag t) nil [1400 1417])
+            ("vector" include (:system-flag t) nil [1418 1435])
+            ("vesActor" type
+               (:prototype t
+                :type "class")
+                nil [1461 1476])
+            ("vesBackground" type
+               (:prototype t
+                :type "class")
+                nil [1477 1497])
+            ("vesCamera" type
+               (:prototype t
+                :type "class")
+                nil [1498 1514])
+            ("vesGroupNode" type
+               (:prototype t
+                :type "class")
+                nil [1515 1534])
+            ("vesRenderStage" type
+               (:prototype t
+                :type "class")
+                nil [1535 1556])
+            ("vesTexture" type
+               (:prototype t
+                :type "class")
+                nil [1557 1574])
+            ("vesRenderer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1596 1603])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesRenderer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1619 1631]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1606 1632])
+                    ("vesRenderer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vesRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1636 1650])
+                    ("vesRenderer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1653 1676])
+                    ("render" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1703 1725])
+                    ("resetCamera" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1833 1860])
+                    ("resetCameraClippingRange" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1906 1946])
+                    ("resize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2040 2050])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2050 2061])
+                            ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [2062 2074]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2020 2075])
+                    ("setBackgroundColor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2154 2179]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2122 2180])
+                    ("setBackgroundColor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2215 2240]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2183 2241])
+                    ("setBackgroundColor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [2276 2284])
+                            ("g" variable (:type "float") (reparse-symbol arg-sub-list) [2285 2293])
+                            ("b" variable (:type "float") (reparse-symbol arg-sub-list) [2294 2302]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2244 2303])
+                    ("setBackgroundColor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [2338 2346])
+                            ("g" variable (:type "float") (reparse-symbol arg-sub-list) [2347 2355])
+                            ("b" variable (:type "float") (reparse-symbol arg-sub-list) [2356 2364])
+                            ("a" variable (:type "float") (reparse-symbol arg-sub-list) [2365 2373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2306 2374])
+                    ("background" function
+                       (:prototype-flag t
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesBackground" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2422 2463])
+                    ("background" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesBackground" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2466 2519])
+                    ("addActor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("actor" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesActor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2658 2687]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2636 2688])
+                    ("removeActor" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("actor" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesActor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2809 2838]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2784 2839])
+                    ("sceneActors" function
+                       (:prototype-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("vesSharedPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3060 3117])
+                    ("sceneRoot" function
+                       (:constant-flag t
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesGroupNode" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3233 3314])
+                    ("camera" function
+                       (:typemodifiers ("inline")
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesCamera" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3351 3416])
+                    ("width" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3459 3506])
+                    ("height" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3550 3597])
+                    ("computeWorldToDisplay" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("world" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3692 3717]))                          
+                        :type ("vesVector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3658 3718])
+                    ("computeDisplayToWorld" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("display" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3813 3840]))                          
+                        :type ("vesVector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3779 3841])
+                    ("protected" label nil (reparse-symbol classsubparts) [3843 3853])
+                    ("updateTraverseScene" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3857 3892])
+                    ("cullTraverseScene" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3895 3928])
+                    ("setupBackground" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3931 3962])
+                    ("updateBackgroundViewport" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3965 4005])
+                    ("resetCameraClippingRange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bounds" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4039 4055]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4009 4056])
+                    ("private" label nil (reparse-symbol classsubparts) [4058 4066])
+                    ("m_aspect" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [4069 4088])
+                    ("m_width" variable (:type "int") (reparse-symbol classsubparts) [4091 4103])
+                    ("m_height" variable (:type "int") (reparse-symbol classsubparts) [4106 4119])
+                    ("m_camera" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesCamera" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4123 4156])
+                    ("m_sceneRoot" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesGroupNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4159 4198])
+                    ("m_renderStage" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesRenderStage" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4202 4245])
+                    ("m_background" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesBackground" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4248 4289]))                  
+                :type "class")
+                nil [1576 4292]))          
+    :file "vesRenderer.h"
+    :pointmax 4301
+    :fsize 4300
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESRENDERER_H")
+          )
+
+    )
+   (semanticdb-table "vesRenderer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vesActor.h" include nil nil [841 862])
+            ("vesBackground.h" include nil nil [863 889])
+            ("vesCamera.h" include nil nil [890 912])
+            ("vesCullVisitor.h" include nil nil [913 940])
+            ("vesGroupNode.h" include nil nil [941 966])
+            ("vesRenderer.h" include nil nil [967 991])
+            ("vesRenderStage.h" include nil nil [992 1019])
+            ("vesShaderProgram.h" include nil nil [1020 1049])
+            ("vesVisitor.h" include nil nil [1050 1073])
+            ("cassert" include (:system-flag t) nil [1093 1111])
+            ("iostream" include (:system-flag t) nil [1112 1131])
+            ("string" include (:system-flag t) nil [1132 1149])
+            ("vesRenderer" function
+               (:constructor-flag t
+                :parent "vesRenderer"
+                :type ("vesRenderer" type (:type "class") nil nil))
+                nil [1151 1478])
+            ("vesRenderer" function
+               (:destructor-flag t
+                :parent "vesRenderer"
+                :type "void")
+                nil [1481 1512])
+            ("render" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [1515 2352])
+            ("resize" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2380 2390])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2391 2402])
+                    ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [2403 2415]))                  
+                :type "void")
+                nil [2355 2739])
+            ("computeWorldToDisplay" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("world" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2789 2814]))                  
+                :type ("vesVector3f" type (:type "class") nil nil))
+                nil [2742 3458])
+            ("computeDisplayToWorld" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("display" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3508 3535]))                  
+                :type ("vesVector3f" type (:type "class") nil nil))
+                nil [3461 4209])
+            ("resetCamera" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [4212 6017])
+            ("resetCameraClippingRange" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [6020 6670])
+            ("resetCameraClippingRange" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("bounds" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [6716 6732]))                  
+                :type "void")
+                nil [6673 8330])
+            ("setBackgroundColor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [8370 8378])
+                    ("g" variable (:type "float") (reparse-symbol arg-sub-list) [8379 8387])
+                    ("b" variable (:type "float") (reparse-symbol arg-sub-list) [8388 8396]))                  
+                :type "void")
+                nil [8333 8450])
+            ("setBackgroundColor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [8489 8497])
+                    ("g" variable (:type "float") (reparse-symbol arg-sub-list) [8498 8506])
+                    ("b" variable (:type "float") (reparse-symbol arg-sub-list) [8507 8515])
+                    ("a" variable (:type "float") (reparse-symbol arg-sub-list) [8516 8524]))                  
+                :type "void")
+                nil [8452 8581])
+            ("setBackgroundColor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("color" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8620 8645]))                  
+                :type "void")
+                nil [8583 8725])
+            ("setBackgroundColor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("color" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8764 8789]))                  
+                :type "void")
+                nil [8727 8906])
+            ("background" function
+               (:parent "vesRenderer"
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesBackground" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8909 8995])
+            ("background" function
+               (:parent "vesRenderer"
+                :constant-flag t
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesBackground" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8998 9096])
+            ("addActor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("actor" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesActor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [9126 9155]))                  
+                :type "void")
+                nil [9099 9218])
+            ("removeActor" function
+               (:parent "vesRenderer"
+                :arguments 
+                  ( ("actor" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesActor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [9251 9280]))                  
+                :type "void")
+                nil [9221 9346])
+            ("unnamed" type
+               (:members 
+                  ( ("sceneActorsHelper" function
+                       (:arguments 
+                          ( ("actors" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("vesSharedPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9384 9429])
+                            ("parent" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesGroupNode" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [9430 9464]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9361 9907]))                  
+                :type "namespace")
+                nil [9348 9910])
+            ("sceneActors" function
+               (:parent "vesRenderer"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("vesSharedPtr" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9912 10097])
+            ("updateTraverseScene" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [10100 10323])
+            ("cullTraverseScene" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [10326 10638])
+            ("setupBackground" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [10641 10835])
+            ("updateBackgroundViewport" function
+               (:parent "vesRenderer"
+                :type "void")
+                nil [10838 11140]))          
+    :file "vesRenderer.cpp"
+    :pointmax 11141
+    :fsize 11140
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vesActor.h"
+    :file "vesActor.h"
+    :fsize 4581
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesBackground.h"
+    :file "vesBackground.h"
+    :fsize 2228
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesCamera.h"
+    :file "vesCamera.h"
+    :fsize 11633
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesCullVisitor.h"
+    :file "vesCullVisitor.h"
+    :fsize 2849
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesGroupNode.h"
+    :file "vesGroupNode.h"
+    :fsize 2476
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesRenderStage.h"
+    :file "vesRenderStage.h"
+    :fsize 4636
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesShaderProgram.h"
+    :file "vesShaderProgram.h"
+    :fsize 3175
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesVisitor.h"
+    :file "vesVisitor.h"
+    :fsize 2847
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesShaderProgram.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vesShaderProgram.h" include nil nil [841 870])
+            ("vesBooleanUniform.h" include nil nil [888 918])
+            ("vesEngineUniform.h" include nil nil [919 948])
+            ("vesShader.h" include nil nil [949 971])
+            ("vesUniform.h" include nil nil [972 995])
+            ("vesVertexAttribute.h" include nil nil [996 1027])
+            ("map" include (:system-flag t) nil [1045 1059])
+            ("vector" include (:system-flag t) nil [1060 1077])
+            ("iostream" include (:system-flag t) nil [1078 1097])
+            ("vesInternal" type
+               (:parent "vesShaderProgram"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1137 1144])
+                    ("vesInternal" function
+                       (:constructor-flag t
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1150 1208])
+                    ("vesInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1215 1480])
+                    ("UniformNameToLocation" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1484 1550])
+                    ("VertexAttributeNameToLocation" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1553 1627])
+                    ("AttributeBindingMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1630 1694])
+                    ("m_programHandle" variable (:type "unsigned int") (reparse-symbol classsubparts) [1698 1727])
+                    ("m_shaders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("vesSharedPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1731 1780])
+                    ("m_uniforms" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("vesSharedPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1783 1834])
+                    ("m_vertexAttributes" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("vesSharedPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1837 1906])
+                    ("m_enabledVertexAttributes" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1909 1955])
+                    ("m_uniformNameToLocation" variable (:type ("UniformNameToLocation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1959 2005])
+                    ("m_vertexAttributeNameToLocation" variable (:type ("VertexAttributeNameToLocation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2008 2070])
+                    ("m_engineUniforms" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("vesSharedPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2074 2137]))                  
+                :type "class")
+                nil [1099 2140])
+            ("vesShaderProgram" function
+               (:constructor-flag t
+                :parent "vesShaderProgram"
+                :type ("vesShaderProgram" type (:type "class") nil nil))
+                nil [2143 3273])
+            ("vesShaderProgram" function
+               (:destructor-flag t
+                :parent "vesShaderProgram"
+                :type "void")
+                nil [3276 3336])
+            ("addShader" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("shader" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesShader" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3372 3403]))                  
+                :type "bool")
+                nil [3339 3937])
+            ("addUniform" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("uniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3974 4007]))                  
+                :type "bool")
+                nil [3940 4385])
+            ("addVertexAttribute" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("attribute" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesVertexAttribute" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4433 4476])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4477 4485]))                  
+                :type "bool")
+                nil [4388 4694])
+            ("attribute" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4758 4766]))                  
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesVertexAttribute" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4697 4982])
+            ("enableVertexAttribute" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5030 5038])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [5039 5050]))                  
+                :type "bool")
+                nil [4985 5260])
+            ("isEnabledVertexAttribute" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5311 5319]))                  
+                :type "bool")
+                nil [5263 5531])
+            ("addBindAttributeLocation" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5582 5606])
+                    ("location" variable (:type "int") (reparse-symbol arg-sub-list) [5655 5668]))                  
+                :type "bool")
+                nil [5534 5786])
+            ("uniformLocation" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5827 5851]))                  
+                :type "int")
+                nil [5789 6114])
+            ("attributeLocation" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6157 6181]))                  
+                :type "int")
+                nil [6117 6468])
+            ("use" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [6471 6554])
+            ("queryUniformLocation" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6600 6625]))                  
+                :type "int")
+                nil [6557 6710])
+            ("queryAttributeLocation" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6758 6783]))                  
+                :type "int")
+                nil [6713 6867])
+            ("deleteProgram" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [6870 7058])
+            ("link" function
+               (:parent "vesShaderProgram"
+                :type "bool")
+                nil [7061 7645])
+            ("validate" function
+               (:parent "vesShaderProgram"
+                :type "bool")
+                nil [7648 8237])
+            ("bindAttributes" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [8240 8736])
+            ("bindUniforms" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [8739 9084])
+            ("cleanUp" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [9087 9236])
+            ("deleteVertexAndFragment" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [9239 9568])
+            ("programHandle" function
+               (:parent "vesShaderProgram"
+                :type "unsigned int")
+                nil [9571 9665])
+            ("programHandle" function
+               (:parent "vesShaderProgram"
+                :constant-flag t
+                :type "unsigned int")
+                nil [9668 9775])
+            ("uniform" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9829 9853]))                  
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesUniform" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9778 10139])
+            ("uniformExist" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10178 10202]))                  
+                :type "bool")
+                nil [10142 10487])
+            ("updateUniforms" function
+               (:parent "vesShaderProgram"
+                :type "void")
+                nil [10490 10809])
+            ("setup" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10841 10875]))                  
+                :type "void")
+                nil [10812 10906])
+            ("bind" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10937 10971]))                  
+                :type "void")
+                nil [10909 12198])
+            ("unbind" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12231 12265]))                  
+                :type "void")
+                nil [12201 12324])
+            ("setupVertexData" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12366 12400])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [12401 12409]))                  
+                :type "void")
+                nil [12327 12694])
+            ("bindVertexData" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12735 12769])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [12770 12778]))                  
+                :type "void")
+                nil [12697 13117])
+            ("unbindVertexData" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13160 13194])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [13195 13203]))                  
+                :type "void")
+                nil [13120 13489])
+            ("bindRenderData" function
+               (:parent "vesShaderProgram"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13530 13564])
+                    ("renderData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13603 13636]))                  
+                :type "void")
+                nil [13492 13808]))          
+    :file "vesShaderProgram.cpp"
+    :pointmax 13809
+    :fsize 13808
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vesBooleanUniform.h"
+    :file "vesBooleanUniform.h"
+    :fsize 2254
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesEngineUniform.h"
+    :file "vesEngineUniform.h"
+    :fsize 4474
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesShader.h"
+    :file "vesShader.h"
+    :fsize 3219
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesUniform.h"
+    :file "vesUniform.h"
+    :fsize 5907
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesVertexAttribute.h"
+    :file "vesVertexAttribute.h"
+    :fsize 4829
+    :lastmodtime '(21278 6459 312844 438000)
+    )
+   (semanticdb-table "vesRenderState.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESRENDERSTATE_H" variable (:constant-flag t) nil [874 890])
+            ("vesMaterial.h" include nil nil [908 932])
+            ("vesMath.h" include nil nil [933 953])
+            ("vesSetGet.h" include nil nil [954 976])
+            ("vesMapper" type
+               (:prototype t
+                :type "class")
+                nil [1002 1018])
+            ("vesRenderState" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1114 1121])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesRenderState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1137 1152]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1124 1153])
+                    ("vesRenderState" function
+                       (:constructor-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1157 1401])
+                    ("vesRenderState" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1406 1484])
+                    ("applyMaterial" function
+                       (:arguments 
+                          ( ("material" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesSharedPtr" type
+                                     (:template-specifier 
+                                        ( ("vesMaterial" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1508 1550]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1489 1651])
+                    ("removeMaterial" function
+                       (:arguments 
+                          ( ("material" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesSharedPtr" type
+                                     (:template-specifier 
+                                        ( ("vesMaterial" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1676 1718]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1656 1823])
+                    ("applyMapper" function
+                       (:arguments 
+                          ( ("mapper" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesSharedPtr" type
+                                     (:template-specifier 
+                                        ( ("vesMapper" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1845 1883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1828 1974])
+                    ("applyModelViewMatrix" function
+                       (:arguments 
+                          ( ("modelViewMatrix" variable
+                               (:pointer 1
+                                :type ("vesMatrix4x4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2005 2036]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1979 2172])
+                    ("applyProjectionMatrix" function
+                       (:arguments 
+                          ( ("projectionMatrix" variable
+                               (:pointer 1
+                                :type ("vesMatrix4x4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2236]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2177 2372])
+                    ("m_material" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesMaterial" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2411 2448])
+                    ("m_mapper" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesMapper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2451 2484])
+                    ("m_viewSize" variable (:type ("vesVector2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2488 2511])
+                    ("m_identity" variable
+                       (:pointer 1
+                        :type ("vesMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2514 2540])
+                    ("m_projectionMatrix" variable
+                       (:pointer 1
+                        :type ("vesMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2543 2577])
+                    ("m_modelViewMatrix" variable
+                       (:pointer 1
+                        :type ("vesMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2580 2613]))                  
+                :type "class")
+                nil [1091 2616]))          
+    :file "vesRenderState.h"
+    :pointmax 2645
+    :fsize 2644
+    :lastmodtime '(21278 6459 312844 438000)
+    :unmatched-syntax '((symbol 2376 . 2407))
+    :lexical-table 
+        '(("VESRENDERSTATE_H")
+          )
+
+    )
+   (semanticdb-table "vesMaterial.h"
+    :file "vesMaterial.h"
+    :fsize 3905
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesMapper.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vesMapper.h" include nil nil [841 863])
+            ("vesEigen.h" include nil nil [881 902])
+            ("vesMaterial.h" include nil nil [903 927])
+            ("vesGeometryData.h" include nil nil [928 956])
+            ("vesGLTypes.h" include nil nil [957 980])
+            ("vesRenderData.h" include nil nil [981 1007])
+            ("vesRenderStage.h" include nil nil [1008 1035])
+            ("vesShaderProgram.h" include nil nil [1036 1065])
+            ("vesVertexAttributeKeys.h" include nil nil [1066 1101])
+            ("vesGL.h" include nil nil [1103 1121])
+            ("map" include (:system-flag t) nil [1139 1153])
+            ("vector" include (:system-flag t) nil [1154 1171])
+            ("cstdio" include (:system-flag t) nil [1172 1189])
+            ("stdint.h" include (:system-flag t) nil [1190 1209])
+            ("vesInternal" type
+               (:parent "vesMapper"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1242 1249])
+                    ("vesInternal" function
+                       (:constructor-flag t
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1252 1273])
+                    ("vesInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1277 1331])
+                    ("setColor" function
+                       (:arguments 
+                          ( ("rgba" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1349 1373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1335 1407])
+                    ("color" function
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1411 1466])
+                    ("color" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [1470 1537])
+                    ("cleanUpDrawObjects" function (:type "void") (reparse-symbol classsubparts) [1542 1650])
+                    ("m_color" variable (:type ("vesVector4f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1654 1705])
+                    ("m_buffers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1708 1761])
+                    ("m_bufferVertexAttributeMap" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil)
+                              ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1764 1834]))                  
+                :type "class")
+                nil [1211 1837])
+            ("vesMapper" function
+               (:constructor-flag t
+                :parent "vesMapper"
+                :type ("vesMapper" type (:type "class") nil nil))
+                nil [1840 2115])
+            ("vesMapper" function
+               (:destructor-flag t
+                :parent "vesMapper"
+                :type "void")
+                nil [2118 2329])
+            ("computeBounds" function
+               (:parent "vesMapper"
+                :type "void")
+                nil [2332 2572])
+            ("setGeometryData" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("geometryData" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesGeometryData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2607 2650]))                  
+                :type "bool")
+                nil [2575 2875])
+            ("geometryData" function
+               (:parent "vesMapper"
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesGeometryData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2878 2968])
+            ("geometryData" function
+               (:parent "vesMapper"
+                :constant-flag t
+                :type ("vesSharedPtr" type
+                     (:template-specifier 
+                        ( ("vesGeometryData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2971 3073])
+            ("setColor" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("rgba" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3101 3125]))                  
+                :type "void")
+                nil [3076 3165])
+            ("color" function
+               (:pointer 1
+                :parent "vesMapper"
+                :type "float")
+                nil [3168 3233])
+            ("color" function
+               (:pointer 1
+                :parent "vesMapper"
+                :constant-flag t
+                :type "float")
+                nil [3236 3313])
+            ("colorVector" function
+               (:parent "vesMapper"
+                :type ("vesVector4f" type (:type "class") nil nil))
+                nil [3315 3392])
+            ("colorVector" function
+               (:parent "vesMapper"
+                :constant-flag t
+                :type ("vesVector4f" type (:type "class") nil nil))
+                nil [3394 3483])
+            ("pointSize" function
+               (:parent "vesMapper"
+                :type "int")
+                nil [3564 3622])
+            ("setPointSize" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [3732 3741]))                  
+                :type "void")
+                nil [3703 3773])
+            ("lineWidth" function
+               (:parent "vesMapper"
+                :type "int")
+                nil [3854 3918])
+            ("setLineWidth" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4028 4038]))                  
+                :type "void")
+                nil [3999 4071])
+            ("enableWireframe" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [4106 4117]))                  
+                :type "void")
+                nil [4074 4156])
+            ("isEnabledWireframe" function
+               (:parent "vesMapper"
+                :type "bool")
+                nil [4159 4239])
+            ("render" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4265 4299]))                  
+                :type "void")
+                nil [4242 6404])
+            ("setupDrawObjects" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6440 6474]))                  
+                :type "void")
+                nil [6407 6786])
+            ("createVertexBufferObjects" function
+               (:parent "vesMapper"
+                :type "void")
+                nil [6789 8078])
+            ("deleteVertexBufferObjects" function
+               (:parent "vesMapper"
+                :type "void")
+                nil [8081 8293])
+            ("drawPrimitive" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8326 8360])
+                    ("primitive" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesPrimitive" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8391 8428]))                  
+                :type "void")
+                nil [8296 8754])
+            ("drawTriangles" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8787 8821])
+                    ("triangles" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesPrimitive" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8852 8889]))                  
+                :type "void")
+                nil [8757 10120])
+            ("drawPoints" function
+               (:parent "vesMapper"
+                :arguments 
+                  ( ("renderState" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vesRenderState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10150 10184])
+                    ("points" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesPrimitive" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10212 10246]))                  
+                :type "void")
+                nil [10123 10771]))          
+    :file "vesMapper.cpp"
+    :pointmax 10772
+    :fsize 10771
+    :lastmodtime '(21278 6459 308844 438000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vesMapper.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VESMAPPER_H" variable (:constant-flag t) nil [1318 1329])
+            ("vesBoundingObject.h" include nil nil [1331 1361])
+            ("vesSetGet.h" include nil nil [1379 1401])
+            ("vector" include (:system-flag t) nil [1421 1438])
+            ("vesGeometryData" type
+               (:prototype t
+                :type "class")
+                nil [1464 1486])
+            ("vesPrimitive" type
+               (:prototype t
+                :type "class")
+                nil [1487 1506])
+            ("vesVisitor" type
+               (:prototype t
+                :type "class")
+                nil [1507 1524])
+            ("vesRenderState" type
+               (:prototype t
+                :type "class")
+                nil [1525 1546])
+            ("vesMapper" type
+               (:superclasses 
+                  ( ("vesBoundingObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1593 1600])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesMapper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1616 1626]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1603 1627])
+                    ("vesMapper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vesMapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1631 1643])
+                    ("vesMapper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1646 1667])
+                    ("computeBounds" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1706 1735])
+                    ("setGeometryData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("geometryData" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesGeometryData" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1799 1842]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1778 1843])
+                    ("geometryData" function
+                       (:prototype-flag t
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesGeometryData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1885 1930])
+                    ("geometryData" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vesSharedPtr" type
+                             (:template-specifier 
+                                ( ("vesGeometryData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1933 1990])
+                    ("setColor" function
+                       (:arguments 
+                          ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [2074 2082])
+                            ("g" variable (:type "float") (reparse-symbol arg-sub-list) [2083 2091])
+                            ("b" variable (:type "float") (reparse-symbol arg-sub-list) [2092 2100])
+                            ("a" variable (:type "float") (reparse-symbol arg-sub-list) [2101 2109]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2060 2181])
+                    ("setColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rgba" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesVector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2222]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2184 2223])
+                    ("color" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2293 2308])
+                    ("color" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [2311 2338])
+                    ("colorVector" function
+                       (:prototype-flag t
+                        :type ("vesVector4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2341 2368])
+                    ("colorVector" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vesVector4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2371 2410])
+                    ("pointSize" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2414 2436])
+                    ("setPointSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2457 2466]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2439 2467])
+                    ("lineWidth" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2471 2493])
+                    ("setLineWidth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2514 2524]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2496 2525])
+                    ("enableWireframe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2593 2604]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2572 2605])
+                    ("isEnabledWireframe" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2666 2698])
+                    ("render" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("renderState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesRenderState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2748 2782]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2728 2783])
+                    ("private" label nil (reparse-symbol classsubparts) [2785 2793])
+                    ("setupDrawObjects" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("renderState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesRenderState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2826 2860]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2796 2861])
+                    ("createVertexBufferObjects" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2865 2906])
+                    ("deleteVertexBufferObjects" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2909 2950])
+                    ("protected" label nil (reparse-symbol classsubparts) [2952 2962])
+                    ("drawPrimitive" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("renderState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesRenderState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2984 3018])
+                            ("primitive" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesPrimitive" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3040 3077]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2965 3078])
+                    ("drawTriangles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("renderState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesRenderState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3100 3134])
+                            ("triangles" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesPrimitive" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3156 3193]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3081 3194])
+                    ("drawPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("renderState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesRenderState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3213 3247])
+                            ("points" variable (:type ("vesSharedPtr" type
+                                 (:template-specifier 
+                                    ( ("vesPrimitive" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3266 3300]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3197 3301])
+                    ("m_initialized" variable (:type "bool") (reparse-symbol classsubparts) [3305 3324])
+                    ("m_enableWireframe" variable (:type "bool") (reparse-symbol classsubparts) [3327 3350])
+                    ("m_pointSize" variable (:type "int") (reparse-symbol classsubparts) [3354 3370])
+                    ("m_lineWidth" variable (:type "int") (reparse-symbol classsubparts) [3373 3389])
+                    ("m_maximumTriangleIndicesPerDraw" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3393 3435])
+                    ("m_geometryData" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesGeometryData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3439 3484])
+                    ("vesInternal" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [3488 3506])
+                    ("m_internal" variable
+                       (:pointer 1
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3509 3533]))                  
+                :type "class")
+                nil [1548 3536]))          
+    :file "vesMapper.h"
+    :pointmax 3545
+    :fsize 3544
+    :lastmodtime '(21278 6459 308844 438000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("VESMAPPER_H")
+          )
+
+    )
+   (semanticdb-table "vesEigen.h"
+    :file "vesEigen.h"
+    :fsize 2769
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesGeometryData.h"
+    :file "vesGeometryData.h"
+    :fsize 11007
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   (semanticdb-table "vesBoundingObject.h"
+    :file "vesBoundingObject.h"
+    :fsize 2063
+    :lastmodtime '(21278 6459 308844 438000)
+    )
+   )
+  :file "!home!nshetty!Code!ves!VES!src!ves!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,354 @@
+;; Object worklet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "worklet/"
+  :tables (list 
+   (semanticdb-table "MarchingCubes.worklet"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__MarchingCubes_worklet_" variable (:constant-flag t) nil [691 715])
+            ("dax/CellTag.h" include (:system-flag t) nil [717 741])
+            ("dax/exec/CellField.h" include (:system-flag t) nil [742 773])
+            ("dax/exec/CellVertices.h" include (:system-flag t) nil [774 808])
+            ("dax/exec/VectorOperations.h" include (:system-flag t) nil [809 847])
+            ("dax/exec/WorkletGenerateTopology.h" include (:system-flag t) nil [848 893])
+            ("dax/exec/WorkletMapCell.h" include (:system-flag t) nil [894 930])
+            ("dax/Extent.h" include (:system-flag t) nil [931 954])
+            ("dax/math/VectorAnalysis.h" include (:system-flag t) nil [955 991])
+            ("dax/worklet/internal/MarchingCubesTable.h" include (:system-flag t) nil [993 1045])
+            ("dax" type
+               (:members 
+                  ( ("worklet" type
+                       (:members 
+                          ( ("GetVoxelClassification" function
+                               (:arguments 
+                                  ( ("isoValue" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1240 1257])
+                                    ("values" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1258 1275]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1213 1599])
+                            ("MarchingCubesClassify" type
+                               (:superclasses 
+                                  ( ("dax::exec::WorkletMapCell" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1747 1754])
+                                    ("ControlSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1787 1796])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1797 1809])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1811 1821]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1765 1823])
+                                    ("ExecutionSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("_2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1856 1859]))                                          
+                                        :type ("_3" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1834 1860])
+                                    ("MarchingCubesClassify" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("isoValue" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1902 1923]))                                          
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1864 1953])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::exec::CellField" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Scalar" type nil nil nil)
+                                                          ("InputCellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2032 2093]))                                          
+                                        :type ("dax::Id" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2006 2247])
+                                    ("private" label nil (reparse-symbol classsubparts) [2248 2256])
+                                    ("IsoValue" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2259 2280]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1682 2283])
+                            ("MarchingCubesTopology" type
+                               (:superclasses 
+                                  ( ("dax::exec::WorkletGenerateTopology" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2441 2448])
+                                    ("ControlSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2482 2491])
+                                            ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2524 2537])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2571 2586])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2620 2635])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2669 2679]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2460 2681])
+                                    ("ExecutionSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2716 2719])
+                                            ("" variable (:type ("Vertices" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2754 2766])
+                                            ("" variable (:type ("_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2805])
+                                            ("" variable (:type ("_4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2840 2843])
+                                            ("" variable (:type ("_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2878 2881])
+                                            ("" variable (:type ("VisitIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2916 2927])
+                                            ("" variable (:type ("WorkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2962 2969]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2692 2970])
+                                    ("MarchingCubesTopology" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("isoValue" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3012 3033]))                                          
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2974 3061])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("InputCellTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3136 3149])
+                                            ("outVertices" variable
+                                               (:reference 1
+                                                :type ("dax::exec::CellVertices" type
+                                                     (:template-specifier 
+                                                        ( ("dax::CellTagTriangle" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3156 3215])
+                                            ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::exec::CellField" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Scalar" type nil nil nil)
+                                                          ("InputCellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3222 3283])
+                                            ("coordinates" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::exec::CellField" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Vector3" type nil nil nil)
+                                                          ("InputCellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3290 3357])
+                                            ("outCoordinates" variable
+                                               (:reference 1
+                                                :type ("dax::Tuple" type
+                                                     (:template-specifier 
+                                                        ( ("dax::Vector3" type nil nil nil)
+                                                          ("3"))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3685 3729])
+                                            ("inputCellVisitIndex" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::Id" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3736 3771])
+                                            ("workId" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::Id" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3778 3800]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3113 5074])
+                                    ("private" label nil (reparse-symbol classsubparts) [5076 5084])
+                                    ("IsoValue" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5087 5108]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2367 5111]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1063 5114]))                  
+                :type "namespace")
+                nil [1047 5116]))          
+    :file "MarchingCubes.worklet"
+    :pointmax 5140
+    :fsize 5139
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 3097 . 3112) (punctuation 3093 . 3094) (symbol 3081 . 3093) (CLASS 3075 . 3080) (punctuation 3074 . 3075) (TEMPLATE 3066 . 3074) (semantic-list 2762 . 2766) (TYPEDEF 2684 . 2691) (semantic-list 2674 . 2679) (semantic-list 2625 . 2635) (semantic-list 2576 . 2586) (semantic-list 2532 . 2537) (TYPEDEF 2452 . 2459) (symbol 1988 . 2003) (punctuation 1984 . 1985) (symbol 1972 . 1984) (CLASS 1966 . 1971) (punctuation 1965 . 1966) (TEMPLATE 1957 . 1965) (TYPEDEF 1826 . 1833) (semantic-list 1816 . 1821) (semantic-list 1802 . 1809) (TYPEDEF 1757 . 1764) (symbol 1197 . 1212) (punctuation 1195 . 1196) (symbol 1194 . 1195) (TYPENAME 1185 . 1193) (punctuation 1183 . 1184) (symbol 1182 . 1183) (TYPENAME 1173 . 1181) (punctuation 1172 . 1173) (TEMPLATE 1164 . 1172) (semantic-list 2674 . 2679) (semantic-list 2625 . 2635) (semantic-list 2576 . 2586) (semantic-list 2532 . 2537) (TYPEDEF 2452 . 2459) (symbol 1988 . 2003) (punctuation 1984 . 1985) (symbol 1972 . 1984) (CLASS 1966 . 1971) (punctuation 1965 . 1966) (TEMPLATE 1957 . 1965) (TYPEDEF 1826 . 1833) (semantic-list 1816 . 1821) (semantic-list 1802 . 1809) (TYPEDEF 1757 . 1764) (symbol 1197 . 1212) (punctuation 1195 . 1196) (symbol 1194 . 1195) (TYPENAME 1185 . 1193) (punctuation 1183 . 1184) (symbol 1182 . 1183) (TYPENAME 1173 . 1181) (punctuation 1172 . 1173) (TEMPLATE 1164 . 1172))
+    :lexical-table 
+        '(("__MarchingCubes_worklet_")
+          )
+
+    )
+   (semanticdb-table "Threshold.worklet"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__Threshold_worklet_" variable (:constant-flag t) nil [687 707])
+            ("dax/exec/CellField.h" include (:system-flag t) nil [709 740])
+            ("dax/exec/CellVertices.h" include (:system-flag t) nil [741 775])
+            ("dax/exec/VectorOperations.h" include (:system-flag t) nil [776 814])
+            ("dax/exec/WorkletMapCell.h" include (:system-flag t) nil [815 851])
+            ("dax/exec/WorkletGenerateTopology.h" include (:system-flag t) nil [852 897])
+            ("dax/math/Compare.h" include (:system-flag t) nil [898 927])
+            ("dax" type
+               (:members 
+                  ( ("worklet" type
+                       (:members 
+                          ( ("ThresholdFunction" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("Min" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1017 1029])
+                                    ("Max" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1032 1044])
+                                    ("valid" variable (:type "int") (reparse-symbol classsubparts) [1047 1057])
+                                    ("ThresholdFunction" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("min" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1095 1108])
+                                            ("max" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1109 1121]))                                          
+                                        :type ("DAX_EXEC_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1061 1165])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1201 1209]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1185 1322]))                                  )
+                                (reparse-symbol namespacesubparts) [966 1325])
+                            ("ThresholdClassify" type
+                               (:template 
+                                  ( ("ValueType" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1418 1425])
+                                    ("ControlSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1458 1467])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1467 1479])
+                                            ("" variable (:type ("Field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1481 1491]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1436 1493])
+                                    ("ExecutionSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("_2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1526 1529]))                                          
+                                        :type ("_3" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1504 1530])
+                                    ("ThresholdClassify" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("thresholdMin" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1595])
+                                            ("thresholdMax" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1619]))                                          
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1536 1685])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::exec::CellField" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil)
+                                                          ("CellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1759 1813]))                                          
+                                        :type ("dax::Id" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1733 2031])
+                                    ("private" label nil (reparse-symbol classsubparts) [2032 2040])
+                                    ("ThresholdMin" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2043 2066])
+                                    ("ThresholdMax" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2069 2092]))                                  
+                                :superclasses 
+                                  ( ("dax::exec::WorkletMapCell" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1328 2095])
+                            ("ThresholdTopology" type
+                               (:superclasses 
+                                  ( ("dax::exec::WorkletGenerateTopology" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2167 2174])
+                                    ("ControlSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2207 2216])
+                                            ("" variable (:type ("Topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2217 2230]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2185 2232])
+                                    ("ExecutionSignature" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("Vertices" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2267 2279])
+                                            ("" variable (:type ("Vertices" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2280 2292]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2243 2294])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("inVertices" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dax::exec::CellVertices" type
+                                                     (:template-specifier 
+                                                        ( ("InputCellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2390 2446])
+                                            ("outVertices" variable
+                                               (:reference 1
+                                                :type ("dax::exec::CellVertices" type
+                                                     (:template-specifier 
+                                                        ( ("OutputCellTag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2465 2517]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2374 2586]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2097 2589]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [945 2593]))                  
+                :type "namespace")
+                nil [929 2595]))          
+    :file "Threshold.worklet"
+    :pointmax 2619
+    :fsize 2618
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 2356 . 2371) (punctuation 2352 . 2353) (symbol 2339 . 2352) (TYPENAME 2330 . 2338) (punctuation 2328 . 2329) (symbol 2316 . 2328) (TYPENAME 2307 . 2315) (punctuation 2306 . 2307) (TEMPLATE 2298 . 2306) (semantic-list 2288 . 2292) (semantic-list 2275 . 2279) (TYPEDEF 2235 . 2242) (semantic-list 2225 . 2230) (TYPEDEF 2177 . 2184) (symbol 1715 . 1730) (punctuation 1711 . 1712) (symbol 1704 . 1711) (CLASS 1698 . 1703) (punctuation 1697 . 1698) (TEMPLATE 1689 . 1697) (TYPEDEF 1496 . 1503) (semantic-list 1486 . 1491) (semantic-list 1472 . 1479) (TYPEDEF 1428 . 1435) (symbol 1169 . 1184))
+    :lexical-table 
+        '(("__Threshold_worklet_")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!worklet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

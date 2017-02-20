@@ -1,0 +1,683 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkSMPythonTraceObserverPython.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VTK_WRAPPING_CXX" variable (:constant-flag t) nil [59 75])
+            ("VTK_STREAMS_FWD_ONLY" variable (:constant-flag t) nil [84 104])
+            ("vtkPythonArgs.h" include nil nil [105 131])
+            ("vtkPythonOverload.h" include nil nil [132 162])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [163 192])
+            ("vtkSMPythonTraceObserver.h" include nil nil [193 230])
+            ("PyVTKAddFile_vtkSMPythonTraceObserver" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [422 433])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [434 447]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [379 448])
+            ("C" extern (:members 
+              ( ("PyVTKAddFile_vtkSMPythonTraceObserver" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :type ("PyObject" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [422 433])
+                        ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [434 447]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [379 448]))              ) nil [366 450])
+            ("PyVTKClass_vtkSMPythonTraceObserverNew" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [648 661]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [599 662])
+            ("C" extern (:members 
+              ( ("PyVTKClass_vtkSMPythonTraceObserverNew" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("PyObject" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [648 661]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [599 662]))              ) nil [586 664])
+            ("PyVTKClass_vtkSMObjectNew" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [765 778]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [729 779])
+            ("C" extern (:members 
+              ( ("PyVTKClass_vtkSMObjectNew" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("PyObject" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [765 778]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [729 779]))              ) nil [716 781])
+            ("DECLARED_PyVTKClass_vtkSMObjectNew" variable (:constant-flag t) nil [790 824])
+            ("PyvtkSMPythonTraceObserver_Doc" function
+               (:prototype-flag t
+                :pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [833 886])
+            ("PyvtkSMPythonTraceObserver_GetClassName" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [947 962])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [963 978]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [889 1456])
+            ("PyvtkSMPythonTraceObserver_IsA" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1508 1523])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1539]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1459 2042])
+            ("PyvtkSMPythonTraceObserver_NewInstance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2102 2117])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2118 2133]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [2045 2817])
+            ("PyvtkSMPythonTraceObserver_SafeDownCast" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2878 2889])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2890 2905]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [2820 3281])
+            ("PyvtkSMPythonTraceObserver_GetLastPropertyModifiedProxy" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3358 3373])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3374 3389]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [3284 3919])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyRegistered" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3990 4005])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4006 4021]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [3922 4533])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyUnRegistered" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4606 4621])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4622 4637]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [4536 5155])
+            ("PyvtkSMPythonTraceObserver_GetLastPropertyModifiedName" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5231 5246])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5247 5262]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [5158 5785])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyRegisteredGroup" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5861 5876])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5877 5892]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [5788 6415])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyRegisteredName" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6490 6505])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6506 6521]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [6418 7041])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyUnRegisteredGroup" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7119 7134])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7135 7150]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [7044 7679])
+            ("PyvtkSMPythonTraceObserver_GetLastProxyUnRegisteredName" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7756 7771])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7772 7787]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [7682 8313])
+            ("PyvtkSMPythonTraceObserver_GetLastLocalPluginLoaded" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8386 8401])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8402 8417]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [8316 8931])
+            ("PyvtkSMPythonTraceObserver_GetLastRemotePluginLoaded" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9005 9020])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9021 9036]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [8934 9553])
+            ("PyvtkSMPythonTraceObserver_Methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [9555 12341])
+            ("PyvtkSMPythonTraceObserver_StaticNew" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("vtkObjectBase" type (:type "class") nil nil))
+                nil [12343 12449])
+            ("PyVTKClass_vtkSMPythonTraceObserverNew" function
+               (:pointer 1
+                :arguments 
+                  ( ("modulename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12500 12523]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [12451 12795])
+            ("PyvtkSMPythonTraceObserver_Doc" function
+               (:pointer 2
+                :constant-flag t
+                :type "char")
+                nil [12797 13191])
+            ("PyVTKAddFile_vtkSMPythonTraceObserver" function
+               (:arguments 
+                  ( ("dict" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13239 13254])
+                    ("modulename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13255 13278]))                  
+                :type "void")
+                nil [13193 13470]))          
+    :file "vtkSMPythonTraceObserverPython.cxx"
+    :pointmax 13472
+    :fsize 13471
+    :lastmodtime '(20770 17539)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DECLARED_PyVTKClass_vtkSMObjectNew")
+          ("VTK_WRAPPING_CXX")
+          ("VTK_STREAMS_FWD_ONLY")
+          )
+
+    )
+   (semanticdb-table "vtkSMPluginManagerPython.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VTK_WRAPPING_CXX" variable (:constant-flag t) nil [53 69])
+            ("VTK_STREAMS_FWD_ONLY" variable (:constant-flag t) nil [78 98])
+            ("vtkPythonArgs.h" include nil nil [99 125])
+            ("vtkPythonOverload.h" include nil nil [126 156])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [157 186])
+            ("vtkSMPluginManager.h" include nil nil [187 218])
+            ("PyVTKAddFile_vtkSMPluginManager" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 409])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [410 423]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [361 424])
+            ("C" extern (:members 
+              ( ("PyVTKAddFile_vtkSMPluginManager" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :type ("PyObject" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [398 409])
+                        ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [410 423]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [361 424]))              ) nil [348 426])
+            ("PyVTKClass_vtkSMPluginManagerNew" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [612 625]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [569 626])
+            ("C" extern (:members 
+              ( ("PyVTKClass_vtkSMPluginManagerNew" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("PyObject" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [612 625]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [569 626]))              ) nil [556 628])
+            ("PyVTKClass_vtkSMObjectNew" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [729 742]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [693 743])
+            ("C" extern (:members 
+              ( ("PyVTKClass_vtkSMObjectNew" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("PyObject" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [729 742]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [693 743]))              ) nil [680 745])
+            ("DECLARED_PyVTKClass_vtkSMObjectNew" variable (:constant-flag t) nil [754 788])
+            ("PyvtkSMPluginManager_Doc" function
+               (:prototype-flag t
+                :pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [797 844])
+            ("PyvtkSMPluginManager_GetClassName" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [899 914])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [915 930]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [847 1390])
+            ("PyvtkSMPluginManager_IsA" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1436 1451])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1452 1467]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1393 1952])
+            ("PyvtkSMPluginManager_NewInstance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2006 2021])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2022 2037]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1955 2697])
+            ("PyvtkSMPluginManager_SafeDownCast" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2752 2763])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2764 2779]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [2700 3143])
+            ("PyvtkSMPluginManager_RegisterSession" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3201 3216])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3217 3232]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [3146 3804])
+            ("PyvtkSMPluginManager_UnRegisterSession" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3864 3879])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3880 3895]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [3807 4473])
+            ("PyvtkSMPluginManager_GetLocalInformation" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4535 4550])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4551 4566]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [4476 5064])
+            ("PyvtkSMPluginManager_GetRemoteInformation" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5127 5142])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5143 5158]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [5067 5747])
+            ("PyvtkSMPluginManager_GetLocalPluginSearchPaths" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5815 5830])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5831 5846]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [5750 6345])
+            ("PyvtkSMPluginManager_GetRemotePluginSearchPaths" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6414 6429])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6430 6445]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [6348 7035])
+            ("PyvtkSMPluginManager_LoadRemotePlugin" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7094 7109])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7110 7125]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [7038 7742])
+            ("PyvtkSMPluginManager_LoadLocalPlugin" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7800 7815])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7816 7831]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [7745 8353])
+            ("PyvtkSMPluginManager_LoadPluginConfigurationXMLFromString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8432 8447])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8448 8463]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [8356 9226])
+            ("PyvtkSMPluginManager_Methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [9228 13882])
+            ("PyvtkSMPluginManager_StaticNew" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("vtkObjectBase" type (:type "class") nil nil))
+                nil [13884 13978])
+            ("PyVTKClass_vtkSMPluginManagerNew" function
+               (:pointer 1
+                :arguments 
+                  ( ("modulename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14023 14046]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [13980 14823])
+            ("PyvtkSMPluginManager_Doc" function
+               (:pointer 2
+                :constant-flag t
+                :type "char")
+                nil [14825 15304])
+            ("PyVTKAddFile_vtkSMPluginManager" function
+               (:arguments 
+                  ( ("dict" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15346 15361])
+                    ("modulename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15362 15385]))                  
+                :type "void")
+                nil [15306 15565]))          
+    :file "vtkSMPluginManagerPython.cxx"
+    :pointmax 15567
+    :fsize 15566
+    :lastmodtime '(20770 16174)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DECLARED_PyVTKClass_vtkSMObjectNew")
+          ("VTK_WRAPPING_CXX")
+          ("VTK_STREAMS_FWD_ONLY")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView-build!ParaViewCore!ServerManager!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

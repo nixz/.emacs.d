@@ -1,0 +1,171 @@
+;; Object ExamplePrograms/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ExamplePrograms/"
+  :tables
+  (list
+    (semanticdb-table "VruiSceneGraphDemo.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1049 1067])
+            ("string" include (:system-flag t) nil [1068 1085])
+            ("vector" include (:system-flag t) nil [1086 1103])
+            ("iostream" include (:system-flag t) nil [1104 1123])
+            ("Geometry/ComponentArray.h" include (:system-flag t) nil [1124 1160])
+            ("Geometry/Point.h" include (:system-flag t) nil [1161 1188])
+            ("Geometry/OrthogonalTransformation.h" include (:system-flag t) nil [1189 1235])
+            ("GLMotif/PopupMenu.h" include (:system-flag t) nil [1236 1266])
+            ("GLMotif/ToggleButton.h" include (:system-flag t) nil [1267 1300])
+            ("SceneGraph/GroupNode.h" include (:system-flag t) nil [1301 1334])
+            ("SceneGraph/TransformNode.h" include (:system-flag t) nil [1335 1372])
+            ("SceneGraph/AppearanceNode.h" include (:system-flag t) nil [1373 1411])
+            ("SceneGraph/MaterialNode.h" include (:system-flag t) nil [1412 1448])
+            ("SceneGraph/BoxNode.h" include (:system-flag t) nil [1449 1480])
+            ("SceneGraph/ShapeNode.h" include (:system-flag t) nil [1481 1514])
+            ("SceneGraph/NodeCreator.h" include (:system-flag t) nil [1515 1550])
+            ("SceneGraph/VRMLFile.h" include (:system-flag t) nil [1551 1583])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1584 1606])
+            ("Vrui/OpenFile.h" include (:system-flag t) nil [1607 1633])
+            ("Vrui/Application.h" include (:system-flag t) nil [1634 1663])
+            ("Vrui/SceneGraphSupport.h" include (:system-flag t) nil [1664 1699])
+            ("VruiSceneGraphDemo" type
+               (:superclasses 
+                  ( ("Vrui::Application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1780 1788])
+                    ("SGList" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("SceneGraph::GroupNodePointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1790 1847])
+                    ("private" label nil (reparse-symbol classsubparts) [1906 1914])
+                    ("sceneGraphs" variable (:type ("SGList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1916 1935])
+                    ("sceneGraphEnableds" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1986 2023])
+                    ("mainMenu" variable
+                       (:pointer 1
+                        :type ("GLMotif::PopupMenu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2077 2106])
+                    ("sceneGraphToggleCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2163 2219])
+                            ("index" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2219 2245]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2133 2246])
+                    ("public" label nil (reparse-symbol classsubparts) [2286 2293])
+                    ("VruiSceneGraphDemo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2314 2324])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2324 2331])
+                            ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2332 2337]))                          
+                        :type ("VruiSceneGraphDemo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2295 2338])
+                    ("VruiSceneGraphDemo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2360 2365]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2340 2366])
+                    ("display" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2406 2433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2385 2440])
+                    ("resetNavigation" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2471 2476]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2442 2477]))                  
+                :type "class")
+                nil [1701 2481])
+            ("sceneGraphToggleCallback" function
+               (:parent "VruiSceneGraphDemo"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2645 2701])
+                    ("index" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2701 2727]))                  
+                :type "void")
+                nil [2595 2824])
+            ("VruiSceneGraphDemo" function
+               (:constructor-flag t
+                :parent "VruiSceneGraphDemo"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2865 2875])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2875 2882])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2888]))                  
+                :type ("VruiSceneGraphDemo" type (:type "class") nil nil))
+                nil [2826 6249])
+            ("VruiSceneGraphDemo" function
+               (:destructor-flag t
+                :parent "VruiSceneGraphDemo"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6291 6296]))                  
+                :type "void")
+                nil [6251 6320])
+            ("display" function
+               (:parent "VruiSceneGraphDemo"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6355 6382]))                  
+                :type "void")
+                nil [6322 6754])
+            ("resetNavigation" function
+               (:parent "VruiSceneGraphDemo"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6797 6802]))                  
+                :type "void")
+                nil [6756 7143]))          
+      :file "VruiSceneGraphDemo.cpp"
+      :pointmax 7186
+      :fsize 7226
+      :lastmodtime '(22555 24185 806918 379000)
+      :unmatched-syntax '((semantic-list 7165 . 7185) (symbol 7145 . 7165) (punctuation 2881 . 2882) (punctuation 2330 . 2331))))
+  :file "!home!nshetty!apps!vrui!Vrui!ExamplePrograms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

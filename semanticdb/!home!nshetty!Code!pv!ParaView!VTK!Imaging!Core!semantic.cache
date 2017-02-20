@@ -1,0 +1,103 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables
+  (list
+    (semanticdb-table "vtkRTAnalyticSource.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkRTAnalyticSource.h" include nil nil [593 625])
+            ("vtkDataArray.h" include nil nil [627 652])
+            ("vtkImageData.h" include nil nil [653 678])
+            ("vtkInformation.h" include nil nil [679 706])
+            ("vtkInformationVector.h" include nil nil [707 740])
+            ("vtkObjectFactory.h" include nil nil [741 770])
+            ("vtkStreamingDemandDrivenPipeline.h" include nil nil [771 816])
+            ("vtkPointData.h" include nil nil [817 842])
+            ("math.h" include (:system-flag t) nil [844 861])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkRTAnalyticSource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [883 903]))                  
+                :type "int")
+                nil [863 904])
+            ("vtkRTAnalyticSource" function
+               (:constructor-flag t
+                :parent "vtkRTAnalyticSource"
+                :type ("vtkRTAnalyticSource" type (:type "class") nil nil))
+                nil [986 1520])
+            ("SetWholeExtent" function
+               (:parent "vtkRTAnalyticSource"
+                :arguments 
+                  ( ("xMin" variable (:type "int") (reparse-symbol arg-sub-list) [1643 1652])
+                    ("xMax" variable (:type "int") (reparse-symbol arg-sub-list) [1653 1662])
+                    ("yMin" variable (:type "int") (reparse-symbol arg-sub-list) [1704 1713])
+                    ("yMax" variable (:type "int") (reparse-symbol arg-sub-list) [1714 1723])
+                    ("zMin" variable (:type "int") (reparse-symbol arg-sub-list) [1765 1774])
+                    ("zMax" variable (:type "int") (reparse-symbol arg-sub-list) [1775 1784]))                  
+                :type "void")
+                nil [1602 2459])
+            ("RequestInformation" function
+               (:parent "vtkRTAnalyticSource"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2589 2624])
+                    ("vtkNotUsed" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2629 2675])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2680 2715]))                  
+                :type "int")
+                nil [2541 3355])
+            ("ExecuteDataWithInformation" function
+               (:parent "vtkRTAnalyticSource"
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3410 3432])
+                    ("outInfo" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3486 3510]))                  
+                :type "void")
+                nil [3357 6321])
+            ("PrintSelf" function
+               (:parent "vtkRTAnalyticSource"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6359 6371])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6372 6389]))                  
+                :type "void")
+                nil [6323 7316]))          
+      :file "vtkRTAnalyticSource.cxx"
+      :pointmax 7317
+      :fsize 7316
+      :lastmodtime '(21253 3185 173480 223000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkRTAnalyticSource.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__vtkRTAnalyticSource_h" variable (:constant-flag t) nil [930 953])
+            ("vtkImagingCoreModule.h" include nil nil [955 988])
+            ("vtkImageAlgorithm.h" include nil nil [1009 1039])
+            ("vtkImageAlgorithm" variable (:type "int") nil [1098 3981]))          
+      :file "vtkRTAnalyticSource.h"
+      :pointmax 3991
+      :fsize 3990
+      :lastmodtime '(21253 3185 173480 223000)
+      :unmatched-syntax '((PUBLIC 1091 . 1097) (punctuation 1089 . 1090) (symbol 1069 . 1088) (symbol 1047 . 1068) (CLASS 1041 . 1046))
+      :lexical-table 
+        '(("__vtkRTAnalyticSource_h")
+          )
+))
+  :file "!home!nshetty!Code!pv!ParaView!VTK!Imaging!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

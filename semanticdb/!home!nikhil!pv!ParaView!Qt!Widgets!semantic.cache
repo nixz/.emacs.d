@@ -1,0 +1,61 @@
+;; Object Widgets/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Widgets/"
+  :tables (list 
+   (semanticdb-table "pqProgressWidget.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqProgressWidget.h" include nil nil [1360 1389])
+            ("pqProgressBar.h" include nil nil [1390 1416])
+            ("QApplication" include (:system-flag t) nil [1418 1441])
+            ("QGridLayout" include (:system-flag t) nil [1442 1464])
+            ("QToolButton" include (:system-flag t) nil [1465 1487])
+            ("pqProgressWidget" function
+               (:constructor-flag t
+                :parent "pqProgressWidget"
+                :arguments 
+                  ( ("_parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1605 1628]))                  
+                :type ("pqProgressWidget" type (:type "class") nil nil))
+                nil [1570 2565])
+            ("pqProgressWidget" function
+               (:destructor-flag t
+                :parent "pqProgressWidget"
+                :type "void")
+                nil [2647 2744])
+            ("setProgress" function
+               (:parent "pqProgressWidget"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2861 2884])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2885 2895]))                  
+                :type "void")
+                nil [2826 3194])
+            ("enableProgress" function
+               (:parent "pqProgressWidget"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [3314 3327]))                  
+                :type "void")
+                nil [3276 3626])
+            ("enableAbort" function
+               (:parent "pqProgressWidget"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [3743 3756]))                  
+                :type "void")
+                nil [3708 3802]))          
+    :file "pqProgressWidget.cxx"
+    :pointmax 3803
+    :fsize 3802
+    :lastmodtime '(20790 21741)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Qt!Widgets!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

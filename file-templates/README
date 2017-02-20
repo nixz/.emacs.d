@@ -1,0 +1,25 @@
+ "Lookup table mapping % tags to variable/function.  Return a string
+to be inserted into the buffer; non-strings are ignored.  Predefined
+tags are:
+
+ %u       user's login name
+ %U       user's full name
+ %a       user's mail address (from the variable `user-mail-address')
+ %f       file name with path
+ %b       file name without path
+ %n       file name without path and extension
+ %N       file name without path and extension, capitalized
+ %e       file extension
+ %E       file extension capitalized
+ %p       file directory
+ %d       day
+ %m       month
+ %M       abbreviated month name
+ %y       last two digits of year
+ %Y       year
+ %q       `fill-paragraph'
+ %[ %]    prompt user for a string
+ %1-%9    refer to the nth strings prompted for with %[ %]
+ %( %)    elisp form to be evaluated
+ %%       inserts %
+ %@       sets the final position of `point'"

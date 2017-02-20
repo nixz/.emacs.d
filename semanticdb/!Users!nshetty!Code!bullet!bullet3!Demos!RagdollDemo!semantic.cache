@@ -1,0 +1,349 @@
+;; Object RagdollDemo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "RagdollDemo/"
+  :tables
+  (list
+    (semanticdb-table "RagdollDemo.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CONSTRAINT_DEBUG_SIZE" variable (:constant-flag t) nil [961 982])
+            ("btBulletDynamicsCommon.h" include nil nil [990 1025])
+            ("GlutStuff.h" include nil nil [1026 1048])
+            ("GL_ShapeDrawer.h" include nil nil [1049 1076])
+            ("LinearMath/btIDebugDraw.h" include nil nil [1078 1114])
+            ("GLDebugDrawer.h" include nil nil [1116 1142])
+            ("RagdollDemo.h" include nil nil [1143 1167])
+            ("M_PI" variable (:constant-flag t) nil [1270 1274])
+            ("M_PI_2" variable (:constant-flag t) nil [1335 1341])
+            ("M_PI_4" variable (:constant-flag t) nil [1400 1406])
+            ("RagDoll" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("BODYPART_PELVIS" variable
+                               (:constant-flag t
+                                :default-value (1488 1489)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1470 1489])
+                            ("BODYPART_SPINE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1493 1508])
+                            ("BODYPART_HEAD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1511 1525])
+                            ("BODYPART_LEFT_UPPER_LEG" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1529 1553])
+                            ("BODYPART_LEFT_LOWER_LEG" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1556 1580])
+                            ("BODYPART_RIGHT_UPPER_LEG" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1584 1609])
+                            ("BODYPART_RIGHT_LOWER_LEG" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1612 1637])
+                            ("BODYPART_LEFT_UPPER_ARM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1641 1665])
+                            ("BODYPART_LEFT_LOWER_ARM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1668 1692])
+                            ("BODYPART_RIGHT_UPPER_ARM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1696 1721])
+                            ("BODYPART_RIGHT_LOWER_ARM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1724 1749])
+                            ("BODYPART_COUNT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1753 1770]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1460 1771])
+                    ("" type
+                       (:members 
+                          ( ("JOINT_PELVIS_SPINE" variable
+                               (:constant-flag t
+                                :default-value (1805 1806)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1784 1806])
+                            ("JOINT_SPINE_HEAD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1810 1827])
+                            ("JOINT_LEFT_HIP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1831 1846])
+                            ("JOINT_LEFT_KNEE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1849 1865])
+                            ("JOINT_RIGHT_HIP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1869 1885])
+                            ("JOINT_RIGHT_KNEE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1888 1905])
+                            ("JOINT_LEFT_SHOULDER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1909 1929])
+                            ("JOINT_LEFT_ELBOW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1932 1949])
+                            ("JOINT_RIGHT_SHOULDER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1953 1974])
+                            ("JOINT_RIGHT_ELBOW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1977 1995])
+                            ("JOINT_COUNT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1999 2013]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1774 2014])
+                    ("m_ownerWorld" variable
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2017 2047])
+                    ("m_shapes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2049 2092])
+                    ("m_bodies" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2094 2132])
+                    ("m_joints" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btTypedConstraint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2134 2175])
+                    ("localCreateRigidBody" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("mass" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2213 2227])
+                            ("startTransform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btTransform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2228 2262])
+                            ("shape" variable
+                               (:pointer 1
+                                :type ("btCollisionShape" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2263 2287]))                          
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2178 2704])
+                    ("public" label nil (reparse-symbol classsubparts) [2706 2713])
+                    ("RagDoll" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ownerWorld" variable
+                               (:pointer 1
+                                :type ("btDynamicsWorld" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2724 2752])
+                            ("positionOffset" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2753 2785]))                          
+                        :type ("RagDoll" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2715 13161])
+                    ("RagDoll" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13164 13613]))                  
+                :type "class")
+                nil [1443 13616])
+            ("initPhysics" function
+               (:parent "RagdollDemo"
+                :type "void")
+                nil [13621 15251])
+            ("spawnRagdoll" function
+               (:parent "RagdollDemo"
+                :arguments 
+                  ( ("startOffset" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15284 15313]))                  
+                :type "void")
+                nil [15253 15413])
+            ("clientMoveAndDisplay" function
+               (:parent "RagdollDemo"
+                :type "void")
+                nil [15415 15886])
+            ("displayCallback" function
+               (:parent "RagdollDemo"
+                :type "void")
+                nil [15888 16125])
+            ("keyboardCallback" function
+               (:parent "RagdollDemo"
+                :arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [16162 16180])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [16181 16187])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [16188 16194]))                  
+                :type "void")
+                nil [16127 16367])
+            ("exitPhysics" function
+               (:parent "RagdollDemo"
+                :type "void")
+                nil [16371 17326]))          
+      :file "RagdollDemo.cpp"
+      :pointmax 17332
+      :fsize 17349
+      :lastmodtime '(21738 45558 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONSTRAINT_DEBUG_SIZE" . ((number "0.2f" 983 . 987)))
+          ("M_PI_2" . ((number "1.57079632679489661923" 1346 . 1368)))
+          ("M_PI" . ((number "3.14159265358979323846" 1281 . 1303)))
+          ("M_PI_4" . ((number "0.785398163397448309616" 1411 . 1434)))
+          )
+)
+    (semanticdb-table "RagdollDemo.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RAGDOLLDEMO_H" variable (:constant-flag t) nil [982 995])
+            ("GlutDemoApplication.h" include nil nil [997 1029])
+            ("LinearMath/btAlignedObjectArray.h" include nil nil [1030 1074])
+            ("btBroadphaseInterface" type
+               (:prototype t
+                :type "class")
+                nil [1075 1103])
+            ("btCollisionShape" type
+               (:prototype t
+                :type "class")
+                nil [1104 1127])
+            ("btOverlappingPairCache" type
+               (:prototype t
+                :type "class")
+                nil [1128 1157])
+            ("btCollisionDispatcher" type
+               (:prototype t
+                :type "class")
+                nil [1158 1186])
+            ("btConstraintSolver" type
+               (:prototype t
+                :type "class")
+                nil [1187 1212])
+            ("btCollisionAlgorithmCreateFunc" type
+               (:prototype t
+                :type "struct")
+                nil [1213 1251])
+            ("btDefaultCollisionConfiguration" type
+               (:prototype t
+                :type "class")
+                nil [1252 1290])
+            ("RagdollDemo" type
+               (:superclasses 
+                  ( ("GlutDemoApplication" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_ragdolls" variable (:type "int") (reparse-symbol classsubparts) [1380 1391])
+                    ("m_collisionShapes" variable (:type ("btAlignedObjectArray" type
+                         (:template-specifier 
+                            ( ("btCollisionShape" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1445 1503])
+                    ("m_broadphase" variable
+                       (:pointer 1
+                        :type ("btBroadphaseInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1506 1542])
+                    ("m_dispatcher" variable
+                       (:pointer 1
+                        :type ("btCollisionDispatcher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1545 1581])
+                    ("m_solver" variable
+                       (:pointer 1
+                        :type ("btConstraintSolver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1584 1613])
+                    ("m_collisionConfiguration" variable
+                       (:pointer 1
+                        :type ("btDefaultCollisionConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1616 1674])
+                    ("public" label nil (reparse-symbol classsubparts) [1676 1683])
+                    ("initPhysics" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1685 1704])
+                    ("exitPhysics" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1707 1726])
+                    ("RagdollDemo" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1729 1774])
+                    ("spawnRagdoll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("startOffset" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1795 1824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1777 1825])
+                    ("clientMoveAndDisplay" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1828 1864])
+                    ("displayCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1867 1898])
+                    ("keyboardCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1931 1949])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1950 1956])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1957 1963]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1901 1964])
+                    ("Create" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("DemoApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1967 2102]))                  
+                :type "class")
+                nil [1292 2106]))          
+      :file "RagdollDemo.h"
+      :pointmax 2116
+      :fsize 2118
+      :lastmodtime '(21738 45558 0 0)
+      :unmatched-syntax '((punctuation 1378 . 1379) (punctuation 1377 . 1378) (symbol 1370 . 1377) (CLASS 1364 . 1369) (punctuation 1363 . 1364) (symbol 1343 . 1363))
+      :lexical-table 
+        '(("RAGDOLLDEMO_H")
+          )
+))
+  :file "!Users!nshetty!Code!bullet!bullet3!Demos!RagdollDemo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

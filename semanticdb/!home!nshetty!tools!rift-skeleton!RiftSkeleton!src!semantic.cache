@@ -1,0 +1,284 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "glfw_main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [77 96])
+            ("GL/glew.h" include (:system-flag t) nil [97 117])
+            ("X11/X.h" include (:system-flag t) nil [255 275])
+            ("X11/extensions/Xrandr.h" include (:system-flag t) nil [276 312])
+            ("GLFW_EXPOSE_NATIVE_X11" variable (:constant-flag t) nil [323 345])
+            ("GLFW_EXPOSE_NATIVE_GLX" variable (:constant-flag t) nil [356 378])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [387 410])
+            ("GLFW/glfw3native.h" include (:system-flag t) nil [436 467])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [476 507])
+            ("stdio.h" include (:system-flag t) nil [567 585])
+            ("string.h" include (:system-flag t) nil [586 605])
+            ("sstream" include (:system-flag t) nil [606 624])
+            ("algorithm" include (:system-flag t) nil [625 645])
+            ("AppSkeleton.h" include nil nil [703 727])
+            ("RenderingMode.h" include nil nil [736 762])
+            ("Timer.h" include nil nil [763 781])
+            ("FPSTimer.h" include nil nil [782 803])
+            ("Logger.h" include nil nil [804 823])
+            ("g_app" variable (:type ("AppSkeleton" type (:type "class") nil nil)) nil [875 893])
+            ("PROJECT_NAME" variable (:constant-flag t) nil [981 993])
+            ("g_renderMode" variable (:type ("RenderingMode" type (:type "class") nil nil)) nil [1017 1044])
+            ("g_timer" variable (:type ("Timer" type (:type "class") nil nil)) nil [1045 1059])
+            ("g_lastFrameTime" variable (:type "double") nil [1060 1089])
+            ("g_fps" variable (:type ("FPSTimer" type (:type "class") nil nil)) nil [1090 1105])
+            ("g_logDumpTimer" variable (:type ("Timer" type (:type "class") nil nil)) nil [1106 1127])
+            ("m_keyStates" variable
+               (:dereference 1
+                :type "int")
+                nil [1129 1160])
+            ("newy" variable (:type "int") nil [1193 1220])
+            ("newx" variable (:type "int") nil [1193 1220])
+            ("oldy" variable (:type "int") nil [1193 1220])
+            ("oldx" variable (:type "int") nil [1193 1220])
+            ("which_button" variable (:type "int") nil [1221 1243])
+            ("modifier_mode" variable (:type "int") nil [1244 1266])
+            ("g_auxPresent" variable (:type ("ShaderWithVariables" type (:type "class") nil nil)) nil [1268 1301])
+            ("g_pHMDWindow" variable
+               (:pointer 1
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [1302 1334])
+            ("g_AuxWindow" variable
+               (:pointer 1
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [1335 1366])
+            ("g_auxWindow_w" variable (:type "int") nil [1367 1396])
+            ("g_auxWindow_h" variable (:type "int") nil [1397 1421])
+            ("g_joystickIdx" variable (:type "int") nil [1423 1446])
+            ("g_fpsSmoothingFactor" variable (:type "float") nil [1448 1483])
+            ("g_fpsDeltaThreshold" variable (:type "float") nil [1484 1517])
+            ("g_dynamicallyScaleFBO" variable (:type "bool") nil [1518 1553])
+            ("g_targetFPS" variable (:type "int") nil [1554 1576])
+            ("g_drawToAuxWindow" variable (:type "bool") nil [1577 1608])
+            ("g_allowPitch" variable (:type "bool") nil [1609 1635])
+            ("g_allowRoll" variable (:type "bool") nil [1636 1661])
+            ("initializeAuxiliaryWindow" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("pRiftWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1759 1783]))                  
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [1721 1784])
+            ("destroyAuxiliaryWindow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pAuxWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1813 1836]))                  
+                :type "void")
+                nil [1785 1837])
+            ("SetVsync" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [2004 2014]))                  
+                :type "void")
+                nil [1983 2315])
+            ("main_include.cpp" include nil nil [2317 2344])
+            ("ErrorCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p_Error" variable (:type "int") (reparse-symbol arg-sub-list) [2372 2384])
+                    ("p_Description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2385 2411]))                  
+                :type "void")
+                nil [2346 2514])
+            ("keyboard" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2531 2551])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2552 2560])
+                    ("codes" variable (:type "int") (reparse-symbol arg-sub-list) [2561 2571])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [2572 2583])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [2584 2593]))                  
+                :type "void")
+                nil [2517 8926])
+            ("joystick" function (:type "void") nil [8928 11566])
+            ("mouseDown" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11583 11603])
+                    ("button" variable (:type "int") (reparse-symbol arg-sub-list) [11604 11615])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [11616 11627])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [11628 11637]))                  
+                :type "void")
+                nil [11568 11980])
+            ("mouseMove" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11997 12017])
+                    ("xd" variable (:type "double") (reparse-symbol arg-sub-list) [12018 12028])
+                    ("yd" variable (:type "double") (reparse-symbol arg-sub-list) [12029 12039]))                  
+                :type "void")
+                nil [11982 13202])
+            ("mouseWheel" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13220 13240])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [13241 13250])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [13251 13260]))                  
+                :type "void")
+                nil [13204 13557])
+            ("resize" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13571 13591])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [13592 13598])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [13599 13605]))                  
+                :type "void")
+                nil [13559 13651])
+            ("keyboard_Aux" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13671 13691])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [13692 13700])
+                    ("codes" variable (:type "int") (reparse-symbol arg-sub-list) [13701 13711])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [13712 13723])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [13724 13733]))                  
+                :type "void")
+                nil [13653 13893])
+            ("mouseDown_Aux" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13914 13934])
+                    ("button" variable (:type "int") (reparse-symbol arg-sub-list) [13935 13946])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [13947 13958])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [13959 13968]))                  
+                :type "void")
+                nil [13895 14172])
+            ("mouseMove_Aux" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14193 14213])
+                    ("xd" variable (:type "double") (reparse-symbol arg-sub-list) [14214 14224])
+                    ("yd" variable (:type "double") (reparse-symbol arg-sub-list) [14225 14235]))                  
+                :type "void")
+                nil [14174 14434])
+            ("mouseWheel_Aux" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14456 14476])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [14477 14486])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [14487 14496]))                  
+                :type "void")
+                nil [14436 14711])
+            ("resize_Aux" function
+               (:arguments 
+                  ( ("pWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14729 14749])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [14750 14756])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [14757 14763]))                  
+                :type "void")
+                nil [14713 14949])
+            ("timestep" function (:type "void") nil [14951 15117])
+            ("printGLContextInfo" function
+               (:arguments 
+                  ( ("pW" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15143 15158]))                  
+                :type "void")
+                nil [15119 15959])
+            ("initAuxPresentFboShader" function (:type "void") nil [15961 17528])
+            ("presentSharedFboTexture" function (:type "void") nil [17530 18332])
+            ("displayToHMD" function (:type "void") nil [18334 19179])
+            ("initializeAuxiliaryWindow" function
+               (:pointer 1
+                :arguments 
+                  ( ("pRiftWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19971 19995]))                  
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [19933 20830])
+            ("destroyAuxiliaryWindow" function
+               (:arguments 
+                  ( ("pAuxWindow" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20860 20883]))                  
+                :type "void")
+                nil [20832 21014])
+            ("myCallback" function
+               (:arguments 
+                  ( ("source" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21073 21087])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21088 21100])
+                    ("id" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21101 21111])
+                    ("severity" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21112 21128])
+                    ("length" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21133 21148])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21149 21167])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21187 21215]))                  
+                :type ("GLAPIENTRY" type (:type "class") nil nil))
+                nil [21046 21506])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [21517 21526])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21527 21539]))                  
+                :type "int")
+                nil [21508 31294]))          
+    :file "glfw_main.cpp"
+    :pointmax 31295
+    :fsize 32344
+    :lastmodtime '(22071 49439 521162 262000)
+    :unmatched-syntax '((VOID 21041 . 21045))
+    :lexical-table 
+        '(("GLFW_EXPOSE_NATIVE_X11")
+          ("GLFW_EXPOSE_NATIVE_GLX")
+          ("PROJECT_NAME" . ((string "\"RiftSkeleton\"" 994 . 1008)))
+          )
+
+    )
+   (semanticdb-table "main_include.cpp"
+    :file "main_include.cpp"
+    :fsize 4804
+    :lastmodtime '(21952 60042 625663 961000)
+    )
+   )
+  :file "!home!nshetty!tools!rift-skeleton!RiftSkeleton!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

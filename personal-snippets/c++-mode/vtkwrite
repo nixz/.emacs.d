@@ -1,0 +1,9 @@
+#name : vtkwrite ...
+# --
+vtkNew<vtk${1:writer-type}Writer> ${2:var};
+${2:$(yas/substr text "[^: ]*")->SetFileName( filename.c_str() );
+${2:$(yas/substr text "[^: ]*")->SetFileTypeToBinary();
+${2:$(yas/substr text "[^: ]*")->SetInputConnection( src->GetOutputPort() );
+${2:$(yas/substr text "[^: ]*")->Write();
+
+$0

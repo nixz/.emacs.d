@@ -1,0 +1,36 @@
+;; Object Toirt-Samhlaigh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Toirt-Samhlaigh/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUI_MAKEDIR" variable (:default-value ("/apps/Vrui-2.6/share/make")) nil [1157 1199])
+            ("INSTALLDIR" variable (:default-value ("$(shell pwd)")) nil [1606 1633])
+            ("$(VRUI_MAKEDIR)/SystemDefinitions" include nil nil [1915 1957])
+            ("$(VRUI_MAKEDIR)/Packages.System" include nil nil [1957 1997])
+            ("$(VRUI_MAKEDIR)/Configuration.Vrui" include nil nil [1997 2040])
+            ("$(VRUI_MAKEDIR)/Packages.Vrui" include nil nil [2040 2078])
+            ("BININSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(EXEDIR)")) nil [2119 2159])
+            ("PACKAGES" variable (:default-value ("MYVRUI" "GLU")) nil [2435 2457])
+            ("ALL" variable (:default-value ("$(EXEDIR)/Toirt_Samhlaigh")) nil [2633 2665])
+            (".PHONY" function (:arguments ("all")) nil [2666 2678])
+            ("all" function (:arguments ("$(ALL)")) nil [2678 2690])
+            (".PHONY" function (:arguments ("extraclean")) nil [2896 2915])
+            ("extraclean" function nil nil [2915 2927])
+            (".PHONY" function (:arguments ("extrasqueakyclean")) nil [2928 2954])
+            ("extrasqueakyclean" function nil nil [2954 2973])
+            ("$(VRUI_MAKEDIR)/BasicMakefile" include nil nil [2999 3037])
+            ("CFLAGS" variable (:default-value ("-Isource")) nil [3038 3057])
+            ("TOIRT_SAMHLAIGH_SOURCES" variable (:default-value ("source/Toirt_Samhlaigh.cpp" "source/ANALYSIS/BaseLocator.cpp" "source/ANALYSIS/ClippingPlane.cpp" "source/ANALYSIS/ClippingPlaneLocator.cpp" "source/ANALYSIS/FocusAndContextPlane.cpp" "source/ANALYSIS/FocusAndContextPlaneLocator.cpp" "source/ANALYSIS/MeasurementLocator.cpp" "source/ANALYSIS/PerspectiveTool.cpp" "source/COLORMAP/CallbackData.cpp" "source/COLORMAP/ColorMap.cpp" "source/COLORMAP/ColorMapChangedCallbackData.cpp" "source/COLORMAP/ControlPoint.cpp" "source/COLORMAP/ControlPointChangedCallbackData.cpp" "source/COLORMAP/RGBAColor.cpp" "source/COLORMAP/Storage.cpp" "source/DATA/DataSet.cpp" "source/DATA/Volume.cpp" "source/DATASTRUCTURE/BoundingBox.cpp" "source/DATASTRUCTURE/BoundingSphere.cpp" "source/DATASTRUCTURE/Brick.cpp" "source/DATASTRUCTURE/ComparableBrick.cpp" "source/DATASTRUCTURE/ComparableOcNode.cpp" "source/DATASTRUCTURE/Gaussian.cpp" "source/DATASTRUCTURE/OcNode.cpp" "source/DATASTRUCTURE/OcTree.cpp" "source/DATASTRUCTURE/Quadrilateral.cpp" "source/GRAPHIC/CFrustum.cpp" "source/GRAPHIC/Scene.cpp" "source/GUI/Animation.cpp" "source/GUI/DownSampling.cpp" "source/GUI/FeatureEnhancement.cpp" "source/GUI/HistogramWidget.cpp" "source/GUI/HistogramWidgetCallbackData.cpp" "source/GUI/HistogramWidgetChangedCallbackData.cpp" "source/GUI/Lighting.cpp" "source/GUI/LightWidget.cpp" "source/GUI/Materials.cpp" "source/GUI/QuadrilateralChangedCallbackData.cpp" "source/GUI/RGBTransferFunction1D.cpp" "source/GUI/ScalarWidget.cpp" "source/GUI/ScalarWidgetCallbackData.cpp" "source/GUI/ScalarWidgetChangedCallbackData.cpp" "source/GUI/ScalarWidgetControlPoint.cpp" "source/GUI/ScalarWidgetControlPointChangedCallbackData.cpp" "source/GUI/ScalarWidgetStorage.cpp" "source/GUI/Shading.cpp" "source/GUI/Slices.cpp" "source/GUI/SliceWidget.cpp" "source/GUI/SwatchesWidget.cpp" "source/GUI/TransferFunction1D.cpp" "source/GUI/TransferFunction2_5D.cpp" "source/IO/ByteRaw.cpp" "source/IO/ByteVolume.cpp" "source/IO/DatVolume.cpp" "source/IO/FloatVolume.cpp" "source/IO/IOHelper.cpp" "source/IO/MultiComponentByteRaw.cpp" "source/IO/NickLancasterVolume.cpp" "source/IO/segy.cpp" "source/IO/SegyVolume.cpp" "source/MATH/Matrix4x4.cpp" "source/MATH/Point4.cpp" "source/MATH/Vector4.cpp" "source/SHADER/FragmentShader.cpp" "source/SHADER/GLARBFragmentShader.cpp" "source/SHADER/GLARBShaderObjects.cpp" "source/SHADER/GLARBShadingLanguage100.cpp" "source/SHADER/GLARBVertexShader.cpp" "source/SHADER/ShaderManager.cpp" "source/SHADER/ShaderObject.cpp" "source/SHADER/ShaderProgram.cpp" "source/SHADER/VertexShader.cpp" "source/UTILITY/BadConversion.cpp" "source/UTILITY/Stringify.cpp" "source/UTILITY/StringTokenizer.cpp" "source/UTILITY/TessellatePolygon.cpp")) nil [3296 7947])
+            ("$(EXEDIR)" function (:arguments ("$(TOIRT_SAMHLAIGH_SOURCES:%.cpp=$(OBJDIR)/%.o)")) nil [7948 8022])
+            ("install" function (:arguments ("$(ALL)")) nil [8089 8223]))          
+      :file "Makefile"
+      :pointmax 8223
+      :fsize 8222
+      :lastmodtime '(22477 43572 790823 58000)
+      :unmatched-syntax nil))
+  :file "!apps!Toirt-Samhlaigh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

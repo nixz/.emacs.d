@@ -1,0 +1,995 @@
+;; Object Protein/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Protein/"
+  :tables
+  (list
+    (semanticdb-table "ClientServerPipe.h"
+      :file "ClientServerPipe.h"
+      :fsize 13100
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "CreateProtein.h"
+      :file "CreateProtein.h"
+      :fsize 2967
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "DragBox.h"
+      :file "DragBox.h"
+      :fsize 6524
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "EnergyAPI.h"
+      :file "EnergyAPI.h"
+      :fsize 7640
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "Globals.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ProteinState" type
+               (:prototype t
+                :type "class")
+                nil [1719 1738])
+            ("GLOBALS_INCLUDED" variable (:constant-flag t) nil [1774 1790])
+            ("list" include (:system-flag t) nil [2324 2339])
+            ("pthread.h" include (:system-flag t) nil [2340 2360])
+            ("Geometry/Box.h" include (:system-flag t) nil [2362 2387])
+            ("Misc/ConfigurationFile.h" include (:system-flag t) nil [2388 2423])
+            ("DragBox.h" include nil nil [2425 2445])
+            ("Protein.h" include nil nil [2446 2466])
+            ("ProteinClient.h" include nil nil [2467 2493])
+            ("ProteinInteractor.h" include nil nil [2494 2524])
+            ("ProteinRenderer.h" include nil nil [2525 2553])
+            ("EnergyRenderer.h" include nil nil [2554 2581])
+            ("EnergyAPI.h" include nil nil [2582 2604])
+            ("UndoBuffer.h" include nil nil [2605 2628])
+            ("Message.h" include nil nil [2629 2649])
+            ("GLContextData" type
+               (:prototype t
+                :type "class")
+                nil [2679 2699])
+            ("proteinMutex" variable
+               (:typemodifiers ("extern")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [2787 2823])
+            ("ikUpdateRequestedCond" variable
+               (:typemodifiers ("extern")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [2824 2868])
+            ("ikUpdateRequested" variable
+               (:typemodifiers ("extern" "volatile")
+                :type "bool")
+                nil [2869 2908])
+            ("ikUpdateDoneCond" variable
+               (:typemodifiers ("extern")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [2909 2948])
+            ("ikUpdateDone" variable
+               (:typemodifiers ("extern" "volatile")
+                :type "bool")
+                nil [2949 2983])
+            ("ikUpdatePosted" variable
+               (:typemodifiers ("extern" "volatile")
+                :type "bool")
+                nil [2984 3020])
+            ("ikUpdateThreadId" variable
+               (:typemodifiers ("extern")
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [3021 3055])
+            ("configFile" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("Misc::ConfigurationFile" type (:type "class") nil nil))
+                nil [3057 3101])
+            ("undoBuffer" variable
+               (:typemodifiers ("extern")
+                :type ("UndoBuffer" type (:type "class") nil nil))
+                nil [3154 3183])
+            ("energyLibrary" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("EnergyLibrary" type (:type "class") nil nil))
+                nil [3184 3220])
+            ("msg" variable
+               (:typemodifiers ("extern")
+                :type ("PShopMessage" type (:type "class") nil nil))
+                nil [3292 3316])
+            ("protein" variable
+               (:pointer 1
+                :type ("MD::Protein" type (:type "class") nil nil))
+                nil [4156 4178])
+            ("name" variable
+               (:pointer 1
+                :type "char")
+                nil [4209 4220])
+            ("client" variable
+               (:pointer 1
+                :type ("ProteinClient" type (:type "class") nil nil))
+                nil [4276 4298])
+            ("proteinId" variable (:type ("uint" type (:type "class") nil nil)) nil [4363 4378])
+            ("selectedResidue" variable
+               (:pointer 1
+                :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                nil [4446 4484])
+            ("interactor" variable
+               (:pointer 1
+                :type ("ProteinInteractor" type (:type "class") nil nil))
+                nil [4513 4543])
+            ("proteinRenderer" variable
+               (:pointer 1
+                :type ("MD::ProteinRenderer" type (:type "class") nil nil))
+                nil [4571 4608])
+            ("energyRenderer" variable
+               (:pointer 1
+                :type ("EnergyRenderer" type (:type "class") nil nil))
+                nil [4649 4680])
+            ("energyCalculator" variable
+               (:pointer 1
+                :type ("EnergyCalculator" type (:type "class") nil nil))
+                nil [4729 4764])
+            ("visualizeEnergy" variable (:type "bool") nil [4814 4835])
+            ("visualizeEnergyMinRange" variable (:type "double") nil [4879 4949])
+            ("visualizeEnergyMaxRange" variable (:type "double") nil [4879 4949])
+            ("engUpdateRate" variable (:type "double") nil [4879 4949])
+            ("ProteinState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5018 5039]))                  
+                :type "int")
+                nil [5004 5040])
+            ("ProteinState" function
+               (:prototype-flag t
+                :destructor-flag t
+                :type "void")
+                nil [5045 5061])
+            ("getProtein" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5091 5096]))                  
+                :type ("MD::Protein" type (:type "class") nil nil))
+                nil [5066 5125])
+            ("toClamp" variable
+               (:default-value "lowerBound"
+                :type "int")
+                nil [5911 5932])
+            ("toClamp" variable
+               (:default-value "upperBound"
+                :type "int")
+                nil [5965 5986]))          
+      :file "Globals.h"
+      :pointmax 5998
+      :fsize 5997
+      :lastmodtime '(22477 47548 214693 194000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLOBALS_INCLUDED")
+          )
+)
+    (semanticdb-table "ParsePdbFile.h"
+      :file "ParsePdbFile.h"
+      :fsize 2355
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "Protein.h"
+      :file "Protein.h"
+      :fsize 41579
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "ProteinInteractor.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ProteinInteractor" type
+               (:prototype t
+                :type "class")
+                nil [1723 1747])
+            ("PROTEININTERACTOR_INCLUDED" variable (:constant-flag t) nil [1793 1819])
+            ("list" include (:system-flag t) nil [2353 2368])
+            ("utility" include (:system-flag t) nil [2369 2387])
+            ("DragBox.h" include nil nil [2389 2409])
+            ("Protein.h" include nil nil [2410 2430])
+            ("ProteinRenderer.h" include nil nil [2431 2459])
+            ("UndoBuffer.h" include nil nil [2460 2483])
+            ("IK.h" include nil nil [2484 2499])
+            ("EnergyAPI.h" include nil nil [2500 2522])
+            ("ProteinInteractor" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2582 2589])
+                    ("Transformation" type
+                       (:typedef ("IK::Transformation" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2594 2636])
+                    ("StructureList" type
+                       (:typedef ("std::list" type
+                             (:template-specifier 
+                                ( ("MD::Protein::StructureSelector" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2669 2733])
+                    ("JointMapItem" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("MD::Protein::BackboneIterator::BondType" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2779 2855])
+                    ("UpdateDirection" type
+                       (:members 
+                          ( ("LEFT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2937 2942])
+                            ("RIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2942 2953]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2861 2954])
+                    ("private" label nil (reparse-symbol classsubparts) [2960 2968])
+                    ("CoilRegionAngles" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3085 3092])
+                            ("structure" variable (:type ("MD::Protein::StructureSelector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3101 3142])
+                            ("phis" variable
+                               (:pointer 1
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3183 3200])
+                            ("psis" variable
+                               (:pointer 1
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3251 3268])
+                            ("CoilRegionAngles" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("sStructure" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MD::Protein::StructureSelector" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3381 3430]))                                  
+                                :type ("CoilRegionAngles" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3364 3659])
+                            ("CoilRegionAngles" function
+                               (:destructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3687 3692]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3669 3766])
+                            ("getFirstResidueIndex" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3825 3830]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3800 3909])
+                            ("getNumResidues" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3938 3943]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3919 4016])
+                            ("getCurrentAngles" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4048 4053]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4026 4177])
+                            ("changeDihedralAngles" function
+                               (:arguments 
+                                  ( ("updateDirection" variable (:type ("UpdateDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4213 4245]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4187 4347]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [2973 4355])
+                    ("private" label nil (reparse-symbol classsubparts) [4381 4389])
+                    ("protein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4394 4415])
+                    ("renderer" variable
+                       (:pointer 1
+                        :type ("MD::ProteinRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4471 4501])
+                    ("energyCalculator" variable
+                       (:pointer 1
+                        :type ("EnergyCalculator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4556 4591])
+                    ("undoBuffer" variable
+                       (:pointer 1
+                        :type ("UndoBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4652 4675])
+                    ("updateDirection" variable (:type ("UpdateDirection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4718 4750])
+                    ("selectedStructure" variable (:type ("MD::Protein::StructureSelector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4815 4864])
+                    ("selectedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4905 4943])
+                    ("box" variable (:type ("DragBox" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4990 5002])
+                    ("activeCoils" variable (:type ("StructureList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5069 5095])
+                    ("numJoints" variable (:type "int") (reparse-symbol classsubparts) [5147 5161])
+                    ("ik" variable
+                       (:pointer 1
+                        :type ("IK" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5166 5173])
+                    ("jointMap" variable
+                       (:pointer 1
+                        :type ("JointMapItem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5256 5279])
+                    ("firstResidueIndex" variable (:type "int") (reparse-symbol classsubparts) [5348 5370])
+                    ("numResidues" variable (:type "int") (reparse-symbol classsubparts) [5375 5391])
+                    ("currentPhis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5396 5420])
+                    ("currentPsis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5425 5449])
+                    ("deltaPhis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5454 5476])
+                    ("deltaPsis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5481 5503])
+                    ("ikUpdateDirection" variable (:type "int") (reparse-symbol classsubparts) [5508 5530])
+                    ("effectorJointIndex" variable (:type "int") (reparse-symbol classsubparts) [5535 5558])
+                    ("initialTransformation" variable (:type ("Transformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5563 5600])
+                    ("correctionTransformation" variable (:type ("Transformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5605 5645])
+                    ("effectorStepSize" variable (:type ("IK::Scalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5650 5678])
+                    ("correctionStepSize" variable (:type ("IK::Scalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5683 5713])
+                    ("public" label nil (reparse-symbol classsubparts) [5759 5766])
+                    ("ProteinInteractor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("sProtein" variable
+                               (:pointer 1
+                                :type ("MD::Protein" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5789 5811])
+                            ("sRenderer" variable
+                               (:pointer 1
+                                :type ("MD::ProteinRenderer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5811 5842])
+                            ("sEnergyCalculator" variable
+                               (:pointer 1
+                                :type ("EnergyCalculator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5842 5878])
+                            ("sUndoBuffer" variable
+                               (:pointer 1
+                                :type ("UndoBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5878 5902]))                          
+                        :type ("ProteinInteractor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5771 5903])
+                    ("ProteinInteractor" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5927 5932]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5908 5933])
+                    ("resetDragBox" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5976 5981]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5958 5982])
+                    ("printCoils" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("icall" variable (:type "int") (reparse-symbol arg-sub-list) [6061 6071]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6045 6072])
+                    ("clearCoilRegions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6155 6160]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6133 6161])
+                    ("resetCoilRegions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6220 6225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6198 6226])
+                    ("toggleUpdateDirection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6307 6312]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6280 6313])
+                    ("getUpdateDirection" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6381 6386]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6358 6565])
+                    ("selectStructure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newSelectedStructure" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MD::Protein::StructureSelector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6592 6651]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6571 6652])
+                    ("getStructure" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6738 6743]))                          
+                        :type ("MD::Protein::StructureSelector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6694 6839])
+                    ("isValid" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6858 6863]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6845 6978])
+                    ("isAlphaHelix" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7002 7007]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6984 7223])
+                    ("isBetaStrand" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7247 7252]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7229 7467])
+                    ("isCoil" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7485 7490]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7473 7698])
+                    ("getBox" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7720 7725]))                          
+                        :type ("DragBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7704 7781])
+                    ("getBoxRotateCenter" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7823 7828]))                          
+                        :type ("MD::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7787 7926])
+                    ("setDihedralAngles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("phis" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7955 7979])
+                            ("psis" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7979 8003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7932 8004])
+                    ("changeDihedralAngles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deltaPhis" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8089 8118])
+                            ("deltaPsis" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("MD::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8118 8147]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8063 8148])
+                    ("toggleCoil" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coil" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MD::Protein::StructureSelector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8226 8269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8210 8270])
+                    ("getLeftCoils" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8384 8389]))                          
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("MD::Protein::StructureSelector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8322 8471])
+                    ("getRightCoils" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8540 8545]))                          
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("MD::Protein::StructureSelector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8477 8628])
+                    ("startInteraction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8656 8661]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8634 8662])
+                    ("pickDragBox" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modelView" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::PTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8741 8783])
+                            ("projection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::PTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8783 8826])
+                            ("mouseClip" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8826 8858]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8724 8859])
+                    ("pickDragBox" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("initialDragTransformation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::OTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8881 8939]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8864 8940])
+                    ("dragBox" function
+                       (:arguments 
+                          ( ("modelView" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::PTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8958 9000])
+                            ("projection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::PTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9000 9043])
+                            ("mouseClip" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9043 9075]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8945 9137])
+                    ("dragBox" function
+                       (:arguments 
+                          ( ("dragTransformation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DragBox::OTransformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9156 9207]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9143 9257])
+                    ("getDragTransformation" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9307 9312]))                          
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9263 9374])
+                    ("drag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goalTransformation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9390 9431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9380 9432])
+                    ("applyChanges" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9507 9512]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9489 9513])
+                    ("releaseDragBox" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9571 9576]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9551 9611])
+                    ("finishInteraction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9640 9645]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9617 9646])
+                    ("glRenderAction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9697 9724]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9677 9731])
+                    ("glTransformProtein" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9794 9821]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9770 9828])
+                    ("readCoilRegionAngles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("angleFilename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9928 9954]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9902 9955])
+                    ("writeCoilRegionAngles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("angleFilename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10024 10050]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9997 10057]))                  
+                :type "class")
+                nil [2524 10119]))          
+      :file "ProteinInteractor.h"
+      :pointmax 10128
+      :fsize 10127
+      :lastmodtime '(22477 47748 205892 727000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PROTEININTERACTOR_INCLUDED")
+          )
+)
+    (semanticdb-table "ProteinRenderer.h"
+      :file "ProteinRenderer.h"
+      :fsize 22860
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "Stride.h"
+      :file "Stride.h"
+      :fsize 2135
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "UndoBuffer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UNDOBUFFER_INCLUDED" variable (:constant-flag t) nil [854 873])
+            ("list" include (:system-flag t) nil [1408 1423])
+            ("Geometry/OrthonormalTransformation.h" include (:system-flag t) nil [1424 1471])
+            ("Protein.h" include nil nil [1473 1493])
+            ("DihedralAngleSequence" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1686 1694])
+                    ("firstResidue" variable (:type "int") (reparse-symbol classsubparts) [1703 1732])
+                    ("numResidues" variable (:type "int") (reparse-symbol classsubparts) [1703 1732])
+                    ("public" label nil (reparse-symbol classsubparts) [1802 1809])
+                    ("phis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1818 1835])
+                    ("psis" variable
+                       (:pointer 1
+                        :type ("MD::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1875 1892])
+                    ("public" label nil (reparse-symbol classsubparts) [1977 1984])
+                    ("DihedralAngleSequence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2015 2020]))                          
+                        :type ("DihedralAngleSequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1993 2147])
+                    ("DihedralAngleSequence" function
+                       (:destructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2180 2185]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2157 2259])
+                    ("getFirstResidue" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2313 2318]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2293 2423])
+                    ("getNumResidues" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2452 2457]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2433 2557])
+                    ("resize" function
+                       (:arguments 
+                          ( ("newFirstResidue" variable (:type "int") (reparse-symbol arg-sub-list) [2579 2599])
+                            ("newNumResidues" variable (:type "int") (reparse-symbol arg-sub-list) [2599 2618]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2567 3120]))                  
+                :type "class")
+                nil [1559 3128])
+            ("UndoQueueEntry" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [3220 3228])
+                    ("protein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3237 3258])
+                    ("proteinTransformation" variable (:type ("Geometry::OrthonormalTransformation" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3301 3369])
+                    ("sequences" variable
+                       (:dereference 1
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("DihedralAngleSequence" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3450 3496])
+                    ("public" label nil (reparse-symbol classsubparts) [3626 3633])
+                    ("UndoQueueEntry" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3657 3662]))                          
+                        :type ("UndoQueueEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3642 3742])
+                    ("set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sProtein" variable
+                               (:pointer 1
+                                :type ("MD::Protein" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3785 3807])
+                            ("sProteinTransformation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Geometry::OrthonormalTransformation" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3807 3883])
+                            ("previousSequences" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("DihedralAngleSequence" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3883 3943]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3776 3944])
+                    ("getProtein" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4050 4055]))                          
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4026 4109])
+                    ("undo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4129 4134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4119 4135])
+                    ("redo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4154 4159]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4144 4160]))                  
+                :type "class")
+                nil [3134 4167])
+            ("queue" variable (:type ("std::list" type
+                 (:template-specifier 
+                    ( ("UndoQueueEntry" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [4193 4225])
+            ("queueTail" variable (:type ("std::list::iterator" type (:type "class") nil nil)) nil [4244 4290])
+            ("currentProtein" variable
+               (:pointer 1
+                :type ("MD::Protein" type (:type "class") nil nil))
+                nil [4360 4388])
+            ("previousSequences" variable
+               (:dereference 1
+                :type ("std::list" type
+                     (:template-specifier 
+                        ( ("DihedralAngleSequence" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4437 4491])
+            ("lastSavedDepth" variable (:type "int") nil [4589 4608])
+            ("UndoBuffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4737 4742]))                  
+                :type "int")
+                nil [4726 4743])
+            ("UndoBuffer" function
+               (:prototype-flag t
+                :destructor-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4789 4794]))                  
+                :type "void")
+                nil [4777 4795])
+            ("isSaved" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4833 4838]))                  
+                :type "bool")
+                nil [4820 4964])
+            ("canUndo" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4983 4988]))                  
+                :type "bool")
+                nil [4970 5148])
+            ("canRedo" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5167 5172]))                  
+                :type "bool")
+                nil [5154 5337])
+            ("saveCurrentState" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5365 5370]))                  
+                :type "void")
+                nil [5343 5454])
+            ("startInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("protein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5482 5503]))                  
+                :type "void")
+                nil [5460 5504])
+            ("addResidueSequence" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("startResidue" variable (:type "int") (reparse-symbol arg-sub-list) [5601 5618])
+                    ("numResidues" variable (:type "int") (reparse-symbol arg-sub-list) [5618 5634])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [5634 5648]))                  
+                :type "void")
+                nil [5577 5649])
+            ("startInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("protein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5750 5771])
+                    ("selectedResidue" variable
+                       (:pointer 1
+                        :type ("MD::Protein::Residue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5771 5809])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [5809 5823]))                  
+                :type "void")
+                nil [5728 5824])
+            ("startInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("protein" variable
+                       (:pointer 1
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5903 5924])
+                    ("startResidue" variable (:type "int") (reparse-symbol arg-sub-list) [5924 5941])
+                    ("numResidues" variable (:type "int") (reparse-symbol arg-sub-list) [5941 5957])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [5957 5971]))                  
+                :type "void")
+                nil [5881 5972])
+            ("startInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("selectedStructure" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MD::Protein::StructureSelector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6057 6113])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [6113 6127]))                  
+                :type "void")
+                nil [6035 6128])
+            ("startInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("leftStructures" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("MD::Protein::StructureSelector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6209 6273])
+                    ("rightStructures" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("MD::Protein::StructureSelector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6273 6338]))                  
+                :type "void")
+                nil [6187 6339])
+            ("finishInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6465 6470]))                  
+                :type "void")
+                nil [6442 6471])
+            ("finishInteraction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("proteinTransformation" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Geometry::OrthonormalTransformation" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6528 6603]))                  
+                :type "void")
+                nil [6505 6604])
+            ("undo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6657 6662]))                  
+                :type "void")
+                nil [6647 6663])
+            ("redo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6709 6714]))                  
+                :type "void")
+                nil [6699 6715])
+            ("clear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6769 6774]))                  
+                :type "void")
+                nil [6758 6775])
+            ("deleteProtein" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("protein" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MD::Protein" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6815 6842]))                  
+                :type "void")
+                nil [6796 6843]))          
+      :file "UndoBuffer.h"
+      :pointmax 6919
+      :fsize 6918
+      :lastmodtime '(22477 47811 878911 478000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UNDOBUFFER_INCLUDED")
+          )
+)
+    (semanticdb-table "ProteinClient.h"
+      :file "ProteinClient.h"
+      :fsize 3235
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "EnergyRenderer.h"
+      :file "EnergyRenderer.h"
+      :fsize 12874
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "Message.h"
+      :file "Message.h"
+      :fsize 3635
+      :lastmodtime '(20638 56998 0 0))
+    (semanticdb-table "IK.h"
+      :file "IK.h"
+      :fsize 7050
+      :lastmodtime '(20638 56998 0 0)))
+  :file "!apps!VRProteinShop!source!Protein!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

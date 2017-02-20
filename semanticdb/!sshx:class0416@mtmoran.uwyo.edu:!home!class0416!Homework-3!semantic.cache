@@ -1,0 +1,56 @@
+;; Object Homework-3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Homework-3/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("all" function (:arguments ("geometricMeanMPI.cpp")) nil [1 80]))          
+    :file "Makefile"
+    :pointmax 80
+    :fsize 79
+    :lastmodtime '(21572 9190)
+    :unmatched-syntax '((shell-command 28 . 79) (bol 27 . 27))
+    )
+   (semanticdb-table "geometricMeanMPI.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("mpi.h" include (:system-flag t) nil [40 56])
+            ("math.h" include (:system-flag t) nil [57 74])
+            ("makeRandomArray" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [179 188]))                  
+                :type "float")
+                nil [156 342])
+            ("product" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [438 451])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [452 461]))                  
+                :type "float")
+                nil [424 566])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [657 666])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [667 679]))                  
+                :type "int")
+                nil [648 2546]))          
+    :file "geometricMeanMPI.cpp"
+    :pointmax 2647
+    :fsize 2546
+    :lastmodtime '(21572 46865)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!sshx:class0416@mtmoran.uwyo.edu:!home!class0416!Homework-3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

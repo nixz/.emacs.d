@@ -1,0 +1,273 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkMarchingCubes.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkMarchingCubes.h" include nil nil [590 619])
+            ("vtkCellArray.h" include nil nil [621 646])
+            ("vtkCharArray.h" include nil nil [647 672])
+            ("vtkDoubleArray.h" include nil nil [673 700])
+            ("vtkFloatArray.h" include nil nil [701 727])
+            ("vtkInformation.h" include nil nil [728 755])
+            ("vtkInformationVector.h" include nil nil [756 789])
+            ("vtkIntArray.h" include nil nil [790 814])
+            ("vtkLongArray.h" include nil nil [815 840])
+            ("vtkMarchingCubesTriangleCases.h" include nil nil [841 883])
+            ("vtkMath.h" include nil nil [884 904])
+            ("vtkMergePoints.h" include nil nil [905 932])
+            ("vtkObjectFactory.h" include nil nil [933 962])
+            ("vtkPointData.h" include nil nil [963 988])
+            ("vtkPolyData.h" include nil nil [989 1013])
+            ("vtkShortArray.h" include nil nil [1014 1040])
+            ("vtkStructuredPoints.h" include nil nil [1041 1073])
+            ("vtkUnsignedCharArray.h" include nil nil [1074 1107])
+            ("vtkUnsignedIntArray.h" include nil nil [1108 1140])
+            ("vtkUnsignedLongArray.h" include nil nil [1141 1174])
+            ("vtkUnsignedShortArray.h" include nil nil [1175 1209])
+            ("vtkStreamingDemandDrivenPipeline.h" include nil nil [1210 1255])
+            ("vtkIncrementalPointLocator.h" include nil nil [1256 1295])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkMarchingCubes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1317 1334]))                  
+                :type "int")
+                nil [1297 1335])
+            ("vtkMarchingCubes" function
+               (:constructor-flag t
+                :parent "vtkMarchingCubes"
+                :type ("vtkMarchingCubes" type (:type "class") nil nil))
+                nil [1505 1704])
+            ("vtkMarchingCubes" function
+               (:destructor-flag t
+                :parent "vtkMarchingCubes"
+                :type "void")
+                nil [1706 1878])
+            ("GetMTime" function
+               (:parent "vtkMarchingCubes"
+                :type "unsigned long")
+                nil [2014 2353])
+            ("vtkMarchingCubesComputePointGradient" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2534 2540])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [2541 2547])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [2548 2554])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2555 2560])
+                    ("dims" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2561 2573])
+                    ("sliceSize" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2616 2636])
+                    ("spacing" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2637 2655])
+                    ("n" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2656 2668]))                  )
+                nil [2473 4124])
+            ("vtkMarchingCubesComputeGradient" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("vtkMarchingCubes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4262 4285])
+                    ("scalars" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4285 4296])
+                    ("dims" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4297 4309])
+                    ("origin" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4347 4364])
+                    ("spacing" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4365 4383])
+                    ("locator" variable
+                       (:pointer 1
+                        :type ("vtkIncrementalPointLocator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4421 4457])
+                    ("newScalars" variable
+                       (:pointer 1
+                        :type ("vtkDataArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4495 4520])
+                    ("newGradients" variable
+                       (:pointer 1
+                        :type ("vtkDataArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4558 4585])
+                    ("newNormals" variable
+                       (:pointer 1
+                        :type ("vtkDataArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4623 4648])
+                    ("newPolys" variable
+                       (:pointer 1
+                        :type ("vtkCellArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4686 4709])
+                    ("values" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4710 4725])
+                    ("numValues" variable (:type "int") (reparse-symbol arg-sub-list) [4763 4777]))                  )
+                nil [4206 11343])
+            ("RequestData" function
+               (:parent "vtkMarchingCubes"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11462 11497])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11501 11536])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11539 11574]))                  
+                :type "int")
+                nil [11425 16616])
+            ("SetLocator" function
+               (:parent "vtkMarchingCubes"
+                :arguments 
+                  ( ("locator" variable
+                       (:pointer 1
+                        :type ("vtkIncrementalPointLocator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16771 16807]))                  
+                :type "void")
+                nil [16737 17073])
+            ("CreateDefaultLocator" function
+               (:parent "vtkMarchingCubes"
+                :type "void")
+                nil [17075 17209])
+            ("FillInputPortInformation" function
+               (:parent "vtkMarchingCubes"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [17258 17262])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17263 17284]))                  
+                :type "int")
+                nil [17211 17371])
+            ("PrintSelf" function
+               (:parent "vtkMarchingCubes"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17406 17418])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17419 17436]))                  
+                :type "void")
+                nil [17373 18011]))          
+    :file "vtkMarchingCubes.cxx"
+    :pointmax 18012
+    :fsize 18011
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkMarchingCubes.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkMarchingCubes_h" variable (:constant-flag t) nil [1407 1427])
+            ("vtkFiltersCoreModule.h" include nil nil [1429 1462])
+            ("vtkPolyDataAlgorithm.h" include nil nil [1483 1516])
+            ("vtkContourValues.h" include nil nil [1518 1547])
+            ("vtkIncrementalPointLocator" type
+               (:prototype t
+                :type "class")
+                nil [1594 1627])
+            ("vtkPolyDataAlgorithm" variable (:type "int") nil [1683 4318])
+            ("SetValue" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4483 4489])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [4490 4503]))                  
+                :type "void")
+                nil [4444 4545])
+            ("GetValue" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4634 4640]))                  
+                :type "double")
+                nil [4593 4683])
+            ("GetValues" function
+               (:pointer 1
+                :parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :type "double")
+                nil [4808 4895])
+            ("GetValues" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("contourValues" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5115 5137]))                  
+                :type "void")
+                nil [5075 5186])
+            ("SetNumberOfContours" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [5446 5457]))                  
+                :type "void")
+                nil [5396 5509])
+            ("GetNumberOfContours" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :type "int")
+                nil [5588 5691])
+            ("GenerateValues" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("numContours" variable (:type "int") (reparse-symbol arg-sub-list) [5886 5902])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5903 5919]))                  
+                :type "void")
+                nil [5841 5978])
+            ("GenerateValues" function
+               (:parent "vtkMarchingCubes"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("numContours" variable (:type "int") (reparse-symbol arg-sub-list) [6173 6189])
+                    ("rangeStart" variable (:type "double") (reparse-symbol arg-sub-list) [6190 6253])
+                    ("rangeEnd" variable (:type "double") (reparse-symbol arg-sub-list) [6254 6270]))                  
+                :type "void")
+                nil [6128 6344]))          
+    :file "vtkMarchingCubes.h"
+    :pointmax 6353
+    :fsize 6352
+    :lastmodtime '(20759 20582)
+    :unmatched-syntax '((PUBLIC 1676 . 1682) (punctuation 1674 . 1675) (symbol 1657 . 1673) (symbol 1635 . 1656) (CLASS 1629 . 1634))
+    :lexical-table 
+        '(("__vtkMarchingCubes_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Filters!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

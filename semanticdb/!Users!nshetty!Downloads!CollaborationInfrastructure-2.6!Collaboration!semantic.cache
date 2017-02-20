@@ -1,0 +1,2299 @@
+;; Object Collaboration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Collaboration/"
+  :tables
+  (list
+    (semanticdb-table "FooServer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Collaboration/FooServer.h" include (:system-flag t) nil [1104 1140])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1187 1216])
+            ("Collaboration" type
+               (:members 
+                  ( ("ClientState" function
+                       (:constructor-flag t
+                        :parent "FooServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1405 1410]))                          
+                        :type ("ClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1369 1523])
+                    ("ClientState" function
+                       (:destructor-flag t
+                        :parent "FooServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1562 1567]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1525 1782])
+                    ("FooServer" function
+                       (:constructor-flag t
+                        :parent "FooServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1890 1895]))                          
+                        :type ("FooServer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1869 1993])
+                    ("FooServer" function
+                       (:destructor-flag t
+                        :parent "FooServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2017 2022]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1995 2207])
+                    ("getName" function
+                       (:pointer 1
+                        :parent "FooServer"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2240 2245]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2209 2345])
+                    ("getNumMessages" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2386 2391]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [2347 2540])
+                    ("receiveConnectRequest" function
+                       (:pointer 1
+                        :parent "FooServer"
+                        :arguments 
+                          ( ("protocolMessageLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2604 2639])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2639 2659]))                          
+                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2542 2806])
+                    ("sendConnectReply" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2841 2873])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2873 2893]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2808 3159])
+                    ("sendConnectReject" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3195 3227])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3227 3247]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3161 3515])
+                    ("receiveDisconnectRequest" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3558 3590])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3590 3610]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3517 3895])
+                    ("sendDisconnectReply" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3933 3965])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3965 3985]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3897 4257])
+                    ("receiveClientUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4295 4327])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4327 4347]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4259 4622])
+                    ("sendClientConnect" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4658 4696])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4696 4732])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4732 4752]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4624 5110])
+                    ("sendServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5145 5181])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5181 5201]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5112 5495])
+                    ("sendServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5530 5568])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5568 5604])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5604 5624]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5497 6014])
+                    ("handleMessage" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6046 6078])
+                            ("messageId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6078 6101])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6101 6121]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6016 6399])
+                    ("connectClient" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6431 6463]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6401 6699])
+                    ("disconnectClient" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6734 6766]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6701 7008])
+                    ("beforeServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7045 7050]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7010 7275])
+                    ("beforeServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7312 7344]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7277 7756])
+                    ("beforeServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7793 7829])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7829 7849]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7758 8409])
+                    ("afterServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8445 8477]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8411 8886])
+                    ("afterServerUpdate" function
+                       (:parent "FooServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8922 8927]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8888 9150]))                  
+                :type "namespace")
+                nil [1218 9153])
+            ("destroyObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("Collaboration::ProtocolServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9383 9421]))                  )
+                (reparse-symbol extern-c-contents) [9364 9443])
+            ("createObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Collaboration::ProtocolServer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("objectLoader" variable
+                       (:reference 1
+                        :type ("Collaboration::ProtocolServerLoader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9268 9318]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [9224 9362]))          
+      :file "FooServer.cpp"
+      :pointmax 9447
+      :fsize 9482
+      :lastmodtime '(20165 27784 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "CollaborationServer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("COLLABORATION_COLLABORATIONSERVER_INCLUDED" variable (:constant-flag t) nil [1223 1265])
+            ("utility" include (:system-flag t) nil [1267 1285])
+            ("string" include (:system-flag t) nil [1286 1303])
+            ("vector" include (:system-flag t) nil [1304 1321])
+            ("Misc/ConfigurationFile.h" include (:system-flag t) nil [1322 1357])
+            ("Plugins/ObjectLoader.h" include (:system-flag t) nil [1358 1391])
+            ("Threads/Thread.h" include (:system-flag t) nil [1392 1419])
+            ("Threads/Mutex.h" include (:system-flag t) nil [1420 1446])
+            ("Comm/ListeningTCPSocket.h" include (:system-flag t) nil [1447 1483])
+            ("Comm/NetPipe.h" include (:system-flag t) nil [1484 1509])
+            ("Vrui/Geometry.h" include (:system-flag t) nil [1510 1536])
+            ("Collaboration/ProtocolServer.h" include (:system-flag t) nil [1537 1578])
+            ("Collaboration/CollaborationProtocol.h" include (:system-flag t) nil [1579 1627])
+            ("Collaboration" type
+               (:members 
+                  ( ("CollaborationServer" type
+                       (:superclasses 
+                          ( ("CollaborationProtocol" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1741 1748])
+                            ("Configuration" type
+                               (:members 
+                                  ( ("CollaborationServer" friend nil (reparse-symbol classsubparts) [1821 1853])
+                                    ("private" label nil (reparse-symbol classsubparts) [1876 1884])
+                                    ("configFile" variable (:type ("Misc::ConfigurationFile" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1887 1922])
+                                    ("cfg" variable (:type ("Misc::ConfigurationFileSection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1982 2017])
+                                    ("public" label nil (reparse-symbol classsubparts) [2097 2104])
+                                    ("Configuration" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2121 2126]))                                          
+                                        :type ("Configuration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2107 2127])
+                                    ("setListenPortId" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("newListenPortId" variable (:type "int") (reparse-symbol arg-sub-list) [2261 2281]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2240 2282])
+                                    ("getTickTime" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2354 2359]))                                          
+                                        :type "double")
+                                        (reparse-symbol classsubparts) [2335 2360]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [1750 2411])
+                            ("private" label nil (reparse-symbol classsubparts) [2414 2422])
+                            ("ProtocolList" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ProtocolServer" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2424 2474])
+                            ("ProtocolClientState" type
+                               (:typedef ("ProtocolServer::ClientState" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2522 2578])
+                            ("ClientConnection" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2746 2753])
+                                    ("ProtocolListEntry" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2872 2879])
+                                            ("index" variable (:type "unsigned int") (reparse-symbol classsubparts) [2883 2902])
+                                            ("clientIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [2949 2974])
+                                            ("protocol" variable
+                                               (:pointer 1
+                                                :type ("ProtocolServer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3025 3050])
+                                            ("protocolClientState" variable
+                                               (:pointer 1
+                                                :type ("ProtocolClientState" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3092 3133])
+                                            ("ProtocolListEntry" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("sIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3249 3269])
+                                                    ("sClientIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3269 3295])
+                                                    ("sProtocol" variable
+                                                       (:pointer 1
+                                                        :type ("ProtocolServer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3295 3321])
+                                                    ("sProtocolClientState" variable
+                                                       (:pointer 1
+                                                        :type ("ProtocolClientState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3321 3363]))                                                  
+                                                :type ("ProtocolListEntry" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [3231 3482])
+                                            ("comp" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("ple1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ProtocolListEntry" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3522 3552])
+                                                    ("ple2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ProtocolListEntry" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3552 3582]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3505 3665]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2756 3671])
+                                    ("ClientProtocolList" type
+                                       (:typedef ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ProtocolListEntry" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3675 3733])
+                                    ("public" label nil (reparse-symbol classsubparts) [3797 3804])
+                                    ("mutex" variable (:type ("Threads::Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3807 3828])
+                                    ("clientID" variable (:type "unsigned int") (reparse-symbol classsubparts) [3889 3911])
+                                    ("pipeMutex" variable (:type ("Threads::Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3946 3971])
+                                    ("pipe" variable (:type ("Comm::NetPipePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4024 4046])
+                                    ("clientHostname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4096 4123])
+                                    ("clientPortId" variable (:type "int") (reparse-symbol classsubparts) [4158 4175])
+                                    ("protocols" variable (:type ("ClientProtocolList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4209 4238])
+                                    ("communicationThread" variable (:type ("Threads::Thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4333 4369])
+                                    ("state" variable (:type ("ClientState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4427 4445])
+                                    ("stateUpdateMask" variable (:type "unsigned int") (reparse-symbol classsubparts) [4474 4503])
+                                    ("ClientConnection" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("sClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4608 4631])
+                                            ("sPipe" variable (:type ("Comm::NetPipePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4631 4654]))                                          
+                                        :type ("ClientConnection" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [4591 4655])
+                                    ("ClientConnection" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4676 4681]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4658 4682])
+                                    ("negotiateProtocols" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("server" variable
+                                               (:reference 1
+                                                :type ("CollaborationServer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4727 4755]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4703 4756])
+                                    ("sendClientConnectProtocols" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:pointer 1
+                                                :type ("ClientConnection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4925 4948])
+                                            ("destPipe" variable
+                                               (:reference 1
+                                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4948 4972]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4893 4973]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [2625 5078])
+                            ("ClientList" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ClientConnection" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5081 5131])
+                            ("ClientListAction" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5301 5308])
+                                    ("Action" type
+                                       (:members 
+                                          ( ("ADD_CLIENT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5374 5385])
+                                            ("REMOVE_CLIENT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5385 5403]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [5311 5404])
+                                    ("action" variable (:type ("Action" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5426 5440])
+                                    ("clientID" variable (:type "unsigned int") (reparse-symbol classsubparts) [5469 5491])
+                                    ("client" variable
+                                       (:pointer 1
+                                        :type ("ClientConnection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5540 5565])
+                                    ("ClientListAction" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sAction" variable (:type ("Action" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5691 5706])
+                                            ("sClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5706 5729])
+                                            ("sClient" variable
+                                               (:pointer 1
+                                                :type ("ClientConnection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5729 5755]))                                          
+                                        :type ("ClientListAction" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5674 5821]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [5190 5826])
+                            ("ActionList" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ClientListAction" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5829 5878])
+                            ("private" label nil (reparse-symbol classsubparts) [5939 5947])
+                            ("configuration" variable
+                               (:pointer 1
+                                :type ("Configuration" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5949 5978])
+                            ("protocolLoader" variable (:type ("ProtocolServerLoader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6028 6064])
+                            ("listenSocket" variable (:type ("Comm::ListeningTCPSocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6142 6180])
+                            ("listenThread" variable (:type ("Threads::Thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6235 6264])
+                            ("protocolListMutex" variable (:type ("Threads::Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6314 6347])
+                            ("protocols" variable (:type ("ProtocolList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6387 6410])
+                            ("messageTable" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ProtocolServer" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6470 6512])
+                            ("clientListMutex" variable (:type ("Threads::Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6586 6617])
+                            ("clientList" variable (:type ("ClientList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6661 6683])
+                            ("actionList" variable (:type ("ActionList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6754 6776])
+                            ("nextClientID" variable (:type "unsigned int") (reparse-symbol classsubparts) [6822 6848])
+                            ("listenThreadMethod" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6976 6981]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6951 6982])
+                            ("clientCommunicationThreadMethod" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("ClientConnection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7081 7106]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7043 7107])
+                            ("public" label nil (reparse-symbol classsubparts) [7210 7217])
+                            ("CollaborationServer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("sConfiguration" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("Configuration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7239 7271]))                                  
+                                :type ("CollaborationServer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7219 7273])
+                            ("CollaborationServer" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7360 7365]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7331 7366])
+                            ("getListenPortId" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7405 7410]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [7385 7518])
+                            ("registerProtocol" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("newProtocol" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7551 7579]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7521 7580])
+                            ("loadProtocol" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("protocolName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7711 7736]))                                  
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("ProtocolServer" type (:pointer 1) nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7659 7737])
+                            ("update" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7825 7830]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7805 7831])
+                            ("receiveConnectRequest" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8222 8244])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8244 8264]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8187 8265])
+                            ("sendConnectReply" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8424 8446])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8446 8466]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8394 8467])
+                            ("sendConnectReject" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8572 8594])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8594 8614]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8541 8615])
+                            ("receiveDisconnectRequest" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8723 8745])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8745 8765]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8685 8766])
+                            ("sendDisconnectReply" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8865 8887])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8887 8907]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8832 8908])
+                            ("receiveClientUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9011 9033])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9033 9053]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8978 9054])
+                            ("sendClientConnect" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9158 9186])
+                                    ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9186 9212])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9212 9232]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9127 9233])
+                            ("sendServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9368 9394])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9394 9414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9338 9415])
+                            ("sendServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9511 9539])
+                                    ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9539 9565])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9565 9585]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9481 9586])
+                            ("handleMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9792 9814])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9814 9834])
+                                    ("messageId" variable (:type ("Protocol::MessageIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9834 9868]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9765 9869])
+                            ("connectClient" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10002 10024]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9975 10025])
+                            ("disconnectClient" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10131 10153]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10101 10154])
+                            ("beforeServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10271 10293])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10293 10313]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10239 10314]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1656 10406]))                  
+                :type "namespace")
+                nil [1629 10409]))          
+      :file "CollaborationServer.h"
+      :pointmax 10418
+      :fsize 10453
+      :lastmodtime '(20165 27784 0 0)
+      :unmatched-syntax '((punctuation 7518 . 7519) (punctuation 1853 . 1854) (punctuation 1853 . 1854))
+      :lexical-table 
+        '(("COLLABORATION_COLLABORATIONSERVER_INCLUDED")
+          )
+)
+    (semanticdb-table "CollaborationServer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Collaboration/CollaborationServer.h" include (:system-flag t) nil [1164 1210])
+            ("iostream" include (:system-flag t) nil [1212 1231])
+            ("algorithm" include (:system-flag t) nil [1232 1252])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1253 1282])
+            ("Misc/StandardValueCoders.h" include (:system-flag t) nil [1283 1320])
+            ("Misc/CompoundValueCoders.h" include (:system-flag t) nil [1321 1358])
+            ("Comm/TCPPipe.h" include (:system-flag t) nil [1359 1384])
+            ("Collaboration" type
+               (:members 
+                  ( ("Configuration" function
+                       (:constructor-flag t
+                        :parent "CollaborationServer::Configuration"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1623 1628]))                          
+                        :type ("Configuration" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1573 1731])
+                    ("setListenPortId" function
+                       (:parent "CollaborationServer::Configuration"
+                        :arguments 
+                          ( ("newListenPortId" variable (:type "int") (reparse-symbol arg-sub-list) [1790 1810]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1733 1872])
+                    ("getTickTime" function
+                       (:parent "CollaborationServer::Configuration"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1929 1934]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [1874 1994])
+                    ("ClientConnection" function
+                       (:constructor-flag t
+                        :parent "CollaborationServer::ClientConnection"
+                        :arguments 
+                          ( ("sClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2221 2244])
+                            ("sPipe" variable (:type ("Comm::NetPipePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2244 2267]))                          
+                        :type ("ClientConnection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2165 2432])
+                    ("ClientConnection" function
+                       (:destructor-flag t
+                        :parent "CollaborationServer::ClientConnection"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2491 2496]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2434 2679])
+                    ("negotiateProtocols" function
+                       (:parent "CollaborationServer::ClientConnection"
+                        :arguments 
+                          ( ("server" variable
+                               (:reference 1
+                                :type ("CollaborationServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2744 2772]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2681 4448])
+                    ("sendClientConnectProtocols" function
+                       (:parent "CollaborationServer::ClientConnection"
+                        :arguments 
+                          ( ("dest" variable
+                               (:pointer 1
+                                :type ("ClientConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4521 4544])
+                            ("destPipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4544 4568]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4450 5742])
+                    ("listenThreadMethod" function
+                       (:pointer 1
+                        :parent "CollaborationServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5905 5910]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5859 7410])
+                    ("clientCommunicationThreadMethod" function
+                       (:pointer 1
+                        :parent "CollaborationServer"
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("CollaborationServer::ClientConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7471 7517]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7412 17972])
+                    ("CollaborationServer" function
+                       (:constructor-flag t
+                        :parent "CollaborationServer"
+                        :arguments 
+                          ( ("sConfiguration" variable
+                               (:pointer 1
+                                :type ("CollaborationServer::Configuration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18015 18066]))                          
+                        :type ("CollaborationServer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17974 19084])
+                    ("CollaborationServer" function
+                       (:destructor-flag t
+                        :parent "CollaborationServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19128 19133]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19086 20314])
+                    ("registerProtocol" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("newProtocol" variable
+                               (:pointer 1
+                                :type ("ProtocolServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20359 20387]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20316 20819])
+                    ("loadProtocol" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("protocolName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20886 20911]))                          
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("ProtocolServer" type (:pointer 1) nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [20821 22632])
+                    ("update" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22667 22672]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22634 30909])
+                    ("receiveConnectRequest" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30959 30981])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30981 31001]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [30911 31075])
+                    ("sendConnectReply" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31120 31142])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31142 31162]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31077 31168])
+                    ("sendConnectReject" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31214 31236])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31236 31256]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31170 31262])
+                    ("receiveDisconnectRequest" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31315 31337])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31337 31357]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31264 31363])
+                    ("sendDisconnectReply" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31411 31433])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31433 31453]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31365 31459])
+                    ("receiveClientUpdate" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31507 31529])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31529 31549]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31461 31555])
+                    ("sendClientConnect" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("sourceClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31601 31629])
+                            ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31629 31655])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31655 31675]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31557 31681])
+                    ("sendServerUpdate" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31726 31752])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31752 31772]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31683 31778])
+                    ("sendServerUpdate" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("sourceClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31823 31851])
+                            ("destClientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31851 31877])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31877 31897]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31780 31903])
+                    ("handleMessage" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31945 31967])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31967 31987])
+                            ("messageId" variable (:type ("Protocol::MessageIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31987 32021]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [31905 32101])
+                    ("connectClient" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32143 32165]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32103 32171])
+                    ("disconnectClient" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32216 32238]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32173 32244])
+                    ("beforeServerUpdate" function
+                       (:parent "CollaborationServer"
+                        :arguments 
+                          ( ("clientID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32291 32313])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32313 32333]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32246 32339]))                  
+                :type "namespace")
+                nil [1386 32342]))          
+      :file "CollaborationServer.cpp"
+      :pointmax 32343
+      :fsize 32918
+      :lastmodtime '(20165 27784 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AgoraClient.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Collaboration/AgoraClient.h" include (:system-flag t) nil [1098 1136])
+            ("iostream" include (:system-flag t) nil [1138 1157])
+            ("Misc/FunctionCalls.h" include (:system-flag t) nil [1158 1189])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1190 1219])
+            ("Misc/StandardValueCoders.h" include (:system-flag t) nil [1220 1257])
+            ("Misc/ConfigurationFile.h" include (:system-flag t) nil [1258 1293])
+            ("IO/FixedMemoryFile.h" include (:system-flag t) nil [1294 1325])
+            ("IO/VariableMemoryFile.h" include (:system-flag t) nil [1326 1360])
+            ("Comm/NetPipe.h" include (:system-flag t) nil [1361 1386])
+            ("Cluster/MulticastPipe.h" include (:system-flag t) nil [1387 1421])
+            ("Cluster/ThreadSynchronizer.h" include (:system-flag t) nil [1422 1461])
+            ("Geometry/GeometryValueCoders.h" include (:system-flag t) nil [1462 1503])
+            ("GL/gl.h" include (:system-flag t) nil [1504 1522])
+            ("GL/GLContextData.h" include (:system-flag t) nil [1523 1552])
+            ("GL/GLTransformationWrappers.h" include (:system-flag t) nil [1553 1593])
+            ("GLMotif/PopupWindow.h" include (:system-flag t) nil [1594 1626])
+            ("GLMotif/Margin.h" include (:system-flag t) nil [1627 1654])
+            ("GLMotif/RowColumn.h" include (:system-flag t) nil [1655 1685])
+            ("Sound/Config.h" include (:system-flag t) nil [1686 1711])
+            ("Video/Config.h" include (:system-flag t) nil [1712 1737])
+            ("AL/Config.h" include (:system-flag t) nil [1967 1989])
+            ("AL/ALTemplates.h" include (:system-flag t) nil [1990 2017])
+            ("AL/ALGeometryWrappers.h" include (:system-flag t) nil [2018 2052])
+            ("AL/ALContextData.h" include (:system-flag t) nil [2053 2082])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [2083 2105])
+            ("Vrui/Viewer.h" include (:system-flag t) nil [2106 2130])
+            ("Collaboration/CollaborationClient.h" include (:system-flag t) nil [2131 2177])
+            ("Collaboration" type
+               (:members 
+                  ( ("ALDataItem" function
+                       (:parent "AgoraClient::RemoteClientState::ALDataItem"
+                        :arguments 
+                          ( ("sSpeexFrameSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2560 2583])
+                            ("sSpeexPacketQueue" variable
+                               (:reference 1
+                                :type ("Threads::DropoutBuffer" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2583 2631]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2505 3282])
+                    ("ALDataItem" function
+                       (:destructor-flag t
+                        :parent "AgoraClient::RemoteClientState::ALDataItem"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3340 3345]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3284 3666])
+                    ("RemoteClientState" function
+                       (:constructor-flag t
+                        :parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4949 4954]))                          
+                        :type ("RemoteClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4899 5161])
+                    ("RemoteClientState" function
+                       (:destructor-flag t
+                        :parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5214 5219]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5163 5425])
+                    ("initContext" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5476 5503]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5427 6119])
+                    ("glRenderAction" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6173 6200]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6121 7407])
+                    ("alRenderAction" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7461 7488]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7409 9320])
+                    ("videoCaptureCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("frame" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Video::FrameBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9452 9484]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9413 10492])
+                    ("showVideoDeviceSettingsCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10544 10600]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10494 10845])
+                    ("pauseAudioCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10884 10940]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10847 11015])
+                    ("pauseVideoCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11054 11110]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11017 11185])
+                    ("showLocalVideoWindowCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11234 11290]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11187 11545])
+                    ("videoDeviceSettingsCloseCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11598 11625]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11547 11720])
+                    ("localVideoWindowCloseCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11770 11797]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11722 11916])
+                    ("AgoraClient" function
+                       (:constructor-flag t
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11943 11948]))                          
+                        :type ("AgoraClient" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11918 12425])
+                    ("AgoraClient" function
+                       (:destructor-flag t
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12453 12458]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12427 12779])
+                    ("getName" function
+                       (:pointer 1
+                        :parent "AgoraClient"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12814 12819]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [12781 12853])
+                    ("initialize" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("sClient" variable
+                               (:pointer 1
+                                :type ("CollaborationClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12884 12913])
+                            ("configFileSection" variable
+                               (:reference 1
+                                :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12913 12963]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12855 19664])
+                    ("haveSettingsDialog" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19703 19708]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19666 19750])
+                    ("buildSettingsDialog" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("settingsDialog" variable
+                               (:pointer 1
+                                :type ("GLMotif::RowColumn" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19790 19825]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19752 22676])
+                    ("sendConnectRequest" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22715 22735]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22678 25266])
+                    ("receiveConnectReply" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25306 25326]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25268 27648])
+                    ("receiveConnectReject" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27689 27709]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27650 28125])
+                    ("receiveClientConnect" function
+                       (:pointer 1
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28193 28213]))                          
+                        :type ("AgoraClient::RemoteClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28127 31554])
+                    ("receiveServerUpdate" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31594 31633])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31633 31653]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [31556 32968])
+                    ("sendClientUpdate" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33005 33025]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32970 34261])
+                    ("frame" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [34287 34292]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34263 34834])
+                    ("frame" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34860 34899]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34836 36392])
+                    ("glRenderAction" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36427 36472])
+                            ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36472 36499]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36394 36811])
+                    ("alRenderAction" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36846 36891])
+                            ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36891 36918]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36813 37313]))                  
+                :type "namespace")
+                nil [2294 37316])
+            ("destroyObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("Collaboration::ProtocolClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37548 37586]))                  )
+                (reparse-symbol extern-c-contents) [37529 37608])
+            ("createObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Collaboration::ProtocolClient" type (:type "class") nil nil)
+                :arguments 
+                  ( ("objectLoader" variable
+                       (:reference 1
+                        :type ("Collaboration::ProtocolClientLoader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37431 37481]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [37387 37527]))          
+      :file "AgoraClient.cpp"
+      :pointmax 37612
+      :fsize 37859
+      :lastmodtime '(20565 32608 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AgoraServer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Collaboration/AgoraServer.h" include (:system-flag t) nil [1098 1136])
+            ("iostream" include (:system-flag t) nil [1138 1157])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1158 1187])
+            ("Comm/NetPipe.h" include (:system-flag t) nil [1188 1213])
+            ("Geometry/GeometryMarshallers.h" include (:system-flag t) nil [1214 1255])
+            ("Collaboration" type
+               (:members 
+                  ( ("ClientState" function
+                       (:constructor-flag t
+                        :parent "AgoraServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1452 1457]))                          
+                        :type ("ClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1414 1548])
+                    ("ClientState" function
+                       (:destructor-flag t
+                        :parent "AgoraServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1589 1594]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1550 1625])
+                    ("AgoraServer" function
+                       (:constructor-flag t
+                        :parent "AgoraServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1743 1748]))                          
+                        :type ("AgoraServer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1718 1754])
+                    ("AgoraServer" function
+                       (:destructor-flag t
+                        :parent "AgoraServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1782 1787]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1756 1793])
+                    ("getName" function
+                       (:pointer 1
+                        :parent "AgoraServer"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1828 1833]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1795 1867])
+                    ("receiveConnectRequest" function
+                       (:pointer 1
+                        :parent "AgoraServer"
+                        :arguments 
+                          ( ("protocolMessageLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1933 1968])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1968 1988]))                          
+                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1869 4021])
+                    ("receiveClientUpdate" function
+                       (:parent "AgoraServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4061 4093])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4093 4113]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4023 4981])
+                    ("sendClientConnect" function
+                       (:parent "AgoraServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5019 5057])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5057 5093])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5093 5113]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4983 5989])
+                    ("sendServerUpdate" function
+                       (:parent "AgoraServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6026 6064])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6064 6100])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6100 6120]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5991 7139])
+                    ("beforeServerUpdate" function
+                       (:parent "AgoraServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7178 7210]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7141 7704])
+                    ("afterServerUpdate" function
+                       (:parent "AgoraServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7742 7774]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7706 8097]))                  
+                :type "namespace")
+                nil [1257 8100])
+            ("destroyObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("Collaboration::ProtocolServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8332 8370]))                  )
+                (reparse-symbol extern-c-contents) [8313 8392])
+            ("createObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Collaboration::ProtocolServer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("objectLoader" variable
+                       (:reference 1
+                        :type ("Collaboration::ProtocolServerLoader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8215 8265]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [8171 8311]))          
+      :file "AgoraServer.cpp"
+      :pointmax 8396
+      :fsize 8420
+      :lastmodtime '(20293 57177 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AgoraServer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("COLLABORATION_AGORASERVER_INCLUDED" variable (:constant-flag t) nil [1149 1183])
+            ("Threads/TripleBuffer.h" include (:system-flag t) nil [1185 1218])
+            ("Threads/DropoutBuffer.h" include (:system-flag t) nil [1219 1253])
+            ("Collaboration/ProtocolServer.h" include (:system-flag t) nil [1254 1295])
+            ("Collaboration/AgoraProtocol.h" include (:system-flag t) nil [1296 1336])
+            ("Collaboration" type
+               (:members 
+                  ( ("AgoraServer" type
+                       (:superclasses 
+                          ( ("ProtocolServer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("AgoraProtocol" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1456 1466])
+                            ("ClientState" type
+                               (:superclasses 
+                                  ( ("ProtocolServer::ClientState" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("AgoraServer" friend nil (reparse-symbol classsubparts) [1527 1551])
+                                    ("private" label nil (reparse-symbol classsubparts) [1574 1582])
+                                    ("mouthPosition" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1585 1605])
+                                    ("speexFrameSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1669 1691])
+                                    ("speexPacketSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1746])
+                                    ("speexPacketBuffer" variable (:type ("Threads::DropoutBuffer" type
+                                         (:template-specifier 
+                                            ( ("Byte" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1779 1826])
+                                    ("hasTheora" variable (:type "bool") (reparse-symbol classsubparts) [1895 1910])
+                                    ("videoTransform" variable (:type ("ONTransform" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1964 1991])
+                                    ("videoSize" variable
+                                       (:dereference 1
+                                        :type ("Scalar" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2065 2085])
+                                    ("theoraHeadersSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2146 2171])
+                                    ("theoraHeaders" variable
+                                       (:pointer 1
+                                        :type ("Byte" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2227 2247])
+                                    ("theoraPacketBuffer" variable (:type ("Threads::TripleBuffer" type
+                                         (:template-specifier 
+                                            ( ("VideoPacket" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2328 2382])
+                                    ("numSpeexPackets" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2451 2474])
+                                    ("hasTheoraPacket" variable (:type "bool") (reparse-symbol classsubparts) [2556 2577])
+                                    ("public" label nil (reparse-symbol classsubparts) [2711 2718])
+                                    ("ClientState" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2733 2738]))                                          
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2721 2739])
+                                    ("ClientState" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2763 2768]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2742 2769]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [1468 2774])
+                            ("public" label nil (reparse-symbol classsubparts) [2814 2821])
+                            ("AgoraServer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2835 2840]))                                  
+                                :type ("AgoraServer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2823 2841])
+                            ("AgoraServer" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2898 2903]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2877 2904])
+                            ("getName" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3007 3012]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [2979 3019])
+                            ("receiveConnectRequest" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("protocolMessageLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3080 3115])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3115 3135]))                                  
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3021 3136])
+                            ("receiveClientUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3171 3203])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3203 3223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3138 3224])
+                            ("sendClientConnect" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceCs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3257 3295])
+                                    ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3295 3331])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3331 3351]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3226 3352])
+                            ("sendServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceCs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3384 3422])
+                                    ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3422 3458])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3458 3478]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3354 3479])
+                            ("beforeServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3513 3545]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3481 3546])
+                            ("afterServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3579 3611]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3548 3612]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1365 3616]))                  
+                :type "namespace")
+                nil [1338 3619]))          
+      :file "AgoraServer.h"
+      :pointmax 3628
+      :fsize 3637
+      :lastmodtime '(20293 57177 0 0)
+      :unmatched-syntax '((punctuation 1551 . 1552) (punctuation 1551 . 1552))
+      :lexical-table 
+        '(("COLLABORATION_AGORASERVER_INCLUDED")
+          )
+)
+    (semanticdb-table "ProtocolServer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("COLLABORATION_PROTOCOLSERVER_INCLUDED" variable (:constant-flag t) nil [1326 1363])
+            ("Misc" type
+               (:members 
+                  ( ("ConfigurationFileSection" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1410 1441]))                  
+                :type "namespace")
+                nil [1393 1443])
+            ("Plugins" type
+               (:members 
+                  ( ("ObjectLoader" type
+                       (:template 
+                          ( ("ManagedClassParam" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1464 1518]))                  
+                :type "namespace")
+                nil [1444 1520])
+            ("Comm" type
+               (:members 
+                  ( ("NetPipe" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1538 1552]))                  
+                :type "namespace")
+                nil [1521 1554])
+            ("Collaboration" type
+               (:members 
+                  ( ("CollaborationServer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1581 1607]))                  
+                :type "namespace")
+                nil [1555 1609])
+            ("Collaboration" type
+               (:members 
+                  ( ("ProtocolServer" type
+                       (:members 
+                          ( ("CollaborationServer" friend nil (reparse-symbol classsubparts) [1663 1695])
+                            ("protected" label nil (reparse-symbol classsubparts) [1724 1734])
+                            ("ClientState" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1860 1867])
+                                    ("ClientState" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1882 1887]))                                          
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1870 1888])
+                                    ("ClientState" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1912 1917]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1891 1918]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [1736 1923])
+                            ("protected" label nil (reparse-symbol classsubparts) [1943 1953])
+                            ("server" variable
+                               (:pointer 1
+                                :type ("CollaborationServer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1955 1983])
+                            ("messageIdBase" variable (:type "unsigned int") (reparse-symbol classsubparts) [2017 2044])
+                            ("public" label nil (reparse-symbol classsubparts) [2141 2148])
+                            ("ProtocolServer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2165 2170]))                                  
+                                :type ("ProtocolServer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2150 2171])
+                            ("ProtocolServer" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2197 2202]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2173 2203])
+                            ("getMessageIdBase" function
+                               (:arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2252 2257]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2222 2353])
+                            ("getName" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2383 2388]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [2355 2398])
+                            ("getNumMessages" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2486 2491]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2450 2498])
+                            ("initialize" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sServer" variable
+                                       (:pointer 1
+                                        :type ("CollaborationServer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2589 2618])
+                                    ("configFileSection" variable
+                                       (:reference 1
+                                        :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2618 2668]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2565 2669])
+                            ("receiveConnectRequest" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("protocolMessageLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2970 3005])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3005 3025]))                                  
+                                :type ("ClientState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2927 3026])
+                            ("sendConnectReply" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3181 3197])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3197 3217]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3151 3218])
+                            ("sendConnectReject" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3323 3339])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3339 3359]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3292 3360])
+                            ("receiveDisconnectRequest" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3468 3484])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3484 3504]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3430 3505])
+                            ("sendDisconnectReply" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3604 3620])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3620 3640]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3571 3641])
+                            ("receiveClientUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3744 3760])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3760 3780]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3711 3781])
+                            ("sendClientConnect" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3885 3907])
+                                    ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3907 3927])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3927 3947]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3854 3948])
+                            ("sendServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4083 4103])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4103 4123]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4053 4124])
+                            ("sendServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sourceCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4220 4242])
+                                    ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4242 4262])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4262 4282]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4190 4283])
+                            ("handleMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4489 4505])
+                                    ("messageId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4505 4528])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4528 4548]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4462 4549])
+                            ("connectClient" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4682 4698]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4655 4699])
+                            ("disconnectClient" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4805 4821]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4775 4822])
+                            ("beforeServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4939 4944]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4907 4945])
+                            ("beforeServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5040 5056]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5008 5057])
+                            ("beforeServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("destCs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5168 5188])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5188 5208]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5136 5209])
+                            ("afterServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("cs" variable
+                                       (:pointer 1
+                                        :type ("ClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5330 5346]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5299 5347])
+                            ("afterServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5455 5460]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5424 5461]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1638 5524])
+                    ("ProtocolServerLoader" type
+                       (:typedef ("Plugins::ObjectLoader" type
+                             (:template-specifier 
+                                ( ("ProtocolServer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5584 5651]))                  
+                :type "namespace")
+                nil [1611 5654]))          
+      :file "ProtocolServer.h"
+      :pointmax 5663
+      :fsize 5669
+      :lastmodtime '(20165 27784 0 0)
+      :unmatched-syntax '((punctuation 1695 . 1696))
+      :lexical-table 
+        '(("COLLABORATION_PROTOCOLSERVER_INCLUDED")
+          )
+)
+    (semanticdb-table "ProtocolServer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Collaboration/ProtocolServer.h" include (:system-flag t) nil [1272 1313])
+            ("Collaboration" type
+               (:members 
+                  ( ("ClientState" function
+                       (:parent "ProtocolServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1522 1527]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1481 1533])
+                    ("ClientState" function
+                       (:destructor-flag t
+                        :parent "ProtocolServer::ClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1577 1582]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1535 1588])
+                    ("ProtocolServer" function
+                       (:constructor-flag t
+                        :parent "ProtocolServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1721 1726]))                          
+                        :type ("ProtocolServer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1690 1761])
+                    ("ProtocolServer" function
+                       (:destructor-flag t
+                        :parent "ProtocolServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1795 1800]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1763 1806])
+                    ("getNumMessages" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1852 1857]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [1808 1929])
+                    ("initialize" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("sServer" variable
+                               (:pointer 1
+                                :type ("CollaborationServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1963 1992])
+                            ("configFileSection" variable
+                               (:reference 1
+                                :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1992 2042]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1931 2100])
+                    ("receiveConnectRequest" function
+                       (:pointer 1
+                        :parent "ProtocolServer"
+                        :arguments 
+                          ( ("protocolMessageLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2169 2204])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2224]))                          
+                        :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2102 2271])
+                    ("sendConnectReply" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2311 2343])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2343 2363]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2273 2369])
+                    ("sendConnectReject" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2410 2442])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2442 2462]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2371 2468])
+                    ("receiveDisconnectRequest" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2516 2548])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2548 2568]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2470 2574])
+                    ("sendDisconnectReply" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2617 2649])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2649 2669]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2576 2675])
+                    ("receiveClientUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2718 2750])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2750 2770]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2677 2776])
+                    ("sendClientConnect" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2817 2855])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2855 2891])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2891 2911]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2778 2917])
+                    ("sendServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2957 2993])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2993 3013]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2919 3019])
+                    ("sendServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("sourceCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3059 3097])
+                            ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3097 3133])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3133 3153]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3021 3159])
+                    ("handleMessage" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3196 3228])
+                            ("messageId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3228 3251])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3251 3271]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3161 3334])
+                    ("connectClient" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3371 3403]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3336 3409])
+                    ("disconnectClient" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3449 3481]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3411 3487])
+                    ("beforeServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3529 3534]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3489 3540])
+                    ("beforeServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3582 3614]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3542 3620])
+                    ("beforeServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("destCs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3662 3698])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3698 3718]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3622 3724])
+                    ("afterServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("cs" variable
+                               (:pointer 1
+                                :type ("ProtocolServer::ClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3765 3797]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3726 3803])
+                    ("afterServerUpdate" function
+                       (:parent "ProtocolServer"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3844 3849]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3805 3855]))                  
+                :type "namespace")
+                nil [1315 3858]))          
+      :file "ProtocolServer.cpp"
+      :pointmax 3859
+      :fsize 3858
+      :lastmodtime '(20165 27784 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!nshetty!Downloads!CollaborationInfrastructure-2.6!Collaboration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

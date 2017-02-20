@@ -1,0 +1,969 @@
+;; Object ApplicationComponents/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ApplicationComponents/"
+  :tables (list 
+   (semanticdb-table "pqTraceReaction.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqTraceReaction.h" include nil nil [1357 1385])
+            ("pqPVApplicationCore.h" include nil nil [1387 1419])
+            ("pqPythonManager.h" include nil nil [1420 1448])
+            ("pqTraceReaction" function
+               (:constructor-flag t
+                :parent "pqTraceReaction"
+                :arguments 
+                  ( ("parentObject" variable
+                       (:pointer 1
+                        :type ("QAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1563 1585])
+                    ("_start" variable (:type "bool") (reparse-symbol arg-sub-list) [1586 1598]))                  
+                :type ("pqTraceReaction" type (:type "class") nil nil))
+                nil [1530 2134])
+            ("start" function
+               (:parent "pqTraceReaction"
+                :type "void")
+                nil [2216 2464])
+            ("stop" function
+               (:parent "pqTraceReaction"
+                :type "void")
+                nil [2546 2822])
+            ("enable" function
+               (:parent "pqTraceReaction"
+                :arguments 
+                  ( ("canDoAction" variable (:type "bool") (reparse-symbol arg-sub-list) [2933 2950]))                  
+                :type "void")
+                nil [2904 3003])
+            ("setLabel" function
+               (:parent "pqTraceReaction"
+                :arguments 
+                  ( ("label" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3116 3137]))                  
+                :type "void")
+                nil [3085 3617]))          
+    :file "pqTraceReaction.cxx"
+    :pointmax 3618
+    :fsize 3617
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqTraceReaction.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqTraceReaction_h" variable (:constant-flag t) nil [1391 1410])
+            ("pqReaction.h" include nil nil [1412 1435])
+            ("pqReaction" variable (:type "int") nil [1576 2258]))          
+    :file "pqTraceReaction.h"
+    :pointmax 2267
+    :fsize 2266
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1569 . 1575) (punctuation 1567 . 1568) (symbol 1551 . 1566) (symbol 1520 . 1550) (CLASS 1514 . 1519))
+    :lexical-table 
+        '(("__pqTraceReaction_h")
+          )
+
+    )
+   (semanticdb-table "pqStatusBar.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqStatusBar.h" include nil nil [1354 1378])
+            ("pqApplicationCore.h" include nil nil [1380 1410])
+            ("pqProgressManager.h" include nil nil [1411 1441])
+            ("pqProgressWidget.h" include nil nil [1442 1471])
+            ("QHBoxLayout" include (:system-flag t) nil [1473 1495])
+            ("QLabel" include (:system-flag t) nil [1496 1513])
+            ("QFrame" include (:system-flag t) nil [1514 1531])
+            ("QPixmap" include (:system-flag t) nil [1532 1550])
+            ("QToolButton" include (:system-flag t) nil [1551 1573])
+            ("iostream" include (:system-flag t) nil [1575 1594])
+            ("Superclass" function
+               (:arguments 
+                  ( ("" variable (:type ("parentObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1739 1752]))                  
+                :type "int")
+                nil [1728 2929])
+            ("pqStatusBar" function
+               (:destructor-flag t
+                :parent "pqStatusBar"
+                :type "void")
+                nil [3011 3042]))          
+    :file "pqStatusBar.cxx"
+    :pointmax 3043
+    :fsize 3042
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqStatusBar.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqStatusBar_h" variable (:constant-flag t) nil [1388 1403])
+            ("QStatusBar" include (:system-flag t) nil [1405 1426])
+            ("pqApplicationComponentsModule.h" include nil nil [1428 1470])
+            ("QStatusBar" variable (:type "int") nil [1751 1918]))          
+    :file "pqStatusBar.h"
+    :pointmax 1929
+    :fsize 1928
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1744 . 1750) (punctuation 1742 . 1743) (symbol 1730 . 1741) (symbol 1699 . 1729) (CLASS 1693 . 1698))
+    :lexical-table 
+        '(("__pqStatusBar_h")
+          )
+
+    )
+   (semanticdb-table "pqStandardPropertyWidgetInterface.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqStandardPropertyWidgetInterface.h" include nil nil [1369 1415])
+            ("pqApplicationCore.h" include nil nil [1417 1447])
+            ("pqArrayStatusPropertyWidget.h" include nil nil [1448 1488])
+            ("pqCalculatorWidget.h" include nil nil [1489 1520])
+            ("pqColorEditorPropertyWidget.h" include nil nil [1521 1561])
+            ("pqColorSelectorPropertyWidget.h" include nil nil [1562 1604])
+            ("pqCommandButtonPropertyWidget.h" include nil nil [1605 1647])
+            ("pqCubeAxesPropertyWidget.h" include nil nil [1648 1685])
+            ("pqDisplayRepresentationWidget.h" include nil nil [1686 1728])
+            ("pqListPropertyWidget.h" include nil nil [1729 1762])
+            ("pqPipelineRepresentation.h" include nil nil [1763 1800])
+            ("pqProxy.h" include nil nil [1801 1821])
+            ("pqServerManagerModel.h" include nil nil [1822 1855])
+            ("pqTextureSelectorPropertyWidget.h" include nil nil [1856 1900])
+            ("pqTransferFunctionEditorPropertyWidget.h" include nil nil [1901 1952])
+            ("vtkSMPropertyGroup.h" include nil nil [1953 1984])
+            ("vtkSMProperty.h" include nil nil [1985 2011])
+            ("vtkSMProxy.h" include nil nil [2012 2035])
+            ("QtDebug" include (:system-flag t) nil [2037 2055])
+            ("pqStandardPropertyWidgetInterface" function
+               (:constructor-flag t
+                :parent "pqStandardPropertyWidgetInterface"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2126 2137]))                  
+                :type ("pqStandardPropertyWidgetInterface" type (:type "class") nil nil))
+                nil [2057 2156])
+            ("pqStandardPropertyWidgetInterface" function
+               (:destructor-flag t
+                :parent "pqStandardPropertyWidgetInterface"
+                :type "void")
+                nil [2158 2233])
+            ("createWidgetForProperty" function
+               (:pointer 1
+                :parent "pqStandardPropertyWidgetInterface"
+                :arguments 
+                  ( ("smProxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2312 2332])
+                    ("smProperty" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2392 2418]))                  
+                :type ("pqPropertyWidget" type (:type "class") nil nil))
+                nil [2235 3578])
+            ("createWidgetForPropertyGroup" function
+               (:pointer 1
+                :parent "pqStandardPropertyWidgetInterface"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3662 3680])
+                    ("group" variable
+                       (:pointer 1
+                        :type ("vtkSMPropertyGroup" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3745 3771]))                  
+                :type ("pqPropertyWidget" type (:type "class") nil nil))
+                nil [3580 4137]))          
+    :file "pqStandardPropertyWidgetInterface.cxx"
+    :pointmax 4138
+    :fsize 5519
+    :lastmodtime '(20900 54572)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqStandardViewFrameActionGroup.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqStandardViewFrameActionGroup.h" include nil nil [1372 1415])
+            ("ui_pqEmptyView.h" include nil nil [1416 1443])
+            ("pqActiveObjects.h" include nil nil [1445 1473])
+            ("pqApplicationCore.h" include nil nil [1474 1504])
+            ("pqCameraUndoRedoReaction.h" include nil nil [1505 1542])
+            ("pqChartSelectionReaction.h" include nil nil [1543 1580])
+            ("pqContextView.h" include nil nil [1581 1607])
+            ("pqEditCameraReaction.h" include nil nil [1608 1641])
+            ("pqInterfaceTracker.h" include nil nil [1642 1673])
+            ("pqObjectBuilder.h" include nil nil [1674 1702])
+            ("pqRenderView.h" include nil nil [1703 1728])
+            ("pqToggleInteractionViewMode.h" include nil nil [1729 1769])
+            ("pqUndoStack.h" include nil nil [1770 1794])
+            ("pqViewFrame.h" include nil nil [1795 1819])
+            ("pqViewModuleInterface.h" include nil nil [1820 1854])
+            ("pqViewSettingsReaction.h" include nil nil [1855 1890])
+            ("pqSelection3DHelper.h" include nil nil [1891 1923])
+            ("pqDataQueryReaction.h" include nil nil [1924 1956])
+            ("vtkContextScene.h" include nil nil [1958 1986])
+            ("vtkChart.h" include nil nil [1987 2008])
+            ("QMenu" include (:system-flag t) nil [2010 2026])
+            ("QPushButton" include (:system-flag t) nil [2027 2049])
+            ("QSet" include (:system-flag t) nil [2050 2065])
+            ("createChartSelectionAction" function
+               (:pointer 1
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2193 2217])
+                    ("actText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2218 2241])
+                    ("objName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2244 2267])
+                    ("actParent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2268 2287])
+                    ("selType" variable (:type "int") (reparse-symbol arg-sub-list) [2290 2302])
+                    ("actFrame" variable
+                       (:pointer 1
+                        :type ("pqViewFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2303 2325])
+                    ("chart_view" variable
+                       (:pointer 1
+                        :type ("pqContextView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2326 2352])
+                    ("enumSelAction" variable (:type "int") (reparse-symbol arg-sub-list) [2355 2373]))                  
+                :type ("QAction" type (:type "class") nil nil))
+                nil [2147 2667])
+            ("pqStandardViewFrameActionGroup" function
+               (:constructor-flag t
+                :parent "pqStandardViewFrameActionGroup"
+                :arguments 
+                  ( ("parentObject" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2812 2834]))                  
+                :type ("pqStandardViewFrameActionGroup" type (:type "class") nil nil))
+                nil [2749 2867])
+            ("pqStandardViewFrameActionGroup" function
+               (:destructor-flag t
+                :parent "pqStandardViewFrameActionGroup"
+                :type "void")
+                nil [2949 3018])
+            ("connect" function
+               (:parent "pqStandardViewFrameActionGroup"
+                :arguments 
+                  ( ("frame" variable
+                       (:pointer 1
+                        :type ("pqViewFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3146 3165])
+                    ("view" variable
+                       (:pointer 1
+                        :type ("pqView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3166 3179]))                  
+                :type "bool")
+                nil [3101 8750])
+            ("disconnect" function
+               (:parent "pqStandardViewFrameActionGroup"
+                :arguments 
+                  ( ("frame" variable
+                       (:pointer 1
+                        :type ("pqViewFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8880 8899])
+                    ("" variable
+                       (:pointer 1
+                        :type ("pqView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8900 8909]))                  
+                :type "bool")
+                nil [8832 8962])
+            ("unnamed" type
+               (:members 
+                  ( ("ViewType" type
+                       (:members 
+                          ( ("Label" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9084 9098])
+                            ("Name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9103 9116]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [9058 9123])
+                    ("ViewTypeComparator" function
+                       (:arguments 
+                          ( ("one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ViewType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9151 9171])
+                            ("two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ViewType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9172 9192]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9127 9258])
+                    ("availableViewTypes" function
+                       (:typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("ViewType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9262 9881]))                  
+                :type "namespace")
+                nil [9044 9883])
+            ("aboutToShowConvertMenu" function
+               (:parent "pqStandardViewFrameActionGroup"
+                :type "void")
+                nil [9965 10622])
+            ("setupEmptyFrame" function
+               (:parent "pqStandardViewFrameActionGroup"
+                :arguments 
+                  ( ("frame" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10757 10772]))                  
+                :type "void")
+                nil [10704 11348])
+            ("invoked" function
+               (:parent "pqStandardViewFrameActionGroup"
+                :type "void")
+                nil [11430 12396]))          
+    :file "pqStandardViewFrameActionGroup.cxx"
+    :pointmax 12397
+    :fsize 15761
+    :lastmodtime '(20912 51721)
+    :unmatched-syntax '((number 2373 . 2374) (punctuation 2372 . 2373))
+    )
+   (semanticdb-table "pqDataQueryReaction.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqDataQueryReaction.h" include nil nil [1361 1393])
+            ("pqActiveObjects.h" include nil nil [1395 1423])
+            ("pqCoreUtilities.h" include nil nil [1424 1452])
+            ("pqFiltersMenuReaction.h" include nil nil [1453 1487])
+            ("pqHelpReaction.h" include nil nil [1488 1515])
+            ("pqPVApplicationCore.h" include nil nil [1516 1548])
+            ("pqQueryDialog.h" include nil nil [1549 1575])
+            ("pqSelectionManager.h" include nil nil [1576 1607])
+            ("pqServerManagerModel.h" include nil nil [1608 1641])
+            ("vtkPVConfig.h" include nil nil [1642 1666])
+            ("QEventLoop" include (:system-flag t) nil [1668 1689])
+            ("QMessageBox" include (:system-flag t) nil [1690 1712])
+            ("pqDataQueryReaction" function
+               (:constructor-flag t
+                :parent "pqDataQueryReaction"
+                :arguments 
+                  ( ("parentObject" variable
+                       (:pointer 1
+                        :type ("QAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1835 1857]))                  
+                :type ("pqDataQueryReaction" type (:type "class") nil nil))
+                nil [1794 1890])
+            ("pqDataQueryReaction" function
+               (:destructor-flag t
+                :parent "pqDataQueryReaction"
+                :type "void")
+                nil [1972 2019])
+            ("onExtractSelection" function
+               (:parent "pqDataQueryReaction"
+                :type "void")
+                nil [2101 2221])
+            ("onExtractSelectionOverTime" function
+               (:parent "pqDataQueryReaction"
+                :type "void")
+                nil [2303 2439])
+            ("showHelp" function
+               (:parent "pqDataQueryReaction"
+                :type "void")
+                nil [2521 2647])
+            ("showQueryDialog" function
+               (:parent "pqDataQueryReaction"
+                :type "void")
+                nil [2729 4162]))          
+    :file "pqDataQueryReaction.cxx"
+    :pointmax 4163
+    :fsize 4162
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqProxyGroupMenuManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqProxyGroupMenuManager_h" variable (:constant-flag t) nil [1407 1434])
+            ("QMenu" include (:system-flag t) nil [1436 1452])
+            ("pqApplicationComponentsModule.h" include nil nil [1453 1495])
+            ("vtkPVXMLElement" type
+               (:prototype t
+                :type "class")
+                nil [1497 1519])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [1520 1537])
+            ("QObject" variable (:type "int") nil [1814 5509]))          
+    :file "pqProxyGroupMenuManager.h"
+    :pointmax 5520
+    :fsize 5528
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1807 . 1813) (punctuation 1805 . 1806) (symbol 1781 . 1804) (symbol 1750 . 1780) (CLASS 1744 . 1749))
+    :lexical-table 
+        '(("__pqProxyGroupMenuManager_h")
+          )
+
+    )
+   (semanticdb-table "pqProxyGroupMenuManager.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqProxyGroupMenuManager.h" include nil nil [1365 1401])
+            ("pqActiveObjects.h" include nil nil [1403 1431])
+            ("pqCoreUtilities.h" include nil nil [1432 1460])
+            ("pqPVApplicationCore.h" include nil nil [1461 1493])
+            ("pqServerManagerModel.h" include nil nil [1494 1527])
+            ("pqSetData.h" include nil nil [1528 1550])
+            ("pqSetName.h" include nil nil [1551 1573])
+            ("pqSettings.h" include nil nil [1574 1597])
+            ("vtkCollection.h" include nil nil [1598 1624])
+            ("vtkPVProxyDefinitionIterator.h" include nil nil [1625 1666])
+            ("vtkPVXMLElement.h" include nil nil [1667 1695])
+            ("vtkSMProxy.h" include nil nil [1696 1719])
+            ("vtkSMProxyDefinitionManager.h" include nil nil [1720 1760])
+            ("vtkSMProxyManager.h" include nil nil [1761 1791])
+            ("vtkSMSessionProxyManager.h" include nil nil [1792 1829])
+            ("vtkSmartPointer.h" include nil nil [1831 1859])
+            ("vtkNew.h" include nil nil [1860 1879])
+            ("QMenu" include (:system-flag t) nil [1881 1897])
+            ("QMap" include (:system-flag t) nil [1898 1913])
+            ("QPointer" include (:system-flag t) nil [1914 1933])
+            ("QPair" include (:system-flag t) nil [1934 1950])
+            ("QSet" include (:system-flag t) nil [1951 1966])
+            ("QStringList" include (:system-flag t) nil [1967 1989])
+            ("unnamed" type
+               (:members 
+                  ( ("findFileNameProperty" function
+                       (:arguments 
+                          ( ("proxyXML" variable
+                               (:pointer 1
+                                :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2031 2057]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2005 2397]))                  
+                :type "namespace")
+                nil [1991 2399])
+            ("pqInternal" type
+               (:parent "pqProxyGroupMenuManager"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2445 2452])
+                    ("Info" type
+                       (:members 
+                          ( ("Icon" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2477 2490])
+                            ("OmitFromToolbar" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2534 2562])
+                            ("Action" variable (:type ("QPointer" type
+                                 (:template-specifier 
+                                    ( ("QAction" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2645 2670]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2455 2706])
+                    ("ProxyInfoMap" type
+                       (:typedef ("QMap" type
+                             (:template-specifier 
+                                ( ("QPair" type nil nil nil)
+                                  ("Info" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "QMap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2710 2767])
+                    ("CategoryInfo" type
+                       (:members 
+                          ( ("Label" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2801 2815])
+                            ("PreserveOrder" variable (:type "bool") (reparse-symbol classsubparts) [2820 2839])
+                            ("ShowInToolbar" variable (:type "bool") (reparse-symbol classsubparts) [2844 2863])
+                            ("HideForTests" variable (:type "bool") (reparse-symbol classsubparts) [2868 2886])
+                            ("Proxies" variable (:type ("QList" type
+                                 (:template-specifier 
+                                    ( ("QPair" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2891 2931])
+                            ("CategoryInfo" function
+                               (:constructor-flag t
+                                :type ("CategoryInfo" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2936 3070]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2771 3077])
+                    ("CategoryInfoMap" type
+                       (:typedef ("QMap" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("CategoryInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "QMap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3081 3133])
+                    ("pqInternal" function
+                       (:constructor-flag t
+                        :type ("pqInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3137 3194])
+                    ("addProxy" function
+                       (:arguments 
+                          ( ("pgroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3212 3234])
+                            ("pname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3235 3256])
+                            ("icon" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3257 3277])
+                            ("omitFromToolbar" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3278 3310])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3311 3320]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3198 3650])
+                    ("removeProxy" function
+                       (:arguments 
+                          ( ("pgroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3671 3693])
+                            ("pname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3694 3715]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3654 3875])
+                    ("Proxies" variable (:type ("ProxyInfoMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3939 3960])
+                    ("Categories" variable (:type ("CategoryInfoMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3963 3990])
+                    ("RecentlyUsed" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QPair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3993 4038])
+                    ("ProxyDefinitionGroupToListen" variable (:type ("QSet" type
+                         (:template-specifier 
+                            ( ("QString" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4041 4084])
+                    ("CallBackIDs" variable (:type ("QSet" type
+                         (:template-specifier 
+                            ( ("unsigned long" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4087 4119])
+                    ("Widget" variable (:type ("QWidget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4122 4137])
+                    ("SearchAction" variable (:type ("QPointer" type
+                         (:template-specifier 
+                            ( ("QAction" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4140 4171])
+                    ("ProxyManagerCallBackId" variable (:type "unsigned long") (reparse-symbol classsubparts) [4174 4211])
+                    ("LocalActiveSession" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4214 4239]))                  
+                :type "class")
+                nil [2401 4242])
+            ("pqProxyGroupMenuManager" function
+               (:constructor-flag t
+                :parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("_menu" variable
+                       (:pointer 1
+                        :type ("QMenu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4376 4389])
+                    ("resourceTagName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4390 4421]))                  
+                :type ("pqProxyGroupMenuManager" type (:type "class") nil nil))
+                nil [4324 5432])
+            ("pqProxyGroupMenuManager" function
+               (:destructor-flag t
+                :parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [5514 5826])
+            ("addProxy" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("xmlgroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5950 5974])
+                    ("xmlname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5975 5998]))                  
+                :type "void")
+                nil [5908 6098])
+            ("removeProxy" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("xmlgroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6225 6249])
+                    ("xmlname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6250 6273]))                  
+                :type "void")
+                nil [6180 6365])
+            ("unnamed" type
+               (:members 
+                  ( ("pqProxyGroupMenuManagerConvertLegacyXML" function
+                       (:arguments 
+                          ( ("root" variable
+                               (:pointer 1
+                                :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6506 6528]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6461 7344]))                  
+                :type "namespace")
+                nil [6447 7346])
+            ("loadConfiguration" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7477 7499]))                  
+                :type "void")
+                nil [7429 10893])
+            ("actionTextSort" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("QAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10922 10933])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("QAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10934 10945]))                  
+                :type "bool")
+                nil [10895 10981])
+            ("populateRecentlyUsedMenu" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("rmenu" variable
+                       (:pointer 1
+                        :type ("QMenu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11118 11131]))                  
+                :type "void")
+                nil [11063 11564])
+            ("loadRecentlyUsedItems" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [11646 12322])
+            ("saveRecentlyUsedItems" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [12404 12851])
+            ("populateMenu" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [12933 15399])
+            ("getAction" function
+               (:pointer 1
+                :parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("pgroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15528 15550])
+                    ("pname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15551 15572]))                  
+                :type ("QAction" type (:type "class") nil nil))
+                nil [15481 17400])
+            ("triggered" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [17482 18230])
+            ("quickLaunch" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [18312 18462])
+            ("widgetActionsHolder" function
+               (:pointer 1
+                :parent "pqProxyGroupMenuManager"
+                :type ("QWidget" type (:type "class") nil nil))
+                nil [18544 18643])
+            ("actions" function
+               (:parent "pqProxyGroupMenuManager"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QAction" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [18725 18834])
+            ("hideForTests" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("category" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18959 18983]))                  
+                :type "bool")
+                nil [18916 19283])
+            ("getPrototype" function
+               (:pointer 1
+                :parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("QAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19415 19431]))                  
+                :type ("vtkSMProxy" type (:type "class") nil nil))
+                nil [19365 19866])
+            ("getToolbarCategories" function
+               (:parent "pqProxyGroupMenuManager"
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [19948 20388])
+            ("actions" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("category" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20519 20543]))                  
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QAction" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20470 21433])
+            ("setEnabled" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [21556 21568]))                  
+                :type "void")
+                nil [21515 21816])
+            ("addProxyDefinitionUpdateListener" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("proxyGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21960 21990]))                  
+                :type "void")
+                nil [21897 22158])
+            ("removeProxyDefinitionUpdateListener" function
+               (:parent "pqProxyGroupMenuManager"
+                :arguments 
+                  ( ("proxyGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22306 22336]))                  
+                :type "void")
+                nil [22240 22504])
+            ("removeProxyDefinitionUpdateObservers" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [22586 22876])
+            ("addProxyDefinitionUpdateObservers" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [22957 23630])
+            ("lookForNewDefinitions" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [23712 26785])
+            ("switchActiveServer" function
+               (:parent "pqProxyGroupMenuManager"
+                :type "void")
+                nil [26866 27577]))          
+    :file "pqProxyGroupMenuManager.cxx"
+    :pointmax 27578
+    :fsize 27577
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((punctuation 7346 . 7347) (semantic-list 3318 . 3320) (punctuation 3309 . 3310))
+    )
+   (semanticdb-table "pqCategoryToolbarsBehavior.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqCategoryToolbarsBehavior.h" include nil nil [1368 1407])
+            ("pqProxyGroupMenuManager.h" include nil nil [1409 1445])
+            ("pqApplicationCore.h" include nil nil [1446 1476])
+            ("pqTestUtility.h" include nil nil [1477 1503])
+            ("pqEventDispatcher.h" include nil nil [1504 1534])
+            ("pqEventTranslator.h" include nil nil [1535 1565])
+            ("QMainWindow" include (:system-flag t) nil [1567 1589])
+            ("QToolBar" include (:system-flag t) nil [1590 1609])
+            ("iostream" include (:system-flag t) nil [1611 1630])
+            ("pqCategoryToolbarsBehavior" function
+               (:constructor-flag t
+                :parent "pqCategoryToolbarsBehavior"
+                :arguments 
+                  ( ("menuManager" variable
+                       (:pointer 1
+                        :type ("pqProxyGroupMenuManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1770 1807])
+                    ("mainWindow" variable
+                       (:pointer 1
+                        :type ("QMainWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1808 1832]))                  
+                :type ("pqCategoryToolbarsBehavior" type (:type "class") nil nil))
+                nil [1712 2722])
+            ("updateToolbars" function
+               (:parent "pqCategoryToolbarsBehavior"
+                :type "void")
+                nil [2804 3938])
+            ("prepareForTest" function
+               (:parent "pqCategoryToolbarsBehavior"
+                :type "void")
+                nil [3940 4138]))          
+    :file "pqCategoryToolbarsBehavior.cxx"
+    :pointmax 4139
+    :fsize 4194
+    :lastmodtime '(20867 58914)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqCategoryToolbarsBehavior.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqCategoryToolbarsBehavior_h" variable (:constant-flag t) nil [1413 1443])
+            ("QObject" include (:system-flag t) nil [1445 1463])
+            ("QPointer" include (:system-flag t) nil [1464 1483])
+            ("QList" include (:system-flag t) nil [1484 1500])
+            ("pqApplicationComponentsModule.h" include nil nil [1501 1543])
+            ("pqProxyGroupMenuManager" type
+               (:prototype t
+                :type "class")
+                nil [1545 1575])
+            ("QMainWindow" type
+               (:prototype t
+                :type "class")
+                nil [1576 1594])
+            ("QAction" type
+               (:prototype t
+                :type "class")
+                nil [1595 1609])
+            ("QObject" variable (:type "int") nil [2204 2881]))          
+    :file "pqCategoryToolbarsBehavior.h"
+    :pointmax 2890
+    :fsize 2894
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 2197 . 2203) (punctuation 2195 . 2196) (symbol 2168 . 2194) (symbol 2137 . 2167) (CLASS 2131 . 2136))
+    :lexical-table 
+        '(("__pqCategoryToolbarsBehavior_h")
+          )
+
+    )
+   (semanticdb-table "pqCommandLineOptionsBehavior.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqCommandLineOptionsBehavior.h" include nil nil [1370 1411])
+            ("pqActiveObjects.h" include nil nil [1413 1441])
+            ("pqCollaborationEventPlayer.h" include nil nil [1442 1481])
+            ("pqComponentsTestUtility.h" include nil nil [1482 1518])
+            ("pqCoreUtilities.h" include nil nil [1519 1547])
+            ("pqDeleteReaction.h" include nil nil [1548 1577])
+            ("pqEventDispatcher.h" include nil nil [1578 1608])
+            ("pqFileDialog.h" include nil nil [1609 1634])
+            ("pqFixPathsInStateFilesBehavior.h" include nil nil [1635 1678])
+            ("pqLoadDataReaction.h" include nil nil [1679 1710])
+            ("pqLoadStateReaction.h" include nil nil [1711 1743])
+            ("pqObjectBuilder.h" include nil nil [1744 1772])
+            ("pqOptions.h" include nil nil [1773 1795])
+            ("pqPersistentMainWindowStateBehavior.h" include nil nil [1796 1844])
+            ("pqPVApplicationCore.h" include nil nil [1845 1877])
+            ("pqPythonShellReaction.h" include nil nil [1878 1912])
+            ("pqRenderView.h" include nil nil [1913 1938])
+            ("pqScalarsToColors.h" include nil nil [1939 1969])
+            ("pqServerConnectReaction.h" include nil nil [1970 2006])
+            ("pqServer.h" include nil nil [2007 2028])
+            ("pqServerManagerModel.h" include nil nil [2029 2062])
+            ("pqTabbedMultiViewWidget.h" include nil nil [2063 2099])
+            ("pqTimeKeeper.h" include nil nil [2100 2125])
+            ("pqUndoStack.h" include nil nil [2126 2150])
+            ("vtkProcessModule.h" include nil nil [2151 2180])
+            ("vtkPVConfig.h" include nil nil [2181 2205])
+            ("vtkSMPluginManager.h" include nil nil [2206 2237])
+            ("vtkSMProxyManager.h" include nil nil [2238 2268])
+            ("vtkSMProxy.h" include nil nil [2269 2292])
+            ("vtkSMStringVectorProperty.h" include nil nil [2293 2331])
+            ("QApplication" include (:system-flag t) nil [2333 2356])
+            ("QDebug" include (:system-flag t) nil [2357 2374])
+            ("QMainWindow" include (:system-flag t) nil [2375 2397])
+            ("QString" include (:system-flag t) nil [2398 2416])
+            ("QStringList" include (:system-flag t) nil [2417 2439])
+            ("QTimer" include (:system-flag t) nil [2440 2457])
+            ("pqCommandLineOptionsBehavior" function
+               (:constructor-flag t
+                :parent "pqCommandLineOptionsBehavior"
+                :arguments 
+                  ( ("parentObject" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2598 2620]))                  
+                :type ("pqCommandLineOptionsBehavior" type (:type "class") nil nil))
+                nil [2539 2721])
+            ("processCommandLineOptions" function
+               (:parent "pqCommandLineOptionsBehavior"
+                :type "void")
+                nil [2803 6807])
+            ("playTests" function
+               (:parent "pqCommandLineOptionsBehavior"
+                :type "void")
+                nil [6889 10216])
+            ("resetApplication" function
+               (:parent "pqCommandLineOptionsBehavior"
+                :type "void")
+                nil [10298 11603]))          
+    :file "pqCommandLineOptionsBehavior.cxx"
+    :pointmax 11313
+    :fsize 11595
+    :lastmodtime '(20912 64562)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pqCommandLineOptionsBehavior.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqCommandLineOptionsBehavior_h" variable (:constant-flag t) nil [1417 1449])
+            ("QObject" include (:system-flag t) nil [1451 1469])
+            ("pqApplicationComponentsModule.h" include nil nil [1470 1512])
+            ("QObject" variable (:type "int") nil [1837 2196]))          
+    :file "pqCommandLineOptionsBehavior.h"
+    :pointmax 2207
+    :fsize 2211
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1830 . 1836) (punctuation 1828 . 1829) (symbol 1799 . 1827) (symbol 1768 . 1798) (CLASS 1762 . 1767))
+    :lexical-table 
+        '(("__pqCommandLineOptionsBehavior_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Qt!ApplicationComponents!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

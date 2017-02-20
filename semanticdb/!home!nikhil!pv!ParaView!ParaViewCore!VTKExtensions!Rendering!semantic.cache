@@ -1,0 +1,115 @@
+;; Object Rendering/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Rendering/"
+  :tables (list 
+   (semanticdb-table "vtkOrderedCompositeDistributor.cxx"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "vtkOrderedCompositeDistributor.cxx"
+    :pointmax 10392
+    :fsize 10390
+    :lastmodtime '(20811 22391)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPVInteractorStyle.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "vtkPVInteractorStyle.h"
+    :pointmax 3307
+    :fsize 3306
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkCameraInterpolator2.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkCameraInterpolator2.h" include nil nil [562 597])
+            ("vtkCamera.h" include nil nil [599 621])
+            ("vtkObjectFactory.h" include nil nil [622 651])
+            ("vtkParametricSpline.h" include nil nil [652 684])
+            ("vtkPoints.h" include nil nil [685 707])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCameraInterpolator2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [729 752]))                  
+                :type "int")
+                nil [709 753])
+            ("vtkCameraInterpolator2" function
+               (:constructor-flag t
+                :parent "vtkCameraInterpolator2"
+                :type ("vtkCameraInterpolator2" type (:type "class") nil nil))
+                nil [833 1616])
+            ("vtkCameraInterpolator2" function
+               (:destructor-flag t
+                :parent "vtkCameraInterpolator2"
+                :type "void")
+                nil [1697 1888])
+            ("AddPositionPathPoint" function
+               (:parent "vtkCameraInterpolator2"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [2019 2028])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [2029 2038])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [2039 2048]))                  
+                :type "void")
+                nil [1969 2142])
+            ("ClearPositionPath" function
+               (:parent "vtkCameraInterpolator2"
+                :type "void")
+                nil [2223 2353])
+            ("AddFocalPathPoint" function
+               (:parent "vtkCameraInterpolator2"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [2481 2490])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [2491 2500])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [2501 2510]))                  
+                :type "void")
+                nil [2434 2598])
+            ("ClearFocalPath" function
+               (:parent "vtkCameraInterpolator2"
+                :type "void")
+                nil [2679 2800])
+            ("InterpolateCamera" function
+               (:parent "vtkCameraInterpolator2"
+                :arguments 
+                  ( ("u" variable (:type "double") (reparse-symbol arg-sub-list) [2928 2937])
+                    ("camera" variable
+                       (:pointer 1
+                        :type ("vtkCamera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2938 2956]))                  
+                :type "void")
+                nil [2881 3359])
+            ("Evaluate" function
+               (:parent "vtkCameraInterpolator2"
+                :arguments 
+                  ( ("u" variable (:type "double") (reparse-symbol arg-sub-list) [3478 3487])
+                    ("spline" variable
+                       (:pointer 1
+                        :type ("vtkParametricSpline" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3490 3518])
+                    ("tuple" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3521 3537]))                  
+                :type "void")
+                nil [3440 3875])
+            ("PrintSelf" function
+               (:parent "vtkCameraInterpolator2"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3995 4007])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4008 4025]))                  
+                :type "void")
+                nil [3956 4072]))          
+    :file "vtkCameraInterpolator2.cxx"
+    :pointmax 4075
+    :fsize 4074
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!VTKExtensions!Rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

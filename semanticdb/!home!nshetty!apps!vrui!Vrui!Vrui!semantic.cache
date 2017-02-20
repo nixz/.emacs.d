@@ -1,0 +1,179 @@
+;; Object Vrui/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Vrui/"
+  :tables
+  (list
+    (semanticdb-table "UIManager.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VRUI_UIMANAGER_INCLUDED" variable (:constant-flag t) nil [1227 1250])
+            ("GLMotif/WidgetArranger.h" include (:system-flag t) nil [1252 1287])
+            ("Vrui/Geometry.h" include (:system-flag t) nil [1288 1314])
+            ("Misc" type
+               (:members 
+                  ( ("ConfigurationFileSection" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1361 1392]))                  
+                :type "namespace")
+                nil [1344 1394])
+            ("Vrui" type
+               (:members 
+                  ( ("InputDevice" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1412 1430])
+                    ("GUIInteractor" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1431 1451]))                  
+                :type "namespace")
+                nil [1395 1453])
+            ("Vrui" type
+               (:members 
+                  ( ("UIManager" type
+                       (:superclasses 
+                          ( ("GLMotif::WidgetArranger" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1541 1549])
+                            ("activeGuiInteractor" variable
+                               (:pointer 1
+                                :type ("GUIInteractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1551 1586])
+                            ("mostRecentGuiInteractor" variable
+                               (:pointer 1
+                                :type ("GUIInteractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1627 1666])
+                            ("mostRecentHotSpot" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1783 1807])
+                            ("public" label nil (reparse-symbol classsubparts) [1930 1937])
+                            ("UIManager" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("configFileSection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1949 2005]))                                  
+                                :type ("UIManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1939 2006])
+                            ("canActivateGuiInteractor" function
+                               (:arguments 
+                                  ( ("guiInteractor" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GUIInteractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2127 2162]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2097 2334])
+                            ("activateGuiInteractor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("guiInteractor" variable
+                                       (:pointer 1
+                                        :type ("GUIInteractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2363 2392]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2336 2393])
+                            ("deactivateGuiInteractor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("guiInteractor" variable
+                                       (:pointer 1
+                                        :type ("GUIInteractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2503 2532]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2474 2533])
+                            ("destroyGuiInteractor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("guiInteractor" variable
+                                       (:pointer 1
+                                        :type ("GUIInteractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2640 2669]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2614 2670])
+                            ("getHotSpot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2769 2774]))                                  
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2752 2781])
+                            ("projectRay" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ray" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ray" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2865 2880]))                                  
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2840 2890])
+                            ("projectDevice" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("device" variable
+                                       (:pointer 1
+                                        :type ("InputDevice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2957 2977]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2930 2987])
+                            ("calcUITransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("point" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Point" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3097 3116]))                                  
+                                :type ("ONTransform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3061 3126])
+                            ("calcUITransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ray" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ray" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3238 3253]))                                  
+                                :type ("ONTransform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3202 3263])
+                            ("calcUITransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("device" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("InputDevice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3373 3399]))                                  
+                                :type ("ONTransform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3337 3409]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1473 3503]))                  
+                :type "namespace")
+                nil [1455 3506]))          
+      :file "UIManager.h"
+      :pointmax 3515
+      :fsize 3516
+      :lastmodtime '(22555 24185 874915 775000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VRUI_UIMANAGER_INCLUDED")
+          )
+))
+  :file "!home!nshetty!apps!vrui!Vrui!Vrui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,419 @@
+;; Object IO/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "IO/"
+  :tables
+  (list
+    (semanticdb-table "segy.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [4 22])
+            ("stdlib.h" include (:system-flag t) nil [23 42])
+            ("string.h" include (:system-flag t) nil [43 62])
+            ("segy.h" include nil nil [64 81])
+            ("segy_swap2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1939 1949]))                  
+                :type "void")
+                nil [1915 2128])
+            ("segy_swap4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2156 2166]))                  
+                :type "void")
+                nil [2132 2432])
+            ("segy_swap_bytes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2465 2476])
+                    ("nmember" variable (:type "int") (reparse-symbol arg-sub-list) [2477 2489])
+                    ("member_size" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2490 2508]))                  
+                :type "void")
+                nil [2436 2927])
+            ("segy_ebcdic_to_ascii" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2965 2975])
+                    ("nchr" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2976 2991]))                  
+                :type "void")
+                nil [2931 5754])
+            ("segy_ext_read" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("is_ebcdic" variable (:type "int") (reparse-symbol arg-sub-list) [5792 5806])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5807 5818]))                  
+                :type ("SegyTxtHdr" type (:type "class") nil nil))
+                nil [5758 6175])
+            ("SegyLink" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6200 6218])
+                          ("data" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [6223 6241]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6179 6254])
+            ("segy_chain_set" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cur_link" variable
+                       (:pointer 1
+                        :type ("SegyLink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6291 6310])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6311 6322]))                  
+                :type ("SegyLink" type (:type "class") nil nil))
+                nil [6258 6521])
+            ("segy_chain_get" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("beg_link" variable
+                       (:pointer 1
+                        :type ("SegyLink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6553 6572])
+                    ("p_data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6573 6587]))                  
+                :type "void")
+                nil [6525 6909])
+            ("segy_chain_destroy_txt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6949 6960]))                  
+                :type "void")
+                nil [6913 7026])
+            ("segy_chain_destroy_trace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7068 7079]))                  
+                :type "void")
+                nil [7030 7142])
+            ("segy_chain_destroy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("beg_link" variable
+                       (:pointer 1
+                        :type ("SegyLink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7178 7197])
+                    ("free_func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7208 7219]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [7146 7540])
+            ("segy_error_msg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7572 7588]))                  
+                :type "void")
+                nil [7544 7980])
+            ("segy_txt_hdr_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8990 8995]))                  
+                :type ("SegyTxtHdr" type (:type "class") nil nil))
+                nil [8950 9243])
+            ("segy_txt_hdr_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("txt_hdr" variable
+                       (:pointer 1
+                        :type ("SegyTxtHdr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9281 9301]))                  
+                :type "void")
+                nil [9247 9360])
+            ("segy_txt_hdr_init" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("txt_hdr" variable
+                       (:pointer 1
+                        :type ("SegyTxtHdr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9395 9415]))                  
+                :type "void")
+                nil [9364 9513])
+            ("segy_txt_hdr_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9547 9571])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9572 9583]))                  
+                :type "int")
+                nil [9517 10657])
+            ("segy_ext_hdrs_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("ext_hdrs" variable
+                       (:pointer 2
+                        :type ("SegyTxtHdr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10696 10718])
+                    ("n_ext_hdrs" variable (:type "int") (reparse-symbol arg-sub-list) [10719 10734]))                  
+                :type "void")
+                nil [10661 10922])
+            ("segy_ext_hdrs_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10957 10981])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10982 10993]))                  
+                :type "int")
+                nil [10926 15111])
+            ("segy_bin_hdr_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15558 15563]))                  
+                :type ("SegyBinHdr" type (:type "class") nil nil))
+                nil [15518 15680])
+            ("segy_bin_hdr_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("bin_hdr" variable
+                       (:pointer 1
+                        :type ("SegyBinHdr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15718 15738]))                  
+                :type "void")
+                nil [15684 15797])
+            ("segy_bin_hdr_init" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("bin_hdr" variable
+                       (:pointer 1
+                        :type ("SegyBinHdr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15832 15852]))                  
+                :type "void")
+                nil [15801 15950])
+            ("segy_bin_hdr_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15984 16008])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16009 16020]))                  
+                :type "int")
+                nil [15954 17197])
+            ("segy_header_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17643 17648]))                  
+                :type ("SegyHeader" type (:type "class") nil nil))
+                nil [17604 17777])
+            ("segy_header_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17814 17838]))                  
+                :type "void")
+                nil [17781 18054])
+            ("segy_header_init" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18088 18112]))                  
+                :type "void")
+                nil [18058 18479])
+            ("segy_header_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18512 18536])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18537 18548]))                  
+                :type "int")
+                nil [18483 19051])
+            ("segy_trace_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19495 19500]))                  
+                :type ("SegyTrace" type (:type "class") nil nil))
+                nil [19458 19609])
+            ("segy_trace_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("trace" variable
+                       (:pointer 1
+                        :type ("SegyTrace" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19645 19662]))                  
+                :type "void")
+                nil [19613 19780])
+            ("segy_trace_init" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("trace" variable
+                       (:pointer 1
+                        :type ("SegyTrace" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19813 19830]))                  
+                :type "void")
+                nil [19784 20029])
+            ("segy_trace_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("trace" variable
+                       (:pointer 1
+                        :type ("SegyTrace" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20061 20078])
+                    ("segy_header" variable
+                       (:pointer 1
+                        :type ("SegyHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20079 20103])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20132 20143]))                  
+                :type "int")
+                nil [20033 22491])
+            ("segy_traces_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("traces" variable
+                       (:pointer 2
+                        :type ("SegyTrace" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22528 22547])
+                    ("n_traces" variable (:type "int") (reparse-symbol arg-sub-list) [22548 22561]))                  
+                :type "void")
+                nil [22495 22738])
+            ("segy_traces_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_data" variable
+                       (:pointer 1
+                        :type ("SegyData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22771 22791])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22792 22803]))                  
+                :type "int")
+                nil [22742 23723])
+            ("segy_data_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24165 24170]))                  
+                :type ("SegyData" type (:type "class") nil nil))
+                nil [24130 24289])
+            ("segy_data_destroy" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_data" variable
+                       (:pointer 1
+                        :type ("SegyData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24324 24344]))                  
+                :type "void")
+                nil [24293 24495])
+            ("segy_data_init" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_data" variable
+                       (:pointer 1
+                        :type ("SegyData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24527 24547]))                  
+                :type "void")
+                nil [24499 24741])
+            ("segy_data_read" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("segy_data" variable
+                       (:pointer 1
+                        :type ("SegyData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24772 24792])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24793 24804]))                  
+                :type "int")
+                nil [24745 25504])
+            ("segy_file_read" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25541 25563]))                  
+                :type ("SegyData" type (:type "class") nil nil))
+                nil [25508 26063]))          
+      :file "segy.cpp"
+      :pointmax 26064
+      :fsize 26063
+      :lastmodtime '(22386 61397 447592 141000)
+      :unmatched-syntax nil)
+    (semanticdb-table "segy.h"
+      :file "segy.h"
+      :fsize 22753
+      :lastmodtime '(22386 60024 989846 511000)))
+  :file "!home!nshetty!Tools!Toirt-Samhlaigh!Toirt-Samhlaigh!source!IO!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

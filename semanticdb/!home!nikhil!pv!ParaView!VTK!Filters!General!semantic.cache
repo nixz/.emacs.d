@@ -1,0 +1,137 @@
+;; Object General/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "General/"
+  :tables (list 
+   (semanticdb-table "vtkTransformFilter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkTransformFilter.h" include nil nil [592 623])
+            ("vtkCellData.h" include nil nil [625 649])
+            ("vtkFloatArray.h" include nil nil [650 676])
+            ("vtkImageData.h" include nil nil [677 702])
+            ("vtkImageDataToPointSet.h" include nil nil [703 738])
+            ("vtkInformation.h" include nil nil [739 766])
+            ("vtkInformationVector.h" include nil nil [767 800])
+            ("vtkLinearTransform.h" include nil nil [801 832])
+            ("vtkObjectFactory.h" include nil nil [833 862])
+            ("vtkPointData.h" include nil nil [863 888])
+            ("vtkPointSet.h" include nil nil [889 913])
+            ("vtkRectilinearGrid.h" include nil nil [914 945])
+            ("vtkRectilinearGridToPointSet.h" include nil nil [946 987])
+            ("vtkStructuredGrid.h" include nil nil [988 1018])
+            ("vtkNew.h" include nil nil [1020 1039])
+            ("vtkSmartPointer.h" include nil nil [1040 1068])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkTransformFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1090 1109]))                  
+                :type "int")
+                nil [1070 1110])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkTransformFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1132 1151])
+                    ("" variable (:type ("Transform" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1151 1161])
+                    ("" variable (:type ("vtkAbstractTransform" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1182]))                  
+                :type "int")
+                nil [1111 1183])
+            ("vtkTransformFilter" function
+               (:constructor-flag t
+                :parent "vtkTransformFilter"
+                :type ("vtkTransformFilter" type (:type "class") nil nil))
+                nil [1185 1255])
+            ("vtkTransformFilter" function
+               (:destructor-flag t
+                :parent "vtkTransformFilter"
+                :type "void")
+                nil [1257 1330])
+            ("FillInputPortInformation" function
+               (:parent "vtkTransformFilter"
+                :arguments 
+                  ( ("vtkNotUsed" variable (:type "int") (reparse-symbol arg-sub-list) [1381 1401])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1452 1473]))                  
+                :type "int")
+                nil [1332 1774])
+            ("RequestDataObject" function
+               (:parent "vtkTransformFilter"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1818 1842])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1885 1920])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1963 1998]))                  
+                :type "int")
+                nil [1776 2655])
+            ("RequestData" function
+               (:parent "vtkTransformFilter"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2696 2731])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2735 2770])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2773 2808]))                  
+                :type "int")
+                nil [2657 7422])
+            ("GetMTime" function
+               (:parent "vtkTransformFilter"
+                :type "unsigned long")
+                nil [7424 7704])
+            ("PrintSelf" function
+               (:parent "vtkTransformFilter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7741 7753])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7754 7771]))                  
+                :type "void")
+                nil [7706 7878]))          
+    :file "vtkTransformFilter.cxx"
+    :pointmax 7879
+    :fsize 7878
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((semantic-list 2722 . 2731) (semantic-list 1395 . 1401))
+    )
+   (semanticdb-table "vtkTransformFilter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkTransformFilter_h" variable (:constant-flag t) nil [1450 1472])
+            ("vtkFiltersGeneralModule.h" include nil nil [1474 1510])
+            ("vtkPointSetAlgorithm.h" include nil nil [1531 1564])
+            ("vtkAbstractTransform" type
+               (:prototype t
+                :type "class")
+                nil [1566 1593])
+            ("vtkPointSetAlgorithm" variable (:type "int") nil [1654 2721]))          
+    :file "vtkTransformFilter.h"
+    :pointmax 2730
+    :fsize 2729
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1647 . 1653) (punctuation 1645 . 1646) (symbol 1626 . 1644) (symbol 1601 . 1625) (CLASS 1595 . 1600))
+    :lexical-table 
+        '(("__vtkTransformFilter_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Filters!General!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

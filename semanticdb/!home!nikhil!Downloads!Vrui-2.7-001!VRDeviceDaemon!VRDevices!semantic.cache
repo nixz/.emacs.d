@@ -1,0 +1,552 @@
+;; Object VRDevices/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "VRDevices/"
+  :tables (list 
+   (semanticdb-table "VRPNConnection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VRPNCONNECTION_INCLUDED" variable (:constant-flag t) nil [1129 1152])
+            ("utility" include (:system-flag t) nil [1154 1172])
+            ("vector" include (:system-flag t) nil [1173 1190])
+            ("Misc/HashTable.h" include (:system-flag t) nil [1191 1218])
+            ("Comm/UDPSocket.h" include (:system-flag t) nil [1219 1246])
+            ("Comm/TCPSocket.h" include (:system-flag t) nil [1247 1274])
+            ("Vrui/Internal/VRDeviceState.h" include (:system-flag t) nil [1275 1315])
+            ("Misc" type
+               (:members 
+                  ( ("Time" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1362 1373]))                  
+                :type "namespace")
+                nil [1345 1375])
+            ("VRPNConnection" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1427 1434])
+                    ("TrackerState" type
+                       (:typedef ("Vrui::VRDeviceState::TrackerState" type (:type "class") nil nil)
+                        :superclasses "Vrui::VRDeviceState::TrackerState"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1436 1491])
+                    ("PositionOrientation" type
+                       (:typedef ("TrackerState::PositionOrientation" type (:type "class") nil nil)
+                        :superclasses "TrackerState::PositionOrientation"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1493 1555])
+                    ("LinearVelocity" type
+                       (:typedef ("TrackerState::LinearVelocity" type (:type "class") nil nil)
+                        :superclasses "TrackerState::LinearVelocity"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1557 1609])
+                    ("AngularVelocity" type
+                       (:typedef ("TrackerState::AngularVelocity" type (:type "class") nil nil)
+                        :superclasses "TrackerState::AngularVelocity"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1611 1665])
+                    ("ButtonState" type
+                       (:typedef ("Vrui::VRDeviceState::ButtonState" type (:type "class") nil nil)
+                        :superclasses "Vrui::VRDeviceState::ButtonState"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1667 1720])
+                    ("ValuatorState" type
+                       (:typedef ("Vrui::VRDeviceState::ValuatorState" type (:type "class") nil nil)
+                        :superclasses "Vrui::VRDeviceState::ValuatorState"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1722 1779])
+                    ("private" label nil (reparse-symbol classsubparts) [1782 1790])
+                    ("ServiceType" type
+                       (:members 
+                          ( ("RELIABLE" variable
+                               (:constant-flag t
+                                :default-value (1866 1869)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1857 1869])
+                            ("FIXED_LATENCY" variable
+                               (:constant-flag t
+                                :default-value (1887 1890)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1873 1890])
+                            ("LOW_LATENCY" variable
+                               (:constant-flag t
+                                :default-value (1906 1909)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1894 1909])
+                            ("FIXED_THROUGHPUT" variable
+                               (:constant-flag t
+                                :default-value (1930 1933)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1913 1933])
+                            ("HIGH_THROUGHPUT" variable
+                               (:constant-flag t
+                                :default-value (1953 1957)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1937 1957]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1792 1962])
+                    ("SystemMessageType" type
+                       (:members 
+                          ( ("SENDER_DESCRIPTION" variable
+                               (:constant-flag t
+                                :default-value (2062 2064)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2043 2064])
+                            ("TYPE_DESCRIPTION" variable
+                               (:constant-flag t
+                                :default-value (2085 2087)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2068 2087])
+                            ("UDP_DESCRIPTION" variable
+                               (:constant-flag t
+                                :default-value (2107 2109)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2091 2109])
+                            ("LOG_DESCRIPTION" variable
+                               (:constant-flag t
+                                :default-value (2129 2131)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2113 2131])
+                            ("DISCONNECT_MESSAGE" variable
+                               (:constant-flag t
+                                :default-value (2154 2156)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2135 2156]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1965 2161])
+                    ("SenderDescriptor" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2272 2279])
+                            ("trackerIndexBase" variable (:type "int") (reparse-symbol classsubparts) [2282 2303])
+                            ("numTrackers" variable (:type "int") (reparse-symbol classsubparts) [2351 2367])
+                            ("buttonIndexBase" variable (:type "int") (reparse-symbol classsubparts) [2407 2427])
+                            ("numButtons" variable (:type "int") (reparse-symbol classsubparts) [2474 2489])
+                            ("valuatorIndexBase" variable (:type "int") (reparse-symbol classsubparts) [2528 2550])
+                            ("numValuators" variable (:type "int") (reparse-symbol classsubparts) [2599 2616])
+                            ("SenderDescriptor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2713 2718]))                                  
+                                :type ("SenderDescriptor" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2696 2850]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2164 2855])
+                    ("SenderRequest" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("SenderDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2858 2920])
+                    ("SenderHasher" type
+                       (:typedef ("Misc::HashTable" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil)
+                                  ("SenderDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Misc::HashTable"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2973 3041])
+                    ("alignment" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3107 3136])
+                    ("size_t" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3248 3258]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3240 3261])
+                    ("versionMessage" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3305 3339])
+                    ("versionMessageLength" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3393 3431])
+                    ("tcpSocket" variable (:type ("Comm::TCPSocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3466 3492])
+                    ("udpSocket" variable (:type ("Comm::UDPSocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3559 3585])
+                    ("udpSocketConnected" variable (:type "bool") (reparse-symbol classsubparts) [3666 3690])
+                    ("messageBufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3750 3775])
+                    ("messageBuffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3838 3858])
+                    ("requestedSenders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("SenderRequest" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3890 3934])
+                    ("senders" variable (:type ("SenderHasher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3981 4002])
+                    ("trackerPosQuatMessage" variable (:type "int") (reparse-symbol classsubparts) [4097 4123])
+                    ("trackerVelocityMessage" variable (:type "int") (reparse-symbol classsubparts) [4170 4197])
+                    ("buttonChangeMessage" variable (:type "int") (reparse-symbol classsubparts) [4232 4256])
+                    ("analogChannelMessage" variable (:type "int") (reparse-symbol classsubparts) [4303 4328])
+                    ("flipZAxis" variable (:type "bool") (reparse-symbol classsubparts) [4377 4392])
+                    ("pad" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4506 4518]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4488 4614])
+                    ("sendMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("messageSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4633 4652])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Misc::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4652 4675])
+                            ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [4675 4691])
+                            ("sender" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4691 4711])
+                            ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4711 4731])
+                            ("serviceType" variable (:type "int") (reparse-symbol arg-sub-list) [4731 4747]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4616 4748])
+                    ("handleMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("messageTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Misc::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4807 4837])
+                            ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [4837 4853])
+                            ("sender" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4853 4873])
+                            ("messageSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4873 4892])
+                            ("message" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4892 4906]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4788 4907])
+                    ("protected" label nil (reparse-symbol classsubparts) [4987 4997])
+                    ("updateTrackerPosition" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("trackerIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5034 5051])
+                            ("positionOrientation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PositionOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5051 5098]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4999 5102])
+                    ("updateTrackerVelocity" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("trackerIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5184 5201])
+                            ("linearVelocity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LinearVelocity" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5201 5238])
+                            ("angularVelocity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AngularVelocity" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5238 5277]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5149 5281])
+                    ("updateButtonState" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("buttonIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5345 5361])
+                            ("newState" variable (:type ("ButtonState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5361 5382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5314 5386])
+                    ("updateValuatorState" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("valuatorIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5446 5464])
+                            ("newState" variable (:type ("ValuatorState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5464 5487]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5413 5491])
+                    ("finalizePacket" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5548 5553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5520 5554])
+                    ("public" label nil (reparse-symbol classsubparts) [5662 5669])
+                    ("VRPNConnection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("serverName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5686 5709])
+                            ("serverPort" variable (:type "int") (reparse-symbol arg-sub-list) [5709 5725]))                          
+                        :type ("VRPNConnection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5671 5731])
+                    ("VRPNConnection" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5813 5818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5789 5819])
+                    ("requestTrackers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("senderName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5859 5882])
+                            ("trackerIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [5882 5903])
+                            ("numTrackers" variable (:type "int") (reparse-symbol arg-sub-list) [5903 5919]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5838 5920])
+                    ("setFlipZAxis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newFlipZAxis" variable (:type "bool") (reparse-symbol arg-sub-list) [5965 5983]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5947 5984])
+                    ("requestButtons" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("senderName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6100 6123])
+                            ("buttonIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [6123 6143])
+                            ("numButtons" variable (:type "int") (reparse-symbol arg-sub-list) [6143 6158]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6080 6159])
+                    ("requestValuators" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("senderName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6207 6230])
+                            ("valuatorIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [6230 6252])
+                            ("numValuators" variable (:type "int") (reparse-symbol arg-sub-list) [6252 6269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6185 6270])
+                    ("readNextMessages" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6320 6325]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6298 6326]))                  
+                :type "class")
+                nil [1377 6404]))          
+    :file "VRPNConnection.h"
+    :pointmax 6413
+    :fsize 6425
+    :lastmodtime '(19392 23784)
+    :unmatched-syntax '((number 5725 . 5729) (punctuation 5724 . 5725) (number 3258 . 3259) (punctuation 3257 . 3258) (punctuation 3239 . 3240) (symbol 3226 . 3239) (symbol 3219 . 3225) (CONST 3213 . 3218) (STATIC 3206 . 3212))
+    :lexical-table 
+        '(("VRPNCONNECTION_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "VRPNConnection.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VRPNCONNECTION_USE_UDP" variable (:constant-flag t) nil [1097 1119])
+            ("VRDeviceDaemon/VRDevices/VRPNConnection.h" include (:system-flag t) nil [1123 1175])
+            ("string.h" include (:system-flag t) nil [1177 1196])
+            ("stdio.h" include (:system-flag t) nil [1197 1215])
+            ("sys/types.h" include (:system-flag t) nil [1216 1238])
+            ("string" include (:system-flag t) nil [1239 1256])
+            ("Misc/Endianness.h" include (:system-flag t) nil [1257 1285])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1286 1315])
+            ("Misc/Time.h" include (:system-flag t) nil [1316 1338])
+            ("Misc/FdSet.h" include (:system-flag t) nil [1339 1362])
+            ("unnamed" type
+               (:members 
+                  ( ("buffer" function
+                       (:template 
+                          ( ("DataParam" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1480 1486])
+                            ("" variable (:type ("bufferPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1487 1497])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DataParam" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1499 1521]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1432 1738])
+                    ("unbuffer" function
+                       (:template 
+                          ( ("DataParam" type (:type "class") nil nil))                          
+                        :type ("DataParam" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1795 1801])
+                            ("" variable (:type ("bufferPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1802 1812]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1740 2031]))                  
+                :type "namespace")
+                nil [1364 2034])
+            ("VRPNConnection::versionMessage" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [2160 2222])
+            ("VRPNConnection::versionMessageLength" variable
+               (:constant-flag t
+                :type "int")
+                nil [2223 2273])
+            ("sendMessage" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("messageSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2408 2427])
+                    ("time" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Misc::Time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2427 2450])
+                    ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [2450 2466])
+                    ("sender" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2466 2486])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2486 2506])
+                    ("serviceType" variable (:type "int") (reparse-symbol arg-sub-list) [2506 2522]))                  
+                :type "void")
+                nil [2375 3713])
+            ("handleMessage" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("messageTime" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Misc::Time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3750 3780])
+                    ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [3780 3796])
+                    ("sender" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3796 3816])
+                    ("messageSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3816 3835])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3835 3849]))                  
+                :type "void")
+                nil [3715 9893])
+            ("finalizePacket" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9931 9936]))                  
+                :type "void")
+                nil [9895 9963])
+            ("VRPNConnection" function
+               (:constructor-flag t
+                :parent "VRPNConnection"
+                :arguments 
+                  ( ("serverName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9996 10019])
+                    ("serverPort" variable (:type "int") (reparse-symbol arg-sub-list) [10019 10034]))                  
+                :type ("VRPNConnection" type (:type "class") nil nil))
+                nil [9965 15713])
+            ("VRPNConnection" function
+               (:destructor-flag t
+                :parent "VRPNConnection"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15747 15752]))                  
+                :type "void")
+                nil [15715 15783])
+            ("requestTrackers" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("senderName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15822 15845])
+                    ("trackerIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [15845 15866])
+                    ("numTrackers" variable (:type "int") (reparse-symbol arg-sub-list) [15866 15882]))                  
+                :type "void")
+                nil [15785 16878])
+            ("setFlipZAxis" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("newFlipZAxis" variable (:type "bool") (reparse-symbol arg-sub-list) [16914 16932]))                  
+                :type "void")
+                nil [16880 16993])
+            ("requestButtons" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("senderName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17031 17054])
+                    ("buttonIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [17054 17074])
+                    ("numButtons" variable (:type "int") (reparse-symbol arg-sub-list) [17074 17089]))                  
+                :type "void")
+                nil [16995 18076])
+            ("requestValuators" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("senderName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18116 18139])
+                    ("valuatorIndexBase" variable (:type "int") (reparse-symbol arg-sub-list) [18139 18161])
+                    ("numValuators" variable (:type "int") (reparse-symbol arg-sub-list) [18161 18178]))                  
+                :type "void")
+                nil [18078 19183])
+            ("readNextMessages" function
+               (:parent "VRPNConnection"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19223 19228]))                  
+                :type "void")
+                nil [19185 22858]))          
+    :file "VRPNConnection.cpp"
+    :pointmax 22859
+    :fsize 23050
+    :lastmodtime '(19875 31395)
+    :unmatched-syntax '((punctuation 1800 . 1801) (punctuation 1485 . 1486))
+    :lexical-table 
+        '(("VRPNCONNECTION_USE_UDP" . ((number "0" 1120 . 1121)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!Downloads!Vrui-2.7-001!VRDeviceDaemon!VRDevices!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

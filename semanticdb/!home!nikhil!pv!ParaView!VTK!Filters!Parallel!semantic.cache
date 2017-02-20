@@ -1,0 +1,1092 @@
+;; Object Parallel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Parallel/"
+  :tables (list 
+   (semanticdb-table "vtkPExtractArraysOverTime.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPExtractArraysOverTime_h" variable (:constant-flag t) nil [1602 1631])
+            ("vtkFiltersParallelModule.h" include nil nil [1633 1670])
+            ("vtkExtractArraysOverTime.h" include nil nil [1691 1728])
+            ("vtkMultiProcessController" type
+               (:prototype t
+                :type "class")
+                nil [1730 1762])
+            ("vtkTable" type
+               (:prototype t
+                :type "class")
+                nil [1763 1778])
+            ("vtkExtractArraysOverTime" variable (:type "int") nil [1847 2898]))          
+    :file "vtkPExtractArraysOverTime.h"
+    :pointmax 2910
+    :fsize 2909
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1840 . 1846) (punctuation 1838 . 1839) (symbol 1812 . 1837) (symbol 1786 . 1811) (CLASS 1780 . 1785))
+    :lexical-table 
+        '(("__vtkPExtractArraysOverTime_h")
+          )
+
+    )
+   (semanticdb-table "vtkPExtractArraysOverTime.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPExtractArraysOverTime.h" include nil nil [599 637])
+            ("vtkCompositeDataIterator.h" include nil nil [639 676])
+            ("vtkDataSetAttributes.h" include nil nil [677 710])
+            ("vtkInformation.h" include nil nil [711 738])
+            ("vtkMultiBlockDataSet.h" include nil nil [739 772])
+            ("vtkMultiProcessController.h" include nil nil [773 811])
+            ("vtkMultiProcessStream.h" include nil nil [812 846])
+            ("vtkObjectFactory.h" include nil nil [847 876])
+            ("vtkSelectionNode.h" include nil nil [877 906])
+            ("vtkTable.h" include nil nil [907 928])
+            ("vtkUnsignedCharArray.h" include nil nil [929 962])
+            ("string" include (:system-flag t) nil [964 981])
+            ("assert.h" include (:system-flag t) nil [982 1001])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPExtractArraysOverTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1023 1049]))                  
+                :type "int")
+                nil [1003 1050])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPExtractArraysOverTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1072 1098])
+                    ("" variable (:type ("Controller" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1099 1110])
+                    ("" variable (:type ("vtkMultiProcessController" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1111 1137]))                  
+                :type "int")
+                nil [1051 1138])
+            ("vtkPExtractArraysOverTime" function
+               (:constructor-flag t
+                :parent "vtkPExtractArraysOverTime"
+                :type ("vtkPExtractArraysOverTime" type (:type "class") nil nil))
+                nil [1218 1373])
+            ("vtkPExtractArraysOverTime" function
+               (:destructor-flag t
+                :parent "vtkPExtractArraysOverTime"
+                :type "void")
+                nil [1454 1539])
+            ("PrintSelf" function
+               (:parent "vtkPExtractArraysOverTime"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1662 1674])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1675 1692]))                  
+                :type "void")
+                nil [1620 1800])
+            ("PostExecute" function
+               (:parent "vtkPExtractArraysOverTime"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1928 1952])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1955 1990])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2028]))                  
+                :type "void")
+                nil [1881 4273])
+            ("AddRemoteData" function
+               (:parent "vtkPExtractArraysOverTime"
+                :arguments 
+                  ( ("remoteOutput" variable
+                       (:pointer 1
+                        :type ("vtkMultiBlockDataSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4403 4438])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("vtkMultiBlockDataSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4439 4468]))                  
+                :type "void")
+                nil [4354 6291])
+            ("MergeTables" function
+               (:parent "vtkPExtractArraysOverTime"
+                :arguments 
+                  ( ("routput" variable
+                       (:pointer 1
+                        :type ("vtkTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6419 6437])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("vtkTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6438 6455]))                  
+                :type "void")
+                nil [6372 8311]))          
+    :file "vtkPExtractArraysOverTime.cxx"
+    :pointmax 8312
+    :fsize 8311
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkPKdTree.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPKdTree.h" include nil nil [856 879])
+            ("vtkKdNode.h" include nil nil [880 902])
+            ("vtkDataSet.h" include nil nil [903 926])
+            ("vtkCellCenters.h" include nil nil [927 954])
+            ("vtkPoints.h" include nil nil [955 977])
+            ("vtkUnstructuredGrid.h" include nil nil [978 1010])
+            ("vtkObjectFactory.h" include nil nil [1011 1040])
+            ("vtkMultiProcessController.h" include nil nil [1041 1079])
+            ("vtkSocketController.h" include nil nil [1080 1112])
+            ("vtkTimerLog.h" include nil nil [1113 1137])
+            ("vtkCellData.h" include nil nil [1138 1162])
+            ("vtkPointData.h" include nil nil [1163 1188])
+            ("vtkIntArray.h" include nil nil [1189 1213])
+            ("vtkIdList.h" include nil nil [1214 1236])
+            ("vtkSubGroup.h" include nil nil [1237 1261])
+            ("vtkCommand.h" include nil nil [1262 1285])
+            ("queue" include (:system-flag t) nil [1287 1303])
+            ("algorithm" include (:system-flag t) nil [1304 1324])
+            ("assert.h" include (:system-flag t) nil [1325 1344])
+            ("TIMER" variable (:constant-flag t) nil [2260 2265])
+            ("TIMERDONE" variable (:constant-flag t) nil [2277 2286])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPKdTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2380 2391]))                  
+                :type "int")
+                nil [2360 2392])
+            ("vtkPKdTree::NoRegionAssignment" variable
+               (:constant-flag t
+                :type "int")
+                nil [2394 2439])
+            ("vtkPKdTree::ContiguousAssignment" variable
+               (:constant-flag t
+                :type "int")
+                nil [2453 2500])
+            ("vtkPKdTree::UserDefinedAssignment" variable
+               (:constant-flag t
+                :type "int")
+                nil [2534 2582])
+            ("vtkPKdTree::RoundRobinAssignment" variable
+               (:constant-flag t
+                :type "int")
+                nil [2583 2631])
+            ("FreeList" variable (:constant-flag t) nil [2641 2649])
+            ("FreeObject" variable (:constant-flag t) nil [2707 2717])
+            ("VTKERROR" variable (:constant-flag t) nil [2777 2785])
+            ("VTKWARNING" variable (:constant-flag t) nil [2884 2894])
+            ("vtkPKdTree" function
+               (:constructor-flag t
+                :parent "vtkPKdTree"
+                :type ("vtkPKdTree" type (:type "class") nil nil))
+                nil [2990 3500])
+            ("vtkPKdTree" function
+               (:destructor-flag t
+                :parent "vtkPKdTree"
+                :type "void")
+                nil [3501 3749])
+            ("SetController" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("vtkMultiProcessController" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3781 3810]))                  
+                :type "void")
+                nil [3750 4490])
+            ("AllCheckForFailure" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("rc" variable (:type "int") (reparse-symbol arg-sub-list) [4761 4768])
+                    ("where" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4769 4787])
+                    ("how" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4788 4804]))                  
+                :type "int")
+                nil [4726 5241])
+            ("AllCheckParameters" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [5243 6383])
+            ("BoundsToMinMax" variable (:constant-flag t) nil [6393 6407])
+            ("MinMaxToBounds" variable (:constant-flag t) nil [6605 6619])
+            ("BoundsToMinMaxUpdate" variable (:constant-flag t) nil [6817 6837])
+            ("VolumeBounds" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("volBounds" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7272 7290]))                  
+                :type "bool")
+                nil [7242 9027])
+            ("BuildLocator" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [9106 11188])
+            ("MultiProcessBuildLocator" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("volBounds" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11230 11248]))                  
+                :type "int")
+                nil [11189 13789])
+            ("SingleProcessBuildLocator" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [13791 14043])
+            ("vtkNodeInfo" type
+               (:typedef ("_vtkNodeInfo" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_vtkNodeInfo"
+                :type "typedef")
+                nil [14044 14138])
+            ("_vtkNodeInfo" type
+               (:members 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14075 14089])
+                    ("L" variable (:type "int") (reparse-symbol classsubparts) [14092 14098])
+                    ("level" variable (:type "int") (reparse-symbol classsubparts) [14101 14111])
+                    ("tag" variable (:type "int") (reparse-symbol classsubparts) [14114 14122]))                  
+                :type "struct")
+                nil [14044 14138])
+            ("ENQUEUE" variable (:constant-flag t) nil [14148 14155])
+            ("BreadthFirstDivide" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("volBounds" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [14379 14397]))                  
+                :type "int")
+                nil [14344 16124])
+            ("DivideRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16154 16168])
+                    ("L" variable (:type "int") (reparse-symbol arg-sub-list) [16169 16175])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [16176 16186])
+                    ("tag" variable (:type "int") (reparse-symbol arg-sub-list) [16187 16195]))                  
+                :type "int")
+                nil [16125 21218])
+            ("ExchangeVals" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos1" variable (:type "int") (reparse-symbol arg-sub-list) [21250 21259])
+                    ("pos2" variable (:type "int") (reparse-symbol arg-sub-list) [21260 21269]))                  
+                :type "void")
+                nil [21220 22056])
+            ("sign" variable (:constant-flag t) nil [22375 22379])
+            ("max" variable (:constant-flag t) nil [22424 22427])
+            ("min" variable (:constant-flag t) nil [22480 22483])
+            ("_select" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [22542 22548])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [22549 22555])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [22556 22562])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [22563 22571]))                  
+                :type "void")
+                nil [22517 24467])
+            ("Select" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [24491 24499])
+                    ("L" variable (:type "int") (reparse-symbol arg-sub-list) [24500 24506])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [24507 24513]))                  
+                :type "int")
+                nil [24468 26322])
+            ("_whoHas" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [26348 26354])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [26355 26361])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [26362 26370]))                  
+                :type "int")
+                nil [26324 26633])
+            ("WhoHas" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [26657 26665]))                  
+                :type "int")
+                nil [26634 26794])
+            ("GetLocalVal" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [26826 26834]))                  
+                :type "float")
+                nil [26795 27044])
+            ("GetLocalValNext" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [27080 27088]))                  
+                :type "float")
+                nil [27045 27295])
+            ("SetLocalVal" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [27325 27333])
+                    ("val" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [27334 27345]))                  
+                :type "void")
+                nil [27296 27710])
+            ("ExchangeLocalVals" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos1" variable (:type "int") (reparse-symbol arg-sub-list) [27746 27755])
+                    ("pos2" variable (:type "int") (reparse-symbol arg-sub-list) [27756 27765]))                  
+                :type "void")
+                nil [27711 28149])
+            ("DoTransfer" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("from" variable (:type "int") (reparse-symbol arg-sub-list) [28179 28188])
+                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [28189 28196])
+                    ("fromIndex" variable (:type "int") (reparse-symbol arg-sub-list) [28197 28211])
+                    ("toIndex" variable (:type "int") (reparse-symbol arg-sub-list) [28212 28224])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [28225 28235]))                  
+                :type "void")
+                nil [28151 28832])
+            ("PartitionSubArray" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [29254 29260])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [29261 29267])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [29268 29274])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [29275 29283])
+                    ("p1" variable (:type "int") (reparse-symbol arg-sub-list) [29284 29291])
+                    ("p2" variable (:type "int") (reparse-symbol arg-sub-list) [29292 29299]))                  
+                :type "int")
+                nil [29219 35689])
+            ("PartitionAboutOtherValue" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [36455 36461])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [36462 36468])
+                    ("T" variable (:type "float") (reparse-symbol arg-sub-list) [36469 36477])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [36478 36486]))                  
+                :type "int")
+                nil [36413 39626])
+            ("PartitionAboutMyValue" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [40165 40171])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [40172 40178])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [40179 40185])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [40186 40194]))                  
+                :type "int")
+                nil [40126 42377])
+            ("GetLocalMinMax" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [42601 42607])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [42608 42614])
+                    ("me" variable (:type "int") (reparse-symbol arg-sub-list) [42615 42622])
+                    ("" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42655 42666])
+                    ("" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42667 42678]))                  
+                :type "void")
+                nil [42569 43669])
+            ("DataBounds" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("L" variable (:type "int") (reparse-symbol arg-sub-list) [43700 43706])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [43707 43713])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [43714 43720]))                  
+                :type "float")
+                nil [43670 45025])
+            ("CompleteTree" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [45283 46366])
+            ("PackData" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46394 46408])
+                    ("data" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [46409 46422]))                  
+                :type "void")
+                nil [46368 47275])
+            ("UnpackData" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47304 47318])
+                    ("data" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [47319 47332]))                  
+                :type "void")
+                nil [47276 48470])
+            ("ReduceData" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48499 48513])
+                    ("sources" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [48514 48527]))                  
+                :type "void")
+                nil [48471 49834])
+            ("BroadcastData" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49866 49880]))                  
+                :type "void")
+                nil [49835 50219])
+            ("CheckFixRegionBoundaries" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("tree" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50262 50278]))                  
+                :type "void")
+                nil [50220 51205])
+            ("FillOutTree" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52449 52463])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [52464 52474]))                  
+                :type "int")
+                nil [52421 53159])
+            ("ComputeDepth" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53190 53204]))                  
+                :type "int")
+                nil [53161 53588])
+            ("AllocateDoubleBuffer" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [53756 54050])
+            ("SwitchDoubleBuffer" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [54051 54203])
+            ("FreeDoubleBuffer" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [54204 54339])
+            ("AllocateSelectBuffer" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [54341 54510])
+            ("FreeSelectBuffer" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [54511 54653])
+            ("FreeListOfLists" variable (:constant-flag t) nil [54663 54678])
+            ("MakeList" variable (:constant-flag t) nil [55129 55137])
+            ("InitializeGlobalIndexLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [55586 55710])
+            ("AllocateAndZeroGlobalIndexLists" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [55711 56172])
+            ("FreeGlobalIndexLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [56173 56280])
+            ("BuildGlobalIndexLists" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("numMyCells" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56319 56340]))                  
+                :type "int")
+                nil [56281 57075])
+            ("InitializeRegionAssignmentLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [57151 57353])
+            ("AllocateAndZeroRegionAssignmentLists" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [57354 57960])
+            ("FreeRegionAssignmentLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [57961 58193])
+            ("InitializeProcessDataLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [58268 58510])
+            ("AllocateAndZeroProcessDataLists" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [58512 59414])
+            ("FreeProcessDataLists" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [59415 59809])
+            ("InitializeFieldArrayMinMax" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [59882 60138])
+            ("AllocateAndZeroFieldArrayMinMax" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [60140 61432])
+            ("FreeFieldArrayMinMax" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [61433 61776])
+            ("ReleaseTables" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [61778 61984])
+            ("CreateProcessCellCountData" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [62206 66449])
+            ("CreateGlobalDataArrayBounds" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [66663 69262])
+            ("CollectLocalRegionProcessData" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :type "int")
+                nil [69263 70188])
+            ("AddEntry" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [70215 70225])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [70226 70234])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [70235 70242]))                  
+                :type "void")
+                nil [70189 70386])
+            ("BinarySearch" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70658 70674])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [70675 70683])
+                    ("which" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70684 70700]))                  
+                :type "int")
+                nil [70629 71407])
+            ("UpdateRegionAssignment" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [71615 71935])
+            ("AssignRegionsRoundRobin" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [71936 72516])
+            ("AssignRegions" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("map" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [72547 72556])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [72557 72565]))                  
+                :type "int")
+                nil [72517 73134])
+            ("AddProcessRegions" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("procId" variable (:type "int") (reparse-symbol arg-sub-list) [73170 73181])
+                    ("kd" variable
+                       (:pointer 1
+                        :type ("vtkKdNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73182 73196]))                  
+                :type "void")
+                nil [73135 73530])
+            ("AssignRegionsContiguous" function
+               (:parent "vtkPKdTree"
+                :type "int")
+                nil [73531 75126])
+            ("BuildRegionListsForProcesses" function
+               (:parent "vtkPKdTree"
+                :type "void")
+                nil [75127 75752])
+            ("FindNextLocalArrayIndex" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75947 75961])
+                    ("names" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76002 76021])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [76022 76030])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [76031 76041]))                  
+                :type "int")
+                nil [75907 76289])
+            ("GetCellArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76330 76344])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [76345 76361]))                  
+                :type "int")
+                nil [76290 77136])
+            ("GetCellArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77177 77191])
+                    ("range" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [77192 77207]))                  
+                :type "int")
+                nil [77137 77393])
+            ("GetPointArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77435 77449])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [77450 77466]))                  
+                :type "int")
+                nil [77394 78244])
+            ("GetPointArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78286 78300])
+                    ("range" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [78301 78316]))                  
+                :type "int")
+                nil [78245 78502])
+            ("GetCellArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("arrayIndex" variable (:type "int") (reparse-symbol arg-sub-list) [78543 78558])
+                    ("range" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [78559 78574]))                  
+                :type "int")
+                nil [78503 78756])
+            ("GetCellArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("arrayIndex" variable (:type "int") (reparse-symbol arg-sub-list) [78797 78812])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [78813 78829]))                  
+                :type "int")
+                nil [78757 79067])
+            ("GetPointArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("arrayIndex" variable (:type "int") (reparse-symbol arg-sub-list) [79109 79124])
+                    ("range" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [79125 79140]))                  
+                :type "int")
+                nil [79068 79323])
+            ("GetPointArrayGlobalRange" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("arrayIndex" variable (:type "int") (reparse-symbol arg-sub-list) [79365 79380])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [79381 79397]))                  
+                :type "int")
+                nil [79324 79639])
+            ("ViewOrderAllProcessesInDirection" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("dop" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [79690 79710])
+                    ("orderedList" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79760 79785]))                  
+                :type "int")
+                nil [79641 80415])
+            ("ViewOrderAllProcessesFromPosition" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("pos" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [80467 80487])
+                    ("orderedList" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80538 80563]))                  
+                :type "int")
+                nil [80417 81194])
+            ("GetRegionAssignmentList" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("procId" variable (:type "int") (reparse-symbol arg-sub-list) [81236 81247])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81248 81266]))                  
+                :type "int")
+                nil [81196 81835])
+            ("GetAllProcessesBorderingOnPoint" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [81886 81894])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [81895 81903])
+                    ("z" variable (:type "float") (reparse-symbol arg-sub-list) [81904 81912])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81939 81957]))                  
+                :type "void")
+                nil [81837 82832])
+            ("GetProcessAssignedToRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [82877 82890]))                  
+                :type "int")
+                nil [82834 83072])
+            ("HasData" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [83097 83111])
+                    ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [83112 83125]))                  
+                :type "int")
+                nil [83073 83469])
+            ("GetTotalProcessesInRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [83513 83526]))                  
+                :type "int")
+                nil [83471 83771])
+            ("GetProcessListForRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [83813 83826])
+                    ("processes" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83827 83850]))                  
+                :type "int")
+                nil [83773 84228])
+            ("GetProcessesCellCountForRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [84277 84290])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [84291 84302])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [84303 84311]))                  
+                :type "int")
+                nil [84230 84738])
+            ("GetProcessCellCountForRegion" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [84785 84799])
+                    ("regionId" variable (:type "int") (reparse-symbol arg-sub-list) [84800 84813]))                  
+                :type "int")
+                nil [84740 85420])
+            ("GetTotalRegionsForProcess" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [85464 85478]))                  
+                :type "int")
+                nil [85422 85715])
+            ("GetRegionListForProcess" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [85757 85771])
+                    ("regions" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85772 85793]))                  
+                :type "int")
+                nil [85717 86153])
+            ("GetRegionsCellCountForProcess" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [86200 86214])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86215 86226])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [86227 86235]))                  
+                :type "int")
+                nil [86154 86856])
+            ("GetCellListsForProcessRegions" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [86909 86923])
+                    ("set" variable (:type "int") (reparse-symbol arg-sub-list) [86934 86942])
+                    ("inRegionCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86943 86968])
+                    ("onBoundaryCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86969 86996]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [86857 87291])
+            ("GetCellListsForProcessRegions" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [87344 87358])
+                    ("inRegionCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87369 87394])
+                    ("onBoundaryCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87395 87422]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [87292 87548])
+            ("GetCellListsForProcessRegions" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("processId" variable (:type "int") (reparse-symbol arg-sub-list) [87601 87615])
+                    ("set" variable
+                       (:pointer 1
+                        :type ("vtkDataSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87626 87642])
+                    ("inRegionCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87653 87678])
+                    ("onBoundaryCells" variable
+                       (:pointer 1
+                        :type ("vtkIdList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87679 87706]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [87549 88353])
+            ("PrintTiming" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88383 88395])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88396 88413]))                  
+                :type "void")
+                nil [88354 88708])
+            ("PrintTables" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88738 88751])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88752 88769]))                  
+                :type "void")
+                nil [88709 91017])
+            ("StrDupWithNew" function
+               (:pointer 1
+                :parent "vtkPKdTree"
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91051 91065]))                  
+                :type "char")
+                nil [91019 91332])
+            ("PrintSelf" function
+               (:parent "vtkPKdTree"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91361 91373])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91374 91391]))                  
+                :type "void")
+                nil [91334 92913]))          
+    :file "vtkPKdTree.cxx"
+    :pointmax 92914
+    :fsize 92913
+    :lastmodtime '(20865 41875)
+    :unmatched-syntax '((semantic-list #("((x>y) ? (x) : (y))" 0 1 (macros (("y") ("x")))) 42674 . 42678) (semantic-list #("((x<y) ? (x) : (y))" 0 1 (macros (("y") ("x")))) 42662 . 42666))
+    :lexical-table 
+        '(("FreeListOfLists" (spp-arg-list ("list" "len") 54678 . 54689) . ((semantic-list "{                                  \\
+  int i;                           \\
+  if (list)                        \\
+    {                              \\
+    for (i=0; i<len; i++)          \\
+      {                            \\
+      if (list[i]) delete [] list[i]; \\
+      }                                 \\
+    delete [] list;                   \\
+    list = NULL;                      \\
+    }                                   \\
+}" 54692 . 55119)))
+          ("max" (spp-arg-list ("x" "y") 22427 . 22432) . ((semantic-list "((x>y) ? (x) : (y))" 22433 . 22452)))
+          ("FreeList" (spp-arg-list ("list") 2649 . 2655) . 
+              ((IF "if" 2658 . 2660) (semantic-list "(list)" 2661 . 2667) (semantic-list "{delete [] list; list = NULL;}" 2668 . 2698)))
+          ("min" (spp-arg-list ("x" "y") 22483 . 22488) . ((semantic-list "((x<y) ? (x) : (y))" 22489 . 22508)))
+          ("ENQUEUE" (spp-arg-list ("a" "b" "c" "d") 14155 . 14167) . ((semantic-list "{                            \\
+  vtkNodeInfo rec = new struct _vtkNodeInfo; \\
+  rec->kd = a; \\
+  rec->L = b; \\
+  rec->level = c; \\
+  rec->tag = d; \\
+  Queue.push(rec); \\
+}" 14171 . 14342)))
+          ("BoundsToMinMax" (spp-arg-list ("bounds" "min" "max") 6407 . 6423) . ((semantic-list "{                                      \\
+  min[0] = bounds[0]; min[1] = bounds[2]; min[2] = bounds[4]; \\
+  max[0] = bounds[1]; max[1] = bounds[3]; max[2] = bounds[5]; \\
+}" 6426 . 6596)))
+          ("TIMER" (spp-arg-list ("s") 2265 . 2268))
+          ("FreeObject" (spp-arg-list ("item") 2717 . 2723) . 
+              ((IF "if" 2726 . 2728) (semantic-list "(item)" 2729 . 2735) (semantic-list "{item->Delete(); item = NULL;}" 2736 . 2766)))
+          ("MinMaxToBounds" (spp-arg-list ("bounds" "min" "max") 6619 . 6635) . ((semantic-list "{                                      \\
+  bounds[0] = min[0]; bounds[2] = min[1]; bounds[4] = min[2]; \\
+  bounds[1] = max[0]; bounds[3] = max[1]; bounds[5] = max[2]; \\
+}" 6638 . 6808)))
+          ("MakeList" (spp-arg-list ("field" "type" "len") 55137 . 55155) . ((semantic-list "{                                \\
+   if (len>0)                      \\
+    {                              \\
+    field = new type [len];         \\
+    if (field)                      \\
+      {                             \\
+      memset(field, 0, (len) * sizeof(type));  \\
+      }                              \\
+    }                                \\
+  }" 55160 . 55513)))
+          ("VTKWARNING" (spp-arg-list ("s") 2894 . 2897) . ((semantic-list "{                     \\
+  vtkWarningMacro(<< \"(process \" << this->MyId << \") \" << s);\\
+}" 2900 . 2988)))
+          ("BoundsToMinMaxUpdate" (spp-arg-list ("bounds" "min" "max") 6837 . 6853) . ((semantic-list "{                                            \\
+  min[0] = (bounds[0] < min[0] ? bounds[0] : min[0]); \\
+  min[1] = (bounds[2] < min[1] ? bounds[2] : min[1]); \\
+  min[2] = (bounds[4] < min[2] ? bounds[4] : min[2]); \\
+  max[0] = (bounds[1] > max[0] ? bounds[1] : max[0]); \\
+  max[1] = (bounds[3] > max[1] ? bounds[3] : max[1]); \\
+  max[2] = (bounds[5] > max[2] ? bounds[5] : max[2]); \\
+}" 6856 . 7240)))
+          ("VTKERROR" (spp-arg-list ("s") 2785 . 2788) . ((semantic-list "{                   \\
+  vtkErrorMacro(<< \"(process \" << this->MyId << \") \" << s);\\
+}" 2791 . 2875)))
+          ("sign" (spp-arg-list ("x") 22379 . 22382) . ((semantic-list "((x<0) ? (-1) : (1))" 22383 . 22403)))
+          ("TIMERDONE" (spp-arg-list ("s") 2286 . 2289))
+          )
+
+    )
+   (semanticdb-table "vtkPKdTree.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkPKdTree_h" variable (:constant-flag t) nil [1797 1811])
+            ("vtkFiltersParallelModule.h" include nil nil [1813 1850])
+            ("vtkKdTree.h" include nil nil [1871 1893])
+            ("vtkMultiProcessController" type
+               (:prototype t
+                :type "class")
+                nil [1895 1927])
+            ("vtkCommunicator" type
+               (:prototype t
+                :type "class")
+                nil [1928 1950])
+            ("vtkSubGroup" type
+               (:prototype t
+                :type "class")
+                nil [1951 1969])
+            ("vtkIntArray" type
+               (:prototype t
+                :type "class")
+                nil [1970 1988])
+            ("vtkKdNode" type
+               (:prototype t
+                :type "class")
+                nil [1989 2005])
+            ("vtkKdTree" variable (:type "int") nil [2059 16803]))          
+    :file "vtkPKdTree.h"
+    :pointmax 16812
+    :fsize 16811
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 2052 . 2058) (punctuation 2050 . 2051) (symbol 2039 . 2049) (symbol 2013 . 2038) (CLASS 2007 . 2012))
+    :lexical-table 
+        '(("__vtkPKdTree_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Filters!Parallel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

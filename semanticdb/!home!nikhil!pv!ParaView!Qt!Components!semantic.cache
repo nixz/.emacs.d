@@ -1,0 +1,926 @@
+;; Object Components/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Components/"
+  :tables (list 
+   (semanticdb-table "pq3DWidget.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pq3DWidget_h" variable (:constant-flag t) nil [1382 1396])
+            ("pqComponentsModule.h" include nil nil [1398 1429])
+            ("pqProxyPanel.h" include nil nil [1430 1455])
+            ("QKeySequence" type
+               (:prototype t
+                :type "class")
+                nil [1457 1476])
+            ("pq3DWidgetInternal" type
+               (:prototype t
+                :type "class")
+                nil [1477 1502])
+            ("pqPipelineSource" type
+               (:prototype t
+                :type "class")
+                nil [1503 1526])
+            ("pqProxy" type
+               (:prototype t
+                :type "class")
+                nil [1527 1541])
+            ("pqRenderViewBase" type
+               (:prototype t
+                :type "class")
+                nil [1542 1565])
+            ("vtkPVXMLElement" type
+               (:prototype t
+                :type "class")
+                nil [1566 1588])
+            ("vtkSMNewWidgetRepresentationProxy" type
+               (:prototype t
+                :type "class")
+                nil [1589 1629])
+            ("vtkSMProperty" type
+               (:prototype t
+                :type "class")
+                nil [1630 1650])
+            ("pqProxyPanel" variable (:type "int") nil [1843 8177]))          
+    :file "pq3DWidget.h"
+    :pointmax 8187
+    :fsize 8208
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1836 . 1842) (punctuation 1834 . 1835) (symbol 1823 . 1833) (symbol 1803 . 1822) (CLASS 1797 . 1802))
+    :lexical-table 
+        '(("__pq3DWidget_h")
+          )
+
+    )
+   (semanticdb-table "pqAnimationManager.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqAnimationManager.h" include nil nil [1360 1391])
+            ("ui_pqAbortAnimation.h" include nil nil [1392 1424])
+            ("ui_pqAnimationSettings.h" include nil nil [1425 1460])
+            ("vtkMath.h" include nil nil [1462 1482])
+            ("vtkNew.h" include nil nil [1483 1502])
+            ("vtkPVServerInformation.h" include nil nil [1503 1538])
+            ("vtkPVXMLElement.h" include nil nil [1539 1567])
+            ("vtkProcessModule.h" include nil nil [1568 1597])
+            ("vtkRenderWindow.h" include nil nil [1598 1626])
+            ("vtkSMAnimationSceneGeometryWriter.h" include nil nil [1627 1673])
+            ("vtkSMPropertyHelper.h" include nil nil [1674 1706])
+            ("vtkSMProxy.h" include nil nil [1707 1730])
+            ("vtkSMProxyIterator.h" include nil nil [1731 1762])
+            ("vtkSMProxyManager.h" include nil nil [1763 1793])
+            ("vtkSMProxyProperty.h" include nil nil [1794 1825])
+            ("vtkSMSession.h" include nil nil [1826 1851])
+            ("vtkSMSessionProxyManager.h" include nil nil [1852 1889])
+            ("vtkSMStringVectorProperty.h" include nil nil [1890 1928])
+            ("vtkSMViewProxy.h" include nil nil [1929 1956])
+            ("vtkSmartPointer.h" include nil nil [1957 1985])
+            ("QIntValidator" include (:system-flag t) nil [1987 2011])
+            ("QFileInfo" include (:system-flag t) nil [2012 2032])
+            ("QMap" include (:system-flag t) nil [2033 2048])
+            ("QMessageBox" include (:system-flag t) nil [2049 2071])
+            ("QPointer" include (:system-flag t) nil [2072 2091])
+            ("QSize" include (:system-flag t) nil [2092 2108])
+            ("QtDebug" include (:system-flag t) nil [2109 2127])
+            ("pqAnimationCue.h" include nil nil [2129 2156])
+            ("pqAnimationScene.h" include nil nil [2157 2186])
+            ("pqAnimationSceneImageWriter.h" include nil nil [2187 2227])
+            ("pqApplicationCore.h" include nil nil [2228 2258])
+            ("pqCoreUtilities.h" include nil nil [2259 2287])
+            ("pqEventDispatcher.h" include nil nil [2288 2318])
+            ("pqFileDialog.h" include nil nil [2319 2344])
+            ("pqObjectBuilder.h" include nil nil [2345 2373])
+            ("pqProgressManager.h" include nil nil [2374 2404])
+            ("pqProxy.h" include nil nil [2405 2425])
+            ("pqRenderViewBase.h" include nil nil [2426 2455])
+            ("pqSMAdaptor.h" include nil nil [2456 2480])
+            ("pqServer.h" include nil nil [2481 2502])
+            ("pqServerManagerModel.h" include nil nil [2503 2536])
+            ("pqSettings.h" include nil nil [2537 2560])
+            ("pqTabbedMultiViewWidget.h" include nil nil [2561 2597])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [2599 2628])
+            ("SEQUENCE" variable (:constant-flag t) nil [2638 2646])
+            ("REALTIME" variable (:constant-flag t) nil [2657 2665])
+            ("SNAP_TO_TIMESTEPS" variable (:constant-flag t) nil [2676 2693])
+            ("pqInternals" type
+               (:parent "pqAnimationManager"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2817 2824])
+                    ("ActiveServer" variable (:type ("QPointer" type
+                         (:template-specifier 
+                            ( ("pqServer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2827 2859])
+                    ("SceneMap" type
+                       (:typedef ("QMap" type
+                             (:template-specifier 
+                                ( ("pqServer" type (:pointer 1) nil nil)
+                                  ("QPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "QMap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2862 2924])
+                    ("Scenes" variable (:type ("SceneMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2927 2943])
+                    ("AnimationSettingsDialog" variable
+                       (:pointer 1
+                        :type ("Ui::pqAnimationSettingsDialog" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2946 3001])
+                    ("OldMaxSize" variable (:type ("QSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3005 3022])
+                    ("OldSize" variable (:type ("QSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3025 3039])
+                    ("AspectRatio" variable (:type "double") (reparse-symbol classsubparts) [3043 3062]))                  
+                :type "class")
+                nil [2777 3065])
+            ("pqAnimationManager" function
+               (:constructor-flag t
+                :parent "pqAnimationManager"
+                :arguments 
+                  ( ("_parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3186 3209]))                  
+                :type ("pqAnimationManager" type (:type "class") nil nil))
+                nil [3147 3805])
+            ("pqAnimationManager" function
+               (:destructor-flag t
+                :parent "pqAnimationManager"
+                :type "void")
+                nil [3887 3982])
+            ("updateViewModules" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [4064 4745])
+            ("onProxyAdded" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("pqProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4865 4880]))                  
+                :type "void")
+                nil [4827 5229])
+            ("onProxyRemoved" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("pqProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5351 5366]))                  
+                :type "void")
+                nil [5311 5657])
+            ("onActiveServerChanged" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("pqServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5786 5803]))                  
+                :type "void")
+                nil [5739 6332])
+            ("getActiveScene" function
+               (:pointer 1
+                :parent "pqAnimationManager"
+                :type ("pqAnimationScene" type (:type "class") nil nil))
+                nil [6414 6534])
+            ("getScene" function
+               (:pointer 1
+                :parent "pqAnimationManager"
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("pqServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6663 6680]))                  
+                :type ("pqAnimationScene" type (:type "class") nil nil))
+                nil [6616 6822])
+            ("createActiveScene" function
+               (:pointer 1
+                :parent "pqAnimationManager"
+                :type ("pqAnimationScene" type (:type "class") nil nil))
+                nil [6904 7458])
+            ("getCue" function
+               (:pointer 1
+                :parent "pqAnimationManager"
+                :arguments 
+                  ( ("scene" variable
+                       (:pointer 1
+                        :type ("pqAnimationScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7587 7611])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7612 7630])
+                    ("propertyname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7631 7656])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [7659 7669]))                  
+                :type ("pqAnimationCue" type (:type "class") nil nil))
+                nil [7541 7744])
+            ("updateGUI" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [7898 9753])
+            ("onWidthEdited" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [9835 10190])
+            ("onHeightEdited" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [10272 10628])
+            ("onLockAspectRatio" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("lock" variable (:type "bool") (reparse-symbol arg-sub-list) [10753 10763]))                  
+                :type "void")
+                nil [10710 11076])
+            ("PADDING_COMPENSATION" variable (:constant-flag t) nil [11166 11186])
+            ("enforceMultiple4" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("newSize" variable
+                       (:reference 1
+                        :type ("QSize" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11231 11246]))                  
+                :type "void")
+                nil [11202 11842])
+            ("saveAnimation" function
+               (:parent "pqAnimationManager"
+                :type "bool")
+                nil [11924 24639])
+            ("saveGeometry" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24759 24783])
+                    ("view" variable
+                       (:pointer 1
+                        :type ("pqView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24786 24799]))                  
+                :type "bool")
+                nil [24721 25280])
+            ("restoreSettings" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [25362 25781])
+            ("saveSettings" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [25863 26117])
+            ("updateApplicationSettings" function
+               (:parent "pqAnimationManager"
+                :type "void")
+                nil [26199 26386])
+            ("onTick" function
+               (:parent "pqAnimationManager"
+                :arguments 
+                  ( ("progress" variable (:type "int") (reparse-symbol arg-sub-list) [26500 26513]))                  
+                :type "void")
+                nil [26468 26574]))          
+    :file "pqAnimationManager.cxx"
+    :pointmax 26575
+    :fsize 26609
+    :lastmodtime '(20784 62487)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SNAP_TO_TIMESTEPS" . ((number "2" 2694 . 2695)))
+          ("SEQUENCE" . ((number "0" 2647 . 2648)))
+          ("PADDING_COMPENSATION" . 
+              ((symbol "QSize" 11187 . 11192) (semantic-list "(16, 16)" 11192 . 11200) (punctuation ";" 11200 . 11201)))
+          ("REALTIME" . ((number "1" 2666 . 2667)))
+          )
+
+    )
+   (semanticdb-table "pqPropertiesPanel.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqPropertiesPanel.h" include nil nil [1358 1388])
+            ("ui_pqPropertiesPanel.h" include nil nil [1389 1422])
+            ("QDebug" include (:system-flag t) nil [1424 1441])
+            ("QLabel" include (:system-flag t) nil [1442 1459])
+            ("QStyleFactory" include (:system-flag t) nil [1460 1484])
+            ("vtkSMProxy.h" include nil nil [1486 1509])
+            ("vtkSMProperty.h" include nil nil [1510 1536])
+            ("vtkSMPropertyGroup.h" include nil nil [1537 1568])
+            ("vtkSMProxyProperty.h" include nil nil [1569 1600])
+            ("vtkSMProxyListDomain.h" include nil nil [1601 1634])
+            ("vtkSMOrderedPropertyIterator.h" include nil nil [1635 1676])
+            ("vtkPVXMLElement.h" include nil nil [1677 1705])
+            ("vtkSMDomain.h" include nil nil [1706 1730])
+            ("vtkSMSourceProxy.h" include nil nil [1731 1760])
+            ("vtkSMProxyProperty.h" include nil nil [1761 1792])
+            ("vtkSMDomainIterator.h" include nil nil [1793 1825])
+            ("vtkSMPropertyHelper.h" include nil nil [1826 1858])
+            ("vtkSMIntVectorProperty.h" include nil nil [1859 1894])
+            ("vtkSMDoubleVectorProperty.h" include nil nil [1895 1933])
+            ("vtkSMStringVectorProperty.h" include nil nil [1934 1972])
+            ("vtkEventQtSlotConnect.h" include nil nil [1973 2007])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [2008 2041])
+            ("pqView.h" include nil nil [2043 2062])
+            ("pqProxy.h" include nil nil [2063 2083])
+            ("pq3DWidget.h" include nil nil [2084 2107])
+            ("pqSettings.h" include nil nil [2108 2131])
+            ("pqUndoStack.h" include nil nil [2132 2156])
+            ("pqOutputPort.h" include nil nil [2157 2182])
+            ("pqDisplayPanel.h" include nil nil [2183 2210])
+            ("pqActiveObjects.h" include nil nil [2211 2239])
+            ("pqDisplayPolicy.h" include nil nil [2240 2268])
+            ("pqObjectBuilder.h" include nil nil [2269 2297])
+            ("pqPipelineFilter.h" include nil nil [2298 2327])
+            ("pqApplicationCore.h" include nil nil [2328 2358])
+            ("pqInterfaceTracker.h" include nil nil [2359 2390])
+            ("pqServerManagerModel.h" include nil nil [2391 2424])
+            ("pqPropertiesPanelItem.h" include nil nil [2425 2459])
+            ("pqProxyPropertiesPanel.h" include nil nil [2460 2495])
+            ("pqObjectPanelInterface.h" include nil nil [2496 2531])
+            ("pqProxySelectionWidget.h" include nil nil [2532 2567])
+            ("pqCommandPropertyWidget.h" include nil nil [2568 2604])
+            ("pq3DWidgetPropertyWidget.h" include nil nil [2605 2642])
+            ("pqPropertyWidgetInterface.h" include nil nil [2643 2681])
+            ("pqObjectPanelPropertyWidget.h" include nil nil [2682 2722])
+            ("pqDisplayPanelPropertyWidget.h" include nil nil [2723 2764])
+            ("pqProxyModifiedStateUndoElement.h" include nil nil [2765 2809])
+            ("pqClipPanel.h" include nil nil [2828 2852])
+            ("pqGlyphPanel.h" include nil nil [2853 2878])
+            ("pqNetCDFPanel.h" include nil nil [2879 2905])
+            ("pqContourPanel.h" include nil nil [2906 2933])
+            ("pqExodusIIPanel.h" include nil nil [2934 2962])
+            ("pqThresholdPanel.h" include nil nil [2963 2992])
+            ("pqIsoVolumePanel.h" include nil nil [2993 3022])
+            ("pqPassArraysPanel.h" include nil nil [3023 3053])
+            ("pqTextRepresentation.h" include nil nil [3054 3087])
+            ("pqProxyPropertyWidget.h" include nil nil [3088 3122])
+            ("pqXYChartDisplayPanel.h" include nil nil [3123 3157])
+            ("pqExtractCTHPartsPanel.h" include nil nil [3158 3193])
+            ("pqDisplayPanelInterface.h" include nil nil [3194 3230])
+            ("pqPlotMatrixDisplayPanel.h" include nil nil [3231 3268])
+            ("pqSpreadSheetDisplayEditor.h" include nil nil [3269 3308])
+            ("pqTextDisplayPropertiesWidget.h" include nil nil [3309 3351])
+            ("pqYoungsMaterialInterfacePanel.h" include nil nil [3352 3395])
+            ("pqParallelCoordinatesChartDisplayPanel.h" include nil nil [3396 3447])
+            ("pqPropertyWidget.h" include nil nil [3449 3478])
+            ("pqIntVectorPropertyWidget.h" include nil nil [3479 3517])
+            ("pqDoubleVectorPropertyWidget.h" include nil nil [3518 3559])
+            ("pqStringVectorPropertyWidget.h" include nil nil [3560 3601])
+            ("pqPropertiesPanel::AutoApply" variable (:type "bool") nil [3603 3645])
+            ("pqPropertiesPanel::AutoApplyDelay" variable (:type "int") nil [3646 3688])
+            ("unnamed" type
+               (:members 
+                  ( ("pqStandardCustomPanels" type
+                       (:superclasses 
+                          ( ("QObject" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("pqObjectPanelInterface" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3874 3881])
+                            ("pqStandardCustomPanels" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3907 3919]))                                  
+                                :type ("pqStandardCustomPanels" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3884 3947])
+                            ("createPanel" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("proxy" variable
+                                       (:pointer 1
+                                        :type ("pqProxy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3978 3993])
+                                    ("p" variable
+                                       (:pointer 1
+                                        :type ("QWidget" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3994 4005]))                                  
+                                :type ("pqObjectPanel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3951 5788])
+                            ("canCreatePanel" function
+                               (:arguments 
+                                  ( ("proxy" variable
+                                       (:pointer 1
+                                        :type ("pqProxy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5812 5827]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5792 7141]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3795 7144]))                  
+                :type "namespace")
+                nil [3782 7146])
+            ("pqStandardDisplayPanels" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("pqDisplayPanelInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7309 7316])
+                    ("pqStandardDisplayPanels" function
+                       (:constructor-flag t
+                        :type ("pqStandardDisplayPanels" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7337 7364])
+                    ("pqStandardDisplayPanels" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7384 7420])
+                    ("canCreatePanel" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("proxy" variable
+                               (:pointer 1
+                                :type ("pqRepresentation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7525 7549]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7497 8161])
+                    ("createPanel" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("proxy" variable
+                               (:pointer 1
+                                :type ("pqRepresentation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8242 8266])
+                            ("p" variable
+                               (:pointer 1
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8267 8278]))                          
+                        :type ("pqDisplayPanel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8206 9353]))                  
+                :type "class")
+                nil [7228 9356])
+            ("pqPropertiesPanel" function
+               (:constructor-flag t
+                :parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9395 9406]))                  
+                :type ("pqPropertiesPanel" type (:type "class") nil nil))
+                nil [9358 14693])
+            ("pqPropertiesPanel" function
+               (:destructor-flag t
+                :parent "pqPropertiesPanel"
+                :type "void")
+                nil [14695 14777])
+            ("setView" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("activeView" variable
+                       (:pointer 1
+                        :type ("pqView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14811 14830]))                  
+                :type "void")
+                nil [14779 14900])
+            ("view" function
+               (:pointer 1
+                :parent "pqPropertiesPanel"
+                :type ("pqView" type (:type "class") nil nil))
+                nil [14902 14966])
+            ("createWidgetForProperty" function
+               (:pointer 1
+                :parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("property" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15029 15053])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15115 15133])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15195 15211]))                  
+                :type ("pqPropertyWidget" type (:type "class") nil nil))
+                nil [14968 16964])
+            ("setProxy" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("pqProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16999 17014]))                  
+                :type "void")
+                nil [16966 21574])
+            ("setOutputPort" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("pqOutputPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21614 21633]))                  
+                :type "void")
+                nil [21576 21850])
+            ("setRepresentation" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("repr" variable
+                       (:pointer 1
+                        :type ("pqRepresentation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21894 21917]))                  
+                :type "void")
+                nil [21852 25220])
+            ("apply" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [25222 26326])
+            ("reset" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [26328 26640])
+            ("removeProxy" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("pqPipelineSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26678 26702]))                  
+                :type "void")
+                nil [26642 26919])
+            ("deleteProxy" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [26921 27335])
+            ("showHelp" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [27337 27597])
+            ("handleConnectionChanged" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type ("pqPipelineSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27647 27668])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("pqPipelineSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27717 27739]))                  
+                :type "void")
+                nil [27599 27843])
+            ("show" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("pqPipelineSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27874 27899]))                  
+                :type "void")
+                nil [27845 28785])
+            ("updateButtonState" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [28787 29833])
+            ("proxyPropertyChanged" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("change_finished" variable (:type "bool") (reparse-symbol arg-sub-list) [29880 29910]))                  
+                :type "void")
+                nil [29835 30807])
+            ("searchTextChanged" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("string" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30851 30873]))                  
+                :type "void")
+                nil [30809 31999])
+            ("clearSearchText" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [32001 32085])
+            ("advancedButtonToggled" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("state" variable (:type "bool") (reparse-symbol arg-sub-list) [32133 32144]))                  
+                :type "void")
+                nil [32087 32967])
+            ("representationPropertyChanged" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33023 33041])
+                    ("event_" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [33042 33063])
+                    ("data_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33064 33076]))                  
+                :type "void")
+                nil [32969 33242])
+            ("createWidgetsForProxy" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("pqProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33314 33329]))                  
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("pqPropertiesPanelItem" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [33244 39646])
+            ("isPanelItemVisible" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pqPropertiesPanelItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39694 39728])
+                    ("show_advanced" variable (:type "bool") (reparse-symbol arg-sub-list) [39729 39748]))                  
+                :type "bool")
+                nil [39648 40569])
+            ("updateInformationAndDomains" function
+               (:parent "pqPropertiesPanel"
+                :type "void")
+                nil [40571 41053])
+            ("setAutoApply" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [41092 41105]))                  
+                :type "void")
+                nil [41055 41151])
+            ("autoApply" function
+               (:parent "pqPropertiesPanel"
+                :type "bool")
+                nil [41153 41231])
+            ("setAutoApplyDelay" function
+               (:parent "pqPropertiesPanel"
+                :arguments 
+                  ( ("delay" variable (:type "int") (reparse-symbol arg-sub-list) [41275 41285]))                  
+                :type "void")
+                nil [41233 41334])
+            ("autoApplyDelay" function
+               (:parent "pqPropertiesPanel"
+                :type "int")
+                nil [41336 41423]))          
+    :file "pqPropertiesPanel.cxx"
+    :pointmax 41424
+    :fsize 23513
+    :lastmodtime '(20865 11004)
+    :unmatched-syntax '((number 3920 . 3921) (punctuation 3918 . 3919))
+    )
+   (semanticdb-table "pqQueryDialog.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pqQueryDialog.h" include nil nil [1355 1381])
+            ("ui_pqQueryDialog.h" include nil nil [1382 1411])
+            ("pqActiveObjects.h" include nil nil [1413 1441])
+            ("pqActiveView.h" include nil nil [1442 1467])
+            ("pqApplicationCore.h" include nil nil [1468 1498])
+            ("pqDataRepresentation.h" include nil nil [1499 1532])
+            ("pqOutputPort.h" include nil nil [1533 1558])
+            ("pqOutputPortComboBox.h" include nil nil [1559 1592])
+            ("pqPipelineSource.h" include nil nil [1593 1622])
+            ("pqPropertyLinks.h" include nil nil [1623 1651])
+            ("pqQueryClauseWidget.h" include nil nil [1652 1684])
+            ("pqServer.h" include nil nil [1685 1706])
+            ("pqSignalAdaptors.h" include nil nil [1707 1736])
+            ("pqSMAdaptor.h" include nil nil [1737 1761])
+            ("pqSpreadSheetViewModel.h" include nil nil [1762 1797])
+            ("pqUndoStack.h" include nil nil [1798 1822])
+            ("vtkDataObject.h" include nil nil [1824 1850])
+            ("vtkPVArrayInformation.h" include nil nil [1851 1885])
+            ("vtkPVDataInformation.h" include nil nil [1886 1919])
+            ("vtkPVDataSetAttributesInformation.h" include nil nil [1920 1966])
+            ("vtkSmartPointer.h" include nil nil [1967 1995])
+            ("vtkSMGlobalPropertiesManager.h" include nil nil [1996 2037])
+            ("vtkSMPropertyHelper.h" include nil nil [2038 2070])
+            ("vtkSMProperty.h" include nil nil [2071 2097])
+            ("vtkSMStringVectorProperty.h" include nil nil [2098 2136])
+            ("vtkSMProxyManager.h" include nil nil [2137 2167])
+            ("vtkSMSelectionHelper.h" include nil nil [2168 2201])
+            ("vtkSMSessionProxyManager.h" include nil nil [2202 2239])
+            ("vtkSMSourceProxy.h" include nil nil [2240 2269])
+            ("vtkSMViewProxy.h" include nil nil [2270 2297])
+            ("vtkQuerySelectionSource.h" include nil nil [2298 2334])
+            ("vtkPVCompositeDataInformation.h" include nil nil [2335 2377])
+            ("QList" include (:system-flag t) nil [2379 2395])
+            ("QMessageBox" include (:system-flag t) nil [2396 2418])
+            ("pqInternals" type
+               (:parent "pqQueryDialog"
+                :superclasses 
+                  ( ("Ui::pqQueryDialog" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2482 2489])
+                    ("Clauses" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("pqQueryClauseWidget" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2492 2528])
+                    ("DataModel" variable
+                       (:pointer 1
+                        :type ("pqSpreadSheetViewModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2531 2565])
+                    ("Links" variable (:type ("pqPropertyLinks" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2568 2590])
+                    ("ViewProxy" variable (:type ("vtkSmartPointer" type
+                         (:template-specifier 
+                            ( ("vtkSMViewProxy" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2593 2635])
+                    ("RepresentationProxy" variable (:type ("vtkSmartPointer" type
+                         (:template-specifier 
+                            ( ("vtkSMProxy" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2638 2686])
+                    ("LabelColorLinks" variable (:type ("pqPropertyLinks" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2690 2722])
+                    ("LabelColorAdaptor" variable
+                       (:pointer 1
+                        :type ("pqSignalAdaptorColor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2725 2765])
+                    ("pqInternals" function
+                       (:constructor-flag t
+                        :type ("pqInternals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2768 2857]))                  
+                :type "class")
+                nil [2420 2860])
+            ("pqQueryDialog" function
+               (:constructor-flag t
+                :parent "pqQueryDialog"
+                :arguments 
+                  ( ("_producer" variable
+                       (:pointer 1
+                        :type ("pqOutputPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2974 2998])
+                    ("parentObject" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3001 3023])
+                    ("_flags" variable (:type ("Qt::WindowFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3024 3047]))                  
+                :type ("pqQueryDialog" type (:type "class") nil nil))
+                nil [2942 5733])
+            ("pqQueryDialog" function
+               (:destructor-flag t
+                :parent "pqQueryDialog"
+                :type "void")
+                nil [5815 5960])
+            ("setupSpreadSheet" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [6042 7760])
+            ("QInputEvent" include (:system-flag t) nil [7762 7784])
+            ("pqCoreUtilities.h" include (:system-flag t) nil [7785 7813])
+            ("QVTKWidget.h" include nil nil [7814 7837])
+            ("populateSelectionType" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [7918 8624])
+            ("resetClauses" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [8706 9050])
+            ("addClause" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [9132 9983])
+            ("runQuery" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [10065 12354])
+            ("unnamed" type
+               (:members 
+                  ( ("pqQueryDialogAddArrays" function
+                       (:arguments 
+                          ( ("combobox" variable
+                               (:pointer 1
+                                :type ("QComboBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12483 12503])
+                            ("attrInfo" variable
+                               (:pointer 1
+                                :type ("vtkPVDataSetAttributesInformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12508 12552])
+                            ("icon" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QIcon" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12557 12575])
+                            ("data" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12580 12594]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12450 13122]))                  
+                :type "namespace")
+                nil [12436 13124])
+            ("updateLabels" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [13207 15064])
+            ("onFreezeSelection" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [15146 17615])
+            ("setLabel" function
+               (:parent "pqQueryDialog"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [17726 17736]))                  
+                :type "void")
+                nil [17697 20045])
+            ("linkLabelColorWidget" function
+               (:parent "pqQueryDialog"
+                :arguments 
+                  ( ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20169 20187])
+                    ("propname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20229 20253]))                  
+                :type "void")
+                nil [20127 20539])
+            ("onSelectionChange" function
+               (:parent "pqQueryDialog"
+                :arguments 
+                  ( ("newSelectedPort" variable
+                       (:pointer 1
+                        :type ("pqOutputPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20659 20689]))                  
+                :type "void")
+                nil [20621 22238])
+            ("onActiveViewChanged" function
+               (:parent "pqQueryDialog"
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("pqView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22360 22373]))                  
+                :type "void")
+                nil [22320 25587])
+            ("freeSMProxy" function
+               (:parent "pqQueryDialog"
+                :type "void")
+                nil [25668 25986]))          
+    :file "pqQueryDialog.cxx"
+    :pointmax 25987
+    :fsize 25986
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((punctuation 13124 . 13125))
+    )
+   (semanticdb-table "pqQueryDialog.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__pqQueryDialog_h" variable (:constant-flag t) nil [1387 1404])
+            ("QDialog" include (:system-flag t) nil [1406 1424])
+            ("pqComponentsModule.h" include nil nil [1425 1456])
+            ("pqOutputPort" type
+               (:prototype t
+                :type "class")
+                nil [1458 1477])
+            ("pqQueryClauseWidget" type
+               (:prototype t
+                :type "class")
+                nil [1478 1504])
+            ("vtkPVDataSetAttributesInformation" type
+               (:prototype t
+                :type "class")
+                nil [1505 1545])
+            ("vtkSMProxy" type
+               (:prototype t
+                :type "class")
+                nil [1546 1563])
+            ("pqView" type
+               (:prototype t
+                :type "class")
+                nil [1564 1577])
+            ("pqRepresentation" type
+               (:prototype t
+                :type "class")
+                nil [1578 1601])
+            ("QDialog" variable (:type "int") nil [1883 3945]))          
+    :file "pqQueryDialog.h"
+    :pointmax 3956
+    :fsize 3955
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1876 . 1882) (punctuation 1874 . 1875) (symbol 1860 . 1873) (symbol 1840 . 1859) (CLASS 1834 . 1839))
+    :lexical-table 
+        '(("__pqQueryDialog_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Qt!Components!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

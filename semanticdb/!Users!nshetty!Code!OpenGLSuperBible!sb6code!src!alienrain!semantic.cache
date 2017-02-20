@@ -1,0 +1,63 @@
+;; Object alienrain/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "alienrain/"
+  :tables (list 
+   (semanticdb-table "alienrain.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sb6.h" include (:system-flag t) nil [1159 1175])
+            ("sb6ktx.h" include (:system-flag t) nil [1176 1195])
+            ("vmath.h" include (:system-flag t) nil [1196 1214])
+            ("cmath" include (:system-flag t) nil [1216 1232])
+            ("seed" variable
+               (:typemodifiers ("static")
+                :type "unsigned int")
+                nil [1261 1299])
+            ("random_float" function
+               (:typemodifiers ("static" "inline")
+                :type "float")
+                nil [1301 1525])
+            ("alienrain_app" type
+               (:superclasses 
+                  ( ("sb6::application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("init" function (:type "void") (reparse-symbol classsubparts) [1579 1758])
+                    ("startup" function (:type "void") (reparse-symbol classsubparts) [1764 8370])
+                    ("render" function
+                       (:arguments 
+                          ( ("currentTime" variable (:type "double") (reparse-symbol arg-sub-list) [8388 8407]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8376 9429])
+                    ("protected" label nil (reparse-symbol classsubparts) [9431 9441])
+                    ("render_prog" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9446 9474])
+                    ("render_vao" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9479 9506])
+                    ("tex_alien_array" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9512 9544])
+                    ("rain_buffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9549 9577])
+                    ("droplet_x_offset" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [9583 9621])
+                    ("droplet_rot_speed" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [9626 9665])
+                    ("droplet_fall_speed" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [9670 9710]))                  
+                :type "class")
+                nil [1527 9713]))          
+    :file "alienrain.cpp"
+    :pointmax 9744
+    :fsize 9957
+    :lastmodtime '(21207 11338 0 0)
+    :unmatched-syntax '((semantic-list 9727 . 9742) (symbol 9715 . 9727))
+    )
+   )
+  :file "!Users!nshetty!Code!OpenGLSuperBible!sb6code!src!alienrain!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

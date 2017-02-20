@@ -1,0 +1,9 @@
+#name : vtkren ...
+# --
+vtkNew<vtkRenderer> ren;
+vtkNew<vtkRenderWindow> renWin;
+vtkNew<vtkRenderWindowInteractor> iren;
+
+renWin->AddRenderer(ren.GetPointer());
+iren->SetRenderWindow(renWin.GetPointer());
+$0

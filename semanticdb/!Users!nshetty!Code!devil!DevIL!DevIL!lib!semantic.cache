@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("all_include" variable (:default-value ("$(srcdir)/../include")) nil [1 36])
+            ("il_src" variable (:default-value ("$(srcdir)/../src-IL/src")) nil [37 70])
+            ("il_include" variable (:default-value ("$(srcdir)/../src-IL/include")) nil [70 111])
+            ("ilu_src" variable (:default-value ("$(srcdir)/../src-ILU/src")) nil [111 146])
+            ("ilu_include" variable (:default-value ("$(srcdir)/../src-ILU/include")) nil [146 189])
+            ("ilut_src" variable (:default-value ("$(srcdir)/../src-ILUT/src")) nil [189 226])
+            ("ilut_include" variable (:default-value ("$(srcdir)/../src-ILUT/include")) nil [226 271])
+            ("ildir" variable (:default-value ("$(includedir)/IL")) nil [272 297])
+            ("lib_LTLIBRARIES" variable nil nil [298 316])
+            ("il_HEADERS" variable (:default-value ("$(all_include)/IL/devil_cpp_wrapper.hpp")) nil [316 370])
+            ("AM_LDFLAGS" variable (:default-value ("-version-info" "@DEVIL_LTVERSION@")) nil [370 415])
+            ("AM_CFLAGS" variable (:default-value ("$(GENERAL_CFLAGS)")) nil [415 445])
+            ("AM_LDFLAGS" variable (:default-value ("-no-undefined")) nil [463 491])
+            ("lib_LTLIBRARIES" variable (:default-value ("libIL.la")) nil [526 555])
+            ("il_HEADERS" variable (:default-value ("$(all_include)/IL/il.h")) nil [555 592])
+            ("lib_LTLIBRARIES" variable (:default-value ("libILU.la")) nil [624 654])
+            ("il_HEADERS" variable (:default-value ("$(all_include)/IL/ilu.h" "$(all_include)/IL/ilu_region.h")) nil [654 723])
+            ("lib_LTLIBRARIES" variable (:default-value ("libILUT.la")) nil [757 788])
+            ("il_HEADERS" variable (:default-value ("$(all_include)/IL/ilut.h" "$(all_include)/IL/ilut_config.h")) nil [788 859])
+            ("libIL_la_CPPFLAGS" variable (:default-value ("-I" "$(il_include)" "-I" "$(all_include)")) nil [879 934])
+            ("libIL_la_CFLAGS" variable (:default-value ("$(AM_CFLAGS)" "@IL_CFLAGS@")) nil [934 977])
+            ("libIL_la_CXXFLAGS" variable (:default-value ("$(AM_CFLAGS)" "@IL_CFLAGS@")) nil [977 1022])
+            ("libIL_la_SOURCES" variable (:default-value ("$(il_src)/il_alloc.c" "$(il_src)/il_doom.c" "$(il_src)/il_stack.c" "$(il_src)/il_pcx.c" "$(il_src)/il_rle.c" "$(il_src)/il_bits.c" "$(il_src)/il_endian.c" "$(il_src)/il_exr.cpp" "$(il_src)/il_jpeg.c" "$(il_src)/il_pic.c" "$(il_src)/il_sgi.c" "$(il_src)/il_bmp.c" "$(il_src)/il_error.c" "$(il_src)/il_lif.c" "$(il_src)/il_png.c" "$(il_src)/il_states.c" "$(il_src)/il_convbuff.c" "$(il_src)/il_files.c" "$(il_src)/il_main.c" "$(il_src)/il_pnm.c" "$(il_src)/il_targa.c" "$(il_src)/il_wdp.c" "$(il_src)/il_convert.c" "$(il_src)/il_gif.c" "$(il_src)/il_manip.c" "$(il_src)/il_profiles.c" "$(il_src)/il_tiff.c" "$(il_src)/il_cut.c" "$(il_src)/il_header.c" "$(il_src)/il_mdl.c" "$(il_src)/il_quantizer.c" "$(il_src)/il_utility.c" "$(il_src)/il_dcx.c" "$(il_src)/il_icon.c" "$(il_src)/il_mng.c" "$(il_src)/il_raw.c" "$(il_src)/il_wal.c" "$(il_src)/il_dds.c" "$(il_src)/il_internal.c" "$(il_src)/il_pal.c" "$(il_src)/il_rawdata.c" "$(il_src)/il_devil.c" "$(il_src)/il_io.c" "$(il_src)/il_pcd.c" "$(il_src)/il_register.c" "$(il_src)/il_psd.c" "$(il_src)/il_fastconv.c" "$(il_src)/il_neuquant.c" "$(il_src)/il_dds-save.c" "$(il_src)/il_psp.c" "$(il_src)/il_pix.c" "$(il_src)/il_pxr.c" "$(il_src)/il_vtf.c" "$(il_src)/il_xpm.c" "$(il_src)/il_hdr.c" "$(il_src)/il_icns.c" "$(il_src)/il_jp2.c" "$(il_src)/altivec_common.c" "$(il_src)/altivec_typeconversion.c" "$(il_src)/il_sun.c" "$(il_src)/il_nvidia.cpp" "$(il_src)/il_wbmp.c" "$(il_src)/il_squish.cpp" "$(il_src)/il_iff.c" "$(il_src)/il_ilbm.c" "$(il_src)/il_size.c" "$(il_src)/il_tpl.c" "$(il_src)/il_fits.c" "$(il_src)/il_iwi.c" "$(il_src)/il_blp.c" "$(il_src)/il_ftx.c" "$(il_src)/il_dicom.c" "$(il_src)/il_rot.c" "$(il_src)/il_texture.c" "$(il_src)/il_dpx.c" "$(il_src)/il_utx.cpp" "$(il_src)/il_mp3.c")) nil [1023 2635])
+            ("libIL_la_SOURCES" variable (:default-value ("$(il_include)/altivec_common.h" "$(il_include)/altivec_typeconversion.h" "$(il_include)/il_alloc.h" "$(il_include)/il_bits.h" "$(il_include)/il_bmp.h" "$(il_include)/il_dcx.h" "$(il_include)/il_dds.h" "$(il_include)/il_doompal.h" "$(il_include)/il_dpx.h" "$(il_include)/il_endian.h" "$(il_include)/il_exr.h" "$(il_include)/il_files.h" "$(il_include)/il_gif.h" "$(il_include)/il_hdr.h" "$(il_include)/il_icns.h" "$(il_include)/il_icon.h" "$(il_include)/il_internal.h" "$(il_include)/il_jp2.h" "$(il_include)/il_jpeg.h" "$(il_include)/il_lif.h" "$(il_include)/il_manip.h" "$(il_include)/il_mdl.h" "$(il_include)/il_pal.h" "$(il_include)/il_pcx.h" "$(il_include)/il_pic.h" "$(il_include)/il_pnm.h" "$(il_include)/il_psd.h" "$(il_include)/il_psp.h" "$(il_include)/il_q2pal.h" "$(il_include)/il_register.h" "$(il_include)/il_rle.h" "$(il_include)/il_sgi.h" "$(il_include)/il_stack.h" "$(il_include)/il_states.h" "$(il_include)/il_targa.h" "$(il_include)/il_utx.h" "$(il_include)/il_vtf.h" "$(il_include)/il_wdp.h" "$(all_include)/IL/devil_internal_exports.h")) nil [2636 3633])
+            ("libIL_la_LDFLAGS" variable (:default-value ("@IL_LIBS@" "$(AM_LDFLAGS)")) nil [3633 3676])
+            ("libILU_la_CPPFLAGS" variable (:default-value ("-I" "$(ilu_include)" "-I" "$(all_include)")) nil [3677 3734])
+            ("libILU_la_CFLAGS" variable (:default-value ("$(AM_CFLAGS)" "@ILU_CFLAGS@")) nil [3734 3779])
+            ("libILU_la_SOURCES" variable (:default-value ("$(ilu_src)/ilu_alloc.c" "$(ilu_src)/ilu_internal.c" "$(ilu_src)/ilu_noise.c" "$(ilu_src)/ilu_scale.c" "$(ilu_src)/ilu_error.c" "$(ilu_src)/ilu_main.c" "$(ilu_src)/ilu_rotate.c" "$(ilu_src)/ilu_scaling.c" "$(ilu_src)/ilu_filter.c" "$(ilu_src)/ilu_manip.c" "$(ilu_src)/ilu_scale2d.c" "$(ilu_src)/ilu_states.c" "$(ilu_src)/ilu_filter_rcg.c" "$(ilu_src)/ilu_mipmap.c" "$(ilu_src)/ilu_scale3d.c" "$(ilu_src)/ilu_utilities.c" "$(ilu_src)/ilu_region.c")) nil [3779 4212])
+            ("libILU_la_SOURCES" variable (:default-value ("$(ilu_include)/ilu_alloc.h" "$(ilu_include)/ilu_filter.h" "$(ilu_include)/ilu_internal.h" "$(ilu_include)/ilu_region.h" "$(ilu_include)/ilu_states.h" "$(all_include)/IL/devil_internal_exports.h" "$(all_include)/IL/ilu_region.h" "$(ilu_include)/ilu_error/ilu_err-arabic.h" "$(ilu_include)/ilu_error/ilu_err-dutch.h" "$(ilu_include)/ilu_error/ilu_err-english.h" "$(ilu_include)/ilu_error/ilu_err-french.h" "$(ilu_include)/ilu_error/ilu_err-german.h" "$(ilu_include)/ilu_error/ilu_err-japanese.h" "$(ilu_include)/ilu_error/ilu_err-spanish.h")) nil [4213 4747])
+            ("libILU_la_LDFLAGS" variable (:default-value ("@ILU_LIBS@" "$(AM_LDFLAGS)")) nil [4748 4793])
+            ("libILU_la_LIBADD" variable (:default-value ("libIL.la")) nil [4793 4821])
+            ("libILUT_la_CPPFLAGS" variable (:default-value ("-I" "$(ilut_include)" "-I" "$(all_include)")) nil [4822 4881])
+            ("libILUT_la_CFLAGS" variable (:default-value ("$(AM_CFLAGS)" "@ILUT_CFLAGS@")) nil [4881 4928])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_main.c" "$(ilut_src)/ilut_states.c" "$(ilut_src)/ilut_internal.c")) nil [4928 5029])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_include)/ilut_internal.h" "$(ilut_include)/ilut_states.h" "$(all_include)/IL/devil_internal_exports.h")) nil [5029 5156])
+            ("libILUT_la_LDFLAGS" variable (:default-value ("@ILUT_LIBS@" "$(AM_LDFLAGS)")) nil [5156 5203])
+            ("libILUT_la_LIBADD" variable (:default-value ("libILU.la")) nil [5203 5233])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_allegro.c" "$(ilut_include)/ilut_allegro.h")) nil [5249 5330])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_directx.c")) nil [5363 5412])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_directx9.c")) nil [5448 5498])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_sdlsurface.c")) nil [5529 5582])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_include)/ilut_opengl.h" "$(ilut_src)/ilut_opengl.c")) nil [5612 5691])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_x11.c")) nil [5721 5766])
+            ("libILUT_la_SOURCES" variable (:default-value ("$(ilut_src)/ilut_win32.c")) nil [5793 5842]))          
+      :file "Makefile.am"
+      :pointmax 5858
+      :fsize 5857
+      :lastmodtime '(21936 20342 0 0)
+      :unmatched-syntax '((ENDIF 5842 . 5847) (bol 5842 . 5842) (ENDIF 5766 . 5771) (bol 5766 . 5766) (ENDIF 5691 . 5696) (bol 5691 . 5691) (ENDIF 5582 . 5587) (bol 5582 . 5582) (ENDIF 5498 . 5503) (bol 5498 . 5498) (ENDIF 5412 . 5417) (bol 5412 . 5412) (ENDIF 5330 . 5335) (bol 5330 . 5330) (ENDIF 860 . 865) (bol 860 . 860) (ENDIF 724 . 729) (bol 724 . 724) (ENDIF 593 . 598) (bol 593 . 593) (ENDIF 491 . 496) (bol 491 . 491))))
+  :file "!Users!nshetty!Code!devil!DevIL!DevIL!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

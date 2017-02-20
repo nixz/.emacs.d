@@ -1,0 +1,453 @@
+;; Object daxToVtk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "daxToVtk/"
+  :tables (list 
+   (semanticdb-table "DataSetConverters.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("daxToVtk_DataSetConverter_h" variable (:constant-flag t) nil [694 721])
+            ("vtkLine" type
+               (:prototype t
+                :type "class")
+                nil [723 737])
+            ("vtkHexahedron" type
+               (:prototype t
+                :type "class")
+                nil [738 758])
+            ("vtkQuad" type
+               (:prototype t
+                :type "class")
+                nil [759 773])
+            ("vtkTetra" type
+               (:prototype t
+                :type "class")
+                nil [774 789])
+            ("vtkTriangle" type
+               (:prototype t
+                :type "class")
+                nil [790 808])
+            ("vtkVoxel" type
+               (:prototype t
+                :type "class")
+                nil [809 824])
+            ("vtkWedge" type
+               (:prototype t
+                :type "class")
+                nil [825 840])
+            ("vtkCellData.h" include (:system-flag t) nil [842 866])
+            ("vtkDataArray.h" include (:system-flag t) nil [867 892])
+            ("vtkDataSet.h" include (:system-flag t) nil [893 916])
+            ("vtkNew.h" include (:system-flag t) nil [917 936])
+            ("vtkPointData.h" include (:system-flag t) nil [937 962])
+            ("vtkPolyData.h" include (:system-flag t) nil [963 987])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [989 1027])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [1028 1061])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [1062 1095])
+            ("CellTypeToType.h" include nil nil [1097 1124])
+            ("daxToVtk" type
+               (:members 
+                  ( ("writeCellTags" function
+                       (:template 
+                          ( ("CellType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cell" variable
+                               (:pointer 1
+                                :type ("vtkCellArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1275 1294]))                          )
+                        (reparse-symbol namespacesubparts) [1228 1806])
+                    ("UniformDataSetConverter" type
+                       (:members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("grid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1940 1977])
+                                    ("output" variable
+                                       (:pointer 1
+                                        :type ("vtkImageData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1996 2017]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1924 2430]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1889 2433])
+                    ("dataSetConverter" function
+                       (:template 
+                          ( ("CellType" type (:type "class") nil nil)
+                            ("TopoTag" type (:type "class") nil nil)
+                            ("PointTag" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("grid" variable
+                               (:reference 1
+                                :type ("dax::cont::UnstructuredGrid" type
+                                     (:template-specifier 
+                                        ( ("CellType" type nil nil nil)
+                                          ("TopoTag" type nil nil nil)
+                                          ("PointTag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2568 2629])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2640 2668]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [2474 3208])
+                    ("dataSetConverter" function
+                       (:template 
+                          ( ("CellType" type (:type "class") nil nil)
+                            ("TopoTag" type (:type "class") nil nil)
+                            ("PointTag" type (:type "class") nil nil)
+                            ("ArrayHandle" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("grid" variable
+                               (:reference 1
+                                :type ("dax::cont::UnstructuredGrid" type
+                                     (:template-specifier 
+                                        ( ("CellType" type nil nil nil)
+                                          ("TopoTag" type nil nil nil)
+                                          ("PointTag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3377 3438])
+                            ("coordinates" variable
+                               (:reference 1
+                                :type ("ArrayHandle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3441 3466])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkPolyData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3469 3489]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3249 4004])
+                    ("dataSetConverter" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("grid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4075 4112])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkImageData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4123 4144]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4046 4318])
+                    ("addCellData" function
+                       (:template 
+                          ( ("FieldType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("output" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4366 4385])
+                            ("outputArray" variable
+                               (:reference 1
+                                :type ("FieldType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4403 4426])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4444 4468]))                          )
+                        (reparse-symbol namespacesubparts) [4320 4605])
+                    ("addPointData" function
+                       (:template 
+                          ( ("FieldType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("output" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4655 4674])
+                            ("outputArray" variable
+                               (:reference 1
+                                :type ("FieldType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4693 4716])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4735 4759]))                          )
+                        (reparse-symbol namespacesubparts) [4608 4922]))                  
+                :type "namespace")
+                nil [1126 4926]))          
+    :file "DataSetConverters.h"
+    :pointmax 4965
+    :fsize 4964
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("daxToVtk_DataSetConverter_h")
+          )
+
+    )
+   (semanticdb-table "CellTypeToType.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("daxToVtk_CellTypeToType_h" variable (:constant-flag t) nil [692 717])
+            ("dax/CellTraits.h" include (:system-flag t) nil [718 745])
+            ("daxToVtk" type
+               (:members 
+                  ( ("CellTypeToType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [768 811])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (885 894)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [873 894]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [867 895])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (915 963)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [904 963]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [898 964])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkLine" type (:type "class") nil nil)
+                                :superclasses "vtkLine"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [967 996]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagLine" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [812 999])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1080 1095)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1068 1095]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1062 1096])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1116 1170)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1105 1170]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1099 1171])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkHexahedron" type (:type "class") nil nil)
+                                :superclasses "vtkHexahedron"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1174 1209]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagHexahedron" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1001 1212])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1296 1305)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1284 1305]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1278 1306])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1326 1383)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1315 1383]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1309 1384])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkQuad" type (:type "class") nil nil)
+                                :superclasses "vtkQuad"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1387 1416]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagQuadrilateral" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1214 1419])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1501 1511)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1489 1511]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1483 1512])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1532 1587)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1521 1587]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1515 1588])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkTetra" type (:type "class") nil nil)
+                                :superclasses "vtkTetra"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1591 1621]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagTetrahedron" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1421 1624])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1703 1716)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1691 1716]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1685 1717])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1737 1789)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1726 1789]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1720 1790])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkTriangle" type (:type "class") nil nil)
+                                :superclasses "vtkTriangle"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1793 1826]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagTriangle" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1626 1829])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (1905 1915)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1893 1915]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1887 1916])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (1936 1985)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1925 1985]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1919 1986])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkVoxel" type (:type "class") nil nil)
+                                :superclasses "vtkVoxel"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1989 2019]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagVoxel" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1831 2022])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (2099 2110)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2087 2110]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2081 2111])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (2131 2181)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2120 2181]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2114 2182])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkVertex" type (:type "class") nil nil)
+                                :superclasses "vtkVertex"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2185 2216]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagVertex" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2024 2219])
+                    ("CellTypeToType" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("VTKCellType" variable
+                                       (:constant-flag t
+                                        :default-value (2295 2305)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2283 2305]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2277 2306])
+                            ("" type
+                               (:members 
+                                  ( ("NUM_POINTS" variable
+                                       (:constant-flag t
+                                        :default-value (2326 2375)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2315 2375]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2309 2376])
+                            ("VTKCellClass" type
+                               (:typedef ("vtkWedge" type (:type "class") nil nil)
+                                :superclasses "vtkWedge"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2379 2409]))                          
+                        :template-specifier 
+                          ( ("dax::CellTagWedge" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2221 2412]))                  
+                :type "namespace")
+                nil [747 2415]))          
+    :file "CellTypeToType.h"
+    :pointmax 2423
+    :fsize 2422
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("daxToVtk_CellTypeToType_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Accelerators!Dax!daxToVtk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

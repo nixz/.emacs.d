@@ -1,0 +1,688 @@
+;; Object Default/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Default/"
+  :tables (list 
+   (semanticdb-table "vtkParallelSerialWriter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkParallelSerialWriter.h" include nil nil [563 599])
+            ("vtkClientServerInterpreter.h" include nil nil [601 640])
+            ("vtkClientServerInterpreterInitializer.h" include nil nil [641 691])
+            ("vtkClientServerStream.h" include nil nil [692 726])
+            ("vtkCompositeDataIterator.h" include nil nil [727 764])
+            ("vtkCompositeDataSet.h" include nil nil [765 797])
+            ("vtkDataSet.h" include nil nil [798 821])
+            ("vtkInformation.h" include nil nil [822 849])
+            ("vtkInformationVector.h" include nil nil [850 883])
+            ("vtkMultiProcessController.h" include nil nil [884 922])
+            ("vtkObjectFactory.h" include nil nil [923 952])
+            ("vtkReductionFilter.h" include nil nil [953 984])
+            ("vtkSmartPointer.h" include nil nil [985 1013])
+            ("vtkStreamingDemandDrivenPipeline.h" include nil nil [1014 1059])
+            ("vtkTrivialProducer.h" include nil nil [1060 1091])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [1093 1122])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1123 1156])
+            ("string" include (:system-flag t) nil [1158 1175])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkParallelSerialWriter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1197 1221]))                  
+                :type "int")
+                nil [1177 1222])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkParallelSerialWriter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1244 1268])
+                    ("" variable (:type ("Writer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1269 1276])
+                    ("" variable (:type ("vtkAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1277 1290]))                  
+                :type "int")
+                nil [1223 1291])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkParallelSerialWriter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1313 1337])
+                    ("" variable (:type ("PreGatherHelper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1338 1354])
+                    ("" variable (:type ("vtkAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1355 1368]))                  
+                :type "int")
+                nil [1292 1369])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkParallelSerialWriter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1415])
+                    ("" variable (:type ("PostGatherHelper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1416 1433])
+                    ("" variable (:type ("vtkAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1447]))                  
+                :type "int")
+                nil [1370 1448])
+            ("vtkParallelSerialWriter" function
+               (:constructor-flag t
+                :parent "vtkParallelSerialWriter"
+                :type ("vtkParallelSerialWriter" type (:type "class") nil nil))
+                nil [1529 2028])
+            ("vtkParallelSerialWriter" function
+               (:destructor-flag t
+                :parent "vtkParallelSerialWriter"
+                :type "void")
+                nil [2110 2331])
+            ("Write" function
+               (:parent "vtkParallelSerialWriter"
+                :type "int")
+                nil [2412 2699])
+            ("RequestInformation" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2831 2866])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2870 2905])
+                    ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2908 2954]))                  
+                :type "int")
+                nil [2780 3274])
+            ("RequestUpdateExtent" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3407 3442])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3446 3481])
+                    ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3484 3530]))                  
+                :type "int")
+                nil [3355 4282])
+            ("RequestData" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4407 4431])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4434 4469])
+                    ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4472 4518]))                  
+                :type "int")
+                nil [4363 5527])
+            ("WriteATimestep" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5653 5674]))                  
+                :type "void")
+                nil [5608 6753])
+            ("WriteAFile" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6875 6896])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6897 6918]))                  
+                :type "void")
+                nil [6834 9049])
+            ("GetMTime" function
+               (:parent "vtkParallelSerialWriter"
+                :type "unsigned long")
+                nil [9252 9540])
+            ("WriteInternal" function
+               (:parent "vtkParallelSerialWriter"
+                :type "void")
+                nil [9622 9973])
+            ("SetWriterFileName" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10103 10121]))                  
+                :type "void")
+                nil [10055 10467])
+            ("PrintSelf" function
+               (:parent "vtkParallelSerialWriter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10589 10601])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10602 10619]))                  
+                :type "void")
+                nil [10549 10666]))          
+    :file "vtkParallelSerialWriter.cxx"
+    :pointmax 10667
+    :fsize 10666
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((semantic-list 4504 . 4518) (semantic-list 3516 . 3530) (semantic-list 3433 . 3442) (semantic-list 2940 . 2954) (semantic-list 2857 . 2866))
+    )
+   (semanticdb-table "vtkExtractHistogram.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkExtractHistogram.h" include nil nil [593 625])
+            ("vtkCellData.h" include nil nil [627 651])
+            ("vtkCompositeDataIterator.h" include nil nil [652 689])
+            ("vtkCompositeDataSet.h" include nil nil [690 722])
+            ("vtkDataSet.h" include nil nil [723 746])
+            ("vtkDoubleArray.h" include nil nil [747 774])
+            ("vtkGraph.h" include nil nil [775 796])
+            ("vtkInformation.h" include nil nil [797 824])
+            ("vtkInformationVector.h" include nil nil [825 858])
+            ("vtkIntArray.h" include nil nil [859 883])
+            ("vtkIOStream.h" include nil nil [884 908])
+            ("vtkMath.h" include nil nil [909 929])
+            ("vtkObjectFactory.h" include nil nil [930 959])
+            ("vtkOnePieceExtentTranslator.h" include nil nil [960 1000])
+            ("vtkPointData.h" include nil nil [1001 1026])
+            ("vtkSmartPointer.h" include nil nil [1027 1055])
+            ("vtkStreamingDemandDrivenPipeline.h" include nil nil [1056 1101])
+            ("vtkTable.h" include nil nil [1102 1123])
+            ("vector" include (:system-flag t) nil [1125 1142])
+            ("map" include (:system-flag t) nil [1143 1157])
+            ("string" include (:system-flag t) nil [1158 1175])
+            ("vtkEHInternals" type
+               (:members 
+                  ( ("vtkEHInternals" function
+                       (:constructor-flag t
+                        :type ("vtkEHInternals" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1203 1245])
+                    ("ArrayValuesType" type
+                       (:members 
+                          ( ("TotalValues" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1386 1432]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1248 1439])
+                    ("ArrayMapType" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("ArrayValuesType" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1442 1502])
+                    ("ArrayValues" variable (:type ("ArrayMapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1505 1530])
+                    ("FieldAssociation" variable (:type "int") (reparse-symbol classsubparts) [1533 1554]))                  
+                :type "struct")
+                nil [1177 1557])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkExtractHistogram" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1579 1599]))                  
+                :type "int")
+                nil [1559 1600])
+            ("vtkExtractHistogram" function
+               (:constructor-flag t
+                :parent "vtkExtractHistogram"
+                :type ("vtkExtractHistogram" type (:type "class") nil nil))
+                nil [1681 2077])
+            ("vtkExtractHistogram" function
+               (:destructor-flag t
+                :parent "vtkExtractHistogram"
+                :type "void")
+                nil [2159 2231])
+            ("PrintSelf" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2349 2361])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2379]))                  
+                :type "void")
+                nil [2313 2737])
+            ("FillInputPortInformation" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2870 2879])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2931 2952]))                  
+                :type "int")
+                nil [2819 3099])
+            ("GetInputFieldAssociation" function
+               (:parent "vtkExtractHistogram"
+                :type "int")
+                nil [3181 3460])
+            ("GetInputFieldData" function
+               (:pointer 1
+                :parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("vtkDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3595 3616]))                  
+                :type ("vtkFieldData" type (:type "class") nil nil))
+                nil [3542 4590])
+            ("GetInputArrayRange" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4720 4755])
+                    ("range" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4756 4772]))                  
+                :type "bool")
+                nil [4672 6593])
+            ("InitializeBinExtents" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6725 6760])
+                    ("bin_extents" variable
+                       (:pointer 1
+                        :type ("vtkDoubleArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6763 6791])
+                    ("min" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6794 6806])
+                    ("max" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6807 6819]))                  
+                :type "bool")
+                nil [6675 7798])
+            ("FillBinExtents" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("bin_extents" variable
+                       (:pointer 1
+                        :type ("vtkDoubleArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7921 7949])
+                    ("min" variable (:type "double") (reparse-symbol arg-sub-list) [7952 7963])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [7964 7975]))                  
+                :type "void")
+                nil [7880 8446])
+            ("vtkExtractHistogramClamp" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [8485 8495])
+                    ("min" variable (:type "int") (reparse-symbol arg-sub-list) [8496 8504])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [8505 8513]))                  
+                :type "int")
+                nil [8449 8607])
+            ("BinAnArray" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("data_array" variable
+                       (:pointer 1
+                        :type ("vtkDataArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8726 8751])
+                    ("bin_values" variable
+                       (:pointer 1
+                        :type ("vtkIntArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8789 8813])
+                    ("min" variable (:type "double") (reparse-symbol arg-sub-list) [8851 8862])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [8863 8874])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("vtkFieldData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8912 8932]))                  
+                :type "void")
+                nil [8689 10747])
+            ("RequestData" function
+               (:parent "vtkExtractHistogram"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10866 10894])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10932 10967])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11005 11040]))                  
+                :type "int")
+                nil [10829 15081]))          
+    :file "vtkExtractHistogram.cxx"
+    :pointmax 15082
+    :fsize 15081
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkExtractHistogram.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkExtractHistogram_h" variable (:constant-flag t) nil [632 655])
+            ("vtkPVVTKExtensionsDefaultModule.h" include nil nil [657 701])
+            ("vtkTableAlgorithm.h" include nil nil [723 753])
+            ("vtkDoubleArray" type
+               (:prototype t
+                :type "class")
+                nil [761 782])
+            ("vtkFieldData" type
+               (:prototype t
+                :type "class")
+                nil [783 802])
+            ("vtkIntArray" type
+               (:prototype t
+                :type "class")
+                nil [803 821])
+            ("vtkEHInternals" type
+               (:prototype t
+                :type "struct")
+                nil [822 844])
+            ("vtkTableAlgorithm" variable (:type "int") nil [1392 4332]))          
+    :file "vtkExtractHistogram.h"
+    :pointmax 4341
+    :fsize 4361
+    :lastmodtime '(20817 62747)
+    :unmatched-syntax '((PUBLIC 1385 . 1391) (punctuation 1383 . 1384) (symbol 1363 . 1382) (symbol 1330 . 1362) (CLASS 1324 . 1329))
+    :lexical-table 
+        '(("__vtkExtractHistogram_h")
+          )
+
+    )
+   (semanticdb-table "vtkAttributeDataReductionFilter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkAttributeDataReductionFilter.h" include nil nil [605 649])
+            ("vtkArrayIteratorIncludes.h" include nil nil [651 688])
+            ("vtkCellData.h" include nil nil [689 713])
+            ("vtkDataSet.h" include nil nil [714 737])
+            ("vtkInformation.h" include nil nil [738 765])
+            ("vtkInformationVector.h" include nil nil [766 799])
+            ("vtkObjectFactory.h" include nil nil [800 829])
+            ("vtkPointData.h" include nil nil [830 855])
+            ("vtkSmartPointer.h" include nil nil [856 884])
+            ("vtkTable.h" include nil nil [885 906])
+            ("vtkDataArray.h" include nil nil [907 932])
+            ("vector" include (:system-flag t) nil [934 951])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [973 1005]))                  
+                :type "int")
+                nil [953 1006])
+            ("vtkAttributeDataReductionFilter" function
+               (:constructor-flag t
+                :parent "vtkAttributeDataReductionFilter"
+                :type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil))
+                nil [1087 1385])
+            ("vtkAttributeDataReductionFilter" function
+               (:destructor-flag t
+                :parent "vtkAttributeDataReductionFilter"
+                :type "void")
+                nil [1467 1538])
+            ("FillInputPortInformation" function
+               (:parent "vtkAttributeDataReductionFilter"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [1684 1693])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1694 1715]))                  
+                :type "int")
+                nil [1619 1837])
+            ("RequestDataObject" function
+               (:parent "vtkAttributeDataReductionFilter"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 1992])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1995 2031])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2034 2069]))                  
+                :type "int")
+                nil [1918 2780])
+            ("vtkAttributeDataReductionFilterReduce" function
+               (:template 
+                  ( ("iterT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2927 2965])
+                    ("toIter" variable
+                       (:pointer 1
+                        :type ("iterT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2968 2982])
+                    ("fromIter" variable
+                       (:pointer 1
+                        :type ("iterT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2983 2999])
+                    ("progress_offset" variable (:type "double") (reparse-symbol arg-sub-list) [3000 3023])
+                    ("progress_factor" variable (:type "double") (reparse-symbol arg-sub-list) [3024 3047]))                  )
+                nil [2862 3996])
+            ("vtkAttributeDataReductionFilterReduce" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4145 4178])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vtkArrayIteratorTemplate" type
+                             (:template-specifier 
+                                ( ("vtkStdString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4181 4222])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vtkArrayIteratorTemplate" type
+                             (:template-specifier 
+                                ( ("vtkStdString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4225 4265])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4266 4273])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4274 4281]))                  
+                :type "void")
+                nil [4102 4313])
+            ("vtkAttributeDataReductionFilterReduce" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4462 4495])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vtkBitArrayIterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4498 4520])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vtkBitArrayIterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4521 4542])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4543 4550])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4551 4558]))                  
+                :type "void")
+                nil [4419 4593])
+            ("vtkAttributeDataReductionFilterReduce" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("vtkDataSetAttributes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4728 4757])
+                    ("inputs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("vtkDataSetAttributes" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4760 4802])
+                    ("self" variable
+                       (:pointer 1
+                        :type ("vtkAttributeDataReductionFilter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4805 4843]))                  
+                :type "void")
+                nil [4675 7199])
+            ("RequestData" function
+               (:parent "vtkAttributeDataReductionFilter"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7333 7368])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7372 7407])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7408 7443]))                  
+                :type "int")
+                nil [7281 10103])
+            ("PrintSelf" function
+               (:parent "vtkAttributeDataReductionFilter"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10233 10245])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10246 10263]))                  
+                :type "void")
+                nil [10185 10463]))          
+    :file "vtkAttributeDataReductionFilter.cxx"
+    :pointmax 10464
+    :fsize 10472
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((semantic-list 7359 . 7368) (symbol 4395 . 4418) (symbol 4078 . 4101))
+    )
+   (semanticdb-table "vtkAttributeDataReductionFilter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkAttributeDataReductionFilter_h" variable (:constant-flag t) nil [1239 1274])
+            ("vtkPVVTKExtensionsDefaultModule.h" include nil nil [1276 1320])
+            ("vtkDataObjectAlgorithm.h" include nil nil [1342 1377])
+            ("vtkDataObjectAlgorithm" variable (:type "int") nil [1459 3875]))          
+    :file "vtkAttributeDataReductionFilter.h"
+    :pointmax 3884
+    :fsize 3895
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1452 . 1458) (punctuation 1450 . 1451) (symbol 1418 . 1449) (symbol 1385 . 1417) (CLASS 1379 . 1384))
+    :lexical-table 
+        '(("__vtkAttributeDataReductionFilter_h")
+          )
+
+    )
+   (semanticdb-table "vtkAMRDualClip.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkAMRDualClip_h" variable (:constant-flag t) nil [1031 1049])
+            ("vtkPVVTKExtensionsDefaultModule.h" include nil nil [1051 1095])
+            ("vtkMultiBlockDataSetAlgorithm.h" include nil nil [1117 1159])
+            ("vtkDataSet" type
+               (:prototype t
+                :type "class")
+                nil [1161 1178])
+            ("vtkImageData" type
+               (:prototype t
+                :type "class")
+                nil [1179 1198])
+            ("vtkUnstructuredGrid" type
+               (:prototype t
+                :type "class")
+                nil [1199 1225])
+            ("vtkNonOverlappingAMR" type
+               (:prototype t
+                :type "class")
+                nil [1226 1253])
+            ("vtkPoints" type
+               (:prototype t
+                :type "class")
+                nil [1254 1270])
+            ("vtkUnsignedCharArray" type
+               (:prototype t
+                :type "class")
+                nil [1271 1298])
+            ("vtkDoubleArray" type
+               (:prototype t
+                :type "class")
+                nil [1299 1320])
+            ("vtkCellArray" type
+               (:prototype t
+                :type "class")
+                nil [1321 1340])
+            ("vtkCellData" type
+               (:prototype t
+                :type "class")
+                nil [1341 1359])
+            ("vtkIntArray" type
+               (:prototype t
+                :type "class")
+                nil [1360 1378])
+            ("vtkMultiProcessController" type
+               (:prototype t
+                :type "class")
+                nil [1379 1411])
+            ("vtkDataArraySelection" type
+               (:prototype t
+                :type "class")
+                nil [1412 1440])
+            ("vtkCallbackCommand" type
+               (:prototype t
+                :type "class")
+                nil [1441 1466])
+            ("vtkAMRDualGridHelper" type
+               (:prototype t
+                :type "class")
+                nil [1468 1495])
+            ("vtkAMRDualGridHelperBlock" type
+               (:prototype t
+                :type "class")
+                nil [1496 1528])
+            ("vtkAMRDualGridHelperFace" type
+               (:prototype t
+                :type "class")
+                nil [1529 1560])
+            ("vtkAMRDualClipLocator" type
+               (:prototype t
+                :type "class")
+                nil [1561 1589])
+            ("vtkMultiBlockDataSetAlgorithm" variable (:type "int") nil [1655 5168]))          
+    :file "vtkAMRDualClip.h"
+    :pointmax 5177
+    :fsize 5176
+    :lastmodtime '(20762 34839)
+    :unmatched-syntax '((PUBLIC 1648 . 1654) (punctuation 1646 . 1647) (symbol 1631 . 1645) (symbol 1598 . 1630) (CLASS 1592 . 1597))
+    :lexical-table 
+        '(("__vtkAMRDualClip_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!VTKExtensions!Default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

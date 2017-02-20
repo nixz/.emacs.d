@@ -1,0 +1,1106 @@
+;; Object BlockBasedRobots/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BlockBasedRobots/"
+  :tables
+  (list
+    (semanticdb-table "Ind_CPPN_NEAT.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IND_CPPN_NEAT_HPP_" variable (:constant-flag t) nil [124 142])
+            ("vector" include (:system-flag t) nil [146 163])
+            ("set" include (:system-flag t) nil [164 178])
+            ("list" include (:system-flag t) nil [179 194])
+            ("cmath" include (:system-flag t) nil [195 211])
+            ("VectorIndividual.hpp" include nil nil [213 244])
+            ("Random.hpp" include nil nil [245 266])
+            ("CPPN_Neuron" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [341 348])
+                    ("activation_function_t" type
+                       (:members 
+                          ( ("linear" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [785 792])
+                            ("sin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [801 805])
+                            ("gaussian" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [814 823])
+                            ("sigmoid" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [832 840])
+                            ("nbActivationFunctions" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [849 876]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [749 877])
+                    ("CPPN_Neuron" function
+                       (:constructor-flag t
+                        :type ("CPPN_Neuron" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1041 1185])
+                    ("getValue" function (:type "double") (reparse-symbol classsubparts) [1266 1313])
+                    ("setValue" function
+                       (:arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [1380 1393]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1366 1424])
+                    ("getIncoming" function
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1503 1563])
+                    ("setIncoming" function
+                       (:arguments 
+                          ( ("incoming" variable (:type "double") (reparse-symbol arg-sub-list) [1647 1663]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1630 1700])
+                    ("updateIncoming" function
+                       (:arguments 
+                          ( ("udpate" variable (:type "double") (reparse-symbol arg-sub-list) [1808 1822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1788 1856])
+                    ("getBias" function (:type "double") (reparse-symbol classsubparts) [1918 1963])
+                    ("setBias" function
+                       (:arguments 
+                          ( ("bias" variable (:type "double") (reparse-symbol arg-sub-list) [2035 2047]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2022 2076])
+                    ("addIncomingConnection" function
+                       (:arguments 
+                          ( ("incoming" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2174 2190]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2147 2243])
+                    ("addOutgoingConnection" function
+                       (:arguments 
+                          ( ("outgoing" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2341 2357]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2314 2410])
+                    ("getIncomingConnections" function
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2490 2581])
+                    ("getOutgoingConnections" function
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2661 2752])
+                    ("propagate" function (:type "void") (reparse-symbol classsubparts) [3729 4244])
+                    ("reset" function (:type "void") (reparse-symbol classsubparts) [4315 4377])
+                    ("setActivationFunction" function
+                       (:arguments 
+                          ( ("activation" variable (:type ("activation_function_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4570 4603]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4543 4652])
+                    ("getActivationFunction" function (:type ("activation_function_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4722 4810])
+                    ("private" label nil (reparse-symbol classsubparts) [4812 4820])
+                    ("_incomingIndices" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4845 4882])
+                    ("_outgoingIndices" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4887 4924])
+                    ("_value" variable (:type "double") (reparse-symbol classsubparts) [4929 4943])
+                    ("_incoming" variable (:type "double") (reparse-symbol classsubparts) [4948 4965])
+                    ("_bias" variable (:type "double") (reparse-symbol classsubparts) [4970 4983])
+                    ("_lambda" variable (:type "double") (reparse-symbol classsubparts) [4988 5003])
+                    ("_activationFunction" variable (:type ("activation_function_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5031 5073]))                  
+                :type "class")
+                nil [320 5076])
+            ("CPPN_Connection" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5153 5160])
+                    ("CPPN_Connection" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("source" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5290 5304])
+                            ("target" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5305 5319])
+                            ("weight" variable (:type "double") (reparse-symbol arg-sub-list) [5320 5334]))                          
+                        :type ("CPPN_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5274 5401])
+                    ("getWeight" function
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [5469 5525])
+                    ("setWeight" function
+                       (:arguments 
+                          ( ("weight" variable (:type "double") (reparse-symbol arg-sub-list) [5605 5619]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5590 5652])
+                    ("getSource" function
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5813 5869])
+                    ("getTarget" function
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6030 6086])
+                    ("protected" label nil (reparse-symbol classsubparts) [6088 6098])
+                    ("_source" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6103 6118])
+                    ("_target" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6123 6138])
+                    ("_weight" variable (:type "double") (reparse-symbol classsubparts) [6143 6158]))                  
+                :type "class")
+                nil [5129 6161])
+            ("BreadthFirstNode" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6437 6444])
+                    ("BreadthFirstNode" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("nodeIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6648 6665])
+                            ("previous" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("BreadthFirstNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6666 6696]))                          
+                        :type ("BreadthFirstNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6631 6881])
+                    ("getDepth" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7048 7101])
+                    ("getPrevious" function
+                       (:pointer 1
+                        :type ("BreadthFirstNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7291 7361])
+                    ("getNodeIndex" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7503 7564])
+                    ("private" label nil (reparse-symbol classsubparts) [7565 7573])
+                    ("_nodeIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7578 7596])
+                    ("_previous" variable
+                       (:pointer 1
+                        :type ("BreadthFirstNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7601 7629])
+                    ("_depth" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7634 7648]))                  
+                :type "class")
+                nil [6413 7651])
+            ("BreadthFirstItereator" type
+               (:template 
+                  ( ("Network" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8870 8877])
+                    ("node_t" type
+                       (:typedef ("BreadthFirstNode" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8882 8914])
+                    ("network_t" type
+                       (:typedef ("Network" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8919 8945])
+                    ("con_t" type
+                       (:typedef ("network_t::con_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8950 8990])
+                    ("BreadthFirstItereator" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("network" variable
+                               (:pointer 1
+                                :type ("network_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9140 9159]))                          
+                        :type ("BreadthFirstItereator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9118 9194])
+                    ("BreadthFirstItereator" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9373 9542])
+                    ("addStart" function
+                       (:arguments 
+                          ( ("start" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9617 9630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9603 9662])
+                    ("hasNext" function (:type "bool") (reparse-symbol classsubparts) [9891 9947])
+                    ("next" function
+                       (:pointer 1
+                        :type ("node_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10267 10828])
+                    ("private" label nil (reparse-symbol classsubparts) [10830 10838])
+                    ("_addPath" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("nodeIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10860 10877])
+                            ("previous" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10878 10898]))                          
+                        :type ("node_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10843 11050])
+                    ("_network" variable
+                       (:pointer 1
+                        :type ("network_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11056 11076])
+                    ("_frontier" variable (:type ("std::list" type
+                         (:template-specifier 
+                            ( ("node_t" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11081 11110])
+                    ("_paths" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("node_t" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11115 11143]))                  )
+                nil [8814 11146])
+            ("CPPN_NEAT" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11644 11651])
+                    ("neuron_t" type
+                       (:typedef ("CPPN_Neuron" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11656 11685])
+                    ("con_t" type
+                       (:typedef ("CPPN_Connection" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11690 11720])
+                    ("CPPN_NEAT" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("numberOfInputs" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12209 12234])
+                            ("numberOfOutputs" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12236 12262]))                          
+                        :type ("CPPN_NEAT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12199 12990])
+                    ("getNeurons" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("neuron_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13230 13297])
+                    ("getConnections" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("con_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13388 13460])
+                    ("setValue" function
+                       (:arguments 
+                          ( ("neuronIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13554 13573])
+                            ("value" variable (:type "double") (reparse-symbol arg-sub-list) [13574 13587]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13540 13641])
+                    ("getValue" function
+                       (:arguments 
+                          ( ("neuronIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13740 13759]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [13724 13986])
+                    ("getOutputValue" function
+                       (:arguments 
+                          ( ("neuronIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14098 14117]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [14076 14347])
+                    ("getNbOfInputs" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14420 14477])
+                    ("setNbOfInputs" function
+                       (:arguments 
+                          ( ("nbOfInputs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14569 14587]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14550 14628])
+                    ("getNbOfOutputs" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14702 14761])
+                    ("setNbOfOutputs" function
+                       (:arguments 
+                          ( ("nbOfOutputs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14855 14874]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14835 14917])
+                    ("setWeightMutationRate" function
+                       (:arguments 
+                          ( ("weightMutRate" variable (:type "double") (reparse-symbol arg-sub-list) [15004 15025]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14977 15072])
+                    ("setNeuronMutationRate" function
+                       (:arguments 
+                          ( ("neuronMutRate" variable (:type "double") (reparse-symbol arg-sub-list) [15159 15180]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15132 15227])
+                    ("setAddNeuronMutationRate" function
+                       (:arguments 
+                          ( ("addNeuronMutRate" variable (:type "double") (reparse-symbol arg-sub-list) [15317 15341]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15287 15394])
+                    ("setAddConnectionMutationRate" function
+                       (:arguments 
+                          ( ("addConnectionMutRate" variable (:type "double") (reparse-symbol arg-sub-list) [15488 15516]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15454 15577])
+                    ("setMinWeight" function
+                       (:arguments 
+                          ( ("minWeight" variable (:type "double") (reparse-symbol arg-sub-list) [15708 15725]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15690 15764])
+                    ("setMaxWeight" function
+                       (:arguments 
+                          ( ("maxWeight" variable (:type "double") (reparse-symbol arg-sub-list) [15895 15912]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15877 15951])
+                    ("setMinTimeCt" function
+                       (:arguments 
+                          ( ("minWeight" variable (:type "double") (reparse-symbol arg-sub-list) [16089 16106]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16071 16145])
+                    ("setMaxTimeCt" function
+                       (:arguments 
+                          ( ("maxWeight" variable (:type "double") (reparse-symbol arg-sub-list) [16283 16300]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16265 16339])
+                    ("debugPrint" function (:type "void") (reparse-symbol classsubparts) [16598 17801])
+                    ("addNeuron" function (:type "void") (reparse-symbol classsubparts) [18011 18074])
+                    ("addConnection" function
+                       (:arguments 
+                          ( ("sourceIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18361 18380])
+                            ("targetIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18381 18400])
+                            ("weight" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [18401 18420]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18342 18649])
+                    ("step" function (:type "void") (reparse-symbol classsubparts) [18881 19334])
+                    ("logActivation" function
+                       (:arguments 
+                          ( ("activationFile" variable
+                               (:reference 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19546 19576]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19527 19732])
+                    ("reset" function (:type "void") (reparse-symbol classsubparts) [19892 20003])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [20785 30702])
+                    ("addRandomConnection" function (:type "void") (reparse-symbol classsubparts) [26574 30702])
+                    ("addRandomNeuron" function (:type "void") (reparse-symbol classsubparts) [28507 29255])
+                    ("getDepth" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29693 30702])
+                    ("protected" label nil (reparse-symbol classsubparts) [30158 30168])
+                    ("_neurons" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("neuron_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [30223 30254])
+                    ("_connections" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("con_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [30259 30291])
+                    ("_sorted_neuron_indices" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [30296 30339])
+                    ("_sorted_neurons_sorted" variable (:type "bool") (reparse-symbol classsubparts) [30344 30372])
+                    ("_nbOfInputs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30414 30433])
+                    ("_nbOfOutputs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30438 30458])
+                    ("_weightMutRate" variable (:type "double") (reparse-symbol classsubparts) [30485 30507])
+                    ("_neuronMutRate" variable (:type "double") (reparse-symbol classsubparts) [30512 30534])
+                    ("_neuronActMutRate" variable (:type "double") (reparse-symbol classsubparts) [30539 30564])
+                    ("_addNeuronMutRate" variable (:type "double") (reparse-symbol classsubparts) [30569 30594])
+                    ("_addConnectionMutRate" variable (:type "double") (reparse-symbol classsubparts) [30599 30628])
+                    ("_minWeight" variable (:type "double") (reparse-symbol classsubparts) [30659 30677])
+                    ("_maxWeight" variable (:type "double") (reparse-symbol classsubparts) [30682 30700]))                  
+                :type "class")
+                nil [11626 30703])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30812 30829])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("CPPN_NEAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30830 30845]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [30787 31450]))          
+      :file "Ind_CPPN_NEAT.hpp"
+      :pointmax 31487
+      :fsize 31486
+      :lastmodtime '(21794 12066 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IND_CPPN_NEAT_HPP_")
+          )
+)
+    (semanticdb-table "VectorIndividual.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VECTORINDIVIDUAL_HPP_" variable (:constant-flag t) nil [283 304])
+            ("vector" include (:system-flag t) nil [306 323])
+            ("Individual.hpp" include nil nil [325 350])
+            ("Random.hpp" include nil nil [351 372])
+            ("VectorIndividual" type
+               (:superclasses 
+                  ( ("Individual" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [418 425])
+                    ("VectorIndividual" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [447 462])
+                            ("min" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [464 480])
+                            ("max" variable
+                               (:default-value "1.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [482 498])
+                            ("mutationRate" variable
+                               (:default-value "0.05"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [500 526]))                          
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [430 627])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [797 934])
+                    ("mutate" function (:type "void") (reparse-symbol classsubparts) [1130 1332])
+                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1393 1455])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("nIndex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1553 1570]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1533 1619])
+                    ("private" label nil (reparse-symbol classsubparts) [1621 1629])
+                    ("_valueVector" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1634 1667])
+                    ("_min" variable (:type "double") (reparse-symbol classsubparts) [1672 1684])
+                    ("_max" variable (:type "double") (reparse-symbol classsubparts) [1689 1701])
+                    ("_mutationRate" variable (:type "double") (reparse-symbol classsubparts) [1706 1727]))                  
+                :type "class")
+                nil [374 1730])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1822 1839])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("VectorIndividual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1840 1862]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1797 2032]))          
+      :file "VectorIndividual.hpp"
+      :pointmax 2069
+      :fsize 2068
+      :lastmodtime '(21785 2698 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTORINDIVIDUAL_HPP_")
+          )
+)
+    (semanticdb-table "Random.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RANDOM_HPP_" variable (:constant-flag t) nil [224 235])
+            ("stdlib.h" include (:system-flag t) nil [237 256])
+            ("time.h" include (:system-flag t) nil [257 274])
+            ("math.h" include (:system-flag t) nil [275 292])
+            ("iostream" include (:system-flag t) nil [293 312])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [401 419]))                  
+                :type "void")
+                nil [384 511])
+            ("seed" function
+               (:typemodifiers ("inline")
+                :type "void")
+                nil [585 754])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :type "double")
+                nil [814 991])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type "double") (reparse-symbol arg-sub-list) [1077 1088]))                  
+                :type "double")
+                nil [1052 1231])
+            ("randDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type "double") (reparse-symbol arg-sub-list) [1320 1331])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [1332 1343]))                  
+                :type "double")
+                nil [1295 1504])
+            ("randInt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [1525 1533])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1534 1542]))                  
+                :type "int")
+                nil [1506 1782])
+            ("randInt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1803 1811]))                  
+                :type "int")
+                nil [1784 1842])
+            ("randGaussian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("m" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2198 2210])
+                    ("v" variable
+                       (:default-value "1.0"
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2211 2223]))                  
+                :type "double")
+                nil [2171 2483])
+            ("randIndex" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("min" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2894])
+                    ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2895 2906]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2859 3157])
+            ("randIndex" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3237]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3202 3270]))          
+      :file "Random.hpp"
+      :pointmax 3298
+      :fsize 3297
+      :lastmodtime '(21769 1772 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RANDOM_HPP_")
+          )
+)
+    (semanticdb-table "Fit_EvolvingRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIT_EVOLVINGROBOT_HPP_" variable (:constant-flag t) nil [114 136])
+            ("Fit_EvolvedRobot" type
+               (:template 
+                  ( ("SimType" type (:type "class") nil nil)
+                    ("Indiv" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [206 213])
+                    ("indiv_t" type
+                       (:typedef ("Indiv" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [218 240])
+                    ("Fit_EvolvedRobot" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simulator" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SimType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [263 285]))                          
+                        :type ("Fit_EvolvedRobot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [246 325])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 628]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [594 670])
+                    ("private" label nil (reparse-symbol classsubparts) [674 682])
+                    ("_simulator" variable
+                       (:pointer 1
+                        :type ("SimType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [687 707]))                  )
+                nil [138 710]))          
+      :file "Fit_EvolvingRobot.hpp"
+      :pointmax 750
+      :fsize 749
+      :lastmodtime '(21784 53988 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIT_EVOLVINGROBOT_HPP_")
+          )
+)
+    (semanticdb-table "Ind_EvolvingRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IND_EVOLVINGROBOT_HPP_" variable (:constant-flag t) nil [136 158])
+            ("map" include (:system-flag t) nil [180 194])
+            ("btBulletDynamicsCommon.h" include (:system-flag t) nil [214 249])
+            ("Ind_CPPN_NEAT.hpp" include (:system-flag t) nil [268 296])
+            ("coord_t" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [298 331])
+            ("EvolvingRobot" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [394 402])
+                    ("public" label nil (reparse-symbol classsubparts) [405 412])
+                    ("motorMaxImpulse" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [437 473])
+                    ("motorSpeedModifier" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [478 517])
+                    ("cppn_scale" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [522 553])
+                    ("maxBlocks" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "10"
+                        :type "int")
+                        (reparse-symbol classsubparts) [558 590])
+                    ("x_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [621 653])
+                    ("y_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "1"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [658 690])
+                    ("z_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "2"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [695 727])
+                    ("side_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "3"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [732 767])
+                    ("x_dist_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "4"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [772 809])
+                    ("y_dist_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "5"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [814 851])
+                    ("z_dist_input" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "6"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [856 893])
+                    ("block_output" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [925 962])
+                    ("phaseShift_output" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "1"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [967 1009])
+                    ("frequency_output" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "2"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1014 1055])
+                    ("axis_output" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "3"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1060 1096])
+                    ("side_t" type
+                       (:members 
+                          ( ("leftSide" variable
+                               (:constant-flag t
+                                :default-value (1146 1147)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1135 1147])
+                            ("rightSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1157 1167])
+                            ("frontSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1176 1186])
+                            ("backSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1195 1204])
+                            ("topSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1213 1221])
+                            ("bottomSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1230 1241])
+                            ("noSide" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1250 1262]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1114 1263])
+                    ("EvolvingRobot" function
+                       (:constructor-flag t
+                        :type ("EvolvingRobot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1387 1738])
+                    ("EvolvingRobot" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1844 2509])
+                    ("build" function
+                       (:arguments 
+                          ( ("ownerWorld" variable
+                               (:pointer 1
+                                :type ("btDynamicsWorld" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5723 5751])
+                            ("positionOffset" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5752 5777]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5712 8134])
+                    ("getPosition" function (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8294 8496])
+                    ("getPositions" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("btVector3" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8673 8908])
+                    ("printLimits" function (:type "void") (reparse-symbol classsubparts) [9033 9322])
+                    ("step" function
+                       (:arguments 
+                          ( ("timeStep" variable (:type "double") (reparse-symbol arg-sub-list) [9393 9409]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9383 9671])
+                    ("executeMotorCommand" function (:type "void") (reparse-symbol classsubparts) [9755 9953])
+                    ("mutate" function (:type "void") (reparse-symbol classsubparts) [10057 10104])
+                    ("randomize" function (:type "void") (reparse-symbol classsubparts) [10214 10267])
+                    ("private" label nil (reparse-symbol classsubparts) [10269 10277])
+                    ("m_ownerWorld" variable
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10330 10360])
+                    ("m_block" variable
+                       (:pointer 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10433 10459])
+                    ("m_bodies" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("btRigidBody" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10492 10527])
+                    ("m_joints" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("btHingeConstraint" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10558 10599])
+                    ("m_motorCommands" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10683 10719])
+                    ("m_motorFrequency" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10770 10807])
+                    ("m_motorPhaseShift" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10860 10898])
+                    ("m_componentMap" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("coord_t" type nil nil nil)
+                              ("btRigidBody" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10982 11029])
+                    ("m_sides" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("side_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11121 11149])
+                    ("m_genome" variable (:type ("CPPN_NEAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11202 11221])
+                    ("m_timer" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11296 11313])
+                    ("_connect" function
+                       (:arguments 
+                          ( ("thisCoord" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("coord_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13119 13144])
+                            ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13145 13157]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13105 14098])
+                    ("_activateCppn" function
+                       (:arguments 
+                          ( ("coord" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("coord_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15471 15492])
+                            ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15493 15505]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15452 16424])
+                    ("_getAdjacentCoord" function
+                       (:arguments 
+                          ( ("current" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("coord_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16600 16623])
+                            ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16624 16636]))                          
+                        :type ("coord_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16574 17220])
+                    ("_getPivot" function
+                       (:arguments 
+                          ( ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17322 17334]))                          
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17302 17869])
+                    ("_addJoint" function
+                       (:arguments 
+                          ( ("body1" variable
+                               (:pointer 1
+                                :type ("btRigidBody" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18271 18290])
+                            ("body2" variable
+                               (:pointer 1
+                                :type ("btRigidBody" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18291 18310])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18311 18333])
+                            ("side" variable (:type ("side_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18334 18346]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18256 18716])
+                    ("_addBlock" function
+                       (:arguments 
+                          ( ("coord" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("coord_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18829 18850])
+                            ("offset" variable (:type ("btTransform" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18851 18870]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18814 19164])
+                    ("_actuateJoint" function
+                       (:arguments 
+                          ( ("jointIndex" variable (:type "int") (reparse-symbol arg-sub-list) [19446 19461])
+                            ("desiredAngle" variable (:type "double") (reparse-symbol arg-sub-list) [19462 19482]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19427 19937])
+                    ("_localCreateRigidBody" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("mass" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20144 20158])
+                            ("startTransform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btTransform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20159 20193])
+                            ("shape" variable
+                               (:pointer 1
+                                :type ("btCollisionShape" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20194 20218]))                          
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20108 20698]))                  
+                :type "class")
+                nil [372 20701])
+            ("EvolvingRobot::cppn_scale" variable
+               (:constant-flag t
+                :default-value "0.4"
+                :type "double")
+                nil [20958 21003])
+            ("EvolvingRobot::motorMaxImpulse" variable
+               (:constant-flag t
+                :default-value "2"
+                :type "double")
+                nil [21004 21052])
+            ("EvolvingRobot::motorSpeedModifier" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "double")
+                nil [21053 21104]))          
+      :file "Ind_EvolvingRobot.hpp"
+      :pointmax 21143
+      :fsize 21142
+      :lastmodtime '(21812 29805 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IND_EVOLVINGROBOT_HPP_")
+          )
+)
+    (semanticdb-table "Individual.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INDIVIDUAL_HPP_" variable (:constant-flag t) nil [242 257])
+            ("Individual" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [278 285])
+                    ("Individual" function
+                       (:constructor-flag t
+                        :type ("Individual" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [290 336])
+                    ("setFitness" function
+                       (:arguments 
+                          ( ("fitness" variable (:type "double") (reparse-symbol arg-sub-list) [418 433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [402 468])
+                    ("getFitness" function (:type "double") (reparse-symbol classsubparts) [535 586])
+                    ("private" label nil (reparse-symbol classsubparts) [588 596])
+                    ("_fitness" variable (:type "double") (reparse-symbol classsubparts) [601 617]))                  
+                :type "class")
+                nil [259 620]))          
+      :file "Individual.hpp"
+      :pointmax 651
+      :fsize 650
+      :lastmodtime '(21785 2698 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INDIVIDUAL_HPP_")
+          )
+)
+    (semanticdb-table "Fit_NoveltyEvoRobot.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIT_NOVELTYEVOROBOT_HPP_" variable (:constant-flag t) nil [140 164])
+            ("FitNoveltyEvoRobot" type
+               (:template 
+                  ( ("SimType" type (:type "class") nil nil)
+                    ("Indiv" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [237 244])
+                    ("indiv_t" type
+                       (:typedef ("Indiv" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [249 271])
+                    ("behavior_t" type
+                       (:typedef ("indiv_t::behavior_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [276 324])
+                    ("FitNoveltyEvoRobot" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simulator" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SimType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [598 620])
+                            ("k_neighbours" variable
+                               (:default-value "10"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [622 646]))                          
+                        :type ("FitNoveltyEvoRobot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [579 724])
+                    ("evaluate" function
+                       (:arguments 
+                          ( ("individual" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1063 1083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1049 1126])
+                    ("dist" function
+                       (:arguments 
+                          ( ("individual_1" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1300 1322])
+                            ("individual_2" variable
+                               (:reference 1
+                                :type ("indiv_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1345]))                          
+                        :type ("btScalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1286 1388])
+                    ("calulcateNovelty" function
+                       (:arguments 
+                          ( ("archive" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("indiv_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1643 1673])
+                            ("population" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("indiv_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1674 1707]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1621 1750])
+                    ("private" label nil (reparse-symbol classsubparts) [1753 1761])
+                    ("_simulator" variable
+                       (:pointer 1
+                        :type ("SimType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1766 1786])
+                    ("_k_neighbours" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1791 1812]))                  )
+                nil [167 1860]))          
+      :file "Fit_NoveltyEvoRobot.hpp"
+      :pointmax 1902
+      :fsize 1901
+      :lastmodtime '(21784 54012 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIT_NOVELTYEVOROBOT_HPP_")
+          )
+)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("roboTournament" function (:arguments ("main.cpp" "Ind_EvolvingRobot.hpp" "Ind_CPPN_NEAT.hpp" "CTRNN_NEAT.hpp" "PopulationEA.hpp" "TournamentSelection.hpp" "ReplaceSelection.hpp" "RobotDistanceFitness.hpp" "HillClimber.hpp" "NeuralNetwork.hpp" "Individual.hpp" "VectorIndividual.hpp" "RobotDistanceFitness.hpp" "TableRobot.hpp" "TableSimulator.hpp" "TouchSensor.hpp")) nil [1 586])
+            ("clean" function nil nil [587 617]))          
+      :file "Makefile"
+      :pointmax 617
+      :fsize 616
+      :lastmodtime '(21813 2258 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!nshetty!Code!EvoRobo!cpp!BlockBasedRobots!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

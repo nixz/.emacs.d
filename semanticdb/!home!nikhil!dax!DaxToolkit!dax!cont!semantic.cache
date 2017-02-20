@@ -1,0 +1,833 @@
+;; Object cont/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cont/"
+  :tables (list 
+   (semanticdb-table "Scheduler.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_Scheduler_h" variable (:constant-flag t) nil [725 747])
+            ("dax/Types.h" include (:system-flag t) nil [749 771])
+            ("dax/cont/scheduling/DetermineScheduler.h" include (:system-flag t) nil [773 824])
+            ("dax/cont/scheduling/SchedulerDefault.h" include (:system-flag t) nil [882 931])
+            ("dax/cont/scheduling/SchedulerGenerateTopology.h" include (:system-flag t) nil [932 990])
+            ("dax/cont/PermutationContainer.h" include (:system-flag t) nil [991 1033])
+            ("dax/internal/ParameterPackCxx03.h" include (:system-flag t) nil [1065 1110])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("Scheduler" type
+                               (:template 
+                                  ( ("DeviceAdapterTag" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1267 1274])
+                                    ("Invoke" function
+                                       (:arguments 
+                                          ( ("w" variable (:type ("WorkletType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1466 1480])
+                                            ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1481 1483])
+                                            ("" variable (:type ("a" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1485 1487]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1454 1800]))                                  )
+                                (reparse-symbol namespacesubparts) [1182 2132]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1164 2135]))                  
+                :type "namespace")
+                nil [1148 2137]))          
+    :file "Scheduler.h"
+    :pointmax 2801
+    :fsize 2800
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((punctuation 1484 . 1485) (punctuation 1483 . 1484) (punctuation 1482 . 1483) (symbol 1438 . 1453) (punctuation 1434 . 1435) (symbol 1433 . 1434) (punctuation 1432 . 1433) (punctuation 1431 . 1432) (punctuation 1430 . 1431) (TYPENAME 1422 . 1430) (punctuation 1420 . 1421) (symbol 1409 . 1420) (CLASS 1403 . 1408) (punctuation 1402 . 1403) (TEMPLATE 1393 . 1401))
+    :lexical-table 
+        '(("__dax_cont_Scheduler_h")
+          )
+
+    )
+   (semanticdb-table "ArrayHandle.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_ArrayHandle_h" variable (:constant-flag t) nil [690 714])
+            ("dax/Types.h" include (:system-flag t) nil [716 738])
+            ("dax/cont/ArrayContainerControl.h" include (:system-flag t) nil [740 783])
+            ("dax/cont/Assert.h" include (:system-flag t) nil [784 812])
+            ("dax/cont/ErrorControlBadValue.h" include (:system-flag t) nil [813 855])
+            ("dax/cont/internal/ArrayTransfer.h" include (:system-flag t) nil [856 900])
+            ("dax/cont/internal/DeviceAdapterTag.h" include (:system-flag t) nil [901 948])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [950 984])
+            ("boost/smart_ptr/shared_ptr.hpp" include (:system-flag t) nil [985 1026])
+            ("vector" include (:system-flag t) nil [1028 1045])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("ArrayHandleAccess" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1125 1149]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1104 1151])
+                            ("ArrayHandle" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("ArrayContainerControlTag" type (:type "class") nil nil)
+                                    ("DeviceAdapterTag" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2429 2437])
+                                    ("ArrayContainerControlType" type
+                                       (:typedef ("dax::cont::internal::ArrayContainerControl" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("ArrayContainerControlTag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::internal::ArrayContainerControl"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2440 2551])
+                                    ("ArrayTransferType" type
+                                       (:typedef ("dax::cont::internal::ArrayTransfer" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("ArrayContainerControlTag" type nil nil nil)
+                                                  ("DeviceAdapterTag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::internal::ArrayTransfer"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2554 2673])
+                                    ("public" label nil (reparse-symbol classsubparts) [2674 2681])
+                                    ("ValueType" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :superclasses "T"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2684 2704])
+                                    ("PortalControl" type
+                                       (:typedef ("ArrayContainerControlType::PortalType" type (:type "class") nil nil)
+                                        :superclasses "ArrayContainerControlType::PortalType"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2707 2776])
+                                    ("PortalConstControl" type
+                                       (:typedef ("ArrayContainerControlType::PortalConstType" type (:type "class") nil nil)
+                                        :superclasses "ArrayContainerControlType::PortalConstType"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2779 2864])
+                                    ("PortalExecution" type
+                                       (:typedef ("ArrayTransferType::PortalExecution" type (:type "class") nil nil)
+                                        :superclasses "ArrayTransferType::PortalExecution"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2867 2935])
+                                    ("PortalConstExecution" type
+                                       (:typedef ("ArrayTransferType::PortalConstExecution" type (:type "class") nil nil)
+                                        :superclasses "ArrayTransferType::PortalConstExecution"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2938 3016])
+                                    ("ArrayHandle" function
+                                       (:constructor-flag t
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3160 3373])
+                                    ("ArrayHandle" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("userData" variable (:type ("PortalConstControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3491 3519]))                                          
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3463 3751])
+                                    ("GetPortalControl" function (:type ("PortalControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3826 4552])
+                                    ("GetPortalConstControl" function (:type ("PortalConstControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4627 5042])
+                                    ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5118 5592])
+                                    ("CopyInto" function
+                                       (:arguments 
+                                          ( ("dest" variable (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5812 5830]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5798 6267])
+                                    ("Shrink" function
+                                       (:arguments 
+                                          ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6790 6813]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6778 7725])
+                                    ("ReleaseResourcesExecution" function (:type "void") (reparse-symbol classsubparts) [7882 8094])
+                                    ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [8197 8521])
+                                    ("PrepareForInput" function (:type ("PortalConstExecution" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8872 9745])
+                                    ("PrepareForOutput" function
+                                       (:arguments 
+                                          ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10222 10245]))                                          
+                                        :type ("PortalExecution" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10189 11377])
+                                    ("PrepareForInPlace" function (:type ("PortalExecution" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11752 13128])
+                                    ("private" label nil (reparse-symbol classsubparts) [13130 13138])
+                                    ("InternalStruct" type
+                                       (:members 
+                                          ( ("UserPortal" variable (:type ("PortalConstControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13169 13199])
+                                            ("UserPortalValid" variable (:type "bool") (reparse-symbol classsubparts) [13204 13225])
+                                            ("ControlArray" variable (:type ("ArrayContainerControlType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13231 13270])
+                                            ("ControlArrayValid" variable (:type "bool") (reparse-symbol classsubparts) [13275 13298])
+                                            ("ExecutionArray" variable (:type ("ArrayTransferType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13304 13337])
+                                            ("ExecutionArrayValid" variable (:type "bool") (reparse-symbol classsubparts) [13342 13367]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [13141 13372])
+                                    ("SyncControlArray" function (:type "void") (reparse-symbol classsubparts) [13758 14497])
+                                    ("Internals" variable (:type ("boost::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("InternalStruct" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [14501 14545]))                                  )
+                                (reparse-symbol namespacesubparts) [2244 14548])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14997 15012])
+                                    ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15030 15045])
+                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15063 15088])
+                                    ("" variable (:type ("DeviceAdapterTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15106 15123]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("ArrayContainerControlTag" type nil nil nil)
+                                          ("DeviceAdapterTag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [14910 15356])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15527 15542])
+                                    ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15543 15558])
+                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15559 15584]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("ArrayContainerControlTag" type nil nil nil)
+                                          ("DAX_DEFAULT_DEVICE_ADAPTER_TAG" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [15426 15770])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15930 15945])
+                                    ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15946 15961]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("DAX_DEFAULT_ARRAY_CONTAINER_CONTROL_TAG" type nil nil nil)
+                                          ("DAX_DEFAULT_DEVICE_ADAPTER_TAG" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [15808 16162])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16624 16652])
+                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16670 16695])
+                                    ("" variable (:type ("DeviceAdapterTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16713 16730]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("ArrayContainerControlTag" type nil nil nil)
+                                          ("DeviceAdapterTag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [16537 16977])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17157 17185])
+                                    ("" variable (:type ("ArrayContainerControlTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17186 17211]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("ArrayContainerControlTag" type nil nil nil)
+                                          ("DAX_DEFAULT_DEVICE_ADAPTER_TAG" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [17056 17363])
+                            ("make_ArrayHandle" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17522 17550]))                                  
+                                :type ("dax::cont::ArrayHandle" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("DAX_DEFAULT_ARRAY_CONTAINER_CONTROL_TAG" type nil nil nil)
+                                          ("DAX_DEFAULT_DEVICE_ADAPTER_TAG" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [17401 17717]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1063 17720]))                  
+                :type "namespace")
+                nil [1047 17722]))          
+    :file "ArrayHandle.h"
+    :pointmax 17758
+    :fsize 17757
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 17385 . 17400) (punctuation 17383 . 17384) (symbol 17382 . 17383) (TYPENAME 17373 . 17381) (punctuation 17372 . 17373) (TEMPLATE 17364 . 17372) (symbol 17040 . 17055) (punctuation 17038 . 17039) (symbol 17014 . 17038) (CLASS 17008 . 17013) (punctuation 16997 . 16998) (symbol 16996 . 16997) (TYPENAME 16987 . 16995) (punctuation 16986 . 16987) (TEMPLATE 16978 . 16986) (symbol 16521 . 16536) (punctuation 16519 . 16520) (symbol 16503 . 16519) (CLASS 16497 . 16502) (punctuation 16486 . 16487) (symbol 16462 . 16486) (CLASS 16456 . 16461) (punctuation 16445 . 16446) (symbol 16444 . 16445) (TYPENAME 16435 . 16443) (punctuation 16434 . 16435) (TEMPLATE 16426 . 16434) (symbol 15792 . 15807) (punctuation 15790 . 15791) (symbol 15789 . 15790) (TYPENAME 15780 . 15788) (punctuation 15779 . 15780) (TEMPLATE 15771 . 15779) (symbol 15410 . 15425) (punctuation 15408 . 15409) (symbol 15384 . 15408) (CLASS 15378 . 15383) (punctuation 15376 . 15377) (symbol 15375 . 15376) (TYPENAME 15366 . 15374) (punctuation 15365 . 15366) (TEMPLATE 15357 . 15365) (symbol 14894 . 14909) (punctuation 14892 . 14893) (symbol 14876 . 14892) (CLASS 14870 . 14875) (punctuation 14868 . 14869) (symbol 14844 . 14868) (CLASS 14838 . 14843) (punctuation 14836 . 14837) (symbol 14835 . 14836) (TYPENAME 14826 . 14834) (punctuation 14825 . 14826) (TEMPLATE 14817 . 14825) (symbol 13742 . 13757) (symbol 11734 . 11749) (symbol 10171 . 10186) (symbol 8854 . 8869) (symbol 8181 . 8196) (symbol 7866 . 7881) (symbol 5782 . 5797) (punctuation 5778 . 5779) (symbol 5766 . 5778) (CLASS 5760 . 5765) (punctuation 5759 . 5760) (TEMPLATE 5750 . 5758) (symbol 5102 . 5117) (symbol 4611 . 4626) (symbol 3810 . 3825) (symbol 15410 . 15425) (punctuation 15408 . 15409) (symbol 15384 . 15408) (CLASS 15378 . 15383) (punctuation 15376 . 15377) (symbol 15375 . 15376) (TYPENAME 15366 . 15374) (punctuation 15365 . 15366) (TEMPLATE 15357 . 15365) (symbol 14894 . 14909) (punctuation 14892 . 14893) (symbol 14876 . 14892) (CLASS 14870 . 14875) (punctuation 14868 . 14869) (symbol 14844 . 14868) (CLASS 14838 . 14843) (punctuation 14836 . 14837) (symbol 14835 . 14836) (TYPENAME 14826 . 14834) (punctuation 14825 . 14826) (TEMPLATE 14817 . 14825) (symbol 13742 . 13757) (symbol 11734 . 11749) (symbol 10171 . 10186) (symbol 8854 . 8869) (symbol 8181 . 8196) (symbol 7866 . 7881) (symbol 5782 . 5797) (punctuation 5778 . 5779) (symbol 5766 . 5778) (CLASS 5760 . 5765) (punctuation 5759 . 5760) (TEMPLATE 5750 . 5758) (symbol 5102 . 5117) (symbol 4611 . 4626) (symbol 3810 . 3825))
+    :lexical-table 
+        '(("__dax_cont_ArrayHandle_h")
+          )
+
+    )
+   (semanticdb-table "UnstructuredGrid.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_UnstructuredGrid_h" variable (:constant-flag t) nil [696 725])
+            ("dax/CellTraits.h" include (:system-flag t) nil [727 754])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [756 789])
+            ("dax/exec/internal/TopologyUnstructured.h" include (:system-flag t) nil [791 842])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("UnstructuredGridTag" type (:type "struct") (reparse-symbol namespacesubparts) [951 983])
+                            ("UnstructuredGridOfCell" type
+                               (:template 
+                                  ( ("CellTag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("UnstructuredGridTag" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1093 1174])
+                            ("UnstructuredGrid" type
+                               (:template 
+                                  ( ("CellT" type (:type "class") nil nil)
+                                    ("CellConnectionsContainerControlTag" type (:type "class") nil nil)
+                                    ("PointsArrayContainerControlTag" type (:type "class") nil nil)
+                                    ("DeviceAdapterTag" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1596 1603])
+                                    ("CellTag" type
+                                       (:typedef ("CellT" type (:type "class") nil nil)
+                                        :superclasses "CellT"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1606 1628])
+                                    ("GridTypeTag" type
+                                       (:typedef ("UnstructuredGridOfCell" type
+                                             (:template-specifier 
+                                                ( ("CellTag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "UnstructuredGridOfCell"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1631 1683])
+                                    ("CellConnectionsType" type
+                                       (:typedef ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("dax::Id" type nil nil nil)
+                                                  ("CellConnectionsContainerControlTag" type nil nil nil)
+                                                  ("DeviceAdapterTag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::ArrayHandle"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1687 1814])
+                                    ("PointCoordinatesType" type
+                                       (:typedef ("dax::cont::ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("dax::Vector3" type nil nil nil)
+                                                  ("PointsArrayContainerControlTag" type nil nil nil)
+                                                  ("DeviceAdapterTag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::ArrayHandle"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1817 1946])
+                                    ("UnstructuredGrid" function
+                                       (:constructor-flag t
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1950 1990])
+                                    ("UnstructuredGrid" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("cellConnections" variable (:type ("CellConnectionsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2029 2065])
+                                            ("pointCoordinates" variable (:type ("PointCoordinatesType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2085 2123]))                                          
+                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1994 2339])
+                                    ("GetCellConnections" function
+                                       (:constant-flag t
+                                        :type ("CellConnectionsType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2626 2719])
+                                    ("GetCellConnections" function (:type ("CellConnectionsType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2740 2821])
+                                    ("SetCellConnections" function
+                                       (:arguments 
+                                          ( ("cellConnections" variable (:type ("CellConnectionsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2848 2884]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2824 2935])
+                                    ("GetPointCoordinates" function
+                                       (:constant-flag t
+                                        :type ("PointCoordinatesType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3106 3202])
+                                    ("GetPointCoordinates" function (:type ("PointCoordinatesType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3223 3307])
+                                    ("SetPointCoordinates" function
+                                       (:arguments 
+                                          ( ("pointCoordinates" variable (:type ("PointCoordinatesType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3353 3391]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3328 3444])
+                                    ("ComputePointCoordinates" function
+                                       (:arguments 
+                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3567 3581]))                                          
+                                        :type ("dax::Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3530 3769])
+                                    ("GetNumberOfPoints" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3829 3923])
+                                    ("GetNumberOfCells" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3982 4129])
+                                    ("TopologyStructConstExecution" variable (:type "int") (reparse-symbol classsubparts) [4257 4286])
+                                    ("PrepareForInput" function (:type ("TopologyStructConstExecution" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4500 4773])
+                                    ("TopologyStructExecution" variable (:type "int") (reparse-symbol classsubparts) [4896 4920])
+                                    ("PrepareForOutput" function
+                                       (:arguments 
+                                          ( ("numberOfCells" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5252 5274]))                                          
+                                        :type ("TopologyStructExecution" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5211 5726])
+                                    ("private" label nil (reparse-symbol classsubparts) [5728 5736])
+                                    ("CellConnections" variable (:type ("CellConnectionsType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5739 5775])
+                                    ("PointCoordinates" variable (:type ("PointCoordinatesType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5778 5816]))                                  )
+                                (reparse-symbol namespacesubparts) [1307 5819]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [860 5822]))                  
+                :type "namespace")
+                nil [844 5824]))          
+    :file "UnstructuredGrid.h"
+    :pointmax 5865
+    :fsize 5864
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax_cont_UnstructuredGrid_h")
+          )
+
+    )
+   (semanticdb-table "ArrayContainerControlBasic.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax__cont__ArrayContainerControlBasic_h" variable (:constant-flag t) nil [707 748])
+            ("dax/Types.h" include (:system-flag t) nil [750 772])
+            ("dax/cont/ArrayContainerControl.h" include (:system-flag t) nil [773 816])
+            ("dax/cont/ArrayPortalFromIterators.h" include (:system-flag t) nil [817 863])
+            ("dax/cont/Assert.h" include (:system-flag t) nil [864 892])
+            ("dax/cont/ErrorControlBadValue.h" include (:system-flag t) nil [893 935])
+            ("dax/cont/ErrorControlOutOfMemory.h" include (:system-flag t) nil [936 981])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("ArrayContainerControlTagBasic" type (:type "struct") (reparse-symbol namespacesubparts) [1092 1134])
+                            ("internal" type
+                               (:members 
+                                  ( ("ArrayContainerControl" type
+                                       (:template 
+                                          ( ("ValueT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1680 1687])
+                                            ("ValueType" type
+                                               (:typedef ("ValueT" type (:type "class") nil nil)
+                                                :superclasses "ValueT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1690 1715])
+                                            ("PortalType" type
+                                               (:typedef ("dax::cont::ArrayPortalFromIterators" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::ArrayPortalFromIterators"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1718 1785])
+                                            ("PortalConstType" type
+                                               (:typedef ("dax::cont::ArrayPortalFromIterators" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type
+                                                             (:pointer 1
+                                                              :constant-flag t)
+                                                              nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "dax::cont::ArrayPortalFromIterators"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1788 1866])
+                                            ("private" label nil (reparse-symbol classsubparts) [1868 1876])
+                                            ("AllocatorType" type
+                                               (:typedef ("std::allocator" type
+                                                     (:template-specifier 
+                                                        ( ("ValueType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "std::allocator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2338 2386])
+                                            ("public" label nil (reparse-symbol classsubparts) [2388 2395])
+                                            ("ArrayContainerControl" function
+                                               (:constructor-flag t
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2399 2477])
+                                            ("ArrayContainerControl" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2481 2543])
+                                            ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [2547 2923])
+                                            ("Allocate" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2941 2964]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2927 3813])
+                                            ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3817 3891])
+                                            ("Shrink" function
+                                               (:arguments 
+                                                  ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3907 3930]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3895 4155])
+                                            ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4159 4261])
+                                            ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4265 4388])
+                                            ("StealArray" function
+                                               (:pointer 1
+                                                :type ("ValueType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4882 5059])
+                                            ("private" label nil (reparse-symbol classsubparts) [5061 5069])
+                                            ("ArrayContainerControl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("ArrayContainerControlTagBasic" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5116 5191]))                                                  
+                                                :type ("ArrayContainerControl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5094 5192])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("ArrayContainerControlTagBasic" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5210 5285]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5195 5286])
+                                            ("Array" variable
+                                               (:pointer 1
+                                                :type ("ValueType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5290 5307])
+                                            ("NumberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5310 5333])
+                                            ("AllocatedSize" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5336 5358]))                                          
+                                        :template-specifier 
+                                          ( ("ValueT" type nil nil nil)
+                                            ("dax::cont::ArrayContainerControlTagBasic" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1573 5361]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1136 5364]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [999 5389]))                  
+                :type "namespace")
+                nil [983 5391]))          
+    :file "ArrayContainerControlBasic.h"
+    :pointmax 5467
+    :fsize 5466
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax__cont__ArrayContainerControlBasic_h")
+          )
+
+    )
+   (semanticdb-table "ArrayPortal.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_ArrayPortal_h" variable (:constant-flag t) nil [690 714])
+            ("dax/Types.h" include (:system-flag t) nil [716 738])
+            ("dax" type
+               (:members 
+                  ( ("cont" type (:type "namespace") (reparse-symbol namespacesubparts) [756 3611]))                  
+                :type "namespace")
+                nil [740 3613]))          
+    :file "ArrayPortal.h"
+    :pointmax 3672
+    :fsize 3671
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax_cont_ArrayPortal_h")
+          )
+
+    )
+   (semanticdb-table "ArrayHandleCounting.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_ArrayHandleCounting_h" variable (:constant-flag t) nil [698 730])
+            ("dax/cont/ArrayContainerControlCounting.h" include (:system-flag t) nil [732 783])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [784 817])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("ArrayHandleCounting" type
+                               (:superclasses 
+                                  ( ("ArrayHandle" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1270 1277])
+                                    ("superclass" type
+                                       (:typedef ("ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("dax::Id" type nil nil nil)
+                                                  ("ArrayContainerControlTagCounting" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "ArrayHandle"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1280 1382])
+                                    ("PortalType" type
+                                       (:typedef ("dax::cont::ArrayPortalCounting" type (:type "class") nil nil)
+                                        :superclasses "dax::cont::ArrayPortalCounting"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1385 1435])
+                                    ("ArrayHandleCounting" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1459 1474]))                                          
+                                        :type ("ArrayHandleCounting" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1439 1518]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1143 1521])
+                            ("make_ArrayHandleCounting" function
+                               (:arguments 
+                                  ( ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1758]))                                  
+                                :type ("ArrayHandleCounting" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1698 1800]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [835 1803]))                  
+                :type "namespace")
+                nil [819 1805]))          
+    :file "ArrayHandleCounting.h"
+    :pointmax 1849
+    :fsize 1848
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 1682 . 1697))
+    :lexical-table 
+        '(("__dax_cont_ArrayHandleCounting_h")
+          )
+
+    )
+   (semanticdb-table "ArrayHandleConstantValue.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_ArrayHandleConstantValue_h" variable (:constant-flag t) nil [703 740])
+            ("dax/cont/ArrayContainerControlConstantValue.h" include (:system-flag t) nil [743 799])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [800 833])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("ArrayHandleConstantValue" type
+                               (:template 
+                                  ( ("ConstantValueType" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1420 1427])
+                                    ("superclass" type
+                                       (:typedef ("ArrayHandle" type
+                                             (:template-specifier 
+                                                ( ("ConstantValueType" type nil nil nil)
+                                                  ("dax::cont::ArrayContainerControlTagConstantValue" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "ArrayHandle"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1430 1560])
+                                    ("PortalType" type
+                                       (:typedef ("dax::cont::ArrayPortalConstantValue" type
+                                             (:template-specifier 
+                                                ( ("ConstantValueType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::ArrayPortalConstantValue"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1563 1646])
+                                    ("ArrayHandleConstantValue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("value" variable (:type ("ConstantValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1675 1699])
+                                            ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1699 1714]))                                          
+                                        :type ("ArrayHandleConstantValue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1650 1764]))                                  
+                                :superclasses 
+                                  ( ("ArrayHandle" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1234 1767])
+                            ("make_ArrayHandleConstantValue" function
+                               (:arguments 
+                                  ( ("value" variable (:type ("ConstantValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2161 2185])
+                                    ("length" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2200]))                                  
+                                :type ("ArrayHandleConstantValue" type
+                                     (:template-specifier 
+                                        ( ("ConstantValueType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2087 2272]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [851 2275]))                  
+                :type "namespace")
+                nil [835 2277]))          
+    :file "ArrayHandleConstantValue.h"
+    :pointmax 2326
+    :fsize 2325
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 2071 . 2086) (punctuation 2069 . 2070) (symbol 2052 . 2069) (TYPENAME 2043 . 2051) (punctuation 2042 . 2043) (TEMPLATE 2034 . 2042))
+    :lexical-table 
+        '(("__dax_cont_ArrayHandleConstantValue_h")
+          )
+
+    )
+   (semanticdb-table "ArrayContainerControlCounting.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_ArrayContainerControlCounting_h" variable (:constant-flag t) nil [708 750])
+            ("dax/cont/ArrayContainerControlImplicit.h" include (:system-flag t) nil [752 803])
+            ("dax/cont/ArrayPortal.h" include (:system-flag t) nil [804 837])
+            ("dax/cont/IteratorFromArrayPortal.h" include (:system-flag t) nil [838 883])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("ArrayPortalCounting" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1353 1360])
+                                    ("ValueType" type
+                                       (:typedef ("dax::Id" type (:type "class") nil nil)
+                                        :superclasses "dax::Id"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1363 1389])
+                                    ("ArrayPortalCounting" function
+                                       (:constructor-flag t
+                                        :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1393 1457])
+                                    ("ArrayPortalCounting" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("numValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1504 1522]))                                          
+                                        :type ("DAX_EXEC_CONT_EXPORT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1461 1550])
+                                    ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1577 1638])
+                                    ("Get" function
+                                       (:arguments 
+                                          ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1679 1693]))                                          
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1665 1717])
+                                    ("IteratorType" type
+                                       (:typedef ("dax::cont::IteratorFromArrayPortal" type
+                                             (:template-specifier 
+                                                ( ("ArrayPortalCounting" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "dax::cont::IteratorFromArrayPortal"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1721 1798])
+                                    ("GetIteratorBegin" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1820 1897])
+                                    ("GetIteratorEnd" function (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1919 2011])
+                                    ("private" label nil (reparse-symbol classsubparts) [2013 2021])
+                                    ("LastIndex" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2600 2618]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1325 2621])
+                            ("ArrayContainerControlTagCounting" type
+                               (:typedef ("ArrayContainerControlTagImplicit" type
+                                     (:template-specifier 
+                                        ( ("dax::cont::ArrayPortalCounting" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "ArrayContainerControlTagImplicit"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3061 3171]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [901 3174]))                  
+                :type "namespace")
+                nil [885 3176]))          
+    :file "ArrayContainerControlCounting.h"
+    :pointmax 3230
+    :fsize 3229
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 1901 . 1916) (symbol 1802 . 1817) (symbol 1642 . 1662) (symbol 1554 . 1574))
+    :lexical-table 
+        '(("__dax_cont_ArrayContainerControlCounting_h")
+          )
+
+    )
+   (semanticdb-table "DeviceAdapter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_cont_DeviceAdapter_h" variable (:constant-flag t) nil [692 718])
+            ("dax/cont/internal/DeviceAdapterTag.h" include (:system-flag t) nil [910 957])
+            ("dax/cont/internal/ArrayManagerExecution.h" include (:system-flag t) nil [958 1010])
+            ("dax/cont/internal/DeviceAdapterAlgorithm.h" include (:system-flag t) nil [1011 1064])
+            ("dax" type
+               (:members 
+                  ( ("cont" type
+                       (:members 
+                          ( ("internal" type (:type "namespace") (reparse-symbol namespacesubparts) [2775 2798]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1082 2823]))                  
+                :type "namespace")
+                nil [1066 2825]))          
+    :file "DeviceAdapter.h"
+    :pointmax 2887
+    :fsize 2886
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__dax_cont_DeviceAdapter_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!cont!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,282 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "NetworkListener.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NetworkListener.h" include nil nil [2666 2694])
+            ("NetworkListenerThread.h" include nil nil [2695 2729])
+            ("log.h" include nil nil [2730 2746])
+            ("NetworkListener" function
+               (:constructor-flag t
+                :parent "NetworkListener"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2781 2790]))                  
+                :type ("NetworkListener" type (:type "class") nil nil))
+                nil [2748 2980])
+            ("incomingConnection" function
+               (:parent "NetworkListener"
+                :arguments 
+                  ( ("socketDescriptor" variable (:type "int") (reparse-symbol arg-sub-list) [3023 3044]))                  
+                :type "void")
+                nil [2982 3251]))          
+    :file "NetworkListener.cpp"
+    :pointmax 3252
+    :fsize 3251
+    :lastmodtime '(20917 3739)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NetworkListenerThread.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NETWORK_LISTENER_THREAD_H" variable (:constant-flag t) nil [2708 2733])
+            ("NetworkProtocol.h" include nil nil [2808 2836])
+            ("DisplayGroupManager.h" include nil nil [2838 2870])
+            ("QThread" include (:system-flag t) nil [2871 2889])
+            ("QtNetwork/QTcpSocket" include (:system-flag t) nil [2890 2921])
+            ("NetworkListenerThread" type
+               (:superclasses 
+                  ( ("QThread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2988 2995])
+                    ("NetworkListenerThread" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("socketDescriptor" variable (:type "int") (reparse-symbol arg-sub-list) [3027 3048]))                          
+                        :type ("NetworkListenerThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3005 3049])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3059 3070])
+                    ("updatedPixelStreamSource" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3094 3126])
+                    ("updatedSVGStreamSource" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3135 3165])
+                    ("private" label nil (reparse-symbol classsubparts) [3171 3179])
+                    ("socketDescriptor_" variable (:type "int") (reparse-symbol classsubparts) [3189 3211])
+                    ("handleMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("messageHeader" variable (:type ("MessageHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3240 3268])
+                            ("byteArray" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3269 3290]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3221 3291]))                  
+                :type "class")
+                nil [2923 3294]))          
+    :file "NetworkListenerThread.h"
+    :pointmax 3303
+    :fsize 3302
+    :lastmodtime '(20917 3739)
+    :unmatched-syntax '((punctuation 3083 . 3084) (symbol 3076 . 3083) (symbol 2974 . 2982))
+    :lexical-table 
+        '(("NETWORK_LISTENER_THREAD_H")
+          )
+
+    )
+   (semanticdb-table "NetworkListenerThread.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NetworkListenerThread.h" include nil nil [2666 2700])
+            ("main.h" include nil nil [2701 2718])
+            ("log.h" include nil nil [2719 2735])
+            ("PixelStreamSource.h" include nil nil [2736 2766])
+            ("ParallelPixelStream.h" include nil nil [2767 2799])
+            ("SVGStreamSource.h" include nil nil [2800 2828])
+            ("stdint.h" include (:system-flag t) nil [2829 2848])
+            ("NetworkListenerThread" function
+               (:constructor-flag t
+                :parent "NetworkListenerThread"
+                :arguments 
+                  ( ("socketDescriptor" variable (:type "int") (reparse-symbol arg-sub-list) [2895 2916]))                  
+                :type ("NetworkListenerThread" type (:type "class") nil nil))
+                nil [2850 3404])
+            ("run" function
+               (:parent "NetworkListenerThread"
+                :type "void")
+                nil [3406 5159])
+            ("handleMessage" function
+               (:parent "NetworkListenerThread"
+                :arguments 
+                  ( ("messageHeader" variable (:type ("MessageHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5203 5231])
+                    ("byteArray" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5232 5253]))                  
+                :type "void")
+                nil [5161 7410]))          
+    :file "NetworkListenerThread.cpp"
+    :pointmax 7411
+    :fsize 7410
+    :lastmodtime '(20917 3739)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PixelStream.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PixelStream.h" include nil nil [2666 2690])
+            ("main.h" include nil nil [2691 2708])
+            ("log.h" include nil nil [2709 2725])
+            ("PixelStream" function
+               (:constructor-flag t
+                :parent "PixelStream"
+                :arguments 
+                  ( ("uri" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2768]))                  
+                :type ("PixelStream" type (:type "class") nil nil))
+                nil [2727 3050])
+            ("PixelStream" function
+               (:destructor-flag t
+                :parent "PixelStream"
+                :type "void")
+                nil [3052 3415])
+            ("getDimensions" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("width" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3449 3460])
+                    ("height" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3461 3473]))                  
+                :type "void")
+                nil [3417 3533])
+            ("render" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("tX" variable (:type "float") (reparse-symbol arg-sub-list) [3560 3569])
+                    ("tY" variable (:type "float") (reparse-symbol arg-sub-list) [3570 3579])
+                    ("tW" variable (:type "float") (reparse-symbol arg-sub-list) [3580 3589])
+                    ("tH" variable (:type "float") (reparse-symbol arg-sub-list) [3590 3599]))                  
+                :type "bool")
+                nil [3535 4520])
+            ("setImageData" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("imageData" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4553 4574]))                  
+                :type "bool")
+                nil [4522 4827])
+            ("getLoadImageDataThreadRunning" function
+               (:parent "PixelStream"
+                :type "bool")
+                nil [4829 4927])
+            ("setAutoUpdateTexture" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("set" variable (:type "bool") (reparse-symbol arg-sub-list) [4968 4977]))                  
+                :type "void")
+                nil [4929 5011])
+            ("updateTextureIfAvailable" function
+               (:parent "PixelStream"
+                :type "void")
+                nil [5013 5262])
+            ("getHandle" function
+               (:parent "PixelStream"
+                :type ("tjhandle" type (:type "class") nil nil))
+                nil [5264 5321])
+            ("imageReady" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("image" variable (:type ("QImage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5352 5365]))                  
+                :type "void")
+                nil [5323 5457])
+            ("updateTexture" function
+               (:parent "PixelStream"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("QImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5491 5506]))                  
+                :type "void")
+                nil [5459 7033])
+            ("loadImageDataThread" function
+               (:arguments 
+                  ( ("pixelStream" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("PixelStream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7060 7103])
+                    ("imageData" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7104 7125]))                  
+                :type "void")
+                nil [7035 8122]))          
+    :file "PixelStream.cpp"
+    :pointmax 8123
+    :fsize 8122
+    :lastmodtime '(20917 3739)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "MessageHeader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("MESSAGE_HEADER_H" variable (:constant-flag t) nil [2699 2715])
+            ("stdint.h" include (:system-flag t) nil [2766 2789])
+            ("MESSAGE_TYPE" type
+               (:members 
+                  ( ("MESSAGE_TYPE_CONTENTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2818 2840])
+                    ("MESSAGE_TYPE_CONTENTS_DIMENSIONS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2841 2874])
+                    ("MESSAGE_TYPE_PIXELSTREAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2875 2900])
+                    ("MESSAGE_TYPE_PIXELSTREAM_DIMENSIONS_CHANGED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2901 2945])
+                    ("MESSAGE_TYPE_PARALLEL_PIXELSTREAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2946 2980])
+                    ("MESSAGE_TYPE_SVG_STREAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2981 3005])
+                    ("MESSAGE_TYPE_FRAME_CLOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3006 3031])
+                    ("MESSAGE_TYPE_QUIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3032 3051]))                  
+                :type "enum")
+                nil [2798 3052])
+            ("MESSAGE_HEADER_URI_LENGTH" variable (:constant-flag t) nil [3062 3087])
+            ("MessageHeader" type
+               (:members 
+                  ( ("size" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3119 3132])
+                    ("type" variable (:type ("MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3137 3155])
+                    ("uri" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3160 3196]))                  
+                :type "struct")
+                nil [3092 3297]))          
+    :file "MessageHeader.h"
+    :pointmax 3306
+    :fsize 3305
+    :lastmodtime '(20917 3739)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MESSAGE_HEADER_H")
+          ("MESSAGE_HEADER_URI_LENGTH" . ((number "64" 3088 . 3090)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!display-cluster!DisplayCluster!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

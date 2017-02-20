@@ -1,0 +1,25 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [67 85])
+            ("vector" include (:system-flag t) nil [86 103])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [114 119]))                  
+                :type "int")
+                nil [105 174]))          
+    :file "test.cpp"
+    :pointmax 175
+    :fsize 174
+    :lastmodtime '(21531 31999 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Code!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

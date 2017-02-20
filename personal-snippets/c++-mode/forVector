@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: forVector
+# --
+vector<${1:Type}>::const_iterator ${2:i};
+for ($2 = ${3:var}.begin(); $2 != $3.end() ; ++$2)
+{
+    $0
+}

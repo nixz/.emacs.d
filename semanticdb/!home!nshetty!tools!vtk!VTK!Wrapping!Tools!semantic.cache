@@ -1,0 +1,291 @@
+;; Object Tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Tools/"
+  :tables (list 
+   (semanticdb-table "vtkWrapTcl.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ctype.h" include (:system-flag t) nil [583 601])
+            ("stdio.h" include (:system-flag t) nil [602 620])
+            ("stdlib.h" include (:system-flag t) nil [621 640])
+            ("string.h" include (:system-flag t) nil [641 660])
+            ("vtkParse.h" include nil nil [661 682])
+            ("vtkParseMain.h" include nil nil [683 708])
+            ("vtkParseHierarchy.h" include nil nil [709 739])
+            ("vtkConfigure.h" include nil nil [740 765])
+            ("vtkWrap.h" include nil nil [766 786])
+            ("hierarchyInfo" variable
+               (:pointer 1
+                :type ("HierarchyInfo" type (:type "class") nil nil))
+                nil [788 824])
+            ("stringCache" variable
+               (:pointer 1
+                :type ("StringCache" type (:type "class") nil nil))
+                nil [825 857])
+            ("numberOfWrappedFunctions" variable (:type "int") nil [858 891])
+            ("wrappedFunctions" variable
+               (:pointer 1
+                :dereference 1
+                :type ("FunctionInfo" type (:type "class") nil nil))
+                nil [892 929])
+            ("currentFunction" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("FunctionInfo" type (:type "class") nil nil))
+                nil [930 967])
+            ("quote_string" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("comment" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1175 1195])
+                    ("maxlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1196 1210]))                  
+                :type "char")
+                nil [1143 2417])
+            ("output_temp" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2436 2445])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2446 2452])
+                    ("aType" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2453 2472])
+                    ("Id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2490 2505])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2506 2516]))                  
+                :type "void")
+                nil [2419 4723])
+            ("use_hints" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4807 4816]))                  
+                :type "void")
+                nil [4792 8781])
+            ("return_result" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8802 8811]))                  
+                :type "void")
+                nil [8783 15793])
+            ("get_args" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15809 15818])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15819 15825]))                  
+                :type "void")
+                nil [15795 22140])
+            ("isClassWrapped" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("classname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22220 22242]))                  
+                :type "int")
+                nil [22194 22786])
+            ("checkFunctionSignature" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("ClassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22859 22875]))                  
+                :type "int")
+                nil [22832 29621])
+            ("outputFunction" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29643 29652])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("ClassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29653 29669]))                  
+                :type "void")
+                nil [29623 32963])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33008 33017])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33018 33031]))                  
+                :type "int")
+                nil [32999 53262]))          
+    :file "vtkWrapTcl.c"
+    :pointmax 53263
+    :fsize 53262
+    :lastmodtime '(21825 10913 701727 279000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkParse.h"
+    :file "vtkParse.h"
+    :fsize 1944
+    :lastmodtime '(21705 27699 700062 816000)
+    )
+   (semanticdb-table "vtkParseMain.h"
+    :file "vtkParseMain.h"
+    :fsize 2656
+    :lastmodtime '(21705 27699 704062 816000)
+    )
+   (semanticdb-table "vtkParseHierarchy.h"
+    :file "vtkParseHierarchy.h"
+    :fsize 5743
+    :lastmodtime '(21705 27699 704062 816000)
+    )
+   (semanticdb-table "vtkWrap.h"
+    :file "vtkWrap.h"
+    :fsize 7530
+    :lastmodtime '(21825 10913 701727 279000)
+    )
+   (semanticdb-table "vtkWrapCL.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ctype.h" include (:system-flag t) nil [582 600])
+            ("stdio.h" include (:system-flag t) nil [601 619])
+            ("stdlib.h" include (:system-flag t) nil [620 639])
+            ("string.h" include (:system-flag t) nil [640 659])
+            ("vtkParse.h" include nil nil [660 681])
+            ("vtkParseMain.h" include nil nil [682 707])
+            ("vtkParseHierarchy.h" include nil nil [708 738])
+            ("vtkConfigure.h" include nil nil [739 764])
+            ("vtkWrap.h" include nil nil [765 785])
+            ("hierarchyInfo" variable
+               (:pointer 1
+                :type ("HierarchyInfo" type (:type "class") nil nil))
+                nil [787 823])
+            ("stringCache" variable
+               (:pointer 1
+                :type ("StringCache" type (:type "class") nil nil))
+                nil [824 856])
+            ("numberOfWrappedFunctions" variable (:type "int") nil [857 890])
+            ("wrappedFunctions" variable
+               (:pointer 1
+                :dereference 1
+                :type ("FunctionInfo" type (:type "class") nil nil))
+                nil [891 928])
+            ("currentFunction" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("FunctionInfo" type (:type "class") nil nil))
+                nil [929 966])
+            ("quote_string" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("comment" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1174 1194])
+                    ("maxlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1209]))                  
+                :type "char")
+                nil [1142 2416])
+            ("output_temp" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2435 2444])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2445 2451])
+                    ("aType" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2452 2471])
+                    ("Id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2489 2504])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2505 2515]))                  
+                :type "void")
+                nil [2418 4720])
+            ("use_hints" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4804 4813]))                  
+                :type "void")
+                nil [4789 8772])
+            ("return_result" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8793 8802]))                  
+                :type "void")
+                nil [8774 15737])
+            ("get_args" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15753 15762])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15763 15769]))                  
+                :type "void")
+                nil [15739 22051])
+            ("isClassWrapped" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("classname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22131 22153]))                  
+                :type "int")
+                nil [22105 22697])
+            ("checkFunctionSignature" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("ClassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22770 22786]))                  
+                :type "int")
+                nil [22743 29531])
+            ("outputFunction" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29553 29562])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("ClassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29563 29579]))                  
+                :type "void")
+                nil [29533 32870])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [32915 32924])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32925 32938]))                  
+                :type "int")
+                nil [32906 53062]))          
+    :file "vtkWrapCL.c"
+    :pointmax 53263
+    :fsize 53062
+    :lastmodtime '(21917 33080 820467 30000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nshetty!tools!vtk!VTK!Wrapping!Tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

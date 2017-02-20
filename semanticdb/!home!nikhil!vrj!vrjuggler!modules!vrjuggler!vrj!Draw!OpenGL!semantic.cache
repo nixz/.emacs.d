@@ -1,0 +1,311 @@
+;; Object OpenGL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "OpenGL/"
+  :tables (list 
+   (semanticdb-table "SimInterface.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/Draw/OpenGL/Config.h" include (:system-flag t) nil [1122 1157])
+            ("vrj/Draw/OpenGL/SimInterface.h" include (:system-flag t) nil [1159 1200])
+            ("vrj" type
+               (:members 
+                  ( ("opengl" type
+                       (:members 
+                          ( ("SimInterface" function
+                               (:constructor-flag t
+                                :parent "SimInterface"
+                                :type ("SimInterface" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1240 1295])
+                            ("SimInterface" function
+                               (:destructor-flag t
+                                :parent "SimInterface"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1297 1353])
+                            ("contextInit" function
+                               (:parent "SimInterface"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1355 1414]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1220 1417]))                  
+                :type "namespace")
+                nil [1203 1420]))          
+    :file "SimInterface.cpp"
+    :pointmax 1421
+    :fsize 1420
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Window.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/Draw/OpenGL/Config.h" include (:system-flag t) nil [1122 1157])
+            ("vpr/vpr.h" include (:system-flag t) nil [1159 1179])
+            ("GL/gl.h" include (:system-flag t) nil [1261 1282])
+            ("GL/glu.h" include (:system-flag t) nil [1283 1305])
+            ("gadget/InputManager.h" include (:system-flag t) nil [1314 1346])
+            ("gadget/Type/KeyboardMouse.h" include (:system-flag t) nil [1700 1738])
+            ("gadget/Type/KeyboardMouseProxy.h" include (:system-flag t) nil [1739 1782])
+            ("gadget/Type/DeviceInterface.h" include (:system-flag t) nil [1783 1823])
+            ("vrj/Display/Projection.h" include (:system-flag t) nil [1825 1860])
+            ("vrj/Display/CameraProjection.h" include (:system-flag t) nil [1861 1902])
+            ("vrj/Display/Frustum.h" include (:system-flag t) nil [1903 1935])
+            ("vrj/Util/Debug.h" include (:system-flag t) nil [1936 1963])
+            ("vrj/Display/Viewport.h" include (:system-flag t) nil [1964 1997])
+            ("vrj/Display/SimViewport.h" include (:system-flag t) nil [1998 2034])
+            ("vrj/Draw/DrawSimInterface.h" include (:system-flag t) nil [2078 2116])
+            ("vrj/Draw/OpenGL/SimInterface.h" include (:system-flag t) nil [2117 2158])
+            ("vrj/Draw/OpenGL/Window.h" include (:system-flag t) nil [2160 2195])
+            ("USE_PROJECTION_MATRIX" variable (:constant-flag t) nil [2366 2387])
+            ("vrj" type
+               (:members 
+                  ( ("opengl" type
+                       (:members 
+                          ( ("Window::mCurMaxWinId" variable (:type "int") (reparse-symbol namespacesubparts) [2545 2574])
+                            ("Window::mWinIdMutex" variable (:type ("vpr::Mutex" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2575 2606])
+                            ("Window" function
+                               (:constructor-flag t
+                                :parent "Window"
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2608 3125])
+                            ("configWindow" function
+                               (:parent "Window"
+                                :arguments 
+                                  ( ("displayWindow" variable (:type ("vrj::DisplayPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3153 3183]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3127 3611])
+                            ("swapBuffers" function
+                               (:parent "Window"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3613 3660])
+                            ("finishSetup" function
+                               (:parent "Window"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3711 7291])
+                            ("updateViewport" function
+                               (:parent "Window"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7293 7404])
+                            ("setViewport" function
+                               (:parent "Window"
+                                :arguments 
+                                  ( ("xo" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [7431 7446])
+                                    ("yo" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [7447 7462])
+                                    ("xSize" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [7463 7481])
+                                    ("ySize" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [7507 7525]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7406 8048])
+                            ("setViewBuffer" function
+                               (:parent "Window"
+                                :arguments 
+                                  ( ("view" variable (:type ("vrj::Viewport::View" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8077 8102]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8050 8342])
+                            ("setProjection" function
+                               (:parent "Window"
+                                :arguments 
+                                  ( ("proj" variable (:type ("vrj::ProjectionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8371 8395]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8344 9172])
+                            ("getNextWindowId" function
+                               (:parent "Window"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9174 9299])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("out" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9326 9344])
+                                    ("win" variable
+                                       (:reference 1
+                                        :type ("vrj::opengl::Window" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9345 9370]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9301 9751]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2525 9754]))                  
+                :type "namespace")
+                nil [2508 9781]))          
+    :file "Window.cpp"
+    :pointmax 9803
+    :fsize 9802
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((punctuation 2504 . 2505) (punctuation 2503 . 2504) (symbol 2496 . 2502) (symbol 2486 . 2495) (symbol 2483 . 2485) (symbol 2472 . 2482))
+    :lexical-table 
+        '(("USE_PROJECTION_MATRIX" . ((number "1" 2388 . 2389)))
+          )
+
+    )
+   (semanticdb-table "UserData.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_OPENGL_USER_DATA_H_" variable (:constant-flag t) nil [1163 1187])
+            ("vrj/Draw/OpenGL/Config.h" include (:system-flag t) nil [1189 1224])
+            ("vrj/Kernel/UserPtr.h" include (:system-flag t) nil [1226 1257])
+            ("vrj/Display/ProjectionPtr.h" include (:system-flag t) nil [1258 1296])
+            ("vrj/Display/ViewportPtr.h" include (:system-flag t) nil [1297 1333])
+            ("vrj/Draw/OpenGL/WindowPtr.h" include (:system-flag t) nil [1334 1372])
+            ("vrj" type
+               (:members 
+                  ( ("opengl" type
+                       (:members 
+                          ( ("UserData" variable (:type ("VJ_OGL_CLASS_API" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1933 2958]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1392 2961]))                  
+                :type "namespace")
+                nil [1375 2964]))          
+    :file "UserData.h"
+    :pointmax 2974
+    :fsize 2973
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_VRJ_OPENGL_USER_DATA_H_")
+          )
+
+    )
+   (semanticdb-table "Pipe.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/Draw/OpenGL/Config.h" include (:system-flag t) nil [1122 1157])
+            ("vpr/vpr.h" include (:system-flag t) nil [1159 1179])
+            ("GL/gl.h" include (:system-flag t) nil [1234 1255])
+            ("boost/bind.hpp" include (:system-flag t) nil [1264 1289])
+            ("vpr/Thread/Thread.h" include (:system-flag t) nil [1291 1321])
+            ("vpr/Sync/Guard.h" include (:system-flag t) nil [1322 1349])
+            ("cluster/ClusterManager.h" include (:system-flag t) nil [1351 1386])
+            ("vrj/Kernel/Kernel.h" include (:system-flag t) nil [1388 1418])
+            ("vrj/Draw/OpenGL/App.h" include (:system-flag t) nil [1419 1451])
+            ("vrj/Util/Debug.h" include (:system-flag t) nil [1452 1479])
+            ("vrj/Display/SurfaceViewport.h" include (:system-flag t) nil [1480 1520])
+            ("vrj/Display/SimViewport.h" include (:system-flag t) nil [1521 1557])
+            ("vrj/Draw/OpenGL/SimInterface.h" include (:system-flag t) nil [1558 1599])
+            ("vrj/Draw/OpenGL/Pipe.h" include (:system-flag t) nil [1679 1712])
+            ("vrj" type
+               (:members 
+                  ( ("opengl" type
+                       (:members 
+                          ( ("Pipe" function
+                               (:constructor-flag t
+                                :parent "Pipe"
+                                :arguments 
+                                  ( ("num" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1763 1780])
+                                    ("glMgr" variable
+                                       (:pointer 1
+                                        :type ("vrj::opengl::DrawManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1781 1813])
+                                    ("drawMgrWinLock" variable
+                                       (:pointer 1
+                                        :type ("vpr::Mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1825 1852]))                                  
+                                :type ("Pipe" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1752 2145])
+                            ("Pipe" function
+                               (:destructor-flag t
+                                :parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2147 2262])
+                            ("start" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("cpuAffinity" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2308 2330]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2292 3210])
+                            ("triggerRender" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3257 3592])
+                            ("completeRender" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3649 3780])
+                            ("triggerSwap" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3826 3923])
+                            ("completeSwap" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3979 4078])
+                            ("addWindow" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("win" variable (:type ("vrj::opengl::WindowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4211 4238]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4190 4543])
+                            ("removeWindow" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("win" variable (:type ("vrj::opengl::WindowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4613 4640]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4589 4934])
+                            ("controlLoop" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("cpuAffinity" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [5241 5263]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5218 8551])
+                            ("stop" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8553 9191])
+                            ("checkForWindowsToClose" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9368 11212])
+                            ("checkForNewWindows" function
+                               (:parent "Pipe"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11353 13266])
+                            ("renderWindow" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("win" variable (:type ("vrj::opengl::WindowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13328 13355]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13304 18922])
+                            ("swapWindowBuffers" function
+                               (:parent "Pipe"
+                                :arguments 
+                                  ( ("win" variable (:type ("vrj::opengl::WindowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19053 19080]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19024 19203]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1732 19206]))                  
+                :type "namespace")
+                nil [1715 19209]))          
+    :file "Pipe.cpp"
+    :pointmax 19210
+    :fsize 19232
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!vrj!vrjuggler!modules!vrjuggler!vrj!Draw!OpenGL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

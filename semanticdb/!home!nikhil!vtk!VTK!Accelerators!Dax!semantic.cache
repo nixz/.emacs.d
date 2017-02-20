@@ -1,0 +1,555 @@
+;; Object Dax/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Dax/"
+  :tables (list 
+   (semanticdb-table "DaxMarchingCubes.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("daxConfig.h" include nil nil [650 672])
+            ("vtkInformation.h" include (:system-flag t) nil [674 701])
+            ("vtkInformationVector.h" include (:system-flag t) nil [702 735])
+            ("vtkObjectFactory.h" include (:system-flag t) nil [736 765])
+            ("vtkNew.h" include (:system-flag t) nil [766 785])
+            ("vtkFloatArray.h" include (:system-flag t) nil [807 833])
+            ("vtkDoubleArray.h" include (:system-flag t) nil [835 862])
+            ("vtkCellTypes.h" include (:system-flag t) nil [888 913])
+            ("vtkGenericCell.h" include (:system-flag t) nil [914 941])
+            ("vtkTriangle.h" include (:system-flag t) nil [942 966])
+            ("vtkVoxel.h" include (:system-flag t) nil [967 988])
+            ("vtkDataObjectTypes.h" include (:system-flag t) nil [1012 1043])
+            ("vtkImageData.h" include (:system-flag t) nil [1044 1069])
+            ("vtkUniformGrid.h" include (:system-flag t) nil [1070 1097])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [1098 1130])
+            ("vtkDispatcher.h" include nil nil [1166 1192])
+            ("vtkDoubleDispatcher.h" include nil nil [1193 1225])
+            ("vtkToDax/Portals.h" include nil nil [1227 1256])
+            ("vtkToDax/Containers.h" include nil nil [1257 1289])
+            ("vtkToDax/CellTypeToType.h" include nil nil [1290 1326])
+            ("vtkToDax/DataSetTypeToType.h" include nil nil [1327 1366])
+            ("vtkToDax/FieldTypeToType.h" include nil nil [1367 1404])
+            ("vtkToDax/MarchingCubes.h" include nil nil [1405 1440])
+            ("vtkDaxDetailCommon.h" include nil nil [1457 1488])
+            ("vtkDax" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("ValidMarchingCubesInput" type
+                               (:members 
+                                  ( ("ReturnType" type
+                                       (:typedef ("int")
+                                        :superclasses "int"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1569 1592])
+                                    ("Input" variable
+                                       (:pointer 1
+                                        :type ("vtkDataSet" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1597 1615])
+                                    ("Cell" variable
+                                       (:pointer 1
+                                        :type ("vtkCell" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1620 1634])
+                                    ("IsoValue" variable (:type "double") (reparse-symbol classsubparts) [1639 1655])
+                                    ("Result" variable
+                                       (:pointer 1
+                                        :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1661 1689])
+                                    ("ValidMarchingCubesInput" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in" variable
+                                               (:pointer 1
+                                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1719 1734])
+                                            ("out" variable
+                                               (:pointer 1
+                                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1735 1760])
+                                            ("cell" variable
+                                               (:pointer 1
+                                                :type ("vtkCell" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1785 1799])
+                                            ("isoValue" variable (:type "double") (reparse-symbol arg-sub-list) [1800 1816]))                                          
+                                        :type ("ValidMarchingCubesInput" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1695 1877])
+                                    ("()" function
+                                       (:template 
+                                          ( ("LHS" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("arrayField" variable
+                                               (:reference 1
+                                                :type ("LHS" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1925 1941]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1883 3080])
+                                    ("dispatchOnFieldType" function
+                                       (:template 
+                                          ( ("VTKArrayType" type (:type "class") nil nil)
+                                            ("DaxFieldType" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("vtkField" variable
+                                               (:reference 1
+                                                :type ("VTKArrayType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3169 3192]))                                          )
+                                        (reparse-symbol classsubparts) [3086 4240])
+                                    ("private" label nil (reparse-symbol classsubparts) [4243 4251])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ValidMarchingCubesInput" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4271 4302]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4256 4303]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1530 4308]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1509 4310])
+                    ("MarchingCubes" function
+                       (:arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4431 4449])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4450 4478])
+                            ("field" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4493 4513])
+                            ("isoValue" variable (:type "float") (reparse-symbol arg-sub-list) [4514 4529]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4413 5397]))                  
+                :type "namespace")
+                nil [1490 5400]))          
+    :file "DaxMarchingCubes.cxx"
+    :pointmax 5424
+    :fsize 684
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DaxThreshold.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DaxThresholdImpl.h" include nil nil [650 679]))          
+    :file "DaxThreshold.cxx"
+    :pointmax 680
+    :fsize 679
+    :lastmodtime '(20782 11110)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkDaxMarchingCubes.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkDaxMarchingCubes.h" include nil nil [649 681])
+            ("vtkDispatcher.h" include (:system-flag t) nil [683 709])
+            ("vtkDataSet.h" include (:system-flag t) nil [710 733])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [734 766])
+            ("vtkInformation.h" include (:system-flag t) nil [767 794])
+            ("vtkInformationVector.h" include (:system-flag t) nil [795 828])
+            ("vtkObjectFactory.h" include (:system-flag t) nil [829 858])
+            ("vtkPointData.h" include (:system-flag t) nil [859 884])
+            ("vtkDax" type
+               (:members 
+                  ( ("MarchingCubes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [967 985])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1006 1034])
+                            ("field" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1055 1075])
+                            ("isoValue" variable (:type "float") (reparse-symbol arg-sub-list) [1096 1111]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [949 1112]))                  
+                :type "namespace")
+                nil [928 1114])
+            ("vtkDaxMarchingCubes" function
+               (:constructor-flag t
+                :parent "vtkDaxMarchingCubes"
+                :type ("vtkDaxMarchingCubes" type (:type "class") nil nil))
+                nil [1198 1248])
+            ("vtkDaxMarchingCubes" function
+               (:destructor-flag t
+                :parent "vtkDaxMarchingCubes"
+                :type "void")
+                nil [1331 1382])
+            ("RequestData" function
+               (:parent "vtkDaxMarchingCubes"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1502 1526])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1556 1591])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1621 1656]))                  
+                :type "int")
+                nil [1465 2601]))          
+    :file "vtkDaxMarchingCubes.cxx"
+    :pointmax 2602
+    :fsize 2669
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkDaxThreshold.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkDaxThreshold.h" include nil nil [649 677])
+            ("vtkDispatcher.h" include (:system-flag t) nil [679 705])
+            ("vtkDataSet.h" include (:system-flag t) nil [706 729])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [730 762])
+            ("vtkInformation.h" include (:system-flag t) nil [763 790])
+            ("vtkInformationVector.h" include (:system-flag t) nil [791 824])
+            ("vtkObjectFactory.h" include (:system-flag t) nil [825 854])
+            ("vtkDax" type
+               (:members 
+                  ( ("Threshold" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [891 909])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [926 954])
+                            ("field" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [971 991])
+                            ("lower" variable (:type "double") (reparse-symbol arg-sub-list) [1008 1021])
+                            ("upper" variable (:type "double") (reparse-symbol arg-sub-list) [1038 1051]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [877 1052]))                  
+                :type "namespace")
+                nil [856 1054])
+            ("vtkDaxThreshold" function
+               (:constructor-flag t
+                :parent "vtkDaxThreshold"
+                :type ("vtkDaxThreshold" type (:type "class") nil nil))
+                nil [1175 1214])
+            ("vtkDaxThreshold" function
+               (:destructor-flag t
+                :parent "vtkDaxThreshold"
+                :type "void")
+                nil [1297 1336])
+            ("RequestData" function
+               (:parent "vtkDaxThreshold"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1452 1476])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1510 1545])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1579 1614]))                  
+                :type "int")
+                nil [1419 2512]))          
+    :file "vtkDaxThreshold.cxx"
+    :pointmax 2513
+    :fsize 2562
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DaxMarchingCubesImpl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("daxConfig.h" include nil nil [650 672])
+            ("vtkInformation.h" include (:system-flag t) nil [674 701])
+            ("vtkInformationVector.h" include (:system-flag t) nil [702 735])
+            ("vtkObjectFactory.h" include (:system-flag t) nil [736 765])
+            ("vtkNew.h" include (:system-flag t) nil [766 785])
+            ("vtkFloatArray.h" include (:system-flag t) nil [807 833])
+            ("vtkDoubleArray.h" include (:system-flag t) nil [835 862])
+            ("vtkCellTypes.h" include (:system-flag t) nil [888 913])
+            ("vtkGenericCell.h" include (:system-flag t) nil [914 941])
+            ("vtkTriangle.h" include (:system-flag t) nil [942 966])
+            ("vtkVoxel.h" include (:system-flag t) nil [967 988])
+            ("vtkDataObjectTypes.h" include (:system-flag t) nil [1012 1043])
+            ("vtkImageData.h" include (:system-flag t) nil [1044 1069])
+            ("vtkUniformGrid.h" include (:system-flag t) nil [1070 1097])
+            ("vtkPolyData.h" include (:system-flag t) nil [1098 1122])
+            ("vtkDispatcher.h" include nil nil [1158 1184])
+            ("vtkDoubleDispatcher.h" include nil nil [1185 1217])
+            ("vtkToDax/Portals.h" include nil nil [1219 1248])
+            ("vtkToDax/Containers.h" include nil nil [1249 1281])
+            ("vtkToDax/CellTypeToType.h" include nil nil [1282 1318])
+            ("vtkToDax/DataSetTypeToType.h" include nil nil [1319 1358])
+            ("vtkToDax/FieldTypeToType.h" include nil nil [1359 1396])
+            ("vtkToDax/MarchingCubes.h" include nil nil [1397 1432])
+            ("DaxDetailCommon.h" include nil nil [1449 1477])
+            ("vtkDax" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("ValidMarchingCubesInput" type
+                               (:members 
+                                  ( ("ReturnType" type
+                                       (:typedef ("int")
+                                        :superclasses "int"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1558 1581])
+                                    ("Input" variable
+                                       (:pointer 1
+                                        :type ("vtkDataSet" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1586 1604])
+                                    ("Cell" variable
+                                       (:pointer 1
+                                        :type ("vtkCell" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1609 1623])
+                                    ("IsoValue" variable (:type "double") (reparse-symbol classsubparts) [1628 1644])
+                                    ("Result" variable
+                                       (:pointer 1
+                                        :type ("vtkPolyData" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1650 1670])
+                                    ("ValidMarchingCubesInput" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in" variable
+                                               (:pointer 1
+                                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1700 1715])
+                                            ("out" variable
+                                               (:pointer 1
+                                                :type ("vtkPolyData" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1716 1733])
+                                            ("cell" variable
+                                               (:pointer 1
+                                                :type ("vtkCell" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1758 1772])
+                                            ("isoValue" variable (:type "double") (reparse-symbol arg-sub-list) [1773 1789]))                                          
+                                        :type ("ValidMarchingCubesInput" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1676 1850])
+                                    ("()" function
+                                       (:template 
+                                          ( ("LHS" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("arrayField" variable
+                                               (:reference 1
+                                                :type ("LHS" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1898 1914]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1856 2350])
+                                    ("dispatchOnFieldType" function
+                                       (:template 
+                                          ( ("VTKArrayType" type (:type "class") nil nil)
+                                            ("DaxFieldType" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("vtkField" variable
+                                               (:reference 1
+                                                :type ("VTKArrayType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2439 2462]))                                          )
+                                        (reparse-symbol classsubparts) [2356 3510])
+                                    ("private" label nil (reparse-symbol classsubparts) [3513 3521])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ValidMarchingCubesInput" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3541 3572]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3526 3573]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1519 3578]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1498 3580])
+                    ("MarchingCubes" function
+                       (:arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3701 3719])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkPolyData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3720 3740])
+                            ("field" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3755 3775])
+                            ("isoValue" variable (:type "float") (reparse-symbol arg-sub-list) [3776 3791]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3683 4659]))                  
+                :type "namespace")
+                nil [1479 4662]))          
+    :file "DaxMarchingCubesImpl.h"
+    :pointmax 4736
+    :fsize 4735
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DaxThresholdImpl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("daxConfig.h" include nil nil [650 672])
+            ("vtkDispatcher.h" include (:system-flag t) nil [674 700])
+            ("vtkDoubleDispatcher.h" include (:system-flag t) nil [701 733])
+            ("vtkNew.h" include (:system-flag t) nil [734 753])
+            ("vtkCellTypes.h" include (:system-flag t) nil [779 804])
+            ("vtkGenericCell.h" include (:system-flag t) nil [805 832])
+            ("vtkHexahedron.h" include (:system-flag t) nil [833 859])
+            ("vtkLine.h" include (:system-flag t) nil [860 880])
+            ("vtkQuad.h" include (:system-flag t) nil [881 901])
+            ("vtkTetra.h" include (:system-flag t) nil [902 923])
+            ("vtkTriangle.h" include (:system-flag t) nil [924 948])
+            ("vtkVertex.h" include (:system-flag t) nil [949 971])
+            ("vtkVoxel.h" include (:system-flag t) nil [972 993])
+            ("vtkWedge.h" include (:system-flag t) nil [994 1015])
+            ("vtkFloatArray.h" include (:system-flag t) nil [1037 1063])
+            ("vtkIntArray.h" include (:system-flag t) nil [1064 1088])
+            ("vtkUnsignedCharArray.h" include (:system-flag t) nil [1089 1122])
+            ("vtkDataObjectTypes.h" include (:system-flag t) nil [1146 1177])
+            ("vtkImageData.h" include (:system-flag t) nil [1178 1203])
+            ("vtkStructuredGrid.h" include (:system-flag t) nil [1204 1234])
+            ("vtkUniformGrid.h" include (:system-flag t) nil [1235 1262])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [1263 1295])
+            ("vtkToDax/CellTypeToType.h" include (:system-flag t) nil [1336 1372])
+            ("vtkToDax/Containers.h" include (:system-flag t) nil [1373 1405])
+            ("vtkToDax/DataSetTypeToType.h" include (:system-flag t) nil [1406 1445])
+            ("vtkToDax/FieldTypeToType.h" include (:system-flag t) nil [1446 1483])
+            ("vtkToDax/Portals.h" include (:system-flag t) nil [1484 1513])
+            ("vtkToDax/Threshold.h" include (:system-flag t) nil [1514 1545])
+            ("DaxDetailCommon.h" include nil nil [1562 1590])
+            ("vtkDax" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("ValidThresholdInput" type
+                               (:members 
+                                  ( ("ReturnType" type
+                                       (:typedef ("int")
+                                        :superclasses "int"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1666 1689])
+                                    ("Input" variable
+                                       (:pointer 1
+                                        :type ("vtkDataSet" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1694 1712])
+                                    ("Cell" variable
+                                       (:pointer 1
+                                        :type ("vtkCell" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1717 1731])
+                                    ("Min" variable (:type "double") (reparse-symbol classsubparts) [1736 1747])
+                                    ("Max" variable (:type "double") (reparse-symbol classsubparts) [1752 1763])
+                                    ("Result" variable
+                                       (:pointer 1
+                                        :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1769 1797])
+                                    ("ValidThresholdInput" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in" variable
+                                               (:pointer 1
+                                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1823 1838])
+                                            ("out" variable
+                                               (:pointer 1
+                                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1839 1864])
+                                            ("cell" variable
+                                               (:pointer 1
+                                                :type ("vtkCell" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1889 1903])
+                                            ("lower" variable (:type "double") (reparse-symbol arg-sub-list) [1904 1917])
+                                            ("upper" variable (:type "double") (reparse-symbol arg-sub-list) [1918 1931]))                                          
+                                        :type ("ValidThresholdInput" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1803 1995])
+                                    ("()" function
+                                       (:template 
+                                          ( ("LHS" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("arrayField" variable
+                                               (:reference 1
+                                                :type ("LHS" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2043 2059]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [2001 3021])
+                                    ("dispatchOnFieldType" function
+                                       (:template 
+                                          ( ("VTKArrayType" type (:type "class") nil nil)
+                                            ("DaxFieldType" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("vtkField" variable
+                                               (:reference 1
+                                                :type ("VTKArrayType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3110 3133]))                                          )
+                                        (reparse-symbol classsubparts) [3027 4738])
+                                    ("private" label nil (reparse-symbol classsubparts) [4741 4749])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ValidThresholdInput" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4769 4796]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4754 4797]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1631 4802]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1610 4804])
+                    ("Threshold" function
+                       (:arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :type ("vtkDataSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4925 4943])
+                            ("output" variable
+                               (:pointer 1
+                                :type ("vtkUnstructuredGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4944 4972])
+                            ("field" variable
+                               (:pointer 1
+                                :type ("vtkDataArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4987 5007])
+                            ("lower" variable (:type "double") (reparse-symbol arg-sub-list) [5008 5021])
+                            ("upper" variable (:type "double") (reparse-symbol arg-sub-list) [5022 5035]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4911 5949]))                  
+                :type "namespace")
+                nil [1592 5952]))          
+    :file "DaxThresholdImpl.h"
+    :pointmax 6022
+    :fsize 6021
+    :lastmodtime '(20782 11111)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!vtk!VTK!Accelerators!Dax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

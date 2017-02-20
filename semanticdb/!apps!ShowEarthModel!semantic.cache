@@ -1,0 +1,42 @@
+;; Object ShowEarthModel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ShowEarthModel/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUIDIR" variable (:default-value ("/apps/Vrui-2.6")) nil [40 65])
+            ("TARGET" variable (:default-value ("ShowEarthModel")) nil [91 115])
+            ("TYPE" variable (:default-value ("release")) nil [136 151])
+            ("DIRS" variable (:default-value ("source")) nil [192 206])
+            ("LIBS" variable (:default-value ("GLU")) nil [235 246])
+            ("DLIBS" variable (:default-value ("-lglu")) nil [266 280])
+            ("FRAMEWORKS" variable nil nil [301 315])
+            ("INCPATH" variable (:default-value ("$(DIRS)")) nil [814 832])
+            ("LIBPATH" variable nil nil [832 843])
+            ("EXTRA_FILES" variable (:default-value ("Makefile")) nil [904 927])
+            ("EXECDIR" variable (:default-value ("bin")) nil [974 988])
+            ("SRCDIR" variable (:default-value ("source")) nil [1010 1026])
+            ("OBJDIR" variable (:default-value ("objects")) nil [1073 1090])
+            ("SOURCE" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.cpp))")) nil [1121 1179])
+            ("HEADERS" variable (:default-value ("$(foreach DIR,$(DIRS),$(wildcard $(DIR)/*.h))")) nil [1208 1265])
+            ("OBJECTS" variable (:default-value ("$(addprefix $(OBJDIR)/, $(SOURCE:.cpp=.o))")) nil [1294 1348])
+            ("DFILES" variable (:default-value ("$(addprefix $(OBJDIR)/,$(SOURCE:.cpp=.d))")) nil [1381 1433])
+            (".PHONY" function (:arguments ("clean" "backup" "dirs" "all")) nil [1498 1528])
+            ("ALL" variable (:default-value ("$(TARGET)")) nil [1529 1545])
+            ("all" function (:arguments ("$(ALL)")) nil [1546 1558])
+            ("ShowEarthModel" function (:arguments ("dirs" "$(OBJECTS)")) nil [1661 1944])
+            ("$(OBJDIR)" function (:arguments ("%.cpp")) nil [2143 2461])
+            ("%.hpp" function (:arguments (";")) nil [2521 2530])
+            ("clean" function nil nil [2582 2717])
+            ("backup" function nil nil [2745 2891])
+            ("dirs" function nil nil [2923 3133]))          
+      :file "Makefile"
+      :pointmax 3232
+      :fsize 3231
+      :lastmodtime '(22477 52132 580004 681000)
+      :unmatched-syntax nil))
+  :file "!apps!ShowEarthModel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,122 @@
+;; Object CMake/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CMake/"
+  :tables (list 
+   (semanticdb-table "branded_paraview_main.cxx.in"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QApplication" include (:system-flag t) nil [1655 1678])
+            ("pq@BPC_NAME@Initializer.h" include nil nil [1679 1715])
+            ("vtkPVConfig.h" include nil nil [1716 1740])
+            ("stdlib.h" include (:system-flag t) nil [2003 2022])
+            ("clocale" include (:system-flag t) nil [2023 2041])
+            ("unnamed" type
+               (:members 
+                  ( ("checkenv" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("vname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2147 2165]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2126 2460]))                  
+                :type "namespace")
+                nil [2043 2462])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2473 2482])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2483 2496]))                  
+                :type "int")
+                nil [2464 3800]))          
+    :file "branded_paraview_main.cxx.in"
+    :pointmax 3870
+    :fsize 3869
+    :lastmodtime '(21492 35760 0 0)
+    :unmatched-syntax '((symbol 1825 . 1847) (symbol 1813 . 1824) (punctuation 1812 . 1813))
+    )
+   (semanticdb-table "pqParaViewPlugin.cxx.in"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("@PLUGIN_NAME@_Plugin.h" include nil nil [1361 1394])
+            ("vtkObjectFactory.h" include nil nil [1396 1425])
+            ("PushBack" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("F" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("vector" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1629 1639])
+                    ("fun" variable
+                       (:reference 1
+                        :type ("F" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1640 1647]))                  )
+                nil [1587 1716])
+            ("GetBinaryResources" function
+               (:parent "_Plugin"
+                :arguments 
+                  ( ("resources" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2559 2595]))                  
+                :type "int")
+                nil [2528 2642])
+            ("_Plugin" function (:type "int") nil [4577 4789]))          
+    :file "pqParaViewPlugin.cxx.in"
+    :pointmax 5361
+    :fsize 5361
+    :lastmodtime '(21370 11544 0 0)
+    :unmatched-syntax '((semantic-list 4936 . 4973) (symbol 4920 . 4936) (punctuation 4964 . 4965) (punctuation 4952 . 4953) (punctuation 4949 . 4950) (punctuation 4937 . 4938) (punctuation 4576 . 4577) (symbol 4565 . 4576) (punctuation 4564 . 4565) (punctuation 4563 . 4564) (punctuation 4562 . 4563) (symbol 4555 . 4562) (punctuation 4554 . 4555) (symbol 4543 . 4554) (punctuation 4542 . 4543) (punctuation 2527 . 2528) (symbol 2516 . 2527) (punctuation 2515 . 2516) (VOID 2510 . 2514) (punctuation 1442 . 1443) (symbol 1428 . 1442) (punctuation 1427 . 1428))
+    )
+   (semanticdb-table "branded_paraview_initializer.cxx.in"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pq@BPC_NAME@Initializer.h" include nil nil [1517 1553])
+            ("QApplication" include (:system-flag t) nil [1555 1578])
+            ("QBitmap" include (:system-flag t) nil [1579 1597])
+            ("QDir" include (:system-flag t) nil [1598 1613])
+            ("QSplashScreen" include (:system-flag t) nil [1614 1638])
+            ("QtDebug" include (:system-flag t) nil [1639 1657])
+            ("@BPC_PVMAIN_WINDOW_INCLUDE@" include nil nil [1659 1697])
+            ("pqOptions.h" include nil nil [1698 1720])
+            ("pqPVApplicationCore.h" include nil nil [1721 1753])
+            ("pqSettings.h" include nil nil [1754 1777])
+            ("vtkInitializationHelper.h" include nil nil [1778 1814])
+            ("vtkPVPluginTracker.h" include nil nil [1815 1846])
+            ("vtkPVConfig.h" include nil nil [1899 1923])
+            ("Initializer" function (:type "int") nil [2042 2131])
+            ("Initializer" function (:type "int") nil [2251 2411])
+            ("Initialize" function
+               (:parent "Initializer"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2533 2542])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :type "int")
+                nil [2509 5925]))          
+    :file "branded_paraview_initializer.cxx.in"
+    :pointmax 5995
+    :fsize 5996
+    :lastmodtime '(21492 35760 0 0)
+    :unmatched-syntax '((punctuation 2508 . 2509) (symbol 2500 . 2508) (punctuation 2499 . 2500) (symbol 2497 . 2499) (BOOL 2492 . 2496) (punctuation 2250 . 2251) (symbol 2242 . 2250) (punctuation 2241 . 2242) (symbol 2239 . 2241) (punctuation 2238 . 2239) (punctuation 2237 . 2238) (punctuation 2236 . 2237) (symbol 2225 . 2236) (punctuation 2224 . 2225) (symbol 2216 . 2224) (punctuation 2215 . 2216) (symbol 2213 . 2215) (punctuation 2041 . 2042) (symbol 2033 . 2041) (punctuation 2032 . 2033) (symbol 2030 . 2032) (punctuation 2029 . 2030) (punctuation 2028 . 2029) (symbol 2017 . 2028) (punctuation 2016 . 2017) (symbol 2008 . 2016) (punctuation 2007 . 2008) (symbol 2005 . 2007))
+    )
+   )
+  :file "!Users!nshetty!Code!PV!ParaView!CMake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

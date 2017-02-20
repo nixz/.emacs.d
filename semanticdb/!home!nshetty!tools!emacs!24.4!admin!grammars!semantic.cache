@@ -1,0 +1,1035 @@
+;; Object grammars/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "grammars/"
+  :tables
+  (list
+    (semanticdb-table "java-tags.wy"
+      :major-mode 'wisent-grammar-mode
+      :tags 
+        '( ("wisent-java-tags-wy" package nil nil [917 945])
+            ("semantic/wisent/javat-wy" provide nil nil [946 979])
+            ("prologue" code nil nil [981 1095])
+            ("java-mode" languagemode nil nil [1097 1121])
+            ("compilation_unit" start nil nil [1151 1174])
+            ("package_declaration" start nil nil [1236 1262])
+            ("import_declaration" start nil nil [1263 1288])
+            ("class_declaration" start nil nil [1289 1313])
+            ("field_declaration" start nil nil [1314 1338])
+            ("method_declaration" start nil nil [1339 1364])
+            ("formal_parameter" start nil nil [1365 1388])
+            ("constructor_declaration" start nil nil [1389 1419])
+            ("interface_declaration" start nil nil [1420 1448])
+            ("class_member_declaration" start nil nil [1486 1517])
+            ("interface_member_declaration" start nil nil [1518 1553])
+            ("formal_parameters" start nil nil [1554 1578])
+            ("block" type nil nil [1679 1693])
+            ("PAREN_BLOCK" token
+               (:value "(LPAREN RPAREN)"
+                :type "block")
+                nil [1744 1794])
+            ("BRACE_BLOCK" token
+               (:value "(LBRACE RBRACE)"
+                :type "block")
+                nil [1795 1845])
+            ("BRACK_BLOCK" token
+               (:value "(LBRACK RBRACK)"
+                :type "block")
+                nil [1846 1896])
+            ("LPAREN" token
+               (:value "("
+                :type "open-paren")
+                nil [1898 1934])
+            ("RPAREN" token
+               (:value ")"
+                :type "close-paren")
+                nil [1935 1971])
+            ("LBRACE" token
+               (:value "{"
+                :type "open-paren")
+                nil [1972 2008])
+            ("RBRACE" token
+               (:value "}"
+                :type "close-paren")
+                nil [2009 2045])
+            ("LBRACK" token
+               (:value "["
+                :type "open-paren")
+                nil [2046 2082])
+            ("RBRACK" token
+               (:value "]"
+                :type "close-paren")
+                nil [2083 2119])
+            ("punctuation" type nil nil [2187 2207])
+            ("NOT" token
+               (:value "!"
+                :type "punctuation")
+                nil [2267 2303])
+            ("NOTEQ" token
+               (:value "!="
+                :type "punctuation")
+                nil [2304 2341])
+            ("MOD" token
+               (:value "%"
+                :type "punctuation")
+                nil [2342 2378])
+            ("MODEQ" token
+               (:value "%="
+                :type "punctuation")
+                nil [2379 2416])
+            ("AND" token
+               (:value "&"
+                :type "punctuation")
+                nil [2417 2453])
+            ("ANDAND" token
+               (:value "&&"
+                :type "punctuation")
+                nil [2454 2491])
+            ("ANDEQ" token
+               (:value "&="
+                :type "punctuation")
+                nil [2492 2529])
+            ("MULT" token
+               (:value "*"
+                :type "punctuation")
+                nil [2530 2566])
+            ("MULTEQ" token
+               (:value "*="
+                :type "punctuation")
+                nil [2567 2604])
+            ("PLUS" token
+               (:value "+"
+                :type "punctuation")
+                nil [2605 2641])
+            ("PLUSPLUS" token
+               (:value "++"
+                :type "punctuation")
+                nil [2642 2679])
+            ("PLUSEQ" token
+               (:value "+="
+                :type "punctuation")
+                nil [2680 2717])
+            ("COMMA" token
+               (:value ","
+                :type "punctuation")
+                nil [2718 2754])
+            ("MINUS" token
+               (:value "-"
+                :type "punctuation")
+                nil [2755 2791])
+            ("MINUSMINUS" token
+               (:value "--"
+                :type "punctuation")
+                nil [2792 2829])
+            ("MINUSEQ" token
+               (:value "-="
+                :type "punctuation")
+                nil [2830 2867])
+            ("DOT" token
+               (:value "."
+                :type "punctuation")
+                nil [2868 2904])
+            ("DIV" token
+               (:value "/"
+                :type "punctuation")
+                nil [2905 2941])
+            ("DIVEQ" token
+               (:value "/="
+                :type "punctuation")
+                nil [2942 2979])
+            ("COLON" token
+               (:value ":"
+                :type "punctuation")
+                nil [2980 3016])
+            ("SEMICOLON" token
+               (:value ";"
+                :type "punctuation")
+                nil [3017 3053])
+            ("LT" token
+               (:value "<"
+                :type "punctuation")
+                nil [3054 3090])
+            ("LSHIFT" token
+               (:value "<<"
+                :type "punctuation")
+                nil [3091 3128])
+            ("LSHIFTEQ" token
+               (:value "<<="
+                :type "punctuation")
+                nil [3129 3167])
+            ("LTEQ" token
+               (:value "<="
+                :type "punctuation")
+                nil [3168 3205])
+            ("EQ" token
+               (:value "="
+                :type "punctuation")
+                nil [3206 3242])
+            ("EQEQ" token
+               (:value "=="
+                :type "punctuation")
+                nil [3243 3280])
+            ("GT" token
+               (:value ">"
+                :type "punctuation")
+                nil [3281 3317])
+            ("GTEQ" token
+               (:value ">="
+                :type "punctuation")
+                nil [3318 3355])
+            ("RSHIFT" token
+               (:value ">>"
+                :type "punctuation")
+                nil [3356 3393])
+            ("RSHIFTEQ" token
+               (:value ">>="
+                :type "punctuation")
+                nil [3394 3432])
+            ("URSHIFT" token
+               (:value ">>>"
+                :type "punctuation")
+                nil [3433 3471])
+            ("URSHIFTEQ" token
+               (:value ">>>="
+                :type "punctuation")
+                nil [3472 3511])
+            ("QUESTION" token
+               (:value "?"
+                :type "punctuation")
+                nil [3512 3548])
+            ("XOR" token
+               (:value "^"
+                :type "punctuation")
+                nil [3549 3585])
+            ("XOREQ" token
+               (:value "^="
+                :type "punctuation")
+                nil [3586 3623])
+            ("OR" token
+               (:value "|"
+                :type "punctuation")
+                nil [3624 3660])
+            ("OREQ" token
+               (:value "|="
+                :type "punctuation")
+                nil [3661 3698])
+            ("OROR" token
+               (:value "||"
+                :type "punctuation")
+                nil [3699 3736])
+            ("COMP" token
+               (:value "~"
+                :type "punctuation")
+                nil [3737 3773])
+            ("symbol" type nil nil [3838 3853])
+            ("IDENTIFIER" token (:type "symbol") nil [3889 3920])
+            ("string" type nil nil [3922 3937])
+            ("STRING_LITERAL" token (:type "string") nil [3979 4014])
+            ("number" type nil nil [4016 4031])
+            ("NUMBER_LITERAL" token (:type "number") nil [4077 4112])
+            ("unicode" type (:value (("syntax" . "\"\\\\\\\\u[0-9a-f][0-9a-f][0-9a-f][0-9a-f]\""))) nil [4114 4181])
+            ("unicodecharacter" token (:type "unicode") nil [4182 4219])
+            ("keyword" type nil nil [4316 4332])
+            ("ABSTRACT" keyword (:value "abstract") nil [4386 4418])
+            ("ABSTRACT" put (:value (("summary" . "\"Class|Method declaration modifier: abstract {class|<type>} <name> ...\""))) nil [4419 4516])
+            ("BOOLEAN" keyword (:value "boolean") nil [4518 4549])
+            ("BOOLEAN" put (:value (("summary" . "\"Primitive logical quantity type (true or false)\""))) nil [4550 4624])
+            ("BREAK" keyword (:value "break") nil [4626 4655])
+            ("BREAK" put (:value (("summary" . "\"break [<label>] ;\""))) nil [4656 4698])
+            ("BYTE" keyword (:value "byte") nil [4700 4728])
+            ("BYTE" put (:value (("summary" . "\"Integral primitive type (-128 to 127)\""))) nil [4729 4790])
+            ("CASE" keyword (:value "case") nil [4792 4820])
+            ("CASE" put (:value (("summary" . "\"switch(<expr>) {case <const-expr>: <stmts> ... }\""))) nil [4821 4893])
+            ("CATCH" keyword (:value "catch") nil [4895 4924])
+            ("CATCH" put (:value (("summary" . "\"try {<stmts>} catch(<parm>) {<stmts>} ... \""))) nil [4925 4992])
+            ("CHAR" keyword (:value "char") nil [4994 5022])
+            ("CHAR" put (:value (("summary" . "\"Integral primitive type (0 to 65535)\""))) nil [5023 5083])
+            ("CLASS" keyword (:value "class") nil [5085 5114])
+            ("CLASS" put (:value (("summary" . "\"Class declaration: class <name>\""))) nil [5115 5171])
+            ("CONST" keyword (:value "const") nil [5173 5202])
+            ("CONST" put (:value (("summary" . "\"Unused reserved word\""))) nil [5203 5248])
+            ("CONTINUE" keyword (:value "continue") nil [5250 5282])
+            ("CONTINUE" put (:value (("summary" . "\"continue [<label>] ;\""))) nil [5283 5331])
+            ("DEFAULT" keyword (:value "default") nil [5333 5364])
+            ("DEFAULT" put (:value (("summary" . "\"switch(<expr>) { ... default: <stmts>}\""))) nil [5365 5430])
+            ("DO" keyword (:value "do") nil [5432 5458])
+            ("DO" put (:value (("summary" . "\"do <stmt> while (<expr>);\""))) nil [5459 5506])
+            ("DOUBLE" keyword (:value "double") nil [5508 5538])
+            ("DOUBLE" put (:value (("summary" . "\"Primitive floating-point type (double-precision 64-bit IEEE 754)\""))) nil [5539 5629])
+            ("ELSE" keyword (:value "else") nil [5631 5659])
+            ("ELSE" put (:value (("summary" . "\"if (<expr>) <stmt> else <stmt>\""))) nil [5660 5714])
+            ("EXTENDS" keyword (:value "extends") nil [5716 5747])
+            ("EXTENDS" put (:value (("summary" . "\"SuperClass|SuperInterfaces declaration: extends <name> [, ...]\""))) nil [5748 5837])
+            ("FINAL" keyword (:value "final") nil [5839 5868])
+            ("FINAL" put (:value (("summary" . "\"Class|Member declaration modifier: final {class|<type>} <name> ...\""))) nil [5869 5960])
+            ("FINALLY" keyword (:value "finally") nil [5962 5993])
+            ("FINALLY" put (:value (("summary" . "\"try {<stmts>} ... finally {<stmts>}\""))) nil [5994 6056])
+            ("FLOAT" keyword (:value "float") nil [6058 6087])
+            ("FLOAT" put (:value (("summary" . "\"Primitive floating-point type (single-precision 32-bit IEEE 754)\""))) nil [6088 6177])
+            ("FOR" keyword (:value "for") nil [6179 6206])
+            ("FOR" put (:value (("summary" . "\"for ([<init-expr>]; [<expr>]; [<update-expr>]) <stmt>\""))) nil [6207 6283])
+            ("GOTO" keyword (:value "goto") nil [6285 6313])
+            ("GOTO" put (:value (("summary" . "\"Unused reserved word\""))) nil [6314 6358])
+            ("IF" keyword (:value "if") nil [6360 6386])
+            ("IF" put (:value (("summary" . "\"if (<expr>) <stmt> [else <stmt>]\""))) nil [6387 6441])
+            ("IMPLEMENTS" keyword (:value "implements") nil [6443 6477])
+            ("IMPLEMENTS" put (:value (("summary" . "\"Class SuperInterfaces declaration: implements <name> [, ...]\""))) nil [6478 6568])
+            ("IMPORT" keyword (:value "import") nil [6570 6600])
+            ("IMPORT" put (:value (("summary" . "\"Import package declarations: import <package>\""))) nil [6601 6672])
+            ("INSTANCEOF" keyword (:value "instanceof") nil [6674 6708])
+            ("INT" keyword (:value "int") nil [6710 6737])
+            ("INT" put (:value (("summary" . "\"Integral primitive type (-2147483648 to 2147483647)\""))) nil [6738 6812])
+            ("INTERFACE" keyword (:value "interface") nil [6814 6847])
+            ("INTERFACE" put (:value (("summary" . "\"Interface declaration: interface <name>\""))) nil [6848 6916])
+            ("LONG" keyword (:value "long") nil [6918 6946])
+            ("LONG" put (:value (("summary" . "\"Integral primitive type (-9223372036854775808 to 9223372036854775807)\""))) nil [6947 7040])
+            ("NATIVE" keyword (:value "native") nil [7042 7072])
+            ("NATIVE" put (:value (("summary" . "\"Method declaration modifier: native <type> <name> ...\""))) nil [7073 7152])
+            ("NEW" keyword (:value "new") nil [7154 7181])
+            ("PACKAGE" keyword (:value "package") nil [7183 7214])
+            ("PACKAGE" put (:value (("summary" . "\"Package declaration: package <name>\""))) nil [7215 7277])
+            ("PRIVATE" keyword (:value "private") nil [7279 7310])
+            ("PRIVATE" put (:value (("summary" . "\"Access level modifier: private {class|interface|<type>} <name> ...\""))) nil [7311 7404])
+            ("PROTECTED" keyword (:value "protected") nil [7406 7439])
+            ("PROTECTED" put (:value (("summary" . "\"Access level modifier: protected {class|interface|<type>} <name> ...\""))) nil [7440 7537])
+            ("PUBLIC" keyword (:value "public") nil [7539 7569])
+            ("PUBLIC" put (:value (("summary" . "\"Access level modifier: public {class|interface|<type>} <name> ...\""))) nil [7570 7661])
+            ("RETURN" keyword (:value "return") nil [7663 7693])
+            ("RETURN" put (:value (("summary" . "\"return [<expr>] ;\""))) nil [7694 7737])
+            ("SHORT" keyword (:value "short") nil [7739 7768])
+            ("SHORT" put (:value (("summary" . "\"Integral primitive type (-32768 to 32767)\""))) nil [7769 7835])
+            ("STATIC" keyword (:value "static") nil [7837 7867])
+            ("STATIC" put (:value (("summary" . "\"Declaration modifier: static {class|interface|<type>} <name> ...\""))) nil [7868 7958])
+            ("STRICTFP" keyword (:value "strictfp") nil [7960 7992])
+            ("STRICTFP" put (:value (("summary" . "\"Declaration modifier: strictfp {class|interface|<type>} <name> ...\""))) nil [7993 8087])
+            ("SUPER" keyword (:value "super") nil [8089 8118])
+            ("SWITCH" keyword (:value "switch") nil [8120 8150])
+            ("SWITCH" put (:value (("summary" . "\"switch(<expr>) {[case <const-expr>: <stmts> ...] [default: <stmts>]}\""))) nil [8151 8245])
+            ("SYNCHRONIZED" keyword (:value "synchronized") nil [8248 8284])
+            ("SYNCHRONIZED" put (:value (("summary" . "\"synchronized (<expr>) ... | Method decl. modifier: synchronized <type> <name> ...\""))) nil [8285 8398])
+            ("THIS" keyword (:value "this") nil [8400 8428])
+            ("THROW" keyword (:value "throw") nil [8430 8459])
+            ("THROW" put (:value (("summary" . "\"throw <expr> ;\""))) nil [8460 8499])
+            ("THROWS" keyword (:value "throws") nil [8501 8531])
+            ("THROWS" put (:value (("summary" . "\"Method|Constructor declaration: throws <classType>, ...\""))) nil [8532 8613])
+            ("TRANSIENT" keyword (:value "transient") nil [8615 8648])
+            ("TRANSIENT" put (:value (("summary" . "\"Field declaration modifier: transient <type> <name> ...\""))) nil [8649 8733])
+            ("TRY" keyword (:value "try") nil [8735 8762])
+            ("TRY" put (:value (("summary" . "\"try {<stmts>} [catch(<parm>) {<stmts>} ...] [finally {<stmts>}]\""))) nil [8763 8849])
+            ("VOID" keyword (:value "void") nil [8851 8879])
+            ("VOID" put (:value (("summary" . "\"Method return type: void <name> ...\""))) nil [8880 8939])
+            ("VOLATILE" keyword (:value "volatile") nil [8941 8973])
+            ("VOLATILE" put (:value (("summary" . "\"Field declaration modifier: volatile <type> <name> ...\""))) nil [8974 9056])
+            ("WHILE" keyword (:value "while") nil [9058 9087])
+            ("WHILE" put (:value (("summary" . "\"while (<expr>) <stmt> | do <stmt> while (<expr>);\""))) nil [9088 9162])
+            ("_AUTHOR" keyword (:value "@author") nil [10090 10121])
+            ("_AUTHOR" put (:value (("javadoc" . "(seq 1 usage (type))"))) nil [10122 10172])
+            ("_VERSION" keyword (:value "@version") nil [10173 10205])
+            ("_VERSION" put (:value (("javadoc" . "(seq 2 usage (type))"))) nil [10206 10256])
+            ("_PARAM" keyword (:value "@param") nil [10257 10287])
+            ("_PARAM" put (:value (("javadoc" . "(seq 3 usage (function) with-name t)"))) nil [10288 10354])
+            ("_RETURN" keyword (:value "@return") nil [10355 10386])
+            ("_RETURN" put (:value (("javadoc" . "(seq 4 usage (function))"))) nil [10387 10441])
+            ("_EXCEPTION" keyword (:value "@exception") nil [10442 10476])
+            ("_EXCEPTION" put (:value (("javadoc" . "(seq 5 usage (function) with-name t)"))) nil [10477 10543])
+            ("_THROWS" keyword (:value "@throws") nil [10544 10575])
+            ("_THROWS" put (:value (("javadoc" . "(seq 6 usage (function) with-name t)"))) nil [10576 10642])
+            ("_SEE" keyword (:value "@see") nil [10643 10671])
+            ("_SEE" put (:value (("javadoc" . "(seq 7 usage (type function variable) opt t with-ref t)"))) nil [10672 10757])
+            ("_SINCE" keyword (:value "@since") nil [10758 10788])
+            ("_SINCE" put (:value (("javadoc" . "(seq 8 usage (type function variable) opt t)"))) nil [10789 10863])
+            ("_SERIAL" keyword (:value "@serial") nil [10864 10895])
+            ("_SERIAL" put (:value (("javadoc" . "(seq 9 usage (variable) opt t)"))) nil [10896 10956])
+            ("_SERIALDATA" keyword (:value "@serialData") nil [10957 10992])
+            ("_SERIALDATA" put (:value (("javadoc" . "(seq 10 usage (function) opt t)"))) nil [10993 11054])
+            ("_SERIALFIELD" keyword (:value "@serialField") nil [11055 11091])
+            ("_SERIALFIELD" put (:value (("javadoc" . "(seq 11 usage (variable) opt t)"))) nil [11092 11153])
+            ("_DEPRECATED" keyword (:value "@deprecated") nil [11154 11189])
+            ("_DEPRECATED" put (:value (("javadoc" . "(seq 12 usage (type function variable) opt t)"))) nil [11190 11265])
+            ("compilation_unit" nonterminal (:children 
+              ( ("compilation_unit:0" rule
+                   (:value ("package_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [11624 11643])
+                ("compilation_unit:1" rule
+                   (:value ("import_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [11648 11666])
+                ("compilation_unit:2" rule
+                   (:value ("type_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [11671 11687]))              ) nil [11603 11691])
+            ("package_declaration" nonterminal (:children 
+              ( ("package_declaration:0" rule
+                   (:expr "(PACKAGE-TAG $2 nil)"
+                    :value ("PACKAGE" "qualified_name" "SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [11784 11841]))              ) nil [11760 11845])
+            ("import_declaration" nonterminal (:children 
+              ( ("import_declaration:0" rule
+                   (:expr "(INCLUDE-TAG $2 nil)"
+                    :value ("IMPORT" "qualified_name" "SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [11932 11988])
+                ("import_declaration:1" rule
+                   (:expr "(INCLUDE-TAG (concat $2 $3 $4) nil)"
+                    :value ("IMPORT" "qualified_name" "DOT" "MULT" "SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [11993 12073]))              ) nil [11909 12077])
+            ("type_declaration" nonterminal (:children 
+              ( ("type_declaration:0" rule
+                   (:expr "()"
+                    :value ("SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [12100 12116])
+                ("type_declaration:1" rule
+                   (:value ("class_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12121 12138])
+                ("type_declaration:2" rule
+                   (:value ("interface_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12143 12164]))              ) nil [12079 12168])
+            ("class_declaration" nonterminal (:children 
+              ( ("class_declaration:0" rule
+                   (:expr "(TYPE-TAG $3 $2 $6 (if (or $4 $5) (cons $4 $5)) :typemodifiers $1)"
+                    :value ("modifiers_opt" "CLASS" "qualified_name" "superc_opt" "interfaces_opt" "class_body")
+                    :type "group")
+                    (reparse-symbol rule) [12292 12434]))              ) nil [12270 12438])
+            ("superc_opt" nonterminal (:children 
+              ( ("superc_opt:0" rule (:type "empty") (reparse-symbol rule) [12465 12466])
+                ("superc_opt:1" rule
+                   (:expr "(identity $2)"
+                    :value ("EXTENDS" "qualified_name")
+                    :type "group")
+                    (reparse-symbol rule) [12467 12507]))              ) nil [12440 12511])
+            ("interfaces_opt" nonterminal (:children 
+              ( ("interfaces_opt:0" rule (:type "empty") (reparse-symbol rule) [12542 12543])
+                ("interfaces_opt:1" rule
+                   (:expr "(nreverse $2)"
+                    :value ("IMPLEMENTS" "qualified_name_list")
+                    :type "group")
+                    (reparse-symbol rule) [12544 12592]))              ) nil [12513 12596])
+            ("class_body" nonterminal (:children 
+              ( ("class_body:0" rule
+                   (:expr "(EXPANDFULL $1 class_member_declaration)"
+                    :value ("BRACE_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [12613 12669]))              ) nil [12598 12673])
+            ("class_member_declaration" nonterminal (:children 
+              ( ("class_member_declaration:0" rule
+                   (:expr "()"
+                    :value ("LBRACE")
+                    :type "group")
+                    (reparse-symbol rule) [12704 12717])
+                ("class_member_declaration:1" rule
+                   (:expr "()"
+                    :value ("RBRACE")
+                    :type "group")
+                    (reparse-symbol rule) [12722 12735])
+                ("class_member_declaration:2" rule
+                   (:expr "()"
+                    :value ("block")
+                    :type "group")
+                    (reparse-symbol rule) [12740 12752])
+                ("class_member_declaration:3" rule
+                   (:expr "()"
+                    :value ("static_initializer")
+                    :type "group")
+                    (reparse-symbol rule) [12757 12782])
+                ("class_member_declaration:4" rule
+                   (:value ("constructor_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12787 12810])
+                ("class_member_declaration:5" rule
+                   (:value ("interface_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12815 12836])
+                ("class_member_declaration:6" rule
+                   (:value ("class_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12841 12858])
+                ("class_member_declaration:7" rule
+                   (:value ("method_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12863 12881])
+                ("class_member_declaration:8" rule
+                   (:value ("field_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [12886 12903]))              ) nil [12675 12907])
+            ("interface_declaration" nonterminal (:children 
+              ( ("interface_declaration:0" rule
+                   (:expr "(TYPE-TAG $3 $2 $5 (if $4 (cons nil $4)) :typemodifiers $1)"
+                    :value ("modifiers_opt" "INTERFACE" "qualified_name" "extends_interfaces_opt" "interface_body")
+                    :type "group")
+                    (reparse-symbol rule) [13035 13175]))              ) nil [13009 13179])
+            ("extends_interfaces_opt" nonterminal (:children 
+              ( ("extends_interfaces_opt:0" rule (:type "empty") (reparse-symbol rule) [13218 13219])
+                ("extends_interfaces_opt:1" rule
+                   (:expr "(identity $2)"
+                    :value ("EXTENDS" "qualified_name_list")
+                    :type "group")
+                    (reparse-symbol rule) [13220 13265]))              ) nil [13181 13269])
+            ("interface_body" nonterminal (:children 
+              ( ("interface_body:0" rule
+                   (:expr "(EXPANDFULL $1 interface_member_declaration)"
+                    :value ("BRACE_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [13290 13350]))              ) nil [13271 13354])
+            ("interface_member_declaration" nonterminal (:children 
+              ( ("interface_member_declaration:0" rule
+                   (:expr "()"
+                    :value ("LBRACE")
+                    :type "group")
+                    (reparse-symbol rule) [13389 13402])
+                ("interface_member_declaration:1" rule
+                   (:expr "()"
+                    :value ("RBRACE")
+                    :type "group")
+                    (reparse-symbol rule) [13407 13420])
+                ("interface_member_declaration:2" rule
+                   (:value ("interface_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [13425 13446])
+                ("interface_member_declaration:3" rule
+                   (:value ("class_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [13451 13468])
+                ("interface_member_declaration:4" rule
+                   (:value ("method_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [13473 13491])
+                ("interface_member_declaration:5" rule
+                   (:value ("field_declaration")
+                    :type "group")
+                    (reparse-symbol rule) [13496 13513]))              ) nil [13356 13517])
+            ("static_initializer" nonterminal (:children 
+              ( ("static_initializer:0" rule
+                   (:value ("STATIC" "block")
+                    :type "group")
+                    (reparse-symbol rule) [13542 13554]))              ) nil [13519 13558])
+            ("constructor_declaration" nonterminal (:children 
+              ( ("constructor_declaration:0" rule
+                   (:expr "(FUNCTION-TAG (car $2) nil (cdr $2)
+                  :typemodifiers $1
+                  :throws $3
+                  :constructor-flag t)"
+                    :value ("modifiers_opt" "constructor_declarator" "throwsc_opt" "constructor_body")
+                    :type "group")
+                    (reparse-symbol rule) [13671 13880]))              ) nil [13643 13884])
+            ("constructor_declarator" nonterminal (:children 
+              ( ("constructor_declarator:0" rule
+                   (:expr "(cons $1 $2)"
+                    :value ("IDENTIFIER" "formal_parameter_list")
+                    :type "group")
+                    (reparse-symbol rule) [13913 13962]))              ) nil [13886 13966])
+            ("constructor_body" nonterminal (:children 
+              ( ("constructor_body:0" rule
+                   (:value ("block")
+                    :type "group")
+                    (reparse-symbol rule) [13989 13994]))              ) nil [13968 13998])
+            ("method_declaration" nonterminal (:children 
+              ( ("method_declaration:0" rule
+                   (:expr "(FUNCTION-TAG (car $3) $2 (cdr $3) :typemodifiers $1 :throws $4)"
+                    :value ("modifiers_opt" "VOID" "method_declarator" "throwsc_opt" "method_body")
+                    :type "group")
+                    (reparse-symbol rule) [14106 14235])
+                ("method_declaration:1" rule
+                   (:expr "(FUNCTION-TAG (car $3) $2 (cdr $3) :typemodifiers $1 :throws $4)"
+                    :value ("modifiers_opt" "type" "method_declarator" "throwsc_opt" "method_body")
+                    :type "group")
+                    (reparse-symbol rule) [14240 14369]))              ) nil [14083 14373])
+            ("method_declarator" nonterminal (:children 
+              ( ("method_declarator:0" rule
+                   (:expr "(cons (concat $1 $3) $2)"
+                    :value ("IDENTIFIER" "formal_parameter_list" "dims_opt")
+                    :type "group")
+                    (reparse-symbol rule) [14397 14467]))              ) nil [14375 14471])
+            ("throwsc_opt" nonterminal (:children 
+              ( ("throwsc_opt:0" rule (:type "empty") (reparse-symbol rule) [14499 14500])
+                ("throwsc_opt:1" rule
+                   (:expr "(nreverse $2)"
+                    :value ("THROWS" "qualified_name_list")
+                    :type "group")
+                    (reparse-symbol rule) [14501 14545]))              ) nil [14473 14549])
+            ("qualified_name_list" nonterminal (:children 
+              ( ("qualified_name_list:0" rule
+                   (:expr "(cons $3 $1)"
+                    :value ("qualified_name_list" "COMMA" "qualified_name")
+                    :type "group")
+                    (reparse-symbol rule) [14575 14632])
+                ("qualified_name_list:1" rule
+                   (:expr "(list $1)"
+                    :value ("qualified_name")
+                    :type "group")
+                    (reparse-symbol rule) [14637 14665]))              ) nil [14551 14669])
+            ("method_body" nonterminal (:children 
+              ( ("method_body:0" rule
+                   (:value ("SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [14687 14696])
+                ("method_body:1" rule
+                   (:value ("block")
+                    :type "group")
+                    (reparse-symbol rule) [14701 14706]))              ) nil [14671 14710])
+            ("block" nonterminal (:children 
+              ( ("block:0" rule
+                   (:value ("BRACE_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [14747 14758]))              ) nil [14737 14762])
+            ("formal_parameter_list" nonterminal (:children 
+              ( ("formal_parameter_list:0" rule
+                   (:expr "(EXPANDFULL $1 formal_parameters)"
+                    :value ("PAREN_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [14790 14839]))              ) nil [14764 14843])
+            ("formal_parameters" nonterminal (:children 
+              ( ("formal_parameters:0" rule
+                   (:expr "()"
+                    :value ("LPAREN")
+                    :type "group")
+                    (reparse-symbol rule) [14867 14880])
+                ("formal_parameters:1" rule
+                   (:expr "()"
+                    :value ("RPAREN")
+                    :type "group")
+                    (reparse-symbol rule) [14885 14898])
+                ("formal_parameters:2" rule
+                   (:value ("formal_parameter" "COMMA")
+                    :type "group")
+                    (reparse-symbol rule) [14903 14925])
+                ("formal_parameters:3" rule
+                   (:value ("formal_parameter" "RPAREN")
+                    :type "group")
+                    (reparse-symbol rule) [14930 14953]))              ) nil [14845 14957])
+            ("formal_parameter" nonterminal (:children 
+              ( ("formal_parameter:0" rule
+                   (:expr "(VARIABLE-TAG $3 $2 nil :typemodifiers $1)"
+                    :value ("formal_parameter_modifier_opt" "type" "opt_variable_declarator_id")
+                    :type "group")
+                    (reparse-symbol rule) [15064 15172]))              ) nil [15043 15176])
+            ("formal_parameter_modifier_opt" nonterminal (:children 
+              ( ("formal_parameter_modifier_opt:0" rule (:type "empty") (reparse-symbol rule) [15222 15223])
+                ("formal_parameter_modifier_opt:1" rule
+                   (:expr "(list $1)"
+                    :value ("FINAL")
+                    :type "group")
+                    (reparse-symbol rule) [15224 15243]))              ) nil [15178 15247])
+            ("field_declaration" nonterminal (:children 
+              ( ("field_declaration:0" rule
+                   (:expr "(VARIABLE-TAG $3 $2 nil :typemodifiers $1)"
+                    :value ("modifiers_opt" "type" "variable_declarators" "SEMICOLON")
+                    :type "group")
+                    (reparse-symbol rule) [15355 15451]))              ) nil [15333 15455])
+            ("variable_declarators" nonterminal (:children 
+              ( ("variable_declarators:0" rule
+                   (:expr "(progn
+      ;; Set the end of the compound declaration to the end of the
+      ;; COMMA delimiter.
+      (setcdr (cdr (car $1)) (cdr $region2))
+      (cons $3 $1))"
+                    :value ("variable_declarators" "COMMA" "variable_declarator")
+                    :type "group")
+                    (reparse-symbol rule) [15482 15697])
+                ("variable_declarators:1" rule
+                   (:expr "(list $1)"
+                    :value ("variable_declarator")
+                    :type "group")
+                    (reparse-symbol rule) [15702 15735]))              ) nil [15457 15739])
+            ("variable_declarator" nonterminal (:children 
+              ( ("variable_declarator:0" rule
+                   (:expr "(cons $1 $region)"
+                    :value ("variable_declarator_id" "EQ" "variable_initializer")
+                    :type "group")
+                    (reparse-symbol rule) [15765 15833])
+                ("variable_declarator:1" rule
+                   (:expr "(cons $1 $region)"
+                    :value ("variable_declarator_id")
+                    :type "group")
+                    (reparse-symbol rule) [15838 15882]))              ) nil [15741 15886])
+            ("opt_variable_declarator_id" nonterminal (:children 
+              ( ("opt_variable_declarator_id:0" rule
+                   (:expr "(identity \"\")"
+                    :type "empty")
+                    (reparse-symbol rule) [15932 15945])
+                ("opt_variable_declarator_id:1" rule
+                   (:expr "(identity $1)"
+                    :value ("variable_declarator_id")
+                    :type "group")
+                    (reparse-symbol rule) [15950 15990]))              ) nil [15888 15994])
+            ("variable_declarator_id" nonterminal (:children 
+              ( ("variable_declarator_id:0" rule
+                   (:expr "(concat $1 $2)"
+                    :value ("IDENTIFIER" "dims_opt")
+                    :type "group")
+                    (reparse-symbol rule) [16023 16061]))              ) nil [15996 16065])
+            ("variable_initializer" nonterminal (:children 
+              ( ("variable_initializer:0" rule
+                   (:value ("expression")
+                    :type "group")
+                    (reparse-symbol rule) [16092 16102]))              ) nil [16067 16106])
+            ("expression" nonterminal (:children 
+              ( ("expression:0" rule
+                   (:value ("expression" "term")
+                    :type "group")
+                    (reparse-symbol rule) [16147 16162])
+                ("expression:1" rule
+                   (:value ("term")
+                    :type "group")
+                    (reparse-symbol rule) [16167 16171]))              ) nil [16132 16175])
+            ("term" nonterminal (:children 
+              ( ("term:0" rule
+                   (:value ("literal")
+                    :type "group")
+                    (reparse-symbol rule) [16186 16193])
+                ("term:1" rule
+                   (:value ("operator")
+                    :type "group")
+                    (reparse-symbol rule) [16198 16206])
+                ("term:2" rule
+                   (:value ("primitive_type")
+                    :type "group")
+                    (reparse-symbol rule) [16211 16225])
+                ("term:3" rule
+                   (:value ("IDENTIFIER")
+                    :type "group")
+                    (reparse-symbol rule) [16230 16240])
+                ("term:4" rule
+                   (:value ("BRACK_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [16245 16256])
+                ("term:5" rule
+                   (:value ("PAREN_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [16261 16272])
+                ("term:6" rule
+                   (:value ("BRACE_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [16277 16288])
+                ("term:7" rule
+                   (:value ("NEW")
+                    :type "group")
+                    (reparse-symbol rule) [16293 16296])
+                ("term:8" rule
+                   (:value ("CLASS")
+                    :type "group")
+                    (reparse-symbol rule) [16301 16306])
+                ("term:9" rule
+                   (:value ("THIS")
+                    :type "group")
+                    (reparse-symbol rule) [16311 16315])
+                ("term:10" rule
+                   (:value ("SUPER")
+                    :type "group")
+                    (reparse-symbol rule) [16320 16325]))              ) nil [16177 16329])
+            ("literal" nonterminal (:children 
+              ( ("literal:0" rule
+                   (:value ("STRING_LITERAL")
+                    :type "group")
+                    (reparse-symbol rule) [16386 16400])
+                ("literal:1" rule
+                   (:value ("NUMBER_LITERAL")
+                    :type "group")
+                    (reparse-symbol rule) [16405 16419]))              ) nil [16331 16423])
+            ("operator" nonterminal (:children 
+              ( ("operator:0" rule
+                   (:value ("NOT")
+                    :type "group")
+                    (reparse-symbol rule) [16438 16441])
+                ("operator:1" rule
+                   (:value ("PLUS")
+                    :type "group")
+                    (reparse-symbol rule) [16446 16450])
+                ("operator:2" rule
+                   (:value ("PLUSPLUS")
+                    :type "group")
+                    (reparse-symbol rule) [16455 16463])
+                ("operator:3" rule
+                   (:value ("MINUS")
+                    :type "group")
+                    (reparse-symbol rule) [16468 16473])
+                ("operator:4" rule
+                   (:value ("MINUSMINUS")
+                    :type "group")
+                    (reparse-symbol rule) [16478 16488])
+                ("operator:5" rule
+                   (:value ("NOTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16493 16498])
+                ("operator:6" rule
+                   (:value ("MOD")
+                    :type "group")
+                    (reparse-symbol rule) [16503 16506])
+                ("operator:7" rule
+                   (:value ("MODEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16511 16516])
+                ("operator:8" rule
+                   (:value ("AND")
+                    :type "group")
+                    (reparse-symbol rule) [16521 16524])
+                ("operator:9" rule
+                   (:value ("ANDAND")
+                    :type "group")
+                    (reparse-symbol rule) [16529 16535])
+                ("operator:10" rule
+                   (:value ("ANDEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16540 16545])
+                ("operator:11" rule
+                   (:value ("MULT")
+                    :type "group")
+                    (reparse-symbol rule) [16550 16554])
+                ("operator:12" rule
+                   (:value ("MULTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16559 16565])
+                ("operator:13" rule
+                   (:value ("PLUSEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16570 16576])
+                ("operator:14" rule
+                   (:value ("MINUSEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16581 16588])
+                ("operator:15" rule
+                   (:value ("DOT")
+                    :type "group")
+                    (reparse-symbol rule) [16593 16596])
+                ("operator:16" rule
+                   (:value ("DIV")
+                    :type "group")
+                    (reparse-symbol rule) [16601 16604])
+                ("operator:17" rule
+                   (:value ("DIVEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16609 16614])
+                ("operator:18" rule
+                   (:value ("COLON")
+                    :type "group")
+                    (reparse-symbol rule) [16619 16624])
+                ("operator:19" rule
+                   (:value ("LT")
+                    :type "group")
+                    (reparse-symbol rule) [16629 16631])
+                ("operator:20" rule
+                   (:value ("LSHIFT")
+                    :type "group")
+                    (reparse-symbol rule) [16636 16642])
+                ("operator:21" rule
+                   (:value ("LSHIFTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16647 16655])
+                ("operator:22" rule
+                   (:value ("LTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16660 16664])
+                ("operator:23" rule
+                   (:value ("EQ")
+                    :type "group")
+                    (reparse-symbol rule) [16669 16671])
+                ("operator:24" rule
+                   (:value ("EQEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16676 16680])
+                ("operator:25" rule
+                   (:value ("GT")
+                    :type "group")
+                    (reparse-symbol rule) [16685 16687])
+                ("operator:26" rule
+                   (:value ("GTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16692 16696])
+                ("operator:27" rule
+                   (:value ("RSHIFT")
+                    :type "group")
+                    (reparse-symbol rule) [16701 16707])
+                ("operator:28" rule
+                   (:value ("RSHIFTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16712 16720])
+                ("operator:29" rule
+                   (:value ("URSHIFT")
+                    :type "group")
+                    (reparse-symbol rule) [16725 16732])
+                ("operator:30" rule
+                   (:value ("URSHIFTEQ")
+                    :type "group")
+                    (reparse-symbol rule) [16737 16746])
+                ("operator:31" rule
+                   (:value ("QUESTION")
+                    :type "group")
+                    (reparse-symbol rule) [16751 16759])
+                ("operator:32" rule
+                   (:value ("XOR")
+                    :type "group")
+                    (reparse-symbol rule) [16764 16767])
+                ("operator:33" rule
+                   (:value ("XOREQ")
+                    :type "group")
+                    (reparse-symbol rule) [16772 16777])
+                ("operator:34" rule
+                   (:value ("OR")
+                    :type "group")
+                    (reparse-symbol rule) [16782 16784])
+                ("operator:35" rule
+                   (:value ("OREQ")
+                    :type "group")
+                    (reparse-symbol rule) [16789 16793])
+                ("operator:36" rule
+                   (:value ("OROR")
+                    :type "group")
+                    (reparse-symbol rule) [16798 16802])
+                ("operator:37" rule
+                   (:value ("COMP")
+                    :type "group")
+                    (reparse-symbol rule) [16807 16811])
+                ("operator:38" rule
+                   (:value ("INSTANCEOF")
+                    :type "group")
+                    (reparse-symbol rule) [16816 16826]))              ) nil [16425 16830])
+            ("primitive_type" nonterminal (:children 
+              ( ("primitive_type:0" rule
+                   (:value ("BOOLEAN")
+                    :type "group")
+                    (reparse-symbol rule) [16851 16858])
+                ("primitive_type:1" rule
+                   (:value ("CHAR")
+                    :type "group")
+                    (reparse-symbol rule) [16863 16867])
+                ("primitive_type:2" rule
+                   (:value ("LONG")
+                    :type "group")
+                    (reparse-symbol rule) [16872 16876])
+                ("primitive_type:3" rule
+                   (:value ("INT")
+                    :type "group")
+                    (reparse-symbol rule) [16881 16884])
+                ("primitive_type:4" rule
+                   (:value ("SHORT")
+                    :type "group")
+                    (reparse-symbol rule) [16889 16894])
+                ("primitive_type:5" rule
+                   (:value ("BYTE")
+                    :type "group")
+                    (reparse-symbol rule) [16899 16903])
+                ("primitive_type:6" rule
+                   (:value ("DOUBLE")
+                    :type "group")
+                    (reparse-symbol rule) [16908 16914])
+                ("primitive_type:7" rule
+                   (:value ("FLOAT")
+                    :type "group")
+                    (reparse-symbol rule) [16919 16924]))              ) nil [16832 16928])
+            ("modifiers_opt" nonterminal (:children 
+              ( ("modifiers_opt:0" rule (:type "empty") (reparse-symbol rule) [16958 16959])
+                ("modifiers_opt:1" rule
+                   (:expr "(nreverse $1)"
+                    :value ("modifiers")
+                    :type "group")
+                    (reparse-symbol rule) [16960 16987]))              ) nil [16930 16991])
+            ("modifiers" nonterminal (:children 
+              ( ("modifiers:0" rule
+                   (:expr "(cons $2 $1)"
+                    :value ("modifiers" "modifier")
+                    :type "group")
+                    (reparse-symbol rule) [17007 17042])
+                ("modifiers:1" rule
+                   (:expr "(list $1)"
+                    :value ("modifier")
+                    :type "group")
+                    (reparse-symbol rule) [17047 17069]))              ) nil [16993 17073])
+            ("modifier" nonterminal (:children 
+              ( ("modifier:0" rule
+                   (:value ("STRICTFP")
+                    :type "group")
+                    (reparse-symbol rule) [17088 17096])
+                ("modifier:1" rule
+                   (:value ("VOLATILE")
+                    :type "group")
+                    (reparse-symbol rule) [17101 17109])
+                ("modifier:2" rule
+                   (:value ("TRANSIENT")
+                    :type "group")
+                    (reparse-symbol rule) [17114 17123])
+                ("modifier:3" rule
+                   (:value ("SYNCHRONIZED")
+                    :type "group")
+                    (reparse-symbol rule) [17128 17140])
+                ("modifier:4" rule
+                   (:value ("NATIVE")
+                    :type "group")
+                    (reparse-symbol rule) [17145 17151])
+                ("modifier:5" rule
+                   (:value ("FINAL")
+                    :type "group")
+                    (reparse-symbol rule) [17156 17161])
+                ("modifier:6" rule
+                   (:value ("ABSTRACT")
+                    :type "group")
+                    (reparse-symbol rule) [17166 17174])
+                ("modifier:7" rule
+                   (:value ("STATIC")
+                    :type "group")
+                    (reparse-symbol rule) [17179 17185])
+                ("modifier:8" rule
+                   (:value ("PRIVATE")
+                    :type "group")
+                    (reparse-symbol rule) [17190 17197])
+                ("modifier:9" rule
+                   (:value ("PROTECTED")
+                    :type "group")
+                    (reparse-symbol rule) [17202 17211])
+                ("modifier:10" rule
+                   (:value ("PUBLIC")
+                    :type "group")
+                    (reparse-symbol rule) [17216 17222]))              ) nil [17075 17226])
+            ("type" nonterminal (:children 
+              ( ("type:0" rule
+                   (:expr "(concat $1 $2)"
+                    :value ("qualified_name" "dims_opt")
+                    :type "group")
+                    (reparse-symbol rule) [17237 17279])
+                ("type:1" rule
+                   (:expr "(concat $1 $2)"
+                    :value ("primitive_type" "dims_opt")
+                    :type "group")
+                    (reparse-symbol rule) [17284 17326]))              ) nil [17228 17330])
+            ("qualified_name" nonterminal (:children 
+              ( ("qualified_name:0" rule
+                   (:expr "(concat $1 $2 $3)"
+                    :value ("qualified_name" "DOT" "IDENTIFIER")
+                    :type "group")
+                    (reparse-symbol rule) [17351 17402])
+                ("qualified_name:1" rule
+                   (:value ("IDENTIFIER")
+                    :type "group")
+                    (reparse-symbol rule) [17407 17417]))              ) nil [17332 17421])
+            ("dims_opt" nonterminal (:children 
+              ( ("dims_opt:0" rule
+                   (:expr "(identity \"\")"
+                    :type "empty")
+                    (reparse-symbol rule) [17448 17461])
+                ("dims_opt:1" rule
+                   (:value ("dims")
+                    :type "group")
+                    (reparse-symbol rule) [17466 17470]))              ) nil [17423 17474])
+            ("dims" nonterminal (:children 
+              ( ("dims:0" rule
+                   (:expr "(concat $1 \"[]\")"
+                    :value ("dims" "BRACK_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [17485 17522])
+                ("dims:1" rule
+                   (:expr "(identity \"[]\")"
+                    :value ("BRACK_BLOCK")
+                    :type "group")
+                    (reparse-symbol rule) [17527 17558]))              ) nil [17476 17562])
+            ("epilogue" code nil nil [17564 18515]))          
+      :file "java-tags.wy"
+      :pointmax 18515
+      :fsize 18514
+      :lastmodtime '(21695 63489 323035 55000)
+      :unmatched-syntax nil))
+  :file "!home!nshetty!tools!emacs!24.4!admin!grammars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

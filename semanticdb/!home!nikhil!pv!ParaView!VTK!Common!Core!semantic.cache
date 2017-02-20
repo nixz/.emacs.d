@@ -1,0 +1,1628 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkCommand.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkCommand_h" variable (:constant-flag t) nil [9504 9518])
+            ("vtkCommonCoreModule.h" include nil nil [9520 9552])
+            ("vtkObjectBase.h" include nil nil [9573 9599])
+            ("vtkObject.h" include nil nil [9600 9622])
+            ("vtkAllEventsMacro" variable (:constant-flag t) nil [9805 9822])
+            ("vtkEventDeclarationMacro" variable (:constant-flag t) nil [13843 13867])
+            ("vtkObjectBase" variable (:type "int") nil [14081 16803]))          
+    :file "vtkCommand.h"
+    :pointmax 16874
+    :fsize 16872
+    :lastmodtime '(20865 11004)
+    :unmatched-syntax '((PUBLIC 14074 . 14080) (punctuation 14072 . 14073) (symbol 14061 . 14071) (symbol 14040 . 14060) (CLASS 14034 . 14039))
+    :lexical-table 
+        '(("vtkAllEventsMacro" (spp-arg-list nil 9822 . 9824) . 
+              ((symbol "_vtk_add_event" 9831 . 9845) (semantic-list "(AnyEvent)" 9845 . 9855) (symbol "_vtk_add_event" 9861 . 9875) (semantic-list "(DeleteEvent)" 9875 . 9888) (symbol "_vtk_add_event" 9894 . 9908) (semantic-list "(StartEvent)" 9908 . 9920) (symbol "_vtk_add_event" 9926 . 9940) (semantic-list "(EndEvent)" 9940 . 9950) (symbol "_vtk_add_event" 9956 . 9970) (semantic-list "(RenderEvent)" 9970 . 9983) (symbol "_vtk_add_event" 9989 . 10003) (semantic-list "(ProgressEvent)" 10003 . 10018) (symbol "_vtk_add_event" 10024 . 10038) (semantic-list "(PickEvent)" 10038 . 10049) (symbol "_vtk_add_event" 10055 . 10069) (semantic-list "(StartPickEvent)" 10069 . 10085) (symbol "_vtk_add_event" 10091 . 10105) (semantic-list "(EndPickEvent)" 10105 . 10119) (symbol "_vtk_add_event" 10125 . 10139) (semantic-list "(AbortCheckEvent)" 10139 . 10156) (symbol "_vtk_add_event" 10162 . 10176) (semantic-list "(ExitEvent)" 10176 . 10187) (symbol "_vtk_add_event" 10193 . 10207) (semantic-list "(LeftButtonPressEvent)" 10207 . 10229) (symbol "_vtk_add_event" 10235 . 10249) (semantic-list "(LeftButtonReleaseEvent)" 10249 . 10273) (symbol "_vtk_add_event" 10279 . 10293) (semantic-list "(MiddleButtonPressEvent)" 10293 . 10317) (symbol "_vtk_add_event" 10323 . 10337) (semantic-list "(MiddleButtonReleaseEvent)" 10337 . 10363) (symbol "_vtk_add_event" 10369 . 10383) (semantic-list "(RightButtonPressEvent)" 10383 . 10406) (symbol "_vtk_add_event" 10412 . 10426) (semantic-list "(RightButtonReleaseEvent)" 10426 . 10451) (symbol "_vtk_add_event" 10457 . 10471) (semantic-list "(EnterEvent)" 10471 . 10483) (symbol "_vtk_add_event" 10489 . 10503) (semantic-list "(LeaveEvent)" 10503 . 10515) (symbol "_vtk_add_event" 10521 . 10535) (semantic-list "(KeyPressEvent)" 10535 . 10550) (symbol "_vtk_add_event" 10556 . 10570) (semantic-list "(KeyReleaseEvent)" 10570 . 10587) (symbol "_vtk_add_event" 10593 . 10607) (semantic-list "(CharEvent)" 10607 . 10618) (symbol "_vtk_add_event" 10624 . 10638) (semantic-list "(ExposeEvent)" 10638 . 10651) (symbol "_vtk_add_event" 10657 . 10671) (semantic-list "(ConfigureEvent)" 10671 . 10687) (symbol "_vtk_add_event" 10693 . 10707) (semantic-list "(TimerEvent)" 10707 . 10719) (symbol "_vtk_add_event" 10725 . 10739) (semantic-list "(MouseMoveEvent)" 10739 . 10755) (symbol "_vtk_add_event" 10761 . 10775) (semantic-list "(MouseWheelForwardEvent)" 10775 . 10799) (symbol "_vtk_add_event" 10805 . 10819) (semantic-list "(MouseWheelBackwardEvent)" 10819 . 10844) (symbol "_vtk_add_event" 10850 . 10864) (semantic-list "(ActiveCameraEvent)" 10864 . 10883) (symbol "_vtk_add_event" 10889 . 10903) (semantic-list "(CreateCameraEvent)" 10903 . 10922) (symbol "_vtk_add_event" 10928 . 10942) (semantic-list "(ResetCameraEvent)" 10942 . 10960) (symbol "_vtk_add_event" 10966 . 10980) (semantic-list "(ResetCameraClippingRangeEvent)" 10980 . 11011) (symbol "_vtk_add_event" 11017 . 11031) (semantic-list "(ModifiedEvent)" 11031 . 11046) (symbol "_vtk_add_event" 11052 . 11066) (semantic-list "(WindowLevelEvent)" 11066 . 11084) (symbol "_vtk_add_event" 11090 . 11104) (semantic-list "(StartWindowLevelEvent)" 11104 . 11127) (symbol "_vtk_add_event" 11133 . 11147) (semantic-list "(EndWindowLevelEvent)" 11147 . 11168) (symbol "_vtk_add_event" 11174 . 11188) (semantic-list "(ResetWindowLevelEvent)" 11188 . 11211) (symbol "_vtk_add_event" 11217 . 11231) (semantic-list "(SetOutputEvent)" 11231 . 11247) (symbol "_vtk_add_event" 11253 . 11267) (semantic-list "(ErrorEvent)" 11267 . 11279) (symbol "_vtk_add_event" 11285 . 11299) (semantic-list "(WarningEvent)" 11299 . 11313) (symbol "_vtk_add_event" 11319 . 11333) (semantic-list "(StartInteractionEvent)" 11333 . 11356) (symbol "_vtk_add_event" 11415 . 11429) (semantic-list "(InteractionEvent)" 11429 . 11447) (symbol "_vtk_add_event" 11453 . 11467) (semantic-list "(EndInteractionEvent)" 11467 . 11488) (symbol "_vtk_add_event" 11494 . 11508) (semantic-list "(EnableEvent)" 11508 . 11521) (symbol "_vtk_add_event" 11527 . 11541) (semantic-list "(DisableEvent)" 11541 . 11555) (symbol "_vtk_add_event" 11561 . 11575) (semantic-list "(CreateTimerEvent)" 11575 . 11593) (symbol "_vtk_add_event" 11599 . 11613) (semantic-list "(DestroyTimerEvent)" 11613 . 11632) (symbol "_vtk_add_event" 11638 . 11652) (semantic-list "(PlacePointEvent)" 11652 . 11669) (symbol "_vtk_add_event" 11675 . 11689) (semantic-list "(PlaceWidgetEvent)" 11689 . 11707) (symbol "_vtk_add_event" 11713 . 11727) (semantic-list "(CursorChangedEvent)" 11727 . 11747) (symbol "_vtk_add_event" 11753 . 11767) (semantic-list "(ExecuteInformationEvent)" 11767 . 11792) (symbol "_vtk_add_event" 11798 . 11812) (semantic-list "(RenderWindowMessageEvent)" 11812 . 11838) (symbol "_vtk_add_event" 11844 . 11858) (semantic-list "(WrongTagEvent)" 11858 . 11873) (symbol "_vtk_add_event" 11879 . 11893) (semantic-list "(StartAnimationCueEvent)" 11893 . 11917) (symbol "_vtk_add_event" 11963 . 11977) (semantic-list "(AnimationCueTickEvent)" 11977 . 12000) (symbol "_vtk_add_event" 12006 . 12020) (semantic-list "(EndAnimationCueEvent)" 12020 . 12042) (symbol "_vtk_add_event" 12048 . 12062) (semantic-list "(VolumeMapperRenderEndEvent)" 12062 . 12090) (symbol "_vtk_add_event" 12096 . 12110) (semantic-list "(VolumeMapperRenderProgressEvent)" 12110 . 12143) (symbol "_vtk_add_event" 12149 . 12163) (semantic-list "(VolumeMapperRenderStartEvent)" 12163 . 12193) (symbol "_vtk_add_event" 12199 . 12213) (semantic-list "(VolumeMapperComputeGradientsEndEvent)" 12213 . 12251) (symbol "_vtk_add_event" 12257 . 12271) (semantic-list "(VolumeMapperComputeGradientsProgressEvent)" 12271 . 12314) (symbol "_vtk_add_event" 12320 . 12334) (semantic-list "(VolumeMapperComputeGradientsStartEvent)" 12334 . 12374) (symbol "_vtk_add_event" 12380 . 12394) (semantic-list "(WidgetModifiedEvent)" 12394 . 12415) (symbol "_vtk_add_event" 12421 . 12435) (semantic-list "(WidgetValueChangedEvent)" 12435 . 12460) (symbol "_vtk_add_event" 12466 . 12480) (semantic-list "(WidgetActivateEvent)" 12480 . 12501) (symbol "_vtk_add_event" 12507 . 12521) (semantic-list "(ConnectionCreatedEvent)" 12521 . 12545) (symbol "_vtk_add_event" 12551 . 12565) (semantic-list "(ConnectionClosedEvent)" 12565 . 12588) (symbol "_vtk_add_event" 12594 . 12608) (semantic-list "(DomainModifiedEvent)" 12608 . 12629) (symbol "_vtk_add_event" 12635 . 12649) (semantic-list "(PropertyModifiedEvent)" 12649 . 12672) (symbol "_vtk_add_event" 12678 . 12692) (semantic-list "(UpdateEvent)" 12692 . 12705) (symbol "_vtk_add_event" 12711 . 12725) (semantic-list "(RegisterEvent)" 12725 . 12740) (symbol "_vtk_add_event" 12746 . 12760) (semantic-list "(UnRegisterEvent)" 12760 . 12777) (symbol "_vtk_add_event" 12783 . 12797) (semantic-list "(UpdateInformationEvent)" 12797 . 12821) (symbol "_vtk_add_event" 12827 . 12841) (semantic-list "(AnnotationChangedEvent)" 12841 . 12865) (symbol "_vtk_add_event" 12871 . 12885) (semantic-list "(SelectionChangedEvent)" 12885 . 12908) (symbol "_vtk_add_event" 12914 . 12928) (semantic-list "(UpdatePropertyEvent)" 12928 . 12949) (symbol "_vtk_add_event" 12955 . 12969) (semantic-list "(ViewProgressEvent)" 12969 . 12988) (symbol "_vtk_add_event" 12994 . 13008) (semantic-list "(UpdateDataEvent)" 13008 . 13025) (symbol "_vtk_add_event" 13031 . 13045) (semantic-list "(CurrentChangedEvent)" 13045 . 13066) (symbol "_vtk_add_event" 13072 . 13086) (semantic-list "(ComputeVisiblePropBoundsEvent)" 13086 . 13117) (symbol "_vtk_add_event" 13123 . 13137) (semantic-list "(TDxMotionEvent)" 13137 . 13153) (symbol "_vtk_add_event" 13199 . 13213) (semantic-list "(TDxButtonPressEvent)" 13213 . 13234) (symbol "_vtk_add_event" 13280 . 13294) (semantic-list "(TDxButtonReleaseEvent)" 13294 . 13317) (symbol "_vtk_add_event" 13362 . 13376) (semantic-list "(HoverEvent)" 13376 . 13388) (symbol "_vtk_add_event" 13394 . 13408) (semantic-list "(LoadStateEvent)" 13408 . 13424) (symbol "_vtk_add_event" 13430 . 13444) (semantic-list "(SaveStateEvent)" 13444 . 13460) (symbol "_vtk_add_event" 13466 . 13480) (semantic-list "(StateChangedEvent)" 13480 . 13499) (symbol "_vtk_add_event" 13505 . 13519) (semantic-list "(WindowMakeCurrentEvent)" 13519 . 13543) (symbol "_vtk_add_event" 13549 . 13563) (semantic-list "(WindowIsCurrentEvent)" 13563 . 13585) (symbol "_vtk_add_event" 13591 . 13605) (semantic-list "(WindowFrameEvent)" 13605 . 13623) (symbol "_vtk_add_event" 13629 . 13643) (semantic-list "(HighlightEvent)" 13643 . 13659) (symbol "_vtk_add_event" 13665 . 13679) (semantic-list "(WindowSupportsOpenGLEvent)" 13679 . 13706) (symbol "_vtk_add_event" 13712 . 13726) (semantic-list "(WindowIsDirectEvent)" 13726 . 13747) (symbol "_vtk_add_event" 13753 . 13767) (semantic-list "(UncheckedPropertyModifiedEvent)" 13767 . 13799) (symbol "_vtk_add_event" 13805 . 13819) (semantic-list "(MessageEvent)" 13819 . 13833)))
+          ("__vtkCommand_h")
+          ("vtkEventDeclarationMacro" (spp-arg-list ("_enum_name") 13867 . 13879) . 
+              ((ENUM "enum" 13883 . 13887) (symbol "_enum_name" 13888 . 13898) (semantic-list "{\\
+    NoEvent = 0,\\
+    vtkAllEventsMacro() \\
+    UserEvent = 1000\\
+  }" 13898 . 13970) (punctuation ";" 13970 . 13971)))
+          )
+
+    )
+   (semanticdb-table "vtkCommand.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkCommand.h" include nil nil [584 607])
+            ("vtkDebugLeaks.h" include nil nil [608 634])
+            ("vtkCommand" function
+               (:constructor-flag t
+                :parent "vtkCommand"
+                :type ("vtkCommand" type (:type "class") nil nil))
+                nil [703 852])
+            ("UnRegister" function
+               (:parent "vtkCommand"
+                :type "void")
+                nil [921 1177])
+            ("GetStringFromEventId" function
+               (:pointer 1
+                :parent "vtkCommand"
+                :constant-flag t
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1291 1311]))                  
+                :type "char")
+                nil [1246 1637])
+            ("GetEventIdFromString" function
+               (:parent "vtkCommand"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1753 1771]))                  
+                :type "unsigned long")
+                nil [1706 2050]))          
+    :file "vtkCommand.cxx"
+    :pointmax 2056
+    :fsize 2055
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkObject.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkObject_h" variable (:constant-flag t) nil [1698 1711])
+            ("vtkCommonCoreModule.h" include nil nil [1713 1745])
+            ("vtkObjectBase.h" include nil nil [1766 1792])
+            ("vtkSetGet.h" include nil nil [1793 1815])
+            ("vtkTimeStamp.h" include nil nil [1816 1841])
+            ("vtkWeakPointerBase.h" include nil nil [1842 1873])
+            ("vtkSubjectHelper" type
+               (:prototype t
+                :type "class")
+                nil [1904 1927])
+            ("vtkCommand" type
+               (:prototype t
+                :type "class")
+                nil [1928 1945])
+            ("vtkObjectBase" variable (:type "int") nil [1993 13359]))          
+    :file "vtkObject.h"
+    :pointmax 13407
+    :fsize 13406
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((PUBLIC 1986 . 1992) (punctuation 1984 . 1985) (symbol 1974 . 1983) (symbol 1953 . 1973) (CLASS 1947 . 1952))
+    :lexical-table 
+        '(("__vtkObject_h")
+          )
+
+    )
+   (semanticdb-table "vtkObject.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkObject.h" include nil nil [583 605])
+            ("vtkCommand.h" include nil nil [607 630])
+            ("vtkDebugLeaks.h" include nil nil [631 657])
+            ("vtkGarbageCollector.h" include nil nil [658 690])
+            ("vtkTimeStamp.h" include nil nil [691 716])
+            ("vtkWeakPointer.h" include nil nil [717 744])
+            ("algorithm" include (:system-flag t) nil [746 766])
+            ("vector" include (:system-flag t) nil [767 784])
+            ("vtkObjectGlobalWarningDisplay" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [844 889])
+            ("SetGlobalWarningDisplay" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1366 1374]))                  
+                :type "void")
+                nil [1326 1417])
+            ("GetGlobalWarningDisplay" function
+               (:parent "vtkObject"
+                :type "int")
+                nil [1498 1582])
+            ("vtkObserver" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1906 1913])
+                    ("vtkObserver" function
+                       (:constructor-flag t
+                        :type ("vtkObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1916 1981])
+                    ("vtkObserver" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1984 1999])
+                    ("PrintSelf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2017 2029])
+                            ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2030 2047]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2002 2048])
+                    ("Command" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2052 2072])
+                    ("Event" variable (:type "unsigned long") (reparse-symbol classsubparts) [2075 2095])
+                    ("Tag" variable (:type "unsigned long") (reparse-symbol classsubparts) [2098 2116])
+                    ("Next" variable
+                       (:pointer 1
+                        :type ("vtkObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2119 2137])
+                    ("Priority" variable (:type "float") (reparse-symbol classsubparts) [2140 2155]))                  
+                :type "class")
+                nil [1885 2158])
+            ("PrintSelf" function
+               (:parent "vtkObserver"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2188 2200])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2201 2218]))                  
+                :type "void")
+                nil [2160 2613])
+            ("vtkSubjectHelper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3095 3102])
+                    ("vtkSubjectHelper" function
+                       (:constructor-flag t
+                        :type ("vtkSubjectHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3105 3180])
+                    ("vtkSubjectHelper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3183 3203])
+                    ("AddObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3233 3253])
+                            ("cmd" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3254 3270])
+                            ("p" variable (:type "float") (reparse-symbol arg-sub-list) [3271 3279]))                          
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [3207 3280])
+                    ("RemoveObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3303 3321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3283 3322])
+                    ("RemoveObservers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3346 3366]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3325 3367])
+                    ("RemoveObservers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3391 3411])
+                            ("cmd" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3412 3428]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3370 3429])
+                    ("RemoveAllObservers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3432 3458])
+                    ("InvokeEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3477 3497])
+                            ("callData" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3498 3513])
+                            ("self" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3514 3530]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3461 3531])
+                    ("GetCommand" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3557 3575]))                          
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3534 3576])
+                    ("GetTag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3600 3612]))                          
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [3579 3613])
+                    ("HasObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3632 3652]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3616 3653])
+                    ("HasObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3672 3692])
+                            ("cmd" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3693 3709]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3656 3710])
+                    ("GrabFocus" function
+                       (:arguments 
+                          ( ("c1" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3728 3743])
+                            ("c2" variable
+                               (:pointer 1
+                                :type ("vtkCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3744 3759]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3713 3799])
+                    ("ReleaseFocus" function (:type "void") (reparse-symbol classsubparts) [3802 3865])
+                    ("PrintSelf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3883 3895])
+                            ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3896 3913]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3868 3914])
+                    ("ListModified" variable (:type "int") (reparse-symbol classsubparts) [3918 3943])
+                    ("Focus1" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4027 4046])
+                    ("Focus2" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4049 4068])
+                    ("protected" label nil (reparse-symbol classsubparts) [4070 4080])
+                    ("Start" variable
+                       (:pointer 1
+                        :type ("vtkObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4083 4103])
+                    ("Count" variable (:type "unsigned long") (reparse-symbol classsubparts) [4106 4126]))                  
+                :type "class")
+                nil [3070 4129])
+            ("vtkInstantiatorNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4359 4369]))                  
+                :type "int")
+                nil [4335 4370])
+            ("New" function
+               (:pointer 1
+                :parent "vtkObject"
+                :type ("vtkObject" type (:type "class") nil nil))
+                nil [4372 4503])
+            ("vtkObject" function
+               (:constructor-flag t
+                :parent "vtkObject"
+                :type ("vtkObject" type (:type "class") nil nil))
+                nil [4669 4871])
+            ("vtkObject" function
+               (:destructor-flag t
+                :parent "vtkObject"
+                :type "void")
+                nil [4952 5302])
+            ("GetMTime" function
+               (:parent "vtkObject"
+                :type "unsigned long int")
+                nil [5427 5503])
+            ("PrintSelf" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5623 5635])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5636 5653]))                  
+                :type "void")
+                nil [5597 6032])
+            ("DebugOn" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [6275 6323])
+            ("DebugOff" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [6434 6483])
+            ("GetDebug" function
+               (:parent "vtkObject"
+                :type "unsigned char")
+                nil [6600 6661])
+            ("SetDebug" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("debugFlag" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [6840 6864]))                  
+                :type "void")
+                nil [6815 6895])
+            ("BreakOnError" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [7076 7110])
+            ("vtkObserver" function
+               (:destructor-flag t
+                :parent "vtkObserver"
+                :type "void")
+                nil [7273 7336])
+            ("vtkSubjectHelper" function
+               (:destructor-flag t
+                :parent "vtkSubjectHelper"
+                :type "void")
+                nil [7417 7666])
+            ("AddObserver" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7793 7813])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7814 7830])
+                    ("p" variable (:type "float") (reparse-symbol arg-sub-list) [7831 7839]))                  
+                :type "unsigned long")
+                nil [7748 8848])
+            ("RemoveObserver" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8967 8985]))                  
+                :type "void")
+                nil [8929 9482])
+            ("RemoveObservers" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9602 9622]))                  
+                :type "void")
+                nil [9563 10123])
+            ("RemoveObservers" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10243 10263])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10264 10280]))                  
+                :type "void")
+                nil [10204 10805])
+            ("RemoveAllObservers" function
+               (:parent "vtkSubjectHelper"
+                :type "void")
+                nil [10886 11095])
+            ("HasObserver" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11210 11230]))                  
+                :type "int")
+                nil [11176 11432])
+            ("HasObserver" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11547 11567])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11568 11584]))                  
+                :type "int")
+                nil [11513 11820])
+            ("InvokeEvent" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11935 11955])
+                    ("callData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11956 11971])
+                    ("self" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12007 12023]))                  
+                :type "int")
+                nil [11901 18333])
+            ("GetTag" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18453 18469]))                  
+                :type "unsigned long")
+                nil [18414 18640])
+            ("GetCommand" function
+               (:pointer 1
+                :parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [18762 18780]))                  
+                :type ("vtkCommand" type (:type "class") nil nil))
+                nil [18721 18954])
+            ("PrintSelf" function
+               (:parent "vtkSubjectHelper"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19068 19080])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19081 19098]))                  
+                :type "void")
+                nil [19035 19368])
+            ("AddObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [19483 19503])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19504 19520])
+                    ("p" variable (:type "float") (reparse-symbol arg-sub-list) [19521 19529]))                  
+                :type "unsigned long")
+                nil [19446 19678])
+            ("AddObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19796 19814])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19814 19830])
+                    ("p" variable (:type "float") (reparse-symbol arg-sub-list) [19831 19839]))                  
+                :type "unsigned long")
+                nil [19759 19920])
+            ("GetCommand" function
+               (:pointer 1
+                :parent "vtkObject"
+                :arguments 
+                  ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20035 20053]))                  
+                :type ("vtkCommand" type (:type "class") nil nil))
+                nil [20001 20160])
+            ("RemoveObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("tag" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20272 20290]))                  
+                :type "void")
+                nil [20241 20379])
+            ("RemoveObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20491 20505]))                  
+                :type "void")
+                nil [20460 20727])
+            ("RemoveObservers" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20840 20860]))                  
+                :type "void")
+                nil [20808 20952])
+            ("RemoveObservers" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21065 21083]))                  
+                :type "void")
+                nil [21033 21153])
+            ("RemoveObservers" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21266 21286])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21287 21303]))                  
+                :type "void")
+                nil [21234 21400])
+            ("RemoveObservers" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21513 21531])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21532 21548]))                  
+                :type "void")
+                nil [21481 21623])
+            ("RemoveAllObservers" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [21704 21832])
+            ("InvokeEvent" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21940 21960])
+                    ("callData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21961 21976]))                  
+                :type "int")
+                nil [21913 22098])
+            ("InvokeEvent" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22206 22224])
+                    ("callData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22225 22240]))                  
+                :type "int")
+                nil [22179 22323])
+            ("HasObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22431 22451]))                  
+                :type "int")
+                nil [22404 22558])
+            ("HasObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22666 22684]))                  
+                :type "int")
+                nil [22639 22757])
+            ("HasObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22865 22885])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22886 22902]))                  
+                :type "int")
+                nil [22838 23014])
+            ("HasObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23122 23140])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23141 23157]))                  
+                :type "int")
+                nil [23095 23235])
+            ("InternalGrabFocus" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("mouseEvents" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23350 23374])
+                    ("keypressEvents" variable
+                       (:pointer 1
+                        :type ("vtkCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23375 23402]))                  
+                :type "void")
+                nil [23316 23509])
+            ("InternalReleaseFocus" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [23590 23712])
+            ("Modified" function
+               (:parent "vtkObject"
+                :type "void")
+                nil [23794 23903])
+            ("RegisterInternal" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24017 24034])
+                    ("check" variable (:type "int") (reparse-symbol arg-sub-list) [24035 24045]))                  
+                :type "void")
+                nil [23984 24455])
+            ("UnRegisterInternal" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24571 24588])
+                    ("check" variable (:type "int") (reparse-symbol arg-sub-list) [24589 24599]))                  
+                :type "void")
+                nil [24536 25325])
+            ("vtkObjectCommandInternal" type
+               (:superclasses 
+                  ( ("vtkCommand" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Callable" variable
+                       (:pointer 1
+                        :type ("vtkObject::vtkClassMemberCallbackBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25598 25646])
+                    ("public" label nil (reparse-symbol classsubparts) [25647 25654])
+                    ("New" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkObjectCommandInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25657 25742])
+                    ("vtkTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vtkObjectCommandInternal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25759 25784])
+                            ("" variable (:type ("vtkCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25785 25796]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [25746 25797])
+                    ("Execute" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("caller" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25826 25844])
+                            ("eventId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [25845 25867])
+                            ("callData" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [25868 25883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25800 26067])
+                    ("SetCallable" function
+                       (:arguments 
+                          ( ("callable" variable
+                               (:pointer 1
+                                :type ("vtkObject::vtkClassMemberCallbackBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26134 26182]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [26117 26252])
+                    ("protected" label nil (reparse-symbol classsubparts) [26254 26264])
+                    ("vtkObjectCommandInternal" function
+                       (:constructor-flag t
+                        :type ("vtkObjectCommandInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [26267 26332])
+                    ("vtkObjectCommandInternal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [26335 26401]))                  
+                :type "class")
+                nil [25543 26404])
+            ("AddTemplatedObserver" function
+               (:parent "vtkObject"
+                :arguments 
+                  ( ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [26534 26554])
+                    ("callable" variable
+                       (:pointer 1
+                        :type ("vtkObject::vtkClassMemberCallbackBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26555 26603])
+                    ("priority" variable (:type "float") (reparse-symbol arg-sub-list) [26604 26619]))                  
+                :type "unsigned long")
+                nil [26485 26874]))          
+    :file "vtkObject.cxx"
+    :pointmax 26875
+    :fsize 26874
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vtkNew.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkNew_h" variable (:constant-flag t) nil [1849 1859])
+            ("vtkIOStream.h" include nil nil [1861 1885])
+            ("vtkObjectBase" type
+               (:prototype t
+                :type "class")
+                nil [1887 1907])
+            ("vtkNew" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("CheckObjectBase" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("vtkObjectBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2057 2072]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2036 2075])
+                    ("public" label nil (reparse-symbol classsubparts) [2076 2083])
+                    ("vtkNew" function
+                       (:constructor-flag t
+                        :type ("vtkNew" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2141 2221])
+                    ("vtkNew" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2299 2421])
+                    ("->" function
+                       (:operator-flag t
+                        :pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2536 2594])
+                    ("GetPointer" function
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2863 2921])
+                    ("private" label nil (reparse-symbol classsubparts) [2923 2931])
+                    ("vtkNew" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkNew" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2941 2958]))                          
+                        :type ("vtkNew" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2934 2959])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkNew" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2997 3014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2982 3015])
+                    ("Object" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3040 3050]))                  )
+                nil [1909 3053])
+            ("<<" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("ostream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3180 3192])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkNew" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3193 3212]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [3132 3247]))          
+    :file "vtkNew.h"
+    :pointmax 3292
+    :fsize 3291
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vtkNew_h")
+          )
+
+    )
+   (semanticdb-table "vtkSmartPointer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSmartPointer_h" variable (:constant-flag t) nil [851 870])
+            ("vtkSmartPointerBase.h" include nil nil [872 904])
+            ("vtkSmartPointer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("CheckType" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [999 1004]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [979 1018])
+                    ("public" label nil (reparse-symbol classsubparts) [1019 1026])
+                    ("vtkSmartPointer" function
+                       (:constructor-flag t
+                        :type ("vtkSmartPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1086 1106])
+                    ("vtkSmartPointer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1191 1196]))                          
+                        :type ("vtkSmartPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1175 1223])
+                    ("vtkSmartPointer" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("vtkSmartPointer" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkSmartPointer" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1392 1420]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [1355 1475])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1608 1613]))                          
+                        :type ("vtkSmartPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1581 1688])
+                    ("=" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("vtkSmartPointer" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkSmartPointer" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1842 1870]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [1794 1969])
+                    ("GetPointer" function
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2023 2098])
+                    ("" variable
+                       (:functionpointer-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2330 2405])
+                    ("->" function
+                       (:operator-flag t
+                        :pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2496 2571])
+                    ("TakeReference" function
+                       (:arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3069 3074]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3050 3136])
+                    ("New" function
+                       (:typemodifiers ("static")
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3199 3298])
+                    ("NewInstance" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3410 3415]))                          
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3372 3491])
+                    ("Take" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4068 4073]))                          
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4037 4134])
+                    ("VTK_SMART_POINTER_DEFINE_OPERATOR_WORKAROUND" variable (:constant-flag t) (reparse-symbol classsubparts) [4513 4557])
+                    ("private" label nil (reparse-symbol classsubparts) [4743 4751])
+                    ("NullPointerOnly" type (:type "class") (reparse-symbol classsubparts) [4754 4779])
+                    ("public" label nil (reparse-symbol classsubparts) [4780 4787])
+                    ("protected" label nil (reparse-symbol classsubparts) [5152 5162])
+                    ("vtkSmartPointer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5181 5186])
+                            ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NoReference" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5187 5208]))                          
+                        :type ("vtkSmartPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5165 5238])
+                    ("private" label nil (reparse-symbol classsubparts) [5239 5247])
+                    ("TakeReference" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkSmartPointerBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5392 5419]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5373 5420])
+                    ("Take" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkSmartPointerBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5461 5488]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5444 5489]))                  
+                :superclasses 
+                  ( ("vtkSmartPointerBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [906 5513])
+            ("VTK_SMART_POINTER_DEFINE_OPERATOR" variable (:constant-flag t) nil [5523 5556])
+            ("<<" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("ostream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6468 6480])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6481 6509]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [6420 6572]))          
+    :file "vtkSmartPointer.h"
+    :pointmax 6626
+    :fsize 6625
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6255 . 6292) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6255 . 6292) (OPERATOR "operator" 6255 . 6292) (BOOL "bool" 6255 . 6292) (INLINE "inline" 6255 . 6292) (punctuation ">" 6255 . 6292) (symbol "T" 6255 . 6292) (CLASS "class" 6255 . 6292) (punctuation "<" 6255 . 6292) (TEMPLATE "template" 6255 . 6292) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6255 . 6292) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6255 . 6292) (OPERATOR "operator" 6255 . 6292) (BOOL "bool" 6255 . 6292) (INLINE "inline" 6255 . 6292) (punctuation ">" 6255 . 6292) (symbol "T" 6255 . 6292) (CLASS "class" 6255 . 6292) (punctuation "<" 6255 . 6292) (TEMPLATE "template" 6255 . 6292) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6255 . 6292) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6255 . 6292) (OPERATOR "operator" 6255 . 6292) (BOOL "bool" 6255 . 6292) (INLINE "inline" 6255 . 6292) (punctuation ">" 6255 . 6292) (symbol "T" 6255 . 6292) (CLASS "class" 6255 . 6292) (punctuation "<" 6255 . 6292) (TEMPLATE "template" 6255 . 6292) (semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6218 . 6254) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6218 . 6254) (OPERATOR "operator" 6218 . 6254) (BOOL "bool" 6218 . 6254) (INLINE "inline" 6218 . 6254) (punctuation ">" 6218 . 6254) (symbol "T" 6218 . 6254) (CLASS "class" 6218 . 6254) (punctuation "<" 6218 . 6254) (TEMPLATE "template" 6218 . 6254) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6218 . 6254) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6218 . 6254) (OPERATOR "operator" 6218 . 6254) (BOOL "bool" 6218 . 6254) (INLINE "inline" 6218 . 6254) (punctuation ">" 6218 . 6254) (symbol "T" 6218 . 6254) (CLASS "class" 6218 . 6254) (punctuation "<" 6218 . 6254) (TEMPLATE "template" 6218 . 6254) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6218 . 6254) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6218 . 6254) (OPERATOR "operator" 6218 . 6254) (BOOL "bool" 6218 . 6254) (INLINE "inline" 6218 . 6254) (punctuation ">" 6218 . 6254) (symbol "T" 6218 . 6254) (CLASS "class" 6218 . 6254) (punctuation "<" 6218 . 6254) (TEMPLATE "template" 6218 . 6254) (semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6180 . 6217) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6180 . 6217) (OPERATOR "operator" 6180 . 6217) (BOOL "bool" 6180 . 6217) (INLINE "inline" 6180 . 6217) (punctuation ">" 6180 . 6217) (symbol "T" 6180 . 6217) (CLASS "class" 6180 . 6217) (punctuation "<" 6180 . 6217) (TEMPLATE "template" 6180 . 6217) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6180 . 6217) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6180 . 6217) (OPERATOR "operator" 6180 . 6217) (BOOL "bool" 6180 . 6217) (INLINE "inline" 6180 . 6217) (punctuation ">" 6180 . 6217) (symbol "T" 6180 . 6217) (CLASS "class" 6180 . 6217) (punctuation "<" 6180 . 6217) (TEMPLATE "template" 6180 . 6217) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6180 . 6217) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6180 . 6217) (OPERATOR "operator" 6180 . 6217) (BOOL "bool" 6180 . 6217) (INLINE "inline" 6180 . 6217) (punctuation ">" 6180 . 6217) (symbol "T" 6180 . 6217) (CLASS "class" 6180 . 6217) (punctuation "<" 6180 . 6217) (TEMPLATE "template" 6180 . 6217) (semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6143 . 6179) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6143 . 6179) (OPERATOR "operator" 6143 . 6179) (BOOL "bool" 6143 . 6179) (INLINE "inline" 6143 . 6179) (punctuation ">" 6143 . 6179) (symbol "T" 6143 . 6179) (CLASS "class" 6143 . 6179) (punctuation "<" 6143 . 6179) (TEMPLATE "template" 6143 . 6179) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6143 . 6179) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6143 . 6179) (OPERATOR "operator" 6143 . 6179) (BOOL "bool" 6143 . 6179) (INLINE "inline" 6143 . 6179) (punctuation ">" 6143 . 6179) (symbol "T" 6143 . 6179) (CLASS "class" 6143 . 6179) (punctuation "<" 6143 . 6179) (TEMPLATE "template" 6143 . 6179) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6143 . 6179) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6143 . 6179) (OPERATOR "operator" 6143 . 6179) (BOOL "bool" 6143 . 6179) (INLINE "inline" 6143 . 6179) (punctuation ">" 6143 . 6179) (symbol "T" 6143 . 6179) (CLASS "class" 6143 . 6179) (punctuation "<" 6143 . 6179) (TEMPLATE "template" 6143 . 6179) (semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6105 . 6142) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6105 . 6142) (OPERATOR "operator" 6105 . 6142) (BOOL "bool" 6105 . 6142) (INLINE "inline" 6105 . 6142) (punctuation ">" 6105 . 6142) (symbol "T" 6105 . 6142) (CLASS "class" 6105 . 6142) (punctuation "<" 6105 . 6142) (TEMPLATE "template" 6105 . 6142) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6105 . 6142) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6105 . 6142) (OPERATOR "operator" 6105 . 6142) (BOOL "bool" 6105 . 6142) (INLINE "inline" 6105 . 6142) (punctuation ">" 6105 . 6142) (symbol "T" 6105 . 6142) (CLASS "class" 6105 . 6142) (punctuation "<" 6105 . 6142) (TEMPLATE "template" 6105 . 6142) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6105 . 6142) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6105 . 6142) (OPERATOR "operator" 6105 . 6142) (BOOL "bool" 6105 . 6142) (INLINE "inline" 6105 . 6142) (punctuation ">" 6105 . 6142) (symbol "T" 6105 . 6142) (CLASS "class" 6105 . 6142) (punctuation "<" 6105 . 6142) (TEMPLATE "template" 6105 . 6142) (semantic-list #("{ \\
+    return (l.GetPointer() op r); \\
+    }" 0 1 (macros (("op")))) 6067 . 6104) (semantic-list #("(const vtkSmartPointer<T>& l, T* r)" 0 1 (macros (("op")))) 6067 . 6104) (OPERATOR "operator" 6067 . 6104) (BOOL "bool" 6067 . 6104) (INLINE "inline" 6067 . 6104) (punctuation ">" 6067 . 6104) (symbol "T" 6067 . 6104) (CLASS "class" 6067 . 6104) (punctuation "<" 6067 . 6104) (TEMPLATE "template" 6067 . 6104) (semantic-list #("{ \\
+    return (l op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6067 . 6104) (semantic-list #("(T* l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6067 . 6104) (OPERATOR "operator" 6067 . 6104) (BOOL "bool" 6067 . 6104) (INLINE "inline" 6067 . 6104) (punctuation ">" 6067 . 6104) (symbol "T" 6067 . 6104) (CLASS "class" 6067 . 6104) (punctuation "<" 6067 . 6104) (TEMPLATE "template" 6067 . 6104) (semantic-list #("{ \\
+    return (l.GetPointer() op r.GetPointer()); \\
+    }" 0 1 (macros (("op")))) 6067 . 6104) (semantic-list #("(const vtkSmartPointer<T>& l, const vtkSmartPointer<T>& r)" 0 1 (macros (("op")))) 6067 . 6104) (OPERATOR "operator" 6067 . 6104) (BOOL "bool" 6067 . 6104) (INLINE "inline" 6067 . 6104) (punctuation ">" 6067 . 6104) (symbol "T" 6067 . 6104) (CLASS "class" 6067 . 6104) (punctuation "<" 6067 . 6104) (TEMPLATE "template" 6067 . 6104) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 5043 . 5091) (CONST "const" 5043 . 5091) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 5043 . 5091) (OPERATOR "operator" 5043 . 5091) (BOOL "bool" 5043 . 5091) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 4993 . 5040) (CONST "const" 4993 . 5040) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 4993 . 5040) (OPERATOR "operator" 4993 . 5040) (BOOL "bool" 4993 . 5040) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 4942 . 4990) (CONST "const" 4942 . 4990) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 4942 . 4990) (OPERATOR "operator" 4942 . 4990) (BOOL "bool" 4942 . 4990) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 4892 . 4939) (CONST "const" 4892 . 4939) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 4892 . 4939) (OPERATOR "operator" 4892 . 4939) (BOOL "bool" 4892 . 4939) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 4841 . 4889) (CONST "const" 4841 . 4889) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 4841 . 4889) (OPERATOR "operator" 4841 . 4889) (BOOL "bool" 4841 . 4889) (semantic-list #("{                                                     \\
+    return ::operator op (*this, 0);                      \\
+    }" 0 1 (macros (("op")))) 4790 . 4838) (CONST "const" 4790 . 4838) (semantic-list #("(NullPointerOnly*)" 0 1 (macros (("op")))) 4790 . 4838) (OPERATOR "operator" 4790 . 4838) (BOOL "bool" 4790 . 4838) (semantic-list 2177 . 2226) (CONST 2167 . 2172) (semantic-list 2164 . 2166) (punctuation 2162 . 2163) (symbol 2161 . 2162) (OPERATOR 2152 . 2160))
+    :lexical-table 
+        '(("__vtkSmartPointer_h")
+          )
+
+    )
+   (semanticdb-table "vtkIdList.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkIdList_h" variable (:constant-flag t) nil [850 863])
+            ("vtkCommonCoreModule.h" include nil nil [865 897])
+            ("vtkObject.h" include nil nil [918 940])
+            ("vtkObject" variable (:type "int") nil [988 3998])
+            ("InsertNextId" function
+               (:parent "vtkIdList"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("vtkid" variable
+                       (:constant-flag t
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4069 4091]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [4028 4259])
+            ("IsId" function
+               (:parent "vtkIdList"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("vtkid" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4294 4310]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [4261 4479]))          
+    :file "vtkIdList.h"
+    :pointmax 4488
+    :fsize 4638
+    :lastmodtime '(20865 11004)
+    :unmatched-syntax '((PUBLIC 981 . 987) (punctuation 979 . 980) (symbol 969 . 978) (symbol 948 . 968) (CLASS 942 . 947))
+    :lexical-table 
+        '(("__vtkIdList_h")
+          )
+
+    )
+   (semanticdb-table "vtkSetGet.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkSetGet_h" variable (:constant-flag t) nil [1085 1098])
+            ("vtkCommonCoreModule.h" include nil nil [1100 1132])
+            ("vtkSystemIncludes.h" include nil nil [1153 1183])
+            ("math.h" include (:system-flag t) nil [1184 1201])
+            ("vtkInternalQuoteMacro" variable (:constant-flag t) nil [1394 1415])
+            ("vtkQuoteMacro" variable (:constant-flag t) nil [1430 1443])
+            ("vtkImageScalarTypeNameMacro" variable (:constant-flag t) nil [1518 1545])
+            ("vtkSetMacro" variable (:constant-flag t) nil [2645 2656])
+            ("vtkGetMacro" variable (:constant-flag t) nil [2998 3009])
+            ("vtkSetStringMacro" variable (:constant-flag t) nil [3291 3308])
+            ("vtkGetStringMacro" variable (:constant-flag t) nil [4032 4049])
+            ("vtkSetClampMacro" variable (:constant-flag t) nil [4536 4552])
+            ("vtkSetObjectBodyMacro" variable (:constant-flag t) nil [5318 5339])
+            ("vtkSetObjectMacro" variable (:constant-flag t) nil [6492 6509])
+            ("vtkSetObjectImplementationMacro" variable (:constant-flag t) nil [7148 7179])
+            ("vtkCxxSetObjectMacro" variable (:constant-flag t) nil [7255 7275])
+            ("vtkGetNewMacro" variable (:constant-flag t) nil [7607 7621])
+            ("vtkGetObjectMacro" variable (:constant-flag t) nil [8255 8272])
+            ("vtkBooleanMacro" variable (:constant-flag t) nil [8834 8849])
+            ("vtkSetVector2Macro" variable (:constant-flag t) nil [9319 9337])
+            ("vtkGetVector2Macro" variable (:constant-flag t) nil [9789 9807])
+            ("vtkSetVector3Macro" variable (:constant-flag t) nil [10343 10361])
+            ("vtkGetVector3Macro" variable (:constant-flag t) nil [10912 10930])
+            ("vtkSetVector4Macro" variable (:constant-flag t) nil [11533 11551])
+            ("vtkGetVector4Macro" variable (:constant-flag t) nil [12195 12213])
+            ("vtkSetVector6Macro" variable (:constant-flag t) nil [12883 12901])
+            ("vtkGetVector6Macro" variable (:constant-flag t) nil [13728 13746])
+            ("vtkSetVectorMacro" variable (:constant-flag t) nil [14694 14711])
+            ("vtkGetVectorMacro" variable (:constant-flag t) nil [15261 15278])
+            ("vtkOutputWindowDisplayText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15845 15857]))                  
+                :type "void")
+                nil [15813 15858])
+            ("vtkOutputWindowDisplayErrorText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15924 15936]))                  
+                :type "void")
+                nil [15887 15937])
+            ("vtkOutputWindowDisplayWarningText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16005 16017]))                  
+                :type "void")
+                nil [15966 16018])
+            ("vtkOutputWindowDisplayGenericWarningText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16093 16105]))                  
+                :type "void")
+                nil [16047 16106])
+            ("vtkOutputWindowDisplayDebugText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16172 16184]))                  
+                :type "void")
+                nil [16135 16185])
+            ("vtkGenericWarningMacro" variable (:constant-flag t) nil [16350 16372])
+            ("vtkDebugMacro" variable (:constant-flag t) nil [16890 16903])
+            ("vtkWarningMacro" variable (:constant-flag t) nil [17066 17081])
+            ("vtkErrorMacro" variable (:constant-flag t) nil [17252 17265])
+            ("vtkErrorWithObjectMacro" variable (:constant-flag t) nil [17452 17475])
+            ("vtkWarningWithObjectMacro" variable (:constant-flag t) nil [18895 18920])
+            ("vtkDebugWithObjectMacro" variable (:constant-flag t) nil [20284 20307])
+            ("vtkNotUsed" variable (:constant-flag t) nil [21532 21542])
+            ("vtkWorldCoordinateMacro" variable (:constant-flag t) nil [21555 21578])
+            ("vtkViewportCoordinateMacro" variable (:constant-flag t) nil [22096 22122])
+            ("vtkTypeMacro" variable (:constant-flag t) nil [22721 22733])
+            ("vtkExportedTypeRevisionMacro" variable (:constant-flag t) nil [23672 23700])
+            ("vtkTypeRevisionMacro" variable (:constant-flag t) nil [23781 23801])
+            ("vtkCxxRevisionMacro" variable (:constant-flag t) nil [23872 23891])
+            ("vtkInstantiatorNewMacro" variable (:constant-flag t) nil [24114 24137])
+            ("vtkTemplateMacroCase" variable (:constant-flag t) nil [24686 24706])
+            ("vtkTemplateMacro" variable (:constant-flag t) nil [24792 24808])
+            ("vtkExtendedTemplateMacro" variable (:constant-flag t) nil [26175 26199])
+            ("vtkArrayIteratorTemplateMacroCase" variable (:constant-flag t) nil [27106 27139])
+            ("vtkArrayIteratorTemplateMacro" variable (:constant-flag t) nil [27238 27267])
+            ("vtkTemplateMacroCase_ll" variable (:constant-flag t) nil [29252 29275])
+            ("vtkArrayIteratorTemplateMacroCase_ll" variable (:constant-flag t) nil [29304 29340])
+            ("vtkTemplateMacroCase_si64" variable (:constant-flag t) nil [29719 29744])
+            ("vtkArrayIteratorTemplateMacroCase_si64" variable (:constant-flag t) nil [29773 29811])
+            ("vtkTemplateMacroCase_ui64" variable (:constant-flag t) nil [30026 30051])
+            ("vtkArrayIteratorTemplateMacroCase_ui64" variable (:constant-flag t) nil [30136 30174])
+            ("VTK_LEGACY" variable (:constant-flag t) nil [31192 31202])
+            ("VTK_LEGACY_BODY" variable (:constant-flag t) nil [32195 32210])
+            ("VTK_LEGACY_REPLACED_BODY" variable (:constant-flag t) nil [32237 32261])
+            ("VTK_WRAP_EXTERN" variable (:constant-flag t) nil [32772 32787]))          
+    :file "vtkSetGet.h"
+    :pointmax 32835
+    :fsize 32834
+    :lastmodtime '(20865 11004)
+    :unmatched-syntax '((symbol 16114 . 16134) (EXTERN 16107 . 16113) (symbol 16026 . 16046) (EXTERN 16019 . 16025) (symbol 15945 . 15965) (EXTERN 15938 . 15944) (symbol 15866 . 15886) (EXTERN 15859 . 15865) (symbol 15792 . 15812) (EXTERN 15785 . 15791))
+    :lexical-table 
+        '(("vtkGetVector6Macro" (spp-arg-list ("name" "type") 13746 . 13757) . 
+              ((VIRTUAL "virtual" 13760 . 13767) (symbol "type" 13768 . 13772) (punctuation "*" 13773 . 13774) (spp-symbol-merge ((symbol "Get" 13774 . 13777) (symbol "name" 13779 . 13783)) 13774 . 13783) (semantic-list "()" 13784 . 13786) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" pointer \" << this->name); \\
+  return this->name; \\
+}" 13789 . 13931) (VIRTUAL "virtual" 13934 . 13941) (VOID "void" 13942 . 13946) (spp-symbol-merge ((symbol "Get" 13947 . 13950) (symbol "name" 13952 . 13956)) 13947 . 13956) (semantic-list "(type &_arg1, type &_arg2, type &_arg3, type &_arg4, type &_arg5, type &_arg6)" 13957 . 14035) (semantic-list "{ \\
+    _arg1 = this->name[0]; \\
+    _arg2 = this->name[1]; \\
+    _arg3 = this->name[2]; \\
+    _arg4 = this->name[3]; \\
+    _arg5 = this->name[4]; \\
+    _arg6 = this->name[5]; \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" = (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \",\" << _arg4 << \",\" << _arg5 <<\",\" << _arg6 << \")\"); \\
+  }" 14040 . 14411) (punctuation ";" 14411 . 14412) (VIRTUAL "virtual" 14415 . 14422) (VOID "void" 14423 . 14427) (spp-symbol-merge ((symbol "Get" 14428 . 14431) (symbol "name" 14433 . 14437)) 14428 . 14437) (semantic-list "(type _arg[6])" 14438 . 14452) (semantic-list "{ \\
+  this->Get##name (_arg[0], _arg[1], _arg[2], _arg[3], _arg[4], _arg[5]);\\
+  }" 14457 . 14539)))
+          ("vtkInstantiatorNewMacro" (spp-arg-list ("thisClass") 24137 . 24148) . 
+              ((EXTERN "extern" 24153 . 24159) (symbol "vtkObject" 24160 . 24169) (punctuation "*" 24169 . 24170) (spp-symbol-merge ((spp-symbol-merge ((symbol "vtkInstantiator" 24171 . 24186) (symbol "thisClass" 24188 . 24197)) 24171 . 24197) (symbol "New" 24199 . 24202)) 24171 . 24202) (semantic-list "()" 24202 . 24204) (punctuation ";" 24204 . 24205) (symbol "vtkObject" 24210 . 24219) (punctuation "*" 24219 . 24220) (spp-symbol-merge ((spp-symbol-merge ((symbol "vtkInstantiator" 24221 . 24236) (symbol "thisClass" 24238 . 24247)) 24221 . 24247) (symbol "New" 24249 . 24252)) 24221 . 24252) (semantic-list "()" 24252 . 24254) (semantic-list "{ \\
+    return thisClass::New(); \\
+  }" 24259 . 24297)))
+          ("vtkExtendedTemplateMacro" (spp-arg-list ("call") 26199 . 26205) . 
+              ((symbol "vtkTemplateMacro" 26242 . 26258) (semantic-list "(call)" 26258 . 26264) (punctuation ";" 26264 . 26265) (symbol "vtkTemplateMacroCase" 26320 . 26340) (semantic-list "(VTK_STRING, vtkStdString, call)" 26340 . 26372)))
+          ("vtkSetMacro" (spp-arg-list ("name" "type") 2656 . 2667) . 
+              ((VIRTUAL "virtual" 2670 . 2677) (VOID "void" 2678 . 2682) (spp-symbol-merge ((symbol "Set" 2683 . 2686) (symbol "name" 2688 . 2692)) 2683 . 2692) (semantic-list "(type _arg)" 2693 . 2704) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" #name \" to \" << _arg); \\
+  if (this->name != _arg) \\
+    { \\
+    this->name = _arg; \\
+    this->Modified(); \\
+    } \\
+  }" 2709 . 2907)))
+          ("vtkGetStringMacro" (spp-arg-list ("name") 4049 . 4055) . 
+              ((VIRTUAL "virtual" 4058 . 4065) (CHAR "char" 4066 . 4070) (punctuation "*" 4070 . 4071) (spp-symbol-merge ((symbol "Get" 4072 . 4075) (symbol "name" 4077 . 4081)) 4072 . 4081) (semantic-list "()" 4082 . 4084) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" of \" << (this->name?this->name:\"(null)\")); \\
+  return this->name; \\
+  }" 4085 . 4246)))
+          ("vtkSetVector3Macro" (spp-arg-list ("name" "type") 10361 . 10372) . 
+              ((VIRTUAL "virtual" 10375 . 10382) (VOID "void" 10383 . 10387) (spp-symbol-merge ((symbol "Set" 10388 . 10391) (symbol "name" 10393 . 10397)) 10388 . 10397) (semantic-list "(type _arg1, type _arg2, type _arg3)" 10398 . 10434) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \")\"); \\
+  if ((this->name[0] != _arg1)||(this->name[1] != _arg2)||(this->name[2] != _arg3)) \\
+    { \\
+    this->name[0] = _arg1; \\
+    this->name[1] = _arg2; \\
+    this->name[2] = _arg3; \\
+    this->Modified(); \\
+    } \\
+  }" 10439 . 10801) (punctuation ";" 10801 . 10802) (VIRTUAL "virtual" 10805 . 10812) (VOID "void" 10813 . 10817) (spp-symbol-merge ((symbol "Set" 10818 . 10821) (symbol "name" 10823 . 10827)) 10818 . 10827) (semantic-list "(type _arg[3])" 10828 . 10842) (semantic-list "{ \\
+  this->Set##name (_arg[0], _arg[1], _arg[2]);\\
+  }" 10847 . 10902)))
+          ("vtkSetObjectImplementationMacro" (spp-arg-list ("class" "name" "type") 7179 . 7196) . ((symbol "vtkCxxSetObjectMacro" 7208 . 7228) (semantic-list "(class,name,type)" 7228 . 7245)))
+          ("vtkSetVector6Macro" (spp-arg-list ("name" "type") 12901 . 12912) . 
+              ((VIRTUAL "virtual" 12915 . 12922) (VOID "void" 12923 . 12927) (spp-symbol-merge ((symbol "Set" 12928 . 12931) (symbol "name" 12933 . 12937)) 12928 . 12937) (semantic-list "(type _arg1, type _arg2, type _arg3, type _arg4, type _arg5, type _arg6)" 12938 . 13010) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \",\" << _arg4 << \",\" << _arg5 << \",\" << _arg6 << \")\"); \\
+  if ((this->name[0] != _arg1)||(this->name[1] != _arg2)||(this->name[2] != _arg3)||(this->name[3] != _arg4)||(this->name[4] != _arg5)||(this->name[5] != _arg6)) \\
+    { \\
+    this->name[0] = _arg1; \\
+    this->name[1] = _arg2; \\
+    this->name[2] = _arg3; \\
+    this->name[3] = _arg4; \\
+    this->name[4] = _arg5; \\
+    this->name[5] = _arg6; \\
+    this->Modified(); \\
+    } \\
+  }" 13015 . 13590) (punctuation ";" 13590 . 13591) (VIRTUAL "virtual" 13594 . 13601) (VOID "void" 13602 . 13606) (spp-symbol-merge ((symbol "Set" 13607 . 13610) (symbol "name" 13612 . 13616)) 13607 . 13616) (semantic-list "(type _arg[6])" 13617 . 13631) (semantic-list "{ \\
+  this->Set##name (_arg[0], _arg[1], _arg[2], _arg[3], _arg[4], _arg[5]);\\
+  }" 13636 . 13718)))
+          ("vtkTypeRevisionMacro" (spp-arg-list ("thisClass" "superclass") 23801 . 23823) . ((symbol "vtkTypeMacro" 23828 . 23840) (semantic-list "(thisClass,superclass)" 23840 . 23862)))
+          ("vtkTemplateMacroCase" (spp-arg-list ("typeN" "type" "call") 24706 . 24725) . 
+              ((CASE "case" 24734 . 24738) (symbol "typeN" 24739 . 24744) (punctuation ":" 24744 . 24745) (semantic-list "{ typedef type VTK_TT; call; }" 24746 . 24776) (punctuation ";" 24776 . 24777) (BREAK "break" 24778 . 24783)))
+          ("vtkSetObjectMacro" (spp-arg-list ("name" "type") 6509 . 6520) . 
+              ((VIRTUAL "virtual" 6534 . 6541) (VOID "void" 6542 . 6546) (spp-symbol-merge ((symbol "Set" 6547 . 6550) (symbol "name" 6552 . 6556)) 6547 . 6556) (semantic-list "(type* _arg)" 6557 . 6569) (semantic-list "{                                             \\
+  vtkSetObjectBodyMacro(name,type,_arg);        \\
+  }" 6586 . 6687)))
+          ("vtkGetVector2Macro" (spp-arg-list ("name" "type") 9807 . 9818) . 
+              ((VIRTUAL "virtual" 9821 . 9828) (symbol "type" 9829 . 9833) (punctuation "*" 9834 . 9835) (spp-symbol-merge ((symbol "Get" 9835 . 9838) (symbol "name" 9840 . 9844)) 9835 . 9844) (semantic-list "()" 9845 . 9847) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" pointer \" << this->name); \\
+  return this->name; \\
+}" 9850 . 9992) (VIRTUAL "virtual" 9995 . 10002) (VOID "void" 10003 . 10007) (spp-symbol-merge ((symbol "Get" 10008 . 10011) (symbol "name" 10013 . 10017)) 10008 . 10017) (semantic-list "(type &_arg1, type &_arg2)" 10018 . 10044) (semantic-list "{ \\
+    _arg1 = this->name[0]; \\
+    _arg2 = this->name[1]; \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" = (\" << _arg1 << \",\" << _arg2 << \")\"); \\
+  }" 10049 . 10241) (punctuation ";" 10241 . 10242) (VIRTUAL "virtual" 10245 . 10252) (VOID "void" 10253 . 10257) (spp-symbol-merge ((symbol "Get" 10258 . 10261) (symbol "name" 10263 . 10267)) 10258 . 10267) (semantic-list "(type _arg[2])" 10268 . 10282) (semantic-list "{ \\
+  this->Get##name (_arg[0], _arg[1]);\\
+  }" 10287 . 10333)))
+          ("vtkSetVectorMacro" (spp-arg-list ("name" "type" "count") 14711 . 14728) . 
+              ((VIRTUAL "virtual" 14731 . 14738) (VOID "void" 14739 . 14743) (spp-symbol-merge ((symbol "Set" 14744 . 14747) (symbol "name" 14749 . 14753)) 14744 . 14753) (semantic-list "(type data[])" 14753 . 14766) (semantic-list "{ \\
+  int i; \\
+  for (i=0; i<count; i++) { if ( data[i] != this->name[i] ) { break; }} \\
+  if ( i < count ) \\
+    { \\
+    for (i=0; i<count; i++) { this->name[i] = data[i]; }\\
+    this->Modified(); \\
+    } \\
+}" 14769 . 14978)))
+          ("vtkErrorWithObjectMacro" (spp-arg-list ("self" "x") 17475 . 17484) . ((semantic-list "{                                                            \\
+   if (vtkObject::GetGlobalWarningDisplay())                    \\
+     {                                                          \\
+     vtkOStreamWrapper::EndlType endl;                          \\
+     vtkOStreamWrapper::UseEndl(endl);                          \\
+     vtkOStrStreamWrapper vtkmsg;                               \\
+     vtkmsg << \"ERROR: In \" __FILE__ \", line \" << __LINE__      \\
+            << \"\\n\" << self->GetClassName() << \" (\" << self     \\
+            << \"): \" x << \"\\n\\n\";                               \\
+     if ( self->HasObserver(\"ErrorEvent\") )                     \\
+       {                                                        \\
+       self->InvokeEvent(\"ErrorEvent\", vtkmsg.str());           \\
+       }                                                        \\
+     else                                                       \\
+       {                                                        \\
+       vtkOutputWindowDisplayErrorText(vtkmsg.str());           \\
+       }                                                        \\
+     vtkmsg.rdbuf()->freeze(0); vtkObject::BreakOnError();      \\
+     }                                                          \\
+   }" 17513 . 18768)))
+          ("vtkDebugWithObjectMacro" (spp-arg-list ("self" "x") 20307 . 20316) . ((semantic-list "{                                                                           \\
+  if (self->GetDebug() && vtkObject::GetGlobalWarningDisplay())               \\
+    {                                                                         \\
+    vtkOStreamWrapper::EndlType endl;                                         \\
+    vtkOStreamWrapper::UseEndl(endl);                                         \\
+    vtkOStrStreamWrapper vtkmsg;                                              \\
+    vtkmsg << \"Debug: In \" __FILE__ \", line \" << __LINE__ << \"\\n\"             \\
+           << self->GetClassName() << \" (\" << self << \"): \" x  << \"\\n\\n\";     \\
+    vtkOutputWindowDisplayDebugText(vtkmsg.str());                            \\
+    vtkmsg.rdbuf()->freeze(0);                                                \\
+    }                                                                         \\
+  }" 20357 . 21238)))
+          ("vtkViewportCoordinateMacro" (spp-arg-list ("name") 22122 . 22128) . 
+              ((VIRTUAL "virtual" 22131 . 22138) (symbol "vtkCoordinate" 22139 . 22152) (punctuation "*" 22153 . 22154) (spp-symbol-merge ((spp-symbol-merge ((symbol "Get" 22154 . 22157) (symbol "name" 22159 . 22163)) 22154 . 22163) (symbol "Coordinate" 22165 . 22175)) 22154 . 22175) (semantic-list "()" 22176 . 22178) (semantic-list "{ \\
+    vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" #name \"Coordinate address \" << this->name##Coordinate ); \\
+    return this->name##Coordinate; \\
+}" 22181 . 22359) (VIRTUAL "virtual" 22362 . 22369) (VOID "void" 22370 . 22374) (spp-symbol-merge ((symbol "Set" 22375 . 22378) (symbol "name" 22380 . 22384)) 22375 . 22384) (semantic-list "(double x[2])" 22384 . 22397) (semantic-list "{this->Set##name(x[0],x[1]);}" 22398 . 22427) (punctuation ";" 22427 . 22428) (VIRTUAL "virtual" 22431 . 22438) (VOID "void" 22439 . 22443) (spp-symbol-merge ((symbol "Set" 22444 . 22447) (symbol "name" 22449 . 22453)) 22444 . 22453) (semantic-list "(double x, double y)" 22453 . 22473) (semantic-list "{ \\
+    this->name##Coordinate->SetValue(x,y); \\
+}" 22476 . 22526) (VIRTUAL "virtual" 22529 . 22536) (DOUBLE "double" 22537 . 22543) (punctuation "*" 22544 . 22545) (spp-symbol-merge ((symbol "Get" 22545 . 22548) (symbol "name" 22550 . 22554)) 22545 . 22554) (semantic-list "()" 22554 . 22556) (semantic-list "{ \\
+    return this->name##Coordinate->GetValue(); \\
+}" 22559 . 22613)))
+          ("vtkGetMacro" (spp-arg-list ("name" "type") 3009 . 3020) . 
+              ((VIRTUAL "virtual" 3023 . 3030) (symbol "type" 3031 . 3035) (spp-symbol-merge ((symbol "Get" 3036 . 3039) (symbol "name" 3041 . 3045)) 3036 . 3045) (semantic-list "()" 3046 . 3048) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" of \" << this->name ); \\
+  return this->name; \\
+  }" 3049 . 3189)))
+          ("vtkWarningWithObjectMacro" (spp-arg-list ("self" "x") 18920 . 18929) . ((semantic-list "{                                                            \\
+   if (vtkObject::GetGlobalWarningDisplay())                    \\
+     {                                                          \\
+     vtkOStreamWrapper::EndlType endl;                          \\
+     vtkOStreamWrapper::UseEndl(endl);                          \\
+     vtkOStrStreamWrapper vtkmsg;                               \\
+     vtkmsg << \"Warning: In \" __FILE__ \", line \" << __LINE__    \\
+            << \"\\n\" << self->GetClassName() << \" (\" << self     \\
+            << \"): \" x << \"\\n\\n\";                               \\
+     if ( self->HasObserver(\"WarningEvent\") )                   \\
+       {                                                        \\
+       self->InvokeEvent(\"WarningEvent\", vtkmsg.str());         \\
+       }                                                        \\
+     else                                                       \\
+       {                                                        \\
+       vtkOutputWindowDisplayWarningText(vtkmsg.str());         \\
+       }                                                        \\
+     vtkmsg.rdbuf()->freeze(0);                                 \\
+     }                                                          \\
+   }" 18956 . 20211)))
+          ("vtkTemplateMacroCase_si64" (spp-arg-list ("typeN" "type" "call") 29744 . 29763))
+          ("vtkQuoteMacro" (spp-arg-list ("x") 1443 . 1446) . ((symbol "vtkInternalQuoteMacro" 1447 . 1468) (semantic-list "(x)" 1468 . 1471)))
+          ("vtkSetVector2Macro" (spp-arg-list ("name" "type") 9337 . 9348) . 
+              ((VIRTUAL "virtual" 9351 . 9358) (VOID "void" 9359 . 9363) (spp-symbol-merge ((symbol "Set" 9364 . 9367) (symbol "name" 9369 . 9373)) 9364 . 9373) (semantic-list "(type _arg1, type _arg2)" 9374 . 9398) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to (\" << _arg1 << \",\" << _arg2 << \")\"); \\
+  if ((this->name[0] != _arg1)||(this->name[1] != _arg2)) \\
+    { \\
+    this->name[0] = _arg1; \\
+    this->name[1] = _arg2; \\
+    this->Modified(); \\
+    } \\
+  }" 9403 . 9694) (punctuation ";" 9694 . 9695) (VOID "void" 9698 . 9702) (spp-symbol-merge ((symbol "Set" 9703 . 9706) (symbol "name" 9708 . 9712)) 9703 . 9712) (semantic-list "(type _arg[2])" 9713 . 9727) (semantic-list "{ \\
+  this->Set##name (_arg[0], _arg[1]); \\
+  }" 9732 . 9779)))
+          ("vtkGenericWarningMacro" (spp-arg-list ("x") 16372 . 16375) . ((semantic-list "{ if (vtkObject::GetGlobalWarningDisplay()) { \\
+      vtkOStreamWrapper::EndlType endl; \\
+      vtkOStreamWrapper::UseEndl(endl); \\
+      vtkOStrStreamWrapper vtkmsg; \\
+      vtkmsg << \"Generic Warning: In \" __FILE__ \", line \" << __LINE__ << \"\\n\" x \\
+      << \"\\n\\n\"; \\
+      vtkOutputWindowDisplayGenericWarningText(vtkmsg.str());\\
+      vtkmsg.rdbuf()->freeze(0);}}" 16378 . 16745)))
+          ("vtkArrayIteratorTemplateMacroCase_ll" (spp-arg-list ("typeN" "type" "call") 29340 . 29359))
+          ("vtkInternalQuoteMacro" (spp-arg-list ("x") 1415 . 1418) . ((punctuation "#" 1419 . 1420) (symbol "x" 1420 . 1421)))
+          ("vtkGetNewMacro" (spp-arg-list ("name" "type") 7621 . 7632) . 
+              ((VIRTUAL "virtual" 7670 . 7677) (symbol "type" 7678 . 7682) (punctuation "*" 7683 . 7684) (spp-symbol-merge ((symbol "Get" 7684 . 7687) (symbol "name" 7689 . 7693)) 7684 . 7693) (semantic-list "()" 7694 . 7696) (semantic-list "{                                                                     \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this                 \\
+                << \"): returning \" #name \" address \"                    \\
+                << this->name.GetPointer() );                           \\
+  return this->name.GetPointer();                                       \\
+  }" 7746 . 8117)))
+          ("vtkGetObjectMacro" (spp-arg-list ("name" "type") 8272 . 8283) . 
+              ((VIRTUAL "virtual" 8321 . 8328) (symbol "type" 8329 . 8333) (punctuation "*" 8334 . 8335) (spp-symbol-merge ((symbol "Get" 8335 . 8338) (symbol "name" 8340 . 8344)) 8335 . 8344) (semantic-list "()" 8345 . 8347) (semantic-list "{                                                                     \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this                 \\
+                << \"): returning \" #name \" address \" << this->name );   \\
+  return this->name;                                                    \\
+  }" 8397 . 8694)))
+          ("vtkGetVectorMacro" (spp-arg-list ("name" "type" "count") 15278 . 15295) . 
+              ((VIRTUAL "virtual" 15298 . 15305) (symbol "type" 15306 . 15310) (punctuation "*" 15311 . 15312) (spp-symbol-merge ((symbol "Get" 15312 . 15315) (symbol "name" 15317 . 15321)) 15312 . 15321) (semantic-list "()" 15322 . 15324) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" pointer \" << this->name); \\
+  return this->name; \\
+}" 15327 . 15469) (VIRTUAL "virtual" 15472 . 15479) (VOID "void" 15480 . 15484) (spp-symbol-merge ((symbol "Get" 15485 . 15488) (symbol "name" 15490 . 15494)) 15485 . 15494) (semantic-list "(type data[count])" 15495 . 15513) (semantic-list "{ \\
+  for (int i=0; i<count; i++) { data[i] = this->name[i]; }\\
+}" 15516 . 15581)))
+          ("vtkTemplateMacroCase_ui64" (spp-arg-list ("typeN" "type" "call") 30051 . 30070) . 
+              ((symbol "vtkTemplateMacroCase" 30086 . 30106) (semantic-list "(typeN, type, call)" 30106 . 30125) (punctuation ";" 30125 . 30126)))
+          ("VTK_LEGACY_BODY" (spp-arg-list ("method" "version") 32210 . 32227))
+          ("vtkSetObjectBodyMacro" (spp-arg-list ("name" "type" "args") 5339 . 5355) . ((semantic-list "{                                                             \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this         \\
+                << \"): setting \" << #name \" to \" << args );     \\
+  if (this->name != args)                                       \\
+    {                                                           \\
+    type* tempSGMacroVar = this->name;                          \\
+    this->name = args;                                          \\
+    if (this->name != NULL) { this->name->Register(this); }     \\
+    if (tempSGMacroVar != NULL)                                 \\
+      {                                                         \\
+      tempSGMacroVar->UnRegister(this);                         \\
+      }                                                         \\
+    this->Modified();                                           \\
+    }                                                           \\
+  }" 5378 . 6303)))
+          ("vtkGetVector4Macro" (spp-arg-list ("name" "type") 12213 . 12224) . 
+              ((VIRTUAL "virtual" 12227 . 12234) (symbol "type" 12235 . 12239) (punctuation "*" 12240 . 12241) (spp-symbol-merge ((symbol "Get" 12241 . 12244) (symbol "name" 12246 . 12250)) 12241 . 12250) (semantic-list "()" 12251 . 12253) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" pointer \" << this->name); \\
+  return this->name; \\
+}" 12256 . 12398) (VIRTUAL "virtual" 12401 . 12408) (VOID "void" 12409 . 12413) (spp-symbol-merge ((symbol "Get" 12414 . 12417) (symbol "name" 12419 . 12423)) 12414 . 12423) (semantic-list "(type &_arg1, type &_arg2, type &_arg3, type &_arg4)" 12424 . 12476) (semantic-list "{ \\
+    _arg1 = this->name[0]; \\
+    _arg2 = this->name[1]; \\
+    _arg3 = this->name[2]; \\
+    _arg4 = this->name[3]; \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" = (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \",\" << _arg4 << \")\"); \\
+  }" 12481 . 12763) (punctuation ";" 12763 . 12764) (VIRTUAL "virtual" 12767 . 12774) (VOID "void" 12775 . 12779) (spp-symbol-merge ((symbol "Get" 12780 . 12783) (symbol "name" 12785 . 12789)) 12780 . 12789) (semantic-list "(type _arg[4])" 12790 . 12804) (semantic-list "{ \\
+  this->Get##name (_arg[0], _arg[1], _arg[2], _arg[3]);\\
+  }" 12809 . 12873)))
+          ("vtkWorldCoordinateMacro" (spp-arg-list ("name") 21578 . 21584) . 
+              ((VIRTUAL "virtual" 21587 . 21594) (symbol "vtkCoordinate" 21595 . 21608) (punctuation "*" 21609 . 21610) (spp-symbol-merge ((spp-symbol-merge ((symbol "Get" 21610 . 21613) (symbol "name" 21615 . 21619)) 21610 . 21619) (symbol "Coordinate" 21621 . 21631)) 21610 . 21631) (semantic-list "()" 21632 . 21634) (semantic-list "{ \\
+    vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" #name \"Coordinate address \" << this->name##Coordinate ); \\
+    return this->name##Coordinate; \\
+}" 21637 . 21815) (VIRTUAL "virtual" 21818 . 21825) (VOID "void" 21826 . 21830) (spp-symbol-merge ((symbol "Set" 21831 . 21834) (symbol "name" 21836 . 21840)) 21831 . 21840) (semantic-list "(double x[3])" 21840 . 21853) (semantic-list "{this->Set##name(x[0],x[1],x[2]);}" 21854 . 21888) (punctuation ";" 21888 . 21889) (VIRTUAL "virtual" 21892 . 21899) (VOID "void" 21900 . 21904) (spp-symbol-merge ((symbol "Set" 21905 . 21908) (symbol "name" 21910 . 21914)) 21905 . 21914) (semantic-list "(double x, double y, double z)" 21914 . 21944) (semantic-list "{ \\
+    this->name##Coordinate->SetValue(x,y,z); \\
+}" 21947 . 21999) (VIRTUAL "virtual" 22002 . 22009) (DOUBLE "double" 22010 . 22016) (punctuation "*" 22017 . 22018) (spp-symbol-merge ((symbol "Get" 22018 . 22021) (symbol "name" 22023 . 22027)) 22018 . 22027) (semantic-list "()" 22027 . 22029) (semantic-list "{ \\
+    return this->name##Coordinate->GetValue(); \\
+}" 22032 . 22086)))
+          ("vtkTemplateMacroCase_ll" (spp-arg-list ("typeN" "type" "call") 29275 . 29294))
+          ("vtkCxxSetObjectMacro" (spp-arg-list ("class" "name" "type") 7275 . 7292) . 
+              ((VOID "void" 7297 . 7301) (CLASS "class" 7302 . 7307) (punctuation ":" 7307 . 7308) (punctuation ":" 7308 . 7309) (spp-symbol-merge ((symbol "Set" 7309 . 7312) (symbol "name" 7314 . 7318)) 7309 . 7318) (semantic-list "(type* _arg)" 7319 . 7331) (semantic-list "{                                             \\
+  vtkSetObjectBodyMacro(name,type,_arg);        \\
+  }" 7349 . 7450)))
+          ("vtkErrorMacro" (spp-arg-list ("x") 17265 . 17268) . ((symbol "vtkErrorWithObjectMacro" 17297 . 17320) (semantic-list "(this,x)" 17320 . 17328)))
+          ("vtkCxxRevisionMacro" (spp-arg-list ("thisClass" "revision") 23891 . 23912))
+          ("vtkArrayIteratorTemplateMacroCase_si64" (spp-arg-list ("typeN" "type" "call") 29811 . 29830))
+          ("VTK_LEGACY" (spp-arg-list ("method") 31202 . 31210) . ((symbol "method" 31211 . 31217)))
+          ("VTK_LEGACY_REPLACED_BODY" (spp-arg-list ("method" "version" "replace") 32261 . 32287))
+          ("vtkImageScalarTypeNameMacro" (spp-arg-list ("type") 1545 . 1551) . ((semantic-list "(((type) == VTK_VOID) ? \"void\" : \\
+(((type) == VTK_BIT) ? \"bit\" : \\
+(((type) == VTK_CHAR) ? \"char\" : \\
+(((type) == VTK_SIGNED_CHAR) ? \"signed char\" : \\
+(((type) == VTK_UNSIGNED_CHAR) ? \"unsigned char\" : \\
+(((type) == VTK_SHORT) ? \"short\" : \\
+(((type) == VTK_UNSIGNED_SHORT) ? \"unsigned short\" : \\
+(((type) == VTK_INT) ? \"int\" : \\
+(((type) == VTK_UNSIGNED_INT) ? \"unsigned int\" : \\
+(((type) == VTK_LONG) ? \"long\" : \\
+(((type) == VTK_UNSIGNED_LONG) ? \"unsigned long\" : \\
+(((type) == VTK_LONG_LONG) ? \"long long\" : \\
+(((type) == VTK_UNSIGNED_LONG_LONG) ? \"unsigned long long\" : \\
+(((type) == VTK___INT64) ? \"__int64\" : \\
+(((type) == VTK_UNSIGNED___INT64) ? \"unsigned __int64\" : \\
+(((type) == VTK_FLOAT) ? \"float\" : \\
+(((type) == VTK_DOUBLE) ? \"double\" : \\
+(((type) == VTK_ID_TYPE) ? \"idtype\" : \\
+(((type) == VTK_STRING) ? \"string\" : \\
+(((type) == VTK_UNICODE_STRING) ? \"unicode string\" : \\
+(((type) == VTK_VARIANT) ? \"variant\" : \\
+(((type) == VTK_OBJECT) ? \"object\" : \\
+\"Undefined\"))))))))))))))))))))))" 1554 . 2554)))
+          ("vtkSetVector4Macro" (spp-arg-list ("name" "type") 11551 . 11562) . 
+              ((VIRTUAL "virtual" 11565 . 11572) (VOID "void" 11573 . 11577) (spp-symbol-merge ((symbol "Set" 11578 . 11581) (symbol "name" 11583 . 11587)) 11578 . 11587) (semantic-list "(type _arg1, type _arg2, type _arg3, type _arg4)" 11588 . 11636) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \",\" << _arg4 << \")\"); \\
+  if ((this->name[0] != _arg1)||(this->name[1] != _arg2)||(this->name[2] != _arg3)||(this->name[3] != _arg4)) \\
+    { \\
+    this->name[0] = _arg1; \\
+    this->name[1] = _arg2; \\
+    this->name[2] = _arg3; \\
+    this->name[3] = _arg4; \\
+    this->Modified(); \\
+    } \\
+  }" 11641 . 12074) (punctuation ";" 12074 . 12075) (VIRTUAL "virtual" 12078 . 12085) (VOID "void" 12086 . 12090) (spp-symbol-merge ((symbol "Set" 12091 . 12094) (symbol "name" 12096 . 12100)) 12091 . 12100) (semantic-list "(type _arg[4])" 12101 . 12115) (semantic-list "{ \\
+  this->Set##name (_arg[0], _arg[1], _arg[2], _arg[3]);\\
+  }" 12120 . 12184)))
+          ("vtkDebugMacro" (spp-arg-list ("x") 16903 . 16906) . ((symbol "vtkDebugWithObjectMacro" 16912 . 16935) (semantic-list "(this,x)" 16935 . 16943)))
+          ("vtkTemplateMacro" (spp-arg-list ("call") 24808 . 24814) . 
+              ((symbol "vtkTemplateMacroCase" 24864 . 24884) (semantic-list "(VTK_DOUBLE, double, call)" 24884 . 24910) (punctuation ";" 24910 . 24911) (symbol "vtkTemplateMacroCase" 24942 . 24962) (semantic-list "(VTK_FLOAT, float, call)" 24962 . 24986) (punctuation ";" 24986 . 24987) (symbol "vtkTemplateMacroCase_ll" 25020 . 25043) (semantic-list "(VTK_LONG_LONG, long long, call)" 25043 . 25075) (symbol "vtkTemplateMacroCase_ll" 25098 . 25121) (semantic-list "(VTK_UNSIGNED_LONG_LONG, unsigned long long, call)" 25121 . 25171) (symbol "vtkTemplateMacroCase_si64" 25176 . 25201) (semantic-list "(VTK___INT64, __int64, call)" 25201 . 25229) (symbol "vtkTemplateMacroCase_ui64" 25254 . 25279) (semantic-list "(VTK_UNSIGNED___INT64, unsigned __int64, call)" 25279 . 25325) (symbol "vtkTemplateMacroCase" 25332 . 25352) (semantic-list "(VTK_ID_TYPE, vtkIdType, call)" 25352 . 25382) (punctuation ";" 25382 . 25383) (symbol "vtkTemplateMacroCase" 25410 . 25430) (semantic-list "(VTK_LONG, long, call)" 25430 . 25452) (punctuation ";" 25452 . 25453) (symbol "vtkTemplateMacroCase" 25488 . 25508) (semantic-list "(VTK_UNSIGNED_LONG, unsigned long, call)" 25508 . 25548) (punctuation ";" 25548 . 25549) (symbol "vtkTemplateMacroCase" 25566 . 25586) (semantic-list "(VTK_INT, int, call)" 25586 . 25606) (punctuation ";" 25606 . 25607) (symbol "vtkTemplateMacroCase" 25644 . 25664) (semantic-list "(VTK_UNSIGNED_INT, unsigned int, call)" 25664 . 25702) (punctuation ";" 25702 . 25703) (symbol "vtkTemplateMacroCase" 25722 . 25742) (semantic-list "(VTK_SHORT, short, call)" 25742 . 25766) (punctuation ";" 25766 . 25767) (symbol "vtkTemplateMacroCase" 25800 . 25820) (semantic-list "(VTK_UNSIGNED_SHORT, unsigned short, call)" 25820 . 25862) (punctuation ";" 25862 . 25863) (symbol "vtkTemplateMacroCase" 25878 . 25898) (semantic-list "(VTK_CHAR, char, call)" 25898 . 25920) (punctuation ";" 25920 . 25921) (symbol "vtkTemplateMacroCase" 25956 . 25976) (semantic-list "(VTK_SIGNED_CHAR, signed char, call)" 25976 . 26012) (punctuation ";" 26012 . 26013) (symbol "vtkTemplateMacroCase" 26034 . 26054) (semantic-list "(VTK_UNSIGNED_CHAR, unsigned char, call)" 26054 . 26094)))
+          ("vtkArrayIteratorTemplateMacroCase" (spp-arg-list ("typeN" "type" "call") 27139 . 27158) . ((symbol "vtkTemplateMacroCase" 27164 . 27184) (semantic-list "(typeN, vtkArrayIteratorTemplate<type>, call)" 27184 . 27229)))
+          ("vtkArrayIteratorTemplateMacro" (spp-arg-list ("call") 27267 . 27273) . 
+              ((symbol "vtkArrayIteratorTemplateMacroCase" 27310 . 27343) (semantic-list "(VTK_DOUBLE, double, call)" 27343 . 27369) (punctuation ";" 27369 . 27370) (symbol "vtkArrayIteratorTemplateMacroCase" 27388 . 27421) (semantic-list "(VTK_FLOAT, float, call)" 27421 . 27445) (punctuation ";" 27445 . 27446) (symbol "vtkArrayIteratorTemplateMacroCase_ll" 27479 . 27515) (semantic-list "(VTK_LONG_LONG, long long, call)" 27515 . 27547) (punctuation ";" 27547 . 27548) (symbol "vtkArrayIteratorTemplateMacroCase_ll" 27570 . 27606) (semantic-list "(VTK_UNSIGNED_LONG_LONG, unsigned long long, call)" 27606 . 27656) (punctuation ";" 27656 . 27657) (symbol "vtkArrayIteratorTemplateMacroCase_si64" 27661 . 27699) (semantic-list "(VTK___INT64, __int64, call)" 27699 . 27727) (punctuation ";" 27727 . 27728) (symbol "vtkArrayIteratorTemplateMacroCase_ui64" 27752 . 27790) (semantic-list "(VTK_UNSIGNED___INT64, unsigned __int64, call)" 27790 . 27836) (punctuation ";" 27836 . 27837) (symbol "vtkArrayIteratorTemplateMacroCase" 27843 . 27876) (semantic-list "(VTK_ID_TYPE, vtkIdType, call)" 27876 . 27906) (punctuation ";" 27906 . 27907) (symbol "vtkArrayIteratorTemplateMacroCase" 27934 . 27967) (semantic-list "(VTK_LONG, long, call)" 27967 . 27989) (punctuation ";" 27989 . 27990) (symbol "vtkArrayIteratorTemplateMacroCase" 28025 . 28058) (semantic-list "(VTK_UNSIGNED_LONG, unsigned long, call)" 28058 . 28098) (punctuation ";" 28098 . 28099) (symbol "vtkArrayIteratorTemplateMacroCase" 28116 . 28149) (semantic-list "(VTK_INT, int, call)" 28149 . 28169) (punctuation ";" 28169 . 28170) (symbol "vtkArrayIteratorTemplateMacroCase" 28207 . 28240) (semantic-list "(VTK_UNSIGNED_INT, unsigned int, call)" 28240 . 28278) (punctuation ";" 28278 . 28279) (symbol "vtkArrayIteratorTemplateMacroCase" 28298 . 28331) (semantic-list "(VTK_SHORT, short, call)" 28331 . 28355) (punctuation ";" 28355 . 28356) (symbol "vtkArrayIteratorTemplateMacroCase" 28389 . 28422) (semantic-list "(VTK_UNSIGNED_SHORT, unsigned short, call)" 28422 . 28464) (punctuation ";" 28464 . 28465) (symbol "vtkArrayIteratorTemplateMacroCase" 28480 . 28513) (semantic-list "(VTK_CHAR, char, call)" 28513 . 28535) (punctuation ";" 28535 . 28536) (symbol "vtkArrayIteratorTemplateMacroCase" 28571 . 28604) (semantic-list "(VTK_SIGNED_CHAR, signed char, call)" 28604 . 28640) (punctuation ";" 28640 . 28641) (symbol "vtkArrayIteratorTemplateMacroCase" 28662 . 28695) (semantic-list "(VTK_UNSIGNED_CHAR, unsigned char, call)" 28695 . 28735) (punctuation ";" 28735 . 28736) (symbol "vtkArrayIteratorTemplateMacroCase" 28753 . 28786) (semantic-list "(VTK_STRING, vtkStdString, call)" 28786 . 28818) (punctuation ";" 28818 . 28819) (symbol "vtkTemplateMacroCase" 28844 . 28864) (semantic-list "(VTK_BIT, vtkBitArrayIterator, call)" 28864 . 28900) (punctuation ";" 28900 . 28901)))
+          ("vtkSetStringMacro" (spp-arg-list ("name") 3308 . 3314) . 
+              ((VIRTUAL "virtual" 3317 . 3324) (VOID "void" 3325 . 3329) (spp-symbol-merge ((symbol "Set" 3330 . 3333) (symbol "name" 3335 . 3339)) 3330 . 3339) (semantic-list "(const char* _arg)" 3340 . 3358) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to \" << (_arg?_arg:\"(null)\") ); \\
+  if ( this->name == NULL && _arg == NULL) { return;} \\
+  if ( this->name && _arg && (!strcmp(this->name,_arg))) { return;} \\
+  if (this->name) { delete [] this->name; } \\
+  if (_arg) \\
+    { \\
+    size_t n = strlen(_arg) + 1; \\
+    char *cp1 =  new char[n]; \\
+    const char *cp2 = (_arg); \\
+    this->name = cp1; \\
+    do { *cp1++ = *cp2++; } while ( --n ); \\
+    } \\
+   else \\
+    { \\
+    this->name = NULL; \\
+    } \\
+  this->Modified(); \\
+  }" 3363 . 3931)))
+          ("vtkBooleanMacro" (spp-arg-list ("name" "type") 8849 . 8860) . 
+              ((VIRTUAL "virtual" 8865 . 8872) (VOID "void" 8873 . 8877) (spp-symbol-merge ((symbol "name" 8878 . 8882) (symbol "On" 8884 . 8886)) 8878 . 8886) (semantic-list "()" 8887 . 8889) (semantic-list "{ this->Set##name(static_cast<type>(1));}" 8890 . 8931) (VIRTUAL "virtual" 8938 . 8945) (VOID "void" 8946 . 8950) (spp-symbol-merge ((symbol "name" 8951 . 8955) (symbol "Off" 8957 . 8960)) 8951 . 8960) (semantic-list "()" 8961 . 8963) (semantic-list "{ this->Set##name(static_cast<type>(0));}" 8964 . 9005)))
+          ("vtkWarningMacro" (spp-arg-list ("x") 17081 . 17084) . ((symbol "vtkWarningWithObjectMacro" 17111 . 17136) (semantic-list "(this,x)" 17136 . 17144)))
+          ("vtkNotUsed" (spp-arg-list ("x") 21542 . 21545))
+          ("vtkArrayIteratorTemplateMacroCase_ui64" (spp-arg-list ("typeN" "type" "call") 30174 . 30193) . 
+              ((symbol "vtkArrayIteratorTemplateMacroCase" 30209 . 30242) (semantic-list "(typeN, type, call)" 30242 . 30261) (punctuation ";" 30261 . 30262)))
+          ("VTK_WRAP_EXTERN")
+          ("__vtkSetGet_h")
+          ("vtkSetClampMacro" (spp-arg-list ("name" "type" "min" "max") 4552 . 4571) . 
+              ((VIRTUAL "virtual" 4574 . 4581) (VOID "void" 4582 . 4586) (spp-symbol-merge ((symbol "Set" 4587 . 4590) (symbol "name" 4592 . 4596)) 4587 . 4596) (semantic-list "(type _arg)" 4597 . 4608) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): setting \" << #name \" to \" << _arg ); \\
+  if (this->name != (_arg<min?min:(_arg>max?max:_arg))) \\
+    { \\
+    this->name = (_arg<min?min:(_arg>max?max:_arg)); \\
+    this->Modified(); \\
+    } \\
+  }" 4613 . 4875) (VIRTUAL "virtual" 4878 . 4885) (symbol "type" 4886 . 4890) (spp-symbol-merge ((spp-symbol-merge ((symbol "Get" 4891 . 4894) (symbol "name" 4896 . 4900)) 4891 . 4900) (symbol "MinValue" 4902 . 4910)) 4891 . 4910) (semantic-list "()" 4911 . 4913) (semantic-list "{ \\
+  return min; \\
+  }" 4918 . 4941) (VIRTUAL "virtual" 4944 . 4951) (symbol "type" 4952 . 4956) (spp-symbol-merge ((spp-symbol-merge ((symbol "Get" 4957 . 4960) (symbol "name" 4962 . 4966)) 4957 . 4966) (symbol "MaxValue" 4968 . 4976)) 4957 . 4976) (semantic-list "()" 4977 . 4979) (semantic-list "{ \\
+  return max; \\
+  }" 4984 . 5007)))
+          ("vtkGetVector3Macro" (spp-arg-list ("name" "type") 10930 . 10941) . 
+              ((VIRTUAL "virtual" 10944 . 10951) (symbol "type" 10952 . 10956) (punctuation "*" 10957 . 10958) (spp-symbol-merge ((symbol "Get" 10958 . 10961) (symbol "name" 10963 . 10967)) 10958 . 10967) (semantic-list "()" 10968 . 10970) (semantic-list "{ \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" pointer \" << this->name); \\
+  return this->name; \\
+}" 10973 . 11115) (VIRTUAL "virtual" 11118 . 11125) (VOID "void" 11126 . 11130) (spp-symbol-merge ((symbol "Get" 11131 . 11134) (symbol "name" 11136 . 11140)) 11131 . 11140) (semantic-list "(type &_arg1, type &_arg2, type &_arg3)" 11141 . 11180) (semantic-list "{ \\
+    _arg1 = this->name[0]; \\
+    _arg2 = this->name[1]; \\
+    _arg3 = this->name[2]; \\
+  vtkDebugMacro(<< this->GetClassName() << \" (\" << this << \"): returning \" << #name \" = (\" << _arg1 << \",\" << _arg2 << \",\" << _arg3 << \")\"); \\
+  }" 11185 . 11422) (punctuation ";" 11422 . 11423) (VIRTUAL "virtual" 11426 . 11433) (VOID "void" 11434 . 11438) (spp-symbol-merge ((symbol "Get" 11439 . 11442) (symbol "name" 11444 . 11448)) 11439 . 11448) (semantic-list "(type _arg[3])" 11449 . 11463) (semantic-list "{ \\
+  this->Get##name (_arg[0], _arg[1], _arg[2]);\\
+  }" 11468 . 11523)))
+          ("vtkTypeMacro" (spp-arg-list ("thisClass" "superclass") 22733 . 22755) . 
+              ((TYPEDEF "typedef" 22760 . 22767) (symbol "superclass" 22768 . 22778) (symbol "Superclass" 22779 . 22789) (punctuation ";" 22789 . 22790) (PRIVATE "private" 22795 . 22802) (punctuation ":" 22802 . 22803) (VIRTUAL "virtual" 22808 . 22815) (CONST "const" 22816 . 22821) (CHAR "char" 22822 . 22826) (punctuation "*" 22826 . 22827) (symbol "GetClassNameInternal" 22828 . 22848) (semantic-list "()" 22848 . 22850) (CONST "const" 22851 . 22856) (semantic-list "{ return #thisClass; }" 22857 . 22879) (PUBLIC "public" 22884 . 22890) (punctuation ":" 22890 . 22891) (STATIC "static" 22896 . 22902) (INT "int" 22903 . 22906) (symbol "IsTypeOf" 22907 . 22915) (semantic-list "(const char *type)" 22915 . 22933) (semantic-list "{ \\
+    if ( !strcmp(#thisClass,type) ) \\
+      { \\
+      return 1; \\
+      } \\
+    return superclass::IsTypeOf(type); \\
+  }" 22938 . 23062) (VIRTUAL "virtual" 23067 . 23074) (INT "int" 23075 . 23078) (symbol "IsA" 23079 . 23082) (semantic-list "(const char *type)" 23082 . 23100) (semantic-list "{ \\
+    return this->thisClass::IsTypeOf(type); \\
+  }" 23105 . 23158) (STATIC "static" 23163 . 23169) (symbol "thisClass" 23170 . 23179) (punctuation "*" 23179 . 23180) (symbol "SafeDownCast" 23181 . 23193) (semantic-list "(vtkObjectBase *o)" 23193 . 23211) (semantic-list "{ \\
+    if ( o && o->IsA(#thisClass) ) \\
+      { \\
+      return static_cast<thisClass *>(o); \\
+      } \\
+    return NULL;\\
+  }" 23216 . 23342) (PROTECTED "protected" 23347 . 23356) (punctuation ":" 23356 . 23357) (VIRTUAL "virtual" 23362 . 23369) (symbol "vtkObjectBase" 23370 . 23383) (punctuation "*" 23384 . 23385) (symbol "NewInstanceInternal" 23385 . 23404) (semantic-list "()" 23404 . 23406) (CONST "const" 23407 . 23412) (semantic-list "{ \\
+    return thisClass::New(); \\
+  }" 23417 . 23455) (PUBLIC "public" 23460 . 23466) (punctuation ":" 23466 . 23467) (symbol "thisClass" 23472 . 23481) (punctuation "*" 23482 . 23483) (symbol "NewInstance" 23483 . 23494) (semantic-list "()" 23494 . 23496) (CONST "const" 23497 . 23502) (semantic-list "{ \\
+    return thisClass::SafeDownCast(this->NewInstanceInternal()); \\
+  }" 23507 . 23581)))
+          ("vtkExportedTypeRevisionMacro" (spp-arg-list ("thisClass" "superclass" "dllExport") 23700 . 23732) . ((symbol "vtkTypeMacro" 23737 . 23749) (semantic-list "(thisClass,superclass)" 23749 . 23771)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Common!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

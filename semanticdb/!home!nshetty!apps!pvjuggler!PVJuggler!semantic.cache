@@ -1,0 +1,924 @@
+;; Object PVJuggler/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PVJuggler/"
+  :tables
+  (list
+    (semanticdb-table "vtkVJRenderer.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkVJRenderer.h" include nil nil [587 613])
+            ("vtkObjectFactory.h" include nil nil [695 724])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkVJRenderer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [856 870]))                  
+                :type "int")
+                nil [836 871])
+            ("vtkVJRenderer" function
+               (:constructor-flag t
+                :parent "vtkVJRenderer"
+                :type ("vtkVJRenderer" type (:type "class") nil nil))
+                nil [1125 1159])
+            ("vtkVJRenderer" function
+               (:destructor-flag t
+                :parent "vtkVJRenderer"
+                :type "void")
+                nil [1241 1276])
+            ("PrintSelf" function
+               (:parent "vtkVJRenderer"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1388 1400])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1401 1418]))                  
+                :type "void")
+                nil [1358 1465])
+            ("UpdateGeometry" function
+               (:parent "vtkVJRenderer"
+                :type "int")
+                nil [1467 1551]))          
+      :file "vtkVJRenderer.cxx"
+      :pointmax 1552
+      :fsize 1551
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkVRJugglerGUIHelper.cxx"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "vtkVRJugglerGUIHelper.cxx"
+      :pointmax 20179
+      :fsize 20178
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkVJRenderer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__vtkVJRenderer_h" variable (:constant-flag t) nil [686 703])
+            ("vtkOpenGLRenderer.h" include nil nil [784 814])
+            ("vtkVJRendererInternal" type
+               (:prototype t
+                :type "class")
+                nil [896 924])
+            ("vtkOpenGLRenderer" type
+               (:prototype t
+                :type "class")
+                nil [925 949])
+            ("vtkVJRenderer" type
+               (:superclasses 
+                  ( ("vtkOpenGLRenderer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1079 1086])
+                    ("New" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkVJRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1169 1197])
+                    ("vtkTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vtkVJRenderer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1213 1227])
+                            ("" variable (:type ("vtkOpenGLRenderer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1246]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1200 1247])
+                    ("PrintSelf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1265 1277])
+                            ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1278 1295]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1250 1296])
+                    ("UpdateGeometry" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1300 1321])
+                    ("protected" label nil (reparse-symbol classsubparts) [1322 1332])
+                    ("protected" label nil (reparse-symbol classsubparts) [1414 1424])
+                    ("vtkVJRenderer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vtkVJRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1513 1529])
+                    ("vtkVJRenderer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1532 1549])
+                    ("private" label nil (reparse-symbol classsubparts) [1551 1559])
+                    ("Internal" variable
+                       (:pointer 1
+                        :type ("vtkVJRendererInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1562 1594])
+                    ("vtkVJRenderer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVJRenderer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1611 1632]))                          
+                        :type ("vtkVJRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1597 1633])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVJRenderer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1671 1692]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1656 1693]))                  
+                :type "class")
+                nil [1030 1804]))          
+      :file "vtkVJRenderer.h"
+      :pointmax 1834
+      :fsize 1833
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__vtkVJRenderer_h")
+          )
+)
+    (semanticdb-table "vtkVRJugglerGUIHelper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VTKVRJUGGLERGUIHELPER_H_" variable (:constant-flag t) nil [580 604])
+            ("vtkVRJugglerOptions.h" include nil nil [727 759])
+            ("vtkObjectFactory.h" include nil nil [760 789])
+            ("vtkProcessModule.h" include nil nil [790 819])
+            ("vtkSMSession.h" include nil nil [820 845])
+            ("vtkSMDoubleVectorProperty.h" include nil nil [890 928])
+            ("vtkSMIntVectorProperty.h" include nil nil [929 964])
+            ("vtkSMProperty.h" include nil nil [965 991])
+            ("vtkSMPropertyAdaptor.h" include nil nil [992 1025])
+            ("vtkSMPropertyHelper.h" include nil nil [1026 1058])
+            ("vtkSMProxy.h" include nil nil [1059 1082])
+            ("vtkSMProxyProperty.h" include nil nil [1083 1114])
+            ("vtkSMRepresentationProxy.h" include nil nil [1115 1152])
+            ("vtkSMSourceProxy.h" include nil nil [1153 1182])
+            ("vtkRenderWindow.h" include nil nil [1183 1211])
+            ("vtkSMStringVectorProperty.h" include nil nil [1212 1250])
+            ("vtkRenderWindowInteractor.h" include nil nil [1251 1289])
+            ("vtkActorCollection.h" include nil nil [1290 1321])
+            ("vtkRendererCollection.h" include nil nil [1322 1356])
+            ("vtkWindows.h" include nil nil [1357 1380])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1381 1414])
+            ("vtkSMProxyManager.h" include nil nil [1442 1472])
+            ("vtkSMRenderViewProxy.h" include nil nil [1473 1506])
+            ("vtkVRJugglerRenderer.h" include nil nil [1507 1540])
+            ("vrj/Draw/OpenGL/App.h" include (:system-flag t) nil [1678 1710])
+            ("gadget/Type/PositionInterface.h" include (:system-flag t) nil [1711 1753])
+            ("gadget/Type/DigitalInterface.h" include (:system-flag t) nil [1754 1795])
+            ("GL/gl.h" include (:system-flag t) nil [1796 1814])
+            ("iostream" include (:system-flag t) nil [1815 1834])
+            ("iomanip" include (:system-flag t) nil [1835 1853])
+            ("stdlib.h" include (:system-flag t) nil [1854 1873])
+            ("vrj/Display/DisplayManager.h" include (:system-flag t) nil [1874 1913])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1914 1938])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1939 1965])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1966 1987])
+            ("gmtl" using (:type ("gmtl" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1990 2011])
+            ("vrj" using (:type ("vrj" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2012 2032])
+            ("vtkSMApplication" type
+               (:prototype t
+                :type "class")
+                nil [2064 2087])
+            ("vtkVRJugglerRenderer" type
+               (:prototype t
+                :type "class")
+                nil [2088 2115])
+            ("vtkVRJugglerGUIHelper" type
+               (:superclasses 
+                  ( ("vtkObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("vrj::opengl::App" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2376 2383])
+                    ("New" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2386 2422])
+                    ("vtkTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2438 2460])
+                            ("" variable (:type ("vtkObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2460 2470]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2425 2471])
+                    ("PrintSelf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2489 2501])
+                            ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2502 2519]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2474 2520])
+                    ("Initialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2539 2548])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2549 2562]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2523 2563])
+                    ("Exec" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2567 2586])
+                    ("public" label nil (reparse-symbol classsubparts) [2820 2827])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2830 2850])
+                    ("apiInit" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2853 2878])
+                    ("bufferPreDraw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2881 2910])
+                    ("preFrame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2913 2937])
+                    ("intraFrame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2940 2966])
+                    ("postFrame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2969 2994])
+                    ("contextInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2997 3024])
+                    ("contextPreDraw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3027 3057])
+                    ("draw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3060 3080])
+                    ("getDisplayManager" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("vrj::DisplayManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3083 3124])
+                    ("public" label nil (reparse-symbol classsubparts) [3125 3132])
+                    ("mWand" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3135 3168])
+                    ("mHead" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3221 3254])
+                    ("private" label nil (reparse-symbol classsubparts) [3305 3313])
+                    ("loadParaviewState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3316 3341])
+                    ("loadRemoteParaviewState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3344 3375])
+                    ("initGLState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3378 3397])
+                    ("protected" label nil (reparse-symbol classsubparts) [3398 3408])
+                    ("vtkVRJugglerGUIHelper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3411 3435])
+                    ("vtkVRJugglerGUIHelper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3438 3471])
+                    ("Options" variable
+                       (:pointer 1
+                        :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3474 3503])
+                    ("VRKernel" variable
+                       (:pointer 1
+                        :type ("Kernel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3506 3523])
+                    ("SMApplication" variable
+                       (:pointer 1
+                        :type ("vtkSMApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3527 3559])
+                    ("ShowProgress" variable (:type "int") (reparse-symbol classsubparts) [3562 3579])
+                    ("Filter" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3614 3627])
+                    ("CurrentProgress" variable (:type "int") (reparse-symbol classsubparts) [3630 3650])
+                    ("pxm" variable
+                       (:pointer 1
+                        :type ("vtkSMSessionProxyManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3653 3683])
+                    ("session" variable
+                       (:pointer 1
+                        :type ("vtkSMSession" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3686 3708])
+                    ("rvp" variable
+                       (:pointer 1
+                        :type ("vtkSMRenderViewProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3711 3737])
+                    ("ActiveSources" variable
+                       (:pointer 1
+                        :type ("vtkSMSourceProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3740 3772])
+                    ("ActiveView" variable
+                       (:pointer 1
+                        :type ("vtkSMViewProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3775 3802])
+                    ("mNavMatrix" variable (:type ("Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3941 3962])
+                    ("_rotationMatrix" variable (:type ("Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3965 3991])
+                    ("_renderer" variable
+                       (:pointer 1
+                        :type ("vtkVRJugglerRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3995 4034])
+                    ("_cid" variable (:type ("vtkIdType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4037 4052])
+                    ("CloseCurrentProgress" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4055 4083])
+                    ("private" label nil (reparse-symbol classsubparts) [4084 4092])
+                    ("vtkVRJugglerGUIHelper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4117 4146]))                          
+                        :type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4095 4147])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVRJugglerGUIHelper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4184 4213]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4169 4214]))                  
+                :type "class")
+                nil [2302 4236]))          
+      :file "vtkVRJugglerGUIHelper.h"
+      :pointmax 4275
+      :fsize 4274
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VTKVRJUGGLERGUIHELPER_H_")
+          )
+)
+    (semanticdb-table "vtkVRJugglerOptions.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VTKVRJUGGLEROPTIONS_H_" variable (:constant-flag t) nil [390 412])
+            ("vtkPVOptions.h" include nil nil [494 519])
+            ("vtkVRJugglerOptions" type
+               (:superclasses 
+                  ( ("vtkPVOptions" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [877 884])
+                    ("New" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [887 921])
+                    ("vtkTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vtkVRJugglerOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [937 957])
+                            ("" variable (:type ("vtkPVOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [957 970]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [924 971])
+                    ("PrintSelf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1001])
+                            ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1002 1019]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [974 1020])
+                    ("vtkGetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("JugglerConfigurationFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1041 1066]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1023 1067])
+                    ("vtkGetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("StateFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1088 1098]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1070 1099])
+                    ("protected" label nil (reparse-symbol classsubparts) [1101 1111])
+                    ("vtkVRJugglerOptions" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1114 1136])
+                    ("vtkVRJugglerOptions" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1139 1170])
+                    ("Initialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1173 1199])
+                    ("PostProcess" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1226 1235])
+                            ("argv" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1236 1260]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1202 1261])
+                    ("WrongArgument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("argument" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1290 1311]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1264 1312])
+                    ("vtkSetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("JugglerConfigurationFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1359]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1316 1360])
+                    ("vtkSetStringMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("StateFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1381 1391]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1363 1392])
+                    ("JugglerConfigurationFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1396 1427])
+                    ("StateFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1430 1446])
+                    ("private" label nil (reparse-symbol classsubparts) [1447 1455])
+                    ("vtkVRJugglerOptions" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1478 1505]))                          
+                        :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1458 1506])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1543 1570]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1528 1571]))                  
+                :type "class")
+                nil [827 1593]))          
+      :file "vtkVRJugglerOptions.h"
+      :pointmax 1632
+      :fsize 1631
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VTKVRJUGGLEROPTIONS_H_")
+          )
+)
+    (semanticdb-table "vtkVRJugglerRenderer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VTKVRJUGGLERRENDERER_H_" variable (:constant-flag t) nil [424 447])
+            ("vpr/Sync/Mutex.h" include (:system-flag t) nil [529 556])
+            ("vpr/Thread/Thread.h" include (:system-flag t) nil [557 587])
+            ("vrj/Draw/OpenGL/ContextData.h" include (:system-flag t) nil [588 628])
+            ("vtkSMRenderViewProxy.h" include (:system-flag t) nil [629 662])
+            ("vtkXOpenGLRenderWindow.h" include (:system-flag t) nil [663 698])
+            ("vtkActorCollection.h" include (:system-flag t) nil [699 730])
+            ("vtkRenderer.h" include (:system-flag t) nil [731 755])
+            ("iostream" include (:system-flag t) nil [756 775])
+            ("string" include (:system-flag t) nil [776 793])
+            ("Navigation/vtkVRJNavigation.h" include nil nil [794 834])
+            ("vtkActorCollection" type
+               (:prototype t
+                :type "class")
+                nil [836 861])
+            ("vtkVJRenderer" type
+               (:prototype t
+                :type "class")
+                nil [862 882])
+            ("vrjActorCollection" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("data" variable
+                             (:pointer 1
+                              :type ("vtkActorCollection" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [902 927])
+                          ("setData" function
+                             (:arguments 
+                                ( ("temp" variable
+                                     (:pointer 1
+                                      :type ("vtkActorCollection" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [943 968]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [930 981]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [883 1002])
+            ("vtkVRJugglerRenderer" type
+               (:superclasses 
+                  ( ("vtkXOpenGLRenderWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1510 1517])
+                    ("vtkVRJugglerRenderer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vtkVRJugglerRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1520 1543])
+                    ("vtkVRJugglerRenderer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type ("vtkSMRenderViewProxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1567 1591]))                          
+                        :type ("vtkVRJugglerRenderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1546 1602])
+                    ("vtkVRJugglerRenderer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1636 1641]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1605 1642])
+                    ("reload" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1710 1724])
+                    ("setDrawManager" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("drawManager" variable
+                               (:pointer 1
+                                :type ("vrj::opengl::DrawManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1747 1786]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1727 1787])
+                    ("getCenter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("center" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1805 1822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1790 1823])
+                    ("getBounds" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bounds" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1841 1858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1826 1859])
+                    ("contextInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1862 1881])
+                    ("contextPostFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable (:type "bool") (reparse-symbol arg-sub-list) [1906 1918]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1884 1919])
+                    ("contextInitVtk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1922 1945])
+                    ("contextClose" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1948 1969])
+                    ("draw" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1972 1985])
+                    ("protected" label nil (reparse-symbol classsubparts) [1987 1997])
+                    ("MakeCurrent" function (:type "void") (reparse-symbol classsubparts) [2000 2030])
+                    ("drawOpaqueGeometry" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2051 2077])
+                    ("drawTranslucentPolygonalGeometry" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2080 2120])
+                    ("contextInitOpenGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2123 2149])
+                    ("render" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2152 2166])
+                    ("protected" label nil (reparse-symbol classsubparts) [2168 2178])
+                    ("_drawManager" variable
+                       (:pointer 1
+                        :type ("vrj::opengl::DrawManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2181 2220])
+                    ("_actors" variable (:type ("vrj::opengl::ContextData" type
+                         (:template-specifier 
+                            ( ("vtkActorCollection" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2223 2277])
+                    ("_props" variable (:type ("vrj::opengl::ContextData" type
+                         (:template-specifier 
+                            ( ("vtkPropCollection" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2280 2332])
+                    ("_renderer" variable (:type ("vrj::opengl::ContextData" type
+                         (:template-specifier 
+                            ( ("vtkVJRenderer" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2335 2386])
+                    ("_rvp" variable
+                       (:pointer 1
+                        :type ("vtkSMRenderViewProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2389 2416])
+                    ("_reload" variable (:type "bool") (reparse-symbol classsubparts) [2419 2432]))                  
+                :type "class")
+                nil [1449 2464]))          
+      :file "vtkVRJugglerRenderer.h"
+      :pointmax 2509
+      :fsize 2508
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VTKVRJUGGLERRENDERER_H_")
+          )
+)
+    (semanticdb-table "main.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkVRJugglerGUIHelper.h" include nil nil [406 440])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1029 1038])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1039 1052]))                  
+                :type "int")
+                nil [1020 1884]))          
+      :file "main.cxx"
+      :pointmax 1886
+      :fsize 1885
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkVRJugglerOptions.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkVRJugglerOptions.h" include nil nil [579 611])
+            ("vtkObjectFactory.h" include nil nil [612 641])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [642 675])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [676 705])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkVRJugglerOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [728 748]))                  
+                :type "int")
+                nil [708 749])
+            ("vtkVRJugglerOptions" function
+               (:constructor-flag t
+                :parent "vtkVRJugglerOptions"
+                :type ("vtkVRJugglerOptions" type (:type "class") nil nil))
+                nil [869 1011])
+            ("vtkVRJugglerOptions" function
+               (:destructor-flag t
+                :parent "vtkVRJugglerOptions"
+                :type "void")
+                nil [1013 1060])
+            ("Initialize" function
+               (:parent "vtkVRJugglerOptions"
+                :type "void")
+                nil [1333 1626])
+            ("PostProcess" function
+               (:parent "vtkVRJugglerOptions"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1977 1986])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1987 2011]))                  
+                :type "int")
+                nil [1940 2686])
+            ("WrongArgument" function
+               (:parent "vtkVRJugglerOptions"
+                :arguments 
+                  ( ("argument" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2998 3019]))                  
+                :type "int")
+                nil [2959 3075])
+            ("PrintSelf" function
+               (:parent "vtkVRJugglerOptions"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3426 3438])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3439 3456]))                  
+                :type "void")
+                nil [3390 3634]))          
+      :file "vtkVRJugglerOptions.cxx"
+      :pointmax 3635
+      :fsize 3634
+      :lastmodtime '(22552 65240 454903 886000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vtkVRJugglerRenderer.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vtkVRJugglerRenderer.h" include nil nil [451 484])
+            ("vtkSMProxyManager.h" include (:system-flag t) nil [485 515])
+            ("vrj/Draw/OpenGL/DrawManager.h" include (:system-flag t) nil [517 557])
+            ("vrj/Draw/OpenGL/UserData.h" include (:system-flag t) nil [558 595])
+            ("vrj/Draw/OpenGL/Window.h" include (:system-flag t) nil [596 631])
+            ("vrj/Display/Viewport.h" include (:system-flag t) nil [632 665])
+            ("vtkVJRenderer.h" include (:system-flag t) nil [666 692])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [694 714])
+            ("vrj" using (:type ("vrj" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [715 735])
+            ("vtkVRJugglerRenderer" function
+               (:constructor-flag t
+                :parent "vtkVRJugglerRenderer"
+                :type ("vtkVRJugglerRenderer" type (:type "class") nil nil))
+                nil [855 943])
+            ("vtkVRJugglerRenderer" function
+               (:destructor-flag t
+                :parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [945 994])
+            ("setDrawManager" function
+               (:parent "vtkVRJugglerRenderer"
+                :arguments 
+                  ( ("drawManager" variable
+                       (:pointer 1
+                        :type ("vrj::opengl::DrawManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1283 1322]))                  
+                :type "void")
+                nil [1240 1392])
+            ("getCenter" function
+               (:parent "vtkVRJugglerRenderer"
+                :arguments 
+                  ( ("center" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1772 1789]))                  
+                :type "void")
+                nil [1734 1951])
+            ("getBounds" function
+               (:parent "vtkVRJugglerRenderer"
+                :arguments 
+                  ( ("bounds" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2246 2263]))                  
+                :type "void")
+                nil [2209 2997])
+            ("contextInit" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [3223 3800])
+            ("contextInitOpenGL" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [3983 5429])
+            ("contextInitVtk" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [5619 6050])
+            ("reload" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [6052 6677])
+            ("contextClose" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [6882 7197])
+            ("draw" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [7414 7570])
+            ("render" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [7572 7653])
+            ("drawOpaqueGeometry" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [7820 8318])
+            ("drawTranslucentPolygonalGeometry" function
+               (:parent "vtkVRJugglerRenderer"
+                :type "void")
+                nil [8496 8878])
+            ("contextPostFrame" function
+               (:parent "vtkVRJugglerRenderer"
+                :arguments 
+                  ( ("updated" variable (:type "bool") (reparse-symbol arg-sub-list) [8924 8937]))                  
+                :type "void")
+                nil [8880 9555]))          
+      :file "vtkVRJugglerRenderer.cxx"
+      :pointmax 9561
+      :fsize 9560
+      :lastmodtime '(22569 46227 803212 350000)
+      :unmatched-syntax nil))
+  :file "!home!nshetty!apps!pvjuggler!PVJuggler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,65 @@
+;; Object Threshold/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Threshold/"
+  :tables (list 
+   (semanticdb-table "VTKPipeline.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [650 668])
+            ("iostream" include (:system-flag t) nil [669 688])
+            ("Timer.h" include nil nil [689 707])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [709 742])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [743 776])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [777 815])
+            ("dax/cont/VectorOperations.h" include (:system-flag t) nil [816 854])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [855 886])
+            ("dax/worklet/Magnitude.worklet" include (:system-flag t) nil [888 928])
+            ("dax/worklet/Threshold.worklet" include (:system-flag t) nil [929 969])
+            ("vector" include (:system-flag t) nil [972 989])
+            ("vtkNew.h" include (:system-flag t) nil [991 1010])
+            ("vtkFloatArray.h" include (:system-flag t) nil [1011 1037])
+            ("vtkImageData.h" include (:system-flag t) nil [1038 1063])
+            ("vtkThreshold.h" include (:system-flag t) nil [1064 1089])
+            ("vtkPointData.h" include (:system-flag t) nil [1090 1115])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [1116 1144])
+            ("vtkTrivialProducer.h" include (:system-flag t) nil [1145 1176])
+            ("vtkUnstructuredGrid.h" include (:system-flag t) nil [1177 1209])
+            ("unnamed" type
+               (:members 
+                  ( ("PrintResults" function
+                       (:arguments 
+                          ( ("pipeline" variable (:type "int") (reparse-symbol arg-sub-list) [1242 1255])
+                            ("time" variable (:type "double") (reparse-symbol arg-sub-list) [1256 1268])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1269 1286]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1224 1450])
+                    ("RunVTKPipeline" function
+                       (:arguments 
+                          ( ("dgrid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1472 1510])
+                            ("grid" variable
+                               (:pointer 1
+                                :type ("vtkImageData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1511 1530]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1452 3382]))                  
+                :type "namespace")
+                nil [1212 3385]))          
+    :file "VTKPipeline.h"
+    :pointmax 3410
+    :fsize 3409
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!Benchmarks!Threshold!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

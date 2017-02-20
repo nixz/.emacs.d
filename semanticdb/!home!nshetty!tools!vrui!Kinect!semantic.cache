@@ -1,0 +1,875 @@
+;; Object Kinect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Kinect/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "makefile"
+      :pointmax 18733
+      :fsize 20932
+      :lastmodtime '(21744 62467 23976 993000)
+      :unmatched-syntax nil)
+    (semanticdb-table "CalibrateCameras.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1178 1197])
+            ("string.h" include (:system-flag t) nil [1198 1217])
+            ("iostream" include (:system-flag t) nil [1218 1237])
+            ("IO/File.h" include (:system-flag t) nil [1238 1258])
+            ("IO/OpenFile.h" include (:system-flag t) nil [1259 1283])
+            ("IO/CSVSource.h" include (:system-flag t) nil [1284 1309])
+            ("Math/Math.h" include (:system-flag t) nil [1310 1332])
+            ("Math/Matrix.h" include (:system-flag t) nil [1333 1357])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1368 1377])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1377 1390]))                  
+                :type "int")
+                nil [1359 5709]))          
+      :file "CalibrateCameras.cpp"
+      :pointmax 5710
+      :fsize 5735
+      :lastmodtime '(21726 30969 314235 634000)
+      :unmatched-syntax nil)
+    (semanticdb-table "AlignPoints.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [1122 1141])
+            ("stdio.h" include (:system-flag t) nil [1142 1160])
+            ("iostream" include (:system-flag t) nil [1161 1180])
+            ("vector" include (:system-flag t) nil [1181 1198])
+            ("Misc/File.h" include (:system-flag t) nil [1199 1221])
+            ("IO/ValueSource.h" include (:system-flag t) nil [1222 1249])
+            ("Math/Constants.h" include (:system-flag t) nil [1250 1277])
+            ("Math/Matrix.h" include (:system-flag t) nil [1278 1302])
+            ("GEOMETRY_NONSTANDARD_TEMPLATES" variable (:constant-flag t) nil [1311 1341])
+            ("Geometry/Point.h" include (:system-flag t) nil [1342 1369])
+            ("Geometry/AffineCombiner.h" include (:system-flag t) nil [1370 1406])
+            ("Geometry/Box.h" include (:system-flag t) nil [1407 1432])
+            ("Geometry/GeometryValueCoders.h" include (:system-flag t) nil [1433 1474])
+            ("Geometry/OutputOperators.h" include (:system-flag t) nil [1475 1512])
+            ("GL/gl.h" include (:system-flag t) nil [1513 1531])
+            ("GL/GLGeometryWrappers.h" include (:system-flag t) nil [1532 1566])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1567 1589])
+            ("Vrui/OpenFile.h" include (:system-flag t) nil [1590 1616])
+            ("Vrui/Application.h" include (:system-flag t) nil [1617 1646])
+            ("ONTransformFitter.h" include nil nil [1648 1678])
+            ("OGTransformFitter.h" include nil nil [1679 1709])
+            ("PTransformFitter.h" include nil nil [1710 1739])
+            ("LevenbergMarquardtMinimizer.h" include nil nil [1740 1780])
+            ("findTransform" function
+               (:template 
+                  ( ("TransformFitterParam" type (:type "class") nil nil))                  
+                :type ("TransformFitterParam::Transform" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("std::vector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1882 1894])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("TransformFitterParam::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1894 1931])
+                    ("" variable (:type ("points0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1933 1941])
+                    ("" variable (:type ("std::vector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1956 1968])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("TransformFitterParam::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1968 2005])
+                    ("" variable (:type ("points1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2007 2015]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [1782 3953])
+            ("findTransform2" function
+               (:template 
+                  ( ("TransformFitterParam" type (:type "class") nil nil))                  
+                :type ("TransformFitterParam::Transform" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("std::vector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4056 4068])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("TransformFitterParam::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4068 4105])
+                    ("" variable (:type ("points0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4107 4115])
+                    ("" variable (:type ("std::vector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4131 4143])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("TransformFitterParam::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4143 4180])
+                    ("" variable (:type ("points1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4182 4190]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [3955 4247])
+            ("findTransform2" function
+               (:type ("OGTransformFitter::Transform" type (:type "class") nil nil)
+                :arguments 
+                  ( ("points0" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("OGTransformFitter::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4331 4378])
+                    ("points1" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("OGTransformFitter::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4413 4460]))                  
+                :typemodifiers ("inline")
+                :template-specifier 
+                  ( ("OGTransformFitter" type nil nil nil))                  )
+                nil [4249 10679])
+            ("transform" function
+               (:template 
+                  ( ("PointParam" type (:type "class") nil nil)
+                    ("TransformParam" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("points" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("PointParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10754 10786])
+                    ("transform" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TransformParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10788 10820]))                  
+                :typemodifiers ("inline"))
+                nil [10681 10981])
+            ("AlignPoints" type
+               (:superclasses 
+                  ( ("Vrui::Application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [11055 11063])
+                    ("Scalar" type
+                       (:typedef ("double")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11065 11087])
+                    ("Point" type
+                       (:typedef ("Geometry::Point" type
+                             (:template-specifier 
+                                ( ("Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11089 11129])
+                    ("Box" type
+                       (:typedef ("Geometry::Box" type
+                             (:template-specifier 
+                                ( ("Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11131 11167])
+                    ("ONTransform" type
+                       (:typedef ("Geometry::OrthonormalTransformation" type
+                             (:template-specifier 
+                                ( ("Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11169 11235])
+                    ("OGTransform" type
+                       (:typedef ("Geometry::OrthogonalTransformation" type
+                             (:template-specifier 
+                                ( ("Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11237 11302])
+                    ("PTransform" type
+                       (:typedef ("Geometry::ProjectiveTransformation" type
+                             (:template-specifier 
+                                ( ("Scalar" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11304 11368])
+                    ("points" variable
+                       (:dereference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11388 11417])
+                    ("public" label nil (reparse-symbol classsubparts) [11479 11486])
+                    ("AlignPoints" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [11500 11510])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11510 11517])
+                            ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11518 11523])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11523 11530])
+                            ("" variable (:type ("appDefaults" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11531 11543]))                          
+                        :type ("AlignPoints" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11488 11544])
+                    ("display" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11607 11634]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11586 11641]))                  
+                :type "class")
+                nil [10983 11645])
+            ("AlignPoints" function
+               (:constructor-flag t
+                :parent "AlignPoints"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11672 11682])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11682 11689])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11690 11695])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11695 11702])
+                    ("" variable (:type ("appDefaults" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11703 11715]))                  
+                :type ("AlignPoints" type (:type "class") nil nil))
+                nil [11647 15729])
+            ("display" function
+               (:parent "AlignPoints"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15757 15784]))                  
+                :type "void")
+                nil [15731 16437])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16448 16457])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16457 16470]))                  
+                :type "int")
+                nil [16439 16564]))          
+      :file "AlignPoints.cpp"
+      :pointmax 16565
+      :fsize 16621
+      :lastmodtime '(21744 62467 19976 993000)
+      :unmatched-syntax '((punctuation 11701 . 11702) (punctuation 11688 . 11689) (punctuation 11529 . 11530) (punctuation 11516 . 11517) (punctuation 4180 . 4181) (punctuation 4179 . 4180) (punctuation 4142 . 4143) (punctuation 4105 . 4106) (punctuation 4104 . 4105) (punctuation 4067 . 4068) (punctuation 2005 . 2006) (punctuation 2004 . 2005) (punctuation 1967 . 1968) (punctuation 1931 . 1932) (punctuation 1930 . 1931) (punctuation 1893 . 1894))
+      :lexical-table 
+        '(("GEOMETRY_NONSTANDARD_TEMPLATES")
+          )
+)
+    (semanticdb-table "ONTransformFitter.h"
+      :file "ONTransformFitter.h"
+      :fsize 5520
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "OGTransformFitter.h"
+      :file "OGTransformFitter.h"
+      :fsize 6001
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "PTransformFitter.h"
+      :file "PTransformFitter.h"
+      :fsize 4757
+      :lastmodtime '(21744 62467 23976 993000))
+    (semanticdb-table "LevenbergMarquardtMinimizer.h"
+      :file "LevenbergMarquardtMinimizer.h"
+      :fsize 5500
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "NewCalibrateCameras.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("utility" include (:system-flag t) nil [1111 1129])
+            ("vector" include (:system-flag t) nil [1130 1147])
+            ("iostream" include (:system-flag t) nil [1148 1167])
+            ("iomanip" include (:system-flag t) nil [1168 1186])
+            ("IO/File.h" include (:system-flag t) nil [1187 1207])
+            ("IO/OpenFile.h" include (:system-flag t) nil [1208 1232])
+            ("Math/Math.h" include (:system-flag t) nil [1233 1255])
+            ("Math/Matrix.h" include (:system-flag t) nil [1256 1280])
+            ("Geometry/Point.h" include (:system-flag t) nil [1281 1308])
+            ("Geometry/Vector.h" include (:system-flag t) nil [1309 1337])
+            ("Geometry/Plane.h" include (:system-flag t) nil [1338 1365])
+            ("Geometry/ProjectiveTransformation.h" include (:system-flag t) nil [1366 1412])
+            ("Geometry/OutputOperators.h" include (:system-flag t) nil [1413 1450])
+            ("Geometry/GeometryMarshallers.h" include (:system-flag t) nil [1451 1492])
+            ("Homography" type
+               (:typedef ("Geometry::ProjectiveTransformation" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("2"))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1494 1558])
+            ("Point" type
+               (:typedef ("Homography::Point" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1559 1591])
+            ("Vector" type
+               (:typedef ("Point::Vector" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1592 1621])
+            ("Plane" type
+               (:typedef ("Geometry::Plane" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("3"))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1622 1662])
+            ("TiePoint" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1701 1708])
+                    ("depthHom" variable (:type ("Homography" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1710 1730])
+                    ("gridPlane" variable (:type ("Plane" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1752 1768])
+                    ("colorHom" variable (:type ("Homography" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1817 1837]))                  
+                :type "struct")
+                nil [1664 1861])
+            ("calibrate" function
+               (:arguments 
+                  ( ("tiePoints" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("TiePoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1878 1917])
+                    ("gridSize" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1917 1939])
+                    ("tileSize" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1939 1964])
+                    ("depthFrameSize" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1964 2001])
+                    ("colorFrameSize" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2001 2038]))                  
+                :type "void")
+                nil [1863 10565])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10576 10585])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10585 10598]))                  
+                :type "int")
+                nil [10567 11856]))          
+      :file "NewCalibrateCameras.cpp"
+      :pointmax 11857
+      :fsize 11895
+      :lastmodtime '(21726 30969 318235 634000)
+      :unmatched-syntax nil)
+    (semanticdb-table "RawKinectViewer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RawKinectViewer.h" include nil nil [1098 1126])
+            ("stdexcept" include (:system-flag t) nil [1128 1148])
+            ("iostream" include (:system-flag t) nil [1149 1168])
+            ("Misc/SelfDestructPointer.h" include (:system-flag t) nil [1169 1206])
+            ("Misc/FunctionCalls.h" include (:system-flag t) nil [1207 1238])
+            ("IO/File.h" include (:system-flag t) nil [1239 1259])
+            ("IO/Directory.h" include (:system-flag t) nil [1260 1285])
+            ("Geometry/Point.h" include (:system-flag t) nil [1286 1313])
+            ("Geometry/Ray.h" include (:system-flag t) nil [1314 1339])
+            ("Geometry/OrthogonalTransformation.h" include (:system-flag t) nil [1340 1386])
+            ("GL/gl.h" include (:system-flag t) nil [1387 1405])
+            ("GL/Extensions/GLARBTextureNonPowerOfTwo.h" include (:system-flag t) nil [1406 1458])
+            ("GL/GLContextData.h" include (:system-flag t) nil [1459 1488])
+            ("Images/RGBImage.h" include (:system-flag t) nil [1489 1517])
+            ("Images/WriteImageFile.h" include (:system-flag t) nil [1518 1552])
+            ("GLMotif/PopupMenu.h" include (:system-flag t) nil [1553 1583])
+            ("GLMotif/Menu.h" include (:system-flag t) nil [1584 1609])
+            ("GLMotif/Button.h" include (:system-flag t) nil [1610 1637])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1638 1660])
+            ("Vrui/ToolManager.h" include (:system-flag t) nil [1661 1690])
+            ("Vrui/OpenFile.h" include (:system-flag t) nil [1691 1717])
+            ("Kinect/Camera.h" include (:system-flag t) nil [1718 1744])
+            ("PauseTool.h" include nil nil [1746 1768])
+            ("TiePointTool.h" include nil nil [1769 1794])
+            ("LineTool.h" include nil nil [1795 1816])
+            ("DepthCorrectionTool.h" include nil nil [1817 1849])
+            ("GridTool.h" include nil nil [1850 1871])
+            ("PlaneTool.h" include nil nil [1872 1894])
+            ("PointPlaneTool.h" include nil nil [1895 1922])
+            ("CalibrationCheckTool.h" include nil nil [1923 1956])
+            ("DataItem" function
+               (:constructor-flag t
+                :parent "RawKinectViewer::DataItem"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2127 2132]))                  
+                :type ("DataItem" type (:type "class") nil nil))
+                nil [2091 2324])
+            ("DataItem" function
+               (:destructor-flag t
+                :parent "RawKinectViewer::DataItem"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2363 2368]))                  
+                :type "void")
+                nil [2326 2482])
+            ("mapDepth" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2618 2633])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2633 2648])
+                    ("depth" variable (:type "float") (reparse-symbol arg-sub-list) [2648 2660])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("GLubyte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2660 2676]))                  
+                :type "void")
+                nil [2587 3828])
+            ("calcImagePoint" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("physicalRay" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vrui::Ray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3874 3903]))                  
+                :type ("Vrui::Point" type (:type "class") nil nil))
+                nil [3830 4244])
+            ("colorStreamingCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("frameBuffer" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Kinect::FrameBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4291 4330]))                  
+                :type "void")
+                nil [4246 5827])
+            ("depthStreamingCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("frameBuffer" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Kinect::FrameBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5874 5913]))                  
+                :type "void")
+                nil [5829 6104])
+            ("requestAverageFrame" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("callback" variable
+                       (:pointer 1
+                        :type ("RawKinectViewer::AverageFrameReadyCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6148 6201]))                  
+                :type "void")
+                nil [6106 7067])
+            ("locatorButtonPressCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::LocatorTool::ButtonPressCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7118 7169]))                  
+                :type "void")
+                nil [7069 7881])
+            ("resetNavigationCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7929 7956]))                  
+                :type "void")
+                nil [7883 8102])
+            ("captureBackgroundCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8152 8179]))                  
+                :type "void")
+                nil [8104 8279])
+            ("removeBackgroundCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8328 8384]))                  
+                :type "void")
+                nil [8281 8600])
+            ("averageFramesCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8646 8702]))                  
+                :type "void")
+                nil [8602 8939])
+            ("saveAverageFrameOKCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::FileSelectionDialog::OKCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8990 9043]))                  
+                :type "void")
+                nil [8941 10042])
+            ("saveAverageFrameCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10091 10118]))                  
+                :type "void")
+                nil [10044 11301])
+            ("saveColorFrameOKCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("GLMotif::FileSelectionDialog::OKCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11350 11403]))                  
+                :type "void")
+                nil [11303 12305])
+            ("saveColorFrameCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12352 12379]))                  
+                :type "void")
+                nil [12307 13358])
+            ("createMainMenu" function
+               (:pointer 1
+                :parent "RawKinectViewer"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13412 13417]))                  
+                :type ("GLMotif::PopupMenu" type (:type "class") nil nil))
+                nil [13360 15576])
+            ("createAverageDepthFrameDialog" function
+               (:pointer 1
+                :parent "RawKinectViewer"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15647 15652]))                  
+                :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                nil [15578 16015])
+            ("RawKinectViewer" function
+               (:constructor-flag t
+                :parent "RawKinectViewer"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16050 16060])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16060 16067])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16068 16073])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16073 16080])
+                    ("" variable (:type ("appDefaults" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16081 16093]))                  
+                :type ("RawKinectViewer" type (:type "class") nil nil))
+                nil [16017 21494])
+            ("RawKinectViewer" function
+               (:destructor-flag t
+                :parent "RawKinectViewer"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21530 21535]))                  
+                :type "void")
+                nil [21496 21771])
+            ("toolCreationCallback" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::ToolManager::ToolCreationCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21816 21868]))                  
+                :type "void")
+                nil [21773 22236])
+            ("frame" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22266 22271]))                  
+                :type "void")
+                nil [22238 24160])
+            ("display" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24192 24219]))                  
+                :type "void")
+                nil [24162 30704])
+            ("initContext" function
+               (:parent "RawKinectViewer"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30740 30767]))                  
+                :type "void")
+                nil [30706 32165])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [32176 32185])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32185 32198]))                  
+                :type "int")
+                nil [32167 32420]))          
+      :file "RawKinectViewer.cpp"
+      :pointmax 32421
+      :fsize 32572
+      :lastmodtime '(21726 30969 322235 634000)
+      :unmatched-syntax '((punctuation 16079 . 16080) (punctuation 16066 . 16067)))
+    (semanticdb-table "RawKinectViewer.h"
+      :file "RawKinectViewer.h"
+      :fsize 7737
+      :lastmodtime '(21726 30969 322235 634000))
+    (semanticdb-table "PauseTool.h"
+      :file "PauseTool.h"
+      :fsize 2020
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "TiePointTool.h"
+      :file "TiePointTool.h"
+      :fsize 4614
+      :lastmodtime '(21726 30969 322235 634000))
+    (semanticdb-table "LineTool.h"
+      :file "LineTool.h"
+      :fsize 3082
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "DepthCorrectionTool.h"
+      :file "DepthCorrectionTool.h"
+      :fsize 2928
+      :lastmodtime '(21726 30969 314235 634000))
+    (semanticdb-table "GridTool.h"
+      :file "GridTool.h"
+      :fsize 4401
+      :lastmodtime '(21726 30969 314235 634000))
+    (semanticdb-table "PlaneTool.h"
+      :file "PlaneTool.h"
+      :fsize 2378
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "PointPlaneTool.h"
+      :file "PointPlaneTool.h"
+      :fsize 2308
+      :lastmodtime '(21726 30969 318235 634000))
+    (semanticdb-table "CalibrationCheckTool.h"
+      :file "CalibrationCheckTool.h"
+      :fsize 3038
+      :lastmodtime '(21726 30969 314235 634000))
+    (semanticdb-table "TiePointTool.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TiePointTool.h" include nil nil [1052 1077])
+            ("vector" include (:system-flag t) nil [1079 1096])
+            ("iostream" include (:system-flag t) nil [1097 1116])
+            ("Math/Math.h" include (:system-flag t) nil [1117 1139])
+            ("GL/GLTransformationWrappers.h" include (:system-flag t) nil [1140 1180])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1181 1203])
+            ("Vrui/ToolManager.h" include (:system-flag t) nil [1204 1233])
+            ("Vrui/DisplayState.h" include (:system-flag t) nil [1234 1264])
+            ("RawKinectViewer.h" include nil nil [1266 1294])
+            ("BlobProperty::projection" variable (:type ("PTransform" type (:type "class") nil nil)) nil [1560 1629])
+            ("PixelComparer" type
+               (:type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1760 1767])
+                    ("Pixel" type
+                       (:typedef ("Kinect::FrameSource::DepthPixel" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1769 1815])
+                    ("private" label nil (reparse-symbol classsubparts) [1835 1843])
+                    ("minPixelValue" variable (:type ("Pixel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1845 1865])
+                    ("maxPixelValue" variable (:type ("Pixel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1898 1918])
+                    ("public" label nil (reparse-symbol classsubparts) [1989 1996])
+                    ("PixelComparer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sPixelValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pixel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2012 2037])
+                            ("sThreshold" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2037 2061]))                          
+                        :type ("PixelComparer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1998 2294])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("pixel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pixel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2329 2348]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2313 2415]))                  
+                :template-specifier 
+                  ( ("Kinect::FrameSource::DepthPixel" type nil nil nil))                  )
+                nil [1631 2419])
+            ("PixelComparer" type
+               (:type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2538 2545])
+                    ("Pixel" type
+                       (:typedef ("GLColor" type
+                             (:template-specifier 
+                                ( ("GLubyte" type nil nil nil)
+                                  ("3"))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2547 2580])
+                    ("private" label nil (reparse-symbol classsubparts) [2600 2608])
+                    ("minPixelValue" variable (:type ("Pixel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2610 2630])
+                    ("maxPixelValue" variable (:type ("Pixel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2680 2700])
+                    ("public" label nil (reparse-symbol classsubparts) [2788 2795])
+                    ("PixelComparer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sPixelValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pixel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2811 2836])
+                            ("sThreshold" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2836 2860]))                          
+                        :type ("PixelComparer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2797 3158])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("pixel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pixel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3193 3212]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3177 3360]))                  
+                :template-specifier 
+                  ( ("GLColor" type nil nil nil))                  )
+                nil [2421 3364])
+            ("TiePointTool::factory" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("TiePointToolFactory" type (:type "class") nil nil))
+                nil [3484 3529])
+            ("initClass" function
+               (:pointer 1
+                :parent "TiePointTool"
+                :arguments 
+                  ( ("toolManager" variable
+                       (:reference 1
+                        :type ("Vrui::ToolManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3670 3701]))                  
+                :type ("TiePointToolFactory" type (:type "class") nil nil))
+                nil [3625 4122])
+            ("TiePointTool" function
+               (:constructor-flag t
+                :parent "TiePointTool"
+                :arguments 
+                  ( ("factory" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Vrui::ToolFactory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4151 4184])
+                    ("inputAssignment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vrui::ToolInputAssignment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4184 4233]))                  
+                :type ("TiePointTool" type (:type "class") nil nil))
+                nil [4124 4324])
+            ("TiePointTool" function
+               (:destructor-flag t
+                :parent "TiePointTool"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4354 4359]))                  
+                :type "void")
+                nil [4326 4365])
+            ("getFactory" function
+               (:pointer 1
+                :parent "TiePointTool"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4417 4422]))                  
+                :type ("Vrui::ToolFactory" type (:type "class") nil nil))
+                nil [4367 4451])
+            ("buttonCallback" function
+               (:parent "TiePointTool"
+                :arguments 
+                  ( ("buttonSlotIndex" variable (:type "int") (reparse-symbol arg-sub-list) [4487 4507])
+                    ("cbData" variable
+                       (:pointer 1
+                        :type ("Vrui::InputDevice::ButtonCallbackData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4507 4553]))                  
+                :type "void")
+                nil [4453 8673])
+            ("display" function
+               (:parent "TiePointTool"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8702 8729]))                  
+                :type "void")
+                nil [8675 10004]))          
+      :file "TiePointTool.cpp"
+      :pointmax 10005
+      :fsize 10046
+      :lastmodtime '(21726 30969 322235 634000)
+      :unmatched-syntax '((punctuation 1559 . 1560) (punctuation 1558 . 1559) (punctuation 1557 . 1558) (symbol 1547 . 1557) (punctuation 1546 . 1547) (punctuation 1545 . 1546) (symbol 1534 . 1545) (punctuation 1533 . 1534) (punctuation 1532 . 1533) (symbol 1526 . 1532) (punctuation 1525 . 1526) (symbol 1513 . 1525))))
+  :file "!home!nshetty!tools!vrui!Kinect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

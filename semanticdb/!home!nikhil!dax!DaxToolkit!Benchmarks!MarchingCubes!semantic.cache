@@ -1,0 +1,198 @@
+;; Object MarchingCubes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MarchingCubes/"
+  :tables (list 
+   (semanticdb-table "Pipeline.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [650 668])
+            ("iostream" include (:system-flag t) nil [669 688])
+            ("Timer.h" include nil nil [689 707])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [709 742])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [743 774])
+            ("dax/cont/ScheduleGenerateTopology.h" include (:system-flag t) nil [775 821])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [822 855])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [856 894])
+            ("dax/cont/VectorOperations.h" include (:system-flag t) nil [895 933])
+            ("dax/worklet/Magnitude.worklet" include (:system-flag t) nil [935 975])
+            ("dax/worklet/MarchingCubes.worklet" include (:system-flag t) nil [976 1020])
+            ("dax/worklet/MarchingCubes.worklet" include (:system-flag t) nil [1021 1065])
+            ("vector" include (:system-flag t) nil [1067 1084])
+            ("iostream" include (:system-flag t) nil [1085 1104])
+            ("fstream" include (:system-flag t) nil [1105 1123])
+            ("MAKE_STRING2" variable (:constant-flag t) nil [1133 1145])
+            ("MAKE_STRING1" variable (:constant-flag t) nil [1160 1172])
+            ("DEVICE_ADAPTER" variable (:constant-flag t) nil [1200 1214])
+            ("unnamed" type
+               (:members 
+                  ( ("ISOVALUE" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1274 1301])
+                    ("PrintResults" function
+                       (:arguments 
+                          ( ("pipeline" variable (:type "int") (reparse-symbol arg-sub-list) [1321 1334])
+                            ("time" variable (:type "double") (reparse-symbol arg-sub-list) [1335 1347]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1303 1514])
+                    ("RunDAXPipeline" function
+                       (:arguments 
+                          ( ("grid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1536 1573]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1516 3311]))                  
+                :type "namespace")
+                nil [1261 3315]))          
+    :file "Pipeline.h"
+    :pointmax 3340
+    :fsize 3339
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAKE_STRING1" (spp-arg-list ("x") 1172 . 1175) . ((symbol "MAKE_STRING2" 1176 . 1188) (semantic-list "(x)" 1188 . 1191)))
+          ("MAKE_STRING2" (spp-arg-list ("x") 1145 . 1148) . ((punctuation "#" 1149 . 1150) (symbol "x" 1150 . 1151)))
+          ("DEVICE_ADAPTER" . ((symbol "MAKE_STRING1" 1215 . 1227) (semantic-list "(DAX_DEFAULT_DEVICE_ADAPTER_TAG)" 1227 . 1259)))
+          )
+
+    )
+   (semanticdb-table "VTKPipeline.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [650 668])
+            ("iostream" include (:system-flag t) nil [669 688])
+            ("Timer.h" include nil nil [689 707])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [709 742])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [743 776])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [777 815])
+            ("dax/cont/VectorOperations.h" include (:system-flag t) nil [816 854])
+            ("dax/cont/Scheduler.h" include (:system-flag t) nil [855 886])
+            ("dax/worklet/Magnitude.worklet" include (:system-flag t) nil [888 928])
+            ("vector" include (:system-flag t) nil [931 948])
+            ("vtkNew.h" include (:system-flag t) nil [950 969])
+            ("vtkFloatArray.h" include (:system-flag t) nil [970 996])
+            ("vtkImageData.h" include (:system-flag t) nil [997 1022])
+            ("vtkMarchingCubes.h" include (:system-flag t) nil [1023 1052])
+            ("vtkPointData.h" include (:system-flag t) nil [1053 1078])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [1079 1107])
+            ("vtkTrivialProducer.h" include (:system-flag t) nil [1108 1139])
+            ("vtkPolyData.h" include (:system-flag t) nil [1140 1164])
+            ("unnamed" type
+               (:members 
+                  ( ("ISOVALUE" variable (:type ("dax::Scalar" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1181 1208])
+                    ("PrintResults" function
+                       (:arguments 
+                          ( ("pipeline" variable (:type "int") (reparse-symbol arg-sub-list) [1229 1242])
+                            ("time" variable (:type "double") (reparse-symbol arg-sub-list) [1243 1255])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1256 1273]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1211 1437])
+                    ("RunVTKPipeline" function
+                       (:arguments 
+                          ( ("dgrid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1459 1497])
+                            ("grid" variable
+                               (:pointer 1
+                                :type ("vtkImageData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1498 1517]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1439 3100]))                  
+                :type "namespace")
+                nil [1167 3103]))          
+    :file "VTKPipeline.h"
+    :pointmax 3128
+    :fsize 3127
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TestMarchingCubes.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkObjectFactory.h" include nil nil [730 759])
+            ("vtkStdString.h" include nil nil [760 785])
+            ("vtkGenericDataObjectReader.h" include nil nil [786 825])
+            ("vtkSmartPointer.h" include nil nil [826 854])
+            ("vtkImageData.h" include nil nil [855 880])
+            ("vector" include (:system-flag t) nil [881 898])
+            ("dax/Types.h" include (:system-flag t) nil [899 921])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [922 955])
+            ("dax/cont/UniformGrid.h" include (:system-flag t) nil [956 989])
+            ("dax/cont/UnstructuredGrid.h" include (:system-flag t) nil [990 1028])
+            ("dax/cont/worklet/MarchingCubes.h" include (:system-flag t) nil [1029 1072])
+            ("dax/cont/VectorOperations.h" include (:system-flag t) nil [1073 1111])
+            ("dax/cont/internal/Testing.h" include (:system-flag t) nil [1113 1151])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1243 1252])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1253 1265]))                  
+                :type "int")
+                nil [1234 5357]))          
+    :file "TestMarchingCubes.cxx"
+    :pointmax 5358
+    :fsize 5357
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PipelineVTK.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("dax/cont/DeviceAdapterSerial.h" include (:system-flag t) nil [650 691])
+            ("vtkImageData.h" include (:system-flag t) nil [692 717])
+            ("vtkNew.h" include (:system-flag t) nil [718 737])
+            ("PipelineVTK.h" include nil nil [739 763])
+            ("VTKPipeline.h" include nil nil [764 788])
+            ("RunPipelineVTK" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [810 814])
+                    ("dgrid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [815 853])
+                    ("grid" variable
+                       (:pointer 1
+                        :type ("vtkImageData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [854 873]))                  
+                :type "void")
+                nil [790 907])
+            ("ArgumentsParser.h" include nil nil [909 937])
+            ("CreateStructures" function
+               (:arguments 
+                  ( ("grid" variable
+                       (:pointer 1
+                        :type ("vtkImageData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1038 1057])
+                    ("dim" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1058 1070]))                  
+                :type ("dax::cont::UniformGrid" type (:type "class") nil nil))
+                nil [996 1427])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1438 1447])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1448 1461]))                  
+                :type "int")
+                nil [1429 1926]))          
+    :file "PipelineVTK.cxx"
+    :pointmax 1927
+    :fsize 1926
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!Benchmarks!MarchingCubes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

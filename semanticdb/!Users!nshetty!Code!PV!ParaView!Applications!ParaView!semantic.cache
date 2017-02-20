@@ -1,0 +1,295 @@
+;; Object ParaView/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ParaView/"
+  :tables (list 
+   (semanticdb-table "ParaViewVRUI.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ParaViewVRUI.h" include nil nil [1354 1379])
+            ("vruiPipe.h" include nil nil [1381 1402])
+            ("vruiServerState.h" include nil nil [1403 1431])
+            ("vruiThread.h" include nil nil [1432 1455])
+            ("vector" include (:system-flag t) nil [1456 1473])
+            ("iostream" include (:system-flag t) nil [1474 1493])
+            ("QTcpSocket" include (:system-flag t) nil [1494 1515])
+            ("QWaitCondition" include (:system-flag t) nil [1516 1541])
+            ("QMutex" include (:system-flag t) nil [1542 1559])
+            ("vtkMath.h" include nil nil [1560 1580])
+            ("vtkSMCaveRenderViewProxy.h" include nil nil [1581 1618])
+            ("pqActiveObjects.h" include nil nil [1619 1647])
+            ("pqView.h" include nil nil [1648 1667])
+            ("pqInternals" type
+               (:parent "ParaViewVRUI"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1704 1711])
+                    ("pqInternals" function
+                       (:constructor-flag t
+                        :type ("pqInternals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1714 1952])
+                    ("pqInternals" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1955 2200])
+                    ("Pipe" variable
+                       (:pointer 1
+                        :type ("vruiPipe" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2203 2218])
+                    ("State" variable
+                       (:pointer 1
+                        :type ("vruiServerState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2221 2244])
+                    ("Active" variable (:type "bool") (reparse-symbol classsubparts) [2247 2259])
+                    ("Streaming" variable (:type "bool") (reparse-symbol classsubparts) [2262 2277])
+                    ("Thread" variable
+                       (:pointer 1
+                        :type ("vruiThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2280 2299])
+                    ("StateMutex" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2303 2322])
+                    ("PacketSignalCond" variable
+                       (:pointer 1
+                        :type ("QWaitCondition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2326 2359])
+                    ("PacketSignalCondMutex" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2362 2392]))                  
+                :type "class")
+                nil [1670 2395])
+            ("ParaViewVRUI" function
+               (:constructor-flag t
+                :parent "ParaViewVRUI"
+                :type ("ParaViewVRUI" type (:type "class") nil nil))
+                nil [3412 3543])
+            ("SetName" function
+               (:parent "ParaViewVRUI"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3652 3669]))                  
+                :type "void")
+                nil [3625 3919])
+            ("GetName" function
+               (:pointer 1
+                :parent "ParaViewVRUI"
+                :constant-flag t
+                :type "char")
+                nil [4001 4067])
+            ("GetPort" function
+               (:parent "ParaViewVRUI"
+                :type "int")
+                nil [4149 4207])
+            ("SetPort" function
+               (:parent "ParaViewVRUI"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [4316 4325]))                  
+                :type "void")
+                nil [4289 4348])
+            ("GetInitialized" function
+               (:parent "ParaViewVRUI"
+                :type "bool")
+                nil [4431 4504])
+            ("Init" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [4586 5491])
+            ("Activate" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [5573 5744])
+            ("Deactivate" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [5826 6001])
+            ("StartStream" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [6083 6738])
+            ("StopStream" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [6820 7038])
+            ("ParaViewVRUI" function
+               (:destructor-flag t
+                :parent "ParaViewVRUI"
+                :type "void")
+                nil [7120 7282])
+            ("callback" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [7364 7721])
+            ("GetNextPacket" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [7803 8908])
+            ("PrintPositionOrientation" function
+               (:parent "ParaViewVRUI"
+                :type "void")
+                nil [8990 10166]))          
+    :file "ParaViewVRUI.cxx"
+    :pointmax 10167
+    :fsize 10166
+    :lastmodtime '(21196 31026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ParaViewMainWindow.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVConfig.h" include nil nil [1360 1384])
+            ("ParaViewMainWindow.h" include nil nil [1477 1508])
+            ("ui_ParaViewMainWindow.h" include nil nil [1509 1543])
+            ("pqActiveObjects.h" include nil nil [1545 1573])
+            ("pqApplicationCore.h" include nil nil [1574 1604])
+            ("pqDeleteReaction.h" include nil nil [1605 1634])
+            ("pqHelpReaction.h" include nil nil [1635 1662])
+            ("pqOptions.h" include nil nil [1663 1685])
+            ("pqParaViewBehaviors.h" include nil nil [1686 1718])
+            ("pqParaViewMenuBuilders.h" include nil nil [1719 1754])
+            ("pqSettings.h" include nil nil [1755 1778])
+            ("vtkProcessModule.h" include nil nil [1779 1808])
+            ("vtkPVGeneralSettings.h" include nil nil [1809 1842])
+            ("vtkPVPlugin.h" include nil nil [1843 1867])
+            ("pvStaticPluginsInit.h" include nil nil [1895 1928])
+            ("ParaViewDocumentationInitializer.h" include nil nil [1938 1983])
+            ("vtkQtDebugLeaksView.h" include nil nil [2112 2145])
+            ("DebugLeaksViewType" type
+               (:typedef ("vtkQtDebugLeaksView" type (:type "class") nil nil)
+                :superclasses "vtkQtDebugLeaksView"
+                :type "typedef")
+                nil [2148 2195])
+            ("pqInternals" type
+               (:parent "ParaViewMainWindow"
+                :superclasses 
+                  ( ("Ui::pqClientMainWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [2204 2278])
+            ("ParaViewMainWindow" function
+               (:constructor-flag t
+                :parent "ParaViewMainWindow"
+                :type ("ParaViewMainWindow" type (:type "class") nil nil))
+                nil [2360 8276])
+            ("ParaViewMainWindow" function
+               (:destructor-flag t
+                :parent "ParaViewMainWindow"
+                :type "void")
+                nil [8358 8429])
+            ("showHelpForProxy" function
+               (:parent "ParaViewMainWindow"
+                :arguments 
+                  ( ("groupname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8553 8578])
+                    ("proxyname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8579 8606]))                  
+                :type "void")
+                nil [8511 8665]))          
+    :file "ParaViewMainWindow.cxx"
+    :pointmax 8666
+    :fsize 8665
+    :lastmodtime '(21492 35760 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ParaViewMainWindow.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__ParaViewMainWindow_h" variable (:constant-flag t) nil [1397 1419])
+            ("QMainWindow" include (:system-flag t) nil [1421 1443])
+            ("ParaViewMainWindow" type
+               (:superclasses 
+                  ( ("QMainWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Superclass" type
+                       (:typedef ("QMainWindow" type (:type "class") nil nil)
+                        :superclasses "QMainWindow"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1559 1590])
+                    ("public" label nil (reparse-symbol classsubparts) [1591 1598])
+                    ("ParaViewMainWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ParaViewMainWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1601 1622])
+                    ("ParaViewMainWindow" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1625 1647])
+                    ("protected" label nil (reparse-symbol classsubparts) [1649 1665])
+                    ("showHelpForProxy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("proxyname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1690 1715])
+                            ("groupname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1716 1741]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1668 1742])
+                    ("private" label nil (reparse-symbol classsubparts) [1744 1752])
+                    ("ParaViewMainWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParaViewMainWindow" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1774 1800]))                          
+                        :type ("ParaViewMainWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1755 1801])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParaViewMainWindow" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1839 1865]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1824 1866])
+                    ("pqInternals" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [1890 1908])
+                    ("Internals" variable
+                       (:pointer 1
+                        :type ("pqInternals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1911 1934]))                  
+                :type "class")
+                nil [1498 1937]))          
+    :file "ParaViewMainWindow.h"
+    :pointmax 1948
+    :fsize 1947
+    :lastmodtime '(21196 31026 0 0)
+    :unmatched-syntax '((symbol 1548 . 1556))
+    :lexical-table 
+        '(("__ParaViewMainWindow_h")
+          )
+
+    )
+   )
+  :file "!Users!nshetty!Code!PV!ParaView!Applications!ParaView!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

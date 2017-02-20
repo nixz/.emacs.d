@@ -1,0 +1,131 @@
+;; Object Cxx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Cxx/"
+  :tables
+  (list
+    (semanticdb-table "BasicApp.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BasicApp.h" include nil nil [49 70])
+            ("QTimer" include (:system-flag t) nil [72 89])
+            ("QApplication" include (:system-flag t) nil [90 113])
+            ("pqApplicationCore.h" include nil nil [115 145])
+            ("pqCoreTestUtility.h" include nil nil [146 176])
+            ("pqObjectBuilder.h" include nil nil [177 205])
+            ("pqOptions.h" include nil nil [206 228])
+            ("pqRenderView.h" include nil nil [229 254])
+            ("pqServer.h" include nil nil [255 276])
+            ("pqServerManagerModel.h" include nil nil [277 310])
+            ("QVTKWidget.h" include nil nil [311 334])
+            ("vtkNew.h" include nil nil [335 354])
+            ("vtkObjectFactory.h" include nil nil [355 384])
+            ("vtkProcessModule.h" include nil nil [385 414])
+            ("vtkSmartPointer.h" include nil nil [415 443])
+            ("vtkSMParaViewPipelineControllerWithRendering.h" include nil nil [444 501])
+            ("vtkSMPropertyHelper.h" include nil nil [502 534])
+            ("vtkSMSessionProxyManager.h" include nil nil [535 572])
+            ("vtkSMSourceProxy.h" include nil nil [573 602])
+            ("vtkSMViewProxy.h" include nil nil [603 630])
+            ("MainWindow" function
+               (:constructor-flag t
+                :parent "MainWindow"
+                :type ("MainWindow" type (:type "class") nil nil))
+                nil [632 2509])
+            ("processTest" function
+               (:parent "MainWindow"
+                :type "void")
+                nil [2511 3069])
+            ("compareView" function
+               (:parent "MainWindow"
+                :arguments 
+                  ( ("referenceImage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3100 3130])
+                    ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [3131 3148])
+                    ("output" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3151 3167])
+                    ("tempDirectory" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3168 3197]))                  
+                :type "bool")
+                nil [3071 3882])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3893 3902])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3903 3915]))                  
+                :type "int")
+                nil [3884 4147]))          
+      :file "BasicApp.cxx"
+      :pointmax 4150
+      :fsize 4149
+      :lastmodtime '(21936 9061 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "BasicApp.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("QMainWindow" include (:system-flag t) nil [2 24])
+            ("QPointer" include (:system-flag t) nil [25 44])
+            ("pqRenderView.h" include nil nil [45 70])
+            ("vtkObject.h" include nil nil [71 93])
+            ("MainWindow" type
+               (:superclasses 
+                  ( ("QMainWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [146 153])
+                    ("MainWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [156 169])
+                    ("compareView" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("referenceImage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [189 219])
+                            ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [220 237])
+                            ("output" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [242 258])
+                            ("tempDirectory" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [259 288]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [172 289])
+                    ("RenderView" variable (:type ("QPointer" type
+                         (:template-specifier 
+                            ( ("pqRenderView" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [292 326])
+                    ("public" label nil (reparse-symbol classsubparts) [327 340])
+                    ("processTest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [343 362]))                  
+                :type "class")
+                nil [95 366]))          
+      :file "BasicApp.h"
+      :pointmax 367
+      :fsize 366
+      :lastmodtime '(21917 17169 0 0)
+      :unmatched-syntax '((symbol 137 . 145))))
+  :file "!Users!nshetty!Code!PV!ParaView!Qt!Core!Testing!Cxx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

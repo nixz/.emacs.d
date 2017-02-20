@@ -1,0 +1,94 @@
+;; Object Cxx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Cxx/"
+  :tables (list 
+   (semanticdb-table "vtkAcceleratorsDaxCxxTests.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ctype.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("stdlib.h" include (:system-flag t) nil [59 78])
+            ("vtkTestDriver.h" include nil nil [80 106])
+            ("TestThreshold" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [166 170])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [171 178]))                  
+                :type "int")
+                nil [148 180])
+            ("thresholdMain" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [199 203])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [204 211]))                  
+                :type "int")
+                nil [181 213])
+            ("marchingMain" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [231 235])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 243]))                  
+                :type "int")
+                nil [214 245])
+            ("MainFuncPointer" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [276 314])
+            ("functionMapEntry" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [334 351])
+                          ("func" variable (:type ("MainFuncPointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [354 375]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [315 395])
+            ("cmakeGeneratedFunctionMapEntries" variable
+               (:dereference 1
+                :type ("functionMapEntry" type (:type "class") nil nil))
+                nil [397 608])
+            ("lowercase" function
+               (:pointer 1
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [725 744]))                  
+                :type "char")
+                nil [709 1245])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [1256 1263])
+                    ("av" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1264 1275]))                  
+                :type "int")
+                nil [1247 3378]))          
+    :file "vtkAcceleratorsDaxCxxTests.cxx"
+    :pointmax 3379
+    :fsize 3390
+    :lastmodtime '(20781 15963)
+    :unmatched-syntax '((semantic-list 310 . 312) (TYPEDEF 268 . 275) (semantic-list 241 . 243) (semantic-list 209 . 211) (semantic-list 176 . 178))
+    )
+   )
+  :file "!home!nikhil!vtk!VTK-build!Accelerators!Dax!Testing!Cxx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

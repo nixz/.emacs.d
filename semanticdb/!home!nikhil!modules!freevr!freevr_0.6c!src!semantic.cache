@@ -1,0 +1,486 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "vr_visren.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NEW_BS_METHOD" variable (:constant-flag t) nil [2503 2516])
+            ("vr_config.h" include nil nil [2699 2721])
+            ("vr_visren.h" include nil nil [2779 2801])
+            ("vr_entity.h" include nil nil [2802 2824])
+            ("vr_objects.h" include nil nil [2825 2848])
+            ("vr_input.h" include nil nil [2849 2870])
+            ("vr_callback.h" include nil nil [2871 2895])
+            ("vr_utils.h" include nil nil [2896 2917])
+            ("vr_debug.h" include nil nil [2918 2939])
+            ("stdarg.h" include (:system-flag t) nil [2940 2959])
+            ("signal.h" include (:system-flag t) nil [2960 2979])
+            ("unistd.h" include (:system-flag t) nil [2980 2999])
+            ("string.h" include (:system-flag t) nil [3000 3019])
+            ("math.h" include (:system-flag t) nil [3020 3037])
+            ("vr_visren.opts.h" include nil nil [3090 3117])
+            ("_VisrenPrivate" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("num_windows" variable (:type "int") (reparse-symbol classsubparts) [3854 3871])
+                          ("windows" variable
+                             (:pointer 2
+                              :type ("vrWindowInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3931 3954])
+                          ("curr_window" variable
+                             (:pointer 1
+                              :type ("vrWindowInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4010 4036])
+                          ("curr_user" variable
+                             (:pointer 1
+                              :type ("vrUserInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4039 4061])
+                          ("curr_eye" variable
+                             (:pointer 1
+                              :type ("vrEyeInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4064 4084]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3835 4103])
+            ("vrFprintRenderInfo" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4198 4209])
+                    ("rendinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4210 4233])
+                    ("style" variable (:type ("vrPrintStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4234 4253]))                  
+                :type "void")
+                nil [4174 5007])
+            ("vrFprintPerspData" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5101 5112])
+                    ("pd" variable
+                       (:pointer 1
+                        :type ("vrPerspData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5113 5129])
+                    ("style" variable (:type ("vrPrintStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5130 5149]))                  
+                :type "void")
+                nil [5078 5748])
+            ("vrWindowName" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("vrWindowMountType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5838 5861]))                  
+                :type "char")
+                nil [5819 6087])
+            ("vrWindowType" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6189 6200]))                  
+                :type ("vrWindowMountType" type (:type "class") nil nil))
+                nil [6158 6863])
+            ("vrVisrenModeName" function
+               (:pointer 1
+                :arguments 
+                  ( ("mode" variable (:type ("vrVisrenModeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6957 6979]))                  
+                :type "char")
+                nil [6934 7515])
+            ("vrVisrenModeValue" function
+               (:arguments 
+                  ( ("modename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7745 7760]))                  
+                :type "int")
+                nil [7723 8884])
+            ("vrWindowClear" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8974 8995]))                  
+                :type "void")
+                nil [8955 11056])
+            ("vrWindowCopy" function
+               (:arguments 
+                  ( ("dest_object" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11145 11171])
+                    ("src_object" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11172 11197]))                  
+                :type "void")
+                nil [11127 11992])
+            ("vrFprintWindowInfo" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12087 12098])
+                    ("windowinfo" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12099 12124])
+                    ("style" variable (:type ("vrPrintStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12125 12144]))                  
+                :type "void")
+                nil [12063 22382])
+            ("vrRenderCurrentWindow" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22547 22572]))                  
+                :type ("vrWindowInfo" type (:type "class") nil nil))
+                nil [22511 22606])
+            ("vrRenderCurrentUser" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22767 22792]))                  
+                :type ("vrUserInfo" type (:type "class") nil nil))
+                nil [22735 22829])
+            ("vrRenderCurrentEye" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22988 23013]))                  
+                :type ("vrEyeInfo" type (:type "class") nil nil))
+                nil [22958 23044])
+            ("vrRenderCurrentSimTime" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23145 23170]))                  
+                :type ("vrTime" type (:type "class") nil nil))
+                nil [23115 23209])
+            ("vrRenderCurrentFrame" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23306 23331]))                  
+                :type "long")
+                nil [23280 23370])
+            ("vrRenderNullWorld" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23464 23489]))                  
+                :type "void")
+                nil [23441 23648])
+            ("vrRenderDefaultSimulator" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23749 23774])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [23775 23784]))                  
+                :type "void")
+                nil [23719 23934])
+            ("vrRenderText" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24023 24048])
+                    ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24049 24062]))                  
+                :type "void")
+                nil [24005 24221])
+            ("vrRenderSetWindowContext" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24322 24347])
+                    ("gfx_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24348 24366]))                  
+                :type "void")
+                nil [24292 24418])
+            ("vrRenderGetWindowContext" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24520 24545]))                  
+                :type "void")
+                nil [24489 24592])
+            ("vrRenderTransform" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24686 24711])
+                    ("mat" variable
+                       (:pointer 1
+                        :type ("vrMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24712 24726]))                  
+                :type "void")
+                nil [24663 25027])
+            ("vrRenderTransformUserTravel" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25350 25375]))                  
+                :type "void")
+                nil [25317 25785])
+            ("vrRenderTransformUserTravelInv" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26111 26136]))                  
+                :type "void")
+                nil [26075 26197])
+            ("vrRenderTransformWindow" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26358 26383]))                  
+                :type "void")
+                nil [26329 26466])
+            ("vrRenderTransform6sensor" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26925 26950])
+                    ("sensor6_num" variable (:type "int") (reparse-symbol arg-sub-list) [26951 26967]))                  
+                :type "int")
+                nil [26896 27660])
+            ("vrRenderTransform6sensorDirect" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28280 28305])
+                    ("sensor6" variable
+                       (:pointer 1
+                        :type ("vr6sensor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28306 28325]))                  
+                :type "void")
+                nil [28244 28609])
+            ("vrRenderSetProjectionTransform" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28716 28741])
+                    ("pd" variable
+                       (:pointer 1
+                        :type ("vrPerspData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28742 28758]))                  
+                :type "void")
+                nil [28680 29080])
+            ("vrRenderPushPerspFrom6sensor" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29185 29210])
+                    ("sensor6_num" variable (:type "int") (reparse-symbol arg-sub-list) [29211 29227]))                  
+                :type "int")
+                nil [29152 32224])
+            ("vrRenderPopPersp" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32317 32342]))                  
+                :type "int")
+                nil [32296 32911])
+            ("vrRenderGetBillboardAngles3d" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33021 33046])
+                    ("eulers" variable
+                       (:pointer 1
+                        :type ("vrEuler" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33047 33063])
+                    ("x_loc" variable (:type "double") (reparse-symbol arg-sub-list) [33064 33077])
+                    ("y_loc" variable (:type "double") (reparse-symbol arg-sub-list) [33078 33091])
+                    ("z_loc" variable (:type "double") (reparse-symbol arg-sub-list) [33092 33105]))                  
+                :type ("vrEuler" type (:type "class") nil nil))
+                nil [32983 35820])
+            ("vrRenderGetBillboardAnglesAd" function
+               (:pointer 1
+                :arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35930 35955])
+                    ("eulers" variable
+                       (:pointer 1
+                        :type ("vrEuler" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35956 35972])
+                    ("loc" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [35973 35985]))                  
+                :type ("vrEuler" type (:type "class") nil nil))
+                nil [35892 36080])
+            ("vrRenderCategory" function
+               (:arguments 
+                  ( ("renderinfo" variable
+                       (:pointer 1
+                        :type ("vrRenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36174 36199])
+                    ("tag" variable (:type "int") (reparse-symbol arg-sub-list) [36200 36208]))                  
+                :type "void")
+                nil [36152 36596])
+            ("vrVisrenMainLoop" function
+               (:arguments 
+                  ( ("myproc_info" variable
+                       (:pointer 1
+                        :type ("vrProcessInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38623 38650]))                  
+                :type "void")
+                nil [38601 66205])
+            ("vrVisrenDefaultInfo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66695 66714]))                  
+                :type "void")
+                nil [66663 67660])
+            ("vrVisrenDeviceInList" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67758 67771]))                  
+                :type "int")
+                nil [67733 68260])
+            ("vrVisrenGetInfo" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68644 68663]))                  
+                :type "void")
+                nil [68623 69008])
+            ("vrCalcPerspIntermediaries" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69110 69131]))                  
+                :type "void")
+                nil [69079 70901])
+            ("vrCalcPerspMatrix" function
+               (:pointer 1
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("vrPerspData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80738 80754])
+                    ("this_window" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80755 80781])
+                    ("eye_rwpos" variable
+                       (:pointer 1
+                        :type ("vrMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80782 80802]))                  
+                :type ("vrPerspData" type (:type "class") nil nil))
+                nil [80707 100329])
+            ("vrSimulatorMove" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100602 100623])
+                    ("command" variable (:type "int") (reparse-symbol arg-sub-list) [100624 100636])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [100637 100648]))                  
+                :type "void")
+                nil [100581 103958])
+            ("vrSimulatorMoveString" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("vrWindowInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104067 104088])
+                    ("strcommand" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104089 104106]))                  
+                :type "void")
+                nil [104040 104965]))          
+      :file "vr_visren.c"
+      :pointmax 104967
+      :fsize 104966
+      :lastmodtime '(19962 23673 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NEW_BS_METHOD")
+          )
+)
+    (semanticdb-table "vr_config.h"
+      :file "vr_config.h"
+      :fsize 6725
+      :lastmodtime '(19138 30338 0 0))
+    (semanticdb-table "vr_visren.h"
+      :file "vr_visren.h"
+      :fsize 15483
+      :lastmodtime '(19970 28647 0 0))
+    (semanticdb-table "vr_entity.h"
+      :file "vr_entity.h"
+      :fsize 12427
+      :lastmodtime '(18815 53540 0 0))
+    (semanticdb-table "vr_objects.h"
+      :file "vr_objects.h"
+      :fsize 5901
+      :lastmodtime '(19169 62565 0 0))
+    (semanticdb-table "vr_input.h"
+      :file "vr_input.h"
+      :fsize 32009
+      :lastmodtime '(18371 50948 0 0))
+    (semanticdb-table "vr_callback.h"
+      :file "vr_callback.h"
+      :fsize 5781
+      :lastmodtime '(17265 6742 0 0))
+    (semanticdb-table "vr_utils.h"
+      :file "vr_utils.h"
+      :fsize 1064
+      :lastmodtime '(17524 47571 0 0))
+    (semanticdb-table "vr_debug.h"
+      :file "vr_debug.h"
+      :fsize 4509
+      :lastmodtime '(19556 24877 0 0))
+    (semanticdb-table "vr_visren.opts.h"
+      :file "vr_visren.opts.h"
+      :fsize 2572
+      :lastmodtime '(20088 61877 0 0)))
+  :file "!home!nikhil!modules!freevr!freevr_0.6c!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

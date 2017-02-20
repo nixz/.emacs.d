@@ -1,0 +1,304 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "shader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__SHADER_H__" variable (:constant-flag t) nil [30 42])
+            ("sb6" type
+               (:members 
+                  ( ("shader" type
+                       (:members 
+                          ( ("load" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [93 115])
+                                    ("shader_type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128 148])
+                                    ("" variable (:type ("GL_FRAGMENT_SHADER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149 168]))                                  
+                                :type ("GLuint" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [81 221]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [61 266]))                  
+                :type "namespace")
+                nil [44 277])
+            ("program" type
+               (:members 
+                  ( ("link_from_shaders" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shaders" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GLuint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [325 348])
+                            ("shader_count" variable (:type "int") (reparse-symbol arg-sub-list) [374 391])
+                            ("delete_shaders" variable (:type "bool") (reparse-symbol arg-sub-list) [417 437]))                          
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [300 503]))                  
+                :type "namespace")
+                nil [279 561]))          
+    :file "shader.h"
+    :pointmax 603
+    :fsize 638
+    :lastmodtime '(21207 11338 0 0)
+    :unmatched-syntax '((close-paren 574 . 575) (close-paren 571 . 572) (punctuation 561 . 562) (punctuation 266 . 267) (punctuation 147 . 148))
+    :lexical-table 
+        '(("__SHADER_H__")
+          )
+
+    )
+   (semanticdb-table "sb6.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__SB6_H__" variable (:constant-flag t) nil [1248 1257])
+            ("GL/gl3w.h" include nil nil [2192 2212])
+            ("GLFW_NO_GLU" variable (:constant-flag t) nil [2222 2233])
+            ("GLFW_INCLUDE_GLCOREARB" variable (:constant-flag t) nil [2244 2266])
+            ("GL/glfw.h" include nil nil [2269 2289])
+            ("sb6ext.h" include nil nil [2291 2310])
+            ("stdio.h" include (:system-flag t) nil [2312 2330])
+            ("string.h" include (:system-flag t) nil [2331 2350])
+            ("sb6" type
+               (:members 
+                  ( ("application" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2389 2396])
+                            ("application" function
+                               (:constructor-flag t
+                                :type ("application" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2401 2417])
+                            ("application" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2422 2447])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("the_app" variable
+                                       (:pointer 1
+                                        :type ("sb6::application" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2469 2495]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2452 5441])
+                            ("init" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5447 5884])
+                            ("startup" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5890 5925])
+                            ("render" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("currentTime" variable (:type "double") (reparse-symbol arg-sub-list) [5951 5970]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5931 5983])
+                            ("shutdown" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5989 6025])
+                            ("onResize" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [6053 6059])
+                                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [6060 6066]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6031 6139])
+                            ("onKey" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6164 6172])
+                                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [6173 6184]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6145 6197])
+                            ("onMouseButton" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [6230 6241])
+                                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [6242 6253]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6203 6266])
+                            ("onMouseMove" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6297 6303])
+                                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6304 6310]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6272 6323])
+                            ("onMouseWheel" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [6355 6363]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6329 6376])
+                            ("onDebugMessage" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("source" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6410 6424])
+                                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6457 6469])
+                                    ("id" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6502 6512])
+                                    ("severity" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6545 6561])
+                                    ("length" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6594 6609])
+                                    ("message" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GLchar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6642 6664]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6382 6781])
+                            ("getMousePosition" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6816 6823])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6824 6831]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6787 6876])
+                            ("public" label nil (reparse-symbol classsubparts) [6878 6885])
+                            ("APPINFO" type
+                               (:members 
+                                  ( ("title" variable
+                                       (:dereference 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [6919 6935])
+                                    ("windowWidth" variable (:type "int") (reparse-symbol classsubparts) [6944 6960])
+                                    ("windowHeight" variable (:type "int") (reparse-symbol classsubparts) [6969 6986])
+                                    ("majorVersion" variable (:type "int") (reparse-symbol classsubparts) [6995 7012])
+                                    ("minorVersion" variable (:type "int") (reparse-symbol classsubparts) [7021 7038])
+                                    ("samples" variable (:type "int") (reparse-symbol classsubparts) [7047 7059])
+                                    ("flags" variable (:type ("" type
+                                         (:members 
+                                            ( ("" type
+                                                 (:members 
+                                                    ( ("fullscreen" variable
+                                                         (:suffix ":1"
+                                                          :type "unsigned int")
+                                                          (reparse-symbol classsubparts) [7133 7165])
+                                                      ("vsync" variable
+                                                         (:suffix ":1"
+                                                          :type "unsigned int")
+                                                          (reparse-symbol classsubparts) [7182 7214])
+                                                      ("cursor" variable
+                                                         (:suffix ":1"
+                                                          :type "unsigned int")
+                                                          (reparse-symbol classsubparts) [7231 7263])
+                                                      ("stereo" variable
+                                                         (:suffix ":1"
+                                                          :type "unsigned int")
+                                                          (reparse-symbol classsubparts) [7280 7312])
+                                                      ("debug" variable
+                                                         (:suffix ":1"
+                                                          :type "unsigned int")
+                                                          (reparse-symbol classsubparts) [7329 7361]))                                                    
+                                                  :type "struct")
+                                                  (reparse-symbol classsubparts) [7096 7376])
+                                              ("all" variable (:type "unsigned int") (reparse-symbol classsubparts) [7389 7413]))                                            
+                                          :type "union")
+                                          nil nil)) (reparse-symbol classsubparts) [7068 7430]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [6890 7437])
+                            ("protected" label nil (reparse-symbol classsubparts) [7439 7449])
+                            ("info" variable (:type ("APPINFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7454 7471])
+                            ("app" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("sb6::application" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7476 7511])
+                            ("glfw_onResize" function
+                               (:arguments 
+                                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [7552 7558])
+                                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [7559 7565]))                                  
+                                :type ("GLFWCALL" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7529 7606])
+                            ("glfw_onKey" function
+                               (:arguments 
+                                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7644 7652])
+                                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [7653 7664]))                                  
+                                :type ("GLFWCALL" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7624 7709])
+                            ("glfw_onMouseButton" function
+                               (:arguments 
+                                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [7755 7766])
+                                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [7767 7778]))                                  
+                                :type ("GLFWCALL" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7727 7834])
+                            ("glfw_onMouseMove" function
+                               (:arguments 
+                                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7878 7884])
+                                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7885 7891]))                                  
+                                :type ("GLFWCALL" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7852 7935])
+                            ("glfw_onMouseWheel" function
+                               (:arguments 
+                                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [7980 7988]))                                  
+                                :type ("GLFWCALL" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7953 8032])
+                            ("setVsync" function
+                               (:arguments 
+                                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [8052 8064]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8038 8168])
+                            ("debug_callback" function
+                               (:arguments 
+                                  ( ("source" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8210 8224])
+                                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8265 8277])
+                                    ("id" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8318 8328])
+                                    ("severity" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8369 8385])
+                                    ("length" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8426 8441])
+                                    ("message" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GLchar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8482 8504])
+                                    ("userParam" variable
+                                       (:pointer 1
+                                        :type ("GLvoid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8545 8563]))                                  
+                                :type ("APIENTRY" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8186 8688]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2369 8691]))                  
+                :type "namespace")
+                nil [2352 8694])
+            ("DECLARE_MAIN" variable (:constant-flag t) nil [9362 9374]))          
+    :file "sb6.h"
+    :pointmax 9799
+    :fsize 10155
+    :lastmodtime '(21207 11338 0 0)
+    :unmatched-syntax '((punctuation 8694 . 8695) (VOID 8181 . 8185) (STATIC 8174 . 8180) (VOID 7948 . 7952) (STATIC 7941 . 7947) (VOID 7847 . 7851) (STATIC 7840 . 7846) (VOID 7722 . 7726) (STATIC 7715 . 7721) (VOID 7619 . 7623) (STATIC 7612 . 7618) (VOID 7524 . 7528) (STATIC 7517 . 7523))
+    :lexical-table 
+        '(("DECLARE_MAIN" (spp-arg-list ("a") 9374 . 9377) . 
+              ((INT "int" 9408 . 9411) (symbol "main" 9412 . 9416) (semantic-list "(int argc, const char ** argv)" 9416 . 9446) (semantic-list "{                                                   \\
+    a *app = new a;                                 \\
+    app->run(app);                                  \\
+    delete app;                                     \\
+    return 0;                                       \\
+}" 9462 . 9733)))
+          ("__SB6_H__")
+          ("GLFW_INCLUDE_GLCOREARB" . ((number "1" 2267 . 2268)))
+          ("GLFW_NO_GLU" . ((number "1" 2234 . 2235)))
+          )
+
+    )
+   (semanticdb-table "sb6ext.h"
+    :file "sb6ext.h"
+    :fsize 1448
+    :lastmodtime '(21207 11338 0 0)
+    )
+   )
+  :file "!Users!nshetty!Code!OpenGLSuperBible!sb6code!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

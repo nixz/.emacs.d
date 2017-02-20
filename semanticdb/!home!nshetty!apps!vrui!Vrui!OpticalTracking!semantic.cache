@@ -1,0 +1,261 @@
+;; Object OpticalTracking/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "OpticalTracking/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("VRUI_MAKEDIR" variable (:default-value ("/home/nshetty/apps/vrui/Vrui/BuildRoot")) nil [1385 1440])
+            ("INSTALLDIR" variable (:default-value ("$(shell pwd)")) nil [1950 1977])
+            ("$(VRUI_MAKEDIR)/SystemDefinitions" include nil nil [2259 2301])
+            ("$(VRUI_MAKEDIR)/Packages.System" include nil nil [2301 2341])
+            ("$(VRUI_MAKEDIR)/Configuration.Vrui" include nil nil [2341 2384])
+            ("$(VRUI_MAKEDIR)/Packages.Vrui" include nil nil [2384 2422])
+            ("BININSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(EXEDIR)")) nil [2463 2503])
+            ("PACKAGES" variable (:default-value ("LIBDBUS" "BLUETOOTH")) nil [2779 2808])
+            ("ALL" variable (:default-value ("$(EXEDIR)/ShowLEDs" "$(EXEDIR)/LEDFinder")) nil [3092 3146])
+            (".PHONY" function (:arguments ("all")) nil [3300 3312])
+            ("all" function (:arguments ("$(ALL)")) nil [3312 3324])
+            (".PHONY" function (:arguments ("extraclean")) nil [3530 3549])
+            ("extraclean" function nil nil [3549 3561])
+            (".PHONY" function (:arguments ("extrasqueakyclean")) nil [3562 3588])
+            ("extrasqueakyclean" function nil nil [3588 3607])
+            ("$(VRUI_MAKEDIR)/BasicMakefile" include nil nil [3633 3671])
+            ("$(EXEDIR)" function (:arguments ("PACKAGES" "+=" "MYVRUI" "MYGEOMETRY" "MYMATH" "MYRAWHID" "MYTHREADS" "MYMISC")) nil [4634 4716])
+            ("$(EXEDIR)" function (:arguments ("$(IMUTEST_SOURCES:%.cpp=$(OBJDIR)/%.o)")) nil [4716 4775])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/HMDModel.o" "$(OBJDIR)/ShowLEDs.o")) nil [4824 4908])
+            (".PHONY" function (:arguments ("ShowLEDs")) nil [4908 4925])
+            ("ShowLEDs" function (:arguments ("$(EXEDIR)/ShowLEDs")) nil [4925 4954])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/OculusRiftHIDReports.o" "$(OBJDIR)/RiftLEDControl.o" "$(OBJDIR)/HMDModel.o" "$(OBJDIR)/LensDistortionParameters.o" "$(OBJDIR)/ModelTracker.o" "$(OBJDIR)/LEDFinder.o")) nil [5021 5322])
+            (".PHONY" function (:arguments ("LEDFinder")) nil [5322 5340])
+            ("LEDFinder" function (:arguments ("$(EXEDIR)/LEDFinder")) nil [5340 5371])
+            ("install" function (:arguments ("$(ALL)")) nil [5430 5557]))          
+      :file "makefile"
+      :pointmax 5557
+      :fsize 5556
+      :lastmodtime '(22566 23460 236640 385000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PSMove.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PSMove.h" include nil nil [1156 1175])
+            ("string.h" include (:system-flag t) nil [1177 1196])
+            ("string" include (:system-flag t) nil [1197 1214])
+            ("stdexcept" include (:system-flag t) nil [1215 1235])
+            ("Misc/SizedTypes.h" include (:system-flag t) nil [1236 1264])
+            ("Misc/FunctionCalls.h" include (:system-flag t) nil [1265 1296])
+            ("Misc/MessageLogger.h" include (:system-flag t) nil [1297 1328])
+            ("IO/File.h" include (:system-flag t) nil [1329 1349])
+            ("IO/OpenFile.h" include (:system-flag t) nil [1350 1374])
+            ("RawHID/BusType.h" include (:system-flag t) nil [1375 1402])
+            ("Math/Constants.h" include (:system-flag t) nil [1403 1430])
+            ("TimeStampSource.h" include nil nil [1432 1460])
+            ("initialize" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1562 1567]))                  
+                :type "void")
+                nil [1538 2531])
+            ("unnamed" type
+               (:members 
+                  ( ("SensorData" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2689 2697])
+                            ("pktBuffer" variable
+                               (:dereference 1
+                                :type ("Misc::UInt8" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2699 2725])
+                            ("public" label nil (reparse-symbol classsubparts) [2768 2775])
+                            ("packetInterval" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "11299435"
+                                :type ("TimeStamp" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2777 2824])
+                            ("sampleInterval" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "5649718"
+                                :type ("TimeStamp" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2904 2950])
+                            ("sequenceNumber" variable (:type ("Misc::UInt16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3026 3054])
+                            ("timeStamp" variable (:type ("Misc::UInt16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3056 3079])
+                            ("batteryState" variable (:type "int") (reparse-symbol classsubparts) [3081 3098])
+                            ("temperature" variable (:type "int") (reparse-symbol classsubparts) [3126 3142])
+                            ("get" function
+                               (:arguments 
+                                  ( ("device" variable
+                                       (:reference 1
+                                        :type ("RawHID::Device" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3202 3225])
+                                    ("timeStampSource" variable
+                                       (:reference 1
+                                        :type ("TimeStampSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3225 3258]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3193 4042])
+                            ("get" function
+                               (:arguments 
+                                  ( ("device" variable
+                                       (:reference 1
+                                        :type ("RawHID::Device" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4061 4084])
+                                    ("rawSamples" variable
+                                       (:dereference 1
+                                        :type ("IMU::RawSample" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4084 4113])
+                                    ("featureState" variable
+                                       (:reference 1
+                                        :type ("PSMove::FeatureState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4113 4148])
+                                    ("timeStampSource" variable
+                                       (:reference 1
+                                        :type ("TimeStampSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4148 4181]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4044 6814]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2595 6818]))                  
+                :type "namespace")
+                nil [2533 6821])
+            ("samplingThreadMethod" function
+               (:pointer 1
+                :parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6858 6863]))                  
+                :type "void")
+                nil [6823 11185])
+            ("PSMove" function
+               (:constructor-flag t
+                :parent "PSMove"
+                :arguments 
+                  ( ("devnode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11202 11222])
+                    ("serialNumber" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11222 11247]))                  
+                :type ("PSMove" type (:type "class") nil nil))
+                nil [11187 11423])
+            ("PSMove" function
+               (:constructor-flag t
+                :parent "PSMove"
+                :arguments 
+                  ( ("deviceIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11440 11465]))                  
+                :type ("PSMove" type (:type "class") nil nil))
+                nil [11425 11632])
+            ("PSMove" function
+               (:constructor-flag t
+                :parent "PSMove"
+                :arguments 
+                  ( ("deviceSerialNumber" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11649 11687]))                  
+                :type ("PSMove" type (:type "class") nil nil))
+                nil [11634 11861])
+            ("PSMove" function
+               (:destructor-flag t
+                :parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11879 11884]))                  
+                :type "void")
+                nil [11863 12096])
+            ("getSerialNumber" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12134 12139]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [12098 12317])
+            ("getAccelerometerScale" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12361 12366]))                  
+                :type ("IMU::Scalar" type (:type "class") nil nil))
+                nil [12319 12454])
+            ("getGyroscopeScale" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12494 12499]))                  
+                :type ("IMU::Scalar" type (:type "class") nil nil))
+                nil [12456 12618])
+            ("getMagnetometerScale" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12661 12666]))                  
+                :type ("IMU::Scalar" type (:type "class") nil nil))
+                nil [12620 12739])
+            ("startStreamingRaw" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("newRawSampleCallback" variable
+                       (:pointer 1
+                        :type ("IMU::RawSampleCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12772 12817]))                  
+                :type "void")
+                nil [12741 13040])
+            ("startStreamingCalibrated" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("newCalibratedSampleCallback" variable
+                       (:pointer 1
+                        :type ("IMU::CalibratedSampleCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13080 13139]))                  
+                :type "void")
+                nil [13042 13383])
+            ("stopStreaming" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13412 13417]))                  
+                :type "void")
+                nil [13385 13611])
+            ("disableSamplingError" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13647 13652]))                  
+                :type "void")
+                nil [13613 13684])
+            ("setFeatureStateCallback" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("newFeatureStateCallback" variable
+                       (:pointer 1
+                        :type ("PSMove::FeatureStateCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13723 13777]))                  
+                :type "void")
+                nil [13686 13994])
+            ("setBatteryStateCallback" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("newBatteryStateCallback" variable
+                       (:pointer 1
+                        :type ("PSMove::BatteryStateCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14033 14087]))                  
+                :type "void")
+                nil [13996 14304])
+            ("setLedColor" function
+               (:parent "PSMove"
+                :arguments 
+                  ( ("red" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [14331 14349])
+                    ("green" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [14349 14369])
+                    ("blue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [14369 14388]))                  
+                :type "void")
+                nil [14306 15113]))          
+      :file "PSMove.cpp"
+      :pointmax 15114
+      :fsize 15027
+      :lastmodtime '(22566 22565 890978 391000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PSMove.h"
+      :file "PSMove.h"
+      :fsize 4418
+      :lastmodtime '(22555 24185 838917 154000)))
+  :file "!home!nshetty!apps!vrui!Vrui!OpticalTracking!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

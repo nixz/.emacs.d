@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("all_include" variable (:default-value ("$(srcdir)/../include")) nil [1 36])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "$(all_include)")) nil [36 68])
+            ("check_PROGRAMS" variable (:default-value ("testil")) nil [69 93])
+            ("check_SCRIPTS" variable (:default-value ("format_test/format_checks.sh")) nil [93 139])
+            ("check_SCRIPTS" variable (:default-value ("format_test/ilu_checks.sh")) nil [153 196])
+            ("testil_SOURCES" variable (:default-value ("format_test/testil.c")) nil [214 252])
+            ("testil_LDADD" variable nil nil [252 267])
+            ("testil_LDADD" variable (:default-value ("../lib/libILU.la")) nil [280 313])
+            ("testil_LDADD" variable (:default-value ("../lib/libIL.la")) nil [318 350])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("/bin/bash")) nil [357 387])
+            ("TESTS" variable (:default-value ("$(check_SCRIPTS)")) nil [387 412]))          
+      :file "Makefile.am"
+      :pointmax 412
+      :fsize 411
+      :lastmodtime '(21936 20342 0 0)
+      :unmatched-syntax '((ENDIF 196 . 201) (bol 196 . 196))))
+  :file "!Users!nshetty!Code!devil!DevIL!DevIL!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

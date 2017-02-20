@@ -1,0 +1,178 @@
+;; Object Rendering/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Rendering/"
+  :tables (list 
+   (semanticdb-table "vtkSMRepresentationProxy.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkSMRepresentationProxy.h" include nil nil [545 582])
+            ("vtkClientServerStream.h" include nil nil [584 618])
+            ("vtkCommand.h" include nil nil [619 642])
+            ("vtkDataObject.h" include nil nil [643 669])
+            ("vtkObjectFactory.h" include nil nil [670 699])
+            ("vtkPVProminentValuesInformation.h" include nil nil [700 744])
+            ("vtkPVRepresentedDataInformation.h" include nil nil [745 789])
+            ("vtkSMProxyProperty.h" include nil nil [790 821])
+            ("vtkSMSession.h" include nil nil [822 847])
+            ("vtkTimerLog.h" include nil nil [848 872])
+            ("assert.h" include (:system-flag t) nil [874 893])
+            ("MAX_NUMBER_OF_INTERNAL_REPRESENTATIONS" variable (:constant-flag t) nil [903 941])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkSMRepresentationProxy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [966 991]))                  
+                :type "int")
+                nil [946 992])
+            ("vtkSMRepresentationProxy" function
+               (:constructor-flag t
+                :parent "vtkSMRepresentationProxy"
+                :type ("vtkSMRepresentationProxy" type (:type "class") nil nil))
+                nil [1072 1503])
+            ("vtkSMRepresentationProxy" function
+               (:destructor-flag t
+                :parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [1584 1733])
+            ("CreateVTKObjects" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [1814 2667])
+            ("LoadXMLState" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("proxyElement" variable
+                       (:pointer 1
+                        :type ("vtkPVXMLElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2793 2823])
+                    ("locator" variable
+                       (:pointer 1
+                        :type ("vtkSMProxyLocator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2824 2851]))                  
+                :type "int")
+                nil [2747 3010])
+            ("AddConsumer" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("property" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3134 3158])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3159 3177]))                  
+                :type "void")
+                nil [3091 3491])
+            ("RemoveConsumer" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("property" variable
+                       (:pointer 1
+                        :type ("vtkSMProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3618 3642])
+                    ("proxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3643 3661]))                  
+                :type "void")
+                nil [3572 3980])
+            ("RemoveAllConsumers" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [4061 4409])
+            ("UpdatePipeline" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [4490 4672])
+            ("UpdatePipeline" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("time" variable (:type "double") (reparse-symbol arg-sub-list) [4799 4811]))                  
+                :type "void")
+                nil [4753 4897])
+            ("UpdatePipelineInternal" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("time" variable (:type "double") (reparse-symbol arg-sub-list) [5035 5047])
+                    ("doTime" variable (:type "bool") (reparse-symbol arg-sub-list) [5048 5060]))                  
+                :type "void")
+                nil [4978 5529])
+            ("MarkDirty" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("modifiedProxy" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5651 5677]))                  
+                :type "void")
+                nil [5610 6818])
+            ("OnVTKRepresentationUpdated" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [6899 6993])
+            ("ViewUpdated" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("vtkSMProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7117 7134]))                  
+                :type "void")
+                nil [7074 7570])
+            ("PostUpdateData" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [7651 8224])
+            ("InvalidateDataInformation" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [8305 8465])
+            ("GetRepresentedDataInformation" function
+               (:pointer 1
+                :parent "vtkSMRepresentationProxy"
+                :type ("vtkPVDataInformation" type (:type "class") nil nil))
+                nil [8546 9092])
+            ("GetProminentValuesInformation" function
+               (:pointer 1
+                :parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("name" variable (:type ("vtkStdString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9265 9283])
+                    ("fieldAssoc" variable (:type "int") (reparse-symbol arg-sub-list) [9284 9299])
+                    ("numComponents" variable (:type "int") (reparse-symbol arg-sub-list) [9300 9318])
+                    ("uncertaintyAllowed" variable (:type "double") (reparse-symbol arg-sub-list) [9321 9347])
+                    ("fraction" variable (:type "double") (reparse-symbol arg-sub-list) [9348 9364]))                  
+                :type ("vtkPVProminentValuesInformation" type (:type "class") nil nil))
+                nil [9173 11079])
+            ("ViewTimeChanged" function
+               (:parent "vtkSMRepresentationProxy"
+                :type "void")
+                nil [11161 11577])
+            ("PrintSelf" function
+               (:parent "vtkSMRepresentationProxy"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11698 11710])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11711 11728]))                  
+                :type "void")
+                nil [11657 11775])
+            ("GetGlobalID" function
+               (:parent "vtkSMRepresentationProxy"
+                :type ("vtkTypeUInt32" type (:type "class") nil nil))
+                nil [11854 12307]))          
+    :file "vtkSMRepresentationProxy.cxx"
+    :pointmax 12308
+    :fsize 12307
+    :lastmodtime '(20772 57332)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_NUMBER_OF_INTERNAL_REPRESENTATIONS" . ((number "10" 942 . 944)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!ParaViewCore!ServerManager!Rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,600 @@
+;; Object XML/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "XML/"
+  :tables (list 
+   (semanticdb-table "vtkXMLReader.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkXMLReader.h" include nil nil [586 611])
+            ("vtkCallbackCommand.h" include nil nil [613 644])
+            ("vtkDataArraySelection.h" include nil nil [645 679])
+            ("vtkDataCompressor.h" include nil nil [680 710])
+            ("vtkDataSet.h" include nil nil [711 734])
+            ("vtkDataSetAttributes.h" include nil nil [735 768])
+            ("vtkInstantiator.h" include nil nil [769 797])
+            ("vtkObjectFactory.h" include nil nil [798 827])
+            ("vtkXMLDataElement.h" include nil nil [828 858])
+            ("vtkXMLDataParser.h" include nil nil [859 888])
+            ("vtkXMLFileReadTester.h" include nil nil [889 922])
+            ("vtkZLibDataCompressor.h" include nil nil [923 957])
+            ("vtkInformation.h" include nil nil [958 985])
+            ("vtkInformationVector.h" include nil nil [986 1019])
+            ("vtkStreamingDemandDrivenPipeline.h" include nil nil [1020 1065])
+            ("vtkInformationQuadratureSchemeDefinitionVectorKey.h" include nil nil [1066 1128])
+            ("vtkQuadratureSchemeDefinition.h" include nil nil [1129 1171])
+            ("vtkInformationStringKey.h" include nil nil [1172 1208])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [1210 1239])
+            ("sys/stat.h" include (:system-flag t) nil [1240 1261])
+            ("assert.h" include (:system-flag t) nil [1262 1281])
+            ("locale" include (:system-flag t) nil [1282 1299])
+            ("ReadStringVersion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1425 1445])
+                    ("major" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1446 1457])
+                    ("minor" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1458 1469]))                  
+                :type "void")
+                nil [1395 2091])
+            ("vtkXMLReader" function
+               (:constructor-flag t
+                :parent "vtkXMLReader"
+                :type ("vtkXMLReader" type (:type "class") nil nil))
+                nil [2171 3697])
+            ("vtkXMLReader" function
+               (:destructor-flag t
+                :parent "vtkXMLReader"
+                :type "void")
+                nil [3778 4196])
+            ("PrintSelf" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4306 4318])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4319 4336]))                  
+                :type "void")
+                nil [4277 5076])
+            ("GetOutputAsDataSet" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :type ("vtkDataSet" type (:type "class") nil nil))
+                nil [5157 5245])
+            ("GetOutputAsDataSet" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5371 5381]))                  
+                :type ("vtkDataSet" type (:type "class") nil nil))
+                nil [5326 5456])
+            ("CanReadFileVersion" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("major" variable (:type "int") (reparse-symbol arg-sub-list) [5776 5786])
+                    ("vtkNotUsed" variable (:type "int") (reparse-symbol arg-sub-list) [5787 5808]))                  
+                :type "int")
+                nil [5739 5868])
+            ("OpenVTKFile" function
+               (:parent "vtkXMLReader"
+                :type "int")
+                nil [5949 7006])
+            ("CloseVTKFile" function
+               (:parent "vtkXMLReader"
+                :type "void")
+                nil [7087 7402])
+            ("CreateXMLParser" function
+               (:parent "vtkXMLReader"
+                :type "void")
+                nil [7483 7704])
+            ("DestroyXMLParser" function
+               (:parent "vtkXMLReader"
+                :type "void")
+                nil [7785 8000])
+            ("SetupCompressor" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8116 8133]))                  
+                :type "void")
+                nil [8081 8873])
+            ("ReadXMLInformation" function
+               (:parent "vtkXMLReader"
+                :type "int")
+                nil [8956 10283])
+            ("RequestInformation" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10402 10426])
+                    ("vtkNotUsed" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10448 10494])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10517 10552]))                  
+                :type "int")
+                nil [10364 11822])
+            ("RequestUpdateExtentInformation" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11954 11978])
+                    ("vtkNotUsed" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11980 12026])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12029 12064]))                  
+                :type "int")
+                nil [11903 12306])
+            ("RequestData" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("vtkNotUsed" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12417 12452])
+                    ("vtkNotUsed" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12484 12530])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12562 12597]))                  
+                :type "int")
+                nil [12387 15792])
+            ("ReadXMLData" function
+               (:parent "vtkXMLReader"
+                :type "void")
+                nil [15874 16021])
+            ("ReadVTKFile" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eVTKFile" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16132 16160]))                  
+                :type "int")
+                nil [16102 17289])
+            ("ReadPrimaryElement" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("ePrimary" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17407 17435]))                  
+                :type "int")
+                nil [17370 18153])
+            ("SetupOutputData" function
+               (:parent "vtkXMLReader"
+                :type "void")
+                nil [18235 18340])
+            ("CreateInformationKey" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eInfoKey" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18470 18498])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18507 18528]))                  
+                :type "int")
+                nil [18422 20255])
+            ("CreateArray" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :arguments 
+                  ( ("da" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20381 20403]))                  
+                :type ("vtkAbstractArray" type (:type "class") nil nil))
+                nil [20337 21711])
+            ("CanReadFile" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21822 21839]))                  
+                :type "int")
+                nil [21792 22648])
+            ("CanReadFileWithDataType" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("dsname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22771 22790]))                  
+                :type "int")
+                nil [22729 22867])
+            ("CanReadFileVersionString" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22991 23011]))                  
+                :type "int")
+                nil [22948 23144])
+            ("IntersectExtents" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23260 23273])
+                    ("extent2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23274 23287])
+                    ("result" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23288 23300]))                  
+                :type "int")
+                nil [23225 23902])
+            ("Min" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [24005 24011])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [24012 24018]))                  
+                :type "int")
+                nil [23983 24047])
+            ("Max" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [24150 24156])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [24157 24163]))                  
+                :type "int")
+                nil [24128 24192])
+            ("ComputePointDimensions" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24315 24327])
+                    ("dimensions" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24328 24344]))                  
+                :type "void")
+                nil [24273 24483])
+            ("ComputePointIncrements" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24606 24618])
+                    ("increments" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24619 24641]))                  
+                :type "void")
+                nil [24564 24792])
+            ("ComputeCellDimensions" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24914 24926])
+                    ("dimensions" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24927 24943]))                  
+                :type "void")
+                nil [24873 25330])
+            ("ComputeCellIncrements" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [25452 25464])
+                    ("increments" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25465 25487]))                  
+                :type "void")
+                nil [25411 25889])
+            ("GetStartTuple" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("extent" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26008 26020])
+                    ("increments" variable
+                       (:pointer 1
+                        :type ("vtkIdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26021 26043])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [26082 26088])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [26089 26095])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [26096 26102]))                  
+                :type ("vtkIdType" type (:type "class") nil nil))
+                nil [25970 26267])
+            ("ReadAttributeIndices" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eDSA" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26388 26412])
+                    ("dsa" variable
+                       (:pointer 1
+                        :type ("vtkDataSetAttributes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26453 26479]))                  
+                :type "void")
+                nil [26348 26793])
+            ("CreateStringArray" function
+               (:pointer 2
+                :parent "vtkXMLReader"
+                :arguments 
+                  ( ("numStrings" variable (:type "int") (reparse-symbol arg-sub-list) [26913 26928]))                  
+                :type "char")
+                nil [26874 27065])
+            ("DestroyStringArray" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("numStrings" variable (:type "int") (reparse-symbol arg-sub-list) [27184 27199])
+                    ("strings" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27200 27215]))                  
+                :type "void")
+                nil [27146 27356])
+            ("SetDataArraySelections" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eDSA" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27479 27503])
+                    ("sel" variable
+                       (:pointer 1
+                        :type ("vtkDataArraySelection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27546 27573]))                  
+                :type "void")
+                nil [27437 28170])
+            ("SetFieldDataInfo" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eDSA" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28287 28311])
+                    ("association" variable (:type "int") (reparse-symbol arg-sub-list) [28347 28363])
+                    ("numTuples" variable (:type "int") (reparse-symbol arg-sub-list) [28364 28378])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28414 28449]))                  
+                :type "int")
+                nil [28252 31001])
+            ("PointDataArrayIsEnabled" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("ePDA" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31125 31149]))                  
+                :type "int")
+                nil [31083 31274])
+            ("CellDataArrayIsEnabled" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("eCDA" variable
+                       (:pointer 1
+                        :type ("vtkXMLDataElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31396 31420]))                  
+                :type "int")
+                nil [31355 31544])
+            ("SelectionModifiedCallback" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31670 31681])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [31682 31696])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31742 31759])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31760 31766]))                  
+                :type "void")
+                nil [31625 31824])
+            ("GetNumberOfPointArrays" function
+               (:parent "vtkXMLReader"
+                :type "int")
+                nil [31905 32012])
+            ("GetPointArrayName" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [32137 32147]))                  
+                :type "char")
+                nil [32093 32212])
+            ("GetPointArrayStatus" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32331 32348]))                  
+                :type "int")
+                nil [32293 32414])
+            ("SetPointArrayStatus" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32534 32551])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [32552 32563]))                  
+                :type "void")
+                nil [32495 32720])
+            ("GetNumberOfCellArrays" function
+               (:parent "vtkXMLReader"
+                :type "int")
+                nil [32801 32906])
+            ("GetCellArrayName" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [33030 33040]))                  
+                :type "char")
+                nil [32987 33104])
+            ("GetCellArrayStatus" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33222 33239]))                  
+                :type "int")
+                nil [33185 33304])
+            ("SetCellArrayStatus" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33423 33440])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [33441 33452]))                  
+                :type "void")
+                nil [33385 33607])
+            ("GetProgressRange" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("range" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [33724 33737]))                  
+                :type "void")
+                nil [33688 33815])
+            ("SetProgressRange" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("range" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [33932 33945])
+                    ("curStep" variable (:type "int") (reparse-symbol arg-sub-list) [33946 33958])
+                    ("numSteps" variable (:type "int") (reparse-symbol arg-sub-list) [33959 33972]))                  
+                :type "void")
+                nil [33896 34199])
+            ("SetProgressRange" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("range" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [34316 34329])
+                    ("curStep" variable (:type "int") (reparse-symbol arg-sub-list) [34330 34342])
+                    ("fractions" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [34379 34396]))                  
+                :type "void")
+                nil [34280 34623])
+            ("UpdateProgressDiscrete" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("progress" variable (:type "float") (reparse-symbol arg-sub-list) [34746 34761]))                  
+                :type "void")
+                nil [34704 34991])
+            ("ProcessRequest" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("vtkInformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35106 35130])
+                    ("inputVector" variable
+                       (:pointer 2
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35164 35199])
+                    ("outputVector" variable
+                       (:pointer 1
+                        :type ("vtkInformationVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35233 35268]))                  
+                :type "int")
+                nil [35073 37105])
+            ("SetNumberOfTimeSteps" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [37226 37234]))                  
+                :type "void")
+                nil [37186 37461])
+            ("IsTimeStepInArray" function
+               (:parent "vtkXMLReader"
+                :arguments 
+                  ( ("timestep" variable (:type "int") (reparse-symbol arg-sub-list) [37578 37591])
+                    ("timesteps" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [37592 37607])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [37608 37619]))                  
+                :type "int")
+                nil [37542 37743])
+            ("GetCurrentOutput" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :type ("vtkDataObject" type (:type "class") nil nil))
+                nil [37824 37905])
+            ("GetCurrentOutputInformation" function
+               (:pointer 1
+                :parent "vtkXMLReader"
+                :type ("vtkInformation" type (:type "class") nil nil))
+                nil [37986 38090]))          
+    :file "vtkXMLReader.cxx"
+    :pointmax 38091
+    :fsize 38090
+    :lastmodtime '(20762 35099)
+    :unmatched-syntax '((semantic-list 28436 . 28449) (semantic-list 12517 . 12530) (semantic-list 12443 . 12452) (semantic-list 12013 . 12026) (semantic-list 10481 . 10494) (semantic-list 5801 . 5808))
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!IO!XML!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

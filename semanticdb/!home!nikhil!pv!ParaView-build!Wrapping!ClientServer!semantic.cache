@@ -1,0 +1,67 @@
+;; Object ClientServer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ClientServer/"
+  :tables (list 
+   (semanticdb-table "vtkPVProgressHandlerClientServer.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VTK_WRAPPING_CXX" variable (:constant-flag t) nil [68 84])
+            ("VTK_STREAMS_FWD_ONLY" variable (:constant-flag t) nil [93 113])
+            ("vtkSystemIncludes.h" include nil nil [114 144])
+            ("vtkPVProgressHandler.h" include nil nil [145 178])
+            ("vtkClientServerInterpreter.h" include nil nil [179 218])
+            ("vtkClientServerStream.h" include nil nil [219 253])
+            ("vtkPVProgressHandlerClientServerNewCommand" function
+               (:pointer 1
+                :type ("vtkObjectBase" type (:type "class") nil nil))
+                nil [256 357])
+            ("vtkPVProgressHandlerCommand" function
+               (:arguments 
+                  ( ("arlu" variable
+                       (:pointer 1
+                        :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [403 436])
+                    ("ob" variable
+                       (:pointer 1
+                        :type ("vtkObjectBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [437 455])
+                    ("method" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [456 475])
+                    ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [476 509])
+                    ("resultStream" variable
+                       (:reference 1
+                        :type ("vtkClientServerStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [510 546]))                  
+                :type ("VTK_EXPORT" type (:type "class") nil nil))
+                nil [364 6841])
+            ("vtkPVProgressHandler_Init" function
+               (:arguments 
+                  ( ("csi" variable
+                       (:pointer 1
+                        :type ("vtkClientServerInterpreter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6966 6998]))                  
+                :type ("VTK_EXPORT" type (:type "class") nil nil))
+                nil [6929 7281]))          
+    :file "vtkPVProgressHandlerClientServer.cxx"
+    :pointmax 7282
+    :fsize 7281
+    :lastmodtime '(20774 19040)
+    :unmatched-syntax '((VOID 6924 . 6928) (INT 360 . 363))
+    :lexical-table 
+        '(("VTK_WRAPPING_CXX")
+          ("VTK_STREAMS_FWD_ONLY")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView-build!Wrapping!ClientServer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

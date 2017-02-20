@@ -1,0 +1,335 @@
+;; Object Testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Testing/"
+  :tables
+  (list
+    (semanticdb-table "TestWireframe.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vesActor.h" include (:system-flag t) nil [804 825])
+            ("vesKiwiBaseApp.h" include (:system-flag t) nil [826 853])
+            ("vesKiwiDataLoader.h" include (:system-flag t) nil [854 884])
+            ("vesKiwiPolyDataRepresentation.h" include (:system-flag t) nil [885 927])
+            ("vesKiwiTestHelper.h" include (:system-flag t) nil [928 958])
+            ("vesMapper.h" include (:system-flag t) nil [959 981])
+            ("vesShaderProgram.h" include (:system-flag t) nil [982 1011])
+            ("vesUniform.h" include (:system-flag t) nil [1012 1035])
+            ("vesBuiltinShaders.h" include (:system-flag t) nil [1036 1066])
+            ("vtkPolyData.h" include (:system-flag t) nil [1068 1092])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [1093 1121])
+            ("vesWireframeApp" type
+               (:superclasses 
+                  ( ("vesKiwiBaseApp" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1172 1179])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesWireframeApp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1196 1212]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1183 1213])
+                    ("vesWireframeApp" function
+                       (:constructor-flag t
+                        :type ("vesWireframeApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1217 1345])
+                    ("vesWireframeApp" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1349 1399])
+                    ("initClipShader" function
+                       (:arguments 
+                          ( ("vertexSource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1423 1455])
+                            ("fragmentSource" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1456 1489]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1403 2202])
+                    ("unloadData" function (:type "void") (reparse-symbol classsubparts) [2206 2378])
+                    ("loadData" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2396 2424]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2382 2911])
+                    ("ClipUniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2916 2953])
+                    ("ClipShader" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesShaderProgram" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2956 2998])
+                    ("DataRep" variable
+                       (:pointer 1
+                        :type ("vesKiwiPolyDataRepresentation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3001 3040]))                  
+                :type "class")
+                nil [1124 3043])
+            ("MyTestHelper" type
+               (:superclasses 
+                  ( ("vesKiwiTestHelper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3094 3101])
+                    ("MyTestHelper" function
+                       (:constructor-flag t
+                        :type ("MyTestHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3105 3213])
+                    ("loadData" function (:type "void") (reparse-symbol classsubparts) [3217 3412])
+                    ("initApp" function (:type "void") (reparse-symbol classsubparts) [3416 3561])
+                    ("initTesting" function (:type "bool") (reparse-symbol classsubparts) [3565 3651])
+                    ("resetView" function (:type "void") (reparse-symbol classsubparts) [3655 3807])
+                    ("doTesting" function (:type "bool") (reparse-symbol classsubparts) [3811 3907])
+                    ("mTestApp" variable (:type ("vesWireframeApp::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3911 3941]))                  
+                :type "class")
+                nil [3046 3944])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3956 3965])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3966 3979]))                  
+                :type "int")
+                nil [3947 4060]))          
+      :file "TestWireframe.cpp"
+      :pointmax 4061
+      :fsize 4060
+      :lastmodtime '(20869 26816 661732 293000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TestClipPlane.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vesKiwiBaseApp.h" include (:system-flag t) nil [804 831])
+            ("vesKiwiDataLoader.h" include (:system-flag t) nil [832 862])
+            ("vesKiwiPolyDataRepresentation.h" include (:system-flag t) nil [863 905])
+            ("vesKiwiTestHelper.h" include (:system-flag t) nil [906 936])
+            ("vesShaderProgram.h" include (:system-flag t) nil [937 966])
+            ("vesUniform.h" include (:system-flag t) nil [967 990])
+            ("vesBuiltinShaders.h" include (:system-flag t) nil [991 1021])
+            ("vtkPolyData.h" include (:system-flag t) nil [1023 1047])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [1048 1076])
+            ("vesClipApp" type
+               (:superclasses 
+                  ( ("vesKiwiBaseApp" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1122 1129])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesClipApp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1146 1157]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1133 1158])
+                    ("vesClipApp" function
+                       (:constructor-flag t
+                        :type ("vesClipApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1162 1285])
+                    ("vesClipApp" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1289 1334])
+                    ("initClipShader" function
+                       (:arguments 
+                          ( ("vertexSource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1358 1390])
+                            ("fragmentSource" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1391 1424]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1338 2137])
+                    ("unloadData" function (:type "void") (reparse-symbol classsubparts) [2141 2313])
+                    ("loadData" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2331 2359]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2317 2795])
+                    ("ClipUniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2800 2837])
+                    ("ClipShader" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesShaderProgram" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2840 2882])
+                    ("DataRep" variable
+                       (:pointer 1
+                        :type ("vesKiwiPolyDataRepresentation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2885 2924]))                  
+                :type "class")
+                nil [1079 2927])
+            ("MyTestHelper" type
+               (:superclasses 
+                  ( ("vesKiwiTestHelper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2978 2985])
+                    ("MyTestHelper" function
+                       (:constructor-flag t
+                        :type ("MyTestHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2989 3087])
+                    ("loadData" function (:type "void") (reparse-symbol classsubparts) [3091 3286])
+                    ("initApp" function (:type "void") (reparse-symbol classsubparts) [3290 3422])
+                    ("initTesting" function (:type "bool") (reparse-symbol classsubparts) [3426 3512])
+                    ("doTesting" function (:type "bool") (reparse-symbol classsubparts) [3516 3610])
+                    ("mClipApp" variable (:type ("vesClipApp::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3614 3639]))                  
+                :type "class")
+                nil [2930 3642])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3654 3663])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3664 3677]))                  
+                :type "int")
+                nil [3645 3758]))          
+      :file "TestClipPlane.cpp"
+      :pointmax 3759
+      :fsize 3758
+      :lastmodtime '(20869 26816 661732 293000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TestGradientBackground.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vesBackground.h" include (:system-flag t) nil [804 830])
+            ("vesKiwiBaseApp.h" include (:system-flag t) nil [831 858])
+            ("vesKiwiDataLoader.h" include (:system-flag t) nil [859 889])
+            ("vesKiwiPolyDataRepresentation.h" include (:system-flag t) nil [890 932])
+            ("vesKiwiTestHelper.h" include (:system-flag t) nil [933 963])
+            ("vesRenderer.h" include (:system-flag t) nil [964 988])
+            ("vesSetGet.h" include (:system-flag t) nil [989 1011])
+            ("vesShaderProgram.h" include (:system-flag t) nil [1012 1041])
+            ("vesUniform.h" include (:system-flag t) nil [1042 1065])
+            ("vesBuiltinShaders.h" include (:system-flag t) nil [1066 1096])
+            ("vtkPolyData.h" include (:system-flag t) nil [1098 1122])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [1123 1151])
+            ("vesGradientBackgroundApp" type
+               (:superclasses 
+                  ( ("vesKiwiBaseApp" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1211 1218])
+                    ("vesTypeMacro" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("vesGradientBackgroundApp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1235 1260]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1222 1261])
+                    ("vesGradientBackgroundApp" function
+                       (:constructor-flag t
+                        :type ("vesGradientBackgroundApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1265 1508])
+                    ("vesGradientBackgroundApp" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1512 1571])
+                    ("initClipShader" function
+                       (:arguments 
+                          ( ("vertexSource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1595 1627])
+                            ("fragmentSource" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1628 1661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1575 2374])
+                    ("unloadData" function (:type "void") (reparse-symbol classsubparts) [2378 2550])
+                    ("loadData" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2568 2596]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2554 3026])
+                    ("ClipUniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3030 3067])
+                    ("ClipShader" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesShaderProgram" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3070 3112])
+                    ("DataRep" variable
+                       (:pointer 1
+                        :type ("vesKiwiPolyDataRepresentation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3115 3154]))                  
+                :type "class")
+                nil [1154 3157])
+            ("MyTestHelper" type
+               (:superclasses 
+                  ( ("vesKiwiTestHelper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3208 3215])
+                    ("MyTestHelper" function
+                       (:constructor-flag t
+                        :type ("MyTestHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3219 3345])
+                    ("loadData" function (:type "void") (reparse-symbol classsubparts) [3349 3544])
+                    ("initApp" function (:type "void") (reparse-symbol classsubparts) [3548 3693])
+                    ("initTesting" function (:type "bool") (reparse-symbol classsubparts) [3697 3783])
+                    ("doTesting" function (:type "bool") (reparse-symbol classsubparts) [3787 3877])
+                    ("mTestApp" variable (:type ("vesGradientBackgroundApp::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3881 3920]))                  
+                :type "class")
+                nil [3160 3923])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3935 3944])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3945 3958]))                  
+                :type "int")
+                nil [3926 4039]))          
+      :file "TestGradientBackground.cpp"
+      :pointmax 4040
+      :fsize 4039
+      :lastmodtime '(20869 26816 661732 293000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!modules!ves!VES!src!kiwi!Testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

@@ -1,0 +1,129 @@
+;; Object vr920/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vr920/"
+  :tables (list 
+   (semanticdb-table "vr920.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [320 339])
+            ("sys/types.h" include (:system-flag t) nil [341 363])
+            ("unistd.h" include (:system-flag t) nil [364 383])
+            ("string.h" include (:system-flag t) nil [384 403])
+            ("signal.h" include (:system-flag t) nil [404 423])
+            ("errno.h" include (:system-flag t) nil [424 442])
+            ("curses.h" include (:system-flag t) nil [443 462])
+            ("stdlib.h" include (:system-flag t) nil [464 483])
+            ("assert.h" include (:system-flag t) nil [484 503])
+            ("ctype.h" include (:system-flag t) nil [504 522])
+            ("usb.h" include (:system-flag t) nil [523 539])
+            ("math.h" include (:system-flag t) nil [540 557])
+            ("libconfig.h++" include (:system-flag t) nil [558 582])
+            ("typeinfo" include (:system-flag t) nil [583 602])
+            ("string.h" include (:system-flag t) nil [603 622])
+            ("sys/socket.h" include (:system-flag t) nil [623 646])
+            ("netinet/in.h" include (:system-flag t) nil [647 670])
+            ("arpa/inet.h" include (:system-flag t) nil [671 693])
+            ("getopt.h" include (:system-flag t) nil [694 713])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [715 735])
+            ("TrackingData" type
+               (:members 
+                  ( ("viewmatrix" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [758 780])
+                    ("yaw" variable (:type "double") (reparse-symbol classsubparts) [781 792])
+                    ("pitch" variable (:type "double") (reparse-symbol classsubparts) [793 806])
+                    ("roll" variable (:type "double") (reparse-symbol classsubparts) [807 819]))                  
+                :type "struct")
+                nil [737 822])
+            ("Vec3d" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [847 856])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [865 874])
+                    ("z" variable (:type "double") (reparse-symbol classsubparts) [883 892]))                  
+                :type "struct")
+                nil [824 895])
+            ("zero_yaw" variable (:type "double") nil [899 917])
+            ("zero_pitch" variable (:type "double") nil [918 938])
+            ("zero_roll" variable (:type "double") nil [939 958])
+            ("trackingdata" variable (:type ("TrackingData" type (:type "class") nil nil)) nil [960 986])
+            ("socket_descriptor" variable (:type "int") nil [989 1011])
+            ("address" variable (:type ("sockaddr_in" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1012 1039])
+            ("multicastAddress" variable
+               (:pointer 1
+                :type "char")
+                nil [1041 1077])
+            ("multicastPort" variable (:type "int") nil [1078 1101])
+            ("ratio" variable (:type "int") nil [1102 1116])
+            ("calibrationfile" variable
+               (:pointer 1
+                :type "char")
+                nil [1135 1166])
+            ("config" variable (:type ("libconfig::Config" type (:type "class") nil nil)) nil [1167 1192])
+            ("calmode" variable (:type "int") nil [1193 1207])
+            ("monitormode" variable (:type "int") nil [1208 1226])
+            ("key" variable (:type "char") nil [1227 1236])
+            ("quit" variable (:type "bool") nil [1237 1255])
+            ("acc_old" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1257 1288])
+            ("mag_old" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1289 1320])
+            ("acc_max" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1322 1361])
+            ("acc_min" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1362 1404])
+            ("mag_max" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1405 1444])
+            ("mag_min" variable (:type ("Vec3d" type (:type "class") nil nil)) nil [1445 1487])
+            ("help" function (:type "void") nil [1490 1711])
+            ("createMulticastSocket" function (:type "void") nil [1713 2143])
+            ("parsearguments" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2166 2175])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2176 2189]))                  
+                :type "void")
+                nil [2146 2826])
+            ("readconfig" function (:type "void") nil [2828 5350])
+            ("writeconfig" function (:type "void") nil [5352 7963])
+            ("zero" function (:type "void") nil [7965 8099])
+            ("catchQuit" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [8137 8145]))                  
+                :type "void")
+                nil [8122 8214])
+            ("find_device" function
+               (:pointer 1
+                :arguments 
+                  ( ("vendor" variable (:type "int") (reparse-symbol arg-sub-list) [8262 8273])
+                    ("product" variable (:type "int") (reparse-symbol arg-sub-list) [8274 8286]))                  
+                :type ("usb_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8231 8579])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8593 8602])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8603 8616]))                  
+                :type "int")
+                nil [8584 16758]))          
+    :file "vr920.cpp"
+    :pointmax 16761
+    :fsize 16835
+    :lastmodtime '(18880 20202)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!.cache!.fr-1SoZKg!vr920!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

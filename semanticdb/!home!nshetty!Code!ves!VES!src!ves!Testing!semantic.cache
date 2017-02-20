@@ -1,0 +1,136 @@
+;; Object Testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Testing/"
+  :tables (list 
+   (semanticdb-table "TestDrawPlane.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [804 823])
+            ("sstream" include (:system-flag t) nil [824 842])
+            ("fstream" include (:system-flag t) nil [843 861])
+            ("cassert" include (:system-flag t) nil [862 880])
+            ("cstdlib" include (:system-flag t) nil [881 899])
+            ("cstdio" include (:system-flag t) nil [900 917])
+            ("cstring" include (:system-flag t) nil [918 936])
+            ("vesActor.h" include (:system-flag t) nil [938 959])
+            ("vesCamera.h" include (:system-flag t) nil [960 982])
+            ("vesMapper.h" include (:system-flag t) nil [983 1005])
+            ("vesMaterial.h" include (:system-flag t) nil [1006 1030])
+            ("vesModelViewUniform.h" include (:system-flag t) nil [1031 1063])
+            ("vesProjectionUniform.h" include (:system-flag t) nil [1064 1097])
+            ("vesRenderer.h" include (:system-flag t) nil [1098 1122])
+            ("vesShader.h" include (:system-flag t) nil [1123 1145])
+            ("vesShaderProgram.h" include (:system-flag t) nil [1146 1175])
+            ("vesUniform.h" include (:system-flag t) nil [1176 1199])
+            ("vesVertexAttribute.h" include (:system-flag t) nil [1200 1231])
+            ("vesVertexAttributeKeys.h" include (:system-flag t) nil [1232 1267])
+            ("vesViewport.h" include (:system-flag t) nil [1268 1292])
+            ("vesTestHelper.h" include (:system-flag t) nil [1294 1320])
+            ("vesTestDrawPlane" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1348 1355])
+                    ("vesTestDrawPlane" function
+                       (:constructor-flag t
+                        :type ("vesTestDrawPlane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1359 2052])
+                    ("vesTestDrawPlane" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2056 2083])
+                    ("renderer" function (:type ("vesRenderer::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2087 2143])
+                    ("init" function (:type "void") (reparse-symbol classsubparts) [2147 4065])
+                    ("createPlane" function (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesGeometryData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4069 6035])
+                    ("toggleVisibility" function (:type "void") (reparse-symbol classsubparts) [6039 6130])
+                    ("toggleColorVisibility" function (:type "void") (reparse-symbol classsubparts) [6134 6254])
+                    ("private" label nil (reparse-symbol classsubparts) [6257 6265])
+                    ("m_modelViewUniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesModelViewUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6269 6322])
+                    ("m_projectionUniform" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesProjectionUniform" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6325 6380])
+                    ("m_positionVertexAttribute" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesPositionVertexAttribute" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6383 6450])
+                    ("m_normalVertexAttribute" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesNormalVertexAttribute" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6453 6516])
+                    ("m_colorVertexAttribute" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesColorVertexAttribute" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6519 6580])
+                    ("m_textureCoodinateAttribute" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesTextureCoordinateVertexAttribute" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6583 6661])
+                    ("m_backgroundPlaneData" variable (:type ("vesSharedPtr" type
+                         (:template-specifier 
+                            ( ("vesGeometryData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6664 6716])
+                    ("m_vertexShader" variable (:type ("vesShader::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6720 6750])
+                    ("m_fragmentShader" variable (:type ("vesShader::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6753 6785])
+                    ("m_shaderProgram" variable (:type ("vesShaderProgram::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6788 6826])
+                    ("m_material" variable (:type ("vesMaterial::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6829 6857])
+                    ("m_mapper" variable (:type ("vesMapper::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6860 6884])
+                    ("m_actor" variable (:type ("vesActor::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6887 6909])
+                    ("m_renderer" variable (:type ("vesRenderer::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6912 6940]))                  
+                :type "class")
+                nil [1323 6944])
+            ("MyTestHelper" type
+               (:superclasses 
+                  ( ("vesTestHelper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6993 7000])
+                    ("MyTestHelper" function
+                       (:constructor-flag t
+                        :type ("MyTestHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7004 7066])
+                    ("handleKeyboard" function
+                       (:arguments 
+                          ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7090 7108])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7109 7115])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7116 7122]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7070 7323])
+                    ("mApp" variable (:type ("vesTestDrawPlane" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7327 7349]))                  
+                :type "class")
+                nil [6949 7352])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7364 7373])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7374 7387]))                  
+                :type "int")
+                nil [7355 8267]))          
+    :file "TestDrawPlane.cpp"
+    :pointmax 8268
+    :fsize 8267
+    :lastmodtime '(21278 6459 308844 438000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nshetty!Code!ves!VES!src!ves!Testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

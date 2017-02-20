@@ -1,0 +1,73 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkPVWebUtilities.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkPVWebUtilities.h" include nil nil [545 575])
+            ("vtkDataSetAttributes.h" include nil nil [577 610])
+            ("vtkDataSet.h" include nil nil [611 634])
+            ("vtkJavaScriptDataWriter.h" include nil nil [635 671])
+            ("vtkNew.h" include nil nil [672 691])
+            ("vtkObjectFactory.h" include nil nil [692 721])
+            ("vtkSplitColumnComponents.h" include nil nil [722 759])
+            ("vtkTable.h" include nil nil [760 781])
+            ("vtksys/ios/sstream" include (:system-flag t) nil [784 813])
+            ("vtkStandardNewMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkPVWebUtilities" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [835 853]))                  
+                :type "int")
+                nil [815 854])
+            ("vtkPVWebUtilities" function
+               (:constructor-flag t
+                :parent "vtkPVWebUtilities"
+                :type ("vtkPVWebUtilities" type (:type "class") nil nil))
+                nil [934 976])
+            ("vtkPVWebUtilities" function
+               (:destructor-flag t
+                :parent "vtkPVWebUtilities"
+                :type "void")
+                nil [1057 1100])
+            ("WriteAttributesToJavaScript" function
+               (:parent "vtkPVWebUtilities"
+                :arguments 
+                  ( ("field_type" variable (:type "int") (reparse-symbol arg-sub-list) [1243 1258])
+                    ("dataset" variable
+                       (:pointer 1
+                        :type ("vtkDataSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1259 1279]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1181 2046])
+            ("WriteAttributeHeadersToJavaScript" function
+               (:parent "vtkPVWebUtilities"
+                :arguments 
+                  ( ("field_type" variable (:type "int") (reparse-symbol arg-sub-list) [2195 2210])
+                    ("dataset" variable
+                       (:pointer 1
+                        :type ("vtkDataSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2211 2231]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2127 3142])
+            ("PrintSelf" function
+               (:parent "vtkPVWebUtilities"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3257 3269])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3270 3287]))                  
+                :type "void")
+                nil [3223 3334]))          
+    :file "vtkPVWebUtilities.cxx"
+    :pointmax 3335
+    :fsize 3334
+    :lastmodtime '(20817 62747)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!Web!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

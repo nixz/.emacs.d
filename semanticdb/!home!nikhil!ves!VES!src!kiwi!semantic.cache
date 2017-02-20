@@ -1,0 +1,284 @@
+;; Object kiwi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kiwi/"
+  :tables (list 
+   (semanticdb-table "vesKiwiDataLoader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vesKiwiDataLoader_h" variable (:constant-flag t) nil [896 917])
+            ("string" include (:system-flag t) nil [919 936])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [937 965])
+            ("vtkAlgorithm" type
+               (:prototype t
+                :type "class")
+                nil [967 986])
+            ("vtkDataSet" type
+               (:prototype t
+                :type "class")
+                nil [987 1004])
+            ("vesKiwiDataLoader" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1032 1039])
+                    ("vesKiwiDataLoader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("vesKiwiDataLoader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1043 1063])
+                    ("vesKiwiDataLoader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1066 1087])
+                    ("setErrorOnMoreThan65kVertices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("isEnabled" variable (:type "bool") (reparse-symbol arg-sub-list) [1596 1611]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1561 1612])
+                    ("isErrorOnMoreThan65kVertices" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1615 1657])
+                    ("loadDataset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1701 1729]))                          
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("vtkDataSet" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1661 1730])
+                    ("errorTitle" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1733 1764])
+                    ("errorMessage" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1767 1800])
+                    ("protected" label nil (reparse-symbol classsubparts) [1802 1812])
+                    ("datasetFromAlgorithm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("algorithm" variable
+                               (:pointer 1
+                                :type ("vtkAlgorithm" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2097 2121]))                          
+                        :type ("vtkSmartPointer" type
+                             (:template-specifier 
+                                ( ("vtkDataSet" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2048 2122])
+                    ("updateAlgorithmOrSetErrorString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("algorithm" variable
+                               (:pointer 1
+                                :type ("vtkAlgorithm" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2164 2188]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2127 2189])
+                    ("hasEnding" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fullString" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2207 2237])
+                            ("ending" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2238 2264]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2192 2271])
+                    ("setMaximumNumberOfPointsErrorMessage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2274 2318])
+                    ("private" label nil (reparse-symbol classsubparts) [2320 2328])
+                    ("vesKiwiDataLoader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesKiwiDataLoader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2350 2375]))                          
+                        :type ("vesKiwiDataLoader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2332 2376])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vesKiwiDataLoader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2413 2438]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2398 2439])
+                    ("vesInternal" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [2462 2480])
+                    ("Internal" variable
+                       (:pointer 1
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2483 2505]))                  
+                :type "class")
+                nil [1006 2508]))          
+    :file "vesKiwiDataLoader.h"
+    :pointmax 2518
+    :fsize 2517
+    :lastmodtime '(20781 8292)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__vesKiwiDataLoader_h")
+          )
+
+    )
+   (semanticdb-table "vesKiwiDataLoader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vesKiwiDataLoader.h" include nil nil [804 834])
+            ("vtkSmartPointer.h" include (:system-flag t) nil [836 864])
+            ("vtkXMLPolyDataReader.h" include (:system-flag t) nil [865 898])
+            ("vtkXMLImageDataReader.h" include (:system-flag t) nil [899 933])
+            ("vtkXMLUnstructuredGridReader.h" include (:system-flag t) nil [934 975])
+            ("vtkPNGReader.h" include (:system-flag t) nil [976 1001])
+            ("vtkJPEGReader.h" include (:system-flag t) nil [1002 1028])
+            ("vtkPolyDataReader.h" include (:system-flag t) nil [1029 1059])
+            ("vtkOBJReader.h" include (:system-flag t) nil [1060 1085])
+            ("vtkSTLReader.h" include (:system-flag t) nil [1086 1111])
+            ("vtkErrorCode.h" include (:system-flag t) nil [1112 1137])
+            ("vtkNew.h" include (:system-flag t) nil [1138 1157])
+            ("vtkDataSetReader.h" include (:system-flag t) nil [1158 1187])
+            ("vtkPolyData.h" include (:system-flag t) nil [1188 1212])
+            ("vtkImageData.h" include (:system-flag t) nil [1213 1238])
+            ("vtkBYUReader.h" include (:system-flag t) nil [1239 1264])
+            ("vtkPLYReader.h" include (:system-flag t) nil [1265 1290])
+            ("vtkSphereSource.h" include (:system-flag t) nil [1291 1319])
+            ("vtkPDBReader.h" include (:system-flag t) nil [1320 1345])
+            ("vtkGlyph3D.h" include (:system-flag t) nil [1346 1369])
+            ("vtkAppendPolyData.h" include (:system-flag t) nil [1370 1400])
+            ("vtkDataSetSurfaceFilter.h" include (:system-flag t) nil [1401 1437])
+            ("vtkMetaImageReader.h" include (:system-flag t) nil [1438 1469])
+            ("vtksys/SystemTools.hxx" include (:system-flag t) nil [1471 1504])
+            ("cassert" include (:system-flag t) nil [1506 1524])
+            ("limits" include (:system-flag t) nil [1525 1542])
+            ("vesInternal" type
+               (:parent "vesKiwiDataLoader"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1662 1669])
+                    ("vesInternal" function
+                       (:constructor-flag t
+                        :type ("vesInternal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1673 1741])
+                    ("IsErrorOnMoreThan65kVertices" variable (:type "bool") (reparse-symbol classsubparts) [1745 1779])
+                    ("ErrorTitle" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1782 1805])
+                    ("ErrorMessage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1808 1833]))                  
+                :type "class")
+                nil [1623 1836])
+            ("vesKiwiDataLoader" function
+               (:constructor-flag t
+                :parent "vesKiwiDataLoader"
+                :type ("vesKiwiDataLoader" type (:type "class") nil nil))
+                nil [1917 1997])
+            ("vesKiwiDataLoader" function
+               (:destructor-flag t
+                :parent "vesKiwiDataLoader"
+                :type "void")
+                nil [2078 2146])
+            ("setErrorOnMoreThan65kVertices" function
+               (:parent "vesKiwiDataLoader"
+                :arguments 
+                  ( ("isEnabled" variable (:type "bool") (reparse-symbol arg-sub-list) [2281 2296]))                  
+                :type "void")
+                nil [2227 2360])
+            ("isErrorOnMoreThan65kVertices" function
+               (:parent "vesKiwiDataLoader"
+                :type "bool")
+                nil [2441 2560])
+            ("hasEnding" function
+               (:parent "vesKiwiDataLoader"
+                :arguments 
+                  ( ("fullString" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2675 2705])
+                    ("ending" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2706 2732]))                  
+                :type "bool")
+                nil [2641 2926])
+            ("updateAlgorithmOrSetErrorString" function
+               (:parent "vesKiwiDataLoader"
+                :arguments 
+                  ( ("algorithm" variable
+                       (:pointer 1
+                        :type ("vtkAlgorithm" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3063 3087]))                  
+                :type "bool")
+                nil [3007 3589])
+            ("datasetFromAlgorithm" function
+               (:parent "vesKiwiDataLoader"
+                :arguments 
+                  ( ("algorithm" variable
+                       (:pointer 1
+                        :type ("vtkAlgorithm" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3738 3762]))                  
+                :type ("vtkSmartPointer" type
+                     (:template-specifier 
+                        ( ("vtkDataSet" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3670 5236])
+            ("loadDataset" function
+               (:parent "vesKiwiDataLoader"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5376 5404]))                  
+                :type ("vtkSmartPointer" type
+                     (:template-specifier 
+                        ( ("vtkDataSet" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5317 9283])
+            ("setMaximumNumberOfPointsErrorMessage" function
+               (:parent "vesKiwiDataLoader"
+                :type "void")
+                nil [9364 9588])
+            ("errorTitle" function
+               (:parent "vesKiwiDataLoader"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [9669 9759])
+            ("errorMessage" function
+               (:parent "vesKiwiDataLoader"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [9840 9934]))          
+    :file "vesKiwiDataLoader.cpp"
+    :pointmax 9935
+    :fsize 9934
+    :lastmodtime '(20781 8292)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!nikhil!ves!VES!src!kiwi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

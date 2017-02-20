@@ -1,0 +1,156 @@
+;; Object emokit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emokit/"
+  :tables (list 
+   (semanticdb-table "emotiv.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("gevent" include nil nil [1 14])
+            ("try" code nil nil [16 100])
+            ("os" include nil nil [101 110])
+            ("gevent.queue" include nil nil [111 141])
+            ("subprocess" include nil nil [142 177])
+            ("Crypto.Cipher" include nil nil [178 207])
+            ("Crypto" include nil nil [208 233])
+            ("sensorBits" variable nil nil [235 1296])
+            ("quality_bits" variable nil nil [1297 1381])
+            ("g_battery" variable nil nil [1383 1396])
+            ("tasks" variable nil nil [1397 1412])
+            ("byte_names" variable nil nil [1480 3275])
+            ("EmotivPacket" type
+               (:documentation "
+    Basic semantics for input bytes.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("global" code nil (reparse-symbol indented_block_body) [3406 3422])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3431 3450])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3459 3486])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3495 3519])
+                            ("if" code nil (reparse-symbol indented_block_body) [3528 3670])
+                            ("self" code nil (reparse-symbol indented_block_body) [3678 3710])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3804 3862])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3871 3931])
+                            ("sensors" variable nil (reparse-symbol indented_block_body) [3940 3974])
+                            ("sensors" variable nil (reparse-symbol indented_block_body) [3983 4017])
+                            ("for" code nil (reparse-symbol indented_block_body) [4027 4205])
+                            ("self" code nil (reparse-symbol indented_block_body) [4213 4241])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4250 4272]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3376 3380])
+                            ("data" variable nil (reparse-symbol function_parameters) [3382 3386])
+                            ("sensors" variable nil (reparse-symbol function_parameters) [3388 3395]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3363 4273])
+                    ("get_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4292 4296])
+                            ("data" variable nil (reparse-symbol function_parameters) [4298 4302])
+                            ("bits" variable nil (reparse-symbol function_parameters) [4304 4308]))                          )
+                        (reparse-symbol indented_block_body) [4278 4505])
+                    ("handle_quality" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4529 4533])
+                            ("sensors" variable nil (reparse-symbol function_parameters) [4535 4542]))                          )
+                        (reparse-symbol indented_block_body) [4510 7805])
+                    ("battery_percent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7830 7834]))                          )
+                        (reparse-symbol indented_block_body) [7810 9151])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9169 9173]))                          )
+                        (reparse-symbol indented_block_body) [9156 9399]))                  
+                :type "class")
+                nil [3277 9399])
+            ("Emotiv" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9511 9528])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9537 9559])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9568 9592])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9601 9626])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9635 9651])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9660 9694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9703 9729])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9738 9778])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9787 10601]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9439 9443])
+                            ("displayOutput" variable nil (reparse-symbol function_parameters) [9445 9458])
+                            ("headsetId" variable nil (reparse-symbol function_parameters) [9466 9475])
+                            ("research_headset" variable nil (reparse-symbol function_parameters) [9479 9495]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9426 10602])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10617 10621])
+                            ("headsetId" variable nil (reparse-symbol function_parameters) [10623 10632]))                          )
+                        (reparse-symbol indented_block_body) [10607 10729])
+                    ("updateStdout" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10751 10755]))                          )
+                        (reparse-symbol indented_block_body) [10734 11301])
+                    ("getLinuxSetup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11324 11328]))                          )
+                        (reparse-symbol indented_block_body) [11306 12988])
+                    ("setupWin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13006 13010]))                          )
+                        (reparse-symbol indented_block_body) [12993 14667])
+                    ("handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14684 14688])
+                            ("data" variable nil (reparse-symbol function_parameters) [14690 14694]))                          )
+                        (reparse-symbol indented_block_body) [14672 14833])
+                    ("setupPosix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14853 14857]))                          )
+                        (reparse-symbol indented_block_body) [14838 16003])
+                    ("setupCrypto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16024 16028])
+                            ("sn" variable nil (reparse-symbol function_parameters) [16030 16032]))                          )
+                        (reparse-symbol indented_block_body) [16008 17764])
+                    ("dequeue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17781 17785]))                          )
+                        (reparse-symbol indented_block_body) [17769 17888])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17903 17907]))                          )
+                        (reparse-symbol indented_block_body) [17893 18039]))                  
+                :type "class")
+                nil [9400 18039])
+            ("if" code nil nil [18040 18189]))          
+    :file "emotiv.py"
+    :pointmax 18191
+    :fsize 18190
+    :lastmodtime '(21818 52753 892528 970000)
+    :unmatched-syntax '((INDENT_BLOCK 12937 . 12988) (NEWLINE 12936 . 12937) (COLON 12935 . 12936) (TRY 11921 . 11924) (AS 12931 . 12933))
+    )
+   )
+  :file "!home!nshetty!tools!emokit!emokit!python!emokit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,523 @@
+;; Object Core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Core/"
+  :tables (list 
+   (semanticdb-table "vtkCamera.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkCamera.h" include nil nil [583 605])
+            ("vtkMath.h" include nil nil [607 627])
+            ("vtkTimeStamp.h" include nil nil [628 653])
+            ("vtkObjectFactory.h" include nil nil [654 683])
+            ("vtkPerspectiveTransform.h" include nil nil [684 720])
+            ("vtkTransform.h" include nil nil [721 746])
+            ("vtkCallbackCommand.h" include nil nil [747 778])
+            ("math.h" include (:system-flag t) nil [780 797])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCamera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [997 1007])
+                    ("" variable (:type ("EyeTransformMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1008 1027])
+                    ("" variable (:type ("vtkMatrix4x4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1041]))                  
+                :type "int")
+                nil [976 1042])
+            ("vtkCxxSetObjectMacro" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vtkCamera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1064 1074])
+                    ("" variable (:type ("ModelTransformMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1075 1096])
+                    ("" variable (:type ("vtkMatrix4x4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1110]))                  
+                :type "int")
+                nil [1043 1111])
+            ("vtkCameraCallbackCommand" type
+               (:superclasses 
+                  ( ("vtkCommand" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1246 1253])
+                    ("New" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("vtkCameraCallbackCommand" type (:type "class") nil nil)
+                        :parent "vtkCameraCallbackCommand")
+                        (reparse-symbol classsubparts) [1256 1339])
+                    ("Self" variable
+                       (:pointer 1
+                        :type ("vtkCamera" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1342 1358])
+                    ("Execute" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("vtkObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1374 1386])
+                            ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1387 1401])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1402 1409]))                          
+                        :type "void"
+                        :parent "vtkCameraCallbackCommand")
+                        (reparse-symbol classsubparts) [1361 1629])
+                    ("protected" label nil (reparse-symbol classsubparts) [1630 1640])
+                    ("vtkCameraCallbackCommand" function
+                       (:constructor-flag t
+                        :type ("vtkCameraCallbackCommand" type (:type "class") nil nil)
+                        :parent "vtkCameraCallbackCommand")
+                        (reparse-symbol classsubparts) [1643 1692])
+                    ("vtkCameraCallbackCommand" function
+                       (:destructor-flag t
+                        :type "void"
+                        :parent "vtkCameraCallbackCommand")
+                        (reparse-symbol classsubparts) [1695 1725]))                  
+                :type "class")
+                nil [1193 1728])
+            ("vtkCamera" function
+               (:constructor-flag t
+                :parent "vtkCamera"
+                :type ("vtkCamera" type (:type "class") nil nil))
+                nil [1998 4066])
+            ("vtkCamera" function
+               (:destructor-flag t
+                :parent "vtkCamera"
+                :type "void")
+                nil [4147 5025])
+            ("SetPosition" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [5557 5566])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [5567 5576])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [5577 5586]))                  
+                :type "void")
+                nil [5529 6085])
+            ("SetUserTransform" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("transform" variable
+                       (:pointer 1
+                        :type ("vtkHomogeneousTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6199 6234]))                  
+                :type "void")
+                nil [6166 6535])
+            ("SetUserViewTransform" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("transform" variable
+                       (:pointer 1
+                        :type ("vtkHomogeneousTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6653 6688]))                  
+                :type "void")
+                nil [6616 7529])
+            ("SetFocalPoint" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [7640 7649])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [7650 7659])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [7660 7669]))                  
+                :type "void")
+                nil [7610 8172])
+            ("SetViewUp" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [8279 8288])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [8289 8298])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [8299 8308]))                  
+                :type "void")
+                nil [8253 8943])
+            ("ComputeViewTransform" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [9214 9567])
+            ("ComputeCameraLightTransform" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [9648 9985])
+            ("ComputeWorldToScreenMatrix" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [10066 12197])
+            ("ComputeOffAxisProjectionFrustum" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [12278 14567])
+            ("ComputeModelViewMatrix" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [14648 15029])
+            ("OrthogonalizeViewUp" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [15110 15439])
+            ("SetDistance" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("d" variable (:type "double") (reparse-symbol arg-sub-list) [15673 15682]))                  
+                :type "void")
+                nil [15645 16431])
+            ("ComputeDistance" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [16590 17450])
+            ("Dolly" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("amount" variable (:type "double") (reparse-symbol arg-sub-list) [17742 17756]))                  
+                :type "void")
+                nil [17720 18118])
+            ("SetRoll" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("roll" variable (:type "double") (reparse-symbol arg-sub-list) [18293 18305]))                  
+                :type "void")
+                nil [18269 18573])
+            ("GetRoll" function
+               (:parent "vtkCamera"
+                :type "double")
+                nil [18689 18822])
+            ("Roll" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [18975 18988]))                  
+                :type "void")
+                nil [18954 19395])
+            ("Yaw" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [19585 19598]))                  
+                :type "void")
+                nil [19565 20082])
+            ("Pitch" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [20321 20334]))                  
+                :type "void")
+                nil [20299 21069])
+            ("Azimuth" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [21249 21262]))                  
+                :type "void")
+                nil [21225 21749])
+            ("Elevation" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [22003 22016]))                  
+                :type "void")
+                nil [21977 22733])
+            ("ApplyTransform" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("vtkTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22874 22890]))                  
+                :type "void")
+                nil [22843 23450])
+            ("SetParallelProjection" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [24087 24096]))                  
+                :type "void")
+                nil [24049 24246])
+            ("SetViewAngle" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [24356 24369]))                  
+                :type "void")
+                nil [24327 24585])
+            ("SetUseHorizontalViewAngle" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [24708 24717]))                  
+                :type "void")
+                nil [24666 24879])
+            ("SetParallelScale" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [24993 25006]))                  
+                :type "void")
+                nil [24960 25148])
+            ("Zoom" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("amount" variable (:type "double") (reparse-symbol arg-sub-list) [25443 25457]))                  
+                :type "void")
+                nil [25422 25674])
+            ("SetClippingRange" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("nearz" variable (:type "double") (reparse-symbol arg-sub-list) [25788 25801])
+                    ("farz" variable (:type "double") (reparse-symbol arg-sub-list) [25802 25814]))                  
+                :type "void")
+                nil [25755 26845])
+            ("SetThickness" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("s" variable (:type "double") (reparse-symbol arg-sub-list) [27109 27118]))                  
+                :type "void")
+                nil [27080 27616])
+            ("SetWindowCenter" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [27729 27738])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [27739 27748]))                  
+                :type "void")
+                nil [27697 27945])
+            ("SetObliqueAngles" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [28059 28072])
+                    ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [28073 28085]))                  
+                :type "void")
+                nil [28026 28352])
+            ("SetViewShear" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("dxdz" variable (:type "double") (reparse-symbol arg-sub-list) [28730 28742])
+                    ("dydz" variable (:type "double") (reparse-symbol arg-sub-list) [28743 28755])
+                    ("center" variable (:type "double") (reparse-symbol arg-sub-list) [28756 28770]))                  
+                :type "void")
+                nil [28701 29083])
+            ("SetViewShear" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("d" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [29193 29205]))                  
+                :type "void")
+                nil [29164 29249])
+            ("ComputeProjectionTransform" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("aspect" variable (:type "double") (reparse-symbol arg-sub-list) [29483 29497])
+                    ("nearz" variable (:type "double") (reparse-symbol arg-sub-list) [29541 29554])
+                    ("farz" variable (:type "double") (reparse-symbol arg-sub-list) [29555 29567]))                  
+                :type "void")
+                nil [29440 32150])
+            ("GetProjectionTransformMatrix" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :arguments 
+                  ( ("aspect" variable (:type "double") (reparse-symbol arg-sub-list) [32360 32374])
+                    ("nearz" variable (:type "double") (reparse-symbol arg-sub-list) [32429 32442])
+                    ("farz" variable (:type "double") (reparse-symbol arg-sub-list) [32497 32509]))                  
+                :type ("vtkMatrix4x4" type (:type "class") nil nil))
+                nil [32306 32646])
+            ("GetProjectionTransformObject" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :arguments 
+                  ( ("aspect" variable (:type "double") (reparse-symbol arg-sub-list) [32867 32881])
+                    ("nearz" variable (:type "double") (reparse-symbol arg-sub-list) [32947 32960])
+                    ("farz" variable (:type "double") (reparse-symbol arg-sub-list) [33026 33038]))                  
+                :type ("vtkPerspectiveTransform" type (:type "class") nil nil))
+                nil [32802 33162])
+            ("GetCompositeProjectionTransformMatrix" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :arguments 
+                  ( ("aspect" variable (:type "double") (reparse-symbol arg-sub-list) [33381 33395])
+                    ("nearz" variable (:type "double") (reparse-symbol arg-sub-list) [33459 33472])
+                    ("farz" variable (:type "double") (reparse-symbol arg-sub-list) [33536 33548]))                  
+                :type ("vtkMatrix4x4" type (:type "class") nil nil))
+                nil [33318 34116])
+            ("GetCameraLightTransformMatrix" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type ("vtkMatrix4x4" type (:type "class") nil nil))
+                nil [34244 34380])
+            ("ComputeViewPlaneNormal" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [34462 35268])
+            ("GetFrustumPlanes" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("aspect" variable (:type "double") (reparse-symbol arg-sub-list) [35460 35474])
+                    ("planes" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [35475 35493]))                  
+                :type "void")
+                nil [35427 36481])
+            ("GetViewingRaysMTime" function
+               (:parent "vtkCamera"
+                :type "unsigned long int")
+                nil [36562 36660])
+            ("ViewingRaysModified" function
+               (:parent "vtkCamera"
+                :type "void")
+                nil [36741 36819])
+            ("ShallowCopy" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("vtkCamera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37079 37097]))                  
+                :type "void")
+                nil [37051 39541])
+            ("DeepCopy" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("vtkCamera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39806 39824]))                  
+                :type "void")
+                nil [39781 44395])
+            ("PartialCopy" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("vtkCamera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44667 44685]))                  
+                :type "void")
+                nil [44639 46136])
+            ("PrintSelf" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46243 46255])
+                    ("indent" variable (:type ("vtkIndent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46256 46273]))                  
+                :type "void")
+                nil [46217 49873])
+            ("SetEyePosition" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("eyePosition" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [49986 50008]))                  
+                :type "void")
+                nil [49955 50326])
+            ("GetEyePosition" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("eyePosition" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [50439 50461]))                  
+                :type "void")
+                nil [50408 50761])
+            ("GetEyePlaneNormal" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("normal" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [50877 50894]))                  
+                :type "void")
+                nil [50843 51459])
+            ("GetModelViewTransformMatrix" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type ("vtkMatrix4x4" type (:type "class") nil nil))
+                nil [51541 51682])
+            ("GetModelViewTransformObject" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type ("vtkTransform" type (:type "class") nil nil))
+                nil [51764 51892])
+            ("GetViewTransformMatrix" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type ("vtkMatrix4x4" type (:type "class") nil nil))
+                nil [51974 52073])
+            ("GetViewTransformObject" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type ("vtkTransform" type (:type "class") nil nil))
+                nil [52155 52254])
+            ("GetOrientation" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type "double")
+                nil [52336 52421])
+            ("GetOrientationWXYZ" function
+               (:pointer 1
+                :parent "vtkCamera"
+                :type "double")
+                nil [52504 52597])
+            ("SetEyeTransformMatrix" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("elements" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [52718 52744]))                  
+                :type "void")
+                nil [52680 53689])
+            ("SetModelTransformMatrix" function
+               (:parent "vtkCamera"
+                :arguments 
+                  ( ("elements" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [53811 53837]))                  
+                :type "void")
+                nil [53771 54814]))          
+    :file "vtkCamera.cxx"
+    :pointmax 54815
+    :fsize 54814
+    :lastmodtime '(20808 35236)
+    :unmatched-syntax '((punctuation 52597 . 52598) (punctuation 52421 . 52422) (semantic-list 963 . 974) (symbol 931 . 963) (punctuation 52597 . 52598) (punctuation 52421 . 52422) (semantic-list 963 . 974) (symbol 931 . 963) (punctuation 52597 . 52598) (punctuation 52421 . 52422) (semantic-list 963 . 974) (symbol 931 . 963))
+    )
+   (semanticdb-table "vtkCamera.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__vtkCamera_h" variable (:constant-flag t) nil [1094 1107])
+            ("vtkRenderingCoreModule.h" include nil nil [1109 1144])
+            ("vtkObject.h" include nil nil [1165 1187])
+            ("vtkHomogeneousTransform" type
+               (:prototype t
+                :type "class")
+                nil [1189 1219])
+            ("vtkMatrix4x4" type
+               (:prototype t
+                :type "class")
+                nil [1220 1239])
+            ("vtkPerspectiveTransform" type
+               (:prototype t
+                :type "class")
+                nil [1240 1270])
+            ("vtkRenderer" type
+               (:prototype t
+                :type "class")
+                nil [1271 1289])
+            ("vtkTransform" type
+               (:prototype t
+                :type "class")
+                nil [1290 1309])
+            ("vtkCallbackCommand" type
+               (:prototype t
+                :type "class")
+                nil [1310 1335])
+            ("vtkCameraCallbackCommand" type
+               (:prototype t
+                :type "class")
+                nil [1336 1367])
+            ("vtkObject" variable (:type "int") nil [1418 23061]))          
+    :file "vtkCamera.h"
+    :pointmax 23070
+    :fsize 23069
+    :lastmodtime '(20808 35230)
+    :unmatched-syntax '((PUBLIC 1411 . 1417) (punctuation 1409 . 1410) (symbol 1399 . 1408) (symbol 1375 . 1398) (CLASS 1369 . 1374))
+    :lexical-table 
+        '(("__vtkCamera_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!Rendering!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

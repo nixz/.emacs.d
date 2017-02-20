@@ -1,0 +1,66 @@
+;; Object starfield/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "starfield/"
+  :tables (list 
+   (semanticdb-table "starfield.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sb6.h" include (:system-flag t) nil [1159 1175])
+            ("sb6ktx.h" include (:system-flag t) nil [1176 1195])
+            ("vmath.h" include (:system-flag t) nil [1196 1214])
+            ("cmath" include (:system-flag t) nil [1216 1232])
+            ("seed" variable
+               (:typemodifiers ("static")
+                :type "unsigned int")
+                nil [1261 1299])
+            ("random_float" function
+               (:typemodifiers ("static" "inline")
+                :type "float")
+                nil [1301 1525])
+            ("" type
+               (:members 
+                  ( ("NUM_STARS" variable
+                       (:constant-flag t
+                        :default-value (1560 1564)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1538 1564]))                  
+                :type "enum")
+                nil [1527 1567])
+            ("starfield_app" type
+               (:superclasses 
+                  ( ("sb6::application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("init" function (:type "void") (reparse-symbol classsubparts) [1621 1799])
+                    ("startup" function (:type "void") (reparse-symbol classsubparts) [1805 6834])
+                    ("render" function
+                       (:arguments 
+                          ( ("currentTime" variable (:type "double") (reparse-symbol arg-sub-list) [6852 6871]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6840 7862])
+                    ("protected" label nil (reparse-symbol classsubparts) [7864 7874])
+                    ("render_prog" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7879 7907])
+                    ("star_texture" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7912 7941])
+                    ("star_vao" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7946 7971])
+                    ("star_buffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7976 8004])
+                    ("uniforms" variable (:type ("" type
+                         (:members 
+                            ( ("time" variable (:type "int") (reparse-symbol classsubparts) [8031 8048])
+                              ("proj_matrix" variable (:type "int") (reparse-symbol classsubparts) [8057 8081]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8010 8097]))                  
+                :type "class")
+                nil [1569 8100]))          
+    :file "starfield.cpp"
+    :pointmax 8130
+    :fsize 8339
+    :lastmodtime '(21207 11338 0 0)
+    :unmatched-syntax '((semantic-list 8114 . 8129) (symbol 8102 . 8114))
+    )
+   )
+  :file "!Users!nshetty!Code!OpenGLSuperBible!sb6code!src!starfield!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

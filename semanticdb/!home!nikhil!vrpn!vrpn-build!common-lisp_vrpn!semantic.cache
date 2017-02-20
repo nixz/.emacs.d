@@ -1,0 +1,329 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SWIGCFFI" variable (:constant-flag t) nil [527 535])
+            ("SwigValueWrapper" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("pointer" variable (:type ("SwigMovePointer" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [653 920])
+                    ("SwigMovePointer" type
+                       (:members 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [682 689])
+                            ("SwigMovePointer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [710 715]))                                  
+                                :type ("SwigMovePointer" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [694 728])
+                            ("SwigMovePointer" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [733 767])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :type ("SwigMovePointer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [799 820]))                                  
+                                :type ("SwigMovePointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [772 907]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [653 920])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SwigValueWrapper" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [951 982]))                          
+                        :type ("SwigValueWrapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [923 983])
+                    ("SwigValueWrapper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SwigValueWrapper" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1003 1034]))                          
+                        :type ("SwigValueWrapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [986 1035])
+                    ("public" label nil (reparse-symbol classsubparts) [1036 1043])
+                    ("SwigValueWrapper" function
+                       (:constructor-flag t
+                        :type ("SwigValueWrapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1046 1081])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1112 1123]))                          
+                        :type ("SwigValueWrapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1084 1187])
+                    ("&" function
+                       (:operator-flag t
+                        :pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1237 1275]))                  )
+                nil [605 1278])
+            ("SwigValueInit" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [1280 1337])
+            ("SWIGTEMPLATEDISAMBIGUATOR" variable (:constant-flag t) nil [2136 2161])
+            ("SWIGINLINE" variable (:constant-flag t) nil [2309 2319])
+            ("SWIGUNUSED" variable (:constant-flag t) nil [2590 2600])
+            ("SWIGUNUSED" variable (:constant-flag t) nil [2764 2774])
+            ("SWIGUNUSEDPARM" variable (:constant-flag t) nil [3003 3017])
+            ("SWIGINTERN" variable (:constant-flag t) nil [3141 3151])
+            ("SWIGINTERNINLINE" variable (:constant-flag t) nil [3246 3262])
+            ("GCC_HASCLASSVISIBILITY" variable (:constant-flag t) nil [3424 3446])
+            ("SWIGEXPORT" variable (:constant-flag t) nil [3748 3758])
+            ("SWIGSTDCALL" variable (:constant-flag t) nil [4033 4044])
+            ("EXTERN" variable (:constant-flag t) nil [4554 4560])
+            ("EXPORT" variable (:constant-flag t) nil [4622 4628])
+            ("string.h" include (:system-flag t) nil [4650 4669])
+            ("EXTERN" variable (:constant-flag t) nil [4702 4708])
+            ("EXPORT" variable (:constant-flag t) nil [4770 4776])
+            ("string.h" include (:system-flag t) nil [4798 4817])
+            ("stdlib.h" include (:system-flag t) nil [4818 4837])
+            ("../vrpn_BaseClass.h" include nil nil [4910 4940])
+            ("../vrpn_Analog.h" include nil nil [4941 4968])
+            ("../vrpn_Button.h" include nil nil [5139 5166])
+            ("../vrpn_Tracker.h" include nil nil [5510 5538])
+            ("../quat/quat.h" include nil nil [5932 5957])
+            ("_wrap_new_vrpn_BaseClassUnique" function
+               (:pointer 1
+                :type ("vrpn_BaseClassUnique" type (:type "class") nil nil))
+                nil [5966 6303])
+            ("_wrap_vrpn_BaseClass_mainloop" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_BaseClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6349 6371]))                  
+                :type "void")
+                nil [6313 6506])
+            ("_wrap_new_vrpn_Analog_Remote__SWIG_0" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6574 6586])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6587 6610]))                  
+                :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                nil [6516 7013])
+            ("_wrap_new_vrpn_Analog_Remote__SWIG_1" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7081 7093]))                  
+                :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                nil [7023 7425])
+            ("_wrap_vrpn_Analog_Remote_mainloop" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7475 7501]))                  
+                :type "void")
+                nil [7435 7644])
+            ("_wrap_vrpn_Analog_Remote_register_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7708 7734])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7735 7747])
+                    ("larg3" variable (:type ("vrpn_ANALOGCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7748 7779]))                  
+                :type "int")
+                nil [7654 8175])
+            ("_wrap_vrpn_Analog_Remote_unregister_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Analog_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8241 8267])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8268 8280])
+                    ("larg3" variable (:type ("vrpn_ANALOGCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8281 8312]))                  
+                :type "int")
+                nil [8185 8710])
+            ("_wrap_new_vrpn_Button_Remote__SWIG_0" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8778 8790])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8791 8814]))                  
+                :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                nil [8720 9217])
+            ("_wrap_new_vrpn_Button_Remote__SWIG_1" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9285 9297]))                  
+                :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                nil [9227 9629])
+            ("_wrap_vrpn_Button_Remote_mainloop" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9679 9705]))                  
+                :type "void")
+                nil [9639 9848])
+            ("_wrap_vrpn_Button_Remote_register_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9912 9938])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9939 9951])
+                    ("larg3" variable (:type ("vrpn_BUTTONCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9952 9983]))                  
+                :type "int")
+                nil [9858 10379])
+            ("_wrap_vrpn_Button_Remote_unregister_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Button_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10445 10471])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10472 10484])
+                    ("larg3" variable (:type ("vrpn_BUTTONCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10485 10516]))                  
+                :type "int")
+                nil [10389 10914])
+            ("_wrap_new_vrpn_Tracker_Remote__SWIG_0" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10984 10996])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10997 11020]))                  
+                :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                nil [10924 11429])
+            ("_wrap_new_vrpn_Tracker_Remote__SWIG_1" function
+               (:pointer 1
+                :arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11499 11511]))                  
+                :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                nil [11439 11849])
+            ("_wrap_vrpn_Tracker_Remote_mainloop" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11900 11927]))                  
+                :type "void")
+                nil [11859 12072])
+            ("_wrap_vrpn_Tracker_Remote_register_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12137 12164])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12165 12177])
+                    ("larg3" variable (:type ("vrpn_TRACKERCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12178 12210]))                  
+                :type "int")
+                nil [12082 12610])
+            ("_wrap_vrpn_Tracker_Remote_unregister_change_handler" function
+               (:arguments 
+                  ( ("larg1" variable
+                       (:pointer 1
+                        :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12677 12704])
+                    ("larg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12705 12717])
+                    ("larg3" variable (:type ("vrpn_TRACKERCHANGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12718 12750]))                  
+                :type "int")
+                nil [12620 13152]))          
+      :file "cl-vrpnCFFI_wrap.cxx"
+      :pointmax 13155
+      :fsize 13154
+      :lastmodtime '(22234 6045 266043 878000)
+      :unmatched-syntax '((semantic-list 1210 . 1234) (CONST 1204 . 1209) (semantic-list 1201 . 1203) (punctuation 1200 . 1201) (symbol 1199 . 1200) (OPERATOR 1190 . 1198))
+      :lexical-table 
+        '(("SWIGINTERNINLINE" . ((symbol "SWIGINTERN" 3263 . 3273) (symbol "SWIGINLINE" 3274 . 3284)))
+          ("SWIGCFFI")
+          ("SWIGINLINE" . ((INLINE "inline" 2320 . 2326)))
+          ("SWIGEXPORT" . ((symbol "__attribute__" 3759 . 3772) (semantic-list "((visibility(\"default\")))" 3773 . 3798)))
+          ("EXTERN" . ((EXTERN "extern" 4711 . 4717) (string "\"C\"" 4718 . 4721)))
+          ("EXPORT" . ((symbol "EXTERN" 4779 . 4785) (symbol "SWIGEXPORT" 4786 . 4796)))
+          ("GCC_HASCLASSVISIBILITY")
+          ("SWIGSTDCALL")
+          ("SWIGTEMPLATEDISAMBIGUATOR")
+          ("SWIGINTERN" . ((STATIC "static" 3152 . 3158) (symbol "SWIGUNUSED" 3159 . 3169)))
+          ("SWIGUNUSEDPARM" (spp-arg-list ("p") 3017 . 3020))
+          ("SWIGUNUSED")
+          )
+))
+  :file "!home!nikhil!vrpn!vrpn-build!common-lisp_vrpn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

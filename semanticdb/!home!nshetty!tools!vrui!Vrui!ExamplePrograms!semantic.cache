@@ -1,0 +1,1229 @@
+;; Object ExamplePrograms/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ExamplePrograms/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("VRUI_MAKEDIR" variable (:default-value ("$(HOME)/Vrui-3.1/share/make")) nil [1157 1201])
+            ("INSTALLDIR" variable (:default-value ("$(shell pwd)")) nil [1665 1692])
+            ("RESOURCEDIR" variable (:default-value ("share/VruiExamplePrograms")) nil [1719 1759])
+            ("$(VRUI_MAKEDIR)/SystemDefinitions" include nil nil [2041 2083])
+            ("$(VRUI_MAKEDIR)/Packages.System" include nil nil [2083 2123])
+            ("$(VRUI_MAKEDIR)/Configuration.Vrui" include nil nil [2123 2166])
+            ("$(VRUI_MAKEDIR)/Packages.Vrui" include nil nil [2166 2204])
+            ("BININSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(EXEDIR)")) nil [2245 2285])
+            ("RESOURCEINSTALLDIR" variable (:default-value ("$(INSTALLDIR)/$(RESOURCEDIR)")) nil [2285 2335])
+            ("PACKAGES" variable (:default-value ("MYVRUI")) nil [2611 2629])
+            ("ALL" variable (:default-value ("$(EXEDIR)/VruiDemo" "$(EXEDIR)/VruiDemoSmall" "$(EXEDIR)/BulletDemo" "$(EXEDIR)/VruiGLTest" "$(EXEDIR)/VruiAppTemplate" "$(EXEDIR)/VruiLocatorDemo" "$(EXEDIR)/VruiEventToolDemo" "$(EXEDIR)/VruiCustomToolDemo" "$(EXEDIR)/VruiCalibrator" "$(EXEDIR)/DrawEnvironment" "$(EXEDIR)/VruiSceneGraphDemo" "$(EXEDIR)/VruiSoundTest" "$(EXEDIR)/ImageViewer" "$(EXEDIR)/ImageSequenceViewer" "$(EXEDIR)/VideoViewer" "$(EXEDIR)/ShowEarthModel" "$(EXEDIR)/Jello" "$(EXEDIR)/ClusterJello" "$(EXEDIR)/SharedJelloServer" "$(EXEDIR)/SharedJello" "$(EXEDIR)/VirtualClay")) nil [2913 3587])
+            (".PHONY" function (:arguments ("all")) nil [3588 3600])
+            ("all" function (:arguments ("$(ALL)")) nil [3600 3612])
+            (".PHONY" function (:arguments ("extraclean")) nil [3818 3837])
+            ("extraclean" function nil nil [3837 3849])
+            (".PHONY" function (:arguments ("extrasqueakyclean")) nil [3850 3876])
+            ("extrasqueakyclean" function nil nil [3876 3895])
+            ("$(VRUI_MAKEDIR)/BasicMakefile" include nil nil [3921 3959])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiDemo.o")) nil [4188 4229])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiDemoSmall.o")) nil [4230 4281])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiGLTest.o")) nil [4282 4327])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiAppTemplate.o")) nil [4328 4383])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiLocatorDemo.o")) nil [4384 4439])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiEventToolDemo.o")) nil [4440 4499])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiCustomToolDemo.o")) nil [4500 4561])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiCalibrator.o")) nil [4562 4615])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/DrawEnvironment.o")) nil [4616 4671])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiSceneGraphDemo.o")) nil [4672 4733])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VruiSoundTest.o")) nil [4734 4785])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/ImageViewer.o")) nil [4786 4833])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/ImageSequenceViewer.o")) nil [4834 4897])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/VideoViewer.o")) nil [4898 4945])
+            ("SHOWEARTHMODEL_SOURCES" variable (:default-value ("EarthFunctions.cpp" "PointSet.cpp" "SeismicPath.cpp" "EarthquakeSet.cpp" "EarthquakeTool.cpp" "EarthquakeQueryTool.cpp" "ShowEarthModel.cpp")) nil [5043 5358])
+            ("$(OBJDIR)" function (:arguments ("CFLAGS" "+=" "-DSHOWEARTHMODEL_IMAGEDIR='\"$(RESOURCEINSTALLDIR)\"'")) nil [5359 5449])
+            ("$(EXEDIR)" function (:arguments ("$(SHOWEARTHMODEL_SOURCES:%.cpp=$(OBJDIR)/%.o)")) nil [5450 5522])
+            ("BULLETDEMO_SOURCES" variable (:default-value ("BulletDemo.cpp" "BulletDemo.h" "DemoApplication.cpp" "DemoApplication.h")) nil [5540 5627])
+            ("$(EXEDIR)" function (:arguments ("CINCLUDEFLAGS" "+=" "-I/code/bullet/install/include/bullet" "-I/code/bullet/install/include/OpenGL")) nil [5628 5743])
+            ("$(EXEDIR)" function (:arguments ("LINKLIBFLAGS" "+=" "-L/code/bullet/install/lib/" "-lOpenGLSupport" "-L/usr/local/lib" "-lLinearMath" "-lConvexDecomposition" "-lBulletCollision" "-lGIMPACTUtils" "-lBulletFileLoader" "-lBulletDynamics" "-lBulletSoftBody" "-lHACD" "-lBulletWorldImporter" "-lBulletXmlWorldImporter" "-lGL" "-lGLU" "-lglut")) nil [5743 6036])
+            ("$(OBJDIR)" function (:arguments ("CFLAGS" "+=")) nil [6036 6071])
+            ("$(EXEDIR)" function (:arguments ("$(BULLETDEMO_SOURCES:%.cpp=$(OBJDIR)/%.o)")) nil [6071 6135])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/Jello.o")) nil [6242 6407])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/ClusterJello.o")) nil [6451 6651])
+            ("$(EXEDIR)" function (:arguments ("PACKAGES" "=" "MYGLGEOMETRYWRAPPERS" "MYGEOMETRY" "MYMATH" "MYCOMM" "MYIO" "MYTHREADS" "MYMISC" "GL")) nil [6788 6899])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/SharedJelloServer.o")) nil [6899 7067])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/JelloAtom.o" "$(OBJDIR)/JelloCrystal.o" "$(OBJDIR)/JelloRenderer.o" "$(OBJDIR)/SharedJello.o")) nil [7068 7263])
+            ("$(EXEDIR)" function (:arguments ("$(OBJDIR)/EditableGrid.o" "$(OBJDIR)/GridEditor.o")) nil [7381 7477])
+            ("install" function (:arguments ("$(ALL)")) nil [7544 7821]))          
+    :file "makefile"
+    :pointmax 7821
+    :fsize 7820
+    :lastmodtime '(21833 10205 168716 417000)
+    :unmatched-syntax '((shell-command 7720 . 7820) (bol 7719 . 7719) (symbol 1246 . 1252) (semantic-list 1232 . 1246) (punctuation 1231 . 1232) (punctuation 1229 . 1230) (punctuation 1228 . 1229) (symbol 1215 . 1227) (bol 1213 . 1213))
+    )
+   (semanticdb-table "BulletDemo.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CYBERGLOVES_DEMO_H" variable (:constant-flag t) nil [982 1000])
+            ("LinearMath/btAlignedObjectArray.h" include (:system-flag t) nil [1002 1046])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [1047 1069])
+            ("Vrui/Application.h" include (:system-flag t) nil [1070 1099])
+            ("DemoApplication.h" include nil nil [1100 1128])
+            ("btBroadphaseInterface" type
+               (:prototype t
+                :type "class")
+                nil [1130 1159])
+            ("btCollisionShape" type
+               (:prototype t
+                :type "class")
+                nil [1160 1184])
+            ("btOverlappingPairCache" type
+               (:prototype t
+                :type "class")
+                nil [1185 1215])
+            ("btCollisionDispatcher" type
+               (:prototype t
+                :type "class")
+                nil [1216 1245])
+            ("btConstraintSolver" type
+               (:prototype t
+                :type "class")
+                nil [1246 1272])
+            ("btCollisionAlgorithmCreateFunc" type
+               (:prototype t
+                :type "struct")
+                nil [1273 1311])
+            ("btDefaultCollisionConfiguration" type
+               (:prototype t
+                :type "class")
+                nil [1312 1351])
+            ("BulletDemo" type
+               (:superclasses 
+                  ( ("Vrui::Application" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("DemoApplication" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_Time" variable (:type "float") (reparse-symbol classsubparts) [1580 1593])
+                    ("m_fCyclePeriod" variable (:type "float") (reparse-symbol classsubparts) [1595 1616])
+                    ("m_fMuscleStrength" variable (:type "float") (reparse-symbol classsubparts) [1637 1661])
+                    ("m_rigs" variable (:type "int") (reparse-symbol classsubparts) [1704 1711])
+                    ("m_collisionShapes" variable (:type ("btAlignedObjectArray" type
+                         (:template-specifier 
+                            ( ("btCollisionShape" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1713 1771])
+                    ("m_broadphase" variable
+                       (:pointer 1
+                        :type ("btBroadphaseInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1824 1877])
+                    ("m_dispatcher" variable
+                       (:pointer 1
+                        :type ("btCollisionDispatcher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1879 1932])
+                    ("m_solver" variable
+                       (:pointer 1
+                        :type ("btConstraintSolver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1934 1983])
+                    ("m_collisionConfiguration" variable
+                       (:pointer 1
+                        :type ("btDefaultCollisionConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1985 2050])
+                    ("public" label nil (reparse-symbol classsubparts) [2052 2059])
+                    ("BulletDemo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2073 2083])
+                            ("" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2083 2090])
+                            ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2091 2096]))                          
+                        :type ("BulletDemo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2062 2097])
+                    ("BulletDemo" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2100 2140])
+                    ("spawnTestRig" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("startOffset" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2161 2190])
+                            ("bFixed" variable (:type "bool") (reparse-symbol arg-sub-list) [2191 2203]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2143 2204])
+                    ("setMotorTargets" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deltaTime" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2227 2246]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2206 2247])
+                    ("frame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2281 2286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2262 2287])
+                    ("display" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2349 2376]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2328 2383])
+                    ("initPhysics" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2385 2404])
+                    ("exitPhysics" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2406 2425])
+                    ("clientMoveAndDisplay" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2427 2463])
+                    ("displayCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2465 2496])
+                    ("swapBuffers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2498 2517])
+                    ("updateModifierKeys" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2519 2545]))                  
+                :type "class")
+                nil [1509 2548]))          
+    :file "BulletDemo.h"
+    :pointmax 2573
+    :fsize 2572
+    :lastmodtime '(21834 2617 971988 2000)
+    :unmatched-syntax '((punctuation 2089 . 2090) (punctuation 1699 . 1700) (punctuation 1698 . 1699) (symbol 1691 . 1698) (CLASS 1685 . 1690) (punctuation 1684 . 1685) (symbol 1664 . 1684))
+    :lexical-table 
+        '(("CYBERGLOVES_DEMO_H")
+          )
+
+    )
+   (semanticdb-table "DemoApplication.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DEMO_APPLICATION_H" variable (:constant-flag t) nil [983 1001])
+            ("stdlib.h" include (:system-flag t) nil [1004 1023])
+            ("stdio.h" include (:system-flag t) nil [1024 1042])
+            ("math.h" include (:system-flag t) nil [1043 1060])
+            ("GlutStuff.h" include (:system-flag t) nil [1061 1083])
+            ("GL_ShapeDrawer.h" include (:system-flag t) nil [1084 1111])
+            ("LinearMath/btVector3.h" include (:system-flag t) nil [1112 1145])
+            ("LinearMath/btMatrix3x3.h" include (:system-flag t) nil [1146 1181])
+            ("LinearMath/btTransform.h" include (:system-flag t) nil [1182 1217])
+            ("LinearMath/btQuickprof.h" include (:system-flag t) nil [1218 1253])
+            ("LinearMath/btAlignedObjectArray.h" include (:system-flag t) nil [1254 1298])
+            ("btCollisionShape" type
+               (:prototype t
+                :type "class")
+                nil [1300 1323])
+            ("btDynamicsWorld" type
+               (:prototype t
+                :type "class")
+                nil [1324 1346])
+            ("btRigidBody" type
+               (:prototype t
+                :type "class")
+                nil [1347 1365])
+            ("btTypedConstraint" type
+               (:prototype t
+                :type "class")
+                nil [1366 1390])
+            ("DemoApplication" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [1496 1506])
+                    ("displayProfileString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xOffset" variable (:type "int") (reparse-symbol arg-sub-list) [1534 1546])
+                            ("yStart" variable (:type "int") (reparse-symbol arg-sub-list) [1546 1557])
+                            ("message" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1557 1571]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1508 1572])
+                    ("m_profileIterator" variable
+                       (:pointer 1
+                        :type ("CProfileIterator" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1574 1616])
+                    ("protected" label nil (reparse-symbol classsubparts) [1618 1628])
+                    ("m_dynamicsWorld" variable
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1694 1728])
+                    ("m_pickConstraint" variable
+                       (:pointer 1
+                        :type ("btTypedConstraint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1765 1801])
+                    ("m_shootBoxShape" variable
+                       (:pointer 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1835 1870])
+                    ("removePickingConstraint" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1873 1912])
+                    ("pickObject" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pickPos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1938 1963])
+                            ("hitObj" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("btCollisionObject" type
+                                     (:prototype t
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1964 2002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1914 2003])
+                    ("m_cameraDistance" variable (:type "float") (reparse-symbol classsubparts) [2006 2033])
+                    ("m_debugMode" variable (:type "int") (reparse-symbol classsubparts) [2035 2057])
+                    ("m_ele" variable (:type "float") (reparse-symbol classsubparts) [2059 2075])
+                    ("m_azi" variable (:type "float") (reparse-symbol classsubparts) [2077 2093])
+                    ("m_cameraPosition" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2095 2122])
+                    ("m_cameraTargetPosition" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2124 2157])
+                    ("m_mouseOldX" variable (:type "int") (reparse-symbol classsubparts) [2169 2191])
+                    ("m_mouseOldY" variable (:type "int") (reparse-symbol classsubparts) [2193 2215])
+                    ("m_mouseButtons" variable (:type "int") (reparse-symbol classsubparts) [2217 2242])
+                    ("m_scaleBottom" variable (:type "float") (reparse-symbol classsubparts) [2244 2268])
+                    ("m_scaleFactor" variable (:type "float") (reparse-symbol classsubparts) [2270 2294])
+                    ("m_cameraUp" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2296 2317])
+                    ("m_forwardAxis" variable (:type "int") (reparse-symbol classsubparts) [2319 2343])
+                    ("m_zoomStepSize" variable (:type "float") (reparse-symbol classsubparts) [2345 2370])
+                    ("m_glutScreenWidth" variable (:type "int") (reparse-symbol classsubparts) [2372 2400])
+                    ("m_glutScreenHeight" variable (:type "int") (reparse-symbol classsubparts) [2402 2431])
+                    ("m_frustumZNear" variable (:type "float") (reparse-symbol classsubparts) [2433 2458])
+                    ("m_frustumZFar" variable (:type "float") (reparse-symbol classsubparts) [2460 2484])
+                    ("m_ortho" variable (:type "int") (reparse-symbol classsubparts) [2486 2504])
+                    ("m_ShootBoxInitialSpeed" variable (:type "float") (reparse-symbol classsubparts) [2506 2539])
+                    ("m_stepping" variable (:type "bool") (reparse-symbol classsubparts) [2541 2562])
+                    ("m_singleStep" variable (:type "bool") (reparse-symbol classsubparts) [2564 2587])
+                    ("m_idle" variable (:type "bool") (reparse-symbol classsubparts) [2589 2606])
+                    ("m_lastKey" variable (:type "int") (reparse-symbol classsubparts) [2608 2628])
+                    ("showProfileInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xOffset" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2652 2665])
+                            ("yStart" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2665 2677])
+                            ("yIncr" variable (:type "int") (reparse-symbol arg-sub-list) [2678 2688]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2631 2689])
+                    ("renderscene" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pass" variable (:type "int") (reparse-symbol arg-sub-list) [2708 2717]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2691 2718])
+                    ("m_shapeDrawer" variable
+                       (:pointer 1
+                        :type ("GL_ShapeDrawer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2721 2751])
+                    ("m_enableshadows" variable (:type "bool") (reparse-symbol classsubparts) [2753 2785])
+                    ("m_sundirection" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2787 2818])
+                    ("m_defaultContactProcessingThreshold" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2820 2872])
+                    ("public" label nil (reparse-symbol classsubparts) [2874 2881])
+                    ("m_modifierKeys" variable (:type "int") (reparse-symbol classsubparts) [2883 2902])
+                    ("DemoApplication" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DemoApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2904 2922])
+                    ("DemoApplication" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2924 2951])
+                    ("getDynamicsWorld" function
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2954 3015])
+                    ("initPhysics" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3017 3048])
+                    ("setDrawClusters" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("drawClusters" variable (:type "bool") (reparse-symbol arg-sub-list) [3079 3097]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3050 3101])
+                    ("overrideGLShapeDrawer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shapeDrawer" variable
+                               (:pointer 1
+                                :type ("GL_ShapeDrawer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3131 3159]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3103 3160])
+                    ("setOrthographicProjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3162 3195])
+                    ("resetPerspectiveProjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3197 3231])
+                    ("setTexturing" function
+                       (:arguments 
+                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [3252 3264]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3234 3314])
+                    ("setShadows" function
+                       (:arguments 
+                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [3332 3344]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3316 3405])
+                    ("getTexturing" function (:type "bool") (reparse-symbol classsubparts) [3407 3480])
+                    ("getShadows" function (:type "bool") (reparse-symbol classsubparts) [3482 3534])
+                    ("getDebugMode" function (:type "int") (reparse-symbol classsubparts) [3536 3581])
+                    ("setDebugMode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [3601 3610]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3583 3611])
+                    ("setAzi" function
+                       (:arguments 
+                          ( ("azi" variable (:type "float") (reparse-symbol arg-sub-list) [3625 3635]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3613 3653])
+                    ("setEle" function
+                       (:arguments 
+                          ( ("ele" variable (:type "float") (reparse-symbol arg-sub-list) [3667 3677]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3655 3695])
+                    ("setCameraUp" function
+                       (:arguments 
+                          ( ("camUp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3714 3737]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3697 3762])
+                    ("setCameraForwardAxis" function
+                       (:arguments 
+                          ( ("axis" variable (:type "int") (reparse-symbol arg-sub-list) [3790 3799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3764 3826])
+                    ("myinit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3828 3850])
+                    ("toggleIdle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3852 3870])
+                    ("updateCamera" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3872 3900])
+                    ("getCameraPosition" function (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3902 3961])
+                    ("getCameraTargetPosition" function (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3963 4034])
+                    ("getDeltaTimeMicroseconds" function (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4036 4225])
+                    ("setFrustumZPlanes" function
+                       (:arguments 
+                          ( ("zNear" variable (:type "float") (reparse-symbol arg-sub-list) [4250 4262])
+                            ("zFar" variable (:type "float") (reparse-symbol arg-sub-list) [4263 4274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4227 4330])
+                    ("getCameraDistance" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4353 4379])
+                    ("setCameraDistance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dist" variable (:type "float") (reparse-symbol arg-sub-list) [4404 4415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4381 4416])
+                    ("moveAndDisplay" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4418 4440])
+                    ("clientMoveAndDisplay" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4443 4483])
+                    ("clientResetScene" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4485 4517])
+                    ("setShootBoxShape" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4539 4572])
+                    ("shootBox" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("destination" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4596 4625]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4574 4626])
+                    ("getRayTo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4649 4655])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4655 4661]))                          
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4630 4662])
+                    ("localCreateRigidBody" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("mass" variable (:type "float") (reparse-symbol arg-sub-list) [4698 4709])
+                            ("startTransform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btTransform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4710 4744])
+                            ("shape" variable
+                               (:pointer 1
+                                :type ("btCollisionShape" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4744 4768]))                          
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4664 4769])
+                    ("keyboardCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4833 4851])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4852 4858])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4859 4865]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4803 4866])
+                    ("keyboardUpCallback" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4900 4918])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4919 4925])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4926 4932]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4868 4935])
+                    ("specialKeyboard" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4966 4974])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4975 4981])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4982 4988]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4937 4990])
+                    ("specialKeyboardUp" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5023 5031])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5032 5038])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5039 5045]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4992 5047])
+                    ("reshape" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [5070 5076])
+                            ("h" variable (:type "int") (reparse-symbol arg-sub-list) [5077 5083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5049 5084])
+                    ("mouseFunc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [5109 5120])
+                            ("state" variable (:type "int") (reparse-symbol arg-sub-list) [5121 5131])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5132 5138])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5139 5145]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5086 5146])
+                    ("mouseMotionFunc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5177 5183])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5183 5189]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5148 5190])
+                    ("displayCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5192 5223])
+                    ("renderme" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5225 5249])
+                    ("swapBuffers" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5251 5282])
+                    ("updateModifierKeys" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5284 5322])
+                    ("stepLeft" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5325 5341])
+                    ("stepRight" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5343 5360])
+                    ("stepFront" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5362 5379])
+                    ("stepBack" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5381 5397])
+                    ("zoomIn" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5399 5413])
+                    ("zoomOut" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5415 5430])
+                    ("isIdle" function (:type "bool") (reparse-symbol classsubparts) [5433 5471])
+                    ("setIdle" function
+                       (:arguments 
+                          ( ("idle" variable (:type "bool") (reparse-symbol arg-sub-list) [5486 5496]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5473 5516]))                  
+                :type "class")
+                nil [1472 5521]))          
+    :file "DemoApplication.h"
+    :pointmax 5553
+    :fsize 5552
+    :lastmodtime '(21834 3742 507973 867000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEMO_APPLICATION_H")
+          )
+
+    )
+   (semanticdb-table "BulletDemo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ARRAY_SIZE_X" variable (:constant-flag t) nil [993 1005])
+            ("ARRAY_SIZE_Y" variable (:constant-flag t) nil [1016 1028])
+            ("ARRAY_SIZE_Z" variable (:constant-flag t) nil [1039 1051])
+            ("MAX_PROXIES" variable (:constant-flag t) nil [1134 1145])
+            ("MAX_PROXIES" variable (:constant-flag t) nil [1134 1145])
+            ("MAX_PROXIES" variable (:constant-flag t) nil [1134 1145])
+            ("MAX_PROXIES" variable (:constant-flag t) nil [1134 1145])
+            ("SCALING" variable (:constant-flag t) nil [1258 1265])
+            ("START_POS_X" variable (:constant-flag t) nil [1277 1288])
+            ("START_POS_Y" variable (:constant-flag t) nil [1300 1311])
+            ("START_POS_Z" variable (:constant-flag t) nil [1323 1334])
+            ("BulletDemo.h" include nil nil [1339 1362])
+            ("GlutStuff.h" include nil nil [1363 1385])
+            ("GL_ShapeDrawer.h" include nil nil [1386 1413])
+            ("btBulletDynamicsCommon.h" include nil nil [1511 1546])
+            ("stdio.h" include (:system-flag t) nil [1548 1566])
+            ("GLDebugDrawer.h" include nil nil [1586 1612])
+            ("LinearMath/btIDebugDraw.h" include nil nil [1613 1649])
+            ("GL/gl.h" include (:system-flag t) nil [1651 1669])
+            ("GL/GLMaterialTemplates.h" include (:system-flag t) nil [1670 1705])
+            ("GL/GLModels.h" include (:system-flag t) nil [1706 1730])
+            ("Vrui/VRScreen.h" include (:system-flag t) nil [1731 1757])
+            ("M_PI" variable (:constant-flag t) nil [1780 1784])
+            ("M_PI_2" variable (:constant-flag t) nil [1845 1851])
+            ("M_PI_4" variable (:constant-flag t) nil [1910 1916])
+            ("M_PI_8" variable (:constant-flag t) nil [1976 1982])
+            ("vertex" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2041 2054]))                  
+                :type "void")
+                nil [2029 2101])
+            ("drawFrame" function
+               (:arguments 
+                  ( ("tr" variable
+                       (:reference 1
+                        :type ("btTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2118 2134]))                  
+                :type "void")
+                nil [2103 2520])
+            ("NUM_LEGS" variable (:constant-flag t) nil [2553 2561])
+            ("BODYPART_COUNT" variable (:constant-flag t) nil [2572 2586])
+            ("JOINT_COUNT" variable (:constant-flag t) nil [2612 2623])
+            ("TestRig" type
+               (:members 
+                  ( ("m_ownerWorld" variable
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2661 2691])
+                    ("m_shapes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2693 2736])
+                    ("m_bodies" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2738 2777])
+                    ("m_joints" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("btTypedConstraint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2779 2820])
+                    ("localCreateRigidBody" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("mass" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2858 2872])
+                            ("startTransform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btTransform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2873 2907])
+                            ("shape" variable
+                               (:pointer 1
+                                :type ("btCollisionShape" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2908 2932]))                          
+                        :type ("btRigidBody" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2823 3348])
+                    ("public" label nil (reparse-symbol classsubparts) [3351 3358])
+                    ("m_ownerWorld" function
+                       (:arguments 
+                          ( ("" variable (:type ("ownerWorld" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3462 3473]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3448 7214])
+                    ("TestRig" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7217 7666])
+                    ("GetJoints" function
+                       (:pointer 2
+                        :type ("btTypedConstraint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7669 7723]))                  
+                :type "class")
+                nil [2644 7727])
+            ("motorPreTickCallback" function
+               (:arguments 
+                  ( ("world" variable
+                       (:pointer 1
+                        :type ("btDynamicsWorld" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7758 7781])
+                    ("timeStep" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7782 7800]))                  
+                :type "void")
+                nil [7731 7910])
+            ("BulletDemo" function
+               (:constructor-flag t
+                :parent "BulletDemo"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8029 8039])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8039 8046])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8047 8052]))                  
+                :type ("BulletDemo" type (:type "class") nil nil))
+                nil [8006 8609])
+            ("display" function
+               (:parent "BulletDemo"
+                :arguments 
+                  ( ("contextData" variable
+                       (:reference 1
+                        :type ("GLContextData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8637 8664]))                  
+                :type "void")
+                nil [8612 8857])
+            ("frame" function
+               (:parent "BulletDemo"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8882 8887]))                  
+                :type "void")
+                nil [8859 9244])
+            ("swapBuffers" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [9246 9302])
+            ("updateModifierKeys" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [9304 9367])
+            ("MyOverlapCallback" type
+               (:superclasses 
+                  ( ("btBroadphaseAabbCallback" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_queryAabbMin" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9619 9644])
+                    ("m_queryAabbMax" variable (:type ("btVector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9649 9674])
+                    ("m_numOverlap" variable (:type "int") (reparse-symbol classsubparts) [9680 9697])
+                    ("MyOverlapCallback" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("aabbMin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9720 9745])
+                            ("aabbMax" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("btVector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9746 9772]))                          
+                        :type ("MyOverlapCallback" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [9702 9841])
+                    ("process" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("proxy" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("btBroadphaseProxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9867 9898]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9846 10298]))                  
+                :type "struct")
+                nil [9554 10301])
+            ("initPhysics" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [10303 11821])
+            ("spawnTestRig" function
+               (:parent "BulletDemo"
+                :arguments 
+                  ( ("startOffset" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11853 11882])
+                    ("bFixed" variable (:type "bool") (reparse-symbol arg-sub-list) [11883 11895]))                  
+                :type "void")
+                nil [11823 11990])
+            ("PreStep" function (:type "void") nil [11992 12011])
+            ("setMotorTargets" function
+               (:parent "BulletDemo"
+                :arguments 
+                  ( ("deltaTime" variable (:type ("btScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12047 12066]))                  
+                :type "void")
+                nil [12014 12986])
+            ("clientMoveAndDisplay" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [12988 13560])
+            ("displayCallback" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [13562 13762])
+            ("exitPhysics" function
+               (:parent "BulletDemo"
+                :type "void")
+                nil [13764 14706]))          
+    :file "BulletDemo.cpp"
+    :pointmax 14789
+    :fsize 14788
+    :lastmodtime '(21833 8551 244737 207000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BODYPART_COUNT" . 
+              ((number "2" 2587 . 2588) (punctuation "*" 2589 . 2590) (symbol "NUM_LEGS" 2591 . 2599) (punctuation "+" 2600 . 2601) (number "1" 2602 . 2603)))
+          ("M_PI_8" . 
+              ((number "0.5" 1987 . 1990) (punctuation "*" 1991 . 1992) (symbol "M_PI_4" 1993 . 1999)))
+          ("NUM_LEGS" . ((number "5" 2562 . 2563)))
+          ("MAX_PROXIES" . ((semantic-list "(ARRAY_SIZE_X*ARRAY_SIZE_Y*ARRAY_SIZE_Z + 1024)" 1146 . 1193)))
+          ("START_POS_X" . ((punctuation "-" 1289 . 1290) (number "5" 1290 . 1291)))
+          ("START_POS_Y" . ((punctuation "-" 1312 . 1313) (number "5" 1313 . 1314)))
+          ("SCALING" . ((number "1." 1266 . 1268)))
+          ("START_POS_Z" . ((punctuation "-" 1335 . 1336) (number "3" 1336 . 1337)))
+          ("M_PI_2" . ((number "1.57079632679489661923" 1856 . 1878)))
+          ("ARRAY_SIZE_X" . ((number "5" 1006 . 1007)))
+          ("M_PI" . ((number "3.14159265358979323846" 1791 . 1813)))
+          ("JOINT_COUNT" . 
+              ((symbol "BODYPART_COUNT" 2624 . 2638) (punctuation "-" 2639 . 2640) (number "1" 2641 . 2642)))
+          ("ARRAY_SIZE_Y" . ((number "5" 1029 . 1030)))
+          ("M_PI_4" . ((number "0.785398163397448309616" 1921 . 1944)))
+          ("ARRAY_SIZE_Z" . ((number "5" 1052 . 1053)))
+          )
+
+    )
+   (semanticdb-table "DemoApplication.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DemoApplication.h" include nil nil [949 977])
+            ("LinearMath/btIDebugDraw.h" include nil nil [978 1014])
+            ("BulletDynamics/Dynamics/btDynamicsWorld.h" include nil nil [1015 1067])
+            ("BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h" include nil nil [1069 1137])
+            ("BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h" include nil nil [1147 1215])
+            ("BulletCollision/CollisionShapes/btCollisionShape.h" include nil nil [1226 1287])
+            ("BulletCollision/CollisionShapes/btBoxShape.h" include nil nil [1288 1343])
+            ("BulletCollision/CollisionShapes/btSphereShape.h" include nil nil [1344 1402])
+            ("BulletCollision/CollisionShapes/btCompoundShape.h" include nil nil [1403 1463])
+            ("BulletCollision/CollisionShapes/btUniformScalingShape.h" include nil nil [1464 1530])
+            ("BulletDynamics/ConstraintSolver/btConstraintSolver.h" include nil nil [1531 1594])
+            ("GL_ShapeDrawer.h" include nil nil [1595 1622])
+            ("LinearMath/btQuickprof.h" include nil nil [1623 1658])
+            ("LinearMath/btDefaultMotionState.h" include nil nil [1659 1703])
+            ("LinearMath/btSerializer.h" include nil nil [1704 1740])
+            ("GLDebugFont.h" include nil nil [1741 1765])
+            ("gDisableDeactivation" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1768 1801])
+            ("numObjects" variable (:type "int") nil [1802 1821])
+            ("maxNumObjects" variable
+               (:constant-flag t
+                :type "int")
+                nil [1822 1854])
+            ("startTransforms" variable
+               (:dereference 1
+                :type ("btTransform" type (:type "class") nil nil))
+                nil [1855 1898])
+            ("gShapePtr" variable
+               (:pointer 1
+                :dereference 1
+                :type ("btCollisionShape" type (:type "class") nil nil))
+                nil [1899 1942])
+            ("SHOW_NUM_DEEP_PENETRATIONS" variable (:constant-flag t) nil [1998 2024])
+            ("gNumClampedCcdMotions" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2028 2061])
+            ("gNumDeepPenetrationChecks" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2097 2134])
+            ("gNumSplitImpulseRecoveries" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2136 2174])
+            ("gNumGjkChecks" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2175 2200])
+            ("gNumAlignedAllocs" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2201 2230])
+            ("gNumAlignedFree" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2231 2258])
+            ("gTotalBytesAlignedAllocs" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [2259 2295])
+            ("DemoApplication" function
+               (:constructor-flag t
+                :parent "DemoApplication"
+                :type ("DemoApplication" type (:type "class") nil nil))
+                nil [2309 3249])
+            ("DemoApplication" function
+               (:destructor-flag t
+                :parent "DemoApplication"
+                :type "void")
+                nil [3253 3486])
+            ("overrideGLShapeDrawer" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("shapeDrawer" variable
+                       (:pointer 1
+                        :type ("GL_ShapeDrawer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3534 3562]))                  
+                :type "void")
+                nil [3489 3685])
+            ("myinit" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3716 3721]))                  
+                :type "void")
+                nil [3687 4919])
+            ("setCameraDistance" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("dist" variable (:type "float") (reparse-symbol arg-sub-list) [4962 4973]))                  
+                :type "void")
+                nil [4922 5004])
+            ("getCameraDistance" function
+               (:parent "DemoApplication"
+                :type "float")
+                nil [5006 5078])
+            ("toggleIdle" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [5082 5184])
+            ("updateCamera" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [5189 7052])
+            ("STEPSIZE" variable
+               (:constant-flag t
+                :type "float")
+                nil [7056 7081])
+            ("stepLeft" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7083 7184])
+            ("stepRight" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7185 7290])
+            ("stepFront" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7291 7396])
+            ("stepBack" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7397 7498])
+            ("zoomIn" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7499 7672])
+            ("zoomOut" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [7673 7772])
+            ("reshape" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [7813 7819])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [7820 7826]))                  
+                :type "void")
+                nil [7783 7947])
+            ("keyboardCallback" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7990 8008])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [8009 8015])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [8016 8022]))                  
+                :type "void")
+                nil [7951 13256])
+            ("setDebugMode" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [13293 13302]))                  
+                :type "void")
+                nil [13258 13452])
+            ("moveAndDisplay" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [13459 13569])
+            ("displayCallback" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [13574 13617])
+            ("NUM_SPHERES_ON_DIAGONAL" variable (:constant-flag t) nil [13627 13650])
+            ("setShootBoxShape" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [13654 13860])
+            ("shootBox" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("destination" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13893 13922]))                  
+                :type "void")
+                nil [13862 15058])
+            ("gPickingConstraintId" variable (:type "int") nil [15061 15090])
+            ("gOldPickingPos" variable (:type ("btVector3" type (:type "class") nil nil)) nil [15091 15116])
+            ("gHitPos" function
+               (:prototype-flag t
+                :type ("btVector3" type (:type "class") nil nil))
+                nil [15117 15145])
+            ("gOldPickingDist" variable (:type ("btScalar" type (:type "class") nil nil)) nil [15146 15178])
+            ("pickedBody" variable
+               (:pointer 1
+                :type ("btRigidBody" type (:type "class") nil nil))
+                nil [15179 15207])
+            ("getRayTo" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [15270 15276])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [15276 15282]))                  
+                :type ("btVector3" type (:type "class") nil nil))
+                nil [15234 16927])
+            ("mousePickClamping" variable (:type ("btScalar" type (:type "class") nil nil)) nil [16929 16963])
+            ("mouseFunc" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [16998 17009])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [17010 17020])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [17021 17027])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [17028 17034]))                  
+                :type "void")
+                nil [16966 19064])
+            ("pickObject" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("pickPos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btVector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19099 19124])
+                    ("hitObj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("btCollisionObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19125 19157]))                  
+                :type "void")
+                nil [19066 21283])
+            ("removePickingConstraint" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [21285 21656])
+            ("mouseMotionFunc" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [21696 21702])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [21702 21708]))                  
+                :type "void")
+                nil [21658 24231])
+            ("localCreateRigidBody" function
+               (:pointer 1
+                :parent "DemoApplication"
+                :arguments 
+                  ( ("mass" variable (:type "float") (reparse-symbol arg-sub-list) [24286 24297])
+                    ("startTransform" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("btTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24298 24332])
+                    ("shape" variable
+                       (:pointer 1
+                        :type ("btCollisionShape" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24332 24356]))                  
+                :type ("btRigidBody" type (:type "class") nil nil))
+                nil [24235 25276])
+            ("setOrthographicProjection" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [25347 25958])
+            ("resetPerspectiveProjection" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [25960 26107])
+            ("m_profileIterator" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("CProfileIterator" type (:type "class") nil nil))
+                nil [26112 26156])
+            ("displayProfileString" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("xOffset" variable (:type "int") (reparse-symbol arg-sub-list) [26201 26213])
+                    ("yStart" variable (:type "int") (reparse-symbol arg-sub-list) [26213 26224])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26224 26238]))                  
+                :type "void")
+                nil [26158 26350])
+            ("showProfileInfo" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("xOffset" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26391 26404])
+                    ("yStart" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26404 26416])
+                    ("yIncr" variable (:type "int") (reparse-symbol arg-sub-list) [26417 26427]))                  
+                :type "void")
+                nil [26353 28475])
+            ("renderscene" function
+               (:parent "DemoApplication"
+                :arguments 
+                  ( ("pass" variable (:type "int") (reparse-symbol arg-sub-list) [28515 28524]))                  
+                :type "void")
+                nil [28481 30679])
+            ("renderme" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [30684 32931])
+            ("BulletCollision/BroadphaseCollision/btAxisSweep3.h" include nil nil [32933 32994])
+            ("clientResetScene" function
+               (:parent "DemoApplication"
+                :type "void")
+                nil [32997 35104]))          
+    :file "DemoApplication.cpp"
+    :pointmax 35105
+    :fsize 35239
+    :lastmodtime '(21832 49450 825046 885000)
+    :unmatched-syntax '((number 15142 . 15143) (punctuation 15141 . 15142) (number 15139 . 15140) (punctuation 15138 . 15139) (number 15136 . 15137) (punctuation 15135 . 15136))
+    :lexical-table 
+        '(("SHOW_NUM_DEEP_PENETRATIONS" . ((number "1" 2025 . 2026)))
+          ("NUM_SPHERES_ON_DIAGONAL" . ((number "9" 13651 . 13652)))
+          )
+
+    )
+   )
+  :file "!home!nshetty!tools!vrui!Vrui!ExamplePrograms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

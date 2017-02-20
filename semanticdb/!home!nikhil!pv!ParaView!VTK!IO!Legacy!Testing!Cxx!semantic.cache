@@ -1,0 +1,56 @@
+;; Object Cxx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Cxx/"
+  :tables (list 
+   (semanticdb-table "TestLegacyCompositeDataReaderWriter.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vtkAMRGaussianPulseSource.h" include nil nil [609 647])
+            ("vtkOverlappingAMR.h" include nil nil [648 678])
+            ("vtkGenericDataObjectWriter.h" include nil nil [679 718])
+            ("vtkGenericDataObjectReader.h" include nil nil [719 758])
+            ("vtkNew.h" include nil nil [759 778])
+            ("vtkTesting.h" include nil nil [779 802])
+            ("TEST_SUCCESS" variable (:constant-flag t) nil [812 824])
+            ("TEST_FAILED" variable (:constant-flag t) nil [835 846])
+            ("vtk_assert" variable (:constant-flag t) nil [858 868])
+            ("Validate" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("vtkOverlappingAMR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [979 1004])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("vtkOverlappingAMR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1005 1031]))                  
+                :type "int")
+                nil [966 1607])
+            ("TestLegacyCompositeDataReaderWriter" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1650 1659])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1660 1673]))                  
+                :type "int")
+                nil [1610 2789]))          
+    :file "TestLegacyCompositeDataReaderWriter.cxx"
+    :pointmax 2790
+    :fsize 2789
+    :lastmodtime '(20792 54579)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("vtk_assert" (spp-arg-list ("x") 868 . 871) . 
+              ((IF "if" 875 . 877) (semantic-list "(! (x) )" 878 . 886) (semantic-list "{ cerr << \"ERROR: Condition FAILED!! : \" << #x << endl;  return TEST_FAILED;}" 887 . 964)))
+          ("TEST_SUCCESS" . ((number "0" 825 . 826)))
+          ("TEST_FAILED" . ((number "1" 847 . 848)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!pv!ParaView!VTK!IO!Legacy!Testing!Cxx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

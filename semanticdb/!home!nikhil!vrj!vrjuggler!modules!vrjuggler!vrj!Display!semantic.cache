@@ -1,0 +1,955 @@
+;; Object Display/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Display/"
+  :tables (list 
+   (semanticdb-table "Frustum.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("vrj/Display/Frustum.h" include (:system-flag t) nil [1150 1182])
+            ("vrj" type
+               (:members 
+                  ( ("Frustum" function
+                       (:constructor-flag t
+                        :parent "Frustum"
+                        :type ("Frustum" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1201 1267])
+                    ("setBottomLeftTopRight" function
+                       (:parent "Frustum"
+                        :arguments 
+                          ( ("bottomVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1305 1327])
+                            ("leftVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1364 1384])
+                            ("topVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1385 1404])
+                            ("rightVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1441 1462]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1269 1596])
+                    ("set" function
+                       (:parent "Frustum"
+                        :arguments 
+                          ( ("leftVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1616 1636])
+                            ("rightVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1637 1658])
+                            ("bottomVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1677 1699])
+                            ("topVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1700 1719])
+                            ("nearVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1738 1758])
+                            ("farVal" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1759 1778]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1598 1975])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2035 2053])
+                            ("_frust" variable
+                               (:reference 1
+                                :type ("Frustum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2054 2070]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2010 2391]))                  
+                :type "namespace")
+                nil [1184 2394]))          
+    :file "Frustum.cpp"
+    :pointmax 2395
+    :fsize 2394
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Viewport.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_VIEWPORT_H_" variable (:constant-flag t) nil [1155 1171])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1173 1199])
+            ("string" include (:system-flag t) nil [1201 1218])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1219 1251])
+            ("boost/enable_shared_from_this.hpp" include (:system-flag t) nil [1252 1296])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1298 1319])
+            ("jccl/Config/ConfigElementPtr.h" include (:system-flag t) nil [1320 1361])
+            ("vrj/Display/DisplayPtr.h" include (:system-flag t) nil [1363 1398])
+            ("vrj/Display/ProjectionPtr.h" include (:system-flag t) nil [1399 1437])
+            ("vrj/Display/ViewportPtr.h" include (:system-flag t) nil [1438 1474])
+            ("vrj/Kernel/UserPtr.h" include (:system-flag t) nil [1475 1506])
+            ("vrj" type
+               (:members 
+                  ( ("boost::noncopyable" variable (:type "int") (reparse-symbol namespacesubparts) [1771 6726])
+                    ("boost::enable_shared_from_this" variable (:type "int") (reparse-symbol namespacesubparts) [1771 6726]))                  
+                :type "namespace")
+                nil [1509 6729]))          
+    :file "Viewport.h"
+    :pointmax 6739
+    :fsize 6738
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((PUBLIC 1764 . 1770) (punctuation 1762 . 1763) (symbol 1750 . 1758) (symbol 1737 . 1749) (CLASS 1731 . 1736))
+    :lexical-table 
+        '(("_VRJ_VIEWPORT_H_")
+          )
+
+    )
+   (semanticdb-table "SurfaceViewport.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("string" include (:system-flag t) nil [1150 1167])
+            ("gmtl/Math.h" include (:system-flag t) nil [1168 1190])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1191 1212])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1213 1237])
+            ("gmtl/MatrixOps.h" include (:system-flag t) nil [1238 1265])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1266 1292])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1293 1317])
+            ("jccl/Config/ConfigElement.h" include (:system-flag t) nil [1319 1357])
+            ("gadget/Type/Position/PositionUnitConversion.h" include (:system-flag t) nil [1358 1414])
+            ("vrj/Kernel/User.h" include (:system-flag t) nil [1416 1444])
+            ("vrj/Util/Debug.h" include (:system-flag t) nil [1445 1472])
+            ("vrj/Display/SurfaceProjection.h" include (:system-flag t) nil [1473 1515])
+            ("vrj/Display/TrackedSurfaceProjection.h" include (:system-flag t) nil [1516 1565])
+            ("vrj/Display/DisplayExceptions.h" include (:system-flag t) nil [1566 1608])
+            ("vrj/Display/SurfaceViewport.h" include (:system-flag t) nil [1609 1649])
+            ("vrj/Display/Display.h" include (:system-flag t) nil [1650 1682])
+            ("vrj" type
+               (:members 
+                  ( ("SurfaceViewport" function
+                       (:constructor-flag t
+                        :parent "SurfaceViewport"
+                        :type ("SurfaceViewport" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1701 1799])
+                    ("create" function
+                       (:parent "SurfaceViewport"
+                        :type ("ViewportPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1801 1888])
+                    ("SurfaceViewport" function
+                       (:destructor-flag t
+                        :parent "SurfaceViewport"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1890 1952])
+                    ("config" function
+                       (:parent "SurfaceViewport"
+                        :arguments 
+                          ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1983 2014]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1954 5838])
+                    ("updateProjections" function
+                       (:parent "SurfaceViewport"
+                        :arguments 
+                          ( ("positionScale" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [5880 5906]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5840 6955])
+                    ("computePixelTransforms" function
+                       (:parent "SurfaceViewport"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6957 7708])
+                    ("updateCorners" function
+                       (:parent "SurfaceViewport"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7710 10845])
+                    ("outStream" function
+                       (:parent "SurfaceViewport"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10888 10906])
+                            ("indentLevel" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [10948 10979]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10847 11736])
+                    ("computePixelOriginAndSize" function
+                       (:parent "SurfaceViewport"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11738 12371]))                  
+                :type "namespace")
+                nil [1684 12374]))          
+    :file "SurfaceViewport.cpp"
+    :pointmax 12375
+    :fsize 12415
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SurfaceProjection.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("iomanip" include (:system-flag t) nil [1150 1168])
+            ("sstream" include (:system-flag t) nil [1169 1187])
+            ("string" include (:system-flag t) nil [1188 1205])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1207 1228])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1229 1253])
+            ("gmtl/MatrixOps.h" include (:system-flag t) nil [1254 1281])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1282 1308])
+            ("gmtl/Output.h" include (:system-flag t) nil [1309 1333])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1334 1358])
+            ("vpr/Util/Assert.h" include (:system-flag t) nil [1360 1388])
+            ("jccl/Config/ConfigElement.h" include (:system-flag t) nil [1389 1427])
+            ("vrj/Util/Debug.h" include (:system-flag t) nil [1429 1456])
+            ("vrj/Display/DisplayExceptions.h" include (:system-flag t) nil [1457 1499])
+            ("vrj/Display/SurfaceProjection.h" include (:system-flag t) nil [1500 1542])
+            ("vrj" type
+               (:members 
+                  ( ("SurfaceProjection" function
+                       (:constructor-flag t
+                        :parent "SurfaceProjection"
+                        :arguments 
+                          ( ("llCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1599 1629])
+                            ("lrCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1667 1697])
+                            ("urCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1735 1765])
+                            ("ulCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1803 1833]))                          
+                        :type ("SurfaceProjection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1562 1960])
+                    ("create" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("llCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2009 2039])
+                            ("lrCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2087 2117])
+                            ("urCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2165 2195])
+                            ("ulCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2243 2273]))                          
+                        :type ("SurfaceProjectionPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1962 2425])
+                    ("validateCorners" function
+                       (:parent "SurfaceProjection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2427 3141])
+                    ("updateCorners" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("llCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3181 3211])
+                            ("lrCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3250 3280])
+                            ("urCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3319 3349])
+                            ("ulCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3388 3418]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3143 3545])
+                    ("config" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3618 3649]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3587 3779])
+                    ("calcViewMatrix" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("eyePos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4227 4257])
+                            ("scaleFactor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4297 4321]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4188 4654])
+                    ("calcViewFrustum" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("eyePos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5123 5153])
+                            ("scaleFactor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [5194 5218]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5083 7607])
+                    ("outStream" function
+                       (:parent "SurfaceProjection"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7652 7670])
+                            ("indentLevel" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [7714 7745]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7609 7986])
+                    ("calculateOffsets" function
+                       (:parent "SurfaceProjection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7988 8423])
+                    ("calculateSurfaceRotation" function
+                       (:parent "SurfaceProjection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8425 9073])
+                    ("calculateCornersInBaseFrame" function
+                       (:parent "SurfaceProjection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9075 10212]))                  
+                :type "namespace")
+                nil [1545 10215]))          
+    :file "SurfaceProjection.cpp"
+    :pointmax 10216
+    :fsize 10215
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CameraProjection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_CAMERA_PROJECTION_H_" variable (:constant-flag t) nil [1164 1189])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1191 1217])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1219 1243])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1244 1265])
+            ("jccl/Config/ConfigElementPtr.h" include (:system-flag t) nil [1267 1308])
+            ("vrj/Display/Projection.h" include (:system-flag t) nil [1309 1344])
+            ("vrj/Display/CameraProjectionPtr.h" include (:system-flag t) nil [1345 1389])
+            ("vrj" type
+               (:members 
+                  ( ("Projection" variable (:type "int") (reparse-symbol namespacesubparts) [1611 2455]))                  
+                :type "namespace")
+                nil [1392 2458]))          
+    :file "CameraProjection.h"
+    :pointmax 2467
+    :fsize 2466
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((PUBLIC 1604 . 1610) (punctuation 1602 . 1603) (symbol 1585 . 1601) (symbol 1572 . 1584) (CLASS 1566 . 1571))
+    :lexical-table 
+        '(("_VRJ_CAMERA_PROJECTION_H_")
+          )
+
+    )
+   (semanticdb-table "CameraProjection.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [1150 1184])
+            ("gmtl/Output.h" include (:system-flag t) nil [1186 1210])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1211 1237])
+            ("jccl/Config/ConfigElement.h" include (:system-flag t) nil [1239 1277])
+            ("vrj/Display/Display.h" include (:system-flag t) nil [1279 1311])
+            ("vrj/Display/Viewport.h" include (:system-flag t) nil [1312 1345])
+            ("vrj/Util/Debug.h" include (:system-flag t) nil [1346 1373])
+            ("vrj/Display/CameraProjection.h" include (:system-flag t) nil [1374 1415])
+            ("vrj" type
+               (:members 
+                  ( ("CameraProjection" function
+                       (:constructor-flag t
+                        :parent "CameraProjection"
+                        :type ("CameraProjection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1435 1519])
+                    ("create" function
+                       (:parent "CameraProjection"
+                        :type ("CameraProjectionPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1521 1626])
+                    ("config" function
+                       (:parent "CameraProjection"
+                        :arguments 
+                          ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1658 1689]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1628 1725])
+                    ("calcViewMatrix" function
+                       (:parent "CameraProjection"
+                        :arguments 
+                          ( ("cameraPos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1965 1998])
+                            ("scaleFactor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2037 2061]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1927 3087])
+                    ("outStream" function
+                       (:parent "CameraProjection"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3131 3149])
+                            ("indentLevel" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3192 3223]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3089 3463]))                  
+                :type "namespace")
+                nil [1418 3466]))          
+    :file "CameraProjection.cpp"
+    :pointmax 3467
+    :fsize 3466
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SurfaceProjection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_SURFACE_PROJECTION_H_" variable (:constant-flag t) nil [1165 1191])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1193 1219])
+            ("gmtl/Point.h" include (:system-flag t) nil [1221 1244])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1245 1269])
+            ("vrj/Display/Projection.h" include (:system-flag t) nil [1271 1306])
+            ("vrj/Display/SurfaceProjectionPtr.h" include (:system-flag t) nil [1307 1352])
+            ("vrj" type
+               (:members 
+                  ( ("SurfaceProjection" type
+                       (:superclasses 
+                          ( ("Projection" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1654 1664])
+                            ("SurfaceProjection" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("llCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1945 1975])
+                                    ("lrCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1997 2027])
+                                    ("urCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2049 2079])
+                                    ("ulCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2101 2131]))                                  
+                                :type ("SurfaceProjection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1927 2132])
+                            ("public" label nil (reparse-symbol classsubparts) [2134 2141])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("llCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2464 2494])
+                                    ("lrCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2533 2563])
+                                    ("urCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2602 2632])
+                                    ("ulCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2671 2701]))                                  
+                                :type ("SurfaceProjectionPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2429 2702])
+                            ("validateCorners" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3008 3031])
+                            ("updateCorners" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("llCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3196 3226])
+                                    ("lrCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3249 3279])
+                                    ("urCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3302 3332])
+                                    ("ulCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3355 3385]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3177 3386])
+                            ("config" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3472 3503]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3452 3504])
+                            ("calcViewMatrix" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("eyePos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4365 4395])
+                                    ("scaleFactor" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [4427 4451]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4337 4452])
+                            ("calcViewFrustum" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("eyePos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5277 5307])
+                                    ("scaleFactor" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [5340 5364]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5248 5365])
+                            ("outStream" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("out" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5394 5412])
+                                    ("indentLevel" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [5440 5472]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5370 5476])
+                            ("protected" label nil (reparse-symbol classsubparts) [5478 5488])
+                            ("calculateOffsets" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5820 5844])
+                            ("calculateSurfaceRotation" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5848 5880])
+                            ("calculateCornersInBaseFrame" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5884 5919])
+                            ("mSurfaceRotation" variable (:type ("gmtl::Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6864 6897])
+                            ("m_base_M_surface" variable (:type ("gmtl::Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7030 7065])
+                            ("m_surface_M_base" variable (:type ("gmtl::Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7069 7104])
+                            ("mLLCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7232 7256])
+                            ("mLRCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7260 7284])
+                            ("mURCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7288 7312])
+                            ("mULCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7316 7340])
+                            ("mxLLCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7414 7439])
+                            ("mxLRCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7443 7468])
+                            ("mxURCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7472 7497])
+                            ("mxULCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7501 7526])
+                            ("mOriginToScreen" variable (:type "float") (reparse-symbol classsubparts) [7539 7561])
+                            ("mOriginToRight" variable (:type "float") (reparse-symbol classsubparts) [7565 7586])
+                            ("mOriginToLeft" variable (:type "float") (reparse-symbol classsubparts) [7590 7610])
+                            ("mOriginToTop" variable (:type "float") (reparse-symbol classsubparts) [7614 7633])
+                            ("mOriginToBottom" variable (:type "float") (reparse-symbol classsubparts) [7637 7659]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1608 7662]))                  
+                :type "namespace")
+                nil [1355 7665]))          
+    :file "SurfaceProjection.h"
+    :pointmax 7674
+    :fsize 7673
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((number 5473 . 5474) (punctuation 5471 . 5472))
+    :lexical-table 
+        '(("_VRJ_SURFACE_PROJECTION_H_")
+          )
+
+    )
+   (semanticdb-table "SurfaceViewport.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_SURFACE_DISPLAY_H_" variable (:constant-flag t) nil [1162 1185])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1187 1213])
+            ("gmtl/Point.h" include (:system-flag t) nil [1215 1238])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1239 1260])
+            ("gmtl/VecOps.h" include (:system-flag t) nil [1261 1285])
+            ("jccl/Config/ConfigElementPtr.h" include (:system-flag t) nil [1287 1328])
+            ("vrj/Display/Viewport.h" include (:system-flag t) nil [1330 1363])
+            ("vrj/Display/SurfaceViewportPtr.h" include (:system-flag t) nil [1364 1407])
+            ("vrj" type
+               (:members 
+                  ( ("Viewport" variable (:type "int") (reparse-symbol namespacesubparts) [1609 3951]))                  
+                :type "namespace")
+                nil [1410 3954]))          
+    :file "SurfaceViewport.h"
+    :pointmax 3963
+    :fsize 3967
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((PUBLIC 1602 . 1608) (punctuation 1600 . 1601) (symbol 1584 . 1599) (symbol 1571 . 1583) (CLASS 1565 . 1570))
+    :lexical-table 
+        '(("_VRJ_SURFACE_DISPLAY_H_")
+          )
+
+    )
+   (semanticdb-table "TrackedSurfaceProjection.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("iomanip" include (:system-flag t) nil [1150 1168])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1169 1190])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1191 1215])
+            ("gmtl/MatrixOps.h" include (:system-flag t) nil [1216 1243])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1244 1270])
+            ("gmtl/Output.h" include (:system-flag t) nil [1271 1295])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1296 1320])
+            ("gadget/Type/Position/PositionUnitConversion.h" include (:system-flag t) nil [1322 1378])
+            ("vrj/Display/TrackedSurfaceProjection.h" include (:system-flag t) nil [1379 1428])
+            ("vrj" type
+               (:members 
+                  ( ("TrackedSurfaceProjection" function
+                       (:constructor-flag t
+                        :parent "TrackedSurfaceProjection"
+                        :arguments 
+                          ( ("llCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1500 1530])
+                            ("lrCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1556 1586])
+                            ("urCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1612 1642])
+                            ("ulCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1668 1698])
+                            ("trackerName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1724 1755]))                          
+                        :type ("TrackedSurfaceProjection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1448 2152])
+                    ("create" function
+                       (:parent "TrackedSurfaceProjection"
+                        :arguments 
+                          ( ("llCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2215 2245])
+                            ("lrCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2279 2309])
+                            ("urCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2343 2373])
+                            ("ulCorner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2407 2437])
+                            ("trackerName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2471 2502]))                          
+                        :type ("TrackedSurfaceProjectionPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2154 2695])
+                    ("calcViewMatrix" function
+                       (:parent "TrackedSurfaceProjection"
+                        :arguments 
+                          ( ("eyePos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2743 2773])
+                            ("scaleFactor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2820 2844]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2697 2944])
+                    ("updateSurfaceParams" function
+                       (:parent "TrackedSurfaceProjection"
+                        :arguments 
+                          ( ("scaleFactor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2997 3021]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2946 3656])
+                    ("outStream" function
+                       (:parent "TrackedSurfaceProjection"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3708 3726])
+                            ("indentLevel" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3777 3808]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3658 4184]))                  
+                :type "namespace")
+                nil [1431 4187]))          
+    :file "TrackedSurfaceProjection.cpp"
+    :pointmax 4188
+    :fsize 4187
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TrackedSurfaceProjection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_VRJ_TRACKED_WALL_PROJECTION_H_" variable (:constant-flag t) nil [1170 1201])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1203 1229])
+            ("gadget/Type/PositionInterface.h" include (:system-flag t) nil [1231 1273])
+            ("vrj/Display/SurfaceProjection.h" include (:system-flag t) nil [1275 1317])
+            ("vrj/Display/TrackedSurfaceProjectionPtr.h" include (:system-flag t) nil [1318 1370])
+            ("vrj" type
+               (:members 
+                  ( ("Matrix" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1390 1403])
+                    ("TrackedSurfaceProjection" type
+                       (:superclasses 
+                          ( ("SurfaceProjection" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1808 1818])
+                            ("TrackedSurfaceProjection" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("llCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2158 2188])
+                                    ("lrCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2217 2247])
+                                    ("urCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2276 2306])
+                                    ("ulCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2335 2365])
+                                    ("trackerName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2394 2425]))                                  
+                                :type ("TrackedSurfaceProjection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2133 2426])
+                            ("public" label nil (reparse-symbol classsubparts) [2428 2435])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("llCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2817 2847])
+                                    ("lrCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2893 2923])
+                                    ("urCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2969 2999])
+                                    ("ulCorner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Point3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3045 3075])
+                                    ("trackerName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3121 3152]))                                  
+                                :type ("TrackedSurfaceProjectionPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2775 3153])
+                            ("TrackedSurfaceProjection" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3158 3229])
+                            ("config" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("element" variable (:type ("jccl::ConfigElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3254 3285]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3234 3369])
+                            ("calcViewMatrix" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("eyePos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3631 3661])
+                                    ("scaleFactor" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [3693 3717]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3603 3718])
+                            ("updateSurfaceParams" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("scaleFactor" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [3804 3828]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3779 3829])
+                            ("outStream" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("out" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3858 3876])
+                                    ("indentLevel" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [3904 3936]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3834 3940])
+                            ("private" label nil (reparse-symbol classsubparts) [3942 3950])
+                            ("mTracker" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4099 4137])
+                            ("mOriginalLLCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4328 4360])
+                            ("mOriginalLRCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4364 4396])
+                            ("mOriginalURCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4400 4432])
+                            ("mOriginalULCorner" variable (:type ("gmtl::Point3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4436 4468]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1748 4479]))                  
+                :type "namespace")
+                nil [1373 4482]))          
+    :file "TrackedSurfaceProjection.h"
+    :pointmax 4492
+    :fsize 4491
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((number 3937 . 3938) (punctuation 3935 . 3936))
+    :lexical-table 
+        '(("_VRJ_TRACKED_WALL_PROJECTION_H_")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vrj!vrjuggler!modules!vrjuggler!vrj!Display!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

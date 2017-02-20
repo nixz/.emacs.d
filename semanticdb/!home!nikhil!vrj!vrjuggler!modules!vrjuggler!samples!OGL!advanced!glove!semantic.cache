@@ -1,0 +1,308 @@
+;; Object glove/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "glove/"
+  :tables (list 
+   (semanticdb-table "navigation.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("gmtl/Vec.h" include (:system-flag t) nil [1144 1165])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1166 1190])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1191 1217])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1218 1242])
+            ("navigation.h" include nil nil [1244 1267])
+            ("mForwardVec" function
+               (:prototype-flag t
+                :parent "TrackedInfo"
+                :constant-flag t
+                :type ("gmtl::Vec3f" type (:type "class") nil nil))
+                nil [1373 1435])
+            ("mOrigin" function
+               (:prototype-flag t
+                :parent "TrackedInfo"
+                :constant-flag t
+                :type ("gmtl::Vec3f" type (:type "class") nil nil))
+                nil [1452 1509])
+            ("updateWithMatrix" function
+               (:parent "TrackedInfo"
+                :arguments 
+                  ( ("matrix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1603 1633]))                  
+                :type "void")
+                nil [1568 2220])
+            ("UserInfo" function
+               (:constructor-flag t
+                :parent "UserInfo"
+                :type ("UserInfo" type (:type "class") nil nil))
+                nil [2246 2292])
+            ("update" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("tracker" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TrackedInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2512 2539])
+                    ("gravity" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("gmtl::Vec3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2540 2567]))                  
+                :type "void")
+                nil [2490 2699])
+            ("updateWithTracker" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("tracker" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TrackedInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2734 2761]))                  
+                :type "void")
+                nil [2701 4246])
+            ("updateWithGravity" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("gravity" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("gmtl::Vec3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4281 4308]))                  
+                :type "void")
+                nil [4248 4414])
+            ("getSceneTransform" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("sceneMatrix" variable
+                       (:reference 1
+                        :type ("gmtl::Matrix44f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4633 4662]))                  
+                :type "void")
+                nil [4600 5325])
+            ("setVelocity" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("velocity" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5468 5489]))                  
+                :type "void")
+                nil [5441 5518])
+            ("setAngularVelocity" function
+               (:parent "UserInfo"
+                :arguments 
+                  ( ("aVelocity" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5705 5727]))                  
+                :type "void")
+                nil [5671 5764]))          
+    :file "navigation.cxx"
+    :pointmax 5765
+    :fsize 5764
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax '((number 1503 . 1507) (number 1497 . 1501) (number 1491 . 1495) (number 1429 . 1433) (punctuation 1428 . 1429) (number 1422 . 1426) (number 1416 . 1420))
+    )
+   (semanticdb-table "gloveApp.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vrj/vrjConfig.h" include (:system-flag t) nil [1122 1148])
+            ("math.h" include (:system-flag t) nil [1150 1167])
+            ("GL/gl.h" include (:system-flag t) nil [1249 1269])
+            ("GL/glu.h" include (:system-flag t) nil [1270 1291])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1300 1326])
+            ("gmtl/Xforms.h" include (:system-flag t) nil [1327 1351])
+            ("gloveApp.h" include (:system-flag t) nil [1353 1374])
+            ("renderLightsAndMaterials" function
+               (:parent "gloveApp"
+                :type "void")
+                nil [1376 2446])
+            ("initGlState" function
+               (:parent "gloveApp"
+                :type "void")
+                nil [2448 2640])
+            ("myDraw" function
+               (:parent "gloveApp"
+                :type "void")
+                nil [2642 4030])
+            ("LeftPointing" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [4032 4346])
+            ("LeftOpen" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [4348 4658])
+            ("RightPointing" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [4660 4980])
+            ("RightOpen" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [4982 5298])
+            ("LeftFist" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [5300 5473])
+            ("RightFist" function
+               (:parent "gloveApp"
+                :type "bool")
+                nil [5475 5651])
+            ("postFrame" function
+               (:parent "gloveApp"
+                :type "void")
+                nil [5860 10196]))          
+    :file "gloveApp.cpp"
+    :pointmax 10197
+    :fsize 10196
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gloveApp.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_GLOVE_APP_" variable (:constant-flag t) nil [1150 1161])
+            ("vrj/vrjConfig.h" include (:system-flag t) nil [1163 1189])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1191 1215])
+            ("gmtl/Vec.h" include (:system-flag t) nil [1216 1237])
+            ("vrj/Draw/OpenGL/App.h" include (:system-flag t) nil [1239 1271])
+            ("vrj/Draw/OpenGL/ContextData.h" include (:system-flag t) nil [1272 1312])
+            ("gadget/Type/GloveInterface.h" include (:system-flag t) nil [1313 1352])
+            ("gadget/Type/PositionInterface.h" include (:system-flag t) nil [1353 1395])
+            ("gadget/Type/DigitalInterface.h" include (:system-flag t) nil [1396 1437])
+            ("defines.h" include nil nil [1439 1459])
+            ("Scene.h" include nil nil [1460 1478])
+            ("navigation.h" include nil nil [1479 1502])
+            ("gloveApp" type
+               (:superclasses 
+                  ( ("vrj::opengl::App" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [2200 2210])
+                    ("public" label nil (reparse-symbol classsubparts) [2315 2322])
+                    ("gloveApp" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kern" variable
+                               (:pointer 1
+                                :type ("vrj::Kernel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2335 2353]))                          
+                        :type ("gloveApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2326 2617])
+                    ("gloveApp" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2622 2643])
+                    ("init" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2786 3397])
+                    ("contextInit" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3574 3689])
+                    ("LeftPointing" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3724 3744])
+                    ("LeftOpen" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3779 3795])
+                    ("RightPointing" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3800 3821])
+                    ("RightOpen" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3826 3843])
+                    ("LeftFist" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3848 3864])
+                    ("RightFist" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3869 3886])
+                    ("apiInit" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4030 4082])
+                    ("preFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4304 4357])
+                    ("draw" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4551 4596])
+                    ("intraFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4680 4735])
+                    ("postFrame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4845 4870])
+                    ("private" label nil (reparse-symbol classsubparts) [4872 4880])
+                    ("initGlState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4884 4903])
+                    ("renderLightsAndMaterials" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4907 4939])
+                    ("myDraw" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4943 4957])
+                    ("protected" label nil (reparse-symbol classsubparts) [4959 4969])
+                    ("mGlove" variable (:type ("gadget::GloveInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5002 5035])
+                    ("mPinchLeftThumb" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5068 5110])
+                    ("mPinchLeftIndex" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5114 5156])
+                    ("mPinchLeftMiddle" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5160 5203])
+                    ("mPinchLeftRing" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5207 5248])
+                    ("mPinchLeftPinky" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5252 5294])
+                    ("mPinchRightThumb" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5298 5341])
+                    ("mPinchRightIndex" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5345 5388])
+                    ("mPinchRightMiddle" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5392 5436])
+                    ("mPinchRightRing" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5440 5482])
+                    ("mPinchRightPinky" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5486 5529])
+                    ("mCubeSelected" variable (:type "bool") (reparse-symbol classsubparts) [5559 5578])
+                    ("mSphereSelected" variable (:type "bool") (reparse-symbol classsubparts) [5582 5603])
+                    ("mConeSelected" variable (:type "bool") (reparse-symbol classsubparts) [5607 5626])
+                    ("mCubePos" variable (:type ("gmtl::Vec3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5655 5680])
+                    ("mConePos" variable (:type ("gmtl::Vec3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5709])
+                    ("mSpherePos" variable (:type ("gmtl::Vec3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5713 5740])
+                    ("mNavigation" variable (:type ("gmtl::Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5745 5773])
+                    ("mScene" variable (:type ("vrj::opengl::ContextData" type
+                         (:template-specifier 
+                            ( ("Scene" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5778 5817]))                  
+                :type "class")
+                nil [2136 5820]))          
+    :file "gloveApp.h"
+    :pointmax 5830
+    :fsize 5829
+    :lastmodtime '(20846 63125)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_GLOVE_APP_")
+          )
+
+    )
+   )
+  :file "!home!nikhil!vrj!vrjuggler!modules!vrjuggler!samples!OGL!advanced!glove!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

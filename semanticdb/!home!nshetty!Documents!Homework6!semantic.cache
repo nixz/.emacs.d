@@ -1,0 +1,190 @@
+;; Object Homework6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Homework6/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("all" function (:arguments ("sparseMatMul")) nil [1 19])
+            ("sparseMatMul" function (:arguments ("multiplication.o")) nil [20 138])
+            ("multiplication.o" function nil nil [139 196])
+            ("clean" function nil nil [197 230]))          
+    :file "Makefile"
+    :pointmax 230
+    :fsize 229
+    :lastmodtime '(21652 33944 393667 795000)
+    :unmatched-syntax '((shell-command 206 . 229) (bol 205 . 205) (symbol 216 . 228) (symbol 212 . 215) (symbol 208 . 211) (symbol 205 . 207) (bol 205 . 205))
+    )
+   (semanticdb-table "multiplication.cu"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("spmv_csr_vector_kernel" function
+               (:arguments 
+                  ( ("num_rows" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [123 142])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [143 158])
+                    ("indices" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [200 219])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [220 238])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [280 296])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [297 306]))                  
+                :type "void")
+                nil [93 1389]))          
+    :file "multiplication.cu"
+    :pointmax 1390
+    :fsize 1388
+    :lastmodtime '(21652 32598 825684 709000)
+    :unmatched-syntax '((symbol 82 . 92) (symbol 82 . 92) (symbol 81 . 91) (symbol 81 . 91) (symbol 100 . 110))
+    )
+   (semanticdb-table "readMatrix.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__readMatrix_h" variable (:constant-flag t) nil [349 363])
+            ("MatrixNonZeroEntry" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rowIndex" variable (:type "int") (reparse-symbol classsubparts) [464 477])
+                          ("columnIndex" variable (:type "int") (reparse-symbol classsubparts) [480 496])
+                          ("value" variable (:type "float") (reparse-symbol classsubparts) [499 511]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [445 533])
+            ("BasicSparseMatrix" type
+               (:typedef ("tagBasicSparseMatrix" type (:type "struct") nil nil)
+                :superclasses "tagBasicSparseMatrix"
+                :type "typedef")
+                nil [615 861])
+            ("tagBasicSparseMatrix" type
+               (:members 
+                  ( ("numOfRows" variable (:type "unsigned int") (reparse-symbol classsubparts) [655 678])
+                    ("numOfColumns" variable (:type "unsigned int") (reparse-symbol classsubparts) [681 707])
+                    ("numOfNonZeroEntries" variable (:type "unsigned int") (reparse-symbol classsubparts) [710 743])
+                    ("nonZeroEntries" variable
+                       (:pointer 1
+                        :type ("MatrixNonZeroEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [746 781])
+                    ("rowIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [784 809])
+                    ("columnIndices" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [812 840]))                  
+                :type "struct")
+                nil [615 861])
+            ("SparseMatrixCSR" type
+               (:typedef ("tagSparseMatrixCSR" type (:type "struct") nil nil)
+                :superclasses "tagSparseMatrixCSR"
+                :type "typedef")
+                nil [943 1092])
+            ("tagSparseMatrixCSR" type
+               (:members 
+                  ( ("numOfRows" variable (:type "int") (reparse-symbol classsubparts) [980 994])
+                    ("numOfColumns" variable (:type "int") (reparse-symbol classsubparts) [997 1014])
+                    ("numNonzero" variable (:type "int") (reparse-symbol classsubparts) [1017 1032])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1035 1044])
+                    ("index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1047 1058])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1061 1073]))                  
+                :type "struct")
+                nil [943 1092])
+            ("compareRow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1189 1208])
+                    ("entry2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1209 1228]))                  
+                :type "int")
+                nil [1174 1229])
+            ("loadBasicSparseMatrix" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1352 1373]))                  
+                :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                nil [1311 1374])
+            ("convertToSparseMatrixCSR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("basicSparseMatrix" variable
+                       (:pointer 1
+                        :type ("BasicSparseMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1548 1585]))                  
+                :type ("SparseMatrixCSR" type (:type "class") nil nil))
+                nil [1506 1586]))          
+    :file "readMatrix.h"
+    :pointmax 1612
+    :fsize 1613
+    :lastmodtime '(21652 32890 897681 37000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__readMatrix_h")
+          )
+
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [279 288])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [289 302]))                  
+                :type "int")
+                nil [270 321]))          
+    :file "main.cpp"
+    :pointmax 322
+    :fsize 321
+    :lastmodtime '(21652 33815 257669 418000)
+    :unmatched-syntax '((punctuation 243 . 244) (punctuation 243 . 244))
+    )
+   )
+  :file "!home!nshetty!Documents!Homework6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

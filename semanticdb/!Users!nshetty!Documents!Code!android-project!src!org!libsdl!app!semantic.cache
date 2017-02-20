@@ -1,0 +1,539 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables (list 
+   (semanticdb-table "SDLActivity.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.libsdl.app" package nil nil [1 24])
+            ("java.util.Arrays" include nil nil [26 50])
+            ("android.app.*" include nil nil [52 73])
+            ("android.content.*" include nil nil [74 99])
+            ("android.view.*" include nil nil [100 122])
+            ("android.view.inputmethod.BaseInputConnection" include nil nil [123 175])
+            ("android.view.inputmethod.EditorInfo" include nil nil [176 219])
+            ("android.view.inputmethod.InputConnection" include nil nil [220 268])
+            ("android.view.inputmethod.InputMethodManager" include nil nil [269 320])
+            ("android.widget.AbsoluteLayout" include nil nil [321 358])
+            ("android.os.*" include nil nil [359 379])
+            ("android.util.Log" include nil nil [380 404])
+            ("android.graphics.*" include nil nil [405 431])
+            ("android.media.*" include nil nil [432 455])
+            ("android.hardware.*" include nil nil [456 482])
+            ("SDLActivity" type
+               (:typemodifiers ("public")
+                :superclasses "Activity"
+                :members 
+                  ( ("TAG" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [557 597])
+                    ("mHasFocus" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [707 724])
+                    ("mIsSurfaceReady" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [682 706])
+                    ("mIsPaused" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [641 681])
+                    ("mSingleton" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "SDLActivity")
+                        (reparse-symbol class_member_declaration) [753 793])
+                    ("mSurface" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "SDLSurface")
+                        (reparse-symbol class_member_declaration) [798 835])
+                    ("mTextEdit" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "View")
+                        (reparse-symbol class_member_declaration) [840 872])
+                    ("mLayout" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "ViewGroup")
+                        (reparse-symbol class_member_declaration) [877 912])
+                    ("mSDLThread" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "Thread")
+                        (reparse-symbol class_member_declaration) [985 1020])
+                    ("mAudioThread" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "Thread")
+                        (reparse-symbol class_member_declaration) [1039 1076])
+                    ("mAudioTrack" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "AudioTrack")
+                        (reparse-symbol class_member_declaration) [1081 1121])
+                    ("onCreate" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [1462 1487]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1438 1866])
+                    ("onPause" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1900 2027])
+                    ("onResume" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2047 2178])
+                    ("onWindowFocusChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hasFocus" variable (:type "boolean") (reparse-symbol formal_parameters) [2232 2248]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2199 2481])
+                    ("onLowMemory" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2501 2641])
+                    ("onDestroy" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2661 3195])
+                    ("dispatchKeyEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "KeyEvent") (reparse-symbol formal_parameters) [3247 3261]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3215 3773])
+                    ("handlePause" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3998 4267])
+                    ("handleResume" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4580 4875])
+                    ("COMMAND_CHANGE_TITLE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4922 4964])
+                    ("COMMAND_UNUSED" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4969 5005])
+                    ("COMMAND_TEXTEDIT_HIDE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5010 5053])
+                    ("COMMAND_USER" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5059 5108])
+                    ("onUnhandledMessage" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("command" variable (:type "int") (reparse-symbol formal_parameters) [5569 5580])
+                            ("param" variable (:type "Object") (reparse-symbol formal_parameters) [5582 5594]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5532 5625])
+                    ("SDLCommandHandler" type
+                       (:typemodifiers ("protected" "static")
+                        :superclasses "Handler"
+                        :members 
+                          ( ("handleMessage" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("msg" variable (:type "Message") (reparse-symbol formal_parameters) [5956 5967]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [5930 7167]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5845 7173])
+                    ("commandHandler" variable (:type "Handler") (reparse-symbol class_member_declaration) [7211 7260])
+                    ("sendCommand" function
+                       (:arguments 
+                          ( ("command" variable (:type "int") (reparse-symbol formal_parameters) [7332 7343])
+                            ("data" variable (:type "Object") (reparse-symbol formal_parameters) [7345 7356]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7312 7519])
+                    ("nativeInit" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7552 7591])
+                    ("nativeLowMemory" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7596 7640])
+                    ("nativeQuit" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7645 7684])
+                    ("nativePause" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7689 7729])
+                    ("nativeResume" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7734 7775])
+                    ("onNativeResize" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [7821 7826])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [7828 7833])
+                            ("format" variable (:type "int") (reparse-symbol formal_parameters) [7835 7845]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7780 7847])
+                    ("onNativeKeyDown" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("keycode" variable (:type "int") (reparse-symbol formal_parameters) [7894 7905]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7852 7907])
+                    ("onNativeKeyUp" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("keycode" variable (:type "int") (reparse-symbol formal_parameters) [7952 7963]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7912 7965])
+                    ("onNativeKeyboardFocusLost" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7970 8024])
+                    ("onNativeTouch" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("touchDevId" variable (:type "int") (reparse-symbol formal_parameters) [8069 8083])
+                            ("pointerFingerId" variable (:type "int") (reparse-symbol formal_parameters) [8085 8104])
+                            ("action" variable (:type "int") (reparse-symbol formal_parameters) [8150 8160])
+                            ("x" variable (:type "float") (reparse-symbol formal_parameters) [8162 8169])
+                            ("y" variable (:type "float") (reparse-symbol formal_parameters) [8216 8223])
+                            ("p" variable (:type "float") (reparse-symbol formal_parameters) [8225 8232]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8029 8234])
+                    ("onNativeAccel" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("x" variable (:type "float") (reparse-symbol formal_parameters) [8279 8286])
+                            ("y" variable (:type "float") (reparse-symbol formal_parameters) [8288 8295])
+                            ("z" variable (:type "float") (reparse-symbol formal_parameters) [8297 8304]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8239 8306])
+                    ("onNativeSurfaceChanged" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8311 8362])
+                    ("onNativeSurfaceDestroyed" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8367 8420])
+                    ("nativeFlipBuffers" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8425 8471])
+                    ("flipBuffers" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8477 8558])
+                    ("setActivityTitle" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("title" variable (:type "String") (reparse-symbol formal_parameters) [8603 8615]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8564 8767])
+                    ("sendMessage" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("command" variable (:type "int") (reparse-symbol formal_parameters) [8807 8818])
+                            ("param" variable (:type "int") (reparse-symbol formal_parameters) [8820 8829]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8773 8910])
+                    ("getContext" function
+                       (:typemodifiers ("public" "static")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [8916 8985])
+                    ("ShowTextInputTask" type
+                       (:typemodifiers ("static")
+                        :interfaces ("Runnable")
+                        :members 
+                          ( ("HEIGHT_PADDING" variable
+                               (:typemodifiers ("static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9266 9303])
+                            ("h" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9333 9335])
+                            ("w" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9330 9332])
+                            ("y" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9327 9329])
+                            ("x" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9313 9326])
+                            ("ShowTextInputTask" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [9370 9375])
+                                    ("y" variable (:type "int") (reparse-symbol formal_parameters) [9377 9382])
+                                    ("w" variable (:type "int") (reparse-symbol formal_parameters) [9384 9389])
+                                    ("h" variable (:type "int") (reparse-symbol formal_parameters) [9391 9396]))                                  )
+                                (reparse-symbol class_member_declaration) [9345 9505])
+                            ("run" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [9533 10183]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [8991 10189])
+                    ("showTextInput" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [10231 10236])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [10238 10243])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [10245 10250])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [10252 10257]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10195 10410])
+                    ("getNativeSurface" function
+                       (:typemodifiers ("public" "static")
+                        :type "Surface")
+                        (reparse-symbol class_member_declaration) [10428 10532])
+                    ("audioInit" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("sampleRate" variable (:type "int") (reparse-symbol formal_parameters) [10579 10593])
+                            ("is16Bit" variable (:type "boolean") (reparse-symbol formal_parameters) [10595 10610])
+                            ("isStereo" variable (:type "boolean") (reparse-symbol formal_parameters) [10612 10628])
+                            ("desiredFrames" variable (:type "int") (reparse-symbol formal_parameters) [10630 10647]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10551 12682])
+                    ("audioWriteShortBuffer" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("buffer" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [12733 12747]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12692 13276])
+                    ("audioWriteByteBuffer" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("buffer" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [13326 13339]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13286 13867])
+                    ("audioQuit" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13873 14020])
+                    ("inputGetInputDeviceIds" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("sources" variable (:type "int") (reparse-symbol formal_parameters) [14161 14172]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [14118 14607]))                  
+                :type "class")
+                nil [509 14609])
+            ("SDLMain" type
+               (:interfaces ("Runnable")
+                :members 
+                  ( ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14705 14841]))                  
+                :type "class")
+                nil [14651 14843])
+            ("SDLSurface" type
+               (:interfaces ("SurfaceHolder.Callback" "View.OnKeyListener" "View.OnTouchListener" "SensorEventListener")
+                :superclasses "SurfaceView"
+                :members 
+                  ( ("mSensorManager" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "SensorManager")
+                        (reparse-symbol class_member_declaration) [15190 15236])
+                    ("mDisplay" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "Display")
+                        (reparse-symbol class_member_declaration) [15241 15275])
+                    ("mHeight" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [15376 15384])
+                    ("mWidth" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [15345 15375])
+                    ("SDLSurface" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [15427 15442]))                          )
+                        (reparse-symbol class_member_declaration) [15409 15999])
+                    ("getNativeSurface" function
+                       (:typemodifiers ("public")
+                        :type "Surface")
+                        (reparse-symbol class_member_declaration) [16009 16091])
+                    ("surfaceCreated" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("holder" variable (:type "SurfaceHolder") (reparse-symbol formal_parameters) [16189 16209]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16162 16316])
+                    ("surfaceDestroyed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("holder" variable (:type "SurfaceHolder") (reparse-symbol formal_parameters) [16404 16424]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16375 16670])
+                    ("surfaceChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("holder" variable (:type "SurfaceHolder") (reparse-symbol formal_parameters) [16759 16779])
+                            ("format" variable (:type "int") (reparse-symbol formal_parameters) [16812 16822])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [16824 16833])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [16835 16845]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16732 19365])
+                    ("onDraw" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("canvas" variable (:type "Canvas") (reparse-symbol formal_parameters) [19418 19431]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19399 19435])
+                    ("onKey" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "View") (reparse-symbol formal_parameters) [19495 19502])
+                            ("keyCode" variable (:type "int") (reparse-symbol formal_parameters) [19504 19515])
+                            ("event" variable (:type "KeyEvent") (reparse-symbol formal_parameters) [19517 19531]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [19474 19967])
+                    ("onTouch" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "View") (reparse-symbol formal_parameters) [20030 20036])
+                            ("event" variable (:type "MotionEvent") (reparse-symbol formal_parameters) [20038 20055]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [20007 21502])
+                    ("enableSensor" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sensortype" variable (:type "int") (reparse-symbol formal_parameters) [21555 21569])
+                            ("enabled" variable (:type "boolean") (reparse-symbol formal_parameters) [21571 21586]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21530 22038])
+                    ("onAccuracyChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sensor" variable (:type "Sensor") (reparse-symbol formal_parameters) [22092 22105])
+                            ("accuracy" variable (:type "int") (reparse-symbol formal_parameters) [22107 22119]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22062 22144])
+                    ("onSensorChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "SensorEvent") (reparse-symbol formal_parameters) [22192 22209]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22164 23205]))                  
+                :type "class")
+                nil [15028 23212])
+            ("DummyEdit" type
+               (:interfaces ("View.OnKeyListener")
+                :superclasses "View"
+                :members 
+                  ( ("ic" variable (:type "InputConnection") (reparse-symbol class_member_declaration) [23382 23401])
+                    ("DummyEdit" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [23424 23439]))                          )
+                        (reparse-symbol class_member_declaration) [23407 23571])
+                    ("onCheckIsTextEditor" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23591 23656])
+                    ("onKey" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "View") (reparse-symbol formal_parameters) [23697 23703])
+                            ("keyCode" variable (:type "int") (reparse-symbol formal_parameters) [23705 23716])
+                            ("event" variable (:type "KeyEvent") (reparse-symbol formal_parameters) [23718 23732]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23676 24323])
+                    ("onKeyPreIme" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("keyCode" variable (:type "int") (reparse-symbol formal_parameters) [24386 24397])
+                            ("event" variable (:type "KeyEvent") (reparse-symbol formal_parameters) [24399 24413]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24358 25460])
+                    ("onCreateInputConnection" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("outAttrs" variable (:type "EditorInfo") (reparse-symbol formal_parameters) [25527 25546]))                          
+                        :type "InputConnection")
+                        (reparse-symbol class_member_declaration) [25480 25765]))                  
+                :type "class")
+                nil [23317 25767])
+            ("SDLInputConnection" type
+               (:superclasses "BaseInputConnection"
+                :members 
+                  ( ("SDLInputConnection" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("targetView" variable (:type "View") (reparse-symbol formal_parameters) [25855 25870])
+                            ("fullEditor" variable (:type "boolean") (reparse-symbol formal_parameters) [25872 25890]))                          )
+                        (reparse-symbol class_member_declaration) [25829 25939])
+                    ("sendKeyEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "KeyEvent") (reparse-symbol formal_parameters) [25987 26001]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [25959 26641])
+                    ("commitText" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("text" variable (:type "CharSequence") (reparse-symbol formal_parameters) [26687 26704])
+                            ("newCursorPosition" variable (:type "int") (reparse-symbol formal_parameters) [26706 26727]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [26661 26858])
+                    ("setComposingText" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("text" variable (:type "CharSequence") (reparse-symbol formal_parameters) [26910 26927])
+                            ("newCursorPosition" variable (:type "int") (reparse-symbol formal_parameters) [26929 26950]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [26878 27093])
+                    ("nativeCommitText" function
+                       (:typemodifiers ("public" "native")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [27135 27146])
+                            ("newCursorPosition" variable (:type "int") (reparse-symbol formal_parameters) [27148 27169]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27099 27171])
+                    ("nativeSetComposingText" function
+                       (:typemodifiers ("public" "native")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [27219 27230])
+                            ("newCursorPosition" variable (:type "int") (reparse-symbol formal_parameters) [27232 27253]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27177 27255]))                  
+                :type "class")
+                nil [25769 27258]))          
+    :file "SDLActivity.java"
+    :pointmax 27260
+    :fsize 27259
+    :lastmodtime '(21096 40074 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Documents!Code!android-project!src!org!libsdl!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

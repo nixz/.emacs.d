@@ -1,0 +1,127 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables (list 
+   (semanticdb-table "UnitTestArrayContainerControlBasic.cxx"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DAX_ARRAY_CONTAINER_CONTROL" variable (:constant-flag t) nil [658 685])
+            ("dax/cont/ArrayContainerControlBasic.h" include (:system-flag t) nil [721 769])
+            ("dax/VectorTraits.h" include (:system-flag t) nil [771 800])
+            ("dax/cont/VectorOperations.h" include (:system-flag t) nil [801 839])
+            ("dax/cont/internal/testing/Testing.h" include (:system-flag t) nil [841 887])
+            ("unnamed" type
+               (:members 
+                  ( ("ARRAY_SIZE" variable
+                       (:constant-flag t
+                        :type ("dax::Id" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [902 932])
+                    ("TemplatedTests" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ArrayContainerType" type
+                               (:typedef ("dax::cont::internal::ArrayContainerControl" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("dax::cont::ArrayContainerControlTagBasic" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "dax::cont::internal::ArrayContainerControl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [982 1104])
+                            ("ValueType" type
+                               (:typedef ("ArrayContainerType::ValueType" type (:type "class") nil nil)
+                                :superclasses "ArrayContainerType::ValueType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1107 1164])
+                            ("PortalType" type
+                               (:typedef ("ArrayContainerType::PortalType" type (:type "class") nil nil)
+                                :superclasses "ArrayContainerType::PortalType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1167 1226])
+                            ("IteratorType" type
+                               (:typedef ("PortalType::IteratorType" type (:type "class") nil nil)
+                                :superclasses "PortalType::IteratorType"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1229 1284])
+                            ("SetContainer" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:reference 1
+                                        :type ("ArrayContainerType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1306 1332])
+                                    ("value" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1333 1349]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1288 1532])
+                            ("CheckContainer" function
+                               (:arguments 
+                                  ( ("array" variable
+                                       (:reference 1
+                                        :type ("ArrayContainerType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1556 1582])
+                                    ("value" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1599]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1536 1829])
+                            ("STOLEN_ARRAY_VALUE" function
+                               (:typemodifiers ("typename")
+                                :type ("dax::VectorTraits::ComponentType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1833 1929])
+                            ("StealArray1" function
+                               (:pointer 1
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2143 2801])
+                            ("StealArray2" function
+                               (:arguments 
+                                  ( ("stolenArray" variable
+                                       (:pointer 1
+                                        :type ("ValueType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2821 2844]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2804 3183])
+                            ("BasicAllocation" function (:type "void") (reparse-symbol classsubparts) [3187 4531])
+                            ("()" function
+                               (:operator-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4535 4659]))                          )
+                        (reparse-symbol namespacesubparts) [934 4662])
+                    ("TestFunctor" type
+                       (:members 
+                          ( ("()" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4727 4729]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4687 4780]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4664 4783])
+                    ("TestArrayContainerControlBasic" function (:type "void") (reparse-symbol namespacesubparts) [4785 4880]))                  
+                :type "namespace")
+                nil [889 4883])
+            ("UnitTestArrayContainerControlBasic" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4947 4951])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4952 4960]))                  
+                :type "int")
+                nil [4908 5041]))          
+    :file "UnitTestArrayContainerControlBasic.cxx"
+    :pointmax 5042
+    :fsize 5041
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((semantic-list 4958 . 4960))
+    :lexical-table 
+        '(("DAX_ARRAY_CONTAINER_CONTROL" . ((symbol "DAX_ARRAY_CONTAINER_CONTROL_ERROR" 686 . 719)))
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!cont!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

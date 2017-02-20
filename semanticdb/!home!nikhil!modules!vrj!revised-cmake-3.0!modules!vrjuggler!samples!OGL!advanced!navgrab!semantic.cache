@@ -1,0 +1,297 @@
+;; Object navgrab/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "navgrab/"
+  :tables
+  (list
+    (semanticdb-table "NavGrabApp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gmtl/Point.h" include (:system-flag t) nil [1122 1145])
+            ("gmtl/Matrix.h" include (:system-flag t) nil [1146 1170])
+            ("gmtl/Containment.h" include (:system-flag t) nil [1171 1200])
+            ("gmtl/Generate.h" include (:system-flag t) nil [1201 1227])
+            ("gmtl/Output.h" include (:system-flag t) nil [1228 1252])
+            ("gadget/InputManager.h" include (:system-flag t) nil [1254 1286])
+            ("gadget/InputLogger.h" include (:system-flag t) nil [1287 1318])
+            ("string" include (:system-flag t) nil [1320 1337])
+            ("iostream" include (:system-flag t) nil [1338 1357])
+            ("NavGrabApp.h" include nil nil [1359 1382])
+            ("TestCases/FailureTestCase.h" include (:system-flag t) nil [1383 1421])
+            ("TestCases/SphereTestCase.h" include (:system-flag t) nil [1422 1459])
+            ("init" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [1461 1824])
+            ("contextInit" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [1826 1878])
+            ("preFrame" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [1880 2087])
+            ("updateNavigation" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [3877 4928])
+            ("updateLogger" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [4930 6135])
+            ("bufferPreDraw" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [6137 6247])
+            ("draw" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [6249 6581])
+            ("reset" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [6583 7404])
+            ("dumpState" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [7406 7774])
+            ("initTesting" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [7893 8100])
+            ("initShapes" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [8103 8289])
+            ("initGLState" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [8291 9543])
+            ("drawSphere" function
+               (:parent "NavGrabApp"
+                :arguments 
+                  ( ("sphere" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("gmtl::Spheref" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9573 9601])
+                    ("intersected" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [9630 9654])
+                    ("selected" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [9655 9676]))                  
+                :type "void")
+                nil [9545 10257])
+            ("drawCube" function
+               (:parent "NavGrabApp"
+                :arguments 
+                  ( ("cube" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("gmtl::AABoxf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10285 10310])
+                    ("intersected" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10311 10335])
+                    ("selected" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10362 10383]))                  
+                :type "void")
+                nil [10259 11986])
+            ("drawFloor" function
+               (:parent "NavGrabApp"
+                :type "void")
+                nil [11988 12793]))          
+      :file "NavGrabApp.cpp"
+      :pointmax 12836
+      :fsize 12824
+      :lastmodtime '(20671 823 699425 987000)
+      :unmatched-syntax nil)
+    (semanticdb-table "NavGrabApp.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_INTERACT_APP_H_" variable (:constant-flag t) nil [1155 1171])
+            ("stdlib.h" include (:system-flag t) nil [1173 1192])
+            ("GL/gl.h" include (:system-flag t) nil [1274 1294])
+            ("GL/glu.h" include (:system-flag t) nil [1295 1316])
+            ("gmtl/Point.h" include (:system-flag t) nil [1325 1348])
+            ("gmtl/Sphere.h" include (:system-flag t) nil [1349 1373])
+            ("gmtl/AABox.h" include (:system-flag t) nil [1374 1397])
+            ("gadget/Type/PositionInterface.h" include (:system-flag t) nil [1399 1441])
+            ("gadget/Type/DigitalInterface.h" include (:system-flag t) nil [1442 1483])
+            ("vrj/Draw/OpenGL/App.h" include (:system-flag t) nil [1484 1516])
+            ("vrj/Test/TestRunner.h" include (:system-flag t) nil [1518 1550])
+            ("NavGrabApp" type
+               (:superclasses 
+                  ( ("vrj::opengl::App" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1598 1605])
+                    ("NavGrabApp" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kern" variable
+                               (:pointer 1
+                                :type ("vrj::Kernel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1620 1639])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1640 1645]))                          
+                        :type ("NavGrabApp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1609 1899])
+                    ("NavGrabApp" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1904 1972])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1977 1997])
+                    ("contextInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2002 2029])
+                    ("preFrame" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2034 2058])
+                    ("bufferPreDraw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2064 2093])
+                    ("draw" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2098 2118])
+                    ("reset" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2123 2144])
+                    ("dumpState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2149 2166])
+                    ("initTesting" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2297 2316])
+                    ("SphereTestCase" friend nil (reparse-symbol classsubparts) [2321 2348])
+                    ("protected" label nil (reparse-symbol classsubparts) [2419 2429])
+                    ("updateGrabbing" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2489 2511])
+                    ("updateNavigation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2569 2593])
+                    ("updateLogger" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2654 2674])
+                    ("private" label nil (reparse-symbol classsubparts) [2676 2684])
+                    ("initShapes" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2688 2706])
+                    ("initGLState" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2711 2730])
+                    ("drawSphere" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sphere" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::Spheref" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2751 2779])
+                            ("intersected" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2780 2804])
+                            ("selected" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2824 2845]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2735 2846])
+                    ("drawCube" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cube" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("gmtl::AABoxf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2865 2890])
+                            ("intersected" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2891 2915])
+                            ("selected" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2933 2954]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2851 2955])
+                    ("drawFloor" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2960 2977])
+                    ("mHead" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2982 3014])
+                    ("mWand" variable (:type ("gadget::PositionInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3018 3050])
+                    ("mForwardButton" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3055 3096])
+                    ("mRotateButton" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3135 3175])
+                    ("mGrabButton" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3212 3250])
+                    ("mDumpStateButton" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3296 3339])
+                    ("mSphere" variable (:type ("gmtl::Spheref" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3414 3436])
+                    ("mSphereQuad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3493 3519])
+                    ("mSphereIsect" variable (:type "bool") (reparse-symbol classsubparts) [3586 3613])
+                    ("mSphereSelected" variable (:type "bool") (reparse-symbol classsubparts) [3691 3721])
+                    ("mCubeEdgeLength" variable (:type "float") (reparse-symbol classsubparts) [3797 3827])
+                    ("mCube" variable (:type ("gmtl::AABoxf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3886 3906])
+                    ("mCubeIsect" variable (:type "bool") (reparse-symbol classsubparts) [3963 3988])
+                    ("mCubeSelected" variable (:type "bool") (reparse-symbol classsubparts) [4071 4099])
+                    ("mNavMatrix" variable (:type ("gmtl::Matrix44f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4166 4195])
+                    ("mLoggerPlayButton" variable (:type ("gadget::DigitalInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4266 4313])
+                    ("mFramesToSleep" variable (:type "unsigned int") (reparse-symbol classsubparts) [4354 4393])
+                    ("mTestRunner" variable
+                       (:pointer 1
+                        :type ("vrj::test::TestRunner" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4451 4487]))                  
+                :type "class")
+                nil [1553 4541]))          
+      :file "NavGrabApp.h"
+      :pointmax 4573
+      :fsize 4581
+      :lastmodtime '(20671 823 699425 987000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INTERACT_APP_H_")
+          )
+))
+  :file "!home!nikhil!modules!vrj!revised-cmake-3.0!modules!vrjuggler!samples!OGL!advanced!navgrab!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta")

@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("all_include" variable (:default-value ("$(srcdir)/../include")) nil [1 36])
+            ("devildir" variable (:default-value ("@datadir@/devil")) nil [36 63])
+            ("examplesdir" variable (:default-value ("$(devildir)/examples")) nil [63 98])
+            ("example_srcdir" variable (:default-value ("../examples")) nil [98 127])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "$(all_include)")) nil [128 160])
+            ("il_library" variable (:default-value ("../lib/libIL.la")) nil [161 191])
+            ("ilu_library" variable (:default-value ("../lib/libILU.la")) nil [191 222])
+            ("ilut_library" variable (:default-value ("../lib/libILUT.la")) nil [222 255])
+            ("EXTRA_DIST" variable nil nil [256 269])
+            ("bin_PROGRAMS" variable nil nil [270 285])
+            ("examples_PROGRAMS" variable nil nil [285 306])
+            ("bin_PROGRAMS" variable (:default-value ("ilur")) nil [320 341])
+            ("ilur_SOURCES" variable (:default-value ("../src-ILU/ilur/ilur.c")) nil [359 397])
+            ("ilur_LDADD" variable (:default-value ("$(ilu_library)")) nil [397 425])
+            ("examples_PROGRAMS" variable (:default-value ("IL_override")) nil [445 497])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_cpp_wrapper")) nil [513 552])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_allegro")) nil [568 602])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_d3d")) nil [637 680])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_sdl")) nil [711 741])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_animation")) nil [768 804])
+            ("examples_PROGRAMS" variable (:default-value ("ILUT_gl")) nil [844 885])
+            ("ILUT_allegro_SOURCES" variable (:default-value ("$(example_srcdir)/allegro_example/allegtest.c")) nil [960 1029])
+            ("ILUT_allegro_CFLAGS" variable (:default-value ("$(alleg_CFLAGS)")) nil [1029 1067])
+            ("ILUT_allegro_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1067 1107])
+            ("ILUT_sdl_SOURCES" variable (:default-value ("$(example_srcdir)/sdl_example/sdl_test.c")) nil [1108 1168])
+            ("ILUT_sdl_CFLAGS" variable (:default-value ("$(SDL_CFLAGS)")) nil [1168 1200])
+            ("ILUT_sdl_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1200 1235])
+            ("ILUT_animation_SOURCES" variable (:default-value ("$(example_srcdir)/animation_example/AnimTest.cpp" "$(example_srcdir)/animation_example/resource.h" "$(example_srcdir)/animation_example/AnimTest.rc")) nil [1236 1405])
+            ("ILUT_animation_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1430 1471])
+            ("EXTRA_DIST" variable (:default-value ("$(example_srcdir)/animation_example/OpenIL.ico")) nil [1471 1532])
+            ("ILUT_d3d_SOURCES" variable (:default-value ("$(example_srcdir)/direct3d_example/d3dtest.cpp")) nil [1533 1599])
+            ("ILUT_d3d_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1599 1634])
+            ("ILUT_cpp_wrapper_SOURCES" variable (:default-value ("$(example_srcdir)/cpp_wrapper_example/il_wrap.cpp")) nil [1635 1712])
+            ("ILUT_cpp_wrapper_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1712 1756])
+            ("IL_override_SOURCES" variable (:default-value ("$(example_srcdir)/override_example/iotest.c")) nil [1757 1823])
+            ("ILUT_gl_SOURCES" variable (:default-value ("$(example_srcdir)/opengl_example/gltest.c" "$(example_srcdir)/opengl_example/gltest.h")) nil [1824 1926])
+            ("ILUT_gl_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [1926 1960])
+            ("IL_read_SOURCES" variable (:default-value ("$(example_srcdir)/register_read_example/readtest.c")) nil [1961 2030])
+            ("IL_simple_SOURCES" variable (:default-value ("$(example_srcdir)/simple_example/simple.c")) nil [2031 2093])
+            ("IL_override_LDFLAGS" variable (:default-value ("$(ilu_library)")) nil [2107 2144])
+            ("IL_read_LDFLAGS" variable (:default-value ("$(ilu_library)")) nil [2144 2177])
+            ("IL_simple_LDFLAGS" variable (:default-value ("$(ilu_library)")) nil [2177 2212])
+            ("IL_override_LDFLAGS" variable (:default-value ("$(il_library)")) nil [2232 2268])
+            ("IL_read_LDFLAGS" variable (:default-value ("$(il_library)")) nil [2268 2300])
+            ("IL_simple_LDFLAGS" variable (:default-value ("$(il_library)")) nil [2300 2334])
+            ("ILUT_volume_SOURCES" variable (:default-value ("$(example_srcdir)/volume_example/3dtest.h" "$(example_srcdir)/volume_example/3dtest.c")) nil [2356 2462])
+            ("ILUT_volume_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [2462 2500])
+            ("ILUT_windows_SOURCES" variable (:default-value ("$(example_srcdir)/windows_example/BatchConv.cpp" "$(example_srcdir)/windows_example/WindowsTest.cpp" "$(example_srcdir)/windows_example/WindowsTest.h" "$(example_srcdir)/windows_example/resource.h" "$(example_srcdir)/windows_example/WindowsTest.rc")) nil [2501 2764])
+            ("ILUT_windows_LDFLAGS" variable (:default-value ("$(ilut_library)")) nil [2764 2804])
+            ("EXTRA_DIST" variable (:default-value ("$(example_srcdir)/windows_example/resources/OpenIL.ico")) nil [2804 2873])
+            (".rc.o" function nil nil [2874 2908]))          
+      :file "Makefile.am"
+      :pointmax 2908
+      :fsize 2907
+      :lastmodtime '(21936 20342 0 0)
+      :unmatched-syntax '((shell-command 2882 . 2907) (bol 2881 . 2881) (ENDIF 2334 . 2339) (bol 2334 . 2334) (ELSE 2212 . 2216) (bol 2212 . 2212) (ENDIF 937 . 942) (bol 937 . 937) (ENDIF 918 . 923) (bol 918 . 918) (ENDIF 900 . 905) (bol 900 . 900) (ENDIF 885 . 890) (bol 885 . 885) (ENDIF 804 . 809) (bol 804 . 804) (ENDIF 741 . 746) (bol 741 . 741) (ENDIF 680 . 685) (bol 680 . 680) (ENDIF 602 . 607) (bol 602 . 602) (ENDIF 341 . 346) (bol 341 . 341))))
+  :file "!Users!nshetty!Code!devil!DevIL!DevIL!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

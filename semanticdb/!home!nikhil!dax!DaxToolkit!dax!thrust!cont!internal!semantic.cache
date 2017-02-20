@@ -1,0 +1,1025 @@
+;; Object internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "internal/"
+  :tables (list 
+   (semanticdb-table "ArrayManagerExecutionThrustDevice.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_thrust_cont_internal_ArrayManagerExecutionThrustDevice_h" variable (:constant-flag t) nil [728 790])
+            ("dax/thrust/cont/internal/CheckThrustBackend.h" include (:system-flag t) nil [792 848])
+            ("dax/cont/ArrayContainerControl.h" include (:system-flag t) nil [850 893])
+            ("dax/exec/internal/ArrayPortalFromIterators.h" include (:system-flag t) nil [895 950])
+            ("thrust/copy.h" include (:system-flag t) nil [1352 1376])
+            ("thrust/device_vector.h" include (:system-flag t) nil [1377 1410])
+            ("dax" type
+               (:members 
+                  ( ("thrust" type
+                       (:members 
+                          ( ("cont" type
+                               (:members 
+                                  ( ("internal" type
+                                       (:members 
+                                          ( ("ArrayManagerExecutionThrustDevice" type
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil)
+                                                    ("ArrayContainerControlTag" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [2427 2434])
+                                                    ("ValueType" type
+                                                       (:typedef ("T" type (:type "class") nil nil)
+                                                        :superclasses "T"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2437 2457])
+                                                    ("ContainerType" type
+                                                       (:typedef ("dax::cont::internal::ArrayContainerControl" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type nil nil nil)
+                                                                  ("ArrayContainerControlTag" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :superclasses "dax::cont::internal::ArrayContainerControl"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2460 2575])
+                                                    ("PortalType" type
+                                                       (:typedef ("dax::exec::internal::ArrayPortalFromIterators" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type (:pointer 1) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :superclasses "dax::exec::internal::ArrayPortalFromIterators"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2578 2662])
+                                                    ("PortalConstType" type
+                                                       (:typedef ("dax::exec::internal::ArrayPortalFromIterators" type
+                                                             (:template-specifier 
+                                                                ( ("ValueType" type
+                                                                     (:pointer 1
+                                                                      :constant-flag t)
+                                                                      nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :superclasses "dax::exec::internal::ArrayPortalFromIterators"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2665 2760])
+                                                    ("ArrayManagerExecutionThrustDevice" function
+                                                       (:constructor-flag t
+                                                        :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2764 2820])
+                                                    ("GetNumberOfValues" function (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2883 2953])
+                                                    ("LoadDataForInput" function
+                                                       (:arguments 
+                                                          ( ("arrayPortal" variable (:type ("PortalControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3131 3157]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3109 3274])
+                                                    ("LoadDataForInPlace" function
+                                                       (:arguments 
+                                                          ( ("controlArray" variable
+                                                               (:reference 1
+                                                                :type ("ContainerType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3422 3450]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3398 3517])
+                                                    ("AllocateArrayForOutput" function
+                                                       (:arguments 
+                                                          ( ("daxNotUsed" variable
+                                                               (:reference 1
+                                                                :type ("ContainerType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3623 3659])
+                                                            ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3667 3690]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3588 3846])
+                                                    ("CopyInto" function
+                                                       (:arguments 
+                                                          ( ("dest" variable (:type ("IteratorTypeControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4145 4170]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4131 4252])
+                                                    ("RetrieveOutputData" function
+                                                       (:arguments 
+                                                          ( ("controlArray" variable
+                                                               (:reference 1
+                                                                :type ("ContainerType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4406 4434]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4382 4560])
+                                                    ("Shrink" function
+                                                       (:arguments 
+                                                          ( ("numberOfValues" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4631 4654]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4619 4914])
+                                                    ("GetPortal" function (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4934 5113])
+                                                    ("GetPortalConst" function (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5133 5340])
+                                                    ("ReleaseResources" function (:type "void") (reparse-symbol classsubparts) [5390 5477])
+                                                    ("ThrustIteratorType" variable (:type ("thrust::device_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ValueType" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [5619 5668])
+                                                    ("ThrustIteratorConstType" variable (:type ("thrust::device_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ValueType" type (:constant-flag t) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [5681 5741])
+                                                    ("ThrustIteratorBegin" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5809 5827]))                                                          
+                                                        :type ("ThrustIteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5761 5904])
+                                                    ("ThrustIteratorEnd" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5969 5987]))                                                          
+                                                        :type ("ThrustIteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5923 6062])
+                                                    ("ThrustIteratorBegin" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("portal" variable (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6134 6157]))                                                          
+                                                        :type ("ThrustIteratorConstType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6081 6240])
+                                                    ("ThrustIteratorEnd" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("portal" variable (:type ("PortalConstType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6310 6333]))                                                          
+                                                        :type ("ThrustIteratorConstType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6259 6414])
+                                                    ("private" label nil (reparse-symbol classsubparts) [6416 6424])
+                                                    ("ArrayManagerExecutionThrustDevice" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :type ("ArrayManagerExecutionThrustDevice" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("ArrayContainerControlTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [6489 6554]))                                                          
+                                                        :type ("ArrayManagerExecutionThrustDevice" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6448 6555])
+                                                    ("=" function
+                                                       (:prototype-flag t
+                                                        :operator-flag t
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :type ("ArrayManagerExecutionThrustDevice" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("ArrayContainerControlTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [6580 6645]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6558 6646])
+                                                    ("Array" variable (:type ("thrust::device_vector" type
+                                                         (:template-specifier 
+                                                            ( ("ValueType" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [6652 6691]))                                                  )
+                                                (reparse-symbol namespacesubparts) [2332 6694]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1633 6697]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1616 6699]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1597 6701]))                  
+                :type "namespace")
+                nil [1581 6703]))          
+    :file "ArrayManagerExecutionThrustDevice.h"
+    :pointmax 6819
+    :fsize 6818
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((punctuation 6651 . 6652) (punctuation 6650 . 6651) (symbol 6243 . 6258) (symbol 6065 . 6080) (symbol 5907 . 5922) (symbol 5745 . 5760) (punctuation 5680 . 5681) (punctuation 5679 . 5680) (TYPEDEF 5671 . 5678) (punctuation 5618 . 5619) (punctuation 5617 . 5618) (TYPEDEF 5609 . 5616) (symbol 5374 . 5389) (symbol 5117 . 5132) (symbol 4918 . 4933) (symbol 4603 . 4618) (symbol 4366 . 4381) (symbol 4115 . 4130) (punctuation 4111 . 4112) (symbol 4092 . 4111) (CLASS 4086 . 4091) (punctuation 4085 . 4086) (TEMPLATE 4076 . 4084) (semantic-list 3648 . 3659) (symbol 3572 . 3587) (symbol 3382 . 3397) (symbol 3093 . 3108) (punctuation 3089 . 3090) (symbol 3076 . 3089) (CLASS 3070 . 3075) (punctuation 3069 . 3070) (TEMPLATE 3061 . 3069) (symbol 2867 . 2882) (symbol 1524 . 1527) (symbol 1513 . 1523) (symbol 1509 . 1512) (symbol 1502 . 1508) (punctuation 1501 . 1502) (string 1278 . 1298) (symbol 1270 . 1277) (symbol 1259 . 1269) (symbol 1255 . 1258) (symbol 1248 . 1254) (punctuation 1247 . 1248) (string 1236 . 1246) (symbol 1228 . 1235) (symbol 1217 . 1227) (symbol 1213 . 1216) (symbol 1206 . 1212) (punctuation 1205 . 1206) (symbol 1126 . 1130) (symbol 1115 . 1125) (symbol 1111 . 1114) (symbol 1104 . 1110) (punctuation 1103 . 1104))
+    :lexical-table 
+        '(("__dax_thrust_cont_internal_ArrayManagerExecutionThrustDevice_h")
+          )
+
+    )
+   (semanticdb-table "CheckThrustBackend.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_thrust_cont_internal_CheckThrustBackend_h" variable (:constant-flag t) nil [713 760]))          
+    :file "CheckThrustBackend.h"
+    :pointmax 1437
+    :fsize 1436
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((punctuation 1303 . 1304) (symbol 1296 . 1303) (symbol 1289 . 1295) (symbol 1286 . 1288) (symbol 1282 . 1285) (symbol 1268 . 1281) (symbol 1262 . 1267) (punctuation 1261 . 1262))
+    :lexical-table 
+        '(("__dax_thrust_cont_internal_CheckThrustBackend_h")
+          )
+
+    )
+   (semanticdb-table "DeviceAdapterAlgorithmThrust.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__dax_thrust_cont_internal_DeviceAdapterThrust_h" variable (:constant-flag t) nil [714 762])
+            ("dax/thrust/cont/internal/CheckThrustBackend.h" include (:system-flag t) nil [764 820])
+            ("dax/cont/ArrayHandle.h" include (:system-flag t) nil [822 855])
+            ("dax/cont/ErrorExecution.h" include (:system-flag t) nil [856 892])
+            ("dax/Functional.h" include (:system-flag t) nil [894 921])
+            ("dax/exec/internal/ArrayPortalFromIterators.h" include (:system-flag t) nil [923 978])
+            ("dax/exec/internal/ErrorMessageBuffer.h" include (:system-flag t) nil [979 1028])
+            ("dax/exec/internal/Functor.h" include (:system-flag t) nil [1029 1067])
+            ("thrust/binary_search.h" include (:system-flag t) nil [1469 1502])
+            ("thrust/copy.h" include (:system-flag t) nil [1503 1527])
+            ("thrust/count.h" include (:system-flag t) nil [1528 1553])
+            ("thrust/device_vector.h" include (:system-flag t) nil [1554 1587])
+            ("thrust/iterator/counting_iterator.h" include (:system-flag t) nil [1588 1634])
+            ("thrust/scan.h" include (:system-flag t) nil [1635 1659])
+            ("thrust/sort.h" include (:system-flag t) nil [1660 1684])
+            ("thrust/unique.h" include (:system-flag t) nil [1685 1711])
+            ("thrust/iterator/counting_iterator.h" include (:system-flag t) nil [1713 1759])
+            ("thrust/iterator/transform_iterator.h" include (:system-flag t) nil [1760 1807])
+            ("dax" type
+               (:members 
+                  ( ("thrust" type
+                       (:members 
+                          ( ("cont" type
+                               (:members 
+                                  ( ("internal" type
+                                       (:members 
+                                          ( ("detail" type
+                                               (:members 
+                                                  ( ("ThrustIteratorTransformTag" type (:type "struct") (reparse-symbol namespacesubparts) [2128 2167])
+                                                    ("ThrustIteratorDevicePtrTag" type (:type "struct") (reparse-symbol namespacesubparts) [2168 2207])
+                                                    ("ThrustIteratorTag" type
+                                                       (:template 
+                                                          ( ("IteratorType" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" type
+                                                               (:typedef ("ThrustIteratorTransformTag" type (:type "class") nil nil)
+                                                                :superclasses "ThrustIteratorTransformTag"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2330 2370]))                                                          )
+                                                        (reparse-symbol namespacesubparts) [2272 2373])
+                                                    ("ThrustIteratorTag" type
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" type
+                                                               (:typedef ("ThrustIteratorDevicePtrTag" type (:type "class") nil nil)
+                                                                :superclasses "ThrustIteratorDevicePtrTag"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2429 2469]))                                                          
+                                                        :template-specifier 
+                                                          ( ("T" type (:pointer 1) nil nil))                                                          )
+                                                        (reparse-symbol namespacesubparts) [2374 2472])
+                                                    ("ThrustIteratorTag" type
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" type
+                                                               (:typedef ("ThrustIteratorDevicePtrTag" type (:type "class") nil nil)
+                                                                :superclasses "ThrustIteratorDevicePtrTag"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2533 2573]))                                                          
+                                                        :template-specifier 
+                                                          ( ("T" type
+                                                               (:pointer 1
+                                                                :constant-flag t)
+                                                                nil nil))                                                          )
+                                                        (reparse-symbol namespacesubparts) [2473 2576])
+                                                    ("ThrustStripPointer" type
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :prototype t)
+                                                        (reparse-symbol namespacesubparts) [2578 2625])
+                                                    ("ThrustStripPointer" type
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" type
+                                                               (:typedef ("T" type (:type "class") nil nil)
+                                                                :superclasses "T"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2682 2697]))                                                          
+                                                        :template-specifier 
+                                                          ( ("T" type (:pointer 1) nil nil))                                                          )
+                                                        (reparse-symbol namespacesubparts) [2626 2700])
+                                                    ("ThrustStripPointer" type
+                                                       (:template 
+                                                          ( ("T" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" type
+                                                               (:typedef ("T" type (:type "class") nil nil)
+                                                                :superclasses "T"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [2763 2784]))                                                          
+                                                        :template-specifier 
+                                                          ( ("T" type
+                                                               (:pointer 1
+                                                                :constant-flag t)
+                                                                nil nil))                                                          )
+                                                        (reparse-symbol namespacesubparts) [2701 2787]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [2052 2790])
+                                            ("DeviceAdapterAlgorithmThrust" type
+                                               (:template 
+                                                  ( ("DeviceAdapterTag" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("private" label nil (reparse-symbol classsubparts) [3223 3231])
+                                                    ("PortalValue" type
+                                                       (:template 
+                                                          ( ("PortalType" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("ValueType" type
+                                                               (:typedef ("PortalType::ValueType" type (:type "class") nil nil)
+                                                                :superclasses "PortalType::ValueType"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [3297 3346])
+                                                            ("PortalValue" function
+                                                               (:constructor-flag t
+                                                                :arguments 
+                                                                  ( ("portal" variable
+                                                                       (:reference 1
+                                                                        :constant-flag t
+                                                                        :type ("PortalType" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [3384 3409])
+                                                                    ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3410 3424]))                                                                  
+                                                                :type ("DAX_EXEC_EXPORT" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3352 3466])
+                                                            ("=" function
+                                                               (:operator-flag t
+                                                                :arguments 
+                                                                  ( ("value" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3512 3528]))                                                                  
+                                                                :type ("ValueType" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3492 3600])
+                                                            ("ValueType" function
+                                                               (:arguments 
+                                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3645 3650]))                                                                  
+                                                                :type "int")
+                                                                (reparse-symbol classsubparts) [3635 3708])
+                                                            ("Portal" variable
+                                                               (:constant-flag t
+                                                                :type ("PortalType" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3714 3738])
+                                                            ("Index" variable
+                                                               (:constant-flag t
+                                                                :type ("dax::Id" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3743 3763]))                                                          )
+                                                        (reparse-symbol classsubparts) [3243 3768])
+                                                    ("public" label nil (reparse-symbol classsubparts) [3829 3837])
+                                                    ("thrust::unary_function" variable (:type "int") (reparse-symbol classsubparts) [3838 4180])
+                                                    ("private" label nil (reparse-symbol classsubparts) [4182 4190])
+                                                    ("IteratorChooser" type
+                                                       (:template 
+                                                          ( ("PortalType" type (:type "class") nil nil)
+                                                            ("Tag" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :prototype t)
+                                                        (reparse-symbol classsubparts) [4193 4254])
+                                                    ("IteratorChooser" type
+                                                       (:template 
+                                                          ( ("PortalType" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" variable (:type "int") (reparse-symbol classsubparts) [4483 4488]))                                                          
+                                                        :template-specifier 
+                                                          ( ("PortalType" type nil nil nil)
+                                                            ("detail::ThrustIteratorTransformTag" type nil nil nil))                                                          )
+                                                        (reparse-symbol classsubparts) [4257 4493])
+                                                    ("IteratorChooser" type
+                                                       (:template 
+                                                          ( ("PortalType" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("Type" variable (:type "int") (reparse-symbol classsubparts) [4731 4736]))                                                          
+                                                        :template-specifier 
+                                                          ( ("PortalType" type nil nil nil)
+                                                            ("detail::ThrustIteratorDevicePtrTag" type nil nil nil))                                                          )
+                                                        (reparse-symbol classsubparts) [4496 4741])
+                                                    ("IteratorTraits" type
+                                                       (:template 
+                                                          ( ("PortalType" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("BaseIteratorType" type
+                                                               (:typedef ("PortalType::IteratorType" type (:type "class") nil nil)
+                                                                :superclasses "PortalType::IteratorType"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [4804 4863])
+                                                            ("Tag" type
+                                                               (:typedef ("detail::ThrustIteratorTag::Type" type (:type "class") nil nil)
+                                                                :superclasses "detail::ThrustIteratorTag::Type"
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [4868 4939])
+                                                            ("IteratorType" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4995 5013]))                                                          )
+                                                        (reparse-symbol classsubparts) [4745 5018])
+                                                    ("MakeDevicePtr" function
+                                                       (:arguments 
+                                                          ( ("iter" variable
+                                                               (:pointer 1
+                                                                :type ("T" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5110 5118]))                                                          
+                                                        :type ("thrust::device_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [5072 5168])
+                                                    ("MakeDevicePtr" function
+                                                       (:arguments 
+                                                          ( ("iter" variable
+                                                               (:pointer 1
+                                                                :constant-flag t
+                                                                :type ("T" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5265 5279]))                                                          
+                                                        :type ("thrust::device_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("T" type (:constant-flag t) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [5221 5335])
+                                                    ("MakeIteratorBegin" function
+                                                       (:arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5463 5481])
+                                                            ("" variable (:type ("detail::ThrustIteratorTransformTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5482 5517]))                                                          
+                                                        :type ("IteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5430 5673])
+                                                    ("MakeIteratorBegin" function
+                                                       (:arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5801 5819])
+                                                            ("" variable (:type ("detail::ThrustIteratorDevicePtrTag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5820 5855]))                                                          
+                                                        :type ("IteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5768 5916])
+                                                    ("IteratorBegin" function
+                                                       (:arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6040 6058]))                                                          
+                                                        :type ("IteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6011 6185])
+                                                    ("IteratorEnd" function
+                                                       (:arguments 
+                                                          ( ("portal" variable (:type ("PortalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6306 6324]))                                                          
+                                                        :type ("IteratorType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6279 6395])
+                                                    ("CopyPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6569 6594])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6636 6663]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6546 6794])
+                                                    ("LowerBoundsPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6914 6939])
+                                                            ("values" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ValuesPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6988 7015])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [7064 7091]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6884 7339])
+                                                    ("LowerBoundsPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [7441 7466])
+                                                            ("values_output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [7492 7526]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [7409 7795])
+                                                    ("ScanExclusivePortal" function
+                                                       (:typemodifiers ("static" "typename")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [7926 7951])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8006 8033]))                                                          
+                                                        :type ("InputPortal::ValueType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [7865 8497])
+                                                    ("ScanInclusivePortal" function
+                                                       (:typemodifiers ("static" "typename")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8628 8653])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8708 8735]))                                                          
+                                                        :type ("InputPortal::ValueType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [8567 9010])
+                                                    ("SortPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("values" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ValuesPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [9084 9111]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [9061 9202])
+                                                    ("CountIfPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("StencilPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [9283 9312]))                                                          
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [9254 9557])
+                                                    ("CopyIfPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("valuesBegin" variable (:type ("ValueIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9697 9723])
+                                                            ("valuesEnd" variable (:type ("ValueIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9767 9791])
+                                                            ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("StencilPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [9835 9864])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [9908 9935]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [9672 10225])
+                                                    ("RemoveIf" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("valuesBegin" variable (:type ("ValueIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10371 10397])
+                                                            ("valuesEnd" variable (:type ("ValueIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10437 10461])
+                                                            ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("StencilArrayHandle" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10501 10535])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("OutputArrayHandle" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10575 10601]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10350 10828])
+                                                    ("StreamCompactPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("inputPortal" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10985 11016])
+                                                            ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("StencilArrayHandle" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11044 11078])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("OutputArrayHandle" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11106 11132]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10951 11264])
+                                                    ("UniqueIterator" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("first" variable (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11479 11498])
+                                                            ("last" variable (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11499 11517]))                                                          
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [11447 11630])
+                                                    ("UniquePortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("values" variable
+                                                               (:constant-flag t
+                                                                :type ("ValuesPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11711 11737]))                                                          
+                                                        :type ("dax::Id" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [11681 11816])
+                                                    ("UpperBoundsPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11938 11963])
+                                                            ("values" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ValuesPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11989 12016])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [12042 12069]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [11906 12317])
+                                                    ("UpperBoundsPortal" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("InputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [12419 12444])
+                                                            ("values_output" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("OutputPortal" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [12470 12504]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [12387 12773])
+                                                    ("public" label nil (reparse-symbol classsubparts) [12856 12863])
+                                                    ("Copy" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [12952 13012])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13019 13075]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [12928 13236])
+                                                    ("LowerBounds" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13345 13405])
+                                                            ("values" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CVal" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13412 13474])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13481 13543]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [13314 13767])
+                                                    ("LowerBounds" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13852 13918])
+                                                            ("values_output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [13925 13994]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [13821 14107])
+                                                    ("ScanExclusive" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [14203 14263])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [14270 14326]))                                                          
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [14173 14615])
+                                                    ("ScanInclusive" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [14710 14770])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [14777 14833]))                                                          
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [14680 15122])
+                                                    ("private" label nil (reparse-symbol classsubparts) [15234 15242])
+                                                    ("ScheduleKernel" type
+                                                       (:template 
+                                                          ( ("FunctorType" type (:type "class") nil nil))                                                          
+                                                        :type "class"
+                                                        :members 
+                                                          ( ("public" label nil (reparse-symbol classsubparts) [15309 15316])
+                                                            ("ScheduleKernel" function
+                                                               (:constructor-flag t
+                                                                :arguments 
+                                                                  ( ("functor" variable
+                                                                       (:reference 1
+                                                                        :constant-flag t
+                                                                        :type ("FunctorType" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [15352 15379]))                                                                  
+                                                                :type ("DAX_CONT_EXPORT" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [15321 15413])
+                                                            ("()" function
+                                                               (:operator-flag t
+                                                                :arguments 
+                                                                  ( ("index" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15451 15465]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [15435 15507])
+                                                            ("private" label nil (reparse-symbol classsubparts) [15510 15518])
+                                                            ("Functor" variable (:type ("FunctorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15523 15543]))                                                          )
+                                                        (reparse-symbol classsubparts) [15252 15548])
+                                                    ("public" label nil (reparse-symbol classsubparts) [15550 15557])
+                                                    ("Schedule" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("functor" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15623 15639])
+                                                            ("numInstances" variable (:type ("dax::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15640 15661]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [15602 16446])
+                                                    ("Sort" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("values" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("Container" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [16530 16591]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [16506 16643])
+                                                    ("StreamCompact" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CStencil" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [16747 16814])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [16821 16883]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [16714 17119])
+                                                    ("StreamCompact" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("U" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17290 17350])
+                                                            ("stencil" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CStencil" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17357 17424])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("U" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17431 17487]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [17257 17562])
+                                                    ("Unique" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("values" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("Container" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17648 17709]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [17622 17810])
+                                                    ("UpperBounds" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17919 17979])
+                                                            ("values" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("T" type nil nil nil)
+                                                                          ("CVal" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [17986 18048])
+                                                            ("output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [18055 18117]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [17888 18341])
+                                                    ("UpperBounds" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("input" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("CIn" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [18426 18492])
+                                                            ("values_output" variable
+                                                               (:reference 1
+                                                                :type ("dax::cont::ArrayHandle" type
+                                                                     (:template-specifier 
+                                                                        ( ("dax::Id" type nil nil nil)
+                                                                          ("COut" type nil nil nil)
+                                                                          ("DeviceAdapterTag" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [18499 18568]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [18395 18681]))                                                  )
+                                                (reparse-symbol namespacesubparts) [3036 18684]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2030 18687]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2013 18689]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1994 18691]))                  
+                :type "namespace")
+                nil [1978 18693]))          
+    :file "DeviceAdapterAlgorithmThrust.h"
+    :pointmax 18794
+    :fsize 18793
+    :lastmodtime '(20759 43961)
+    :unmatched-syntax '((symbol 18379 . 18394) (punctuation 18375 . 18376) (symbol 18371 . 18375) (CLASS 18365 . 18370) (punctuation 18363 . 18364) (symbol 18360 . 18363) (CLASS 18354 . 18359) (punctuation 18353 . 18354) (TEMPLATE 18345 . 18353) (symbol 17872 . 17887) (punctuation 17868 . 17869) (symbol 17864 . 17868) (CLASS 17858 . 17863) (punctuation 17856 . 17857) (symbol 17852 . 17856) (CLASS 17846 . 17851) (punctuation 17844 . 17845) (symbol 17841 . 17844) (CLASS 17835 . 17840) (punctuation 17833 . 17834) (symbol 17832 . 17833) (TYPENAME 17823 . 17831) (punctuation 17822 . 17823) (TEMPLATE 17814 . 17822) (symbol 17606 . 17621) (punctuation 17602 . 17603) (symbol 17593 . 17602) (CLASS 17587 . 17592) (punctuation 17585 . 17586) (symbol 17584 . 17585) (TYPENAME 17575 . 17583) (punctuation 17574 . 17575) (TEMPLATE 17566 . 17574) (symbol 17241 . 17256) (punctuation 17237 . 17238) (symbol 17233 . 17237) (CLASS 17227 . 17232) (punctuation 17214 . 17215) (symbol 17206 . 17214) (CLASS 17200 . 17205) (punctuation 17187 . 17188) (symbol 17184 . 17187) (CLASS 17178 . 17183) (punctuation 17165 . 17166) (symbol 17164 . 17165) (TYPENAME 17155 . 17163) (punctuation 17142 . 17143) (symbol 17141 . 17142) (TYPENAME 17132 . 17140) (punctuation 17131 . 17132) (TEMPLATE 17123 . 17131) (symbol 16698 . 16713) (punctuation 16694 . 16695) (symbol 16690 . 16694) (CLASS 16684 . 16689) (punctuation 16682 . 16683) (symbol 16674 . 16682) (CLASS 16668 . 16673) (punctuation 16666 . 16667) (symbol 16665 . 16666) (TYPENAME 16656 . 16664) (punctuation 16655 . 16656) (TEMPLATE 16647 . 16655) (symbol 16490 . 16505) (punctuation 16486 . 16487) (symbol 16477 . 16486) (CLASS 16471 . 16476) (punctuation 16469 . 16470) (symbol 16468 . 16469) (TYPENAME 16459 . 16467) (punctuation 16458 . 16459) (TEMPLATE 16450 . 16458) (symbol 15586 . 15601) (punctuation 15582 . 15583) (symbol 15575 . 15582) (CLASS 15569 . 15574) (punctuation 15568 . 15569) (TEMPLATE 15560 . 15568) (symbol 15419 . 15434) (symbol 14664 . 14679) (punctuation 14660 . 14661) (symbol 14656 . 14660) (CLASS 14650 . 14655) (punctuation 14648 . 14649) (symbol 14645 . 14648) (CLASS 14639 . 14644) (punctuation 14637 . 14638) (symbol 14636 . 14637) (TYPENAME 14627 . 14635) (punctuation 14626 . 14627) (TEMPLATE 14618 . 14626) (symbol 14157 . 14172) (punctuation 14153 . 14154) (symbol 14149 . 14153) (CLASS 14143 . 14148) (punctuation 14141 . 14142) (symbol 14138 . 14141) (CLASS 14132 . 14137) (punctuation 14130 . 14131) (symbol 14129 . 14130) (TYPENAME 14120 . 14128) (punctuation 14119 . 14120) (TEMPLATE 14111 . 14119) (symbol 13805 . 13820) (punctuation 13801 . 13802) (symbol 13797 . 13801) (CLASS 13791 . 13796) (punctuation 13789 . 13790) (symbol 13786 . 13789) (CLASS 13780 . 13785) (punctuation 13779 . 13780) (TEMPLATE 13771 . 13779) (symbol 13298 . 13313) (punctuation 13294 . 13295) (symbol 13290 . 13294) (CLASS 13284 . 13289) (punctuation 13282 . 13283) (symbol 13278 . 13282) (CLASS 13272 . 13277) (punctuation 13270 . 13271) (symbol 13267 . 13270) (CLASS 13261 . 13266) (punctuation 13259 . 13260) (symbol 13258 . 13259) (TYPENAME 13249 . 13257) (punctuation 13248 . 13249) (TEMPLATE 13240 . 13248) (symbol 12912 . 12927) (punctuation 12908 . 12909) (symbol 12904 . 12908) (CLASS 12898 . 12903) (punctuation 12896 . 12897) (symbol 12893 . 12896) (CLASS 12887 . 12892) (punctuation 12885 . 12886) (symbol 12884 . 12885) (TYPENAME 12875 . 12883) (punctuation 12874 . 12875) (TEMPLATE 12866 . 12874) (symbol 12371 . 12386) (punctuation 12367 . 12368) (symbol 12355 . 12367) (CLASS 12349 . 12354) (punctuation 12347 . 12348) (symbol 12336 . 12347) (CLASS 12330 . 12335) (punctuation 12329 . 12330) (TEMPLATE 12321 . 12329) (symbol 11890 . 11905) (punctuation 11886 . 11887) (symbol 11874 . 11886) (CLASS 11868 . 11873) (punctuation 11866 . 11867) (symbol 11854 . 11866) (CLASS 11848 . 11853) (punctuation 11846 . 11847) (symbol 11835 . 11846) (CLASS 11829 . 11834) (punctuation 11828 . 11829) (TEMPLATE 11820 . 11828) (symbol 11665 . 11680) (punctuation 11661 . 11662) (symbol 11649 . 11661) (CLASS 11643 . 11648) (punctuation 11642 . 11643) (TEMPLATE 11634 . 11642) (symbol 11431 . 11446) (punctuation 11427 . 11428) (symbol 11415 . 11427) (CLASS 11409 . 11414) (punctuation 11408 . 11409) (TEMPLATE 11400 . 11408) (symbol 10935 . 10950) (punctuation 10931 . 10932) (symbol 10914 . 10931) (CLASS 10908 . 10913) (punctuation 10895 . 10896) (symbol 10877 . 10895) (CLASS 10871 . 10876) (punctuation 10858 . 10859) (symbol 10847 . 10858) (CLASS 10841 . 10846) (punctuation 10840 . 10841) (TEMPLATE 10832 . 10840) (symbol 10334 . 10349) (punctuation 10330 . 10331) (symbol 10313 . 10330) (CLASS 10307 . 10312) (punctuation 10294 . 10295) (symbol 10276 . 10294) (CLASS 10270 . 10275) (punctuation 10257 . 10258) (symbol 10244 . 10257) (CLASS 10238 . 10243) (punctuation 10237 . 10238) (TEMPLATE 10229 . 10237) (symbol 9656 . 9671) (punctuation 9652 . 9653) (symbol 9640 . 9652) (CLASS 9634 . 9639) (punctuation 9621 . 9622) (symbol 9608 . 9621) (CLASS 9602 . 9607) (punctuation 9589 . 9590) (symbol 9576 . 9589) (CLASS 9570 . 9575) (punctuation 9569 . 9570) (TEMPLATE 9561 . 9569) (symbol 9238 . 9253) (punctuation 9234 . 9235) (symbol 9221 . 9234) (CLASS 9215 . 9220) (punctuation 9214 . 9215) (TEMPLATE 9206 . 9214) (symbol 9045 . 9060) (punctuation 9041 . 9042) (symbol 9029 . 9041) (CLASS 9023 . 9028) (punctuation 9022 . 9023) (TEMPLATE 9014 . 9022) (symbol 8551 . 8566) (punctuation 8547 . 8548) (symbol 8535 . 8547) (CLASS 8529 . 8534) (punctuation 8527 . 8528) (symbol 8516 . 8527) (CLASS 8510 . 8515) (punctuation 8509 . 8510) (TEMPLATE 8501 . 8509) (symbol 7849 . 7864) (punctuation 7845 . 7846) (symbol 7833 . 7845) (CLASS 7827 . 7832) (punctuation 7825 . 7826) (symbol 7814 . 7825) (CLASS 7808 . 7813) (punctuation 7807 . 7808) (TEMPLATE 7799 . 7807) (symbol 7393 . 7408) (punctuation 7389 . 7390) (symbol 7377 . 7389) (CLASS 7371 . 7376) (punctuation 7369 . 7370) (symbol 7358 . 7369) (CLASS 7352 . 7357) (punctuation 7351 . 7352) (TEMPLATE 7343 . 7351) (symbol 6868 . 6883) (punctuation 6864 . 6865) (symbol 6852 . 6864) (CLASS 6846 . 6851) (punctuation 6844 . 6845) (symbol 6832 . 6844) (CLASS 6826 . 6831) (punctuation 6824 . 6825) (symbol 6813 . 6824) (CLASS 6807 . 6812) (punctuation 6806 . 6807) (TEMPLATE 6798 . 6806) (symbol 6530 . 6545) (punctuation 6526 . 6527) (symbol 6514 . 6526) (CLASS 6508 . 6513) (punctuation 6506 . 6507) (symbol 6495 . 6506) (CLASS 6489 . 6494) (punctuation 6488 . 6489) (TEMPLATE 6480 . 6488) (punctuation 6278 . 6279) (punctuation 6277 . 6278) (punctuation 6276 . 6277) (symbol 6266 . 6276) (punctuation 6265 . 6266) (symbol 6251 . 6265) (TYPENAME 6242 . 6250) (STATIC 6233 . 6239) (symbol 6217 . 6232) (punctuation 6213 . 6214) (symbol 6203 . 6213) (CLASS 6197 . 6202) (punctuation 6196 . 6197) (TEMPLATE 6188 . 6196) (punctuation 6010 . 6011) (punctuation 6009 . 6010) (punctuation 6008 . 6009) (symbol 5998 . 6008) (punctuation 5997 . 5998) (symbol 5983 . 5997) (TYPENAME 5974 . 5982) (STATIC 5965 . 5971) (symbol 5949 . 5964) (punctuation 5945 . 5946) (symbol 5935 . 5945) (CLASS 5929 . 5934) (punctuation 5928 . 5929) (TEMPLATE 5920 . 5928) (punctuation 5767 . 5768) (punctuation 5766 . 5767) (punctuation 5765 . 5766) (symbol 5755 . 5765) (punctuation 5754 . 5755) (symbol 5740 . 5754) (TYPENAME 5731 . 5739) (STATIC 5722 . 5728) (symbol 5706 . 5721) (punctuation 5702 . 5703) (symbol 5692 . 5702) (CLASS 5686 . 5691) (punctuation 5685 . 5686) (TEMPLATE 5677 . 5685) (punctuation 5429 . 5430) (punctuation 5428 . 5429) (punctuation 5427 . 5428) (symbol 5417 . 5427) (punctuation 5416 . 5417) (symbol 5402 . 5416) (TYPENAME 5393 . 5401) (STATIC 5384 . 5390) (symbol 5368 . 5383) (punctuation 5364 . 5365) (symbol 5354 . 5364) (CLASS 5348 . 5353) (punctuation 5347 . 5348) (TEMPLATE 5339 . 5347) (punctuation 5220 . 5221) (punctuation 5219 . 5220) (STATIC 5210 . 5216) (symbol 5194 . 5209) (punctuation 5190 . 5191) (symbol 5189 . 5190) (TYPENAME 5180 . 5188) (punctuation 5179 . 5180) (TEMPLATE 5171 . 5179) (punctuation 5071 . 5072) (punctuation 5070 . 5071) (STATIC 5061 . 5067) (symbol 5045 . 5060) (punctuation 5041 . 5042) (symbol 5040 . 5041) (TYPENAME 5031 . 5039) (punctuation 5030 . 5031) (TEMPLATE 5022 . 5030) (punctuation 4994 . 4995) (punctuation 4993 . 4994) (punctuation 4992 . 4993) (symbol 4989 . 4992) (punctuation 4987 . 4988) (symbol 4977 . 4987) (punctuation 4976 . 4977) (symbol 4961 . 4976) (TYPENAME 4952 . 4960) (TYPEDEF 4944 . 4951) (punctuation 4729 . 4730) (symbol 4725 . 4729) (punctuation 4724 . 4725) (punctuation 4723 . 4724) (punctuation 4722 . 4723) (symbol 4710 . 4722) (punctuation 4709 . 4710) (punctuation 4708 . 4709) (symbol 4698 . 4708) (TYPENAME 4689 . 4697) (punctuation 4675 . 4676) (symbol 4657 . 4675) (punctuation 4656 . 4657) (punctuation 4655 . 4656) (symbol 4649 . 4655) (TYPENAME 4640 . 4648) (punctuation 4630 . 4631) (symbol 4620 . 4630) (punctuation 4619 . 4620) (punctuation 4618 . 4619) (symbol 4612 . 4618) (punctuation 4611 . 4612) (punctuation 4610 . 4611) (TYPEDEF 4602 . 4609) (punctuation 4481 . 4482) (punctuation 4479 . 4480) (symbol 4477 . 4479) (punctuation 4476 . 4477) (punctuation 4475 . 4476) (symbol 4472 . 4475) (punctuation 4471 . 4472) (symbol 4454 . 4471) (punctuation 4453 . 4454) (punctuation 4452 . 4453) (symbol 4446 . 4452) (punctuation 4445 . 4446) (punctuation 4444 . 4445) (punctuation 4434 . 4435) (punctuation 4433 . 4434) (symbol 4423 . 4433) (punctuation 4422 . 4423) (symbol 4409 . 4422) (punctuation 4399 . 4400) (symbol 4381 . 4399) (punctuation 4380 . 4381) (punctuation 4379 . 4380) (symbol 4373 . 4379) (punctuation 4372 . 4373) (punctuation 4371 . 4372) (TYPEDEF 4363 . 4370) (punctuation 3837 . 3838) (punctuation 3827 . 3828) (symbol 3807 . 3820) (CLASS 3801 . 3806) (punctuation 3797 . 3798) (symbol 3787 . 3797) (CLASS 3781 . 3786) (punctuation 3780 . 3781) (TEMPLATE 3772 . 3780) (OPERATOR 3626 . 3634) (symbol 3606 . 3621) (symbol 3472 . 3487) (symbol 1921 . 1924) (symbol 1910 . 1920) (symbol 1906 . 1909) (symbol 1899 . 1905) (punctuation 1898 . 1899) (string 1395 . 1415) (symbol 1387 . 1394) (symbol 1376 . 1386) (symbol 1372 . 1375) (symbol 1365 . 1371) (punctuation 1364 . 1365) (string 1353 . 1363) (symbol 1345 . 1352) (symbol 1334 . 1344) (symbol 1330 . 1333) (symbol 1323 . 1329) (punctuation 1322 . 1323) (symbol 1243 . 1247) (symbol 1232 . 1242) (symbol 1228 . 1231) (symbol 1221 . 1227) (punctuation 1220 . 1221))
+    :lexical-table 
+        '(("__dax_thrust_cont_internal_DeviceAdapterThrust_h")
+          )
+
+    )
+   )
+  :file "!home!nikhil!dax!DaxToolkit!dax!thrust!cont!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

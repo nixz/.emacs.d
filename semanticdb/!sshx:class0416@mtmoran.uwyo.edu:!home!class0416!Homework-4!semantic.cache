@@ -1,0 +1,82 @@
+;; Object Homework-4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Homework-4/"
+  :tables (list 
+   (semanticdb-table "code1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [171 189])
+            ("mpi.h" include nil nil [190 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [249 262]))                  
+                :type "int")
+                nil [229 1567]))          
+    :file "code1.c"
+    :pointmax 1568
+    :fsize 1567
+    :lastmodtime '(21584 21810)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("all" function (:arguments ("gather" "scatter" "send_recv")) nil [1 31])
+            ("gather" function (:arguments ("code1.c")) nil [32 73])
+            ("scatter" function (:arguments ("code2.c")) nil [74 117])
+            ("send_recv" function (:arguments ("code3.c")) nil [118 165]))          
+    :file "Makefile"
+    :pointmax 165
+    :fsize 164
+    :lastmodtime '(21584 21088)
+    :unmatched-syntax '((shell-command 138 . 164) (bol 137 . 137) (symbol 21 . 30) (symbol 13 . 20) (symbol 6 . 12) (punctuation 4 . 5) (symbol 1 . 4) (bol 1 . 1) (shell-command 129 . 151) (bol 128 . 128) (symbol 21 . 25) (symbol 13 . 20) (symbol 6 . 12) (punctuation 4 . 5) (symbol 1 . 4) (bol 1 . 1))
+    )
+   (semanticdb-table "code2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [374 392])
+            ("mpi.h" include nil nil [393 409])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [419 428])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [429 441]))                  
+                :type "int")
+                nil [410 1793]))          
+    :file "code2.c"
+    :pointmax 1794
+    :fsize 1793
+    :lastmodtime '(21584 21855)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "code3.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [535 553])
+            ("mpi.h" include nil nil [554 570])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [581 590])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [591 603]))                  
+                :type "int")
+                nil [571 2065]))          
+    :file "code3.c"
+    :pointmax 2066
+    :fsize 1771
+    :lastmodtime '(21584 26914)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!sshx:class0416@mtmoran.uwyo.edu:!home!class0416!Homework-4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,808 @@
+;; Object Collaboration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Collaboration/"
+  :tables (list 
+   (semanticdb-table "AgoraClient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("COLLABORATION_AGORACLIENT_INCLUDED" variable (:constant-flag t) nil [1149 1183])
+            ("string" include (:system-flag t) nil [1185 1202])
+            ("Threads/MutexCond.h" include (:system-flag t) nil [1203 1233])
+            ("Threads/TripleBuffer.h" include (:system-flag t) nil [1234 1267])
+            ("Threads/DropoutBuffer.h" include (:system-flag t) nil [1268 1302])
+            ("GL/gl.h" include (:system-flag t) nil [1303 1321])
+            ("GLMotif/ToggleButton.h" include (:system-flag t) nil [1322 1355])
+            ("Sound/Config.h" include (:system-flag t) nil [1356 1381])
+            ("Video/Config.h" include (:system-flag t) nil [1382 1407])
+            ("AL/Config.h" include (:system-flag t) nil [1573 1595])
+            ("AL/ALObject.h" include (:system-flag t) nil [1596 1620])
+            ("Collaboration/ProtocolClient.h" include (:system-flag t) nil [1621 1662])
+            ("Collaboration/AgoraProtocol.h" include (:system-flag t) nil [1663 1703])
+            ("Misc" type
+               (:members 
+                  ( ("CallbackData" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1825 1844]))                  
+                :type "namespace")
+                nil [1808 1846])
+            ("GLContextData" type
+               (:prototype t
+                :type "class")
+                nil [1847 1867])
+            ("GLMotif" type
+               (:members 
+                  ( ("Widget" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1888 1901])
+                    ("PopupWindow" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1902 1920])
+                    ("ToggleButton" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1921 1940])
+                    ("VideoPane" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1941 1957]))                  
+                :type "namespace")
+                nil [1868 1959])
+            ("Collaboration" type
+               (:members 
+                  ( ("AgoraClient" type
+                       (:superclasses 
+                          ( ("ProtocolClient" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("AgoraProtocol" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [2302 2312])
+                            ("RemoteClientState" type
+                               (:superclasses 
+                                  ( ("ProtocolClient::RemoteClientState" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("ALObject" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2427 2435])
+                                    ("ALDataItem" type
+                                       (:superclasses 
+                                          ( ("ALObject::DataItem" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2509 2516])
+                                            ("ALDataItem" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("sSpeexFrameSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2988 3011])
+                                                    ("sSpeexPacketQueue" variable
+                                                       (:reference 1
+                                                        :type ("Threads::DropoutBuffer" type
+                                                             (:template-specifier 
+                                                                ( ("char" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3011 3059]))                                                  
+                                                :type ("ALDataItem" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2977 3060])
+                                            ("ALDataItem" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3084 3089]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3064 3090]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2438 3096])
+                                    ("public" label nil (reparse-symbol classsubparts) [3118 3125])
+                                    ("remoteSpeexFrameSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3159 3187])
+                                    ("mouthPosition" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3230 3250])
+                                    ("rolloffFactor" variable (:type "float") (reparse-symbol classsubparts) [3315 3335])
+                                    ("speexPacketQueue" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("Threads::DropoutBuffer" type
+                                             (:template-specifier 
+                                                ( ("char" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3423 3477])
+                                    ("localMouthPosition" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3524 3549])
+                                    ("hasTheora" variable (:type "bool") (reparse-symbol classsubparts) [3653 3668])
+                                    ("videoTransform" variable (:type ("ONTransform" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3730 3757])
+                                    ("videoSize" variable
+                                       (:dereference 1
+                                        :type ("Scalar" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3843 3863])
+                                    ("localVideoTransform" variable (:type ("OGTransform" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4578 4610])
+                                    ("RemoteClientState" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4909 4914]))                                          
+                                        :type ("RemoteClientState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4891 4915])
+                                    ("RemoteClientState" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4945 4950]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4918 4951])
+                                    ("initContext" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("contextData" variable
+                                               (:reference 1
+                                                :type ("ALContextData" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5011 5038]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4986 5045])
+                                    ("glRenderAction" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("contextData" variable
+                                               (:reference 1
+                                                :type ("GLContextData" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5090 5117]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5070 5124])
+                                    ("alRenderAction" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("contextData" variable
+                                               (:reference 1
+                                                :type ("ALContextData" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5185 5212]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5165 5219]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [2314 5268])
+                            ("private" label nil (reparse-symbol classsubparts) [5288 5296])
+                            ("mouthPosition" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5328 5348])
+                            ("haveAudio" variable (:type "bool") (reparse-symbol classsubparts) [5545 5560])
+                            ("pauseAudio" variable (:type "bool") (reparse-symbol classsubparts) [5626 5642])
+                            ("jitterBufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5722 5746])
+                            ("rolloffFactor" variable (:type "float") (reparse-symbol classsubparts) [5805 5825])
+                            ("hasTheora" variable (:type "bool") (reparse-symbol classsubparts) [5943 5958])
+                            ("videoDevice" variable
+                               (:pointer 1
+                                :type ("Video::VideoDevice" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6051 6083])
+                            ("videoExtractor" variable
+                               (:pointer 1
+                                :type ("Video::ImageExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6136 6174])
+                            ("videoDeviceSettings" variable
+                               (:pointer 1
+                                :type ("GLMotif::Widget" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6241 6278])
+                            ("showVideoDeviceSettingsToggle" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6320 6373])
+                            ("showLocalVideoWindowToggle" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6433 6483])
+                            ("localVideoWindow" variable
+                               (:pointer 1
+                                :type ("GLMotif::PopupWindow" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6531 6570])
+                            ("videoPane" variable
+                               (:pointer 1
+                                :type ("GLMotif::VideoPane" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6618 6648])
+                            ("theoraEncoder" variable (:type ("Video::TheoraEncoder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6719 6754])
+                            ("videoTransform" variable (:type ("ONTransform" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6813 6840])
+                            ("videoSize" variable
+                               (:dereference 1
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6900 6920])
+                            ("haveVideo" variable (:type "bool") (reparse-symbol classsubparts) [7303 7318])
+                            ("localVideoWindowShown" variable (:type "bool") (reparse-symbol classsubparts) [7383 7410])
+                            ("pauseVideo" variable (:type "bool") (reparse-symbol classsubparts) [7474 7490])
+                            ("videoCaptureCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("frame" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Video::FrameBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7620 7652]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7594 7653])
+                            ("showVideoDeviceSettingsCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbData" variable
+                                       (:pointer 1
+                                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7768 7824]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7731 7825])
+                            ("pauseAudioCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbData" variable
+                                       (:pointer 1
+                                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7851 7907]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7827 7908])
+                            ("pauseVideoCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbData" variable
+                                       (:pointer 1
+                                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7934 7990]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7910 7991])
+                            ("showLocalVideoWindowCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbData" variable
+                                       (:pointer 1
+                                        :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8027 8083]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7993 8084])
+                            ("videoDeviceSettingsCloseCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbdata" variable
+                                       (:pointer 1
+                                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8124 8151]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8086 8152])
+                            ("localVideoWindowCloseCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cbdata" variable
+                                       (:pointer 1
+                                        :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8189 8216]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8154 8217])
+                            ("public" label nil (reparse-symbol classsubparts) [8257 8264])
+                            ("AgoraClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8278 8283]))                                  
+                                :type ("AgoraClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8266 8284])
+                            ("AgoraClient" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8334 8339]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8313 8340])
+                            ("getName" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8436 8441]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [8408 8448])
+                            ("initialize" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sClient" variable
+                                       (:pointer 1
+                                        :type ("CollaborationClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8474 8503])
+                                    ("configFileSection" variable
+                                       (:reference 1
+                                        :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8503 8553]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8450 8554])
+                            ("haveSettingsDialog" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8588 8593]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8556 8600])
+                            ("buildSettingsDialog" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("settingsDialog" variable
+                                       (:pointer 1
+                                        :type ("GLMotif::RowColumn" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8635 8670]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8602 8671])
+                            ("sendConnectRequest" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8705 8725]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8673 8726])
+                            ("receiveConnectReply" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8761 8781]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8728 8782])
+                            ("receiveConnectReject" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8818 8838]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8784 8839])
+                            ("receiveClientConnect" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8889 8909]))                                  
+                                :type ("RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8841 8910])
+                            ("receiveServerUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("rcs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8945 8984])
+                                    ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8984 9004]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8912 9005])
+                            ("sendClientUpdate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pipe" variable
+                                       (:reference 1
+                                        :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9037 9057]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9007 9058])
+                            ("frame" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9079 9084]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9060 9085])
+                            ("frame" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("rcs" variable
+                                       (:pointer 1
+                                        :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9106 9145]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9087 9146])
+                            ("glRenderAction" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("rcs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9176 9221])
+                                    ("contextData" variable
+                                       (:reference 1
+                                        :type ("GLContextData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9221 9248]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9148 9255])
+                            ("alRenderAction" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("rcs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9285 9330])
+                                    ("contextData" variable
+                                       (:reference 1
+                                        :type ("ALContextData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9330 9357]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9257 9364]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2211 9368]))                  
+                :type "namespace")
+                nil [2184 9371]))          
+    :file "AgoraClient.h"
+    :pointmax 9380
+    :fsize 9379
+    :lastmodtime '(21576 21635 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("COLLABORATION_AGORACLIENT_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "AgoraClient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Collaboration/AgoraClient.h" include (:system-flag t) nil [1098 1136])
+            ("iostream" include (:system-flag t) nil [1138 1157])
+            ("Misc/FunctionCalls.h" include (:system-flag t) nil [1158 1189])
+            ("Misc/ThrowStdErr.h" include (:system-flag t) nil [1190 1219])
+            ("Misc/StandardValueCoders.h" include (:system-flag t) nil [1220 1257])
+            ("Misc/ConfigurationFile.h" include (:system-flag t) nil [1258 1293])
+            ("IO/FixedMemoryFile.h" include (:system-flag t) nil [1294 1325])
+            ("IO/VariableMemoryFile.h" include (:system-flag t) nil [1326 1360])
+            ("Comm/NetPipe.h" include (:system-flag t) nil [1361 1386])
+            ("Cluster/MulticastPipe.h" include (:system-flag t) nil [1387 1421])
+            ("Cluster/ThreadSynchronizer.h" include (:system-flag t) nil [1422 1461])
+            ("Geometry/GeometryValueCoders.h" include (:system-flag t) nil [1462 1503])
+            ("GL/gl.h" include (:system-flag t) nil [1504 1522])
+            ("GL/GLContextData.h" include (:system-flag t) nil [1523 1552])
+            ("GL/GLTransformationWrappers.h" include (:system-flag t) nil [1553 1593])
+            ("GLMotif/PopupWindow.h" include (:system-flag t) nil [1594 1626])
+            ("GLMotif/Margin.h" include (:system-flag t) nil [1627 1654])
+            ("GLMotif/RowColumn.h" include (:system-flag t) nil [1655 1685])
+            ("Sound/Config.h" include (:system-flag t) nil [1686 1711])
+            ("Video/Config.h" include (:system-flag t) nil [1712 1737])
+            ("AL/Config.h" include (:system-flag t) nil [1967 1989])
+            ("AL/ALTemplates.h" include (:system-flag t) nil [1990 2017])
+            ("AL/ALGeometryWrappers.h" include (:system-flag t) nil [2018 2052])
+            ("AL/ALContextData.h" include (:system-flag t) nil [2053 2082])
+            ("Vrui/Vrui.h" include (:system-flag t) nil [2083 2105])
+            ("Vrui/Viewer.h" include (:system-flag t) nil [2106 2130])
+            ("Collaboration/CollaborationClient.h" include (:system-flag t) nil [2131 2177])
+            ("Collaboration" type
+               (:members 
+                  ( ("ALDataItem" function
+                       (:parent "AgoraClient::RemoteClientState::ALDataItem"
+                        :arguments 
+                          ( ("sSpeexFrameSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2560 2583])
+                            ("sSpeexPacketQueue" variable
+                               (:reference 1
+                                :type ("Threads::DropoutBuffer" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2583 2631]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2505 3282])
+                    ("ALDataItem" function
+                       (:destructor-flag t
+                        :parent "AgoraClient::RemoteClientState::ALDataItem"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3340 3345]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3284 3666])
+                    ("RemoteClientState" function
+                       (:constructor-flag t
+                        :parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4949 4954]))                          
+                        :type ("RemoteClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4899 5161])
+                    ("RemoteClientState" function
+                       (:destructor-flag t
+                        :parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5214 5219]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5163 5425])
+                    ("initContext" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5476 5503]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5427 6119])
+                    ("glRenderAction" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6173 6200]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6121 7407])
+                    ("alRenderAction" function
+                       (:parent "AgoraClient::RemoteClientState"
+                        :arguments 
+                          ( ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7461 7488]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7409 9320])
+                    ("videoCaptureCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("frame" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Video::FrameBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9481 9513]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9442 10485])
+                    ("showVideoDeviceSettingsCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10544 10600]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10494 10845])
+                    ("pauseAudioCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10884 10940]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10847 11015])
+                    ("pauseVideoCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11054 11110]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11017 11185])
+                    ("showLocalVideoWindowCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("GLMotif::ToggleButton::ValueChangedCallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11234 11290]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11187 11545])
+                    ("videoDeviceSettingsCloseCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11598 11625]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11547 11720])
+                    ("localVideoWindowCloseCallback" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("cbData" variable
+                               (:pointer 1
+                                :type ("Misc::CallbackData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11770 11797]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11722 11916])
+                    ("AgoraClient" function
+                       (:constructor-flag t
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11943 11948]))                          
+                        :type ("AgoraClient" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11918 12472])
+                    ("AgoraClient" function
+                       (:destructor-flag t
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12500 12505]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12474 12866])
+                    ("getName" function
+                       (:pointer 1
+                        :parent "AgoraClient"
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12901 12906]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [12868 12940])
+                    ("initialize" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("sClient" variable
+                               (:pointer 1
+                                :type ("CollaborationClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12971 13000])
+                            ("configFileSection" variable
+                               (:reference 1
+                                :type ("Misc::ConfigurationFileSection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13000 13050]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12942 19751])
+                    ("haveSettingsDialog" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19790 19795]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19753 19837])
+                    ("buildSettingsDialog" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("settingsDialog" variable
+                               (:pointer 1
+                                :type ("GLMotif::RowColumn" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19877 19912]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19839 22763])
+                    ("sendConnectRequest" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22802 22822]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22765 25353])
+                    ("receiveConnectReply" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25393 25413]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25355 27735])
+                    ("receiveConnectReject" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27776 27796]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27737 28212])
+                    ("receiveClientConnect" function
+                       (:pointer 1
+                        :parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28280 28300]))                          
+                        :type ("AgoraClient::RemoteClientState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28214 31641])
+                    ("receiveServerUpdate" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31681 31720])
+                            ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31720 31740]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [31643 33055])
+                    ("sendClientUpdate" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("pipe" variable
+                               (:reference 1
+                                :type ("Comm::NetPipe" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33092 33112]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33057 34348])
+                    ("frame" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [34374 34379]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34350 34921])
+                    ("frame" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34947 34986]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34923 36479])
+                    ("glRenderAction" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36514 36559])
+                            ("contextData" variable
+                               (:reference 1
+                                :type ("GLContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36559 36586]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36481 36898])
+                    ("alRenderAction" function
+                       (:parent "AgoraClient"
+                        :arguments 
+                          ( ("rcs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ProtocolClient::RemoteClientState" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36933 36978])
+                            ("contextData" variable
+                               (:reference 1
+                                :type ("ALContextData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36978 37005]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36900 37400]))                  
+                :type "namespace")
+                nil [2294 37403])
+            ("createObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Collaboration::ProtocolClient" type (:type "class") nil nil)
+                :arguments 
+                  ( ("objectLoader" variable
+                       (:reference 1
+                        :type ("Collaboration::ProtocolClientLoader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37518 37568]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [37474 37614])
+            ("destroyObject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("Collaboration::ProtocolClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37635 37673]))                  )
+                (reparse-symbol extern-c-contents) [37616 37695]))          
+    :file "AgoraClient.cpp"
+    :pointmax 37612
+    :fsize 37698
+    :lastmodtime '(21576 21965 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nshetty!Code!Vrui!CollaborationInfrastructure-2.6!Collaboration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
